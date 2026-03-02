@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クロスカントリー証券｜グローバル分散投資｜楽天証券</title>
+
+  <!-- 楽天証券本番CSS -->
+  <link rel="stylesheet" href="https://www.rakuten-sec.co.jp/web/shared/css/style-bottom.css">
+
+  <!-- ページ固有スクリプト -->
+  <script src="https://www.rakuten-sec.co.jp/web/shared/js/s1-common.js"></script>
+
+  <!-- パス変換スクリプト（絶対パスモードの場合のみ） -->
+  <script>
+(function() {
+  const PRODUCTION_BASE_URL = 'https://www.rakuten-sec.co.jp';
+
+  function convertPaths() {
+    // 画像パス変換
+    const images = document.querySelectorAll('img');
+    images.forEach(function(img) {
+      const src = img.getAttribute('src');
+      if (src && src.startsWith('/') && !src.startsWith('//')) {
+        img.setAttribute('src', PRODUCTION_BASE_URL + src);
+      }
+    });
+
+    // リンクパス変換
+    const anchors = document.querySelectorAll('a');
+    anchors.forEach(function(a) {
+      const href = a.getAttribute('href');
+      if (href && href.startsWith('/') && !href.startsWith('//') && href !== '#' && !href.startsWith('javascript:')) {
+        a.setAttribute('href', PRODUCTION_BASE_URL + href);
+      }
+    });
+  }
+
+  // 初回実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', convertPaths);
+  } else {
+    convertPaths();
+  }
+
+  // 動的変更を監視
+  const observer = new MutationObserver(convertPaths);
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+
+  <style>
+
+/* キャンバス内のブロック用の最小限のスタイル */
+.canvas-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.canvas-block.selected {
+  outline: 2px solid #bf0000;
+}
+
+.canvas-block__toolbar {
+  display: none;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  background: white;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.canvas-block:hover .canvas-block__toolbar,
+.canvas-block.selected .canvas-block__toolbar {
+  display: flex;
+  gap: 5px;
+}
+
+  </style>
+</head>
+<body id="top">
+  <!-- ヘッダー（SSI） -->
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+  <!-- メインコンテンツエリア -->
+  <div class="s1-content-area mb-triple">
+    <div class="s1-content-area__container">
+
+      <!-- 左側：メインコンテンツ -->
+      <div class="s1-content-area__main" role="main">
+
+        <!-- パンくず -->
+        <ul class="s1-breadcrumbs mb-normal">
+          <li><a href="/">ホーム</a>&nbsp;&gt;&nbsp;</li>
+          <li><a href="/fund/">投資信託</a>&nbsp;&gt;&nbsp;</li>
+          <li>クロスカントリー証券</li>
+        </ul>
+
+        <!-- SNS共有ボタン -->
+        <!--#include virtual="/web/shared/include/socialbookmark/s1-parts.html"-->
+
+        <!-- PCSP共通コンテンツ -->
+        <div id="pcsp-quick" class="mb-triple">
+
+          <!-- メインタイトル -->
+          <div class="s1-hdg-lv1">
+            <h1 class="s1-hdg-lv1__element">クロスカントリー証券</h1>
+          </div>
+
+          <!-- 導入テキスト -->
+          <div class="s1-box-section mb-double">
+            <p>世界中の市場に分散投資する「クロスカントリー証券」で、グローバルな資産形成を始めませんか？複数の国や地域の株式・債券・不動産などに投資することで、リスクを分散しながら成長機会を捉えることができます。</p>
+          </div>
+
+          <!-- ページ内リンク -->
+          <ul class="s1-list-anchor s1-list-anchor--wrap mb-double">
+            <li class="s1-list-anchor__item"><a href="#features" class="s1-list-anchor__element">特徴</a></li>
+            <li class="s1-list-anchor__item"><a href="#merit" class="s1-list-anchor__element">3つのメリット</a></li>
+            <li class="s1-list-anchor__item"><a href="#lineup" class="s1-list-anchor__element">商品ラインアップ</a></li>
+            <li class="s1-list-anchor__item"><a href="#howto" class="s1-list-anchor__element">始め方</a></li>
+          </ul>
+
+          <!-- セクション1: 特徴 -->
+          <div class="s1-hdg-lv2" id="features">
+            <h2 class="s1-hdg-lv2__element">クロスカントリー証券の特徴</h2>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p>クロスカントリー証券は、先進国から新興国まで、世界中の多様な市場に投資できる投資信託商品です。プロフェッショナルなファンドマネージャーが、各国の経済状況や市場動向を分析し、最適なポートフォリオを構築します。</p>
+          </div>
+
+          <!-- ポイントリスト -->
+          <ol class="s1-list-num-point mb-double">
+            <li class="s1-list-num-point__item">
+              <div class="s1-list-num-point__circle">point<br><span class="fs24">1</span></div>
+              <div class="s1-list-num-point__txt">世界各国の株式・債券・REITなど多様な資産に分散投資</div>
+            </li>
+            <li class="s1-list-num-point__item">
+              <div class="s1-list-num-point__circle">point<br><span class="fs24">2</span></div>
+              <div class="s1-list-num-point__txt">為替リスクをヘッジしたタイプも選択可能</div>
+            </li>
+            <li class="s1-list-num-point__item">
+              <div class="s1-list-num-point__circle">point<br><span class="fs24">3</span></div>
+              <div class="s1-list-num-point__txt">少額から始められる積立投資にも対応</div>
+            </li>
+          </ol>
+
+          <!-- セクション2: メリット -->
+          <div class="s1-hdg-lv2" id="merit">
+            <h2 class="s1-hdg-lv2__element">楽天証券で始める3つのメリット</h2>
+          </div>
+
+          <div class="s1-box-section mb-normal">
+            <div class="s1-hdg-lv3">
+              <h3 class="s1-hdg-lv3__element">1. 豊富な商品ラインアップ</h3>
+            </div>
+            <p class="mb-double">先進国中心のバランス型から、新興国重視の成長型まで、お客様の投資方針に合わせて選べる多彩なファンドをご用意しています。</p>
+
+            <div class="s1-hdg-lv3">
+              <h3 class="s1-hdg-lv3__element">2. 楽天ポイントで投資可能</h3>
+            </div>
+            <p class="mb-double">楽天ポイントを使って投資信託を購入できるので、現金を使わずに資産運用を始めることができます。</p>
+
+            <div class="s1-hdg-lv3">
+              <h3 class="s1-hdg-lv3__element">3. 購入手数料0円</h3>
+            </div>
+            <p class="mb-double">対象のクロスカントリーファンドは購入手数料が無料。コストを抑えて長期投資ができます。</p>
+          </div>
+
+          <!-- セクション3: 商品ラインアップ -->
+          <div class="s1-hdg-lv2" id="lineup">
+            <h2 class="s1-hdg-lv2__element">主な商品ラインアップ</h2>
+          </div>
+
+          <!-- テーブル -->
+          <table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--row-color mb-normal">
+            <thead>
+              <tr>
+                <th>ファンド名</th>
+                <th>投資対象</th>
+                <th>リスク</th>
+                <th>為替ヘッジ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>グローバル・バランス・ファンド</th>
+                <td>先進国株式・債券</td>
+                <td class="ta-c">中</td>
+                <td class="ta-c">あり</td>
+              </tr>
+              <tr>
+                <th>世界成長株式ファンド</th>
+                <td>世界各国の成長株</td>
+                <td class="ta-c">高</td>
+                <td class="ta-c">なし</td>
+              </tr>
+              <tr>
+                <th>新興国分散投資ファンド</th>
+                <td>新興国株式・債券</td>
+                <td class="ta-c">高</td>
+                <td class="ta-c">なし</td>
+              </tr>
+              <tr>
+                <th>グローバルREITファンド</th>
+                <td>世界各国の不動産</td>
+                <td class="ta-c">中</td>
+                <td class="ta-c">選択可</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 注釈 -->
+          <ul class="s1-list-notice mb-double">
+            <li><div>※</div><div>上記は一例です。詳細は各ファンドの目論見書をご確認ください。</div></li>
+            <li><div>※</div><div>リスクレベルは当社独自の分類です。</div></li>
+          </ul>
+
+          <!-- お知らせボックス -->
+          <div class="s1-box-list-info mb-double">
+            <h2 class="s1-box-list-info__hdg">関連ニュース</h2>
+            <ul class="s1-list-info">
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/03/02</div>
+                <div class="s1-list-info__content"><a href="#">グローバル投資市場の最新動向レポート</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/03/01</div>
+                <div class="s1-list-info__content"><a href="#">新興国市場の投資機会について</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/02/28</div>
+                <div class="s1-list-info__content"><a href="#">為替ヘッジの仕組みと活用方法</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- セクション4: 始め方 -->
+          <div class="s1-hdg-lv2" id="howto">
+            <h2 class="s1-hdg-lv2__element">投資の始め方</h2>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p class="s1-entitle">ステップ</p>
+            <ol class="s1-list-num-bubble-count mb-normal">
+              <li>楽天証券の総合取引口座を開設</li>
+              <li>投資信託口座の開設手続き</li>
+              <li>お好みのクロスカントリーファンドを選択</li>
+              <li>一括購入または積立投資の設定</li>
+              <li>定期的に運用状況をチェック</li>
+            </ol>
+          </div>
+
+          <!-- 重要事項 -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">ご注意事項</h3>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <ul class="s1-list-standard">
+              <li>投資信託は元本保証ではありません。運用成果により投資元本を割り込むことがあります。</li>
+              <li>為替変動リスクがあります（為替ヘッジ付きファンドを除く）。</li>
+              <li>各ファンドには信託報酬等の費用がかかります。詳細は目論見書をご確認ください。</li>
+              <li>投資判断は、必ず目論見書をお読みいただいた上で、お客様ご自身でご判断ください。</li>
+            </ul>
+          </div>
+
+          <!-- コンバージョン -->
+          <div class="s1-box-conversion mb-double">
+            <div class="s1-btn-account-open">
+              <a href="/account/"><i class="s-glyph">&#xf10a;</i>&nbsp;口座申込</a>
+            </div>
+          </div>
+
+          <!-- 関連リンク -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">関連情報</h3>
+          </div>
+
+          <div class="s1-box-section mb-normal">
+            <ul class="s1-list-link">
+              <li class="s1-list-link__item"><a href="/fund/">投資信託トップ</a></li>
+              <li class="s1-list-link__item"><a href="/fund/ranking/">投資信託ランキング</a></li>
+              <li class="s1-list-link__item"><a href="/fund/guide/">投資信託の選び方ガイド</a></li>
+              <li class="s1-list-link__item"><a href="/learn/fund/">投資信託の基礎知識</a></li>
+              <li class="s1-list-link__item"><a href="/support/faq/fund/">よくあるご質問</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- SNS共有ボタン（2回目） -->
+        <!--#include virtual="/web/shared/include/socialbookmark/s1-parts.html"-->
+
+      </div>
+
+      <!-- 右側：サイドバー（SSI） -->
+      <div class="s1-content-area__sidebar" role="complementary">
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-side-account.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-side-login.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-common-side.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-common-info-side-contents.html"-->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- フッター（SSI） -->
+  <!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+
+  <!-- 分析タグ（SSI） -->
+  <!--#include virtual="/web/shared/include/analysis/analysis-sitecatalyst.html"-->
+  <!--#include virtual="/web/shared/include/analysis/analysis-mebius.html"-->
+</body>
+</html>
