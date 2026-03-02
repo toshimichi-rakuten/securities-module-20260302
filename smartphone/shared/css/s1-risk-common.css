@@ -1,0 +1,67 @@
+.s1-risk-common__container {
+  margin: 24px 16px;
+  padding-top: 24px;
+  border-top: 1px solid #D1D1D1; }
+
+.s1-risk-common h1 {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px; }
+  .s1-risk-common h1 i {
+    display: none; }
+
+.s1-risk-common h2 {
+  font-size: 14px;
+  margin-bottom: 16px; }
+
+.s1-risk-common p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 16px; }
+
+.s1-risk-common ul {
+  margin-bottom: 16px;
+  padding-left: 1.2em;
+  font-size: 12px;
+  line-height: 1.6; }
+  .s1-risk-common ul li {
+    margin-bottom: 8px;
+    position: relative; }
+    .s1-risk-common ul li:before {
+      content: "";
+      position: absolute;
+      top: 1em;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      margin-top: -5px;
+      margin-left: -12px;
+      font-size: inherit;
+      line-height: inherit;
+      border-radius: 100%;
+      background-color: #333333; }
+
+.s1-risk-common dl {
+  margin-bottom: 16px;
+  padding-left: 1.2em;
+  font-size: 12px;
+  line-height: 1.6; }
+  .s1-risk-common dl dt {
+    margin-bottom: 4px;
+    font-weight: bold;
+    position: relative; }
+    .s1-risk-common dl dt:before {
+      content: "";
+      position: absolute;
+      top: 1em;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      margin-top: -5px;
+      margin-left: -12px;
+      font-size: inherit;
+      line-height: inherit;
+      border-radius: 100%;
+      background-color: #333333; }
+  .s1-risk-common dl dd {
+    margin-bottom: 8px; }

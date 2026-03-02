@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+#keyboard_body {
+	display: none;
+	/*font-size: 18px !important;*/
+	padding: 0 !important;
+	overflow: hidden;
+	line-height: 1.45;
+}
+#keyboard_body .keyboard-tab {
+	height: 33px;
+	position: relative;
+	font-size: 12px !important;
+	margin-top: 10px;
+	background: url('/web/shared/img/sprite_key.png') no-repeat;
+	background-position: 0 -522px;
+}
+#keyboard_body .keyboard-tab a {
+	padding-left: 10px;
+	background: url('/web/shared/img/sprite_key.png') no-repeat top left;
+	background-position: 0 -469px;
+}
+#keyboard_body .key-group {
+	background-color: #DEDEF5;
+	margin-bottom: 0.2em;
+	padding: 0.4em 0 0 0.1em;
+	margin: 0 0.5em 0.6em 0.5em;
+	overflow: hidden;
+}
+#keyboard_body div {
+	margin-bottom: 0.0em;
+}
+#keyboard_body .ui-dialog-buttonpane {
+	background-color: #6671B3;
+}
+.keyboard_button {
+	font-size: 18px !important;
+	width: 27px;
+	height: 27px;
+	margin-left: 5px;
+	padding: 0 !important;
+	border: 0 !important;
+	background: url('/web/shared/img/sprite_key.png') no-repeat top left;
+	background-position: 0 -92px;
+	margin-bottom: 5px;
+	overflow:hidden;
+}
+.keyboard_button:hover {
+	background: url('/web/shared/img/sprite_key.png') no-repeat top left;
+	background-position: 0 -189px;
+}
+#keyboard_body div#otherHowuse {
+	float:left;
+	margin:5px 0px 0px 15px;
+}
+#keyboard_body a.howuse {
+	padding-left: 10px;
+	background: url('/web/shared/img/sprite_key.png') no-repeat scroll 0 -469px;
+text-decoration: none !important;
+}
+.ui-dialog-titlebar .ui-corner-all{
+	border-radius: 2px;
+	margin-top: 0;
+	margin-right: 10px;
+	top: 7px;
+	background: url("/web/shared/img/ui-bg_glass_75_dadada_1x400.png") repeat-x scroll 50% 50% #dadada;
+	border: 1px solid #999;
+	color: #212121;
+	font-weight: font-weight;
+}
+
+
+.white_content {
+    display: none;
+    position: absolute;	
+    left: 265px;
+    width: 360px;
+    height: auto;
+    padding: 16px;
+    border: 2px solid black;
+    background-color: white;
+    z-index:1015;
+    outline: 0px none currentcolor;
+    overflow: auto;
+}
+
+
+div#keyboard_body table th, div#keyboard_body table td {
+   padding-top:0px !important;
+   padding-bottom:0px !important;
+   padding-right:0px !important;
+   vertical-align:middle !important;
+}
+
+
+#keyboard_body a:link {
+text-decoration: none !important;
+}
+
+#keyboard_body a:hover {
+text-decoration: underline !important;
+}
+

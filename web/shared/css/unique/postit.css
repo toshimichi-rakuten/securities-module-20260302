@@ -1,0 +1,82 @@
+.postit{
+	position: absolute;
+	border: 1px solid #C0C0C0;
+	background-color: #ffffff;
+	left : 0px;
+	top : 0px;
+	width: 260px;
+	height: 35px;
+	filter:Alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+	-moz-box-shadow: 10px 10px 5px #C0C0C0; 
+	-webkit-box-shadow: 10px 10px 10px #C0C0C0;
+	 z-index: 9;
+}
+
+.bookmarkPostit{
+	position: absolute;
+	border: none;
+	width: 34px;
+	height: 44px;
+}
+
+.bookmarkButton{
+	position: absolute;
+	left : 0px;
+	top : 0px;
+}
+
+.postit img{
+	margin-bottom:3px;
+}
+
+div#memo-tab{
+position:absolute;
+width:22px;
+height:113px;
+left:0;
+top:0;
+background:url(/web/shared/images/postit/side-tab-bg.gif) no-repeat;
+display:block;
+}
+
+div#memo-tab dl{
+position:relative;
+padding-top:47px;
+}
+
+div#memo-tab dl dt{
+position:absolute;
+top:5px;
+left:5px;
+line-height:1;
+font-size:5px;
+}
+
+div#memo-tab dl dd{
+margin-left:2px;
+}
+
+div#memo-tab dl dd ul{
+}
+
+div#memo-tab dl dd ul li{
+margin-bottom:4px;
+line-height:1;
+font-size:5px;
+}
+
+div#memo-tab dl dd ul li img{
+cursor:pointer;
+}
+
+div#post-it-block {
+position:absolute;
+top:0;
+left:0; 
+background-color:black;
+filter: alpha(opacity=30);
+-moz-opacity : 0.3;
+-opacity : 0.3;
+}

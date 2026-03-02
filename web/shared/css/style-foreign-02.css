@@ -1,0 +1,202 @@
+@charset "UTF-8";
+.stk_tpselect {
+  position: absolute;
+  right: 265px;
+  width: 38%;
+  height: 38px;
+  overflow: hidden;
+  text-align: center;
+}
+.stk_tpselect select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.stk_tpselect select::-ms-expand {
+  display: none;
+}
+.stk_tpselect.stock_t1 {
+  border: 1px solid #999;
+  background: #F5F5F5;
+}
+.stk_tpselect.stock_t1::before {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  width: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+.stk_tpselect.stock_t1 select {
+  padding: 10px 38px 8px 8px;
+  color: #666666;
+}
+
+.form-eare {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.s1-search__input {
+  margin-right: -5px;
+}
+
+.link-pstion {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 0 !important;
+  width: 846px;
+  margin: 0px 14px;
+}
+
+.s1-swiper-area {
+  position: relative;
+  height: 280px;
+}
+.s1-swiper-area .s1-swiper {
+  height: 220px;
+}
+.s1-swiper-area .swiper-pagination {
+  height: 60px;
+  padding: 5px 4px;
+  box-sizing: border-box;
+  background-color: #d5d5d5;
+  display: flex;
+  z-index: 1;
+}
+.s1-swiper-area .swiper-pagination .swiper-pagination-bullet {
+  position: relative;
+  box-sizing: border-box;
+  width: 172px;
+  height: 50px;
+  padding: 0 6px;
+  border-radius: 0;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 1;
+  border-top: #ffffff 2px solid;
+}
+.s1-swiper-area .swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 2px;
+}
+.s1-swiper-area .swiper-pagination .swiper-pagination-bullet-active {
+  border-top: #EC0606 2px solid;
+}
+.s1-swiper-area .swiper-pagination .swiper-pagination-bullet-active::before {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  border-top-width: 6px;
+  border-bottom-width: 6px;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  margin-left: -6px;
+  border-bottom-color: #EC0606;
+  bottom: 100%;
+  left: 50%;
+}
+
+.foreign-market-summary {
+  font-family: "Roboto", "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", meiryo;
+}
+.foreign-market-summary__hdg {
+  background-color: #000;
+  padding: 7px 14px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+.foreign-market-summary__price {
+  position: absolute;
+  top: 7px;
+  right: 14px;
+  font-weight: normal;
+}
+.foreign-market-summary__content {
+  -webkit-box-shadow: 0 2px #eee;
+  box-shadow: 0 2px #eee;
+}
+
+.foreign-tbl-top {
+  width: 100%;
+  margin-bottom: 7px;
+}
+.foreign-tbl-top thead th {
+  background-color: #ccc;
+  font-size: 10px;
+  padding: 4px 14px;
+}
+.foreign-tbl-top tbody tr + tr {
+  border-top: 1px solid #ccc;
+}
+.foreign-tbl-top tbody td {
+  background-color: #fff;
+  font-size: 10px;
+  padding: 18px 20px;
+}
+.foreign-tbl-top tbody td img {
+  vertical-align: middle;
+}
+.foreign-tbl-top tbody td:nth-child(2) {
+  text-align: right;
+}
+.foreign-tbl-top tbody td:nth-child(3) {
+  text-align: right;
+}
+.foreign-tbl-top tbody td:nth-child(4) {
+  text-align: right;
+}
+.foreign-tbl-top tbody td a {
+  text-decoration: none;
+}
+.foreign-tbl-top tbody td a:link, .foreign-tbl-top tbody td a:visited, .foreign-tbl-top tbody td a:hover, .foreign-tbl-top tbody td a:active {
+  color: #000;
+}
+
+.foreign-request-box__link {
+  text-align: center;
+  background-color: #2CBD0F;
+}
+.foreign-request-box__txt {
+  background-color: #fff;
+}
+
+.s1-grid__cell--10-380 {
+  width: 380px;
+  float: left;
+  position: relative;
+}
+.s1-grid__cell--10-436 {
+  width: 436px;
+  float: left;
+  position: relative;
+  margin-left: 20px;
+}

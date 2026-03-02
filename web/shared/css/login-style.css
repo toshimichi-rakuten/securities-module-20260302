@@ -1,0 +1,31 @@
+@charset "utf-8";
+#sougou_login {
+    float: left;
+}
+#fx_login {
+    float: right;
+}
+.login_box {
+	width: 370px;
+    height: 250px;
+    margin-bottom: 50px;
+    padding: 14px 5px;
+    text-align: center;
+}
+
+.login {
+	background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 3px;
+    text-align: center;
+}
+
+fieldset#login ul {
+    margin: 0 15px 10px 0;
+    text-align: center;
+}
+
+fieldset#login ul li {
+    display: inline;
+    padding-right: 5px;
+}

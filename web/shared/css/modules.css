@@ -1,0 +1,5215 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Default Mragin
+*	02. Heading Module
+*	03. Paragraph Module
+*	04. Ordered List Module
+*	05. Unordered List Module
+*	06. Definition List Module
+*	07. Link List Module
+*	08. Index List Module
+*	09. Page Navigation Module
+*	10. Contents Navigation Module
+*	11. Notice Module
+*	12. Table Module
+*	13. Layout Images Module
+*	14. Layout Column Module
+*	15. Box Module
+*	16. Plugin Download Module
+*	17. Form Module
+*	18. Inquiry Component
+*	19. Q and A Component
+*	20. Topics Module
+*	21. Users Voice Component
+*	22. Banner Module
+*	23. Step Component
+*	24. relation Component
+*	25. Attention Component
+*	26. Box Document Component
+*	27. Box Login Component
+*	28. Group Link box
+*	29. Charm List Component
+*	30. Common
+*	31. reuters in_house
+*	32. Merit List Component
+----------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	01. Default Margin
+----------------------------------------------------------------- */
+div#str-main p,
+div#str-main ul,
+div#str-main ol,
+div#str-main dl,
+div#str-main table{
+margin-bottom:1em;
+}
+
+div#str-main ul p,
+div#str-main ul ul,
+div#str-main ul ol,
+div#str-main ul dl,
+div#str-main ul table,
+div#str-main ol p,
+div#str-main ol ul,
+div#str-main ol ol,
+div#str-main ol dl,
+div#str-main ol table,
+div#str-main dl p,
+div#str-main dl ul,
+div#str-main dl ol,
+div#str-main dl dl,
+div#str-main dl table{
+margin:0.15em 0 0.35em;
+font-size:100%;
+}
+
+div#str-main table p,
+div#str-main table ul,
+div#str-main table ol,
+div#str-main table dl,
+div#str-main table table{
+margin:0;
+font-size:100%;
+}
+
+/* ----------------------------------------------------------------
+	02. Heading Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	hdg-l1-01,hdg-l1-02,hdg-l1-03,hdg-l1-fx
+ -------------------------------- */
+div#str-contents-inner div.hdg-l1-01-container,
+div#str-contents-inner div.hdg-l1-02-container,
+div#str-contents-inner div.hdg-l1-04-container,
+div#str-contents-inner div.hdg-l1-05-container,
+div#str-main div.hdg-l1-01-container,
+div#str-main div.hdg-l1-02-container,
+div#str-main div.hdg-l1-03-container,
+div#str-main div.hdg-l1-04-container,
+div#str-main div.hdg-l1-05-container,
+div#str-main div.hdg-l1-fx-container{
+margin-bottom:15px;
+border-bottom:2px solid #f2f2f2;
+position:relative;
+}
+
+div#str-contents-inner .hdg-l1-01,
+div#str-contents-inner .hdg-l1-02,
+div#str-contents-inner .hdg-l1-04,
+div#str-contents-inner .hdg-l1-05,
+div#str-main .hdg-l1-01,
+div#str-main .hdg-l1-02,
+div#str-main .hdg-l1-03,
+div#str-main .hdg-l1-04,
+div#str-main .hdg-l1-05,
+div#str-main .hdg-l1-fx{
+padding:1px;
+border:1px solid #cacdd9;
+background:#ffffff;
+font-size:112.5%;
+}
+
+div#str-contents-inner .hdg-l1-01 span,
+div#str-contents-inner .hdg-l1-04 span,
+div#str-contents-inner .hdg-l1-05 span,
+div#str-main .hdg-l1-01 span,
+div#str-main .hdg-l1-03 span,
+div#str-main .hdg-l1-04 span,
+div#str-main .hdg-l1-05 span,
+div#str-main .hdg-l1-fx span{
+padding:3px 17px 4px;
+display:block;
+min-height:25px;
+background:#dddddd url("/web/shared/images/heading/hdg-l1-01-bg.gif") no-repeat 0 0;
+zoom:1;
+}
+
+/* ---------------------------------
+	hdg-l1-01
+ -------------------------------- */
+div#str-contents-inner .hdg-l1-01 span img,
+div#str-main .hdg-l1-01 span img{
+padding-top:3px;
+}
+
+/* ---------------------------------
+	hdg-l1-02
+ -------------------------------- */
+div#str-contents-inner .hdg-l1-02 span,
+div#str-main .hdg-l1-02 span{
+padding:3px 17px 4px 37px;
+display:block;
+min-height:25px;
+background:#dddddd url("/web/shared/images/heading/hdg-l1-02-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+div#str-contents-inner .hdg-l1-02 span.type-01,
+div#str-main .hdg-l1-02 span.type-01{
+padding-right:100px;
+}
+
+div#str-contents-inner div.hdg-l1-02-container ul.list-icon-01,
+div#str-main div.hdg-l1-02-container ul.list-icon-01{
+margin:0;
+}
+
+div#str-contents-inner div.hdg-l1-02-container ul.list-icon-01 li,
+div#str-main div.hdg-l1-02-container ul.list-icon-01 li{
+padding-right:5px;
+margin:0;
+position:absolute;
+top:6px;
+left:7px;
+}
+
+div#str-contents-inner div.hdg-l1-02-container ul.list-icon-01 li.nav-fx-top,
+div#str-main div.hdg-l1-02-container ul.list-icon-01 li.nav-fx-top{
+top:9px;
+right:5px;
+left:auto;
+}
+
+/* ---------------------------------
+	hdg-l1-03
+ -------------------------------- */
+div#str-main .hdg-l1-03-container{
+position:relative;
+}
+
+div#str-main .hdg-l1-03 span{
+padding-right:7em;
+}
+
+div#str-contents-inner div#str-main .hdg-l1-03-container p{
+margin:0;
+color:#666666;
+width:10em;
+position:absolute;
+top:0.75em;
+right:0.5em;
+text-align:right;
+}
+
+/* ---------------------------------
+	hdg-l1-04
+ -------------------------------- */
+div#str-contents-inner div.hdg-l1-04-container{
+position:relative;
+}
+
+div#str-contents-inner .hdg-l1-04 span{
+padding-right:630px;
+}
+
+div#str-contents-inner div.hdg-l1-04-container p.caption{
+position:absolute;
+top:0.75em;
+right:480px;
+width:150px;
+font-size:81.25%;
+font-weight:bold;
+}
+
+div#str-contents-inner div.hdg-l1-04-container p.day{
+margin:0;
+color:#666666;
+width:130px;
+position:absolute;
+top:0.8em;
+right:0.5em;
+font-size:75%;
+text-align:right;
+}
+
+div#str-contents-inner div.hdg-l1-04-container ul{
+margin:0;
+position:absolute;
+top:0.8em;
+right:130px;
+width:350px;
+font-size:75%;
+}
+
+div#str-contents-inner div.hdg-l1-04-container ul li{
+padding-right:10px;
+display:inline;
+}
+
+div#str-contents-inner div.hdg-l1-04-container ul li a{
+font-weight:bold;
+}
+
+/* ---------------------------------
+	hdg-l1-05
+ -------------------------------- */
+div#str-contents-inner div.hdg-l1-05-container{
+position:relative;
+}
+
+div#str-contents-inner .hdg-l1-05 span{
+padding-right:350px;
+}
+
+div#str-contents-inner div.hdg-l1-05-container ul{
+margin:0;
+position:absolute;
+top:0.8em;
+right:0;
+width:350px;
+font-size:75%;
+text-align:right;
+}
+
+div#str-contents-inner div.hdg-l1-05-container ul li{
+padding-right:10px;
+display:inline;
+}
+
+div#str-contents-inner div.hdg-l1-05-container ul li a{
+font-weight:bold;
+}
+
+/* ---------------------------------
+	hdg-l1-fx
+ -------------------------------- */
+div#str-main .hdg-l1-fx-container{
+position:relative;
+}
+
+div#str-main .hdg-l1-fx span{
+padding-right:80px;
+}
+
+div#str-main .hdg-l1-fx-container p{
+position:absolute;
+top:0.75em;
+right:0.5em;
+}
+
+div#str-main div.hdg-l1-fx-container-index{
+margin-bottom:15px;
+position:relative;
+}
+
+div#str-contents-inner div#str-main div.hdg-l1-fx-container-index p{
+margin:0;
+position:absolute;
+right:35px;
+bottom:17px;
+}
+
+
+/* ---------------------------------
+	hdg-l2-01,hdg-l2-02
+ -------------------------------- */
+div#str-main .hdg-l2-01,
+div#str-main .hdg-l2-02{
+margin-bottom:15px;
+padding:1px;
+border:1px solid #cacdd9;
+background:#ffffff;
+font-size:87.5%;
+}
+div#str-main .hdg-l2-01 span,
+div#str-main .hdg-l2-02 span{
+padding:7px 10px 2px;
+display:block;
+min-height:20px;
+background:#dfdfdf url("/web/shared/images/heading/hdg-l2-01-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+/* ---------------------------------
+	hdg-l2-02
+ -------------------------------- */
+div#str-main div.hdg-l2-02-container{
+margin-bottom:15px;
+position:relative;
+}
+
+div#str-main .hdg-l2-02{
+margin-bottom:0;
+}
+
+div#str-main .hdg-l2-02 span{
+padding-right:50px;
+}
+
+div#str-main div.hdg-l2-02-container ul.nav-link-01{
+margin:0;
+position:absolute;
+top:9px;
+right:7px;
+}
+
+div#str-main div.hdg-l2-02-container ul.nav-link-01 li{
+float:right;
+line-height:1;
+}
+
+/* ---------------------------------
+	hdg-l2-03,hdg-l2-04,hdg-l2-05
+ -------------------------------- */
+div#str-main .hdg-l2-03,
+div#str-main .hdg-l2-04,
+div#str-main .hdg-l2-05{
+margin-bottom:15px;
+padding-bottom:3px;
+border-bottom:1px solid #3f4da2;
+font-size:87.5%;
+}
+
+div#str-main .hdg-l2-03 span,
+div#str-main .hdg-l2-04 span,
+div#str-main .hdg-l2-05 span{
+padding:3px 10px 0;
+border-left:4px solid #3f4da2;
+display:block;
+min-height:20px;
+background:#e5e5e5 url("/web/shared/images/heading/hdg-l2-03-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+div#str-main .hdg-l2-03 span img.icon-01,
+div#str-main .hdg-l2-04 span img.icon-01,
+div#str-main .hdg-l2-05 span img.icon-01{
+vertical-align:top;
+}
+
+/* ---------------------------------
+	hdg-l2-04
+ -------------------------------- */
+div#str-main div.hdg-l2-04-container{
+position:relative;
+}
+
+div#str-main .hdg-l2-04 span{
+padding-right:10em;
+}
+
+div#str-contents-inner div#str-main div.hdg-l2-04-container p{
+margin:0;
+position:absolute;
+top:0.3em;
+right:0.2em;
+width:10em;
+color:#666666;
+font-size:81.3%;
+text-align:right;
+}
+
+/* ---------------------------------
+	hdg-l2-04-1
+ -------------------------------- */
+
+div#str-main div.hdg-l2-04-1container{
+position:relative;
+}
+
+div#str-contents-inner div#str-main div.hdg-l2-04-1container p{
+margin:0;
+position:absolute;
+top:0.3em;
+right:0.2em;
+width:30em;
+color:#666666;
+font-size:81.3%;
+text-align:right;
+}
+
+/* ---------------------------------
+	hdg-l2-05
+ -------------------------------- */
+div#str-main div.hdg-l2-05-container{
+position:relative;
+}
+
+div#str-main .hdg-l2-05 span{
+padding-right:150px;
+}
+
+div#str-main div.hdg-l2-05-container ul.list-icon-01{
+margin:0;
+position:absolute;
+top:0;
+right:0;
+}
+
+div#str-main div.hdg-l2-05-container ul.list-icon-01 li{
+padding-right:5px;
+float:left;
+line-height:1;
+}
+
+/* ---------------------------------
+	hdg-l2-06
+ -------------------------------- */
+div#str-contents-inner .hdg-l2-06{
+margin-bottom:15px;
+padding:1px;
+color:#fff;
+border:1px solid #cacdd9;
+font-size:87.5%;
+}
+
+div#str-contents-inner .hdg-l2-06 span{
+padding:3px 10px 3px 14px;
+display:block;
+min-height:20px;
+background:#0f218b url("/web/shared/images/heading/hdg-l2-06-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+div#str-contents-inner .hdg-l2-06 span img.icon{
+padding-top:2px;
+vertical-align:top;
+}
+
+div#str-contents-inner div.hdg-l2-06-container{
+position:relative;
+}
+
+div#str-contents-inner div.hdg-l2-06-container .hdg-l2-06 span{
+padding-right:95px;
+}
+
+div#str-contents-inner div.hdg-l2-06-container p.nav-more{
+margin:0;
+position:absolute;
+top:7px;
+right:7px;
+}
+
+/* ---------------------------------
+	hdg-l3-01,hdg-l3-02,hdg-l3-03
+ -------------------------------- */
+div#str-main .hdg-l3-01,
+div#str-main .hdg-l3-02,
+div#str-main .hdg-l3-03{
+margin-bottom:10px;
+background:url("/web/shared/images/heading/hdg-dot-01.gif") repeat-x 0 100%;
+font-size:87.5%;
+}
+
+div#str-main .hdg-l3-01 span,
+div#str-main .hdg-l3-02 span,
+div#str-main .hdg-l3-03 span{
+padding:0 0 3px 22px;
+display:block;
+min-height:20px;
+background:url("/web/shared/images/heading/hdg-bullet-01.gif") no-repeat 3px 7px;
+zoom:1;
+}
+
+/* ---------------------------------
+	hdg-l3-02
+ -------------------------------- */
+div#str-main div.hdg-l3-02-container{
+position:relative;
+}
+
+div#str-main .hdg-l3-02 span{
+padding-right:10em;
+}
+
+div#str-contents-inner div#str-main div.hdg-l3-02-container p{
+margin:0;
+position:absolute;
+top:0.2em;
+right:0.2em;
+width:10em;
+color:#666666;
+font-size:81.25%;
+text-align:right;
+}
+
+/* ---------------------------------
+	hdg-l3-03
+ -------------------------------- */
+div#str-main .hdg-l3-03 span img{
+vertical-align:top;
+}
+
+/* ---------------------------------
+	hdg-l3-04
+ -------------------------------- */
+div#str-main .hdg-l3-04{
+margin-bottom:10px;
+padding-bottom:3px;
+background:url("/web/shared/images/heading/hdg-dot-01.gif") repeat-x 0 100%;
+font-size:87.5%;
+}
+
+div#str-main .hdg-l3-04 img{
+vertical-align:top;
+}
+
+div#str-main .hdg-l3-04 span{
+display:block;
+zoom:1;
+}
+
+/* ---------------------------------
+	hdg-l3-05
+ -------------------------------- */
+div#str-main .hdg-l3-05{
+margin-bottom:5px;
+padding:4px 0 0 100px;
+position:relative;
+min-height:30px;
+font-size:87.5%;
+}
+
+div#str-main .hdg-l3-05 img{
+position:absolute;
+top:0;
+left:0;
+}
+
+/* ---------------------------------
+	hdg-l4
+ -------------------------------- */
+div#str-main .hdg-l4-01,
+div#str-main .hdg-l4-02{
+margin-bottom:10px;
+padding-left:12px;
+background:url("/web/shared/images/heading/hdg-l4-01-bg.gif") no-repeat 0 0;
+font-size:87.5%;
+}
+
+div#str-main .hdg-l4-02 img{
+padding-top:3px;
+vertical-align:top;
+}
+
+/* ---------------------------------
+	hdg-l5
+ -------------------------------- */
+div#str-main .hdg-l5-01{
+margin-bottom:10px;
+padding-left:12px;
+background:url("/web/shared/images/heading/hdg-l5-01-bg.gif") repeat-y 0 0;
+font-size:87.5%;
+} 
+
+/* ---------------------------------
+	hdg-l6
+ -------------------------------- */
+div#str-main .hdg-l6-01{
+margin-bottom:5px;
+font-size:87.5%;
+}
+
+
+/* ---------------------------------
+	IE Hack
+ -------------------------------- */
+/* ie6 */
+*html div#str-main .hdg-l3-03 span{
+background-position:3px 1px;
+}
+*html div#str-main .hdg-l3-03 span img{
+padding-bottom:3px;
+}
+*html div#str-main .hdg-l3-05{
+height:30px;
+}
+*html div#str-main .hdg-l4-02 img{
+margin-top:-3px;
+}
+
+/* ie7 */
+*+html div#str-main .hdg-l4-02 img{
+margin-top:-3px;
+}
+
+
+/* ----------------------------------------------------------------
+	03. Paragraph Module
+----------------------------------------------------------------- */
+div#str-main p{
+margin-right:8px;
+margin-left:8px;
+font-size:81.25%;
+}
+
+div#str-main p.align-C{
+text-align:center;
+}
+
+div#str-main p.align-R{
+text-align:right;
+}
+
+div#str-main p.entitle{
+margin-bottom:0.5em;
+padding-left:13px;
+background:url("/web/shared/images/bullet/bullet-02.gif") no-repeat 0 5px;
+font-weight:bold;
+}
+
+/* ---------------------------------
+	em,strong
+ -------------------------------- */
+div#str-main em.exception{
+color:#297acc;
+}
+
+div#str-main strong.exception{
+font-weight:normal;
+}
+
+/* ---------------------------------
+	doc-catchcopy-01,doc-catchcopy-02
+ -------------------------------- */
+div#str-main p.doc-catchcopy-01,
+div#str-main p.doc-catchcopy-02{
+margin-bottom:0.7em;
+font-size:87.5%;
+}
+
+div#str-main p.doc-catchcopy-01 img,
+div#str-main p.doc-catchcopy-02 img{
+padding-right:5px;
+vertical-align:middle;
+}
+
+div#str-main p.doc-catchcopy-01 strong{
+color:#333333;
+}
+
+div#str-main p.doc-catchcopy-02 strong{
+color:#297acc;
+}
+
+/* ---------------------------------
+	doc-catchcopy-link-01
+ -------------------------------- */
+div#str-main p.doc-catchcopy-link-01{
+margin-bottom:0.7em;
+font-size:87.5%;
+}
+
+div#str-main p.doc-catchcopy-link-01 a{
+font-weight:bold;
+}
+
+/* ---------------------------------
+	note-01,note-02
+ -------------------------------- */
+div#str-main sup.note-01,
+div#str-main sup.note-02{
+color:#d23100;
+}
+
+/* ---------------------------------
+	a.outside
+ -------------------------------- */
+div#str-main p a.outside,
+div#str-main li a.outside,
+div#str-main table a.outside{
+padding-left:17px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 2px;
+}
+
+/* ---------------------------------
+	p.link-01
+ -------------------------------- */
+div#str-main .link-01 img{
+vertical-align:middle;
+}
+
+div#str-main .link-01 a{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+}
+
+/* ---------------------------------
+	IE Hack [link-01]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main p.link-01{
+line-height:1.45;
+height:15px;
+}
+
+/* ie7 */
+*+html div#str-main p.link-01{
+zoom:0;
+}
+
+/* ---------------------------------
+	table > a.outside,p.link-01,a.link-01
+ -------------------------------- */
+div#str-main table a.link-01{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 4px;
+}
+
+div#str-main p a.outside:link,
+div#str-main li a.outside:link,
+div#str-main table a.outside:link,
+div#str-main .link-01 a:link,
+div#str-main table a.link-01:link,
+div#str-main p a.outside:visited,
+div#str-main li a.outside:visited,
+div#str-main table a.outside:visited,
+div#str-main .link-01 a:visited,
+div#str-main table a.link-01:visited{
+text-decoration:none;
+}
+
+div#str-main p a.outside:active,
+div#str-main li a.outside:active,
+div#str-main table a.outside:active,
+div#str-main .link-01 a:active,
+div#str-main table a.link-01:active,
+div#str-main p a.outside:hover,
+div#str-main li a.outside:hover,
+div#str-main table a.outside:hover,
+div#str-main .link-01 a:hover,
+div#str-main table a.link-01:hover,
+div#str-main p a.outside:focus,
+div#str-main li a.outside:focus,
+div#str-main table a.outside:focus,
+div#str-main .link-01 a:focus,
+div#str-main table a.link-01:focus{
+text-decoration:underline;
+}
+
+
+/* ----------------------------------------------------------------
+	04. Ordered List Module
+----------------------------------------------------------------- */
+div#str-main ol{
+font-size:81.25%;
+}
+
+/* ---------------------------------
+	list-ordered-01
+ -------------------------------- */
+div#str-main ol.list-ordered-01{
+margin-left:2.5em !important;
+}
+
+div#str-main li ol.list-ordered-01 li{
+padding-left:0;
+background-image:none;
+zoom:0 !important;
+}
+
+/* ---------------------------------
+	list-ordered-02
+ -------------------------------- */
+div#str-main ol.list-ordered-02{
+margin-right:8px;
+margin-left:8px;
+list-style:none;
+}
+
+div#str-main ol.list-ordered-02 li{
+margin-bottom:5px;
+padding-left:27px;
+background:url("/web/shared/images/bullet/bullet-number-01-01.gif") no-repeat 0 0;
+}
+
+div#str-main ol.list-ordered-02 li.nb2{
+background-image:url("/web/shared/images/bullet/bullet-number-01-02.gif");
+}
+div#str-main ol.list-ordered-02 li.nb3{
+background-image:url("/web/shared/images/bullet/bullet-number-01-03.gif");
+}
+div#str-main ol.list-ordered-02 li.nb4{
+background-image:url("/web/shared/images/bullet/bullet-number-01-04.gif");
+}
+div#str-main ol.list-ordered-02 li.nb5{
+background-image:url("/web/shared/images/bullet/bullet-number-01-05.gif");
+}
+div#str-main ol.list-ordered-02 li.nb6{
+background-image:url("/web/shared/images/bullet/bullet-number-01-06.gif");
+}
+div#str-main ol.list-ordered-02 li.nb7{
+background-image:url("/web/shared/images/bullet/bullet-number-01-07.gif");
+}
+div#str-main ol.list-ordered-02 li.nb8{
+background-image:url("/web/shared/images/bullet/bullet-number-01-08.gif");
+}
+div#str-main ol.list-ordered-02 li.nb9{
+background-image:url("/web/shared/images/bullet/bullet-number-01-09.gif");
+}
+div#str-main ol.list-ordered-02 li.nb10{
+background-image:url("/web/shared/images/bullet/bullet-number-01-10.gif");
+}
+div#str-main ol.list-ordered-02 li.nb11{
+background-image:url("/web/shared/images/bullet/bullet-number-01-11.gif");
+}
+div#str-main ol.list-ordered-02 li.nb12{
+background-image:url("/web/shared/images/bullet/bullet-number-01-12.gif");
+}
+div#str-main ol.list-ordered-02 li.nb13{
+background-image:url("/web/shared/images/bullet/bullet-number-01-13.gif");
+}
+div#str-main ol.list-ordered-02 li.nb14{
+background-image:url("/web/shared/images/bullet/bullet-number-01-14.gif");
+}
+div#str-main ol.list-ordered-02 li.nb15{
+background-image:url("/web/shared/images/bullet/bullet-number-01-15.gif");
+}
+
+/* ---------------------------------
+	list-ordered-03
+ -------------------------------- */
+div#str-main ol.list-ordered-03{
+margin-right:8px;
+margin-left:8px;
+list-style:none;
+}
+
+div#str-main ol.list-ordered-03 li{
+margin-bottom:5px;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 100%;
+}
+
+div#str-main ol.list-ordered-03 li span{
+padding-bottom:5px;
+padding-left:27px;
+display:block;
+background:url("/web/shared/images/bullet/bullet-number-01-01.gif") no-repeat 0 0;
+}
+
+div#str-main ol.list-ordered-03 li.nb2 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-02.gif");
+}
+div#str-main ol.list-ordered-03 li.nb3 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-03.gif");
+}
+div#str-main ol.list-ordered-03 li.nb4 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-04.gif");
+}
+div#str-main ol.list-ordered-03 li.nb5 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-05.gif");
+}
+div#str-main ol.list-ordered-03 li.nb6 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-06.gif");
+}
+div#str-main ol.list-ordered-03 li.nb7 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-07.gif");
+}
+div#str-main ol.list-ordered-03 li.nb8 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-08.gif");
+}
+div#str-main ol.list-ordered-03 li.nb9 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-09.gif");
+}
+div#str-main ol.list-ordered-03 li.nb10 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-10.gif");
+}
+div#str-main ol.list-ordered-03 li.nb11 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-11.gif");
+}
+div#str-main ol.list-ordered-03 li.nb12 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-12.gif");
+}
+div#str-main ol.list-ordered-03 li.nb13 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-13.gif");
+}
+div#str-main ol.list-ordered-03 li.nb14 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-14.gif");
+}
+div#str-main ol.list-ordered-03 li.nb15 span{
+background-image:url("/web/shared/images/bullet/bullet-number-01-15.gif");
+}
+
+/* ---------------------------------
+	list-ordered-04
+ -------------------------------- */
+div#str-main ol.list-ordered-04{
+margin-right:8px;
+margin-left:8px;
+list-style:none;
+}
+
+div#str-main ol.list-ordered-04 li{
+margin-bottom:7px;
+padding-left:27px;
+min-height:18px;
+background:url("/web/shared/images/bullet/bullet-number-03-01.gif") no-repeat 0 3px;
+}
+
+div#str-main ol.list-ordered-04 li.nb2{
+background-image:url("/web/shared/images/bullet/bullet-number-03-02.gif");
+}
+div#str-main ol.list-ordered-04 li.nb3{
+background-image:url("/web/shared/images/bullet/bullet-number-03-03.gif");
+}
+div#str-main ol.list-ordered-04 li.nb4{
+background-image:url("/web/shared/images/bullet/bullet-number-03-04.gif");
+}
+div#str-main ol.list-ordered-04 li.nb5{
+background-image:url("/web/shared/images/bullet/bullet-number-03-05.gif");
+}
+div#str-main ol.list-ordered-04 li.nb6{
+background-image:url("/web/shared/images/bullet/bullet-number-03-06.gif");
+}
+div#str-main ol.list-ordered-04 li.nb7{
+background-image:url("/web/shared/images/bullet/bullet-number-03-07.gif");
+}
+div#str-main ol.list-ordered-04 li.nb8{
+background-image:url("/web/shared/images/bullet/bullet-number-03-08.gif");
+}
+div#str-main ol.list-ordered-04 li.nb9{
+background-image:url("/web/shared/images/bullet/bullet-number-03-09.gif");
+}
+
+div#str-main ol.list-ordered-04 li.selected{
+padding-top:2px;
+min-height:20px;
+font-size:112.5%;
+font-weight:bold;
+}
+
+div#str-main ol.list-ordered-04 li.nb2.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-02.gif");
+}
+div#str-main ol.list-ordered-04 li.nb3.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-03.gif");
+}
+div#str-main ol.list-ordered-04 li.nb4.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-04.gif");
+}
+div#str-main ol.list-ordered-04 li.nb5.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-05.gif");
+}
+div#str-main ol.list-ordered-04 li.nb6.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-06.gif");
+}
+div#str-main ol.list-ordered-04 li.nb7.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-07.gif");
+}
+div#str-main ol.list-ordered-04 li.nb8.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-08.gif");
+}
+div#str-main ol.list-ordered-04 li.nb9.selected{
+background-image:url("/web/shared/images/bullet/bullet-number-02-09.gif");
+}
+
+
+/* ----------------------------------------------------------------
+	05. Unordered List Module
+----------------------------------------------------------------- */
+div#str-main ul{
+margin-right:8px;
+margin-left:8px;
+font-size:81.25%;
+}
+
+/* ---------------------------------
+	list-bullet-01
+ -------------------------------- */
+div#str-main ul.list-bullet-01 li{
+margin-bottom:0.2em;
+padding-left:20px;
+background:url("/web/shared/images/bullet/bullet-01.gif") no-repeat 0 3px;
+}
+
+div#str-main ul.list-bullet-01 li a.outside span{
+padding-left:15px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 4px;
+}
+
+/* ---------------------------------
+	list-bullet-02
+ -------------------------------- */
+div#str-main ul.list-bullet-02 li{
+margin-bottom:0.2em;
+padding-left:12px;
+min-height:15px;
+background:url("/web/shared/images/bullet/bullet-03.gif") no-repeat 0 7px;
+}
+
+/* ---------------------------------
+	list-bullet-03
+ -------------------------------- */
+div#str-main ul.list-bullet-03 li{
+margin-bottom:0.2em;
+padding-left:12px;
+background:url("/web/shared/images/bullet/bullet-02.gif") no-repeat 0 7px;
+}
+
+/* ---------------------------------
+	list-consecutive-01
+ -------------------------------- */
+div#str-main ul.list-consecutive-01 li{
+padding-left:2em;
+position:relative;
+}
+div#str-main ul.list-consecutive-01 li span{
+position:absolute;
+top:0;
+left:0;
+}
+
+/* ---------------------------------
+	body.lyt-column-smc > list-col2,list-col3
+ -------------------------------- */
+div#str-main ul.list-col2,
+div#str-main ul.list-col3{
+width:537px;
+}
+
+div#str-main ul.list-col2 li{
+padding-right:10px;
+float:left;
+width:238px;
+}
+
+div#str-main ul.list-col3 li{
+padding-right:10px;
+float:left;
+width:149px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > list-col2,list-col3
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main ul.list-col2,
+body.lyt-column-ms-01 div#str-main ul.list-col3{
+width:749px;
+}
+
+body.lyt-column-ms-01 div#str-main ul.list-col2 li{
+width:344px;
+}
+
+body.lyt-column-ms-01 div#str-main ul.list-col3 li{
+width:219px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-col2,list-col3
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main ul.list-col2,
+body.lyt-column-ms-02 div#str-main ul.list-col3{
+width:629px;
+}
+
+body.lyt-column-ms-02 div#str-main ul.list-col2 li{
+width:284px;
+}
+
+body.lyt-column-ms-02 div#str-main ul.list-col3 li{
+width:179px;
+}
+
+/* ---------------------------------
+	list-image-01
+ -------------------------------- */
+div#str-main ul.list-image-01 li{
+display:inline;
+}
+
+div#str-main ul.list-image-01 li img{
+padding:0 5px 7px 0;
+}
+
+div#str-main ul.list-image-01 li input{
+margin-right:3px;
+}
+
+/* ---------------------------------
+	IE Hack [list-image-01]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main ul.list-image-01 li img{
+padding-right:7px;
+}
+/* ie7 */
+*+html div#str-main ul.list-image-01 li img{
+padding-right:7px;
+}
+
+/* ---------------------------------
+	list-check-01
+ -------------------------------- */
+div#str-main ul.list-check-01 li{
+margin-bottom:1em;
+}
+
+div#str-main ul.list-check-01 img{
+padding:4px 0 7px 20px;
+background:url("/web/shared/images/icon/icon-check-01.gif") no-repeat 0 0;
+}
+
+div#str-main ul.list-check-01 p{
+margin-left:0;
+padding-left:20px;
+}
+
+/* ---------------------------------
+	list-attention-01
+ -------------------------------- */
+div#str-main ul.list-attention-01 li{
+margin-bottom:0.45em;
+padding-left:25px;
+min-height:20px;
+background:url("/web/shared/images/icon/icon-attention-01.gif") no-repeat 0 0;
+}
+
+/* ---------------------------------
+	list-advertisement-01
+ -------------------------------- */
+div#str-main ul.list-advertisement-01 li{
+padding-left:2em;
+position:relative;
+}
+
+div#str-main ul.list-advertisement-01 li span{
+position:absolute;
+top:0;
+left:0;
+color:#bf0000;
+}
+
+
+/* ----------------------------------------------------------------
+	06. Definition List Module
+----------------------------------------------------------------- */
+div#str-main dl{
+margin-right:8px;
+margin-left:8px;
+font-size:81.25%;
+}
+
+/* ---------------------------------
+	list-normal-01
+ -------------------------------- */
+div#str-main dl.list-normal-01 dt{
+font-weight:bold;
+}
+
+div#str-main dl.list-normal-01 dd{
+margin-bottom:0.8em;
+}
+
+
+/* ----------------------------------------------------------------
+	07. Link List Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	list-link-01,list-link-02
+ -------------------------------- */
+div#str-main ul.list-link-01 li,
+div#str-main ul.list-link-02 li{
+margin-bottom:0.2em;
+padding-left:15px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 7px;
+}
+
+div#str-main ul.list-link-01 li.outside,
+div#str-main ul.list-link-02 li.outside{
+padding-left:17px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 5px;
+}
+
+div#str-main ul.list-link-01 li p,
+div#str-main ul.list-link-02 li p{
+margin:0 0 0.5em 0;
+}
+
+div#str-main ul.list-link-01 li img,
+div#str-main ul.list-link-02 li img{
+vertical-align:middle;
+}
+
+div#str-main ul.list-link-02 li{
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 4px;
+}
+
+/* ---------------------------------
+	list-col except from ie6
+ -------------------------------- */
+html>body div#str-main ul.list-link-01.list-col2 li,
+html>body div#str-main ul.list-link-02.list-col2 li{
+width:241px;
+}
+
+html>body div#str-main ul.list-link-01.list-col3 li,
+html>body div#str-main ul.list-link-02.list-col3 li{
+width:151px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > list-col
+ -------------------------------- */
+html>body.lyt-column-ms-01 div#str-main ul.list-link-01.list-col2 li,
+html>body.lyt-column-ms-01 div#str-main ul.list-link-02.list-col2 li{
+width:347px;
+}
+
+html>body.lyt-column-ms-01 div#str-main ul.list-link-01.list-col3 li,
+html>body.lyt-column-ms-01 div#str-main ul.list-link-02.list-col3 li{
+width:222px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-col
+ -------------------------------- */
+html>body.lyt-column-ms-02 div#str-main ul.list-link-01.list-col2 li,
+html>body.lyt-column-ms-02 div#str-main ul.list-link-02.list-col2 li{
+width:287px;
+}
+
+html>body.lyt-column-ms-02 div#str-main ul.list-link-01.list-col3 li,
+html>body.lyt-column-ms-02 div#str-main ul.list-link-02.list-col3 li{
+width:182px;
+}
+
+/* ---------------------------------
+	list-link-03
+ -------------------------------- */
+div#str-main ul.list-link-03{
+margin-left:0;
+text-align:right;
+}
+
+div#str-main ul.list-link-03 li{
+padding-left:27px;
+display:inline;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 10px 2px;
+}
+
+/* ---------------------------------
+	list-link-04
+ -------------------------------- */
+div#str-main ul.list-link-04{
+margin:0 0 1.25em;
+padding:5px 15px;
+background-color:#edeef7;
+text-align:right;
+}
+
+div#str-main ul.list-link-04 li{
+padding-left:10px;
+display:inline;
+}
+
+div#str-main ul.list-link-04 li a{
+padding-left:15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 2px;
+}
+
+div#str-main ul.list-link-04 li img{
+padding-bottom:2px;
+vertical-align:middle;
+}
+
+/* ---------------------------------
+	list-link-05
+ -------------------------------- */
+div#str-main ul.list-link-05{
+margin:0 0 1.25em;
+}
+
+div#str-main ul.list-link-05 li{
+padding:0 8px 10px;
+float:left;
+}
+
+div#str-main ul.list-link-05 li span{
+padding-left:10px;
+display:block;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 6px;
+}
+
+div#str-main ul.list-link-05 li a.outside{
+padding-left:0;
+background-image:none;
+}
+
+div#str-main ul.list-link-05 li a.outside span{
+padding-left:15px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 4px;
+}
+
+/* ---------------------------------
+	menu,menu01
+	
+	4/12 /web/domestic/etf/merit/merit-01.html
+ -------------------------------- */
+div#str-main ul.menu:after,
+div#str-main ul.menu01:after{
+display:block;
+clear:both;
+height:0;
+line-height:1%;
+visibility:hidden;
+content:".";
+}
+
+div#str-main ul.menu{
+margin:0;
+padding-bottom:10px;
+list-style:none;
+display:inline-block;
+zoom:1;
+}
+
+div#str-main ul.menu li{
+margin:0;
+padding:0;
+float:left;
+}
+
+div#str-main ul.menu01{
+margin: 10px;
+/*padding-bottom: 10px;*/
+list-style: none;
+display:inline-block;
+zoom:1;
+}
+
+div#str-main ul.menu01 li{
+margin-left: 30px;
+padding: 0;
+float: left;
+text-align:center;
+}
+
+/* ---------------------------------
+	IE Hack [list-link]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main ul.list-link-01 li,
+*html div#str-main ul.list-link-02 li{
+height:15px;
+}
+
+*html div#str-main ul.list-link-03 li{
+background-position:10px 5px;
+}
+
+/* ie7 */
+*+html div#str-main ul.list-link-03 li{
+background-position:10px 5px;
+}
+
+/* ---------------------------------
+	list-link > a
+ -------------------------------- */
+div#str-main ul.list-link-01 li a:link,
+div#str-main ul.list-link-02 li a:link,
+div#str-main ul.list-link-03 li a:link,
+div#str-main ul.list-link-04 li a:link,
+div#str-main ul.list-link-05 li a:link,
+div#str-main ul.list-link-01 li a:visited,
+div#str-main ul.list-link-02 li a:visited,
+div#str-main ul.list-link-03 li a:visited,
+div#str-main ul.list-link-04 li a:visited,
+div#str-main ul.list-link-05 li a:visited{
+text-decoration:none;
+}
+
+div#str-main ul.list-link-01 li a:active,
+div#str-main ul.list-link-02 li a:active,
+div#str-main ul.list-link-03 li a:active,
+div#str-main ul.list-link-04 li a:active,
+div#str-main ul.list-link-05 li a:active,
+div#str-main ul.list-link-01 li a:hover,
+div#str-main ul.list-link-02 li a:hover,
+div#str-main ul.list-link-03 li a:hover,
+div#str-main ul.list-link-04 li a:hover,
+div#str-main ul.list-link-05 li a:hover,
+div#str-main ul.list-link-01 li a:focus,
+div#str-main ul.list-link-02 li a:focus,
+div#str-main ul.list-link-03 li a:focus,
+div#str-main ul.list-link-04 li a:focus,
+div#str-main ul.list-link-05 li a:focus{
+text-decoration:underline;
+}
+
+
+/* ----------------------------------------------------------------
+	08. Index List Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	list-index-01,list-index-01-odd
+ -------------------------------- */
+div#str-main div.list-index-01,
+div#str-main div.list-index-01-odd{
+margin-bottom:1.25em;
+padding:10px 10px 4px;
+background-color:#c9caea;
+}
+
+div#str-main div.list-index-01 ul,
+div#str-main div.list-index-01 dl,
+div#str-main div.list-index-01 p,
+div#str-main div.list-index-01-odd ul,
+div#str-main div.list-index-01-odd dl,
+div#str-main div.list-index-01-odd p{
+margin:0;
+}
+div#str-main div.list-index-01 ul,
+div#str-main div.list-index-01-odd ul{
+margin-right:-7px;
+}
+
+div#str-main div.list-index-01 ul li,
+div#str-main div.list-index-01-odd ul li{
+margin:0 7px 7px 0;
+padding:7px 12px;
+border:2px solid #ffffff;
+float:left;
+width:231px;
+background:#f4f4f4 url("/web/shared/images/bg-modules/bg-list-index-01.gif") repeat-x 0 0;
+}
+
+div#str-main div.list-index-01-odd ul li.w-full{
+width:497px;
+height:auto !important;
+}
+
+div#str-main div.list-index-01 dl,
+div#str-main div.list-index-01-odd dl{
+min-height:45px;
+}
+
+div#str-main div.list-index-01 dl dt,
+div#str-main div.list-index-01-odd dl dt{
+padding-left:55px;
+position:relative;
+font-size:107.7%;
+font-weight:bold;
+}
+
+div#str-main div.list-index-01 dl dt img,
+div#str-main div.list-index-01-odd dl dt img{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#str-main div.list-index-01 dl dt a:link,
+div#str-main div.list-index-01 dl dt a:visited,
+div#str-main div.list-index-01-odd dl dt a:link,
+div#str-main div.list-index-01-odd dl dt a:visited{
+text-decoration:underline;
+}
+
+div#str-main div.list-index-01 dl dt a:active,
+div#str-main div.list-index-01 dl dt a:hover,
+div#str-main div.list-index-01 dl dt a:focus,
+div#str-main div.list-index-01-odd dl dt a:active,
+div#str-main div.list-index-01-odd dl dt a:hover,
+div#str-main div.list-index-01-odd dl dt a:focus{
+text-decoration:none;
+}
+
+div#str-main div.list-index-01 dl dd.copy,
+div#str-main div.list-index-01-odd dl dd.copy{
+padding:2px 0 0 55px;
+font-weight:bold;
+}
+
+div#str-main div.list-index-01 dl dd.blurb-01,
+div#str-main div.list-index-01-odd dl dd.blurb-01{
+padding-top:0.7em;
+}
+
+div#str-main div.list-index-01 dl dd.blurb-02,
+div#str-main div.list-index-01-odd dl dd.blurb-02{
+padding:0.5em 0 0 55px;
+}
+
+div#str-main div.list-index-01 p,
+div#str-main div.list-index-01-odd p{
+padding-top:5px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > list-index-01,list-index-01-odd
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.list-index-01-odd ul li.w-full{
+width:707px;
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-01 ul li,
+body.lyt-column-ms-01 div#str-main div.list-index-01-odd ul li{
+width:336px;
+}
+
+body.lyt-column-ms-01 div#str-main div.column-col2 div.list-index-01 ul li,
+body.lyt-column-ms-01 div#str-main div.column-col2 div.list-index-01-odd ul li{
+width:323px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-index-01,list-index-01-odd
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.list-index-01-odd ul li.w-full{
+width:587px;
+}
+
+body.lyt-column-ms-02 div#str-main div.list-index-01 ul li,
+body.lyt-column-ms-02 div#str-main div.list-index-01-odd ul li{
+width:276px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-index-01-odd01
+ -------------------------------- */
+div#str-main div.list-index-01-odd01{
+margin-bottom:1.25em;
+padding:10px 10px 4px;
+background-color:#E8EFFC;
+}
+
+div#str-main div.list-index-01-odd01 span{
+width:2em;
+margin-right:1em;
+margin-bottom:1.25em;
+padding:3px;
+background-color:#FF6666;
+color:#ffffff;
+}
+
+/* ---------------------------------
+	IE Hack [list-index-01,list-index-01-odd]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.list-index-01 dl,
+*html div#str-main div.list-index-01-odd dl{
+height:45px;
+}
+
+/* ie7 */
+*+html div#str-main div.list-index-01,
+*+html div#str-main div.list-index-01-odd{
+padding-bottom:10px;
+}
+
+/* ---------------------------------
+	list-index-02,list-index-02-odd
+ -------------------------------- */
+div#str-main div.list-index-02,
+div#str-main div.list-index-02-odd{
+margin-bottom:1.25em;
+}
+
+div#str-main div.list-index-02 ul,
+div#str-main div.list-index-02-odd ul{
+margin:0;
+width:558px;
+background-color:#ffffff;
+}
+
+div#str-main div.list-index-02 ul li,
+div#str-main div.list-index-02-odd ul li{
+margin:0 13px 13px 0;
+padding-bottom:3px;
+float:left;
+width:266px;
+background:url("/web/shared/images/bg-modules/bg-box-01.gif") repeat-x 0 100%;
+}
+
+div#str-main div.list-index-02-odd ul li.w-full{
+width:545px;
+height:auto !important;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01,
+div#str-main div.list-index-02-odd ul li div.box-inner-01{
+padding:1px;
+border:1px solid #cfcfcf;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01 dl,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dl{
+margin:0;
+
+border:1px solid #e4e4e4;
+background:url("/web/shared/images/bg-modules/bg-list-index-02.gif") no-repeat 0 100%;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01 dt,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt{
+margin:1px 0 0 1px;
+padding:11px 0 5px 105px;
+border-left:3px solid #424e98;
+position:relative;
+font-size:107.7%;
+font-weight:bold;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01 dt img,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt img{
+position:absolute;
+top:11px;
+left:14px;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01 dt a:link,
+div#str-main div.list-index-02 ul li div.box-inner-01 dt a:visited,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt a:link,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt a:visited{
+text-decoration:underline;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01 dt a:active,
+div#str-main div.list-index-02 ul li div.box-inner-01 dt a:hover,
+div#str-main div.list-index-02 ul li div.box-inner-01 dt a:focus,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt a:active,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt a:hover,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dt a:focus{
+text-decoration:none;
+}
+
+div#str-main div.list-index-02 ul li div.box-inner-01 dd,
+div#str-main div.list-index-02-odd ul li div.box-inner-01 dd{
+margin:0 0 1px 1px;
+padding:0 10px 5px 105px;
+border-left:3px solid #424e98;
+min-height:60px;
+}
+
+div#str-main div.list-index-02 ul.type-01 li div.box-inner-01 dt,
+div#str-main div.list-index-02-odd ul.type-01 li div.box-inner-01 dt{
+padding:16px 0 5px 50px;
+}
+
+div#str-main div.list-index-02 ul.type-01 li div.box-inner-01 dd,
+div#str-main div.list-index-02-odd ul.type-01 li div.box-inner-01 dd{
+padding:10px 10px 7px 15px;
+min-height:20px;
+}
+
+div#str-main div.list-index-02 ul.type-02 li div.box-inner-01 dt,
+div#str-main div.list-index-02-odd ul.type-02 li div.box-inner-01 dt{
+padding:10px 10px 0 15px;
+}
+
+div#str-main div.list-index-02 ul.type-02 li div.box-inner-01 dd,
+div#str-main div.list-index-02-odd ul.type-02 li div.box-inner-01 dd{
+padding:10px 10px 7px 15px;
+min-height:20px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > list-index-02,list-index-02-odd
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.list-index-02 ul,
+body.lyt-column-ms-01 div#str-main div.list-index-02-odd ul{
+width:768px;
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-02-odd ul li.w-full{
+width:755px;
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-02 ul li,
+body.lyt-column-ms-01 div#str-main div.list-index-02-odd ul li{
+width:371px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-index-02,list-index-02-odd
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.list-index-02 ul,
+body.lyt-column-ms-02 div#str-main div.list-index-02-odd ul{
+width:648px;
+}
+
+body.lyt-column-ms-02 div#str-main div.list-index-02-odd ul li.w-full{
+width:635px;
+}
+
+body.lyt-column-ms-02 div#str-main div.list-index-02 ul li,
+body.lyt-column-ms-02 div#str-main div.list-index-02-odd ul li{
+width:311px;
+}
+
+/* ---------------------------------
+	IE Hack [list-index-02,list-index-03]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.list-index-02 ul li div.box-inner-01 dd,
+*html div#str-main div.list-index-02-odd ul li div.box-inner-01 dd{
+height:60px !important;
+}
+
+*html div#str-main div.list-index-02 ul.type-01 li div.box-inner-01 dd,
+*html div#str-main div.list-index-02 ul.type-02 li div.box-inner-01 dd,
+*html div#str-main div.list-index-02-odd ul.type-01 li div.box-inner-01 dd,
+*html div#str-main div.list-index-02-odd ul.type-02 li div.box-inner-01 dd{
+height:20px !important;
+}
+
+/* ie7 */
+*+html div#str-main div.list-index-02,
+*+html div#str-main div.list-index-02-odd,
+*+html div#str-main div.list-index-03,
+*+html div#str-main div.list-index-03-odd{
+margin-bottom:1.25em;
+}
+
+/* ---------------------------------
+	list-index-03,list-index-03-odd
+ -------------------------------- */
+div#str-main div.list-index-03,
+div#str-main div.list-index-03-odd{
+margin-right:-13px;
+padding-bottom:1.25em;
+background-color:#ffffff;
+}
+
+div#str-main div.list-index-03 ul,
+div#str-main div.list-index-03-odd ul{
+margin:0;
+width:558px;
+}
+
+div#str-main div.list-index-03 ul li,
+div#str-main div.list-index-03-odd ul li{
+margin:0 13px 13px 0;
+padding-bottom:3px;
+float:left;
+width:173px;
+background:url("/web/shared/images/bg-modules/bg-box-01.gif") repeat-x 0 100%;
+}
+
+div#str-main div.list-index-03 ul li p,
+div#str-main div.list-index-03 ul li dl,
+div#str-main div.list-index-03-odd ul li p,
+div#str-main div.list-index-03-odd ul li dl{
+margin:0;
+padding:10px 10px 4px 70px;
+border:1px solid #cacdd9;
+position:relative;
+min-height:50px;
+font-weight:bold;
+font-size:107.7%;
+}
+
+div#str-main div.list-index-03 ul li p a:link,
+div#str-main div.list-index-03 ul li dl dt a:link,
+div#str-main div.list-index-03 ul li p a:visited,
+div#str-main div.list-index-03 ul li dl dt a:visited,
+div#str-main div.list-index-03-odd ul li p a:link,
+div#str-main div.list-index-03-odd ul li dl dt a:link,
+div#str-main div.list-index-03-odd ul li p a:visited,
+div#str-main div.list-index-03-odd ul li dl dt a:visited{
+text-decoration:underline;
+}
+
+div#str-main div.list-index-03 ul li p a:active,
+div#str-main div.list-index-03 ul li dl dt a:active,
+div#str-main div.list-index-03 ul li p a:hover,
+div#str-main div.list-index-03 ul li dl dt a:hover,
+div#str-main div.list-index-03 ul li p a:focus,
+div#str-main div.list-index-03 ul li dl dt a:focus,
+div#str-main div.list-index-03-odd ul li p a:active,
+div#str-main div.list-index-03-odd ul li dl dt a:active,
+div#str-main div.list-index-03-odd ul li p a:hover,
+div#str-main div.list-index-03-odd ul li dl dt a:hover,
+div#str-main div.list-index-03-odd ul li p a:focus,
+div#str-main div.list-index-03-odd ul li dl dt a:focus{
+text-decoration:none;
+}
+
+div#str-main div.list-index-03 ul li p img,
+div#str-main div.list-index-03-odd ul li p img{
+position:absolute;
+top:8px;
+left:10px;
+}
+
+div#str-main div.list-index-03 ul li dl dt span.add,
+div#str-main div.list-index-03-odd ul li dl dt span.add{
+font-size:92.3%;
+}
+
+div#str-main div.list-index-03 ul li dl dd,
+div#str-main div.list-index-03-odd ul li dl dd{
+padding-top:5px;
+font-weight:normal;
+font-size:85.7%;
+}
+
+div#str-main div.list-index-03 ul.type-01 li p,
+div#str-main div.list-index-03 ul.type-01 li dl,
+div#str-main div.list-index-03-odd ul.type-01 li p,
+div#str-main div.list-index-03-odd ul.type-01 li dl{
+padding-bottom:10px;
+padding-left:10px;
+min-height:1em;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > list-index-03,list-index-03-odd
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.list-index-03 ul,
+body.lyt-column-ms-01 div#str-main div.list-index-03-odd ul{
+width:768px;
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-03 ul li,
+body.lyt-column-ms-01 div#str-main div.list-index-03-odd ul li{
+width:243px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-index-03,list-index-03-odd
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.list-index-03 ul,
+body.lyt-column-ms-02 div#str-main div.list-index-03-odd ul{
+width:648px;
+}
+
+body.lyt-column-ms-02 div#str-main div.list-index-03 ul li,
+body.lyt-column-ms-02 div#str-main div.list-index-03-odd ul li{
+width:203px;
+}
+
+/* ---------------------------------
+	IE Hack [list-index-03]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.list-index-03 ul li p,
+*html div#str-main div.list-index-03-odd ul li p{
+height:56px !important;
+}
+
+*html div#str-main div.list-index-03 ul.type-01 li p,
+*html div#str-main div.list-index-03-odd ul.type-01 li p{
+height:1em !important;
+}
+
+/* ---------------------------------
+	list-index-04
+ -------------------------------- */
+div#str-main div.list-index-04{
+margin-bottom:1.25em;
+}
+
+div#str-main div.list-index-04 ul{
+margin:0;
+}
+
+div#str-main div.list-index-04 ul li{
+margin-bottom:12px;
+padding-bottom:8px;
+background:url("/web/shared/images/bg-modules/bg-box-03-bottom-545.gif") no-repeat 0 100%;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01{
+padding-bottom:1px;
+background:url("/web/shared/images/bg-modules/bg-box-03-middle-545.gif") repeat-y 0 0;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dl{
+margin-top:0;
+padding:25px 25px 20px;
+min-height:120px;
+background:url("/web/shared/images/bg-modules/bg-box-03-top-545.gif") no-repeat 0 0;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dt{
+padding:0 0 10px 180px;
+position:relative;
+font-weight:bold;
+font-size:107.7%;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dt a:link,
+div#str-main div.list-index-04 ul li div.box-inner-01 dt a:visited{
+text-decoration:underline;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dt a:active,
+div#str-main div.list-index-04 ul li div.box-inner-01 dt a:hover,
+div#str-main div.list-index-04 ul li div.box-inner-01 dt a:focus{
+text-decoration:none;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dt img{
+padding-left:5px;
+vertical-align:middle;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dt img.thumb{
+padding:0;
+position:absolute;
+top:0;
+left:0;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dd{
+margin-left:180px;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dd.schedule{
+padding:10px 0 0 3em;
+position:relative;
+font-weight:bold;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 dd.schedule span{
+padding:2px;
+position:absolute;
+top:7px;
+left:0;
+color:#ffffff;
+background-color:#e97818;
+font-weight:normal;
+}
+
+div#str-main div.list-index-04 ul li div.box-inner-01 ul li{
+background-image:none;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > list-index-04
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.list-index-04 ul li{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-bottom-755.gif");
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-04 ul li div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-middle-755.gif");
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-04 ul li div.box-inner-01 dl{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-top-755.gif");
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > list-index-04
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.list-index-04 ul li{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-bottom-635.gif");
+}
+
+body.lyt-column-ms-02 div.list-index-04 ul li div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-middle-635.gif");
+}
+
+body.lyt-column-ms-02 div.list-index-04 ul li div.box-inner-01 dl{
+background:url("/web/shared/images/bg-modules/bg-box-03-top-635.gif");
+}
+
+/* ---------------------------------
+	IE Hack [list-index-04]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.list-index-04 ul li div.box-inner-01 dl{
+height:120px;
+}
+
+/* ---------------------------------
+	list-index-05
+ -------------------------------- */
+div#str-main div.list-index-05 ul{
+margin:0 0 1.25em;
+}
+
+div#str-main div.list-index-05 dt{
+padding:5px;
+background:#e8e9f4 url("/web/shared/images/dot/dot-03.gif") repeat-x 0 100%;
+font-weight:bold;
+font-size:107.7%;
+}
+
+div#str-main div.list-index-05 dt img{
+vertical-align:middle;
+}
+
+div#str-main div.list-index-05 dt a:link,
+div#str-main div.list-index-05 dt a:visited{
+text-decoration:underline;
+}
+
+div#str-main div.list-index-05 dt a:active,
+div#str-main div.list-index-05 dt a:hover,
+div#str-main div.list-index-05 dt a:focus{
+text-decoration:none;
+}
+
+div#str-main div.list-index-05 dd{
+padding:10px 0;
+}
+
+
+/* ----------------------------------------------------------------
+	09. Page Navigation Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	nav-page-01
+ -------------------------------- */
+div#str-main ul.nav-page-01{
+margin:0 0 2.5em;
+position:relative;
+}
+
+div#str-main ul.nav-page-01 li.prev{
+padding-left:17px;
+position:absolute;
+top:0;
+left:0;
+width:80px;
+background:url("/web/shared/images/arrow/arrow-back-01.gif") no-repeat 0 5px;
+}
+
+div#str-main ul.nav-page-01 li.next{
+padding-right:17px;
+position:absolute;
+top:0;
+right:0;
+width:80px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 100% 5px;
+text-align:right;
+}
+
+div#str-main ul.nav-page-01 li.page-number{
+padding:0 100px;
+text-align:center;
+}
+
+div#str-main ul.nav-page-01 li.page-number li{
+padding:0 3px;
+display:inline;
+line-height:2;
+} /* change padding value on 2011.7.15 padding:0 1px; */
+
+div#str-main ul.nav-page-01 li.page-number li a{
+padding:3px 6px;
+border:1px solid #b7b7b7;
+text-decoration:none;
+}
+
+div#str-main ul.nav-page-01 li.page-number li a:hover,
+div#str-main ul.nav-page-01 li.page-number li a:focus{
+background-color:#3f4da2;
+color:#ffffff;
+}
+
+div#str-main ul.nav-page-01 li.page-number li.selected a{
+background-color:#3f4da2;
+color:#ffffff;
+}
+
+div#str-main ul.nav-page-01 li.page-number span{
+position:absolute;
+top:0;
+left:-9999px;
+height:0;
+font-size:0;
+}
+
+/* add class on 2011.7.15 */
+div#str-main ul.nav-page-01 li { letter-spacing:-.40em; }
+div#str-main ul.nav-page-01 li.prev,
+div#str-main ul.nav-page-01 li.next { letter-spacing: normal; }
+div#str-main ul.nav-page-01 li li { letter-spacing: normal; }
+
+/* ---------------------------------
+	nav-page-02
+ -------------------------------- */
+div#str-main ul.nav-page-02{
+margin:0 0 1.25em;
+position:relative;
+min-height:1.5em;
+}
+
+div#str-main ul.nav-page-02 li.next{
+float:right;
+width:45%;
+text-align:right;
+}
+
+div#str-main ul.nav-page-02 li.next a{
+padding-left:17px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 3px;
+}
+
+div#str-main ul.nav-page-02 li.prev{
+float:left;
+width:50%;
+}
+
+div#str-main ul.nav-page-02 li.twitter{
+margin:-7px 5px 0 0;
+float:right;
+width:25%;
+text-align:right;
+position:relative;
+}
+
+div#str-main ul.nav-page-02 li.social-bookmark{
+margin:-7px 5px 0 0;
+float:right;
+width:184px;
+text-align:right;
+position:relative;
+}
+
+div#str-main ul.nav-page-02 li.social-bookmark ul li{
+float:left;
+margin-left: 5px;
+display: inline;
+}
+
+div#str-main ul.nav-page-02 li.prev a{
+padding-left:17px;
+background:url("/web/shared/images/arrow/arrow-back-01.gif") no-repeat 0 3px;
+}
+
+div#str-main ul.nav-page-02 li.type-l{
+width:65%;
+}
+
+div#str-main ul.nav-page-02 li.type-s{
+width:25%;
+}
+
+
+#str-main div.sns-sbs {
+margin:0 0 10px;
+padding:5px 10px;
+background-color:#eee;
+border:1px solid #ddd;
+}
+#str-main div.sns-sbs ul.sns-list {
+margin:0;
+padding:0;
+}
+#str-main div.sns-sbs ul.sns-list li {
+float:left;
+margin:0 10px 0 0;
+padding:0;
+height:24px;
+line-height:24px;
+}
+#str-main div.sns-sbs ul.sns-list li.twitter-d {
+margin-top:0;
+margin-right:8px;
+}
+#str-main div.sns-sbs ul.sns-list li.facebook-d { margin-right:4px; }
+#str-main div.sns-sbs ul.sns-list li.google-plus-d { margin-top:2px; }
+#str-main div.sns-sbs ul.sns-list li.delicious-c,
+#str-main div.sns-sbs ul.sns-list li.livedoor-c,
+#str-main div.sns-sbs ul.sns-list li.google-c,
+#str-main div.sns-sbs ul.sns-list li.yahoo-c,
+#str-main div.sns-sbs ul.sns-list li.hatena-c { margin-top:-3px; }
+
+#str-main div.IE7 ul.sns-list li.delicious-c,
+#str-main div.IE7 ul.sns-list li.livedoor-c,
+#str-main div.IE7 ul.sns-list li.google-c,
+#str-main div.IE7 ul.sns-list li.yahoo-c,
+#str-main div.IE7 ul.sns-list li.hatena-c { margin-top:0; }
+
+#str-main div.IE8 ul.sns-list li.delicious-c,
+#str-main div.IE8 ul.sns-list li.livedoor-c,
+#str-main div.IE8 ul.sns-list li.google-c,
+#str-main div.IE8 ul.sns-list li.yahoo-c,
+#str-main div.IE8 ul.sns-list li.hatena-c { margin-top:3px; }
+
+#str-main div.IE6 { display:none; }
+#str-main div.sns-sbs:after {
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+/* ---------------------------------
+	nav-page-03
+ -------------------------------- */
+div#str-main div.nav-page-03{
+margin-bottom:2.5em;
+padding:2px;
+border:1px solid #d5dbf0;
+}
+
+div#str-main div.nav-page-03 ul{
+margin:0;
+padding:7px 14px;
+background-color:#edeef7;
+}
+
+div#str-main div.nav-page-03 ul li{
+display:inline;
+line-height:2;
+}
+
+div#str-main div.nav-page-03 ul li a{
+padding:0 20px 0 17px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 2px;
+}
+
+div#str-main div.nav-page-03 ul.type-01 li{
+display:block;
+}
+
+/* ---------------------------------
+	nav-page-01,nav-page-02,nav-page-03 > a
+ -------------------------------- */
+div#str-main ul.nav-page-01 a:link,
+div#str-main ul.nav-page-02 a:link,
+div#str-main div.nav-page-03 a:link,
+div#str-main ul.nav-page-01 a:visited,
+div#str-main ul.nav-page-02 a:visited,
+div#str-main div.nav-page-03 a:visited{
+text-decoration:none;
+}
+
+div#str-main ul.nav-page-01 a:active,
+div#str-main ul.nav-page-02 a:active,
+div#str-main div.nav-page-03 a:active,
+div#str-main ul.nav-page-01 a:hover,
+div#str-main ul.nav-page-02 a:hover,
+div#str-main div.nav-page-03 a:hover,
+div#str-main ul.nav-page-01 a:focus,
+div#str-main ul.nav-page-02 a:focus,
+div#str-main div.nav-page-03 a:focus{
+text-decoration:underline;
+}
+
+/* ---------------------------------
+	IE Hack [nav-page-02,nav-page-03]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main ul.nav-page-02 li{
+background-position:10px 5px;
+}
+
+*html div#str-main ul.nav-page-03 li{
+padding-right:5px;
+background-position:10px 5px;
+}
+
+/* ---------------------------------
+	nav-btn-01
+ -------------------------------- */
+div#str-main div.nav-btn-01{
+margin-bottom:1.25em;
+}
+
+div#str-main div.nav-btn-01 p{
+margin-left:0;
+text-align:center;
+}
+
+div#str-main div.nav-btn-01 p img{
+padding-bottom:5px;
+}
+
+/* ---------------------------------
+	nav-btn-02
+ -------------------------------- */
+div#str-main div.nav-btn-02{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+}
+
+div#str-main div.nav-btn-02 p{
+margin:0;
+padding:15px 210px 15px 10px ;
+border:1px solid #dedede;
+position:relative;
+min-height:30px;
+}
+
+div#str-main div.nav-btn-02 p img{
+position:absolute;
+top:15px;
+right:10px;
+}
+
+
+/* ----------------------------------------------------------------
+	10. Contents Navigation Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	nav-contents-01
+ -------------------------------- */
+div#str-main ul.nav-contents-01{
+margin:0 0 2em;
+}
+
+div#str-main ul.nav-contents-01 li.top{
+text-align:right;
+}
+
+div#str-main ul.nav-contents-01 li.top a{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-backtop-01.gif") no-repeat 0 2px;
+font-size:87.5%;
+}
+
+/* ---------------------------------
+	nav-contents-02
+ -------------------------------- */
+div#str-main div.nav-contents-02{
+margin-bottom:2.5em;
+padding:2px;
+border:1px solid #d5dbf0;
+}
+
+div#str-main div.nav-contents-02 ul{
+margin:0;
+padding:7px 14px;
+background-color:#edeef7;
+}
+
+div#str-main div.nav-contents-02 ul li{
+display:inline;
+line-height:2;
+}
+
+div#str-main div.nav-contents-02 ul.type-01 li{
+display:block;
+}
+
+div#str-main div.nav-contents-02 ul li a{
+padding:0 20px 0 17px;
+background:url("/web/shared/images/arrow/arrow-bottom-01.gif") no-repeat 0 2px;
+}
+
+/* ---------------------------------
+	nav-contents-03
+ -------------------------------- */
+div#str-main div.nav-contents-03{
+margin-bottom:2.5em;
+}
+
+div#str-main div.nav-contents-03 ol{
+margin-right:8px;
+margin-left:8px;
+list-style:none;
+}
+
+div#str-main div.nav-contents-03 ol li{
+margin-bottom:0.45em;
+padding-left:15px;
+background:url("/web/shared/images/arrow/arrow-bottom-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div.nav-contents-03 ol li a{
+padding:2px 0 1px 27px;
+display:block;
+min-height:20px;
+background:url("/web/shared/images/bullet/bullet-number-02-01.gif") no-repeat 0 0;
+}
+div#str-main div.nav-contents-03 ol li.nb2 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-02.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb3 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-03.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb4 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-04.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb5 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-05.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb6 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-06.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb7 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-07.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb8 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-08.gif");
+}
+div#str-main div.nav-contents-03 ol li.nb9 a{
+background-image:url("/web/shared/images/bullet/bullet-number-02-09.gif");
+}
+
+/* ---------------------------------
+	nav-contents-01,nav-contents-02,nav-contents-03 > a
+ -------------------------------- */
+div#str-main ul.nav-contents-01 li a:link,
+div#str-main div.nav-contents-02 li a:link,
+div#str-main div.nav-contents-03 li a:link,
+div#str-main ul.nav-contents-01 li a:visited,
+div#str-main div.nav-contents-02 li a:visited,
+div#str-main div.nav-contents-03 li a:visited{
+text-decoration:none;
+}
+
+div#str-main ul.nav-contents-01 li a:active,
+div#str-main div.nav-contents-02 li a:active,
+div#str-main div.nav-contents-03 li a:active,
+div#str-main ul.nav-contents-01 li a:hover,
+div#str-main div.nav-contents-02 li a:hover,
+div#str-main div.nav-contents-03 li a:hover,
+div#str-main ul.nav-contents-01 li a:focus,
+div#str-main div.nav-contents-02 li a:focus,
+div#str-main div.nav-contents-03 li a:focus{
+text-decoration:underline;
+}
+
+/* ---------------------------------
+	nav-tab-container
+ -------------------------------- */
+div#str-contents-inner div.nav-tab-container{
+margin-bottom:1.5em;
+padding-bottom:3px;
+background:url("/web/shared/images/reuters/bg-nav-tab-01.gif") repeat-x 0 100%;
+position:relative;
+}
+
+div#str-contents-inner div.nav-tab-container ul{
+margin:0;
+margin-bottom:0;
+}
+div#str-contents-inner div.nav-tab-container ul li{
+padding-right:2px;
+float:left;
+}
+
+/* ---------------------------------
+	nav-tab-container > nav-tab-01
+ -------------------------------- */
+div#str-main div.nav-tab-container ul.nav-tab-01{
+padding-right:145px;
+}
+
+div#str-main div.nav-tab-container p.nav-more{
+margin:-1.9em 0 0;
+padding-bottom:3px;
+float:right;
+width:145px;
+text-align:right;
+font-size:68.8%;
+}
+
+div#str-main div.nav-tab-container p.nav-more a{
+padding-left:12px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 0;
+}
+
+div#str-main div.nav-tab-container p.nav-more a:link,
+div#str-main div.nav-tab-container p.nav-more a:visited{
+text-decoration:none;
+}
+
+div#str-main div.nav-tab-container p.nav-more a:active,
+div#str-main div.nav-tab-container p.nav-more a:hover,
+div#str-main div.nav-tab-container p.nav-more a:focus{
+text-decoration:underline;
+}
+
+
+/* ---------------------------------
+	body#lyt-column-ms-01 > nav-tab-01
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.nav-tab-container ul.nav-tab-01{
+padding-right:300px;
+}
+
+body.lyt-column-ms-01 div#str-main div.nav-tab-container p.nav-more{
+width:300px;
+}
+
+/* ---------------------------------
+	nav-tab-container > nav-tab-02
+ -------------------------------- */
+div#str-contents-inner div.nav-tab-container ul.nav-tab-02{
+padding-right:500px;
+}
+
+div#str-contents-inner div.nav-tab-container ul.list-add-01{
+position:absolute;
+top:-8px;
+right:0;
+width:480px;
+}
+
+div#str-contents-inner div.nav-tab-container ul.list-add-01 li{
+padding-top:10px;
+float:left;
+}
+
+div#str-contents-inner div.nav-tab-container ul.list-add-01 li.reset-01{
+padding-top:0;
+}
+
+/* ----------------------------------------------------------------
+	11. Notice Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	list-notice-01,list-notice-02
+ -------------------------------- */
+div#str-main ul.list-notice-01 li,
+div#str-main ul.list-notice-02 li{
+margin-bottom:0.25em;
+padding-left:1.35em;
+position:relative;
+}
+
+div#str-main ul.list-notice-01 li span{
+position:absolute;
+top:0;
+left:0;
+color:#d23100;
+}
+
+div#str-main ul.list-notice-02 li{
+color:#d23100;
+}
+
+div#str-main ul.list-notice-02 li span{
+position:absolute;
+top:0;
+left:0;
+}
+
+/* ---------------------------------
+	ul li > list-notice-01,list-notice-02
+ -------------------------------- */
+div#str-main li ul.list-notice-01 li,
+div#str-main li ul.list-notice-02 li{
+background-image:none;
+}
+
+/* ---------------------------------
+	list-notice-numbered-01,list-notice-numbered-02
+ -------------------------------- */
+div#str-main ul.list-notice-numbered-01 li,
+div#str-main ul.list-notice-numbered-02 li{
+margin-bottom:0.25em;
+padding-left:2em;
+position:relative;
+}
+
+div#str-main ul.list-notice-numbered-01 li span,
+div#str-main ul.list-notice-numbered-02 li span{
+position:absolute;
+top:0;
+left:0;
+color:#d23100;
+}
+
+div#str-main ul.list-notice-numbered-02 li,
+div#str-main ul.list-notice-numbered-02 li span{
+color:#d23100;
+}
+
+div#str-main ul.list-notice-numbered-01 li ul,
+div#str-main ul.list-notice-numbered-02 li ul{
+margin-left:0;
+}
+
+div#str-main ul.list-notice-numbered-01 li li,
+div#str-main ul.list-notice-numbered-02 li li{
+padding-left:10px;
+color:#333333;
+background:url("/web/shared/images/bullet/bullet-03.gif") no-repeat 0 7px;
+}
+
+/* ---------------------------------
+	IE Hack [list-notice-01]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main li ul.list-notice-01 li{
+zoom:1;
+}
+
+
+/* ----------------------------------------------------------------
+	12. Table Module
+----------------------------------------------------------------- */
+div#str-main table{
+width:100%;
+border:none;
+background-color:#ffffff;
+font-size:81.25%;
+}
+
+div#str-main table th,
+div#str-main table td{
+padding:5px;
+border-width:0 1px 1px 0;
+border-color:#c3c3c3;
+border-style:solid;
+vertical-align:top;
+font-weight:normal;
+text-align:left;
+}
+
+div#str-main table tfoot th,
+div#str-main table tfoot td{
+background-color:#f9ead2;
+}
+
+div#str-main table thead th a{
+color:#ffffff;
+}
+
+div#str-main table td a:link,
+div#str-main table td a:visited{
+text-decoration:underline;
+}
+
+div#str-main table td a:active,
+div#str-main table td a:hover,
+div#str-main table td a:focus{
+text-decoration:none;
+}
+
+div#str-main table td ul a:link,
+div#str-main table td ul a:visited{
+text-decoration:none;
+}
+
+div#str-main table td ul a:active,
+div#str-main table td ul a:hover,
+div#str-main table td ul a:focus{
+text-decoration:underline;
+}
+
+/* ---------------------------------
+	tbl-data-01,tbl-data-02,tbl-data-03,tbl-data-04
+ -------------------------------- */
+div#str-main table.tbl-data-01,
+div#str-main table.tbl-data-02,
+div#str-main table.tbl-data-03,
+div#str-main table.tbl-data-04{
+border-width:1px 0 0 1px;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main table.tbl-data-01 thead th,
+div#str-main table.tbl-data-02 thead th,
+div#str-main table.tbl-data-03 thead th,
+div#str-main table.tbl-data-04 thead th{
+background-color:#3f4da2;
+color:#ffffff;
+}
+
+div#str-main table.tbl-data-01 tbody th,
+div#str-main table.tbl-data-02 tbody th,
+div#str-main table.tbl-data-03 tbody th{
+background-color:#cfd5ef;
+}
+
+/* ---------------------------------
+	tbl-data-02
+ -------------------------------- */
+div#str-main table.tbl-data-02 tr.even th{
+background-color:#bac2e3;
+}
+
+div#str-main table.tbl-data-02 tr.even td{
+background-color:#f3f5f9;
+}
+
+/* ---------------------------------
+	tbl-data-03
+ -------------------------------- */
+div#str-main table.tbl-data-03 td{
+background-color:#fcfcd6;
+text-align:center;
+}
+
+div#str-main table.tbl-data-03 td.cell-01{
+background-color:#e5f5c9;
+}
+div#str-main table.tbl-data-03 td.cell-02{
+background-color:#f9ead2;
+}
+
+/* ---------------------------------
+	tbl-data-04
+ -------------------------------- */
+div#str-main table.tbl-data-04 tbody th{
+background-color:#ffffff;
+}
+
+/* ---------------------------------
+	tbl-data-05
+ -------------------------------- */
+div#str-main table.tbl-data-05{
+border-width:1px 0 0 1px;
+border-color:#ffffff;
+border-style:solid;
+}
+
+div#str-main table.tbl-data-05 th,
+div#str-main table.tbl-data-05 td{
+border-width:0 1px 1px 0;
+border-color:#ffffff;
+border-style:solid;
+}
+
+div#str-main table.tbl-data-05 colgroup.rakuten-fx{
+background-color:#e7cd85;
+}
+
+div#str-main table.tbl-data-05 colgroup.market-fx{
+background-color:#d1def8;
+}
+
+div#str-main table.tbl-data-05 thead th{
+color:#ffffff;
+text-align:center;
+font-weight:bold;
+}
+
+div#str-main table.tbl-data-05 thead th.rakuten-fx{
+background-color:#502d11;
+}
+
+div#str-main table.tbl-data-05 thead th.market-fx{
+background-color:#003399;
+}
+
+div#str-main table.tbl-data-05 tbody th{
+background-color:#e5e5e5;
+}
+
+/* ---------------------------------
+	tbl-description-01
+ -------------------------------- */
+div#str-main table.tbl-description-01{
+border-top:1px solid #c3c3c3;
+}
+
+div#str-main table.tbl-description-01 th,
+div#str-main table.tbl-description-01 td{
+padding:5px 12px;
+border-width:0 0 1px 0;
+}
+
+div#str-main table.tbl-description-01 th{
+background:url("/web/shared/images/dot/dot-02.gif") repeat-y 100% 0;
+}
+
+/* ---------------------------------
+	tbl-description-02
+ -------------------------------- */
+div#str-main table.tbl-description-02{
+width:100%;
+}
+
+div#str-main table.tbl-description-02 th,
+div#str-main table.tbl-description-02 td{
+padding:0;
+border-width:0;
+}
+
+div#str-main table.tbl-description-02 p{
+padding:10px 0;
+}
+
+/* ---------------------------------
+	type-china
+ -------------------------------- */
+div#str-main table.type-china thead th{
+background-color:#ae3338;
+}
+
+div#str-main table.type-china tbody th{
+background-color:#f2cbd0;
+}
+
+/* ---------------------------------
+	tbl-data-etf
+ -------------------------------- */
+div#str-main table.tbl-data-etf{
+border-width:1px 0 0 1px;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main table.tbl-data-etf thead th{
+color:#ffffff;
+background-color:#3f4da2;
+vertical-align:middle;
+text-align:center;
+}
+
+div#str-main table.tbl-data-etf tbody th{
+width:47%;
+}
+
+div#str-main table.tbl-data-etf td.code{
+padding:3px;
+background-color:#cfd5ef;
+width:12%;
+font-size:115.4%;
+font-weight:bold;
+vertical-align:middle;
+text-align:center;
+}
+
+div#str-main table.tbl-data-etf tr.type-01 th,
+div#str-main table.tbl-data-etf tr.type-01 td{
+background-color:#f3f5f9;
+}
+
+div#str-main table.tbl-data-etf tr.type-01 td.code{
+background-color:#bac2e3;
+}
+
+div#str-main table.tbl-data-etf td li{
+margin-bottom:0;
+}
+
+div#str-main table.tbl-data-etf td ul.details li{
+padding-right:10px;
+background-position:2px 3px;
+display:inline;
+}
+
+div#str-main table.tbl-data-etf td ul.list-image-01 li img{
+padding-right:5px;
+}
+
+/* ---------------------------------
+	tbl-document-01
+ -------------------------------- */
+div#str-main table.tbl-document-01 th,
+div#str-main table.tbl-document-01 td{
+border:none;
+}
+
+/* ---------------------------------
+	IE Hack [tbl-data-etf]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main table.tbl-data-etf td ul.details li{
+background-position:2px 7px;
+}
+
+/* ie7 */
+*+html div#str-main table.tbl-data-etf td ul.details li{
+background-position:2px 7px;
+}
+
+/* ---------------------------------
+	table > cell-01,cell-02
+ -------------------------------- */
+div#str-main table .cell-01{
+background-color:#f9ead2;
+}
+
+div#str-main table .cell-02{
+background-color:#fcfcd6;
+}
+
+/* ---------------------------------
+	cell Control
+ -------------------------------- */
+div#str-main table .w-05{width:5%;}
+div#str-main table .w-10{width:10%;}
+div#str-main table .w-15{width:15%;}
+div#str-main table .w-20{width:20%;}
+div#str-main table .w-25{width:25%;}
+div#str-main table .w-30{width:30%;}
+div#str-main table .w-35{width:35%;}
+div#str-main table .w-40{width:40%;}
+
+/* ---------------------------------
+	cell align Control
+ -------------------------------- */
+div#str-main table .align-C{
+text-align:center;
+}
+
+div#str-main table thead.align-C th,
+div#str-main table tbody.align-C td{
+text-align:center;
+}
+
+div#str-main table .align-R{
+text-align:right
+}
+
+div#str-main table thead.align-R th,
+div#str-main table tbody.align-R td{
+text-align:right;
+}
+
+div#str-main table .v-align-M{
+vertical-align:middle;
+}
+
+/* ---------------------------------
+	cell background Control
+ -------------------------------- */
+div#str-main table tr.bg-reset th,
+div#str-main table tr.bg-reset td,
+div#str-main table th.bg-reset,
+div#str-main table td.bg-reset{
+background:none;
+}
+/* ---------------------------------
+	cell nowrap Control
+ -------------------------------- */
+div#str-main table .nowrap{
+white-space:nowrap;
+}
+
+/* ---------------------------------
+	cell Control [stoc]
+ -------------------------------- */
+div#str-main table .up-01,
+div#str-main table .new-01{
+color:#ff0101;
+font-weight:bold;
+}
+
+div#str-main table .up-02,
+div#str-main table .new-02{
+color:#ff0101;
+}
+
+div#str-main table .down-01{
+color:#4eba00;
+font-weight:bold;
+}
+
+div#str-main table .down-02{
+color:#4eba00;
+}
+
+div#str-main table .same-01{
+font-weight:bold;
+}
+
+/* ---------------------------------
+	tbl-flow-01
+ -------------------------------- */
+div#str-main div.tbl-flow-01{
+width:570px;
+}
+
+div#str-main div.tbl-flow-01 div.tbl-col{
+padding-right:25px;
+float:left;
+background:url("/web/shared/images/arrow/arrow-flow-01.gif") no-repeat 99% 50%;
+}
+
+div#str-main div.tbl-flow-01 div.last{
+padding-right:0;
+background-image:none;
+}
+
+div#str-main div.tbl-flow-01 div.w-410{
+width:410px;
+}
+
+div#str-main div.tbl-flow-01 div.w-110{
+width:110px;
+}
+
+div#str-main div.tbl-flow-01 div.w-260{
+width:260px;
+}
+
+/* ---------------------------------
+	tbl-help-ranking-01
+ -------------------------------- */
+div#str-main table.tbl-help-ranking-01{
+border:none;
+}
+
+div#str-main table.tbl-help-ranking-01 th,
+div#str-main table.tbl-help-ranking-01 td{
+padding:7px 5px;
+border:none;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 100%;
+}
+
+div#str-main table.tbl-help-ranking-01 th{
+padding:7px 2px;
+}
+
+div#str-main table.tbl-help-ranking-01 tbody th{
+color:#183167;
+font-weight:bold;
+text-align:center;
+}
+
+div#str-main table.tbl-help-ranking-01 td.nb1,
+div#str-main table.tbl-help-ranking-01 td.nb2,
+div#str-main table.tbl-help-ranking-01 td.nb3{
+font-size:107.7%;
+font-weight:bold;
+}
+
+
+/* ----------------------------------------------------------------
+	13. Layout Images Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	lyt-image
+ -------------------------------- */
+div#str-main div.lyt-image{
+margin-bottom:0;
+padding:0 8px;
+}
+
+div#str-main div.lyt-image p{
+margin:0 0 0.75em 0;
+}
+
+div#str-main div.lyt-image p img{
+}
+
+div#str-main div.lyt-image p span.caption{
+color:#888888;
+font-size:87.5%;
+}
+
+/* ---------------------------------
+	image-col1,image-col1-full,image-col2,image-col3,image-col4
+ -------------------------------- */
+div#str-main div.image-col1{
+width:529px;
+}
+
+div#str-main div.image-col1-full{
+padding:0;
+}
+
+div#str-main div.image-col1 p,
+div#str-main div.image-col1-full p{
+float:none;
+text-align:center;
+}
+
+div#str-main div.image-col2,
+div#str-main div.image-col3,
+div#str-main div.image-col4{
+width:542px;
+}
+
+div#str-main div.image-col1 img,
+div#str-main div.image-col1-full img,
+div#str-main div.image-col2 img,
+div#str-main div.image-col3 img,
+div#str-main div.image-col4 img{
+padding-bottom:3px;
+}
+
+div#str-main div.image-col2 p{
+padding-right:13px;
+float:left;
+width:258px;
+}
+
+div#str-main div.image-col3 p{
+padding-right:13px;
+float:left;
+width:167px;
+}
+
+div#str-main div.image-col4 p{
+padding-right:13px;
+float:left;
+width:122px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > image-col1,image-col1-full,image-col2,image-col3,image-col4
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.image-col1{
+width:739px;
+}
+body.lyt-column-ms-01 div#str-main div.image-col2,
+body.lyt-column-ms-01 div#str-main div.image-col3,
+body.lyt-column-ms-01 div#str-main div.image-col4{
+width:752px;
+}
+body.lyt-column-ms-01 div#str-main div.image-col2 p{
+width:363px;
+}
+body.lyt-column-ms-01 div#str-main div.image-col3 p{
+width:237px;
+}
+body.lyt-column-ms-01 div#str-main div.image-col4 p{
+width:175px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > image-col1,image-col1-full,image-col2,image-col3,image-col4
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.image-col1{
+width:622px;
+}
+body.lyt-column-ms-02 div#str-main div.image-col2,
+body.lyt-column-ms-02 div#str-main div.image-col3,
+body.lyt-column-ms-02 div#str-main div.image-col4{
+width:632px;
+}
+body.lyt-column-ms-02 div#str-main div.image-col2 p{
+width:303px;
+}
+body.lyt-column-ms-02 div#str-main div.image-col3 p{
+width:197px;
+}
+body.lyt-column-ms-02 div#str-main div.image-col4 p{
+width:145px;
+}
+
+/* ---------------------------------
+	image-L,image-R
+ -------------------------------- */
+div#str-main div.image-L p.image{
+padding:0 14px 10px 0;
+float:left;
+}
+
+div#str-main div.image-R p.image{
+padding:0 0 10px 14px;
+float:right;
+}
+
+div.lyt-image.image-float{
+direction:ltr !important;
+}
+
+div#str-main div.lyt-image.image-L div.image{
+padding-right:14px;
+}
+
+div#str-main div.lyt-image.image-R div.image{
+padding-left:14px;
+}
+
+div#str-main div.lyt-image.image-L div.image p.image,
+div#str-main div.lyt-image.image-R div.image p.image{
+padding:0;
+float:none;
+}
+
+div#str-main div.lyt-image.image-parallel div.image,
+div#str-main div.lyt-image.image-parallel div.column{
+text-align:left;
+}
+
+div#str-main div.lyt-image.image-parallel.image-L div.image{
+float:left;
+}
+
+div#str-main div.lyt-image.image-parallel.image-R div.image{
+float:right;
+}
+
+/* ---------------------------------
+	IE Hack [image-col2,image-col3,image-col4]
+ -------------------------------- */
+/* ie7 */
+*+html div#str-main div.image-col2,
+*+html div#str-main div.image-col3,
+*+html div#str-main div.image-col4{
+margin-bottom:14px;
+}
+
+
+/* ----------------------------------------------------------------
+	14. Layout Column Module
+----------------------------------------------------------------- */
+div#str-contents-inner div.lyt-column{
+width:765px;
+}
+
+div#str-main div.lyt-column{
+width:558px;
+}
+
+div#str-main div.lyt-column div.segment{
+float:left;
+}
+
+div#str-main div.column-col2 div.segment{
+margin-right:5px;
+width:266px;
+}
+
+div#str-main div.column-col3 div.segment{
+margin-right:13px;
+width:173px;
+}
+
+div#str-main div.column-col4 div.segment{
+margin-right:13px;
+width:126px;
+}
+
+div#str-contents-inner div.column-col5 div.segment{
+margin-right:10px;
+width:143px;
+}
+div#str-contents-inner div.column-col5 div.segment{
+margin-right:10px;
+width:101px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > lyt-column
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.lyt-column{
+width:768px;
+}
+
+body.lyt-column-ms-01 div#str-main div.column-col2 div.segment{
+width:371px;
+}
+
+body.lyt-column-ms-01 div#str-main div.column-col3 div.segment{
+width:243px;
+}
+
+body.lyt-column-ms-01 div#str-main div.column-col4 div.segment{
+width:179px;
+}
+
+body.lyt-column-ms-01 div#str-main div.column-col5 div.segment{
+width:143px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > lyt-column
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.lyt-column{
+width:648px;
+}
+
+body.lyt-column-ms-02 div#str-main div.column-col2 div.segment{
+width:311px;
+}
+
+body.lyt-column-ms-02 div#str-main div.column-col3 div.segment{
+width:203px;
+}
+
+body.lyt-column-ms-02 div#str-main div.column-col4 div.segment{
+width:149px;
+}
+
+body.lyt-column-ms-02 div#str-main div.column-col5 div.segment{
+width:119px;
+}
+
+ 
+/* ----------------------------------------------------------------
+	15. Box Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-01
+ -------------------------------- */
+div#str-main div.box-01{
+margin-bottom:1.25em;
+border:1px solid #c3c3c3;
+background-color:#ffffff;
+}
+
+div#str-main div.box-01 .hdg-l2-03,
+div#str-main div.box-01 .hdg-l2-04,
+div#str-main div.box-01 .hdg-l2-05{
+margin-bottom:14px;
+padding-bottom:2px;
+border-bottom:1px solid #c3c3c3;
+}
+
+div#str-main div.box-01 .hdg-l2-06{
+border-width:0 0 1px;
+}
+
+div#str-main div.box-01 .hdg-l2-03 span,
+div#str-main div.box-01 .hdg-l2-04 span,
+div#str-main div.box-01 .hdg-l2-05 span,{
+margin:2px 2px 0;
+padding-bottom:2px;
+}
+
+div#str-main div.box-01 .hdg-l2-05-container ul.list-icon-01{
+top:3px;
+}
+
+
+div#str-main div.box-01 .hdg-l2-06-container p.nav-more{
+top:5px;
+}
+
+div#str-main div.box-01 .hdg-l3-01,
+div#str-main div.box-01 .hdg-l3-02,
+div#str-main div.box-01 .hdg-l3-03,
+div#str-main div.box-01 .hdg-l3-04{
+padding-bottom:2px;
+}
+
+div#str-main div.box-01 .hdg-l3-01 span,
+div#str-main div.box-01 .hdg-l3-02 span,
+div#str-main div.box-01 .hdg-l3-03 span,
+div#str-main div.box-01 .hdg-l3-04 span{
+margin:1px 1px 0;
+padding-top:3px;
+background-color:#e8e9f4;
+}
+
+div#str-main div.box-01 .hdg-l3-03 span{
+padding-top:2px;
+background-position:3px 6px;
+}
+div#str-main div.box-01 .hdg-l3-03 span img{
+vertical-align:middle;
+}
+
+div#str-main div.box-01 .hdg-l3-04 span{
+padding:3px 3px 2px;
+}
+
+div#str-main div.box-01 .hdg-l3-05 span{
+background-color:#E9F5FB;
+width:550px;
+text-align:left;
+padding:10px;
+margin-bottom:10px
+}
+
+/* ---------------------------------
+	box-01.type-fx
+ -------------------------------- */
+div#str-main div.type-fx table.tbl-topics-01{
+background:none;
+}
+
+div#str-main div.type-fx table.tbl-topics-01 tr.type-fx th,
+div#str-main div.type-fx table.tbl-topics-01 tr.type-fx td{
+background-image:none;
+}
+
+div#str-main div.type-fx table.tbl-topics-01 tr.type-fx td a{
+font-size:107.7%;
+font-weight:bold;
+}
+
+div#str-main div.type-fx table.tbl-topics-01 td.type-fx{
+color:#7f0617;
+}
+
+div#str-main div.type-fx table.tbl-topics-01 div.lyt-image{
+margin-right:0;
+margin-left:0;
+padding:0;
+}
+
+div#str-main div.box-01 div.separate{
+padding-top:15px;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 0;
+}
+
+/* ---------------------------------
+	box-02
+ -------------------------------- */
+div#str-main div.box-02{
+margin-bottom:1.25em;
+padding-bottom:3px;
+background:#ffffff url("/web/shared/images/bg-modules/bg-box-01.gif") repeat-x 0 100%;
+}
+
+div#str-main div.box-02 div.box-inner-01{
+border:1px solid #c3c3c3;
+}
+
+div#str-main div.box-02 .hdg-l2-01,
+div#str-main div.box-02 .hdg-l2-02{
+margin-bottom:14px;
+border-width:0 0 1px 0;
+}
+
+/* ---------------------------------
+	box-03
+ -------------------------------- */
+div#str-main div.box-03{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+background-color:#ffffff;
+}
+
+div#str-main div.box-03 div.box-inner-01{
+padding:14px;
+border:1px solid #dedede;
+}
+
+/* ---------------------------------
+	box-04
+ -------------------------------- */
+div#str-main div.box-04{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+background-color:#ffffff;
+}
+
+div#str-main div.box-04 div.box-inner-01{
+padding:14px;
+background:#f9f9fc url("/web/shared/images/bg-modules/bg-box-02.gif") repeat-x 0 0;
+}
+
+/* ---------------------------------
+	box-05
+ -------------------------------- */
+div#str-main div.box-05{
+margin-bottom:1.25em;
+padding-bottom:8px;
+background:url("/web/shared/images/bg-modules/bg-box-03-bottom-545.gif") no-repeat 0 100%;
+}
+
+div#str-main div.box-05 div.box-inner-01{
+padding-bottom:1px;
+background:url("/web/shared/images/bg-modules/bg-box-03-middle-545.gif") repeat-y 0 0;
+}
+
+div#str-main div.box-05 div.box-inner-01 div.box-inner-01{
+padding:24px 24px 16px;
+background:url("/web/shared/images/bg-modules/bg-box-03-top-545.gif") no-repeat 0 0;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > box-05
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.box-05{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-bottom-755.gif");
+}
+
+body.lyt-column-ms-01 div#str-main div.box-05 div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-middle-755.gif");
+}
+
+body.lyt-column-ms-01 div#str-main div.box-05 div.box-inner-01 div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-top-755.gif");
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > box-05
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.box-05{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-bottom-635.gif");
+}
+
+body.lyt-column-ms-02 div#str-main div.box-05 div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-middle-635.gif");
+}
+
+body.lyt-column-ms-02 div#str-main div.box-05 div.box-inner-01 div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-box-03-top-635.gif");
+}
+
+/* ---------------------------------
+	box-06
+ -------------------------------- */
+div#str-main div.box-06{
+margin-bottom:1.25em;
+padding:8px 5px 6px;
+background-color:#f2f2f9;
+}
+
+div#str-main div.box-06 p,
+div#str-main div.box-06 ul,
+div#str-main div.box-06 ol,
+div#str-main div.box-06 dl,
+div#str-main div.box-06 table{
+margin-bottom:0;
+font-size:68.8%;
+}
+
+
+/* ---------------------------------
+	box-01,box-02 > p,ul,ol,dl,table
+ -------------------------------- */
+div#str-main div.box-01 p,
+div#str-main div.box-01 ul,
+div#str-main div.box-01 ol,
+div#str-main div.box-01 dl,
+div#str-main div.box-01 table,
+div#str-main div.box-02 p,
+div#str-main div.box-02 ul,
+div#str-main div.box-02 ol,
+div#str-main div.box-02 dl,
+div#str-main div.box-02 table{
+margin-right:14px;
+margin-left:14px;
+}
+
+/* ---------------------------------
+	box-03,box-04,box-05 > p,ul,ol,dl,table,lyt-image
+ -------------------------------- */
+div#str-main div.box-03 p,
+div#str-main div.box-03 ul,
+div#str-main div.box-03 ol,
+div#str-main div.box-03 dl,
+div#str-main div.box-03 table,
+div#str-main div.box-03 div.lyt-image,
+div#str-main div.box-04 p,
+div#str-main div.box-04 ul,
+div#str-main div.box-04 ol,
+div#str-main div.box-04 dl,
+div#str-main div.box-04 table,
+div#str-main div.box-04 div.lyt-image,
+div#str-main div.box-05 p,
+div#str-main div.box-05 ul,
+div#str-main div.box-05 ol,
+div#str-main div.box-05 dl,
+div#str-main div.box-05 table,
+div#str-main div.box-05 div.lyt-image{
+margin-right:0;
+margin-left:0;
+}
+
+div#str-main div.box-03 div.lyt-image,
+div#str-main div.box-04 div.lyt-image,
+div#str-main div.box-05 div.lyt-image{
+padding-right:0;
+padding-left:0;
+}
+
+div#str-main div.box-01 div.lyt-image,
+div#str-main div.box-02 div.lyt-image{
+margin-right:6px;
+margin-left:6px;
+}
+
+div#str-main div.box-01 div.lyt-image p,
+div#str-main div.box-01 div.lyt-image ul,
+div#str-main div.box-01 div.lyt-image ol,
+div#str-main div.box-01 div.lyt-image dl,
+div#str-main div.box-01 div.lyt-image table,
+div#str-main div.box-02 div.lyt-image p,
+div#str-main div.box-02 div.lyt-image ul,
+div#str-main div.box-02 div.lyt-image ol,
+div#str-main div.box-02 div.lyt-image dl,
+div#str-main div.box-02 div.lyt-image table{
+margin-right:0;
+margin-left:0;
+}
+
+/* ---------------------------------
+	box-01,box-02 > table
+ -------------------------------- */
+div#str-main div.box-01 table,
+div#str-main div.box-02 table{
+width:94.5%;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > box-01,box-02 > table
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.box-01 table,
+body.lyt-column-ms-01 div#str-main div.box-02 table{
+width:96%;
+}
+
+/* ---------------------------------
+	box-01,box-02,box-03,box-04,box-05 > lyt-column
+ -------------------------------- */
+div#str-main div.box-01 div.lyt-column,
+div#str-main div.box-02 div.lyt-column,
+div#str-main div.box-03 div.lyt-column,
+div#str-main div.box-04 div.lyt-column,
+div#str-main div.box-05 div.lyt-column{
+padding:0;
+width:540px;
+overflow:hidden;
+}
+
+div#str-main div.box-01 div.column-col2 div.segment,
+div#str-main div.box-02 div.column-col2 div.segment,
+div#str-main div.box-03 div.column-col2 div.segment,
+div#str-main div.box-04 div.column-col2 div.segment,
+div#str-main div.box-04 div.column-col2 div.segment{
+width:265px;
+}
+
+/* ---------------------------------
+	box-01,box-02,box-03,box-04,box-05 > list-col2
+ -------------------------------- */
+div#str-main div.box-01 ul.list-col2,
+div#str-main div.box-02 ul.list-col2,
+div#str-main div.box-03 ul.list-col2,
+div#str-main div.box-04 ul.list-col2,
+div#str-main div.box-05 ul.list-col2{
+margin-right:4px;
+width:525px;
+}
+
+body div#str-main div.box-01 ul.list-col2 li,
+body div#str-main div.box-02 ul.list-col2 li,
+body div#str-main div.box-03 ul.list-col2 li,
+body div#str-main div.box-04 ul.list-col2 li,
+body div#str-main div.box-05 ul.list-col2 li{
+width:236px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > box-01,box-02,box-03,box-04,box-05 > list-col2
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.box-01 ul.list-col2,
+body.lyt-column-ms-01 div#str-main div.box-02 ul.list-col2,
+body.lyt-column-ms-01 div#str-main div.box-03 ul.list-col2,
+body.lyt-column-ms-01 div#str-main div.box-04 ul.list-col2,
+body.lyt-column-ms-01 div#str-main div.box-05 ul.list-col2{
+margin-right:4px;
+width:735px;
+}
+
+body.lyt-column-ms-01 div#str-main div.box-01 ul.list-col2 li,
+body.lyt-column-ms-01 div#str-main div.box-02 ul.list-col2 li,
+body.lyt-column-ms-01 div#str-main div.box-03 ul.list-col2 li,
+body.lyt-column-ms-01 div#str-main div.box-04 ul.list-col2 li,
+body.lyt-column-ms-01 div#str-main div.box-05 ul.list-col2 li{
+width:340px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > box-01,box-02,box-03,box-04,box-05 > list-col2
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.box-01 ul.list-col2,
+body.lyt-column-ms-02 div#str-main div.box-02 ul.list-col2,
+body.lyt-column-ms-02 div#str-main div.box-03 ul.list-col2,
+body.lyt-column-ms-02 div#str-main div.box-04 ul.list-col2,
+body.lyt-column-ms-02 div#str-main div.box-05 ul.list-col2{
+margin-right:4px;
+width:615px;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-01 ul.list-col2 li,
+body.lyt-column-ms-02 div#str-main div.box-02 ul.list-col2 li,
+body.lyt-column-ms-02 div#str-main div.box-03 ul.list-col2 li,
+body.lyt-column-ms-02 div#str-main div.box-04 ul.list-col2 li,
+body.lyt-column-ms-02 div#str-main div.box-05 ul.list-col2 li{
+width:280px;
+}
+
+/* ---------------------------------
+	IE Hack [box]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.box-01 .hdg-l2-05-container ul.list-icon-01{
+top:4px;
+}
+
+*html div#str-main div.box-01 div.lyt-column,
+*html div#str-main div.box-02 div.lyt-column,
+*html div#str-main div.box-03 div.lyt-column,
+*html div#str-main div.box-04 div.lyt-column,
+*html div#str-main div.box-05 div.lyt-column{
+width:510px;
+}
+
+*html div#str-main div.box-01 div.column-col2 div.segment,
+*html div#str-main div.box-02 div.column-col2 div.segment,
+*html div#str-main div.box-03 div.column-col2 div.segment,
+*html div#str-main div.box-04 div.column-col2 div.segment,
+*html div#str-main div.box-05 div.column-col2 div.segment{
+width:240px;
+}
+
+
+/* ----------------------------------------------------------------
+	16. Plugin Download Module
+----------------------------------------------------------------- */
+div#str-main div.box-plugin-01{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+}
+
+div#str-main div.box-plugin-01 p{
+margin:0;
+padding:12px 12px 12px 135px;
+border:1px solid #dedede;
+position:relative;
+min-height:30px;
+}
+
+div#str-main div.box-plugin-01 p img{
+position:absolute;
+top:12px;
+left:12px;
+}
+
+
+/* ----------------------------------------------------------------
+	17. Form Module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-search-stock-01
+ -------------------------------- */
+div#str-main div.box-search-stock-01{
+margin:0 0 1.25em;
+padding-bottom:15px;
+background:url("/web/shared/images/bg-modules/bg-search-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div.box-search-stock-01 form{
+padding:15px 5px 0 10px;
+background:url("/web/shared/images/bg-modules/bg-search-01-top.gif") no-repeat 0 0;
+}
+
+div#str-main div.box-search-stock-01 form p{
+margin:0;
+}
+
+div#str-main div.box-search-stock-01 form label{
+padding:5px 5px 5px 30px;
+background:url("/web/shared/images/icon/icon-search-01.gif") no-repeat 0 0;
+font-weight:bold;
+font-size:112.5%;
+}
+
+div#str-main div.box-search-stock-01 form input{
+padding:2px;
+border:1px solid #7f9db9;
+}
+
+div#str-main div.box-search-stock-01 form select{
+margin-right:0;
+border:1px solid #7f9db9;
+width:87px;
+}
+
+div#str-main div.box-search-stock-01 form select.type-01{
+width:110px;
+}
+
+div#str-main div.box-search-stock-01 form input#form-search-stock-cont{
+margin-right:5px;
+width:120px;
+}
+
+div#str-main div.box-search-stock-01 form input#form-search-stoc-btn-cont{
+padding:0;
+border:none;
+cursor:pointer;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > box-search-stock-01
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01{
+margin-bottom:1.25em;
+padding-bottom:15px;
+background:url("/web/shared/images/bg-modules/bg-search-02-bottom.gif") no-repeat 0 100%;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 form{
+padding:15px 12px 0;
+background:url("/web/shared/images/bg-modules/bg-search-02-top.gif") no-repeat 0 0;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 form p{
+margin:0;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 form label{
+padding:5px 10px 5px 30px;
+background:url("/web/shared/images/icon/icon-search-01.gif") no-repeat 0 0;
+font-weight:bold;
+font-size:112.5%;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 form input{
+padding:2px;
+border:1px solid #7f9db9;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 form input#form-search-stock-cont{
+margin-right:10px;
+width:155px;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 form input#form-search-stoc-btn-cont{
+padding:0;
+border:none;
+cursor:pointer;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 select{
+margin-right:5px;
+border:1px solid #7f9db9;
+width:110px;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-search-stock-01 select option{
+padding-right:10px;
+}
+
+/* ---------------------------------
+	login
+ -------------------------------- */
+input#form-login-id {
+ime-mode: disable;
+}
+
+input#form-login-pass {
+ime-mode: disable;
+}
+
+/* ----------------------------------------------------------------
+	18. Inquiry Component
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-inquiry-01
+ -------------------------------- */
+div#str-main div.box-inquiry-01{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+background-color:#ffffff;
+}
+
+div#str-main div.box-inquiry-01 div.box-inner-01{
+padding:10px;
+border:1px solid #dedede;
+}
+
+div#str-main div.box-inquiry-01 h3{
+padding-bottom:10px;
+font-size:87.5%;
+text-align:center;
+}
+
+div#str-main div.box-inquiry-01 p.tel-number{
+margin-bottom:10px;
+padding:7px;
+background-color:#e9eaed;
+font-size:153.8%;
+font-weight:bold;
+text-align:center;
+}
+
+div#str-main div.box-inquiry-01 p.tel-number img{
+vertical-align:middle;
+}
+
+div#str-main div.box-inquiry-01 dl.schedule{
+margin:0 0 0 80px;
+}
+
+div#str-main div.box-inquiry-01 dl.schedule dt{
+float:left;
+width:5em;
+}
+
+div#str-main div.box-inquiry-01 dl.schedule dd{
+padding-left:5.5em;
+}
+
+div#str-main div.box-inquiry-01 p{
+margin:0;
+text-align:center;
+}
+
+div#str-main div.box-inquiry-01 ul.list-notice-inquiry{
+margin:0;
+padding:10px 0 0 20px;
+}
+
+div#str-main div.box-inquiry-01 ul.list-notice-inquiry li{
+padding-left:1.5em;
+position:relative;
+color:#d23100;
+font-size:87.5%;
+}
+
+div#str-main div.box-inquiry-01 ul.list-notice-inquiry li span{
+position:absolute;
+top:0;
+left:0;
+}
+
+/* ---------------------------------
+	lyt-inquiry-01 > box-inquiry-01
+ -------------------------------- */
+div#str-main div.lyt-inquiry-01{
+width:558px;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01{
+margin-right:13px;
+float:left;
+width:262px;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 dl.schedule{
+margin:0;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 ul.list-notice-inquiry{
+padding-left:0;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01{
+padding-left:12px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:link,
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:visited{
+text-decoration:none;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:active,
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:hover,
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:focus{
+text-decoration:underline
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > box-inquiry-01
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.box-inquiry-01 dl.schedule{
+margin:0 0 0 200px;
+}
+
+body.lyt-column-ms-01 div#str-main div.box-inquiry-01 ul.list-notice-inquiry{
+padding-left:150px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > lyt-inquiry-01 > box-inquiry-01
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.lyt-inquiry-01{
+width:768px;
+}
+
+body.lyt-column-ms-01 div#str-main div.lyt-inquiry-01 div.box-inquiry-01{
+width:367px;
+}
+
+body.lyt-column-ms-01 div#str-main div.lyt-inquiry-01 div.box-inquiry-01 dl.schedule{
+margin:0;
+}
+body.lyt-column-ms-01 div#str-main div.lyt-inquiry-01 div.box-inquiry-01 ul.list-notice-inquiry{
+padding-left:0;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > box-inquiry-01
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.box-inquiry-01 dl.schedule{
+margin:0 0 0 140px;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-inquiry-01 ul.list-notice-inquiry{
+padding-left:90px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > lyt-inquiry-01 > box-inquiry-01
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.lyt-inquiry-01{
+width:648px;
+}
+
+body.lyt-column-ms-02 div#str-main div.lyt-inquiry-01 div.box-inquiry-01{
+width:307px;
+}
+
+body.lyt-column-ms-02 div#str-main div.lyt-inquiry-01 div.box-inquiry-01 dl.schedule{
+margin:0;
+}
+body.lyt-column-ms-02 div#str-main div.lyt-inquiry-01 div.box-inquiry-01 ul.list-notice-inquiry{
+padding-left:0;
+}
+
+/* ---------------------------------
+	IE Hack [box-inquiry-01]
+ -------------------------------- */
+/*  ie6  */
+*html div#str-main div.box-inquiry-01 dl.schedule dd{
+padding-left:0.5em;
+}
+
+/*  ie7  */
+*+html div#str-main div.box-inquiry-01 dl.schedule dd{
+padding-left:0.5em;
+}
+
+*+html div#str-main div.lyt-inquiry-01{
+margin-bottom:1.25em;
+}
+
+/* ----------------------------------------------------------------
+	19. Q and A Component
+----------------------------------------------------------------- */
+div#str-main dl.list-qa-01 dt{
+margin-top:15px;
+padding:20px 0 15px 30px;
+min-height:10px;
+background:url("/web/shared/images/bg-modules/bg-q-01.gif") no-repeat 0 0;
+}
+
+div#str-main dl.list-qa-01 dt.first-child{
+margin-top:0;
+padding-top:0;
+background:url("/web/shared/images/icon/icon-q-01.gif") no-repeat 0 0;
+}
+
+div#str-main dl.list-qa-01 dd{
+padding:0 0 0 30px;
+min-height:10px;
+background:url("/web/shared/images/icon/icon-a-01.gif") no-repeat 0 0;
+}
+
+
+/* ----------------------------------------------------------------
+	20. Topics Module
+----------------------------------------------------------------- */
+div#str-main table.tbl-topics-01 th,
+div#str-main table.tbl-topics-01 td,
+div#str-main table.tbl-topics-02 th,
+div#str-main table.tbl-topics-02 td,
+div#str-main table.tbl-topics-03 th,
+div#str-main table.tbl-topics-03 td{
+padding:6px 8px;
+border:none;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 100%;
+}
+
+div#str-main table.tbl-topics-01 th img,
+div#str-main table.tbl-topics-01 td img{
+padding-top:3px;
+}
+
+div#str-main table.tbl-topics-01 td a,
+div#str-main table.tbl-topics-02 td a,
+div#str-main table.tbl-topics-03 td a{
+padding-left:10px;
+display:block;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+}
+
+div#str-main table.tbl-topics-01 td a img,
+div#str-main table.tbl-topics-02 td a img,
+div#str-main table.tbl-topics-03 td a img{
+padding-top:0;
+vertical-align:middle;
+}
+
+div#str-main table.tbl-topics-01 td a:link,
+div#str-main table.tbl-topics-02 td a:link,
+div#str-main table.tbl-topics-03 td a:link,
+div#str-main table.tbl-topics-01 td a:visited,
+div#str-main table.tbl-topics-02 td a:visited,
+div#str-main table.tbl-topics-03 td a:visited{
+text-decoration:none;
+}
+
+div#str-main table.tbl-topics-01 td a:active,
+div#str-main table.tbl-topics-02 td a:active,
+div#str-main table.tbl-topics-03 td a:active,
+div#str-main table.tbl-topics-01 td a:hover,
+div#str-main table.tbl-topics-02 td a:hover,
+div#str-main table.tbl-topics-03 td a:hover,
+div#str-main table.tbl-topics-01 td a:focus,
+div#str-main table.tbl-topics-02 td a:focus,
+div#str-main table.tbl-topics-03 td a:focus{
+text-decoration:underline;
+}
+
+div#str-main table.tbl-topics-03{
+margin-left:10px;
+width:98%;
+}
+
+div#str-main table.tbl-topics-03 th,
+div#str-main table.tbl-topics-03 td{
+padding:0 5px;
+border-bottom:7px solid #ffffff;
+background-image:none;
+}
+
+div#str-main table.tbl-topics-03 tbody th{
+color:#ffffff;
+background-color:#ff0000;
+font-weight:bold;
+}
+
+div#str-main table.tbl-topics-03 td{
+padding-left:15px;
+}
+
+/* ----------------------------------------------------------------
+	21. Users Voice Component
+----------------------------------------------------------------- */
+div#str-main div.box-users-voice-01{
+margin:0 8px 1.25em 8px;
+}
+
+div#str-main div.box-users-voice-01 p{
+margin:0 0 0.85em;
+padding-left:65px;
+}
+
+div#str-main div.box-users-voice-01 p.voice{
+margin-bottom:1.25em;
+padding-left:0;
+background:url("/web/shared/images/bg-modules/bg-voice-01-bottom.gif") no-repeat 100% 100%;
+font-weight:bold;
+}
+
+div#str-main div.box-users-voice-01 p.voice span{
+padding:20px 15px 15px 80px;
+display:block;
+min-height:20px;
+background:url("/web/shared/images/bg-modules/bg-voice-01-top.gif") no-repeat 0 0;
+}
+
+div#str-main div.box-users-voice-01 p.date{
+margin-bottom:0;
+}
+
+div#str-main div.box-users-voice-01 p.catchcopy-01{
+margin-bottom:10px;
+color:#297acc;
+font-weight:bold;
+}
+
+div#str-main div.box-users-voice-01 p.nav-more{
+padding:6px 10px;
+background-color:#f4f5f9;
+text-align:right;
+}
+
+div#str-main div.box-users-voice-01 p.nav-more a{
+padding-left:15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 2px;
+}
+
+div#str-main div.box-users-voice-01 p.nav-more a:link,
+div#str-main div.box-users-voice-01 p.nav-more a:visited{
+text-decoration:none;
+}
+
+div#str-main div.box-users-voice-01 p.nav-more a:active,
+div#str-main div.box-users-voice-01 p.nav-more a:hover,
+div#str-main div.box-users-voice-01 p.nav-more a:focus{
+text-decoration:underline;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > box-users-voice-01
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.box-users-voice-01 p.voice{
+background-image:url("/web/shared/images/bg-modules/bg-voice-01-bottom-01.gif");
+}
+
+body.lyt-column-ms-01 div#str-main div.box-users-voice-01 p.voice span{
+background-image:url("/web/shared/images/bg-modules/bg-voice-01-top-01.gif");
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > box-users-voice-01
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.box-users-voice-01 p.voice{
+background-image:url("/web/shared/images/bg-modules/bg-voice-01-bottom-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-main div.box-users-voice-01 p.voice span{
+background-image:url("/web/shared/images/bg-modules/bg-voice-01-top-02.gif");
+}
+
+
+/* ----------------------------------------------------------------
+	22. Banner Module
+----------------------------------------------------------------- */
+div#str-main div.box-banner-01,
+div#str-main div.box-banner-02,
+div#str-main div.box-banner-03{
+margin:1em 0;
+text-align:center;
+}
+
+/* ---------------------------------
+	box-banner-01
+ -------------------------------- */
+div#str-main div.box-banner-01{
+text-align:center;
+}
+
+div#str-main div.box-banner-01 p{
+margin-bottom:6px;
+}
+
+/* ---------------------------------
+	box-banner-02
+ -------------------------------- */
+div#str-main div.box-banner-02 ul{
+margin:0 20px;
+}
+
+div#str-main div.box-banner-02 li{
+margin-bottom:10px;
+text-align:left;
+}
+
+div#str-main div.box-banner-02 li img{
+padding-right:10px;
+float:left;
+}
+
+/* ---------------------------------
+	box-banner-03
+ -------------------------------- */
+div#str-main div.box-banner-03 ul{
+margin:0 0 0 25px;
+}
+
+div#str-main div.box-banner-03 li{
+margin-bottom:10px;
+padding-right:20px;
+float:left;
+width:234px;
+}
+
+/* ---------------------------------
+	box-banner-01,box-banner-02,box-banner-03 > a
+ -------------------------------- */
+div#str-main div.box-banner-02 a:link,
+div#str-main div.box-banner-03 a:link,
+div#str-main div.box-banner-02 a:visited,
+div#str-main div.box-banner-03 a:visited{
+text-decoration:underline;
+}
+
+div#str-main div.box-banner-02 a:active,
+div#str-main div.box-banner-03 a:active,
+div#str-main div.box-banner-02 a:hover,
+div#str-main div.box-banner-03 a:hover,
+div#str-main div.box-banner-02 a:focus,
+div#str-main div.box-banner-03 a:focus{
+text-decoration:none;
+}
+
+
+/* ----------------------------------------------------------------
+	23. Step Component
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-step-index-01
+ -------------------------------- */
+div#str-main div.box-step-index-01:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+div#str-main div.box-step-index-01{
+margin-bottom:1.25em;
+padding:14px 16px 5px;
+background-color:#f4f5f9;
+}
+
+div#str-main div.box-step-index-01 ol{
+margin:0 auto;
+width:512px;
+list-style:none;
+}
+
+div#str-main div.box-step-index-01 ol li{
+margin-bottom:10px;
+padding:35px 8px 5px;
+float:left;
+width:112px;
+position:relative;
+background:url("/web/shared/images/bg-modules/bg-step-index-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div.box-step-index-01 ol li img{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#str-main div.box-step-index-01 ol li.selected span,
+div#str-main div.box-step-index-01 ol li span a{
+padding-left:15px;
+display:block;
+line-height:1.25;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 3px;
+}
+
+div#str-main div.box-step-index-01 ol li.selected span{
+padding-left:0;
+background-image:none;
+}
+
+div#str-main div.box-step-index-01 ol li span a:link,
+div#str-main div.box-step-index-01 ol li span a:visited{
+text-decoration:none;
+}
+
+div#str-main div.box-step-index-01 ol li span a:active,
+div#str-main div.box-step-index-01 ol li span a:hover,
+div#str-main div.box-step-index-01 ol li span a:focus{
+text-decoration:underline;
+}
+
+/* ---------------------------------
+	IE Hack [box-step-index-01]
+ -------------------------------- */
+/* ie7 */
+*+html div#str-main div.box-step-index-01{
+padding-bottom:15px;
+}
+
+/* ---------------------------------
+	box-step-01
+ -------------------------------- */
+div#str-main div.box-step-01{
+margin-bottom:1.25em;
+padding:0 8px;
+}
+
+div#str-main div.box-step-01 p,
+div#str-main div.box-step-01 ul,
+div#str-main div.box-step-01 ol,
+div#str-main div.box-step-01 dl,
+div#str-main div.box-step-01 table{
+margin:0 0 1.25em 0;
+}
+
+div#str-main div.box-step-01 .hdg-step{
+margin-bottom:5px;
+padding:2px 0 0 85px;
+position:relative;
+min-height:26px;
+font-size:87.5%;
+}
+
+div#str-main div.box-step-01 .hdg-step img{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#str-main div.box-step-01 ol.list-ordered-03{
+margin:0;
+}
+
+div#str-main div.box-step-01 ol.list-ordered-03 li{
+padding-top:7px;
+padding-bottom:10px;
+}
+
+div#str-main div.box-step-01 ol.list-ordered-03 li.step-inner-01{
+padding-bottom:0;
+padding-left:27px;
+background:url("/web/shared/images/bullet/bullet-number-01-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div.box-step-01 div.box-inner-01{
+margin-left:0;
+padding-top:0.5em;
+}
+
+div#str-main div.box-step-01 ol.list-ordered-03 div.box-inner-01 ul.list-notice-01 li{
+padding:0 0 0 1.35em;
+}
+
+div#str-main div.box-step-01 ol.list-ordered-03 div.box-inner-01 ul.list-notice-01 li span{
+padding:0;
+background-image:none;
+}
+
+div#str-main div.box-step-01 ol.list-ordered-03 div.box-inner-01 ul.list-attention-01 li{
+padding:0 0 0 25px;
+}
+
+div#str-main div.box-step-01 .arrow-flow-01{
+padding-bottom:45px;
+background:url("/web/shared/images/arrow/arrow-flow-02.gif") no-repeat 50% 100%;
+}
+
+/* ---------------------------------
+	IE Hack [box-step-01]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.box-step-01 .hdg-step{
+height:26px;
+}
+
+
+/* ----------------------------------------------------------------
+	24. relation Component
+----------------------------------------------------------------- */
+div#str-main div.box-relation-01{
+margin-bottom:1.25em;
+border:1px solid #cacdd9;
+}
+
+div#str-main div.box-relation-01 h2,
+div#str-main div.box-relation-01 h3,
+div#str-main div.box-relation-01 h4,
+div#str-main div.box-relation-01 h5,
+div#str-main div.box-relation-01 h6{
+margin-bottom:14px;
+border-bottom:1px solid #cacdd9;
+font-size:87.5%;
+}
+
+div#str-main div.box-relation-01 h2 span,
+div#str-main div.box-relation-01 h3 span,
+div#str-main div.box-relation-01 h4 span,
+div#str-main div.box-relation-01 h5 span,
+div#str-main div.box-relation-01 h6 span{
+margin:1px;
+padding:2px 7px;
+background:#e4e5f2 url("/web/shared/images/heading/hdg-l3-relation-bg.gif") repeat-x 0 0;
+display:block;
+}
+
+div#str-main div.box-relation-01 ul.list-link-01{
+margin:0 14px 14px;
+}
+
+/* ----------------------------------------------------------------
+	24-2. channel Component
+----------------------------------------------------------------- */
+div#str-main div.box-channel-01{
+margin-bottom:1.25em;
+border:1px solid #cacdd9;
+}
+
+div#str-main div.box-channel-01 h2,
+div#str-main div.box-channel-01 h3,
+div#str-main div.box-channel-01 h4,
+div#str-main div.box-channel-01 h5,
+div#str-main div.box-channel-01 h6{
+margin-bottom:14px;
+border-bottom:1px solid #cacdd9;
+font-size:87.5%;
+}
+
+div#str-main div.box-channel-01 h2 span,
+div#str-main div.box-channel-01 h3 span,
+div#str-main div.box-channel-01 h4 span,
+div#str-main div.box-channel-01 h5 span,
+div#str-main div.box-channel-01 h6 span{
+margin:1px;
+padding:2px 7px;
+background:#e4e5f2 url("/web/shared/images/heading/hdg-l3-relation-bg.gif") repeat-x 0 0;
+display:block;
+}
+
+div#str-main div.box-channel-01 ul.list-image-01{
+margin-bottom:0;
+}
+
+/* ----------------------------------------------------------------
+	25. Attention Component
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-attention-01
+ -------------------------------- */
+div#str-main div.box-attention-01{
+margin-bottom:1.25em;
+border:1px solid #cacdd9;
+}
+
+div#str-main div.box-attention-01 h3{
+margin-bottom:14px;
+border-bottom:1px solid #cacdd9;
+font-size:87.5%;
+text-align:center;
+}
+
+div#str-main div.box-attention-01 h3 span{
+margin:1px;
+padding:2px 7px;
+background-color:#f2f2f9;
+display:block;
+}
+
+div#str-main div.box-attention-01 h3 span img{
+padding:0 5px 2px 0;
+vertical-align:middle;
+}
+
+div#str-main div.box-attention-01 h4,
+div#str-main div.box-attention-01 p,
+div#str-main div.box-attention-01 ul,
+div#str-main div.box-attention-01 ol,
+div#str-main div.box-attention-01 dl,
+div#str-main div.box-attention-01 table{
+margin-top:14px;
+margin-right:14px;
+margin-left:14px;
+}
+
+div#str-main div.box-attention-01 ul p,
+div#str-main div.box-attention-01 ul ul,
+div#str-main div.box-attention-01 ul ol,
+div#str-main div.box-attention-01 ol p,
+div#str-main div.box-attention-01 ol ul,
+div#str-main div.box-attention-01 ol ol{
+margin:0 0 0.5em;
+}
+
+div#str-main div.box-attention-01 div.lyt-image{
+margin-right:6px;
+margin-left:6px;
+}
+
+div#str-main div.box-attention-01 div.lyt-image p{
+margin-right:0;
+margin-left:0;
+}
+
+div#str-main div.box-attention-01 .line-section-01{
+padding-bottom:1.5em;
+background:url("/web/shared/images/bg-modules/bg-attention-01.gif") repeat-x 0 100%;
+}
+
+div#str-main div.box-attention-01 div.box-note{
+margin:14px 14px 1.25em;
+padding:1px;
+background-color:#f2f2f9;
+}
+
+/* ---------------------------------
+	box-attention-02
+ -------------------------------- */
+div#str-main div.box-attention-02{
+padding-top:15px;
+background:url("/web/shared/images/bg-modules/bg-attention-01.gif") repeat-x 0 0;
+}
+
+div#str-main div.box-attention-02 div.box-note{
+margin-bottom:1.25em;
+padding:14px;
+background-color:#f2f2f9;
+}
+
+div#str-main div.box-attention-02 div.box-note p{
+margin:0;
+}
+
+
+/* ----------------------------------------------------------------
+	26. Box Document Component
+----------------------------------------------------------------- */
+div#str-main div.box-document-01{
+margin-bottom:1.25em;
+}
+
+div#str-main div.box-document-01 p.doc-info{
+text-align:right;
+}
+
+div#str-main div.box-document-01 p.doc-start{
+text-align:center;
+}
+
+div#str-main div.box-document-01 p.doc-end{
+text-align:right;
+}
+
+
+/* ----------------------------------------------------------------
+	27. Box Login Component
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-login
+ -------------------------------- */
+div#str-main div.box-login{
+margin-bottom:1.25em;
+font-size:92.3%;
+}
+
+div#str-main div.box-login ul{
+margin-right:0;
+margin-left:0;
+}
+
+div#str-main div.box-login ul li{
+margin-bottom:10px;
+padding:1px;
+border:2px solid #f6f6f6;
+}
+
+div#str-main div.box-login ul li.entry em{
+color:#f47401;
+}
+
+div#str-main div.box-login ul li.login em{
+color:#4c85f4;
+}
+
+div#str-main div.box-login ul li em{
+font-size:116.7%;
+}
+
+div#str-main div.box-login ul li em.exception{
+font-size:100%;
+}
+
+div#str-main div.box-login ul.list-notice-01 li em{
+color:#333333;
+font-weight:bold;
+font-size:100%;
+}
+
+div#str-main div.box-login ul li div.box-inner{
+padding:7px 10px;
+background-color:#f6f6f6;
+}
+
+div#str-main div.box-login ul li div.box-inner div.column-01 div.box-txt p{
+margin-top:1.25em;
+}
+
+
+div#str-main div.box-login ul li div.box-inner div.box-txt,
+div#str-main div.box-login ul li div.box-inner div.box-btn{
+float:left;
+}
+
+div#str-main div.box-login ul li div.box-inner div.box-txt{
+margin-right:13px;
+width:254px;
+}
+
+div#str-main div.box-login ul li div.box-inner div.box-btn{
+width:252px;
+}
+
+div#str-main div.box-login ul li div.box-inner ul.list-notice-01 li,
+div#str-main div.box-login ul li div.box-inner ul.list-notice-02 li{
+padding-left:1.25em;
+}
+
+div#str-main div.box-login ul li div.box-inner ul.list-notice-01 li span{color:#333333;
+}
+
+div#str-main div.box-login ul li div.box-inner ul.list-notice-02 li{
+font-size:84.6%;
+}
+
+div#str-main div.box-login ul li.entry div.box-inner ul.list-notice-02 li{
+color:#f47401;
+}
+
+div#str-main div.box-login ul li.login div.box-inner ul.list-notice-02 li{
+color:#297acc;
+}
+
+div#str-main div.box-login ul li div.box-inner p,
+div#str-main div.box-login ul li div.box-inner ul,
+div#str-main div.box-login ul li div.box-inner ol,
+div#str-main div.box-login ul li div.box-inner dl{
+margin-right:0;
+margin-left:0;
+}
+
+div#str-main div.box-login ul li div.box-inner .section-01{
+margin-top:20px;
+padding-top:15px;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 0;
+}
+
+div#str-main div.box-login ul.list-btn-01,
+div#str-main div.box-login ul.list-btn-02{
+margin:0;
+}
+
+div#str-main div.box-login ul.list-btn-01 li{
+padding:0;
+border:none;
+text-align:center;
+}
+
+div#str-main div.box-login ul.list-btn-02 li{
+margin:0;
+padding:0 5px 5px 0;
+float:left;
+}
+
+/* ---------------------------------
+	box-login > list-link-01
+ -------------------------------- */
+div#str-main div.box-login ul.list-link-01 li{
+margin-bottom:0.2em;
+border:none;
+padding:0 0 0 15px;
+min-height:15px;
+}
+
+/* ---------------------------------
+	box-logout
+ -------------------------------- */
+div#str-main div.box-logout{
+margin-bottom:10px;
+padding:1px;
+border:2px solid #f6f6f6;
+font-size:12px;
+}
+
+div#str-main div.box-logout div.box-inner{
+padding:15px;
+background-color:#f6f6f6;
+}
+
+div#str-main div.box-logout div.box-inner ul{
+margin-bottom:0;
+text-align:center;
+}
+
+div#str-main div.box-logout div.box-inner ul li{
+padding-right:15px;
+display:inline;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-01 > box-login
+ -------------------------------- */
+body.lyt-column-ms-01 div#str-main div.box-login ul li div.box-inner div.box-txt{
+width:462px;
+}
+
+body.lyt-column-ms-01 div#str-main div.box-login ul li div.box-inner div.box-btn{
+width:254px;
+}
+
+/* ---------------------------------
+	body.lyt-column-ms-02 > box-login
+ -------------------------------- */
+body.lyt-column-ms-02 div#str-main div.box-login ul li div.box-inner div.box-txt{
+width:342px;
+}
+
+body.lyt-column-ms-02 div#str-main div.box-login ul li div.box-inner div.box-btn{
+width:254px;
+}
+
+/* ---------------------------------
+	body.lyt-column-m > box-login
+ -------------------------------- */
+body.lyt-column-m div#str-main div.box-login{
+margin:3em auto;
+width:545px;
+}
+
+
+/* ----------------------------------------------------------------
+	28. Group Link box
+----------------------------------------------------------------- */
+div#str-main div.box-group-01{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+}
+
+div#str-main div.box-group-01 p{
+margin:0;
+padding:20px 12px 8px 120px;
+border:1px solid #dedede;
+position:relative;
+min-height:37px;
+}
+
+div#str-main div.box-group-01 p img{
+position:absolute;
+top:12px;
+left:12px;
+}
+
+/* ---------------------------------
+	IE Hack [box-group-01]
+ -------------------------------- */
+/* ie6 */
+*html div#str-main div.box-group-01 p{
+height:37px;
+}
+
+
+/* ----------------------------------------------------------------
+	29. Charm List Component
+----------------------------------------------------------------- */
+div#str-main ul.list-charm-01{
+margin:0 0 1.25em 0;
+}
+
+div#str-main ul.list-charm-01 li{
+margin-bottom:7px;
+padding-bottom:5px;
+background:url("/web/shared/images/bg-modules/bg-charm-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main ul.list-charm-01 li div.charm-inner{
+background:url("/web/shared/images/bg-modules/bg-charm-01-middle.gif") repeat-y 0 0;
+}
+
+div#str-main ul.list-charm-01 li dl{
+padding:12px 8px 0 70px;
+overflow:hidden;
+background:url("/web/shared/images/bg-modules/bg-charm-01-01.gif") no-repeat 0 0;
+}
+
+div#str-main ul.list-charm-01 li.charm-02 dl{
+background-image:url("/web/shared/images/bg-modules/bg-charm-01-02.gif");
+}
+
+div#str-main ul.list-charm-01 li.charm-03 dl{
+background-image:url("/web/shared/images/bg-modules/bg-charm-01-03.gif");
+}
+
+div#str-main ul.list-charm-01 li.charm-04 dl{
+background-image:url("/web/shared/images/bg-modules/bg-charm-01-04.gif");
+}
+
+div#str-main ul.list-charm-01 li.charm-05 dl{
+background-image:url("/web/shared/images/bg-modules/bg-charm-01-05.gif");
+}
+
+div#str-main ul.list-charm-01 li dl dl{
+padding:0;
+background-image:none;
+}
+
+div#str-main ul.list-charm-01 li dt{
+padding-bottom:12px;
+position:relative;
+}
+
+div#str-main ul.list-charm-01 li dt span{
+position:absolute;
+left:-9999px;
+}
+
+div#str-main ul.list-charm-01 li dd div.lyt-image{
+padding-left:0;
+}
+
+div#str-main ul.list-charm-01 li dd p.nav-more{
+margin-bottom:0;
+padding:0 0 5px 15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 5px;
+}
+
+div#str-main ul.list-charm-01 li dd p.nav-more a:link,
+div#str-main ul.list-charm-01 li dd p.nav-more a:visited{
+text-decoration:none;
+}
+
+div#str-main ul.list-charm-01 li dd p.nav-more a:active,
+div#str-main ul.list-charm-01 li dd p.nav-more a:hover,
+div#str-main ul.list-charm-01 li dd p.nav-more a:focus{
+text-decoration:underline;
+}
+
+div#str-main ul.list-charm-01 li li{
+margin-bottom:0;
+}
+
+div#str-main ul.list-charm-01 li ul.list-bullet-01 li{
+margin-bottom:0.2em;
+padding:0 0 0 20px;
+background:url("/web/shared/images/bullet/bullet-04.gif") no-repeat 0 3px;
+}
+
+div#str-main ul.list-bullet-01 li.outside,
+div#str-main ul.list-bullet-01 li.outside{
+padding-left:17px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 5px;
+}
+
+div#str-main ul.list-charm-01 li dl.list-normal-01 dt{
+padding-bottom:0;
+color:#ff7e00;
+font-size:107.7%;
+}
+
+div#str-main ul.list-charm-01 li p.doc-catchcopy-01 strong{
+color:#ff7e00;
+font-size:123.1%;
+}
+
+div#str-main ul.list-charm-01 li ul.list-btn-01{
+margin:10px -10px 10px 0;
+}
+div#str-main ul.list-charm-01 li ul.list-btn-01 li{
+padding:0 10px 5px 0;
+float:left;
+background-image:none;
+}
+
+/* ---------------------------------
+	list-charm-01-container > table.type-china
+ -------------------------------- */
+div#str-main div.list-charm-01-container table.type-china th,
+div#str-main div.list-charm-01-container table.type-china td{
+padding:2px 5px;
+}
+
+/* ---------------------------------
+	list-charm-01-container > lyt-column
+ -------------------------------- */
+div#str-main div.list-charm-01-container div.lyt-column{
+width:480px;
+}
+
+div#str-main div.list-charm-01-container div.column-col2 div.segment{
+width:227px;
+}
+
+
+/* ----------------------------------------------------------------
+	30. Common
+----------------------------------------------------------------- */
+div#str-main .margin-reset-01{
+margin-bottom:0 !important;
+}
+
+div#str-main .margin-reset-02{
+margin-bottom:1.25em !important;
+} 
+
+div#str-main .padding-reset-01{
+padding-bottom:0 !important;
+}
+
+
+/* ----------------------------------------------------------------
+	31. reuters in_house
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	reuters-nav-page-01
+ -------------------------------- */
+div#str-main ul.reuters-nav-page-01{
+margin:0 0 2.5em;
+}
+
+div#str-main ul.reuters-nav-page-01 li{
+padding:0 6px;
+display:inline;
+background:url("/web/shared/images/reuters/bg-line-01.gif") no-repeat 100% 50%;
+}
+
+div#str-main ul.reuters-nav-page-01 li.selected a{
+padding:2px;
+color:#ffffff;
+background-color:#3f4da2;
+font-weight:bold;
+text-decoration:none;
+}
+
+div#str-main ul.reuters-nav-page-01 li.last-child{
+padding-right:0;
+background-image:none;
+}
+
+/* ---------------------------------
+	tbl-reuters-01
+ -------------------------------- */
+div#str-main table.tbl-reuters-01{
+border-width:1px 0 0 1px;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main table.tbl-reuters-01 tr.even th,
+div#str-main table.tbl-reuters-01 tr.even td{
+background-color:#f3f3f3;
+}
+
+div#str-main table.tbl-reuters-01 th,
+div#str-main table.tbl-reuters-01 td{
+border-width:0 1px 1px 0;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main table.tbl-reuters-01 thead th{
+background-color:#cfd5ef;
+vertical-align:middle;
+}
+
+div#str-main table.tbl-reuters-01 th{
+text-align:center;
+}
+
+
+/* ----------------------------------------------------------------
+	32. Merit List Component
+----------------------------------------------------------------- */
+div#str-main ul.list-merit-01{
+margin:0 0 1.25em 0;
+}
+
+div#str-main ul.list-merit-01 li{
+margin-bottom:7px;
+padding-bottom:5px;
+background:url("/web/shared/images/bg-modules/bg-merit-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main ul.list-merit-01 li div.merit-inner{
+background:url("/web/shared/images/bg-modules/bg-merit-01-middle.gif") repeat-y 0 0;
+}
+
+div#str-main ul.list-merit-01 li dl{
+margin-top:0px;
+padding:12px 8px 0 70px;
+overflow:hidden;
+background:url("/web/shared/images/bg-modules/bg-merit-01-01.gif") no-repeat 0 0;
+}
+
+div#str-main ul.list-merit-01 li.merit-02 dl{
+background-image:url("/web/shared/images/bg-modules/bg-merit-01-02.gif");
+}
+
+div#str-main ul.list-merit-01 li.merit-03 dl{
+background-image:url("/web/shared/images/bg-modules/bg-merit-01-03.gif");
+}
+
+div#str-main ul.list-merit-01 li.merit-04 dl{
+background-image:url("/web/shared/images/bg-modules/bg-merit-01-04.gif");
+}
+
+div#str-main ul.list-merit-01 li.merit-05 dl{
+background-image:url("/web/shared/images/bg-modules/bg-merit-01-05.gif");
+}
+
+div#str-main ul.list-merit-01 li dl dl{
+padding:0;
+background-image:none;
+}
+
+div#str-main ul.list-merit-01 li dt{
+padding-bottom:12px;
+position:relative;
+}
+
+div#str-main ul.list-merit-01 li dt span{
+position:absolute;
+left:-9999px;
+}
+
+div#str-main ul.list-merit-01 li dd div.lyt-image{
+padding-left:0;
+}
+
+div#str-main ul.list-merit-01 li dd em{
+font-weight:bold;
+color:#ff3c00;
+}
+
+div#str-main ul.list-merit-01 li dd p.nav-more{
+margin-bottom:0;
+padding:0 0 5px 15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 5px;
+}
+
+div#str-main ul.list-merit-01 li dd p.nav-more a:link,
+div#str-main ul.list-merit-01 li dd p.nav-more a:visited{
+text-decoration:none;
+}
+
+div#str-main ul.list-merit-01 li dd p.nav-more a:active,
+div#str-main ul.list-merit-01 li dd p.nav-more a:hover,
+div#str-main ul.list-merit-01 li dd p.nav-more a:focus{
+text-decoration:underline;
+}
+
+div#str-main ul.list-merit-01 li li{
+margin-bottom:0;
+}
+
+div#str-main ul.list-merit-01 li ul.list-bullet-01 li{
+margin-bottom:0.2em;
+padding:0 0 0 20px;
+background:url("/web/shared/images/bullet/bullet-04.gif") no-repeat 0 3px;
+}
+
+div#str-main ul.list-bullet-01 li.outside,
+div#str-main ul.list-bullet-01 li.outside{
+padding-left:17px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 5px;
+}
+
+div#str-main ul.list-merit-01 li div.merit-inner dl{
+margin-bottom:0;
+}
+
+div#str-main ul.list-merit-01 li dl.list-normal-01 dt{
+padding-bottom:0;
+color:#ff7e00;
+font-size:107.7%;
+}
+
+div#str-main ul.list-merit-01 li p.doc-catchcopy-01 strong{
+color:#ff7e00;
+font-size:123.1%;
+}
+
+div#str-main ul.list-merit-01 li ul.list-btn-01{
+margin:10px -10px 10px 0;
+}
+div#str-main ul.list-merit-01 li ul.list-btn-01 li{
+padding:0 10px 5px 0;
+float:left;
+background-image:none;
+}
+
+
+div#str-main ul.nav-page-02-favorite {
+background:#EEEEEE none repeat scroll 0 0;
+margin:-1.2em 0 1.5em;
+padding:7px;
+position:relative;
+}
+
+
+div#str-main ul.nav-page-02-favorite li {
+background:transparent url(/web/shared/images/reuters/bg-line-01.gif) no-repeat scroll 100% 50%;
+display:inline;
+padding:0 6px;
+}
+
+div#str-main ul.nav-page-02-favorite li.selected a {
+background-color:#3F4DA2;
+color:#FFFFFF;
+font-weight:bold;
+padding:2px;
+text-decoration:none;
+}
+
+div#str-main ul.nav-page-02-favorite li.last-child {
+background-image:none;
+padding-right:0;
+}

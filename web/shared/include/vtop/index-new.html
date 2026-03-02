@@ -1,0 +1,34 @@
+<?php
+
+  include("./web/shared/include/vtop/common-header.html");
+
+  // 出し分け
+  if(isset($_COOKIE["Rz"])){         // 楽天Cookieあり
+    if(isset($_COOKIE["Rg_sec"])){   // 証券Cookieあり
+      $rg = $_COOKIE["Rg_sec"];
+
+      if(substr($rg,26,1) == "0") {
+        // 資料請求完了初期設定未設定
+        include("./web/shared/include/vtop/visitor-index03.html");
+      } else {
+        // 未入金以降のステータス
+        include("./web/shared/include/vtop/member-index01.html");
+      }
+    } else {                        // 証券Cookieなし
+      // 口座開設ボタンID連携あり/テキストリンクID連携なし
+      include("./web/shared/include/vtop/visitor-index01.html");
+    }
+  } else {
+    if(isset($_COOKIE["Rg_sec"])){   // 証券Cookieあり
+        include("./web/shared/include/vtop/member-index01.html");
+    } else {
+      // 楽天Cookieなし
+      // 口座開設ボタンID連携なし/テキストリンクID連携あり
+      // 2014.12.30 ID連携ありなし全てvisitor-index01.htmlに切り替え
+      include("./web/shared/include/vtop/visitor-index01.html");
+    }
+  }
+
+  include("./web/shared/include/vtop/common-footer.html");
+
+?>

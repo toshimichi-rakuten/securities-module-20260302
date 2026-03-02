@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.charaBalloon {
+	overflow: hidden;
+}
+
+.charaBalloon dt {
+	float: left;
+	display: block;
+	background: url("/web/shared/img/fund/smartphone/migration/icon-chara-small.gif") no-repeat scroll 0% 0% transparent;
+	width: 50px;
+	height: 50px;
+}
+
+.charaBalloon dd {
+	padding-top: 5px;
+	margin-left: 60px;
+}
+
+.charaBalloon .syoko {
+	background-position: 0px 0px;
+}
+.charaBalloon .rakumi {
+	background-position: -50px 0px;
+}
+.charaBalloon .rakutaro{
+	background-position: -100px 0px;
+}
+.charaBalloon .rakusuke{
+	background-position: -150px 0px;
+}
+.charaBalloon .rakuyo {
+	background-position: -200px 0px;
+}
+.charaBalloon .ken {
+	background-position: -250px 0px;
+}

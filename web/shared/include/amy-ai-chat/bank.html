@@ -1,0 +1,36 @@
+<!-- インクルード /web/shared/include/amy-ai-chat/bank.html -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="/web/shared/css/amy-ai-chat/ai_chat.css" />
+  <link rel="stylesheet" href="/web/shared/css/amy-ai-chat/photoswipe.css" />
+
+  <script type="text/javascript">
+  function openWin(){
+    try {
+      var url = usergram.link("/web/help/chat/visitor/");
+    } catch(e) {
+      var url = "/web/help/chat/visitor/";
+    }
+    window.open(
+      url,
+      "_blank",
+      "menubar=0,width=400,height=600,top=0,left=0,resizable=yes,scrollbars=1"
+    );
+  }
+  </script>
+
+  <!-- チャットボットblock -->
+  <div class="ai-chat-container ai-chat-container--left">
+
+    <!-- 起動トリガー -->
+    <input id="ai-chat-trigger" class="ai-chat__input" type="checkbox" onClick="openWin()">
+    <div class="ai-chat__open">
+      <div class="ai-chat__trigger">
+        <input id="ai-chat-comment" class="ai-chat__input ai-chat-comment" type="checkbox">
+        <div class="ai-chat__comment">
+          <label for="ai-chat-trigger" class="ai-chat__comment-label">有人チャットはじめました</label>
+          <label for="ai-chat-comment" class="ai-chat__comment-close"></label>
+        </div>
+        <label for="ai-chat-trigger" class="ai-chat__trigger-label" onclick="s.lidTrack('chatbottrigger|' + s.pageName);">手続き関連 AIチャット</lavel>
+      </div>
+    </div>
+<!-- /インクルード /web/shared/include/amy-ai-chat/bank.html -->

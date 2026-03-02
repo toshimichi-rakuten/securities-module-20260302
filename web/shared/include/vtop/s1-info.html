@@ -1,0 +1,63 @@
+
+<!-- インクルード /web/shared/include/vtop/s1-info.html -->
+
+<?php
+	/*
+	 * PCはメンバー、ビジター共有の内容を記載
+	 * スマホは必要な場合、スマホページのお知らせを記載
+	 *
+	 */
+	if($segment == 'member') {
+?>
+<!-- PCメンバー掲載のお知らせ -->
+<li class="s1-news__item"><span class="s1-news__date">2021/04/30</span><span class="s1-news__info"><a href="/web/info/info20210430-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210430-01')">「よくあるご質問（FAQ）」リニューアルのお知らせ</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/26</span><span class="s1-news__info"><a href="/web/info/info20210426-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210426-02')">商品CFD（金・銀）の提供開始のお知らせ（5/17～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/26</span><span class="s1-news__info"><a href="/web/info/info20210426-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210426-01')">FX出金手続きへの二要素認証導入について（5/9～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210409-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210409-02')">米国株式移管手数料キャッシュバックキャンペーンについて（4月19日開始予定）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/03/29</span><span class="s1-news__info"><a href="/web/info/info20210329-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210329-02')">セキュリティ強化のため、ログインパスワードの設定ルールを変更いたします（4/4～）</a></span></li>
+
+<!-- //PCメンバー掲載のお知らせ -->
+
+
+<!--米雇用統計お知らせサンプル
+<li class="s1-news__item"><span class="s1-news__date">2021/04/30</span><span class="s1-news__info"><a href="/web/domestic/lending/rate.html" onclick="s.lidTrack('pc_top_visitor_info__rate')">貸株金利更新！年率8%の超ボーナス銘柄もあります！年率1%以上は549銘柄（5/3～）</a></span></li>
+
+<li class="s1-news__item"><span class="s1-news__date">2021/05/06</span><span class="s1-news__info"><a href="https://media.rakuten-sec.net/articles/-/32027" onclick="s.lidTrack('pc_top_visitor_info__32027')" target="_blank">米雇用統計（5月7日21時半発表予定）の予想値・注目点を解説</a></span></li>
+-->
+
+
+<?php
+	} elseif($segment == 'visitor') {
+?>
+<!-- PCメンバー掲載のお知らせ -->
+<li class="s1-news__item"><span class="s1-news__date">2021/04/30</span><span class="s1-news__info"><a href="/web/info/info20210430-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210430-01')">「よくあるご質問（FAQ）」リニューアルのお知らせ</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/26</span><span class="s1-news__info"><a href="/web/info/info20210426-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210426-02')">商品CFD（金・銀）の提供開始のお知らせ（5/17～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/26</span><span class="s1-news__info"><a href="/web/info/info20210426-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210426-01')">FX出金手続きへの二要素認証導入について（5/9～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210409-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210409-02')">米国株式移管手数料キャッシュバックキャンペーンについて（4月19日開始予定）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/03/29</span><span class="s1-news__info"><a href="/web/info/info20210329-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210329-02')">セキュリティ強化のため、ログインパスワードの設定ルールを変更いたします（4/4～）</a></span></li>
+
+<!-- //PCメンバー掲載のお知らせ -->
+
+
+<?php
+	} else {
+?>
+<!-- スマホ掲載のお知らせ -->
+<li class="s1-news__item"><span class="s1-news__date">2021/04/30</span><span class="s1-news__info"><a href="/smartphone/info/info20210430-01.html" onclick="s.lidTrack('sp_top_visitor_info__info20210430-01')">「よくあるご質問（FAQ）」リニューアルのお知らせ</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/26</span><span class="s1-news__info"><a href="/smartphone/info/info20210426-02.html" onclick="s.lidTrack('sp_top_visitor_info__info20210426-02')">商品CFD（金・銀）の提供開始のお知らせ（5/17～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/26</span><span class="s1-news__info"><a href="/smartphone/info/info20210426-01.html" onclick="s.lidTrack('sp_top_visitor_info__info20210426-01')">FX出金手続きへの二要素認証導入について（5/9～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/smartphone/info/info20210409-02.html" onclick="s.lidTrack('sp_top_visitor_info__info20210409-02')">米国株式移管手数料キャッシュバックキャンペーンについて（4月19日開始予定）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/03/29</span><span class="s1-news__info"><a href="/smartphone/info/info20210329-02.html" onclick="s.lidTrack('sp_top_visitor_info__info20210329-02')">セキュリティ強化のため、ログインパスワードの設定ルールを変更いたします（4/4～）</a></span></li>
+
+<!-- //スマホ掲載のお知らせ -->
+
+<!--米雇用統計お知らせサンプル
+<li class="s1-news__item"><span class="s1-news__date">2021/04/30</span><span class="s1-news__info"><a href="/web/domestic/lending/rate.html" onclick="s.lidTrack('sp_top_visitor_info__rate')">貸株金利更新！年率8%の超ボーナス銘柄もあります！年率1%以上は549銘柄（5/3～）</a></span></li>
+
+<li class="s1-news__item"><span class="s1-news__date">2021/05/06</span><span class="s1-news__info"><a href="https://media.rakuten-sec.net/articles/-/32027" onclick="s.lidTrack('sp_top_visitor_info__32027')" target="_blank">米雇用統計（5月7日21時半発表予定）の予想値・注目点を解説</a></span></li>
+-->
+
+<?php
+	}
+?>
+<!-- /インクルード /web/shared/include/vtop/s1-info.html -->

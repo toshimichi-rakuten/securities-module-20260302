@@ -1,0 +1,192 @@
+.s1-swiper-area {
+    position: relative;
+    height: 230px;
+  }
+  .s1-swiper-area .s1-swiper {
+    margin-right: 53px;
+    margin-left: 53px;
+  }
+  .s1-swiper-area .s1-swiper-button-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .s1-swiper-area .s1-swiper-button-prev .swiper-button-prev {
+    position: initial;
+    display: table-cell;
+    width: 52px;
+    height: 210px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff1f1;
+    color: #ec0606;
+  }
+  .s1-swiper-area .s1-swiper-button-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .s1-swiper-area .s1-swiper-button-next .swiper-button-next {
+    position: initial;
+    display: table-cell;
+    width: 52px;
+    height: 210px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff1f1;
+    color: #ec0606;
+  }
+  .s1-swiper-area .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6px;
+    line-height: 0;
+    z-index: 0;
+  }
+  .s1-swiper-area .swiper-pagination-bullet {
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 6px;
+    border-radius: 0%;
+  }
+  .s1-swiper-area .swiper-pagination-bullet-active {
+    background-color: #ec0606;
+  }
+  
+  .swiper-button-prev::after {
+    display: none;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
+  }
+
+/* .s1-step-horizon__item */
+.s1-step-horizon__item {
+    width: 209px;
+}
+.s1-step-horizon__item:last-child::after {
+  display: none;
+}
+.s1-step-horizon__body {
+  display: block!important;
+}
+
+
+.rcfd-debut {
+    display: table;
+    padding: 14px 10px
+}
+.rcfd-debut__icon {
+    display: table-cell;
+    padding-right: 20px
+}
+.rcfd-debut__icon p {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    background-color: #fff;
+    text-align: center
+}
+.rcfd-debut__icon p span {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.rcfd-debut__icon--lower p {
+    background-color: #f5f5f5
+}
+.rcfd-debut__content {
+    display: table-cell;
+    vertical-align: top;
+}
+.rcfd-debut__hdg {
+    font-weight: bold;
+    margin-bottom: 14px;
+    font-size: 16px
+}
+.rcfd-debut__txt {
+    margin-bottom: 14px
+}
+.rcfd-debut--beginner .rcfd-debut__hdg {
+    color: #00ada0
+}
+.rcfd-debut--beginner .rcfd-debut__icon p {
+    background-color: transparent
+}
+.rcfd-debut--beginner .rcfd-debut__content {
+    vertical-align: top
+}
+
+.rcfd-icon-lineup {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-28.png');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle
+  }
+  .rcfd-icon-margin {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-29.png');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle
+  }
+  .rcfd-icon-overview {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-30.png');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle
+  }
+  .rcfd-icon-tool {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-31.png');
+    background-position: center;
+    width: 62px;
+    height: 50px;
+    vertical-align: middle
+  }
+  .rcfd-icon-free {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-32.png');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle
+  }
+  .rcfd-icon-sell {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-33.png');
+    background-position: center;
+    width: 52px;
+    height: 50px;
+    vertical-align: middle
+  }
+  .rcfd-icon-leverage {
+    display: inline-block;
+    background-image: url('/web/shared/images/icon/ico-34.png');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle
+  }

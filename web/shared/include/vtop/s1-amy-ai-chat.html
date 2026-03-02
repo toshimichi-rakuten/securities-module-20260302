@@ -1,0 +1,26 @@
+<!-- インクルード /web/shared/include/vtop/s1-amy-ai-chat.html -->
+  <!-- Chat Bot -->
+  <div id="ai-chat">
+    <p class="ai-chat-balloon">ご質問は<br>ありませんか？</p>
+    <button type="button" class="ai-chat-btn-minimize js-ai-chat-btn-minimize" aria-label="最小化する"></button>
+    <a href="#" class="ai-chat-main js-ai-chat-trigger" onclick="s.lidTrack('chatbottrigger|' + s.pageName);" aria-label="チャットで問合せる">
+      <div class="ai-chat-icon" role="img" aria-hidden="true" aria-label="チャットボットのアイコン">
+        <span class="ai-chat-icon__robo"></span>
+        <span class="ai-chat-icon__operator"></span>
+      </div>
+      <p class="ai-chat-main__heading" aria-hidden="true">チャットで問合せ</p>
+    </a>
+
+    <!-- サポートメッセージ - SP -->
+    <div class="ai-chat-support__open" role="alert" aria-labelledby="ai-chat-support-msg">
+      <button type="button" class="ai-chat-support__btn-close ai-chat-btn-minimize js-ai-chat-btn-close" aria-label="閉じる"></button>
+      <div id="ai-chat-support-msg" class="ai-chat-support__message">
+        <div class="ai-chat-icon ai-chat-icon--support" role="img" aria-label="チャットボットのアイコン">
+          <span class="ai-chat-icon__robo"></span>
+          <span class="ai-chat-icon__operator"></span>
+        </div>
+        <p class="ai-chat-support-label"><span class="ai-chat-support-text">チャットは<br>サポートページから<br>利用できます</span></p>
+      </div>
+    </div>
+  </div>
+<!-- /インクルード /web/shared/include/vtop/s1-amy-ai-chat.html -->

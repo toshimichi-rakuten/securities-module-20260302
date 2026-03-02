@@ -1,0 +1,182 @@
+
+  $(function() {
+      // Add system info to HTML
+      $.ajaxSetup({ cache: false });
+      $.ajax({
+          accepts: '*/*',
+          type: 'GET',
+          url: '/ITS/system_info_web.xml',
+          dataType: 'xml'
+      }).done(function(resp) {
+          $('#system_info').empty().append((resp.documentElement.firstChild.nodeValue).replace(/system_info\//g, '/ITS/system_info/'));
+      });
+  });
+
+
+
+$(function() {
+  var $form = $("form#smtloginform")
+  var $input_id = $("input#form-login-id")
+  var $input_pass = $("input#form-login-pass")
+var url = {
+      //総合トップ（スマートフォン）
+      smt:"https://member.rakuten-sec.co.jp/bv/app/SmtMhLogin.do",
+      //らくらく投資トップ（スマートフォン）
+      rab:"https://member.rakuten-sec.co.jp/bv/app/SmtMhLogin.do?homeid=SMT_FUNAVI_TOP",
+      //楽ラップトップ（スマートフォン）
+      rakurap:"https://member.rakuten-sec.co.jp/bv/app/SmtMhLogin.do?homeid=WRAP_TOP",
+      //総合トップ（PC）
+      pc:"https://member.rakuten-sec.co.jp/bv/app/MhLogin.do",
+      //FX（PC）
+      fx:"https://member.rakuten-sec.co.jp/bv/app/MhLogin.do?homeid=FX_SSO_LOGIN",
+      //バイナリ―オプション（スマートフォン）
+      bo:"https://member.rakuten-sec.co.jp/bv/app/SmtMhLogin.do?homeid=BO_SSO_LOGIN",
+
+
+};
+  var name_id = {
+      //総合トップ（スマートフォン）
+      smt:"loginid",
+      //らくらく投資トップ（スマートフォン）
+      rab:"loginid",
+      //楽ラップトップ（スマートフォン）
+      rakurap:"loginid",
+      //総合トップ（PC）
+      pc:"loginid",
+      //FX（PC）
+      fx:"loginid",
+      //バイナリ―オプション（スマートフォン）
+      bo:"loginid",
+  }
+
+
+   var name_pass = {
+      //総合トップ（スマートフォン）
+      smt:"passwd",
+      //らくらく投資トップ（スマートフォン）
+      rab:"passwd",
+      //楽ラップトップ（スマートフォン）
+      rakurap:"passwd",
+      //総合トップ（PC）
+      pc:"passwd",
+      //FX（PC）
+      fx:"passwd",
+      //バイナリ―オプション（スマートフォン）
+      bo:"passwd",
+  }
+//selectイベントハンドラ
+$("select#select-loginform").change(function(){
+  var ch = $(this).val();
+
+
+  switch(ch) {
+  case 'rab' :
+          $form.attr("action",url.rab);
+          $input_id.attr("name",name_id.rab);
+          $input_pass.attr("name",name_pass.rab);
+    break;
+  case 'rakurap' :
+          $form.attr("action",url.rakurap);
+          $input_id.attr("name",name_id.rakurap);
+          $input_pass.attr("name",name_pass.rakurap);
+    break;
+  case 'smt' :
+          $form.attr("action",url.smt);
+          $input_id.attr("name",name_id.smt);
+          $input_pass.attr("name",name_pass.smt);
+    break;
+  case 'pc' :
+          $form.attr("action",url.pc);
+          $input_id.attr("name",name_id.pc);
+          $input_pass.attr("name",name_pass.pc);
+    break;
+  case 'fx' :
+          $form.attr("action",url.fx);
+          $input_id.attr("name",name_id.fx);
+          $input_pass.attr("name",name_pass.fx);
+    break;
+  case 'bo' :
+          $form.attr("action",url.bo);
+          $input_id.attr("name",name_id.bo);
+          $input_pass.attr("name",name_pass.bo);
+    break;
+  }
+
+
+    //cookieにselect値を格納
+  $.cookie("chid", ch,{ expires:30, path:"/"})
+});
+
+
+/***
+/ ページアクセス時の処理
+*/
+var cookie = $.cookie("chid");
+if(cookie != null) {
+$("select#select-loginform").val(cookie);
+  switch(cookie) {
+  case 'rab' :
+          $form.attr("action",url.rab);
+          $input_id.attr("name",name_id.rab);
+          $input_pass.attr("name",name_pass.rab);
+    break;
+  case 'rakurap' :
+          $form.attr("action",url.rakurap);
+          $input_id.attr("name",name_id.rakurap);
+          $input_pass.attr("name",name_pass.rakurap);
+    break;
+  case 'smt' :
+          $form.attr("action",url.smt);
+          $input_id.attr("name",name_id.smt);
+          $input_pass.attr("name",name_pass.smt);
+    break;
+  case 'pc' :
+          $form.attr("action",url.pc);
+          $input_id.attr("name",name_id.pc);
+          $input_pass.attr("name",name_pass.pc);
+    break;
+  case 'fx' :
+          $form.attr("action",url.fx);
+          $input_id.attr("name",name_id.fx);
+          $input_pass.attr("name",name_pass.fx);
+    break;
+  case 'bo' :
+          $form.attr("action",url.bo);
+          $input_id.attr("name",name_id.bo);
+          $input_pass.attr("name",name_pass.bo);
+    break;
+      default:
+          $form.attr("action",url.smt);
+    break;
+  }
+} else {
+$.cookie("chid", "smt", { expires:30, path:"/"})
+}
+});
+
+
+if(navigator.userAgent.indexOf('Tizen') > 0){
+  document.getElementById('switch_tizen').style.display="none";
+  document.write('<p class="lead">Tizen OSに関しては、現在動作検証中です。</p>');
+}
+
+$(function() {
+  // パスワードの表示・非表示切替
+  $('.passwd-form__toggle').on('click',function () {
+  
+    // アイコンの切り替え
+    $(this).toggleClass('is-active');
+    // 入力フォームの取得
+    var input = $('#form-login-pass');
+    // type切替
+    if (input.attr('type') == 'password') {
+      input.attr({
+        type:'text'
+      });
+    } else {
+      input.attr({
+        type:'password'
+      });
+    }
+  });
+});

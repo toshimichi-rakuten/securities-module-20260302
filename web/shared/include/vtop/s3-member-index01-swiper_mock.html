@@ -1,0 +1,400 @@
+<!-- インクルード /web/shared/include/vtop/s3-member-index01.html -->
+    <div class="s3-contents" id="MEMBER_INDEX">
+      <section class="s3-section s3-section--market">
+        <div class="s3-market-info">
+          <div class="s3-market-info__hdg">マーケット情報：</div>
+          <ul class="s3-market-info__list">
+            <li>日経平均<span class="s3-market-info__num">----</span><span class="s3-market-info__num-sub"></span>円<span><span class="s3-market-info__updown"></span><span class="s3-market-info__date"></span></li>
+            <li>ドル／円<span class="s3-market-info__num">----</span><span class="s3-market-info__num-sub"></span>円<span class="s3-market-info__updown"></span></li>
+          </ul>
+          <div class="s3-market-info__link"><a onclick="s.lidTrack('v_visitor_top_market');" href="/web/market/data/index_top.html">詳細 <i class="rex-icon-chevron-right"></i></a></div>
+        </div>
+      </section>
+      
+<div class="s3-member-banner">
+  <div class="s3-member-banner__wrap">
+    <div class="s3-member-banner__main">
+      <div class="s3-member-banner__inner swiper-container">
+<!--#include virtual="/web/shared/include/carousel/s3-member-banner-swiper_mock.html" -->
+      </div>
+    </div>
+  </div>
+  <div class="s3-member-banner__side">
+<!--#include virtual="/web/shared/include/vtop/s1-visitor-login.html" -->
+  </div>
+</div>
+      
+      <section class="s3-section">
+        <div class="s3-section__wrap s3-section__wrap--wide">
+          <div class="s3-dashboard">
+            <div class="s3-dashboard__main">
+<!--#include virtual="/web/shared/include/vtop/emergency/s1-emergency.html" -->
+              <section class="s3-general-section">
+                <div class="s3-general-hdg">
+                  <h2 class="s3-general-hdg__element">よくあるお問い合わせ</h2>
+                  <div class="s3-general-hdg__link"><a onclick="s.lidTrack('v_visitor_top_faq_other');" href="https://faq.rakuten-sec.co.jp/">その他の「よくあるお問い合わせ」</a></div>
+                  <div class="s3-general-hdg__link"><a onclick="s.lidTrack('v_visitor_top_faq_support');" href="/web/support/">お客様サポート</a></div>
+                </div>
+<!--#include virtual="/web/shared/include/vtop/s3-faq.html" -->
+              </section>
+              <section class="s3-general-section">
+                <div class="s3-general-hdg">
+                  <h2 class="s3-general-hdg__element">お知らせ</h2>
+                  <div class="s3-general-hdg__link"><a onclick="s.lidTrack('v_visitor_top_info');" href="/web/info/">お知らせ一覧</a></div>
+                </div>
+<!--#include virtual="/web/shared/include/vtop/emergency/s3-emergency-info.html" -->
+<!--#include virtual="/web/shared/include/vtop/s3-info.html" -->
+              </section>
+              <section class="s3-general-section">
+                <div class="s3-general-hdg">
+                  <h2 class="s3-general-hdg__element">セミナー情報</h2>
+                  <div class="s3-general-hdg__link"><a onclick="s.lidTrack('v_visitor_top_seminar');" href="/web/learn/seminar/">セミナー情報一覧</a></div>
+                </div>
+<!--#include virtual="/web/shared/include/vtop/s3-seminar.html" -->
+              </section>
+              <section class="s3-general-section">
+                <div class="s3-general-hdg">
+                  <h2 class="s3-general-hdg__element">投資コラム・レポート</h2>
+                  <div class="s3-general-hdg__link"><a onclick="s.lidTrack('v_visitor_top_report_block_all');" href="https://media.rakuten-sec.net/" target="_blank">投資情報メディア「トウシル」はこちら</a></div>
+                </div>
+                <div class="s3-media">
+                  <ul id="REPLST" class="s3-media-list"></ul>
+                  <p class="s3-media__bnr"><a onclick="s.lidTrack('v_visitor_top_toushiru02');this.href=usergram.link(this.href);" href="https://media.rakuten-sec.net/ud/theme_simple/theme_code/toushi-step" target="_blank"><img src="/web/shared/img/top/s3-top-bnr-toushiru.png" alt="" width="426" height="67"></a></p>
+                </div>
+              </section>
+<!--#include virtual="/web/shared/include/vtop/s3-info-release.html" -->
+              <section class="s3-general-section" id="IPOVTOP">
+                <div class="s3-general-hdg">
+                  <h2 class="s3-general-hdg__element">新規公開株式（IPO）</h2>
+                  <div class="s3-general-hdg__link"><a onclick="s.lidTrack('v_visitor_top_ipo');" href="/web/domestic/ipo/">新規公開株式（IPO）／公募増資・売出（PO）一覧</a></div>
+                </div>
+                <div id="data-json-ipo-vtop"></div>
+              </section>
+<!--#include virtual="/web/shared/include/vtop/s3-info-ir.html" -->
+              <section class="s3-general-section">
+                <div class="s3-general-hdg">
+                  <h2 class="s3-general-hdg__element">銘柄 / ファンド検索</h2>
+                </div>
+                <form action="javascript:changeSearchResult('market_search','stoc-type', 'name')" method="get" name="market_search" id="s3-form-search" class="s3-form-search">
+                  <div class="s3-form-search__select">
+                    <select name="stoc-type">
+                    <option value="0" selected="" class="srch_jp">国内株式</option>
+                    <option value="1" class="srch_us">米国株式</option>
+                    <option value="2" class="srch_ch">中国株式</option>
+                    <option value="5" class="srch_as">アセアン株式</option>
+                    <option value="3" class="srch_fn">投資信託</option>
+                    </select>
+                    <i class="rex-icon-arrowicon-filled"></i>
+                  </div>
+                  <input class="s3-form-search__input" type="text" name="name" placeholder="銘柄名 / コード / ファンド名">
+                  <div class="s3-form-search__submit">
+                    <button type="submit"><i class="rex-icon-search-outline"></i></button>
+                  </div>
+                </form>
+              </section>
+            </div>
+            <div class="s3-dashboard__side">
+              <div class="s3-general-box">
+                <div class="s3-general-box__block">
+                  <div class="s3-btn-general01"><a onclick="s.lidTrack('v_visitor_top_fx_login');" href="/web/fx/login.html"><i class="s3-glyphs-login"></i> 楽天FXへログイン</a></div>
+                </div>
+              </div>
+              
+              <div class="s3-general-box">
+                <div class="s3-general-box__block">
+                  <div id="NISAACC" class="s3-btn-account-sub01 s3-btn-account-sub01--small"><a onclick="s.lidTrack('v_visitor_top_account_nisa')" href="/nisa/login.html" ><i class="rex-icon-edit-outline"></i> NISA口座申込</a></div>
+                  <ul class="s3-icon-list">
+                    <li><i class="rex-icon-help-outline"></i> <a onclick="s.lidTrack('v_visitor_top_account_open_com')" href="/web/account/rsec.html">総合口座をお持ちでないお客様</a></li>
+                    <li><i class="rex-icon-help-outline"></i> <a onclick="s.lidTrack('v_visitor_top_account_flow')" href="/ITS/rakuten_g/flow/">口座開設・お取引までの流れ</a></li>
+                  </ul>
+                  <div id="UADEACC" class="s3-btn-account-sub02 s3-btn-account-sub02--small"><a onclick="s.lidTrack('v_visitor_top_account_under_age')" href="/web/under_age/"><i class="rex-icon-edit-outline"></i> 未成年口座開設</a></div>
+                </div>
+              </div>
+<!--#include virtual="/web/shared/include/vtop/s3-dashboard-top.html" -->              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="s3-section" id="SETTLEMENT_INFO">
+        <div class="s3-section__wrap s3-section__wrap--wide">
+          <div class="s3-settlement">
+            <div class="s3-settlement__bnr"><img src="/web/shared/img/top/s3-top-bnr-settlement.png" alt="" width="220" height="120"></div>
+            <dl class="s3-settlement__list">
+              <dt>本日の決算発表</dt>
+              <dd>
+                <ul>
+                  <li><a id="JP_SETTLEMENT" href="/web/info/info20141024-02.html" onclick="s.lidTrack('v_visitor_top_calendar_d_closing')">---</a></li>
+                  <li><a id="US_SETTLEMENT" href="/web/market/calendar/fclosing.html" onclick="s.lidTrack('v_visitor_top_calendar_f_closing')">---</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      
+      <section class="s3-section s3-section--grad">
+        <div class="s3-section__wrap s3-section__wrap--wide">
+          <div class="s3-tool">
+            <h2 class="s3-tool__hdg">取引ツール</h2>
+            <div class="s3-grid s3-grid--border">
+              <div class="s3-grid__cell-1-2-border">
+                <div class="s3-tool__img"><img src="/web/shared/img/top/s3-top-img-tool-01.png" alt="" width="563" height="168"></div>
+                <div class="s3-tool__caption">PC用トレーディングツール</div>
+                <div class="s3-tool__name">マーケットスピード</div>
+                <div class="s3-tool__txt">WindowsやMacに対応したPC用のトレーディングツール。リアルタイムかつ豊富な情報で、初心者からアクティブトレーダーまで投資家の皆様の投資活動をサポートするオンライントレードツールです。</div>
+                <ul class="s3-tool__list">
+                  <li class="s3-tool__item s3-tool__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_tool_ms');" href="https://marketspeed.jp/">
+                      <p><img src="/web/shared/img/top/s3-top-icon-ms.png" alt="" width="40"><img src="/web/shared/img/top/s3-top-icon-ms2.png" alt="" width="40"></p>
+                      <p>マーケットスピード<br>マーケットスピード II </p>
+                    </a>
+                  </li>
+                  <li class="s3-tool__item">
+                    <a onclick="s.lidTrack('v_visitor_top_tool_msfx');" href="https://marketspeed.jp/fx/">
+                      <p><img src="/web/shared/img/top/s3-top-icon-ms-fx.png" alt="" width="40"></p>
+                      <p>マーケットスピードFX</p>
+                    </a>
+                  </li>
+                  <li class="s3-tool__item">
+                    <a onclick="s.lidTrack('v_visitor_top_tool_msmac');" href="https://marketspeed.jp/mac/">
+                      <p><img src="/web/shared/img/top/s3-top-icon-ms-mac.png" alt="" width="40"></p>
+                      <p>MARKETSPEED for Mac</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="s3-grid__cell-1-2-border">
+                <div class="s3-tool__img"><img src="/web/shared/img/top/s3-top-img-tool-02.png" alt="" width="373" height="168"></div>
+                <div class="s3-tool__caption">スマートフォン用トレーディングツール</div>
+                <div class="s3-tool__name">iSPEED</div>
+                <div class="s3-tool__txt">累計310万超<sup>※</sup>のダウンロード数。一日1,000本以上のニュース配信や、会社四季報や株主優待へのアクセスも。場所や時間を選ばず、どこでも快適にトレードできるスマートフォン用トレーディングツールです。<span class="s3-notice-inline">2019年12月時点</span></div>
+                <ul class="s3-tool__list">
+                  <li class="s3-tool__item">
+                    <a onclick="s.lidTrack('v_visitor_top_tool_ispeed');" href="https://ispeed.jp/">
+                      <p><img src="/web/shared/img/top/s3-top-icon-ispeed.png" alt="" width="40"></p>
+                      <p>iSPEED</p>
+                    </a>
+                  </li>
+                  <li class="s3-tool__item">
+                    <a onclick="s.lidTrack('v_visitor_top_tool_ispeedfx');" href="https://ispeed.jp/fx/">
+                      <p><img src="/web/shared/img/top/s3-top-icon-ispeed_fx.png" alt="" width="40"></p>
+                      <p>iSPEED FX</p>
+                    </a>
+                  </li>
+                  <li class="s3-tool__item">
+                    <a onclick="s.lidTrack('v_visitor_top_tool_ispeedfop');" href="https://ispeed.jp/fop/">
+                      <p><img src="/web/shared/img/top/s3-top-icon-ispeed_sakimono.png" alt="" width="40"></p>
+                      <p>iSPEED 先物OP</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p></p>
+        </div>
+      </section>
+      <section class="s3-section s3-section--grad">
+        <div class="s3-section__wrap s3-section__wrap--wide">
+          <div class="s3-products">
+            <h2 class="s3-products__hdg">商品 ／サービス</h2>
+            <div class="s3-gird s3-gird--border">
+              <div class="s3-grid__cell-1-2-border">
+                <ul class="s3-products__list">
+                  <li class="s3-products__item">
+                    <a onclick="s.lidTrack('v_visitor_top_products_domestic');" href="/web/domestic/">
+                      <p><i class="sure-icon-domestic-outline"></i></p>
+                      <p>国内株式</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_foreign');" href="/web/foreign/">
+                      <p><i class="sure-icon-overseas-outline"></i></p>
+                      <p>海外株式・<br>ETF</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item">
+                    <a onclick="s.lidTrack('v_visitor_top_products_fund');" href="/web/fund/">
+                      <p><i class="sure-icon-investment-outline"></i></p>
+                      <p>投資信託</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_nisa');" href="/nisa/">
+                      <p><i class="sure-icon-nisa-outline"></i></p>
+                      <p>NISA・<br>つみたてNISA</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_dc');" href="https://dc.rakuten-sec.co.jp/">
+                      <p><i class="sure-icon-ideco-outline"></i></p>
+                      <p>確定拠出年金<br>(iDeCo)</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="s3-products__tag-list s3-products__tag-list--1-3">
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_bond');" href="/web/bond/">債券</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_fx');" href="/web/fx/">FX (楽天FX・楽天MT4)</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_fop');" href="/web/fop/">先物・オプション</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_commodity');" href="/web/commodity/">商品先物</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_gold');" href="/web/gold/">金・プラチナ</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_wrap');" href="https://wrap.rakuten-sec.co.jp/">楽ラップ</a></li>
+                </ul>
+                <div class="s3-btn-simple01 ta-c"><a onclick="s.lidTrack('v_visitor_top_products_top');" href="/web/products/">商品トップへ</a></div>
+              </div>
+              <div class="s3-grid__cell-1-2-border">
+                <ul class="s3-products__list">
+                  <li class="s3-products__item">
+                    <a onclick="s.lidTrack('v_visitor_top_products_commission');" href="/web/commission/">
+                      <p><i class="sure-icon-price-outline"></i></p>
+                      <p>手数料</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_point');" href="/web/service/point/">
+                      <p><i class="sure-icon-point-program-outline"></i></p>
+                      <p>ポイント<br>プログラム</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_bank');" href="/web/bank/">
+                      <p><i class="sure-icon-bank-outline"></i></p>
+                      <p>楽天銀行と<br>の口座連携</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_creditcard');" href="/web/fund/saving/creditcard.html">
+                      <p><i class="rex-icon-creditcard-outline"></i></p>
+                      <p>楽天カード<br>決済</p>
+                    </a>
+                  </li>
+                  <li class="s3-products__item s3-products__item--adj">
+                    <a onclick="s.lidTrack('v_visitor_top_products_investment');" href="/web/service/investment/">
+                      <p><i class="sure-icon-knowledge-outline"></i></p>
+                      <p>投資情報<br>サービス</p>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="s3-products__tag-list s3-products__tag-list--1-4">
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_pay');" href="/web/service/pay/">入出金</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_tusmitate');" href="/web/service/tsumitate/">積立サービス</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_session');" href="/web/service/session/">取引時間</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_mail');" href="/web/service/mailservice/">メールサービス</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_underage');" href="/web/under_age/">未成年口座</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_mynumber');" href="/web/service/mynumber/">マイナンバー</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_tax');" href="/web/support/tax/">税制と確定申告</a></li>
+                  <li class="s3-products__tag"><a onclick="s.lidTrack('v_visitor_top_products_collateral');" href="/web/collateral/">らくらく担保</a></li>
+                </ul>
+                <div class="s3-btn-simple01 ta-c"><a onclick="s.lidTrack('v_visitor_top_products_service');" href="/web/service/">サービストップへ</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s3-section s3-section--gray">
+        <div class="s3-section__wrap s3-section__wrap--wide">
+          <div class="s3-customer">
+            <ul class="s3-customer__list">
+              <li class="s3-customer__item">
+                <a onclick="s.lidTrack('v_visitor_top_fiduciary');" href="/web/company/fiduciary/">
+                  <p class="s3-customer__img"><img src="/web/shared/img/top/s3-top-img-customer-01.png" alt="" width="276" height="120"></p>
+                  <p class="s3-customer__hdg">お客様本位の業務運営</p>
+                  <p>楽天証券は、お客様の立場を発想の原点とした商品開発・サービス提供を行っております。</p>
+                  <p>詳しくみる</p>
+                </a>  
+              </li>
+              <li class="s3-customer__item">
+                <a onclick="s.lidTrack('v_visitor_top_support');" href="/web/support/">
+                  <p class="s3-customer__img"><img src="/web/shared/img/top/s3-top-img-customer-02.png" alt="" width="276" height="120"></p>
+                  <p class="s3-customer__hdg">ヘルプ＆サポート</p>
+                  <p>お気軽にご連絡ください。楽天証券のスタッフがあなたのお取り引きをサポートします。</p>
+                  <p>詳しくみる</p>
+                </a>
+              </li>
+              <li class="s3-customer__item">
+                <a onclick="s.lidTrack('v_visitor_top_voc');" href="/web/company/voc/">
+                  <p class="s3-customer__img"><img src="/web/shared/img/top/s3-top-img-customer-03.png" alt="" width="276" height="120"></p>
+                  <p class="s3-customer__hdg">お客様の声から学びました</p>
+                  <p>お客様からいただいたご意見・ご要望に学び、さらなるサービスの改善に取り組んでいます。</p>
+                  <p>詳しくみる</p>
+                </a>
+              </li>
+              <li class="s3-customer__item">
+                <a onclick="s.lidTrack('v_visitor_top_security');" href="/web/security/">
+                  <p class="s3-customer__img"><img src="/web/shared/img/top/s3-top-img-customer-04.png" alt="" width="276" height="120"></p>
+                  <p class="s3-customer__hdg">セキュリティ</p>
+                  <p>お客様の資産と情報を守るために、「セキュリティ」の強化に取り組んでいます。</p>
+                  <p>詳しくみる</p>
+                </a>
+              </li>
+            </ul>
+            <div class="s3-customer__box">
+              <p><img src="/web/shared/img/top/s3-top-img-customer-05.png" width="96" height="51" alt=""></p>
+              <p><img src="/web/shared/img/top/s3-top-img-customer-06.png" width="96" height="51" alt=""></p>
+              <p><a onclick="s.lidTrack('v_visitor_top_hdi');" href="/web/special/hdi/2019/">楽天証券カスタマーサービスセンターは、<br>HDI格付けベンチマークの最高位評価「三つ星」を4年連続で受賞しました。</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s3-section">
+        <div class="s3-section__wrap s3-section__wrap--wide">
+          <div class="s3-ifa">
+            <div class="s3-ifa__img"><img src="/web/shared/img/top/s3-top-img-ifa-01.png" width="376" height="268" alt=""></div>
+            <div class="s3-ifa__box">
+              <h2 class="s3-ifa__hdg">IFA（運用相談）</h2>
+              <p>信頼できる資産運用アドバイザーがいますか？<br>楽天証券と提携するIFAは、お客様の大切な資産を守り育てるお手伝いをします。お気軽にご相談ください。</p>
+              <p><a onclick="s.lidTrack('v_visitor_top_ifa_01');" href="https://fa.rakuten-sec.co.jp/">IFA（運用相談）について詳しくみる</a></p>
+            </div>
+            <div class="s3-ifa__box">
+              <div class="s3-ifa__col">
+                <h3 class="s3-ifa__hdg s3-ifa__hdg--lv3">【IFA開催セミナー情報 】</h3>
+                <p>IFA事業者主催のセミナーを随時開催しております。</p>
+                <p><a onclick="s.lidTrack('v_visitor_top_ifa_02');" href="https://fa.rakuten-sec.co.jp/#seminar">IFA開催セミナー情報について詳しくみる</a></p>
+              </div>
+              <div class="s3-ifa__col">
+                <h3 class="s3-ifa__hdg s3-ifa__hdg--lv3">【IFA支援サービス】</h3>
+                <p>IFAとして成功を目指す皆さまを全面的にサポートします。</p>
+                <p><a onclick="s.lidTrack('v_visitor_top_ifa_03');" href="https://fa.rakuten-sec.co.jp/partner/">IFA支援サービスについて詳しくみる</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="s3-section s3-section--nisa">
+        <div class="s3-section__wrap">
+          <div class="s3-account s3-account--sub">
+            <h2 class="s3-account__hdg">NISA口座の他社からの乗り換え受付中!</h2>
+            <div class="s3-account__btn">
+              <div class="s3-btn-account-sub01 s3-btn-account-sub01--large"><a onclick="s.lidTrack('v_visitor_top_nisa_login');" href="/nisa/login.html"><i class="rex-icon-edit-outline"></i> NISA口座申込</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="s3-section s3-section--gray">
+        <div class="s3-section__wrap">
+          <div class="s3-opinion">
+            <h2 class="s3-opinion__hdg">楽天証券へのご意見をお聞かせください。</h2>
+            <p class="s3-opinion__txt">楽天証券へのご意見やご要望がありましたら、ぜひお聞かせください。<br>楽天証券は、お客様からのご意見・ご要望をもとに、サービスの改善に向けて取り組んでおります。</p>
+            <div class="s3-opinion__btn">
+              <div class="s3-btn-general01"><a onclick="s.lidTrack('v_visitor_top_opinion_01');" href="/web_enq/feedback.html?current_url=/">ご意見を投稿する</a></div>
+            </div>
+            <p class="s3-opinion__txt"><a onclick="s.lidTrack('v_visitor_top_opinion_02');" href="/web/company/voc/">お客様の声から改善されたサービスを見る</a></p>
+          </div>
+        </div>
+      </section>
+
+<!-- SiteCatalyst code -->
+<script type="text/javascript" src="/web/shared/js/sc/s_code.min.js"></script>
+<script type="text/javascript"><!--
+try { pbcd("activateSiteCatalyst"); } catch(e) {}
+s.pageName="TOP_Visitor_member";
+s.channel="TOP_Visitor";
+void(s.t())
+//--></script>
+<!-- End SiteCatalyst code -->
+      
+    </div><!--/s3-contents-->
+<!-- /インクルード /web/shared/include/vtop/s3-member-index01.html -->

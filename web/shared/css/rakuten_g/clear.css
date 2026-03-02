@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Float Clearing
+*	02. Get hasLayout
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Float Clearing
+----------------------------------------------------------------- */
+div#str-search:after,
+div#str-contents:after,
+div#nav-global ul:after,
+body#top div#str-main:after,
+
+body.lyt-column-ms-02 div#str-sub-common div.advertisement ul:after,
+body.lyt-column-ms-02 div#str-sub-common div.account ul:after,
+
+div#str-footer div#nav-summary:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+/* ----------------------------------------------------------------
+    02. Get hasLayout
+----------------------------------------------------------------- */
+div#str-search,
+div#str-contents,
+div#nav-global ul,
+body#top div#str-main{
+zoom:1;
+}
+

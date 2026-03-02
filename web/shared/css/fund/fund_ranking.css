@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+div#str-contents-inner div.fund-ranking div.hdg-l1-05-container ul {
+    top:.4em;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner dt{
+    display: inline;
+    vertical-align:middle;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner dd{
+    display: inline;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner ul{
+    margin-bottom: 0;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner li{
+    margin-bottom: 0;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner ul li input,
+div#str-contents-inner div#str-main div.box-ranking_search-inner ul li label{
+	vertical-align:middle;
+	margin-right:5px;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner ul li dl dd input{
+	width:1em;
+	height: 1em;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner ul li dl dd input:first-child+label{
+	display:inline-block;
+    *display: inline;
+    *zoom:1;
+	width:48px;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner li.column2{
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    padding-right:30px;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search{
+	border:1px solid #9BB2E2;
+    margin-bottom:10px;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner{
+    margin: 5px;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner p{
+    margin-bottom: 0;
+}
+
+div#str-contents-inner div#str-main div.box-ranking_search-inner h2{
+	background:url("/web/fund/images/icon-search.gif") no-repeat 10px;
+	font-size:13px;
+	padding:0 40px;
+    margin-bottom:5px;
+}
+
+div#str-contents-inner div#str-main div.ranking-terms ul{
+    margin:-15px 0 3px 0;
+    border-bottom:1px solid #0F218B;
+    padding-bottom: 3px;
+}
+
+div#str-contents-inner div#str-main div.ranking-terms ul li{
+    float:left;
+    border-left:1px solid #999999 ;
+    text-align: center;
+    padding:0 3px;
+}
+
+div#str-contents-inner div#str-main div.ranking-terms ul li:first-child{
+    border:none;
+}
+
+div#str-contents-inner div#str-main div.ranking-terms ul li a{
+    height:20px;
+    display: block;
+    padding:2px 5px;
+    text-decoration: none;
+}
+
+div#str-contents-inner div#str-main div.ranking-terms ul li a:hover,
+div#str-contents-inner div#str-main div.ranking-terms ul li.selected a{
+    color:#fff;
+    background: url('/web/fund/ranking/images/ranking-bg-img-on.gif') repeat-x;
+}
+
+div#str-contents-inner div#str-main div.nav-tab-container ul.tab-gra li{
+	padding:0;
+	border:1px solid #cdcdcd;
+	border-left:none;
+}
+
+div#str-contents-inner div#str-main div.nav-tab-container ul.tab-gra li a{
+	display: inline-block;
+	padding: 3px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	background: rgb(238,238,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(238,238,238,1) 49%, rgba(237,237,237,1) 51%, rgba(230,230,230,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(238,238,238,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(230,230,230,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 49%,rgba(237,237,237,1) 51%,rgba(230,230,230,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(238,238,238,1) 49%,rgba(237,237,237,1) 51%,rgba(230,230,230,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(238,238,238,1) 49%,rgba(237,237,237,1) 51%,rgba(230,230,230,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(238,238,238,1) 49%,rgba(237,237,237,1) 51%,rgba(230,230,230,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+}
+
+div#str-contents-inner div#str-main div.nav-tab-container ul.tab-gra li:first-child{
+	border-left:1px solid #cdcdcd;
+}
+
+div#str-contents-inner div#str-main div.nav-tab-container ul.tab-gra li a:hover,
+div#str-contents-inner div#str-main div.nav-tab-container ul.tab-gra li.selected a{
+	color:#fff;
+	background: rgb(125,184,233); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,184,233,1) 49%, rgba(93,166,227,1) 51%, rgba(83,160,219,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(125,184,233,1)), color-stop(51%,rgba(93,166,227,1)), color-stop(100%,rgba(83,160,219,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(125,184,233,1) 49%,rgba(93,166,227,1) 51%,rgba(83,160,219,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(125,184,233,1) 49%,rgba(93,166,227,1) 51%,rgba(83,160,219,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(125,184,233,1) 49%,rgba(93,166,227,1) 51%,rgba(83,160,219,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(125,184,233,1) 49%,rgba(93,166,227,1) 51%,rgba(83,160,219,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db8e9', endColorstr='#53a0db',GradientType=0 ); /* IE6-9 */
+}
+
+div#str-contents-inner div#str-main p.reset-date{
+	float:left;
+    margin-bottom:0;
+}
+
+div#str-contents-inner div#str-main div.columns3 > dl{
+    width:234px;
+    float:left;
+    border-left: 1px dotted #999;
+    margin:0;
+    padding:0 8px;
+}
+
+div#str-contents-inner div#str-main div.columns3 > dl:first-child{
+    border:none;
+}
+
+div#str-contents-inner div#str-main div.ranking-list div.list-content{
+    border:1px solid #316a96;
+    padding:10px 0;
+    margin-bottom:20px;
+}
+
+div#str-contents-inner div#str-main div.ranking-list dl dt{
+    background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 7px;
+    margin: .3em 0 0;
+    padding-left: 10px;
+}
+
+div#str-contents-inner div#str-main div.ranking-list dl dd{
+    padding-left: 10px;
+    font-size:.8em;
+}
+
+div#str-contents-inner div#str-main div.hdg-l1-05-container ul {
+    top:.4em;
+}
+
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 1%;
+    visibility: hidden;
+}

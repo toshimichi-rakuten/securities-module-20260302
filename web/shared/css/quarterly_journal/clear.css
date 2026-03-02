@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Float Clearing
+*	02. Get hasLayout
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Float Clearing
+----------------------------------------------------------------- */
+div#str-main div.nav-tab-container ul:after,
+div#str-main div.nav-chart ul:after,
+div#str-main ul.nav-tab:after,
+
+div#str-main div.lyt-column:after,
+
+div#str-main div.box-renew:after,
+
+div#str-main div.lyt-image:after,
+div#str-main div.stoc-search-container form ul.list-form-market li li:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+/* ----------------------------------------------------------------
+    02. Get hasLayout
+----------------------------------------------------------------- */
+div, ul, li, dl, dt, dd, p{
+zoom:1;
+}
+
+ol li,
+div#str-main dl.list-normal-01 dd{
+zoom:0;
+}
+

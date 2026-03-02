@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: index.css for
+/web/fund/saving/
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+common style
+----------------------------------------------------------------*/
+div#str-main .lyt-saving-01{
+margin-bottom:30px;
+}
+
+/*---------------------------------------------------------------
+segment01
+----------------------------------------------------------------*/
+/* ---------------------------------
+div#fund-dubut
+-------------------------------- */
+div#str-main div#fund-dubut{
+background-color:#cae7fd;
+border:none;
+padding:2px 0 5px 2px;
+}
+div#str-main div#fund-dubut div.column-col3{
+margin-bottom:5px;
+width:100%;
+}
+div#str-main div#fund-dubut div.column-col3 div.segment{
+background-color:#ffffff;
+border:1px solid #accfed;
+margin-left: 2px;
+margin-right:0;
+width:176px;
+}
+div#str-main div#fund-dubut div.column-col3 div.segment .hdg-dubut-01{
+margin:8px 3px 10px;
+}
+div#str-main div#fund-dubut div.column-col3 div.segment p{
+margin:0 4px 13px;
+}
+div#str-main div#fund-dubut div.column-col3 div.segment .image{
+text-align:center;
+margin-bottom:10px;
+}
+
+/*---------------------------------------------------------------
+segment02
+----------------------------------------------------------------*/
+div#str-main #box-ranking-search dl, div#str-main #box-recommend-01 dl{
+margin:0 0 15px;
+}
+div#str-main #box-ranking-search dt, div#str-main #box-recommend-01 dt{
+font-size: 107.6%;
+font-weight:bold;
+}
+
+/* ---------------------------------
+div#box-ranking-search
+-------------------------------- */
+div#str-main #box-ranking-search dd .lyt-column{
+margin-left:0;
+width:100%;
+}
+
+/* ---------------------------------
+div#box-recommend-01
+-------------------------------- */
+div#str-main #box-recommend-01 dt{
+margin-bottom:3px;
+}
+div#str-main #box-recommend-01 dd{
+background-color:#cae7fd;
+}
+div#str-main #box-recommend-01 ul.list-link-01{
+margin-bottom:0;
+padding:5px;
+}
+div#str-main #box-recommend-01 ul.list-link-01 li{
+background-image:url(/web/fund/saving/images/index/arrow-04.gif);
+}
+
+/*---------------------------------------------------------------
+segment03
+----------------------------------------------------------------*/
+div#str-main #box-help-01 dt{
+padding:0 0 0 55px;
+position:relative;
+}
+div#str-main #box-help-01 dt a{
+font-weight:bold;
+}
+div#str-main #box-help-01 dt img.thumb {
+left: 0;
+padding: 0;
+position: absolute;
+top: 0;
+}
+div#str-main #box-help-01 dd{
+margin-left:55px;
+}
+
+div#str-main ul#box-help-01:after{
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden;
+}
+div#str-main ul#box-help-01 li{
+float:left;
+width:264px;
+}

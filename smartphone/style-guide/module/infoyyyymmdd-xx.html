@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>スマホお知らせモジュール | 楽天証券</title>
+    <meta name="Keywords" content="">
+    <meta name="description" content="原稿の最初の方のおおよその内容が分かりそうな１文をここに入れましょう。">
+    <meta name="author" content="Rakuten Securities, Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="https://www.rakuten-sec.co.jp/web/info/info20171006-02.html">
+    <link rel="apple-touch-icon-precomposed" href="/smartphone/img/securities.png">
+    <link rel="stylesheet" href="/smartphone/visitor/css/reset.css" media="all">
+    <link rel="stylesheet" href="/smartphone/visitor/css/style.css?161230" media="all">
+    <link rel="stylesheet" href="/smartphone/css/common/modules.css" media="all">
+    <link rel="stylesheet" href="/smartphone/visitor/js/jquery.jscrollpane.css" media="all">
+    <link rel="stylesheet" href="/smartphone/visitor/css/smt_menu.css" media="all">
+    <link rel="stylesheet" href="/smartphone/info/css/default.css" media="all">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/smartphone/visitor/js/jquery.leanModal.min.js"></script>
+    <script>
+    $(function() {
+        $('a[href^=#]').click(function() {
+            var speed = 480;
+            var href = $(this).attr("href");
+            var target = $(href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $('body,html').animate({
+                scrollTop: position
+            }, speed, 'swing');
+            return false;
+        });
+    });
+    $(function(){
+      $(".acc_box dt").on("click", function() {
+        $(this).next().slideToggle();
+        if ($(this).children(".acc_icon").hasClass('open')) {
+          $(this).children(".acc_icon").removeClass('open');
+        }
+        else {
+          $(this).children(".acc_icon").addClass('open');
+        }
+      });
+    });
+    </script>
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules_smt.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+</head>
+
+<body id="cahrmLineup">
+<a id="pagetop"></a>
+
+<!--#include virtual="/smartphone/shared/include/header/s1-smt-header.html" -->
+<div style="overflow: hidden;">
+
+<div class="s1-bar-hdg">
+  <h1 class="s1-bar-hdg__lv1">楽天証券からのお知らせ</h1>
+</div>
+
+<div class="page-header">
+  <p>スマートフォン版のお知らせ用のモジュール（仮）です。<span class="fc-r">※お知らせのタイトルはここ※</span></p>
+</div>
+
+<p class="update"><span class="fc-r">※お知らせの日付はここ※</span> 2017年11月27日</p>
+
+<div id="contents">
+  <div class="inner">
+    <p>スマートフォン版のお知らせを作るときの参考にして下さい。<br>
+    基本的には、web用の新モジュールで使っているクラス名をそのまま使える（web版があれば文面の部分はコピペできる）ことを想定して作成しました。</p>
+    <p>【はじめに…】</p>
+
+<!-- スタイルガイド開始 -->
+
+<ol class="s1-list-num-bubble-count">
+<li>ヘッダーでスマホお知らせ用のCSS「default.css」を読み込んで下さい。するとこのモジュールがあたります。</li>
+<div class="module-sample">
+<link rel="stylesheet" href="/smartphone/info/css/default.css" media="all">
+</div>
+
+<li class="mb20">このページをベースにしてコーディングを進めることをおすすめします。ファイル名は任意で変更して下さい。<br>
+<a href="http://10.166.10.116/smartphone/info/infoyyyymmdd-xx.html">http://10.166.10.116/smartphone/info/infoyyyymmdd-xx.html</a>
+</li>
+
+<li>ベースをもとにmetaタグ関連、お知らせのタイトル、お知らせの日付までを設定したら、ページの中身はid「contents」の中のclass「inner」の中、ここにコードを書いていきましょう。</li>
+<div class="module-sample">
+<div id="contents">
+  <div class="inner"><!-- ここにコード --></div>
+</div>
+</div>
+</ol>
+
+<div class="s1-hdg-lv2">
+  <h2 id="idx" class="s1-hdg-lv2__element">索引</h2>
+</div>
+
+<ul class="internalLink">
+<li class="iconArrow"><a rel="smoothScroll" href="#module01">ユーティリティ</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module02">見出し・画像</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module03">リスト</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module04">ボタン</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module05">テーブル</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module06">その他</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module07">ボックス</a></li>
+</ul>
+
+<div class="s1-hdg-lv2">
+  <h2 id="module01" class="s1-hdg-lv2__element">ユーティリティ</h2>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">調整クラス</h3>
+</div>
+
+<ul class="s1-list-notice-a">
+  <li class="fc-r">調整クラスではスマホビジターのデフォルトのスタイル「style.css」のものを一部流用します。webのお知らせとはクラス名の違うものもあるのでご注意を。</li>
+</ul>
+
+<div class=".s1-tbl-fake">
+  <div class="s1-tbl-fake__item">
+    <p class="s1-entitle">マージン（各0～40pxまで、5px刻み）</p>
+    <table class="s1-tbl-data01">
+      <thead>
+        <tr>
+          <th>クラス名</th>
+          <th>効果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>.mb0</th>
+          <td>下マージンの打ち消し</td>
+        </tr>
+        <tr>
+          <th>.mt5</th>
+          <td>5pxの上マージン</td>
+        </tr>
+        <tr>
+          <th>.ml10</th>
+          <td>10pxの左マージン</td>
+        </tr>
+        <tr>
+          <th>.mr15</th>
+          <td>15pxの右マージン</td>
+        </tr>
+        <tr>
+          <th>.m-a</th>
+          <td>左右中央配置</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class=".s1-tbl-fake">
+  <div class="s1-tbl-fake__item">
+  	<p class="s1-entitle">横幅（5%～95%まで、5%刻み）</p>
+  	<table class="s1-tbl-data01">
+  	  <thead>
+  	  	<tr>
+  	  	  <th>クラス名</th>
+  	  	  <th>効果</th>
+  	  	</tr>
+  	  </thead>
+  	  <tbody>
+  	  	<tr>
+  	  	  <th>.width-5per</th>
+  	  	  <td>横幅5%</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.width-10per</th>
+  	  	  <td>横幅10%</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.width-30per</th>
+  	  	  <td>横幅30%</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.width-50per</th>
+  	  	  <td>横幅50%</td>
+  	  	</tr>
+  	  </tbody>
+  	</table>
+  </div>
+  <div class="s1-tbl-fake__item">
+  	<p class="s1-entitle">縦位置</p>
+  	<table class="s1-tbl-data01">
+  	  <thead>
+  	  	<tr>
+  	  	  <th>クラス名</th>
+  	  	  <th>効果</th>
+  	  	</tr>
+  	  </thead>
+  	  <tbody>
+  	  	<tr>
+  	  	  <th>.va-t</th>
+  	  	  <td>上揃え</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.va-m</th>
+  	  	  <td>中央揃え</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.va-b</th>
+  	  	  <td>下揃え</td>
+  	  	</tr>
+  	  </tbody>
+  	</table>
+  </div>
+</div>
+
+<p class="s1-entitle">文字サイズ（8px～16pxまで1px刻み、18px、20pxも有り）</p>
+<div class=".s1-tbl-fake">
+  <div class="s1-tbl-fake__item">
+  	<table class="s1-tbl-data01">
+  	  <thead>
+  	  	<tr>
+  	  	  <th>クラス名</th>
+  	  	  <th>効果</th>
+  	  	</tr>
+  	  </thead>
+  	  <tbody>
+  	  	<tr>
+  	  	  <th>.fs12</th>
+  	  	  <td>font-size: 12px</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.fs16</th>
+  	  	  <td>font-size: 16px</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.fs18</th>
+  	  	  <td>font-size: 18px</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.fs20</th>
+  	  	  <td>font-size: 20px</td>
+  	  	</tr>
+  	  </tbody>
+  	</table>
+  </div>
+  <div class="s1-tbl-fake__item">
+  	<table class="s1-tbl-data01">
+  	  <thead>
+  	  	<tr>
+  	  	  <th>クラス名</th>
+  	  	  <th>効果</th>
+  	  	</tr>
+  	  </thead>
+  	  <tbody>
+  	  	<tr>
+  	  	  <th>.fs-xs</th>
+  	  	  <td>font-size: 75%</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.fs-s</th>
+  	  	  <td>font-size: 86%</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.fs-l</th>
+  	  	  <td>font-size: 110%</td>
+  	  	</tr>
+  	  	<tr>
+  	  	  <th>.fs-xl</th>
+  	  	  <td>font-size: 133%</td>
+  	  	</tr>
+  	  </tbody>
+  	</table>
+  </div>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">文字装飾</h3>
+</div>
+
+<div class="module-sample">
+<p class="fw-b">太字</p>
+<p class="fc-r">赤字</p>
+</div>
+<div class="module-sample">
+<p class="ta-r">右寄せ</p>
+<p class="ta-c">センター</p>
+<p class="ta-l">左寄せ</p>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">リンク</h3>
+</div>
+
+<div class="module-sample">
+<p><a class="iconPC" href="/web/info/">PCページへのリンク</a></p>
+</div>
+
+<div class="module-sample">
+<p><a class="arrow-left" href="/smartphone/fx/">お知らせ以外のスマホページへ</a></p>
+</div>
+
+<div class="module-sample">
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">カラー</h3>
+</div>
+
+<table class="s1-tbl-data01 s1-tbl--width-full fs-s">
+<thead>
+<tr>
+<th>カラーコード</th>
+<th>背景</th>
+<th>テキスト</th>
+<th>ボックス</th>
+<th>薄色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="bg-r-01">#ff3c00</td>
+<td class="bg-r-01">.bg-r-01</td>
+<td class="fc-r-01">.fc-r-01</td>
+<td><div class="s1-box s1-box--r-01 mb0 ta-c">.s1-box .s1-box--r-01</div></td>
+<td class="bg-r-01-light">.bg-r-01-light</td>
+</tr>
+<tr>
+<td colspan="5">主要赤字。.fc-rで同じ赤字が出せます。また、bg-r-01-lightとボックスを組み合わせて赤座布団のボックスが作れます。</td>
+</tr>
+<tr>
+<td class="bg-g-01">#78b400</td>
+<td class="bg-g-01">.bg-g-01</td>
+<td class="fc-g-01">.fc-g-01</td>
+<td><div class="s1-box s1-box--g-01 mb0 ta-c">.s1-box .s1-box--g-01</div></td>
+<td class="bg-g-01-light">bg-g-01-light</td>
+</tr>
+<tr>
+<td colspan="5">サブ口座の緑。</td>
+</tr>
+<tr>
+<td class="bg-b-01">#0069C7</td>
+<td class="bg-b-01">.bg-b-01</td>
+<td class="fc-b-01">.fc-b-01</td>
+<td><div class="s1-box s1-box--b-01 mb0 ta-c">.s1-box .s1-box--b-01</div></td>
+<td class="bg-b-01-light">bg-b-01-light</td>
+</tr>
+<tr>
+<td colspan="5">リンクで使っている青。</td>
+</tr>
+<tr>
+<td class="bg-y-01">#F4A00F</td>
+<td class="bg-y-01">.bg-y-01</td>
+<td class="fc-y-01">.fc-y-01</td>
+<td><div class="s1-box s1-box--y-01 mb0 ta-c">.s1-box .s1-box--y-01</div></td>
+<td class="bg-y-01-light">bg-y-01-light</td>
+</tr>
+<tr>
+<td colspan="5">汎用的な黄。</td>
+</tr>
+<tr>
+<td class="bg-w">#ffffff</td>
+<td class="bg-w">.bg-w</td>
+<td class="bg-dimgray fc-w">.bg-dimgray .fc-w</td>
+<td class="bg-gray fc-w">.bg-gray .fc-w</td>
+<td class="bg-silver fc-w">.bg-silver .fc-w</td>
+</tr>
+<tr>
+<td colspan="5">白背景、白字。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+
+<div class="module-sample">
+<div class="s1-hdg-lv2">
+  <h2 id="module02" class="s1-hdg-lv2__element">見出し2</h2>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">見出し3</h3>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv4">
+  <h4 class="s1-hdg-lv4__element">見出し4</h4>
+</div>
+</div>
+
+<div class="module-sample">
+<p class="s1-entitle">その他見出し</p>
+</div>
+
+<div class="module-sample">
+<p><span class="s1-label bg-b-01">ラベル</span></p>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">画像コンテナ</h3>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-media">
+  <p class="s1-box-media__hdg">メディアタイトル</p>
+  <p><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img"></p>
+  <p class="s1-box-media__caption">メディアキャプション</p>
+</div>
+</div>
+
+<div class="s1-hdg-lv4">
+  <h4 class="s1-hdg-lv4__element">レスポンシブ対応画像</h4>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-media">
+  <p class="respond-img"><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img"></p>
+  <p class="s1-box-media__caption">クラス「respond-img」配下の画像は幅100%になります。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-media">
+  <p class="respond-img"><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img" style="max-width:320px"></p>
+  <p class="s1-box-media__caption">画像を既定のサイズ以上にしたくない場合は、imgタグにstyle="max-width:320px"のように最大値を指定して下さい。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<p>普通の区切り線</p>
+<hr class="s1-delimiter-line">
+<p>点線</p>
+<hr class="s1-delimiter-line s1-delimiter-line--dotted">
+<p>太線</p>
+<hr class="s1-delimiter-line s1-delimiter-line--bold">
+<p>青</p>
+<hr class="s1-delimiter-line s1-delimiter-line--blue">
+<p>gray</p>
+<hr class="s1-delimiter-line s1-delimiter-line--gray">
+<p>上下のマージン半分の14px</p>
+<hr class="s1-delimiter-line s1-delimiter-line--half">
+</div>
+
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+
+<div class="s1-hdg-lv2">
+  <h2 id="module03" class="s1-hdg-lv2__element">リスト</h2>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">スタンダードリスト</h3>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-standard">
+  <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+  <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。
+    <ul class="s1-list-standard">
+      <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+      <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-bubble">
+  <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+  <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。
+    <ul class="s1-list-bubble">
+      <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+      <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">decimalリスト</h3>
+</div>
+
+<div class="module-sample">
+<ol class="s1-list-number">
+  <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+  <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。
+    <ol class="s1-list-number">
+      <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+      <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</li>
+    </ol>
+  </li>
+</ol>
+</div>
+
+<div class="module-sample">
+<ol class="s1-list-num-bubble-count">
+  <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+  <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。
+    <ol class="s1-list-num-bubble-count">
+      <li>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</li>
+      <li>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</li>
+    </ol>
+  </li>
+</ol>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">注釈リスト</h3>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-notice-a">
+  <li>自動でコメがつきます。テキストテキスト</li>
+  <li>テキストテキスト</li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-notice-a fs-s">
+  <li>※の中にリストタグを差し込むときは、【.s1-list-notice-a__reset】をつけてインデントをそろえてください。
+  <ul class="s1-list-standard s1-list-notice-a__reset">
+    <li>テキストテキスト</li>
+  </ul>
+  <ul class="s1-list-bubble s1-list-notice-a__reset">
+    <li>テキストテキスト</li>
+  </ul>
+  </li>
+  <li>※の中の※は【.s1-list-notice-a__reset】つけなくてもいいです。
+    <ul class="s1-list-notice-a s1-list-notice-a__reset">
+      <li>テキストテキスト</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-notice-a-count fs-s">
+  <li>自動でコメ連番がつきます。</li>
+  <li>連番※と同様に、中でリスト使うときは【.s1-list-notice-a-count__reset】を設定してインデントそろえてね。</li>
+  <li>テキストテキスト</li>
+</ul>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">定義リスト</h3>
+</div>
+
+<div class="module-sample">
+<dl class="s1-list-define">
+  <dt>定義語定義語</dt>
+  <dd>説明テキスト説明テキスト</dd>
+  <dt>定義語定義語</dt>
+  <dd>説明テキスト説明テキスト</dd>
+</dl>
+</div>
+
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+
+<div class="s1-hdg-lv2">
+  <h2 id="module04" class="s1-hdg-lv2__element">ボタン</h2>
+</div>
+
+<ul class="s1-list-notice-a mb15">
+  <li class="fc-r">ボタンではスマホビジターのデフォルトのスタイル「style.css」のものをほぼ流用します。webのお知らせとはクラス名が違うのでご注意を。</li>
+</ul>
+
+<div class="module-sample">
+<div class="btnStyle01">
+<a href="#"><span>通常リンクボタン</span></a>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="btnStyle01">
+<a href="#"><span><span class="iconPC">PCページへのリンクボタン</span></span></a>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="btnAccount">
+<p><a href="/web/account/">かんたん口座開設</a></p>
+</div>
+</div>
+
+<ul class="s1-list-notice-a mb30">
+  <li class="fc-r">口座開設ボタンをページ下部固定にしたい場合は、モディファイア.btnAccount-fixedをつけて、ページのヘッダータグ内に下記のスタイルを追記して下さい。<br>
+  <pre style="margin:0;text-indent:0;">&lt;style&gt;
+  body nav#sideMenu{z-index: 9999;}
+  div.copyright{padding-bottom: 65px;}
+&lt;/style&gt;</pre>
+</li>
+</ul>
+
+<div class="module-sample">
+<ul id="tabs">
+<li class="act"><a href="#">タブリンク<br>ボタンです</a></li>
+<li><a href="#">クラス名actが<br>今開いているページ</a></li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="internalLink">
+<li class="iconArrow"><a rel="smoothScroll" href="#">アンカーリンクボタン</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module05">リンク（テーブルへ）</a></li>
+<li class="iconArrow"><a rel="smoothScroll" href="#module07">リンク（ボックスへ）</a></li>
+</ul>
+</div>
+
+<div class="s1-hdg-lv2">
+  <h2 id="module05" class="s1-hdg-lv2__element">テーブル</h2>
+</div>
+
+<p>talbe幅は成り行きですので、フル幅にするにはモディファイア.s1-tbl--width-fullをつけてください。<br>
+セル幅は調整クラスの横幅（width-Xper、X=5～95）で、<br>
+縦位置は調整クラスの縦位置（va-t、va-m、va-b）で調整してください。</p>
+
+<p class="s1-entitle">thead有り</p>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full">
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="s1-entitle">テーブルコンテンツがウィンドウを横幅320pxに縮めたときに収まりきらない場合は、クラス「scroll」で囲んで下さい。自動でスクロールバーが付くようになります。</p>
+
+<div class="module-sample">
+<div class="scroll">
+<table class="s1-tbl-data01">
+  <thead>
+    <tr>
+      <th>テキストテキストテキステキストテキスト</th>
+      <th>テキストテキストテキステキストテキスト</th>
+      <th>テキストテキストテキステキストテキスト</th>
+      <th>テキストテキストテキステキストテキスト</th>
+      <th>テキストテキストテキステキストテキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>テキストテキストテキストテキストテキスト</td>
+      <td>テキストテキストテキストテキストテキスト</td>
+      <td>テキストテキストテキストテキストテキスト</td>
+      <td>テキストテキストテキストテキストテキスト</td>
+      <td>テキストテキストテキストテキストテキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+<p class="s1-entitle">均等幅のテーブル（.s1-tbl--layout-fixed）</p>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--layout-fixed">
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="s1-entitle">ストライプテーブル（.s1-tbl--row-color）</p>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--row-color">
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="s1-entitle">色つきセル</p>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--layout-fixed">
+  <thead>
+    <tr>
+      <th>赤</th>
+      <th>緑</th>
+      <th>黄</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="ta-c cell-r">.cell-r</td>
+      <td class="ta-c cell-g">.cell-g</td>
+      <td class="ta-c cell-y">.cell-y</td>
+    </tr>
+    <tr>
+      <td class="ta-c cell-r">.cell-r</td>
+      <td class="ta-c cell-g">.cell-g</td>
+      <td class="ta-c cell-y">.cell-y</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">疑似テーブル</h3>
+</div>
+
+<p class="s1-entitle">疑似テーブル（横並びさせたいコンテンツがあるとき）</p>
+
+<div class="module-sample">
+<div class="s1-tbl-fake">
+  <div class="s1-tbl-fake__item">
+    <p>弱点の位置は？</p>
+  </div>
+  <div class="s1-tbl-fake__item">
+    <p>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。<br>肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</p>
+  </div>
+</div>
+</div>
+
+<p class="s1-entitle">使用例</p>
+
+<div class="module-sample">
+<div class="s1-tbl-fake m-a">
+  <div class="s1-tbl-fake__item va-m">
+    <p class="respond-img"><img src="/smartphone/visitor/images/common/icon_ispeed_fop.png" style="max-width:45px;"></p>
+  </div>
+  <div class="s1-tbl-fake__item va-m">
+    <p class="respond-img"><a href="https://itunes.apple.com/jp/app/id584769039" target="_blank"><img src="/smartphone/img/start/btn_appstore.jpg" alt="App store" style="max-width:130px;"></a></p>
+  </div>
+  <div class="s1-tbl-fake__item va-m">
+    <p class="respond-img"><a href="https://play.google.com/store/apps/details?id=jp.co.rakuten_sec.ispeed_fop" target="_blank"><img src="/smartphone/img/start/btn_googleplay.jpg" alt="Google play" style="max-width:130px;"></a></p>
+  </div>
+</div>
+</div>
+
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+
+<div class="s1-hdg-lv2">
+  <h2 id="module06" class="s1-hdg-lv2__element">その他</h2>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">FAQ</h3>
+</div>
+
+<div class="module-sample">
+<dl class="s1-faq">
+  <dt class="s1-faq__question"><span class="s1-faq__label s1-faq__label--q">Q</span><span class="s1-faq__txt">質問質問</span></dt>
+  <dd class="s1-faq__answer"><span class="s1-faq__label s1-faq__label--a">A</span><span class="s1-faq__txt">答え答え答え</span></dd>
+  <dt class="s1-faq__question"><span class="s1-faq__label s1-faq__label--q">Q</span><span class="s1-faq__txt">質問質問質問質問</span></dt>
+  <dd class="s1-faq__answer"><span class="s1-faq__label s1-faq__label--a">A</span><span class="s1-faq__txt">答え答え答え答え答え</span></dd>
+</dl>
+</div>
+
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+
+<div class="s1-hdg-lv2">
+  <h2 id="module07" class="s1-hdg-lv2__element">ボックス</h2>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">スポットライトモジュール</h3>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-spotlight">
+  <p class="s1-box-spotlight__hdg">Spotlight Module</p>
+  <p>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</p>
+  <p>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</p>
+</div>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">基本的なボックス</h3>
+</div>
+
+<p class="s1-entitle">シンプルなボックス。.bg-g-01-lightなどのカラーモジュールと組み合わせてカラフルなボックスを作ることができます。</p>
+
+<div class="module-sample">
+<div class="s1-box">
+  <p>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</p>
+  <p>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</p>
+</div>
+
+<div class="s1-box s1-box--r-01">
+  <p>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</p>
+  <p>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</p>
+</div>
+
+<div class="s1-box s1-box--r-01 bg-r-01-light">
+  <p>肩の後ろの2本の角の真ん中にあるトサカの下のうろこの右です。肩のうしろの2本のゴボウの真ん中にあるすね毛の下のロココ調の右だ！</p>
+  <p>肩車して後ろ向きに乗り2本のゴボウを持った歌舞伎顔の男だろ。</p>
+</div>
+</div>
+
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">要約するとボックス</h3>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-abstract">
+<div class="s1-box-abstract__hdg">要約すると</div>
+<ul class="s1-box-abstract__list">
+<li class="s1-box-abstract__item">国内株式手数料を業界最低水準※へ値下げ！現物50円～、信用90円～！</li>
+<li class="s1-box-abstract__item">信用取引手数料は、50万円以下の価格帯を大幅値下げ！</li>
+<li class="s1-box-abstract__item">大口優遇がさらにパワーアップ！現物取引10万円までの取引手数料は0円！</li>
+</ul>
+</div>
+</div>
+
+<p class="ta-r"><a class="arrow-top" href="#idx">索引へ</a></p>
+
+<!-- /スタイルガイド終了 -->
+
+  </div>
+</div>
+
+<div class="btnDetail-white detailLinkBox">
+  <p><a href="/web/info/"><span class="iconGlass"></span><span class="text">お知らせ一覧を見る</span></a></p>
+</div>
+</div>
+<!--#include virtual="/smartphone/include/linklist.html" -->
+
+<footer>
+      <div class="PCsitePagetopBox">
+    <ul>
+          <li class="pcsite"><a href="/">PCサイト</a></li>
+          <li class="pagetop"><a href="#pagetop">ページトップ</a></li>
+        </ul>
+  </div>
+
+      <!--#include virtual="/smartphone/include/footer.html" -->
+
+    </footer>
+
+<!--#include virtual="/smartphone/include/modal_account.html" -->
+
+<script src="/smartphone/visitor/js/jquery.jscrollpane.js"></script>
+<script src="/smartphone/visitor/js/side-menu.js"></script>
+<script>
+$(function() {
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 140) {
+      $('.list-anchor').addClass('fixed');
+    } else {
+      $('.list-anchor').removeClass('fixed');
+    }
+  });
+});
+</script>
+
+<!-- ============ログ解析============ -->
+<!-- SiteCatalyst code -->
+<script type="text/javascript" src="/web/shared/js/sc/s_code.js"></script>
+<script type="text/javascript"><!--
+void(s.t())
+//--></script>
+<!-- End SiteCatalyst code -->
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+</body>
+</html>

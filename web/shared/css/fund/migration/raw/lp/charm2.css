@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+
+	redefine
+
+----------------------------------------------------------------- */
+div#str-main ul,
+div#str-main dl {
+margin: 0;
+font-size: 81.25%;
+}
+
+/* ----------------------------------------------------------------
+
+	div#str-main.pattern2
+
+----------------------------------------------------------------- */
+div#str-main.pattern2 .main {
+	position: relative;
+	margin-bottom: 20px;
+}
+div#str-main.pattern2 .main .fundNumBox {
+	position: absolute;
+	left: 20px;
+	top: 266px;
+	width: 210px;
+	height: 84px;
+	padding:5px;
+	overflow: hidden;
+	cursor: pointer;
+	color:#1c8b09;
+	font-weight:bold;
+	text-align:center;
+}
+
+div#str-main.pattern2 .main .fundNumBox p{
+	margin:0;
+	line-height:1.2;
+}
+div#str-main.pattern2 .main .fundNumBox p.fundNo{
+	font-size:x-small;
+}
+div#str-main.pattern2 ul.box li {
+	display: inline-block;
+	vertical-align: top;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 ul.box li {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 ul.box li {
+	display:inline;
+}
+div#str-main.pattern2 h2 {
+	margin-bottom: 10px;
+}
+div#str-main.pattern2 .mL5 {
+	margin-left: 5px;
+}
+div#str-main.pattern2 dl {
+	margin-bottom: 5px;
+}
+div#str-main.pattern2 dl.col2 {
+	width: 375px;
+	background: url(/web/shared/img/fund/migration/lp/bg_box2_bottom.gif) bottom left no-repeat;
+}
+div#str-main.pattern2 dl.col2 dd {
+	padding: 0 30px 12px 12px;
+	width: 333px;
+	font-weight: normal;
+}
+div#str-main.pattern2 dl.col5 {
+	width: 150px;
+	background: url(/web/shared/img/fund/migration/lp/images/bg_box5_bottom.gif) bottom left no-repeat;
+}
+div#str-main.pattern2 dl.col5 dd {
+	padding: 0 10px 15px;
+	width: 130px;
+	font-weight: normal;
+}
+div#str-main.pattern2 p.fx-notice-01 {
+	text-align:right;
+	font-size:x-small;
+}
+div#str-main.pattern2 dl.col {
+	margin-left: 5px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_box.gif) top left repeat-y;
+}
+div#str-main.pattern2 dl.col dd {
+	padding: 0 15px 10px;
+	width: 720px;
+	font-weight: normal;
+	background: url(/ITS/rakuten_g/start/images/new/bg_box_bottom.gif) bottom left no-repeat;
+}
+div#str-main.pattern2 dl.col dd div.cl {
+	padding-right: 170px;
+}
+div#str-main.pattern2 dl.col dd div.cl.omotenashi01 {
+	background: url(/ITS/rakuten_g/start/images/new/image_omotenashi01.jpg) right top no-repeat;
+}
+div#str-main.pattern2 dl.col dd div.cl.omotenashi02 {
+	background: url(/ITS/rakuten_g/start/images/new/image_omotenashi02.gif) right top no-repeat;
+}
+div#str-main.pattern2 ul.procuctLineup li {
+	display: inline-block;
+	padding: 5px 5px 0 0;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 ul.procuctLineup li {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 ul.procuctLineup li {
+	display:inline;
+}
+div#str-main.pattern2 dl.col .ttlQ {
+	margin: 15px 0;
+	font-weight: bold;
+}
+div.toggle {
+	margin-bottom: 5px;
+	border-top: #dedede solid 1px;
+	border-right: #dedede solid 1px;
+	border-left: #dedede solid 1px;
+}
+div.toggleTtl {
+	font-weight: bold;
+	background: #ffffff url(/ITS/rakuten_g/start/images/new/bg_toggleTtl.gif) bottom left repeat-x;
+}
+div.toggleTtl div {
+	background: url(/ITS/rakuten_g/start/images/new/icon_question.gif) left 5px no-repeat;
+}
+div.toggleTtl span {
+	display: block;
+	width: 644px;
+	padding: 7px 35px 7px 39px;
+	cursor: pointer;
+	background: url(/ITS/rakuten_g/start/images/new/icon_open.gif) right center no-repeat;
+}
+div.toggleTtl.open span {
+	background: url(/ITS/rakuten_g/start/images/new/icon_close.gif) right center no-repeat;
+}
+div.toggleContents {
+	display: none;
+	width: 718px;	
+	border-bottom: #dedede solid 1px;
+	background: #ffffff;
+}
+div#str-main.pattern2 dl div.toggleContents p {
+	width: 611px;
+	margin: 0 0 0 39px;
+	padding: 10px 20px 10px 35px;
+	background: url(/ITS/rakuten_g/start/images/new/icon_answer.gif) left 10px no-repeat;
+}
+div#str-main.pattern2 div.tokutenBox {
+	margin: 12px 0 5px 0;
+}
+div#str-main.pattern2 div.tokutenBox div.bgBottom {
+	position: relative;
+}
+div#str-main.pattern2 div.tokutenBox .icon {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+}
+div#str-main.pattern2 div.tokutenBox p {
+	margin-left: 45px;
+}
+div#str-main.pattern2 div.tokutenBox p span.lead {
+	display: block;
+	margin: 0 0 5px 0;
+	font-weight: bold;
+}
+div#str-main.pattern2 div.tokutenBox p span.emphasize {
+	color: #FF0000;
+	font-weight: bold;
+}
+div#str-main.pattern2 div.tokutenBox p a {
+	padding-left: 10px;
+	background: url(/ITS/rakuten_g/start/images/new/icon_arrow_blue.gif) left center no-repeat;
+}
+div#str-main.pattern2 div.box1 {
+	width: 717px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_1.gif) top left repeat-y;
+}
+div#str-main.pattern2 div.box1 div.bgTop {
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_top1.gif) top left no-repeat;
+}
+div#str-main.pattern2 div.box1 div.bgBottom {
+	padding: 10px 12px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_bottom1.gif) bottom left no-repeat;
+}
+div#str-main.pattern2 div.box1 div.text {
+	display: inline-block;
+	padding: 10px 10px 0 0;
+	vertical-align: middle;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 div.box1 div.text {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 div.box1 div.text {
+	display:inline;
+}
+div#str-main.pattern2 div.box1 div.text.w01 {
+	width: 380px;
+}
+div#str-main.pattern2 div.box1 div.text.w02 {
+	width: 530px;
+}
+div#str-main.pattern2 div.box1 div.image {
+	display: inline-block;
+	vertical-align: middle;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 div.box1 div.image {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 div.box1 div.image {
+	display:inline;
+}
+/*box2*/
+div#str-main.pattern2 div.box2 {
+	display: inline-block;
+	width: 367px;
+	margin-right: 13px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_2.gif) top left repeat-y;
+	vertical-align: top;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 div.box2 {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 div.box2 {
+	display:inline;
+}
+div#str-main.pattern2 div.box2 div.bgTop {
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_top2.gif) top left no-repeat;
+}
+div#str-main.pattern2 div.box2 div.bgBottom {
+	padding: 10px 12px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_bottom2.gif) bottom left no-repeat;
+}
+/*box3*/
+div#str-main.pattern2 div.box3 {
+	display: inline-block;
+	width: 337px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_3.gif) top left repeat-y;
+	vertical-align: top;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 div.box3 {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 div.box3 {
+	display:inline;
+}
+div#str-main.pattern2 div.box3 div.bgTop {
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_top3.gif) top left no-repeat;
+}
+div#str-main.pattern2 div.box3 div.bgBottom {
+	padding: 10px 12px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_bottom3.gif) bottom left no-repeat;
+}
+/*box4*/
+div#str-main.pattern2 div.box4 {
+	display: inline-block;
+	width: 431px;
+	margin-right: 11px;
+	vertical-align: top;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_4.gif) top left repeat-y;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 div.box4 {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 div.box4 {
+	display:inline;
+}
+div#str-main.pattern2 div.box4 div.bgTop {
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_top4.gif) top left no-repeat;
+}
+div#str-main.pattern2 div.box4 div.bgBottom {
+	padding: 10px 12px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_bottom4.gif) bottom left no-repeat;
+}
+/*box5*/
+div#str-main.pattern2 div.box5 {
+	display: inline-block;
+	width: 274px;
+	vertical-align: top;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_5.gif) top left repeat-y;
+}
+/*IE7用*/
+*:first-child + html div#str-main.pattern2 div.box5 {
+	display:inline;
+}
+/*IE6用*/
+* html div#str-main.pattern2 div.box5 {
+	display:inline;
+}
+div#str-main.pattern2 div.box5 div.bgTop {
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_top5.gif) top left no-repeat;
+}
+div#str-main.pattern2 div.box5 div.bgBottom {
+	padding: 10px 12px;
+	background: url(/ITS/rakuten_g/start/images/new/bg_tokuten_bottom5.gif) bottom left no-repeat;
+}
+
+/*btnOpenAccoutn*/
+div#str-main.pattern2 .btnOpenAccount {
+	margin: 0px auto 8px;
+	width:700px;
+	height: 45px;
+	overflow: hidden;
+	text-align:center;
+}
+div#str-main.pattern2 .btnOpenAccount a {
+	float:left;
+	display: block;
+	width:350px;
+}
+div#str-main.pattern2 .btnOpenAccount a:hover {
+	margin-top: -45px;
+}
+
+div#str-main.pattern2 .btnOpenAccount:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*btnAccToggle*/
+div#str-main.pattern2 p.btnAccToggle {
+	margin: 12px 0 15px;
+	height: 44px;
+	overflow: hidden;
+}
+div#str-main.pattern2 p.btnAccToggle span {
+	display: block;
+	text-align:center;
+	cursor:pointer;
+}
+div#str-main.pattern2 p.btnAccToggle span:hover {
+	margin-top: -44px;
+}
+
+/*listBtnAcc*/
+
+div#str-main.pattern2 div.boxBtnAcc {
+	display:none;
+	margin: 0px 0 15px;
+	padding: 0px 0 15px;
+	background:url(/ITS/rakuten_g/start/images/new/bg_btn_acc.png) bottom no-repeat;
+}
+
+div#str-main.pattern2 ul.listBtnAcc {
+	height: 78px;
+	overflow: hidden;
+}
+div#str-main.pattern2 ul.listBtnAcc li{
+	float:left;
+	width:297px;
+	margin-left:54px;
+}
+div#str-main.pattern2 ul.listBtnAcc li a {
+	display: block;
+}
+div#str-main.pattern2 ul.listBtnAcc li a:hover {
+	margin-top: -78px;
+}
+div#str-main.pattern2 ul.listBtnAcc:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+div#str-main.pattern2 div.boxBtnAcc.open {
+	display:block;
+}
+
+div#str-main.pattern2 p.bnrCampaign{
+	margin: 10px 0 15px;
+}
+
+
+
+

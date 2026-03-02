@@ -1,0 +1,66 @@
+<!-- 統合メニュー start -->
+<section class="s1-section--02">
+  <div class="integrated-menu-content">
+
+    <div class="s1-menu-box">
+      <p class="menu-title">マーケット</p>
+      <ul class="integrated-menu-01 clearfix">
+        <li><a class="rex-icon-index-exchange" href="/smartphone/market/info/pagecontent?pid=100&l-id=sp_menu_market&pulldownrefresh=1">指数・為替</a></li>
+        <li><a class="rex-icon-information" href="/smartphone/market/info/pagecontent?pid=500&l-id=sp_menu_news">ニュース</a></li>
+      </ul>
+      <ul class="integrated-menu-01 clearfix">
+        <li><a class="rex-icon-ranking" href="/smartphone/market/info/pagecontent?pid=600&xid=0&rid=4">ランキング</a></li>
+        <li><a class="rex-icon-calendar" href="/smartphone/market/calendar/?l-id=sp_menu_calendar_sub">決算・経済<br>カレンダー</a></li>
+      </ul>
+    </div>
+
+    <div class="s1-menu-box">
+      <p class="menu-title">商品</p>
+      <ul class="integrated-menu-02 clearfix">
+        <li><a class="rex-icon-domestic-stock" href="https://www.rakuten-sec.co.jp/smartphone/domestic/?l-id=sp_top_domestic">国内株式</a></li>
+        <li><a class="rex-icon-investment-trust" href="https://www.rakuten-sec.co.jp/web/fund/smartphone/?l-id=sp_top_fund_products">投資信託</a></li>
+        <li><a class="rex-icon-fx" href="https://www.rakuten-sec.co.jp/smartphone/fx/?l-id=sp_top_fx">FX</a></li>
+      </ul>
+      <p class="link-archive"><a class="rex-icon-menu" href="https://www.rakuten-sec.co.jp/smartphone/products/?l-id=sp_top_products">一覧</a></p>
+    </div>
+
+    <!-- toggle start -->
+    <div class="toggle-container">
+      <div class="s1-menu-box">
+        <p class="menu-title">サービス</p>
+        <ul class="integrated-menu-03 clearfix">
+          <li><a class="rex-icon-price-charge" href="https://www.rakuten-sec.co.jp/smartphone/commission/?l-id=sp_top_commission">手数料</a></li>
+          <li><a class="rex-icon-point-program" href="https://www.rakuten-sec.co.jp/smartphone/service/point/?l-id=sp_top_service_point">ポイント<br>プログラム</a></li>
+          <li><a class="rex-icon-smartphone" href="https://ispeed.jp/?l-id=sp_top_ispeed" onclick="this.href=usergram.link(this.href);">スマホアプリ</a></li>
+          <li><a class="rex-icon-deposit-withdrawal" href="https://www.rakuten-sec.co.jp/smartphone/bank/?l-id=sp_top_bank">入出金・<br>銀行連携</a></li>
+          <li><a class="rex-icon-search" href="https://www.rakuten-sec.co.jp/smartphone/service/investment/?l-id=sp_top_service_investment">投資情報<br>サービス</a></li>
+          <li><a class="rex-icon-ideco" href="https://dc.rakuten-sec.co.jp/?l-id=sp_top_dc">iDeCo<br>確定拠出年金</a></li>
+        </ul>
+        <p class="link-archive"><a class="rex-icon-menu" href="https://www.rakuten-sec.co.jp/smartphone/service/?l-id=sp_top_service">一覧</a></p>
+      </div>
+
+      <!-- search box -->
+      <div class="headerSearchBox">
+        <div class="column2">
+          <div class="column2__left">
+            <span class="txt">株価検索</span>
+          </div>
+          <div class="column2__right">
+            <input type="text" name="input" id="hogehoge" class="inputSearch" placeholder="銘柄名・コード">
+            <span id="btnClear" class="btnClear">クリア</span>
+            <div class="searchBtnBox rex-icon-search" id="btnSearch">
+              <input class="btnSearch" type="submit" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /headerSearchBox -->
+      <!-- // search box -->
+    </div>
+    <!-- toggle end -->
+
+  </div>
+
+  <p class="btn-menu-toggle btn-close-menu"><span class="close"><span class="txt">閉じる</span></span></p>
+</section>
+<!-- 統合メニュー end -->

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. lyt-column-ms-01
+*	02. lyt-column-ms-02
+*	03. lyt-column-smc
+*	04. lyt-column-m
+*	05. error
+*	06. popup
+*	07. topic-path
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. lyt-column-ms-01
+----------------------------------------------------------------- */
+body.lyt-column-ms-01 div#str-main{
+padding-right:15px;
+padding-bottom:3em;
+float:left;
+width:755px;
+overflow:hidden;
+}
+
+body.lyt-column-ms-01 div#str-sub-common{
+float:right;
+width:180px;
+}
+
+
+/* ----------------------------------------------------------------
+	02. lyt-column-ms-02
+----------------------------------------------------------------- */
+body.lyt-column-ms-02 div#str-main{
+padding-bottom:3em;
+float:left;
+width:635px;
+overflow:hidden;
+}
+
+body.lyt-column-ms-02 div#str-sub-common{
+margin:0;
+padding:0;
+float:right;
+width:300px;
+}
+
+/* ----------------------------------------------------------------
+	03. lyt-column-smc
+----------------------------------------------------------------- */
+body.lyt-column-smc div#str-contents-inner{
+float:left;
+width:755px;
+}
+
+body.lyt-column-smc div#str-main{
+padding-bottom:3em;
+float:right;
+width:545px;
+overflow:hidden;
+}
+
+body.lyt-column-smc div#str-sub-common{
+padding-left:15px;
+float:right;
+width:180px;
+}
+
+body.lyt-column-smc div#str-sub{
+padding-right:10px;
+float:left;
+width:200px;
+}
+
+/* ---------------------------------
+	IE Hack
+ -------------------------------- */
+/* ie6 */
+*html body.lyt-column-smc div#str-sub{
+padding-right:0;
+position:relative;
+}
+
+
+/* ----------------------------------------------------------------
+	04. lyt-column-m
+----------------------------------------------------------------- */
+body.lyt-column-m div#str-main{
+width:950px;
+min-height:20em;
+}
+
+/* ---------------------------------
+	IE Hack
+ -------------------------------- */
+/* ie6 */
+*html body.lyt-column-m div#str-main,
+*html body.lyt-column-m div#str-main{
+height:20em;
+}
+
+
+/* ----------------------------------------------------------------
+	05. error
+----------------------------------------------------------------- */
+body#error-02 div#str-container{
+background:#ffffff url("/web/shared/images/nav-global/global-nav-bg-03.gif") repeat-x 0 65px;
+}
+
+body#error-02 div#str-main{
+padding-top:5em;
+}
+
+
+/* ----------------------------------------------------------------
+	06. popup
+----------------------------------------------------------------- */
+body#popup-01 div#str-container,
+body#popup-01 div#str-contents-inner{
+width:755px;
+}
+
+body#popup-01 div#str-main{
+margin-top:25px;
+width:755px;
+float:none;
+}
+
+/* ----------------------------------------------------------------
+	07. topic-path
+----------------------------------------------------------------- */
+dl#topic-path{
+padding:0 10px 7px;
+position:relative;
+color:#666666;
+font-size:81.25%;
+}
+
+dl#topic-path dt{
+position:absolute;
+left:-9999px;
+}

@@ -1,0 +1,59 @@
+.migration p.open-acco {
+	width:16em
+}
+.migration p.open-acco a {
+	padding:3px 0 3px 17px;
+	background:url(/web/shared/images/button/btn-plus-01.gif) left center no-repeat
+}
+.migration p.open a {
+	background:url(/web/shared/images/button/btn-minus-01.gif) left center no-repeat
+}
+
+.s1-fund-list--col-1 {
+	margin: 0 0 14px !important;
+}
+.s1-fund-list--col-1 li {
+	overflow: hidden;
+	margin-top: 14px;
+}
+.s1-fund-list--col-1 li:first-child {
+	margin-top: 0;
+}
+
+.s1-fund-list--col-2 {
+	overflow: hidden;
+	margin: 0 0 14px !important;
+	letter-spacing: -.4em;
+}
+.s1-fund-list--col-2 li {
+	overflow: hidden;
+	display: inline-block;
+    width: 50%;
+	margin-top: 14px;
+    margin-right: 0;
+    padding-right: 0.9em;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: normal;
+}
+.s1-fund-list--col-2 li:first-child,
+.s1-fund-list--col-2 li:nth-child(2) {
+	margin-top: 0;
+}
+
+.s1-fund-list--col-1 li .hdg-l4-01,
+.s1-fund-list--col-2 li .hdg-l4-01 {
+	font-size: 110% !important;
+}
+
+.s1-fund-dl--col-2 {
+	overflow: hidden;
+}
+.s1-fund-dl--col-2 dt {
+	float: left;
+	width: 4em;
+}
+.s1-fund-dl--col-2 dd {
+	margin-left: 4em;
+}

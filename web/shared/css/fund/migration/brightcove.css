@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.migration ol {
+  list-style-type: none !important;
+}
+/*動画の再生領域のサイズ*/
+.video-js {
+  width: 400px;
+  height: 300px;
+  float: left;
+  }
+/*プレイリスト領域のサイズ*/
+.vjs-mouse.vjs-playlist {
+  padding: 3px;
+  min-width: 0px;
+  width: 340px;
+  height: 300px;
+  background-color: #fff;
+  color: #999;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  }
+/*プレイリストのスタイル調整*/
+.vjs-mouse.vjs-playlist .vjs-playlist-item {
+  margin-bottom: 2px;
+  height: 56px;
+  background-color: #f2f2f2;
+  background: -moz-linear-gradient(top, rgba(242,242,242,1) 80%, rgba(227,227,227,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(242,242,242,1) 80%,rgba(227,227,227,1) 100%);
+  background: linear-gradient(to bottom, rgba(242,242,242,1) 80%,rgba(227,227,227,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e3e3e3',GradientType=0 );
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px / 0 0 5px 5px;
+}
+.vjs-mouse.vjs-playlist .vjs-selected {
+  background: none;
+  background-color: #fff;
+}
+.vjs-mouse.vjs-playlist .vjs-playlist-thumbnail {
+  width: 60px;
+  height: 45px;
+  margin: 4px 8px 5px 4px;
+}
+.vjs-mouse.vjs-playlist .vjs-selected .vjs-playlist-thumbnail::before {
+  width: 60px;
+  height: 45px;
+}
+.vjs-mouse.vjs-playlist .vjs-playlist-item:focus .vjs-playlist-thumbnail::before,
+.vjs-mouse.vjs-playlist .vjs-playlist-item:hover .vjs-playlist-thumbnail::before {
+  width: 40px;
+  height: 25px;
+  top: 16px;
+  left: 12px;
+  font-family: VideoJS;
+  line-height: 25px;
+  color: #fff;
+  border-radius: 5px;
+}
+.vjs-mouse.vjs-playlist .vjs-selected .vjs-playlist-thumbnail::before {
+  width: 60px;
+  height: 45px;
+  line-height: 45px;
+}
+.vjs-mouse.vjs-playlist .vjs-playlist-name {
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #666;
+}
+.vjs-mouse.vjs-playlist .vjs-selected .vjs-playlist-name {
+  color: #6baab1;
+}
+.migration #str-main ol p.vjs-playlist-description {
+  margin-right: 4px;
+  font-size: 10px;
+  color: #808080;
+  white-space: normal;
+  line-height: 1.4;
+}
+.vjs-mouse.vjs-playlist .vjs-playlist-description {
+  height: 28px;
+}
+.vjs-mouse.vjs-playlist time {
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 6px;
+  color: #eee;
+}
+.vjs-playlist-now-playing:before {
+  content:'Now Playing';
+  top:0;
+  left:4px;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #eee;
+}
+.vjs-text-track-display {bottom: 0;}

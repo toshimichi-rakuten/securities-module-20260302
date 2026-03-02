@@ -1,0 +1,70 @@
+div#str-sub-common .login-02 {
+  line-height: 1.2;
+  margin-bottom: 5px;
+  padding: 3px 0 0;
+  color: #444;
+  border-bottom: 1px solid #bbb;
+  background: url(/web/shared/images/str-sub-common/sprite-sb43e41914e.png) no-repeat;
+  background-position: 0 -1787px;
+}
+div#str-sub-common .login-02 h2 {
+  font-size: 81.25%;
+  padding: 5px 10px;
+}
+div#str-sub-common .login-02__container {
+  width: 174px;
+  min-height: 140px;
+  margin: 0 auto 10px;
+  padding: 6px 0 10px;
+  border: 1px solid #a0b7db;
+  background: #d2daf5; /* Old browsers */
+  background: linear-gradient(to bottom, #d2daf5 0%, #f1f4fc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#d2daf5", endColorstr="#f1f4fc",GradientType=0 ); /* IE6-9 */
+}
+div#str-sub-common .login-02 label {
+  font-size: 81.25%;
+  font-weight: bold;
+  line-height: 1.7;
+  display: block;
+  margin-left: 10px;
+  padding-right: 5px;
+}
+div#str-sub-common .login-02 input#form-login-id, div#str-sub-common .login-02 input#form-login-pass {
+  width: 160px;
+  margin: 0 5px;
+  padding: 1px;
+  border: 1px solid #7f9db9;
+}
+div#str-sub-common .login-02 .link-openkey {
+  font-size: 12px;
+  margin: 5px 6px;
+  padding-left: 21px;
+  text-align: left;
+  letter-spacing: -1px;
+  background: url("/web/shared/images/icon/icon_sprite01_v03.png") 0 -126px no-repeat;
+}
+div#str-sub-common .login-02 .link-openkey a:visited, div#str-sub-common .login-02 .link-openkey a:link {
+  text-decoration: none;
+}
+div#str-sub-common .login-02 .link-openkey a:active, div#str-sub-common .login-02 .link-openkey a:hover, div#str-sub-common .login-02 .link-openkey a:focus {
+  text-decoration: underline;
+}
+div#str-sub-common .login-02 input#login-btn, div#str-sub-common .login-02 input#login-passkey {
+  margin: 0 8px;
+}
+div#str-sub-common .login-02__Separator {
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 4px 0;
+  text-align: center;
+}
+div#str-sub-common .login-02 ul.list-link-01 {
+  margin: auto 8px 8px 10px;
+}
+div#str-sub-common .login-02 ul.list-link-01 li {
+  font-size: 81.25%;
+  min-height: 15px;
+  margin-bottom: 0.1em;
+  padding-left: 10px;
+  background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat scroll 0 5px transparent;
+}

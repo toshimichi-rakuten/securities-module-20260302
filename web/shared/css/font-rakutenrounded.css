@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*
+Font Style Set
+font: Rakuten Rounded
+*/
+
+/* ------ All in ------ */
+/* Light */
+@font-face {
+  font-family: 'Rakuten Rounded';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Rakuten Rounded Light'),
+  url('/web/shared/font/RakutenRounded_W_Lt.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Lt.woff2') format('woff2');
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Rakuten Rounded';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rakuten Rounded Regular'),
+  url('/web/shared/font/RakutenRounded_W_Rg.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Rg.woff2') format('woff2');
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Rakuten Rounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Rakuten Rounded SemiBold'),
+  url('/web/shared/font/RakutenRounded_W_SBd.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_SBd.woff2') format('woff2');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Rakuten Rounded';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Rakuten Rounded Bold'),
+  url('/web/shared/font/RakutenRounded_W_Bd.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Bd.woff2') format('woff2');
+}
+
+/* Black */
+@font-face {
+  font-family: 'Rakuten Rounded';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Rakuten Rounded Black'),
+  url('/web/shared/font/RakutenRounded_W_Blk.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Blk.woff2') format('woff2');
+}
+
+/* ------ Individual ------ */
+/* Light */
+@font-face {
+  font-family: 'Rakuten Rounded Light';
+  font-display: swap;
+  src: local('Rakuten Rounded Light'),
+  url('/web/shared/font/RakutenRounded_W_Lt.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Lt.woff2') format('woff2');
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Rakuten Rounded Regular';
+  font-display: swap;
+  src: local('Rakuten Rounded Regular'),
+  url('/web/shared/font/RakutenRounded_W_Rg.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Rg.woff2') format('woff2');
+}
+
+/* SemiBold */
+@font-face {
+  font-family: 'Rakuten Rounded SemiBold';
+  font-display: swap;
+  src: local('Rakuten Rounded SemiBold'),
+  url('/web/shared/font/RakutenRounded_W_SBd.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_SBd.woff2') format('woff2');
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Rakuten Rounded Bold';
+  font-display: swap;
+  src: local('Rakuten Rounded Bold'),
+  url('/web/shared/font/RakutenRounded_W_Bd.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Bd.woff2') format('woff2');
+}
+
+/* Black */
+@font-face {
+  font-family: 'Rakuten Rounded Black';
+  font-display: swap;
+  src: local('Rakuten Rounded Black'),
+  url('/web/shared/font/RakutenRounded_W_Blk.woff') format('woff'),
+  url('/web/shared/font/RakutenRounded_W_Blk.woff2') format('woff2');
+}

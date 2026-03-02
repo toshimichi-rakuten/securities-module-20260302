@@ -1,0 +1,268 @@
+/* ----------------------------------------------------------------
+*	01. Default Mragin
+*	02. Heading Module
+*	03. Paragraph Module
+*	04. Ordered List Module
+*	05. Unordered List Module
+*	06. Definition List Module
+*	07. Link List Module
+*	08. Index List Module
+*	09. Page Navigation Module
+*	10. Contents Navigation Module
+*	11. Notice Module
+*	12. Table Module
+*	13. Layout Images Module
+*	14. Layout Column Module
+*	15. Box Module
+*	16. Plugin Download Module
+*	17. Form Module
+*	18. Inquiry Component
+*	19. Q and A Component
+*	20. Topics Module
+*	21. column-market-01
+*	22. Common Style
+----------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+	12. Table Module
+----------------------------------------------------------------- */
+div#str-main table {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  /* tbl-data-01 */
+  /* tbl-data-02 */
+  /* tbl-data-03 */
+  /* tbl-data-04 */
+  /* tbl-data-05 */
+  /* tbl-data-06 */
+  /* tbl-data-07 */
+  /* tbl-data-08 */
+  /* cell  */
+  /* Stock */
+}
+div#str-main table th, div#str-main table td {
+  padding: 5px 6px;
+  border-width: 0 1px 1px 0;
+  border-color: #c3c3c3;
+  border-style: solid;
+  vertical-align: top;
+  font-weight: normal;
+  text-align: left;
+  background: none;
+}
+div#str-main table tbody th {
+  vertical-align: middle;
+}
+div#str-main table tfoot th, div#str-main table tfoot td {
+  background-color: #f9ead2;
+}
+div#str-main table.tbl-data-01 {
+  border-width: 1px 0 0 1px;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+div#str-main table.tbl-data-01 td {
+  text-align: right;
+}
+div#str-main table.tbl-data-01 tr.even td {
+  background-color: #f3f3f3;
+}
+div#str-main table.tbl-data-01 thead th {
+  background-color: #3f4da2;
+  color: #ffffff;
+  text-align: center;
+}
+div#str-main table.tbl-data-01 tbody th {
+  background-color: #cfd5ef;
+}
+div#str-main table.tbl-data-02 {
+  border-width: 1px 0 0 1px;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+div#str-main table.tbl-data-02 thead th {
+  background-color: #cfd5ef;
+}
+div#str-main table.tbl-data-02 tbody th {
+  background-color: #cfd5ef;
+}
+div#str-main table.tbl-data-03 th {
+  border: none;
+  background-color: #ffffff;
+  text-align: left;
+}
+div#str-main table.tbl-data-03 td {
+  border: none;
+  background-color: #ffffff;
+  text-align: right;
+}
+div#str-main table.tbl-data-03 thead th {
+  background-color: #999999;
+  color: #ffffff;
+  text-align: center;
+}
+div#str-main table.tbl-data-03 tbody th {
+  background-color: #ffffff;
+}
+div#str-main table.tbl-data-03 tr.odd th, div#str-main table.tbl-data-03 tr.odd td {
+  background-color: #e4e5f2;
+}
+div#str-main table.tbl-data-04 th {
+  border: none;
+  background-color: #ffffff;
+  text-align: left;
+}
+div#str-main table.tbl-data-04 td {
+  border: none;
+  background-color: #ffffff;
+  text-align: right;
+}
+div#str-main table.tbl-data-04 thead th {
+  background-color: #3f4da2;
+  color: #ffffff;
+  text-align: center;
+}
+div#str-main table.tbl-data-04 tr.odd th, div#str-main table.tbl-data-04 tr.odd td {
+  background-color: #ebebeb;
+}
+div#str-main table.tbl-data-05 th {
+  border: none;
+  background-color: #ffffff;
+  text-align: left;
+}
+div#str-main table.tbl-data-05 td {
+  border: none;
+  background-color: #ffffff;
+  text-align: right;
+}
+div#str-main table.tbl-data-05 thead th {
+  background-color: #ebebeb;
+  text-align: center;
+}
+div#str-main table.tbl-data-06 {
+  border-width: 0 0 0 1px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+div#str-main table.tbl-data-06 th, div#str-main table.tbl-data-06 td {
+  border-width: 0 1px 1px 0;
+  border-color: #ffffff;
+  border-style: solid;
+}
+div#str-main table.tbl-data-06 td {
+  text-align: right;
+}
+div#str-main table.tbl-data-06 tr.even th, div#str-main table.tbl-data-06 tr.even td {
+  background-color: #f3f3f3;
+}
+div#str-main table.tbl-data-06 thead th {
+  background-color: #e8ebf7;
+}
+div#str-main table.tbl-data-06 tbody th {
+  text-align: left;
+  font-weight: bold;
+}
+div#str-main table.tbl-data-07 {
+  border-width: 1px 0 0 1px;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+div#str-main table.tbl-data-07 th, div#str-main table.tbl-data-07 td {
+  border-width: 0 1px 1px 0;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+div#str-main table.tbl-data-07 td {
+  text-align: right;
+}
+div#str-main table.tbl-data-07 tr.even th, div#str-main table.tbl-data-07 tr.even td {
+  background-color: #f3f3f3;
+}
+div#str-main table.tbl-data-07 thead th {
+  background-color: #cfd5ef;
+  vertical-align: middle;
+  text-align: center;
+}
+div#str-main table.tbl-data-07 tbody th {
+  text-align: center;
+}
+div#str-main table.tbl-data-08 {
+  border-width: 1px 0 0 1px;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+div#str-main table.tbl-data-08 th, div#str-main table.tbl-data-08 td {
+  border-width: 0 1px 1px 0;
+  border-color: #c3c3c3;
+  border-style: solid;
+}
+div#str-main table.tbl-data-08 tr.even th, div#str-main table.tbl-data-08 tr.even td {
+  background-color: #f3f3f3;
+}
+div#str-main table.tbl-data-08 thead th {
+  background-color: #cfd5ef;
+  vertical-align: middle;
+  text-align: center;
+}
+div#str-main table.tbl-data-08 tbody th {
+  text-align: center;
+}
+div#str-main table .cell-01 {
+  background-color: #f9ead2;
+}
+div#str-main table .cell-02 {
+  border-width: 0 0 1px 0;
+}
+div#str-main table thead th.date-renew {
+  width: 15%;
+}
+div#str-main table .w-10 {
+  width: 10%;
+}
+div#str-main table .w-15 {
+  width: 15%;
+}
+div#str-main table .w-20 {
+  width: 20%;
+}
+div#str-main table .w-25 {
+  width: 25%;
+}
+div#str-main table .w-30 {
+  width: 30%;
+}
+div#str-main table .w-35 {
+  width: 35%;
+}
+div#str-main table .w-40 {
+  width: 40%;
+}
+div#str-main table .align-C {
+  text-align: center;
+}
+div#str-main table .align-R {
+  text-align: right;
+}
+div#str-main table .align-L {
+  text-align: left;
+}
+div#str-main table .align-M {
+  vertical-align: middle;
+}
+div#str-main table .up-01 {
+  color: #ff0101;
+  font-weight: bold;
+}
+div#str-main table .up-02 {
+  color: #ff0101;
+}
+div#str-main table .down-01 {
+  color: #4eba00;
+  font-weight: bold;
+}
+div#str-main table .down-02 {
+  color: #4eba00;
+}
+div#str-main form table tbody th {
+  vertical-align: top;
+}

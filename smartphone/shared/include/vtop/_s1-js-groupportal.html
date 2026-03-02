@@ -1,0 +1,159 @@
+<!-- Group Portal -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/smartphone/visitor/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" src="/smartphone/shared/js/top/layerboard/jquery.cookie.js"></script>
+<script type="text/javascript" src="/smartphone/shared/js/top/layerboard/jquery.layerBoard.js?20170831"></script>
+<script type="text/javascript" src="/web/shared/js/fixed/sc/mbox.js"></script>
+<script type="text/javascript" src="/web/shared/js/fund/fund_num.js"></script>
+<!-- Standard RakutenGroupPortalForSP v2.0.0 JS starts-->
+<script src="https://jp.rakuten-static.com/1/js/grp/prtl/rc-gp-sp.v2.min.js" data-service="rtc" data-priority="rtc,bnk,sei"></script>
+<!-- Standard RakutenGroupPortalForSP v2.0.0 JS ends-->
+<!-- Group Portal -->
+
+<!-- ::::::::::::: ▼▼ kaizenplatform start ▼▼ ::::::::::::::::: -->
+<script src="//cdn.kaizenplatform.net/s/91/7f35436b67f4a5.js?kz_namespace=kzs" charset="utf-8"></script>
+<!-- ::::::::::::: ▲▲ kaizenplatform end ▲▲ ::::::::::::::::: -->
+
+<script type="text/javascript">
+  $(function(){
+    $("#search").on("click", function() {
+    $(".headerSearchBox").toggleClass("active");//開いた時、検索窓にクラスを追加
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  //　銘柄検索
+  var isAndroid = (/android/gi).test(navigator.appVersion),
+      isIDevice = (/iphone|ipad/gi).test(navigator.appVersion),
+      isTouchPad = (/hp-tablet/gi).test(navigator.appVersion),
+      hasTouch = 'ontouchstart' in window && !isTouchPad,
+      startEvt = hasTouch ? 'touchstart' : 'mousedown',
+      moveEvt = hasTouch ? 'touchmove' : 'mousemove',
+      endEvt = hasTouch ? 'touchend' : 'mouseup',
+      cancelEvt = hasTouch ? 'touchcancel' : 'mouseup';
+
+  /*
+  var keyword = '',
+  sector = 'na',
+  mininvestamt = -1.0,
+  maxinvestamt = -1.0,
+  minper = -1.0,
+  maxper = -1.0,
+  mindivyield = -1.0,
+  maxdivyield = -1.0,
+  mindiv = -1.0,
+  maxdiv = -1.0;
+  */
+
+  var keyword = '';
+
+  $(function(){
+  $('#hogehoge').val(keyword);
+  /*        $('#sector').val(sector);
+
+  if (mininvestamt > -1)
+  $('#mininvestamt').val(mininvestamt);
+  else if (mininvestamt == -2)
+  $('#mininvestamt').val("");
+
+  if (maxinvestamt > -1)
+  $('#maxinvestamt').val(maxinvestamt);
+  else if (maxinvestamt == -2)
+  $('#maxinvestamt').val("");
+
+  if (minper > -1)
+  $('#minper').val(minper);
+  else if (minper == -2)
+  $('#minper').val("");
+
+  if (maxper > -1)
+  $('#maxper').val(maxper);
+  else if (maxper == -2)
+  $('#maxper').val("");
+
+  if (mindivyield > -1)
+  $('#mindivyield').val(mindivyield);
+  else if (mindivyield == -2)
+  $('#mindivyield').val("");
+
+  if (maxdivyield > -1)
+  $('#maxdivyield').val(maxdivyield);
+  else if (maxdivyield == -2)
+  $('#maxdivyield').val("");
+
+  if (mindiv > -1)
+  $('#mindiv').val(mindiv);
+  else if (mindiv == -2)
+  $('#mindiv').val("");
+
+  if (maxdiv > -1)
+  $('#maxdiv').val(maxdiv);
+  else if (maxdiv == -2)
+  $('#maxdiv').val("");
+  */
+
+  /*
+  $('input[type="number"]').each(function() {
+  var defaultVal = $(this).attr('defaultvalue');
+  var val = $(this).val();
+
+  if(val == defaultVal) {
+    $(this).css('color', '#CCCCCC').data('default', true);
+  } else {
+    $(this).css('color', '#000000').data('default', false);
+  }
+
+  $(this).on('blur', function() {
+  $(this).data('default', false)
+
+  var defaultVal = $(this).attr('defaultvalue');
+  var val = $(this).val();
+
+  if(defaultVal != undefined && defaultVal != null) {
+    // if (val == '')
+    // $(this).val(defaultVal).css('color', '#CCCCCC').data('default', true);
+    if (val == defaultVal)
+    $(this).css('color', '#CCCCCC').data('default', true);
+    }
+  }).on('focus', function() {
+    $(this).css('color', '#000000');
+    if($(this).data('default')) {
+      $(this).val('')
+    }
+  })
+  })
+  */
+
+  $('#btnSearch').on(endEvt, function(){
+  //$(location).attr('href', './pagecontent?screener=true&pid=201&xid=0&page=0' +
+  $(location).attr('href', '/smartphone/market/info/pagecontent?screener=true&pid=201&xid=0&page=0' +
+  '&keyword=' + $('#hogehoge').val()
+  /*                + '&sector=' + $('#sector').val()
+  + '&mininvestamt=' + $('#mininvestamt').val()
+  + '&maxinvestamt=' + $('#maxinvestamt').val()
+  + '&minper=' + $('#minper').val()
+  + '&maxper=' + $('#maxper').val()
+  + '&mindivyield=' + $('#mindivyield').val()
+  + '&maxdivyield=' + $('#maxdivyield').val()
+  + '&mindiv=' + $('#mindiv').val()
+  + '&maxdiv=' + $('#maxdiv').val()*/);
+  });
+
+  $('#btnClear').on(endEvt, function(){
+    $('input[name="input"]').each(function() {
+    var defaultVal = $(this).attr('defaultvalue');
+    if(defaultVal != undefined && defaultVal != null)
+    $(this).val(defaultVal).css('color', '#CCCCCC').data('default', true);
+    else
+    $(this).val('');
+    });
+    $('#sector').val('na');
+  });
+
+  });
+</script>
+
+<script type="text/javascript">
+  (function(){!function(a,b,c,d,e){return d="http"+("https:"===c?"s":"")+":"+d,a.planBCDObject=e,a[e]||(a[e]=function(){var b;return((b=a[e]).q||(b.q=[])).push(arguments),a[e].l=1*new Date}),b.write(unescape('%3Cscript type="text/javascript" src="'+d+'"%3E%3C/script%3E'))}(window,document,document.location.protocol,"//dwkjexg5kaiww.cloudfront.net/planbcd/4e517a/804.js","pbcd")}).call(this);
+</script>

@@ -1,0 +1,901 @@
+/* line 13, ../scss/top_noda.scss */
+.icon-ballon, .icon-bord, .icon-monitor2, .icon-monitor, .icon-present, .icon-stationary {
+  display: block;
+}
+
+/* line 16, ../scss/top_noda.scss */
+.icon-ballon {
+  background-position: 0 -108px;
+  width: 38px;
+  height: 34px;
+  background: url('/web/images/top/sprite-sb3baadceb4.png') no-repeat;
+}
+
+/* line 22, ../scss/top_noda.scss */
+.icon-bord {
+  background-position: 0 -270px;
+  width: 38px;
+  height: 34px;
+  background: url('/web/images/top/sprite-sb3baadceb4.png') no-repeat;
+}
+
+/* line 28, ../scss/top_noda.scss */
+.icon-monitor2 {
+  background-position: 0 -162px;
+  width: 38px;
+  height: 34px;
+  background: url('/web/images/top/sprite-sb3baadceb4.png') no-repeat;
+}
+
+/* line 34, ../scss/top_noda.scss */
+.icon-monitor {
+  background-position: 0 -216px;
+  width: 38px;
+  height: 34px;
+  background: url('/web/images/top/sprite-sb3baadceb4.png') no-repeat;
+}
+
+/* line 40, ../scss/top_noda.scss */
+.icon-present {
+  background-position: 0 -54px;
+  width: 38px;
+  height: 34px;
+  background: url('/web/images/top/sprite-sb3baadceb4.png') no-repeat;
+}
+
+/* line 46, ../scss/top_noda.scss */
+.icon-stationary {
+  background-position: 0 0;
+  width: 38px;
+  height: 34px;
+  background: url('/web/images/top/sprite-sb3baadceb4.png') no-repeat;
+}
+
+
+
+body#top div#str-contents {
+  padding-top: 10px;
+}
+
+body#top div#str-main {
+  padding-right: 4px;
+  width: 766px;
+}
+
+body#top div#str-main div.lyt-column-top-L{
+overflow:visible;
+float:left;
+padding-right:11px;
+width:210px;
+}
+
+body#top div#str-main div.lyt-column-top-R{
+float:left;
+padding-right:11px;
+width:534px;
+overflow:hidden;
+}
+
+
+/* ----------------------------------------------------------------
+
+	トップ用基本スタイル（リスト・テーブル・ボックス等）
+
+----------------------------------------------------------------- */
+
+body#top div#str-main ul.list-link-01 li {
+  padding-left: 10px;
+}
+
+body#top div#str-main ul.list-link-01 li.outside {
+  padding-left: 15px;
+}
+
+body#top div#str-main ul.list-link-02 li {
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+}
+
+body#top div#str-main ul.list-link-02 li a {
+  font-weight: bold;
+}
+
+body#top div#str-main ul.list-link-02 li p {
+  margin: 0 0 0 1px;
+}
+
+body#top div#str-main ul.list-link-02 li p img.icon-new {
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+body#top div#str-main ul.list-link-02 li p a {
+  font-weight: normal;
+}
+
+
+body#top div#str-main div.box-01 table,
+body#top div#str-main div.box-02 table {
+  width: 97.2%;
+}
+
+body#top div#str-main div.box-02 table th,
+body#top div#str-main div.box-02 table td {
+  padding: 3px 5px;
+}
+
+body#top div#str-main table tr.cell-01 th,
+body#top div#str-main table tr.cell-01 td {
+  padding-bottom: 0;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+body#top div#str-main div.box-top-01 table,
+body#top div#str-main div.box-top-01 table tr.cell-01,
+body#top div#str-main div.box-top-01 table tr.cell-01 th,
+body#top div#str-main div.box-top-01 table tr.cell-01 td {
+  background: none;
+}
+
+body#top div#str-main div.box-top-01 table td {
+  font-weight: bold;
+}
+
+body#top div#str-main div.box-01,
+body#top div#str-main div.box-02 {
+  margin-bottom: 0.5em;
+}
+
+body#top div#str-main div.box-01 p,
+body#top div#str-main div.box-01 ul,
+body#top div#str-main div.box-01 ol,
+body#top div#str-main div.box-01 dl,
+body#top div#str-main div.box-01 table,
+body#top div#str-main div.box-02 p,
+body#top div#str-main div.box-02 ul,
+body#top div#str-main div.box-02 ol,
+body#top div#str-main div.box-02 dl,
+body#top div#str-main div.box-02 table {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+body#top div#str-main div.lyt-image {
+  padding: 0 3px;
+  width: 368px;
+}
+
+body#top div#str-main div.image-col1-full {
+  padding: 0;
+  width: 372px;
+}
+
+body#top div#str-main div.image-col1-full p.image {
+  margin: 0 0 0.6em;
+}
+
+body#top div#str-main div.image-col2 p.image {
+  padding-right: 4px;
+  width: 180px;
+}
+
+*:first-child + html body#top div#str-main div.image-col2 p.image img {
+  padding-bottom: 0px;
+}
+
+body#top div#str-main div.lyt-image p {
+  margin: 0 0 0.6em;
+}
+
+div#str-sub-common div.normallist ul {
+  margin: 0 auto 10px;
+  border-bottom: 1px solid #c4c4c4;
+  width: 164px;
+}
+
+div#str-sub-common div.normallist ul.list-link-01 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+div#str-sub-common div.normallist ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.normallist ul.list-link-01 li a {
+  min-height: 10px;
+}
+
+/* ----------------------------------------------------------------
+
+	商品・サービス　メガメニュー
+
+----------------------------------------------------------------- */
+
+div#box-products{
+margin-bottom:10px;
+padding-bottom:8px;
+background:#DCE4F7;
+}
+
+div#box-products h2.hdg-products {
+margin-bottom:8px;
+color: #FFF;
+background:#6373b4;
+}
+
+div#box-products h2.hdg-products span {
+display: block;
+font-size: 87.5%;
+padding:6px 13px 5px;
+font-weight:normal;
+}
+
+div#box-products ul#mega-menu{
+position:relative;
+margin:0 8px;
+padding:0;
+border-bottom:1px solid #ccc;
+z-index:10;
+}
+
+ul#mega-menu li.product{
+margin:0;
+padding:0;
+border-top:1px solid #ccc;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+vertical-align:bottom;
+background:#f7f7f7 url("/web/shared/images/arrow/arrow-04.gif") no-repeat 178px 50%;
+}
+
+ul#mega-menu li.product:hover{
+background: #fff url("/web/shared/images/arrow/arrow-05.gif") no-repeat 178px 50%;
+border-right:none;
+}
+
+ul#mega-menu li.product > a{
+display:block;
+padding:6px 10px 6px 10px;
+font-weight:bold;
+text-decoration:none;
+color:#3535B4;
+zoom:1;
+}
+
+ul#mega-menu li.product a span{
+font-weight:normal;
+font-size:92%;
+}
+
+ul#mega-menu div.mm-panel{
+display:none;
+position:absolute;
+top:0;
+left:194px;
+width:480px;
+padding:15px 15px;
+border-width:1px 1px 1px 0;
+border-style:solid;
+border-color:#ccc;
+background:#fff;
+/*box-shadow:3px 3px 3px rgba(0,0,0,0.2);*/
+z-index:9999;
+}
+
+ul#mega-menu div.mm-panel h3.mm-panel-title{
+margin:0 0 20px;
+padding:0 5px;
+border-bottom:1px dotted #71a9e0;
+font-size:150%;
+color:#4fa3f7;
+background:none;
+}
+
+ul#mega-menu div.mm-panel p.mm-txt{
+margin:0 5px 10px;
+}
+
+ul#mega-menu div.mm-panel div.lyt-free{
+margin:0;
+position:absolute;
+}
+
+ul#mega-menu div.mm-panel ul.mm-list-link{
+margin:0 5px 15px;
+}
+
+ul#mega-menu div.mm-panel ul.mm-list-link li{
+margin:0 3px 5px;
+padding:0 0 0 10px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 6px;
+}
+
+ul#mega-menu div.mm-panel ul.mm-list-link li a{
+display:inline;
+padding:0;
+font-weight:normal;
+text-decoration:none;
+}
+
+ul#mega-menu div.mm-panel ul.mm-list-link li a:hover{
+text-decoration:underline;
+}
+
+ul#mega-menu div.mm-panel .lyt-box:after{
+clear:both;
+content:".";
+display:block;
+height:0;
+visibility:hidden;
+}
+
+ul#mega-menu div.mm-panel .box-L{
+float:left;
+}
+
+ul#mega-menu div.mm-panel .box-R{
+float:right;
+}
+
+ul#mega-menu div.mm-panel .lyt-box .align-C{
+text-align:center;
+}
+
+/* ----------------------------------------------------------------
+
+	アイコン付ボックス
+
+----------------------------------------------------------------- */
+div#str-main div#box-info div.hdg-l2-02-container,
+div#str-main div#reuters div.hdg-l2-02-container,
+div#str-main div#box-trading div.hdg-l2-02-container,
+div#str-main div#box-campaign div.hdg-l2-02-container,
+div#str-main div#box-investment div.hdg-l2-02-container,
+div#str-main div#box-seminar div.hdg-l2-02-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cacdd9;
+  background: #dfdfdf url(/web/shared/images/heading/hdg-l2-01-bg.gif) repeat-x 1px 1px;
+}
+
+div#str-main div#box-info .hdg-l2-02,
+div#str-main div#reuters .hdg-l2-02,
+div#str-main div#box-trading .hdg-l2-02,
+div#str-main div#box-campaign .hdg-l2-02,
+div#str-main div#box-investment .hdg-l2-02,
+div#str-main div#box-seminar .hdg-l2-02 {
+  border: 1px solid #FFFFFF;
+  padding: 0;
+  background: none;
+}
+
+div#str-main div#box-info .hdg-l2-02 span,
+div#str-main div#reuters .hdg-l2-02 span,
+div#str-main div#box-trading .hdg-l2-02 span,
+div#str-main div#box-campaign .hdg-l2-02 span,
+div#str-main div#box-investment .hdg-l2-02 span,
+div#str-main div#box-seminar .hdg-l2-02 span {
+  display: block;
+}
+
+div#str-main div .hdg-l2-02 span.icon {
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  height: 35px;
+  width: 38px;
+  padding: 0;
+}
+
+div#str-main div .hdg-l2-02 span.txt {
+  padding-left: 42px;
+  padding-bottom: 2px;
+}
+
+div#str-main div#box-info .hdg-l2-02 span.icon,
+div#str-main div#box-seminar .hdg-l2-02 span.icon,
+div#str-main div#box-investment .hdg-l2-02 span.icon,
+div#str-main div#box-campaign .hdg-l2-02 span.icon,
+div#str-main div#box-trading .hdg-l2-02 span.icon,
+div#str-main div#reuters .hdg-l2-02 span.icon {
+  background: url(/web/images/top201106/icon.png) top left no-repeat;
+}
+
+div#str-main div#box-info .hdg-l2-02 span.icon {
+  background-position: 0 -65px;
+}
+
+div#str-main div#box-seminar .hdg-l2-02 span.icon {
+  background-position: 0 -260px;
+}
+
+div#str-main div#box-investment .hdg-l2-02 span.icon {
+  background-position: 0 -130px;
+}
+
+div#str-main div#box-campaign .hdg-l2-02 span.icon {
+  background-position: 0 0;
+}
+
+div#str-main div#box-trading .hdg-l2-02 span.icon {
+  background-position: 0 -325px;
+}
+
+div#str-main div#reuters .hdg-l2-02 span.icon {
+  background-position: 0 -195px;
+}
+
+div#str-main div#box-info div.box-02 div.box-inner-01,
+div#str-main div#reuters div.box-02 div.box-inner-01,
+div#str-main div#box-trading div.box-02 div.box-inner-01,
+div#str-main div#box-campaign div.box-02 div.box-inner-01,
+div#str-main div#box-investment div.box-02 div.box-inner-01,
+div#str-main div#box-seminar div.box-02 div.box-inner-01 {
+  border-top: none;
+  padding: 12px 6px 0;
+}
+
+div#str-main div#reuters div.hdg-l2-02-container {
+  border-bottom: none;
+}
+
+
+/* ----------------------------------------------------------------
+
+	勉強会・セミナー
+
+----------------------------------------------------------------- */
+div#str-main div.box-02 ul#seminar_tab {
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+
+div#str-main div.box-02 ul#seminar_tab li.selected {
+  background-color: #DCDCF4;
+}
+
+div#str-main div.box-02 ul#seminar_tab li.selected a {
+  color: #000;
+  text-decoration: none;
+}
+
+div#str-main div.box-02 ul#seminar_tab li {
+  float: left;
+  text-align: center;
+  background-color: #EAECEB;
+  font-weight: bold;
+  font-size: 90%;
+  margin-left: 3px;
+  padding: 5px 10px 2px;
+}
+
+div#str-main div.box-02 div#seminar,
+div#str-main div.box-02 div#opinion,
+div#str-main div.box-02 div#ir {
+  clear: both;
+  padding: 10px 0 0;
+  border-top: #DCDCF4 3px solid;
+  margin-top: 0;
+}
+
+div#str-main div.box-02 div#opinion,
+div#str-main div.box-02 div#ir {
+  padding: 10px 5px 0;
+}
+
+div#str-main div.box-02 div#opinion,
+div#str-main div.box-02 div#ir {
+  display: none;
+}
+
+div#str-main #seminor_box img.icon-new{
+margin-left:5px;
+vertical-align:middle;
+}
+
+/* ----------------------------------------------------------------
+
+	トレーディングツール
+
+----------------------------------------------------------------- */
+
+body#top #box-trading h2.hdg-l2-02 span{
+padding-right:10px;
+}
+
+body#top #box-trading h3 {
+  font-size: 81.25%;
+  margin: 0 2px 5px;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01{
+  width:100%;
+  margin: 0 0 5px;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01 th,
+body#top #box-trading div.box-02 table.tbl-topics-01 td {
+  padding: 0 0 7px 5px;
+  background: none;
+}
+
+
+body#top #box-trading div.box-02 table.tbl-topics-01.ms th{
+  padding: 0 0 7px 10px;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01.ms p.link-01 {
+  margin: 7px 0 0 5px;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01.is th {
+  padding: 0 0 5px 3px;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01.is p.link-01 {
+  margin: 12px 0 0;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01.is p.link-01 span {
+  font-size:92%;
+}
+
+body#top #box-trading div.box-02 table.tbl-topics-01.is p.txt {
+  margin: 0 0 0 7px;
+}
+
+body#top #box-trading div.box-02 ul.list-link-01 {
+  margin: 0 5px 10px;
+}
+
+body#top #box-trading div.box-02 p.mobile-qr {
+  min-height:70px;
+  margin: 0 0 5px;
+  padding: 2px 0 5px 80px;
+  background:url("/web/images/top/mobile-qr-01.gif") 5px 0 no-repeat;
+  font-size:75%;
+}
+
+
+
+/* ----------------------------------------------------------------
+
+	ソーシャルサービス
+
+----------------------------------------------------------------- */
+div#str-main ul.list-social-icon{
+margin-bottom:10px;
+text-align:center;
+}
+
+div#str-main ul.list-social-icon li{
+display:inline-block;
+width:55px;
+padding:0 3px;
+text-align:center;
+*display: inline;
+/* ie7 */
+*zoom: 1;
+/* ie7 */
+}
+
+div#str-main ul.list-social-icon li a{
+font-size:90%;
+text-decoration:none;
+}
+
+div#str-main ul.list-social-icon li a:hover{
+text-decoration:underline;
+}
+
+div#str-main ul.list-social-icon li span{
+display:block;
+padding:3px 3px 0;
+text-align:center;
+}
+
+
+/* ----------------------------------------------------------------
+
+	お客様の声を形にしました
+
+----------------------------------------------------------------- */
+body#top #box-voc div.hdg-l2-02-container{
+margin-bottom:7px;
+}
+
+body#top #box-voc h2.hdg-l2-02{
+margin-bottom:7px;
+}
+
+body#top #box-voc h2.hdg-l2-02 span{
+padding-right:10px;
+}
+
+body#top #box-voc h3 {
+  font-size: 81.25%;
+  margin: 0 8px 5px;
+  font-weight:normal;
+}
+
+body#top #box-voc div.voc-bubble{
+margin:0 7px 5px;
+padding:0 0 0 44px;
+background:url("/web/images/top/bg-box-voc.gif") top no-repeat;
+}
+
+body#top #box-voc div.voc-bubble p.voc-txt{
+margin:0;
+padding:5px 7px;
+font-size:75%;
+}
+
+body#top #box-voc p.voc-date{
+margin:0 0 5px;
+  font-size: 69%;
+  color:#666;
+  text-align:right;
+}
+
+/* ----------------------------------------------------------------
+
+	IFA支援サービス
+
+----------------------------------------------------------------- */
+body#top #box-ifa div.hdg-l2-02-container{
+margin-bottom:7px;
+}
+
+body#top #box-ifa h2.hdg-l2-02{
+margin-bottom:7px;
+}
+
+body#top #box-ifa h2.hdg-l2-02 span{
+padding-right:10px;
+}
+
+body#top #str-main #box-ifa p.ifa-txt{
+margin:0 10px 5px;
+font-size:75%;
+}
+
+body#top #str-main #box-ifa ul.list-link-01{
+margin:0 10px 7px;
+font-size:75%;
+}
+
+
+/* ----------------------------------------------------------------
+
+	カルーセル
+
+----------------------------------------------------------------- */
+#str-main div#box-tango {
+  margin-bottom: 10px;
+}
+
+
+/* ----------------------------------------------------------------
+
+	IPO・立会外分売・公募売り出し
+
+----------------------------------------------------------------- */
+
+#str-main table.box-ipo-oa{
+margin-bottom:8px;
+border:1px solid #adb2d1;
+}
+
+#str-main table.box-ipo-oa th,
+#str-main table.box-ipo-oa td{
+padding:3px 8px 2px;
+border:none;
+vertical-align:middle;
+color:#1e2e8d;
+line-height:1.3;
+}
+
+#str-main table.box-ipo-oa td.oa-company{
+padding:6px 8px 5px;
+}
+
+#str-main table.box-ipo-oa td.oa-company a{
+display:block;
+font-size:16px;
+font-weight:bold;
+color:#3535B4;
+}
+
+#str-main table.box-ipo-oa a span.oa-code{
+font-size:13px;
+}
+
+#str-main table.box-ipo-oa th.oa-title{
+width:5em;
+border:1px solid #fff;
+background:#475b9c;
+color:#fff;
+text-align:center;
+font-size:12px;
+}
+
+#str-main table.box-ipo-oa td.oa-rate{
+white-space:nowrap;
+}
+
+/* ----------------------------------------------------------------
+
+	重要なお知らせ枠（box-info-01）
+
+----------------------------------------------------------------- */
+
+div.box-info-01{
+margin-bottom:10px;
+border:4px solid #ddd;
+color:#333;
+}
+
+div.box-info-01 h2{
+margin:0 0 5px;
+padding:0;
+font-size:87.5%;
+font-weight:bold;
+}
+
+div.box-info-01 div.inner{
+padding:8px 10px 0px;
+border:1px solid #bbb;
+background:#fff;
+}
+
+#str-main div.box-info-01 p{
+margin:0 0 7px;
+color:#333;
+line-height:1.3;
+}
+
+#str-main div.box-info-01 p.txt-important{
+padding:5px;
+text-align:center;
+font-weight:bold;
+background:#eee;
+}
+
+#str-main div.box-info-01 ul.list-link-01{
+margin-bottom:6px;
+}
+
+/* 重要なお知らせ枠 赤バージョンの場合は「box-red」クラスを併記 */
+
+div.box-info-01.box-red{
+border-color:#ffc5c5;
+}
+
+div.box-info-01.box-red div.inner{
+border-color:#fc8484;
+background-color:#fff1f1;
+}
+
+#str-main div.box-info-01.box-red p.txt-important{
+background:#fdd;
+}
+
+
+/* ----------------------------------------------------------------
+
+	一行お知らせ枠（box-info-02）
+
+----------------------------------------------------------------- */
+
+div.box-info-02{
+background: url("/web/shared/images/bg-modules/bg-box-01.gif") repeat-x scroll 0 100% white;
+margin-bottom: 10px;
+padding-bottom: 3px;
+}
+
+div.box-info-02 div.inner{
+padding:8px 15px 0px;
+border:1px solid #C3C3C3;
+background:#fff;
+}
+
+#str-main div.box-info-02 p{
+margin:0 0 7px;
+color:#333;
+line-height:1.3;
+}
+
+/* 赤バージョンの場合は「box-red」クラスを併記 */
+div.box-info-02.box-red div.inner{
+border-color:#fc9292;
+background-color:#fff1f1;
+}
+
+/* 青バージョンの場合は「box-blue」クラスを併記 */
+div.box-info-02.box-blue div.inner{
+border-color:#8eb1e2;
+background-color:#edf4ff;
+}
+
+
+/* ----------------------------------------------------------------
+
+	よくあるご質問
+
+----------------------------------------------------------------- */
+
+div#str-main div#box-help {
+background: #EAECEB;
+margin-bottom: 0.5em;
+padding: 0 0 8px;
+}
+
+div#str-main div#box-help h2{
+position:relative;
+margin: 0 0 8px;
+padding:0;
+border-top:3px solid #5A9AE9;
+border-bottom:1px solid #ccc;
+background:url("/web/shared/images/heading/hdg-bg-faq.gif") repeat-x center bottom #F4F4F4;
+}
+
+div#str-main div#box-help h2 span{
+display: block;
+font-size: 87.5%;
+padding:3px 50px 3px 13px;
+border-top:1px solid #fff;
+border-bottom:1px solid #fff;
+}
+
+div#str-main div#box-help h2 p.link-other{
+position:absolute;
+right:0;
+top:7px;
+width:12em;
+font-size: 73%;
+text-align:right;
+}
+
+div#str-main div#box-help h2 p.link-other a{
+font-weight:normal;
+text-decoration:none;
+color:#3535B4;
+}
+
+div#str-main div#box-help h2 p.link-other a:hover{
+text-decoration:underline;
+}
+
+div#str-main div#box-help div {
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 8px;
+padding: 5px;
+border-radius:5px;
+}
+
+div#str-main div#box-help div table.tbl-topics-02{
+margin-bottom:0;
+}
+
+div#str-main div#box-help div table.tbl-topics-02 tr:last-child td {
+background: none;
+}
+
+div#str-main div#box-help div table.tbl-topics-02 td {
+padding: 6px 4px;
+}
+
+div#str-main div#box-help div table.tbl-topics-02 td a {
+background: url(/web/images/top/bullet-q.gif) no-repeat 0 0;
+padding-left: 24px;
+}
+
+

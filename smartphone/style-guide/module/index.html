@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>モジュールガイド | 楽天証券</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Rakuten Securities, Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="">
+<link rel="apple-touch-icon-precomposed" href="">
+
+<!-- og -->
+<meta property="og:title" content="モジュールガイド | 楽天証券" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://www.rakuten-sec.co.jp/web/shared/images/og-image.gif" />
+<meta property="og:url" content="https://www.rakuten-sec.co.jp/smartphone/style-guide/module/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="楽天証券" />
+<!-- /og -->
+
+<!-- ::::::::::::: ▼▼ stylesheet include :  start ▼▼ ::::::::::::::::: -->
+<!--#include virtual="/smartphone/shared/include/s1-stylesheet-bottom.html" -->
+<!-- ::::::::::::: ▲▲ stylesheet include :  end ▲▲ ::::::::::::::::: -->
+
+</head>
+
+<body id="top">
+
+<a id="pagetop"></a>
+
+<!--#include virtual="/smartphone/shared/include/header/s1-smt-header.html" -->
+
+
+
+<div class="s1-content-wrap title-area">
+  <div class="s1-hdg-lv1"><h1 class="s1-hdg-lv1__element">モジュールガイド</h1></div>
+</div><!-- /.s1-content-wrap -->
+
+
+
+
+
+<div class="s1-content">
+  <div id="anc01" class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element">本モジュールについて</h2>
+  </div>
+
+  <div class="s1-content-area s1-content-first">
+
+    <p>本モジュールはBEMベースで作成されています。汎用的なブロックをメインに作られていますが、使い方をある程度限定しているモジュールもあります。</p>
+    <p class="mb-normal">また、各ブロックを組み合わせやすいように、あえてマージン等を取っていない場合が多いので、ユーティリティークラスを利用して間隔調整を行ってください。</p>
+
+    <ul class="s1-list-notice-a fs14">
+      <li>セクション間は基本.mb-double（24px）と考えてください。</li>
+    </ul>
+
+  </div><!-- /s1-content-area -->
+
+
+</div><!-- /.s1-content -->
+
+
+
+
+<div class="s1-content">
+  <div id="anc02" class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element">ユーティリティクラス一覧</h2>
+  </div>
+
+  <div class="s1-content-area s1-content-first">
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">間隔調整クラス</h3>
+    </div>
+
+    <!-- ::::::::::::: ▼▼ margin ▼▼ ::::::::::::::::: -->
+    <p class="s1-entitle mb-normal"><span class="fc-01">margin</span></p>
+    <div class="s1-accordion">
+      <div id="sub01" class="s1-accordion__hdg s1-accordion-btn">下マージン</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.mb-0</td>
+            <td>下マージンの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.mb-normal</td>
+            <td>16pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-half</td>
+            <td>8pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-double</td>
+            <td>24pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-triple</td>
+            <td>32pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-10</td>
+            <td>10pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-15</td>
+            <td>15pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-20</td>
+            <td>20pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-25</td>
+            <td>25pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-30</td>
+            <td>30pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-35</td>
+            <td>35pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-40</td>
+            <td>40pxの下マージン</td>
+          </tr>
+          <tr>
+            <td>.mb-45</td>
+            <td>45pxの下マージン</td>
+          </tr>
+            <tr>
+            <td>.mb-50</td>
+            <td>50pxの下マージン</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="sub02" class="s1-accordion__hdg s1-accordion-btn">上マージン</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.mt-0</td>
+            <td>上マージンの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.mt-5</td>
+            <td>5pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-10</td>
+            <td>10pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-15</td>
+            <td>15pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-20</td>
+            <td>20pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-25</td>
+            <td>25pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-30</td>
+            <td>30pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-35</td>
+            <td>35pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-40</td>
+            <td>40pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-45</td>
+            <td>45pxの上マージン</td>
+          </tr>
+          <tr>
+            <td>.mt-50</td>
+            <td>50pxの上マージン</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="sub03" class="s1-accordion__hdg s1-accordion-btn">左マージン</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.ml-0</td>
+            <td>左マージンの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.ml-5</td>
+            <td>5pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-10</td>
+            <td>10pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-15</td>
+            <td>15pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-20</td>
+            <td>20pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-30</td>
+            <td>30pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-40</td>
+            <td>40pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-45</td>
+            <td>45pxの左マージン</td>
+          </tr>
+          <tr>
+            <td>.ml-50</td>
+            <td>50pxの左マージン</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="sub03" class="s1-accordion__hdg s1-accordion-btn">右マージン</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.mr-0</td>
+            <td>右マージンの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.mr-5</td>
+            <td>5pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-10</td>
+            <td>10pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-15</td>
+            <td>15pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-20</td>
+            <td>20pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-25</td>
+            <td>25pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-30</td>
+            <td>30pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-35</td>
+            <td>35pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-40</td>
+            <td>40pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-45</td>
+            <td>45pxの右マージン</td>
+          </tr>
+          <tr>
+            <td>.mr-50</td>
+            <td>50pxの右マージン</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <!-- ::::::::::::: ▲▲ margin ▲▲ ::::::::::::::::: -->
+
+    <!-- ::::::::::::: ▼▼ padding ▼▼ ::::::::::::::::: -->
+    <p class="s1-entitle mb-normal"><span class="fc-01">padding</span></p>
+    <div class="s1-accordion">
+      <div id="sub01" class="s1-accordion__hdg s1-accordion-btn">下パディング</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.pb-normal</td>
+            <td>16pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-half</td>
+            <td>8pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-double</td>
+            <td>24pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-triple</td>
+            <td>32pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-0</td>
+            <td>下パディングの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.pb-5</td>
+            <td>5pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-10</td>
+            <td>10pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-15</td>
+            <td>15pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-20</td>
+            <td>20pxの下パディング</td>
+          </tr>
+          <tr>
+            <td>.pb-25</td>
+            <td>25pxの下パディング</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="sub02" class="s1-accordion__hdg s1-accordion-btn">上パディング</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.pt-normal</td>
+            <td>16pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-half</td>
+            <td>8pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-double</td>
+            <td>24pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-triple</td>
+            <td>32pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-0</td>
+            <td>上パディングの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.pt-5</td>
+            <td>5pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-10</td>
+            <td>10pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-15</td>
+            <td>15pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-20</td>
+            <td>20pxの上パディング</td>
+          </tr>
+          <tr>
+            <td>.pt-25</td>
+            <td>25pxの上パディング</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="sub03" class="s1-accordion__hdg s1-accordion-btn">左パディング</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.pl-0</td>
+            <td>左パディングの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.pl-5</td>
+            <td>5pxの左パディング</td>
+          </tr>
+          <tr>
+            <td>.pl-10</td>
+            <td>10pxの左パディング</td>
+          </tr>
+          <tr>
+            <td>.pl-15</td>
+            <td>15pxの左パディング</td>
+          </tr>
+          <tr>
+            <td>.pl-20</td>
+            <td>20pxの左パディング</td>
+          </tr>
+          <tr>
+            <td>.pl-25</td>
+            <td>25pxの左パディング</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="sub03" class="s1-accordion__hdg s1-accordion-btn">右パディング</div>
+      <div class="s1-accordion__body"">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th>クラス名</th>
+            <th>効果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.pr-0</td>
+            <td>右パディングの打ち消し</td>
+          </tr>
+          <tr>
+            <td>.pr-5</td>
+            <td>5pxの右パディング</td>
+          </tr>
+          <tr>
+            <td>.pr-10</td>
+            <td>10pxの右パディング</td>
+          </tr>
+          <tr>
+            <td>.pr-15</td>
+            <td>15pxの右パディング</td>
+          </tr>
+          <tr>
+            <td>.pr-20</td>
+            <td>20pxの右パディング</td>
+          </tr>
+          <tr>
+            <td>.pr-25</td>
+            <td>25pxの右パディング</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <!-- ::::::::::::: ▲▲ padding ▲▲ ::::::::::::::::: -->
+
+    <p class="s1-entitle mb-normal"><span class="fc-01">位置（横）</span></p>
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+      <thead>
+        <tr>
+          <th>クラス名</th>
+          <th>効果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.ta-r</td>
+          <td>text-align: right</td>
+        </tr>
+        <tr>
+          <td>.ta-c</td>
+          <td>text-align: center</td>
+        </tr>
+        <tr>
+          <td>.ta-l</td>
+          <td>text-align: left</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="s1-entitle mb-normal"><span class="fc-01">位置（縦）</span></p>
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+      <thead>
+        <tr>
+          <th>クラス名</th>
+          <th>効果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.va-t</td>
+          <td>vertical-align: top</td>
+        </tr>
+        <tr>
+          <td>.va-m</td>
+          <td>vertical-align: middle</td>
+        </tr>
+        <tr>
+          <td>.va-b</td>
+          <td>vertical-align: bottom</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="s1-entitle mb-normal"><span class="fc-01">文字サイズ</span></p>
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+      <thead>
+        <tr>
+          <th>クラス名</th>
+          <th>効果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.fs-11</td>
+          <td>font-size: 11px</td>
+        </tr>
+        <tr>
+          <td>.fs-12</td>
+          <td>font-size: 12px</td>
+        </tr>
+        <tr>
+          <td>.fs-13</td>
+          <td>font-size: 13px</td>
+        </tr>
+        <tr>
+          <td>.fs-14</td>
+          <td>font-size: 14px</td>
+        </tr>
+        <tr>
+          <td>.fs-15</td>
+          <td>font-size: 15px</td>
+        </tr>
+        <tr>
+          <td>.fs-16</td>
+          <td>font-size: 16px</td>
+        </tr>
+        <tr>
+          <td>.fs-17</td>
+          <td>font-size: 17px</td>
+        </tr>
+        <tr>
+          <td>.fs-18</td>
+          <td>font-size: 18px</td>
+        </tr>
+        <tr>
+          <td>.fs-19</td>
+          <td>font-size: 19px</td>
+        </tr>
+        <tr>
+          <td>.fs-20</td>
+          <td>font-size: 20px</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">その他調整クラス</h3>
+    </div>
+    <p class="s1-entitle mb-normal"><span class="fc-01">clearfix</span></p>
+    <table class="s1-tbl-data01 s1-tbl-data01--type01">
+      <thead>
+        <tr>
+          <th>クラス名</th>
+          <th>効果</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>.clearfix</td>
+          <td>有名なおまじない<br>フロートさせておかしなことになったら親要素に入れてみると良いことが起こるかも。。。<br>※仕組みを理解できたら脱初心者だよ</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="s1-list-notice-a fs12 mb-triple">
+      <li>スマホだとあまり出番ないかも</li>
+    </ul>
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">カラー</h3>
+    </div>
+    <table class="s1-tbl-data01 s1-tbl-data01--type02">
+      <tbody>
+        <tr>
+          <td class="bg-y">背景色 : 黄<br>クラス名 : bg-y</td>
+          <td class="bg-r-01">背景色 : 赤<br>クラス名 : bg-r-01</td>
+        </tr>
+        <tr>
+          <td class="bg-r-02">背景色 : 赤（暗め）<br>クラス名 : bg-r-02</td>
+          <td class="bg-b">背景色 : 青<br>クラス名 : bg-b</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="s1-list-notice-a fs12 mb-triple">
+      <li>随時追加していきますー</li>
+    </ul>
+
+  </div><!-- /s1-content-area -->
+
+
+</div><!-- /.s1-content -->
+
+
+
+
+
+
+<!-- ::::::::::::: ▼▼ ローカルナビ : start ▼▼ ::::::::::::::::: -->
+<div class="s1-local-nav">
+  <ul class="s1-local-nav-cat" style="height: 85%;overflow-y: auto;">
+    <li class="s1-local-nav-cat__item is-current">
+      <span class="current-txt">
+        モジュールガイド + ユーティリティクラス
+      </span>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/container.html">
+        コンテナ
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/text.html">
+        見出し・テキスト・リンク
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/image.html">
+        画像関連
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/button.html">
+        ボタン
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/label.html">
+        ラベル
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/grid.html">
+        グリッドレイアウト
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/table.html">
+        テーブル（表組み）
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/jquery.html">
+        jquery機能系
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/jquery_02.html">
+        jquery機能系その2
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/risk.html">
+        リスク
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/module/unique.html">
+        固有モジュール
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item is-current">
+      <span class="current-txt">
+        ガイドライン
+      </span>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/">
+        ガイドライン一覧
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a3introduction.html">
+        ガイドラインの目的
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-4design_concept.html">
+        デザイン設計コンセプト
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-5colorscheme.html">
+        カラースキーム
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-6font.html">
+        フォント
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-8basic_rayout.html">
+        基本構成
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+     <a href="/smartphone/style-guide/SPguideline_html/a-9layout_pattern.html">
+        ページ構成のパターン
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-10margin.html">
+        余白
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-11revision_history.html">
+        改訂履歴
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item is-current">
+      <span class="current-txt">
+        コンポーネント集
+      </span>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-1localnavi.html">
+        ナビゲーション1-ローカルナビゲーション
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-2furiwakemenu.html">
+        ナビゲーション2-振り分けメニュー
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-3mokuji.html">
+        ナビゲーション3-目次
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-4tab.html">
+        ナビゲーション4-タブ
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-5title.html">
+        見出し・セクション
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-6introduction.html">
+        導入
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-7information.html">
+        お知らせ
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-8promotion.html">
+        プロモーションバナー
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-9linkbuttons.html">
+        リンク・ボタン
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-10linkbuttons.html">
+        口座開設ボタン
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-11linkbuttons.html">
+        主導線ボタン詳細
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-12linkbuttons.html">
+        テキストリンク詳細
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-13table.html">
+        表組み
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-14step.html">
+        ステップ
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-15accordion.html">
+        アコーディオン
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-16caution.html">
+        ご注意
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/b-17emphasis.html">
+        強調表現
+      </a>
+    </li>
+    <li class="s1-local-nav-cat__item">
+      <a href="/smartphone/style-guide/SPguideline_html/a-11revision_history.html">
+        改訂履歴
+      </a>
+    </li>
+  </ul>
+</div><!-- /.s1-local-nav -->
+<!-- ::::::::::::: ▲▲ ローカルナビ : end ▲▲ ::::::::::::::::: -->
+
+
+
+
+<!-- ::::::::::::: ▼▼ パンくず : start ▼▼ ::::::::::::::::: -->
+<div class="s1-breadcrumbs-wrap">
+  <ul class="s1-breadcrumbs">
+    <li><a href="/smartphone/style-guide/">スタイルガイド</a>&nbsp;&gt;&nbsp;</li>
+    <li>モジュールガイド</li>
+  </ul>
+</div>
+<!-- ::::::::::::: ▲▲ パンくず : end ▲▲ ::::::::::::::::: -->
+
+
+
+<!-- s1-common-bottom-footer include start -->
+<!--#include virtual="/smartphone/shared/include/s1-common-bottom-footer.html" -->
+<!-- s1-common-bottom-footer include end -->
+
+
+<!-- ============ログ解析============ -->
+<!-- SiteCatalyst code -->
+<script type="text/javascript" src="/web/shared/js/sc/s_code.js"></script>
+<script type="text/javascript"><!--
+void(s.t())
+//--></script>
+<!-- End SiteCatalyst code -->
+
+<!--
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+div#full-banner-box{
+position:relative;
+width:755px;
+height:181px;
+margin:0 0 10px;
+}
+
+div#full-banner-box div#full-banner ul{
+margin:0;
+}
+
+div#full-banner-box div#full-banner ul li{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#full-banner-box div#full-banner-nav{
+position:absolute;
+top:0;
+right:0;
+}
+
+div#full-banner-box div#full-banner-nav ul{
+margin:0;
+border-bottom:1px solid #e3e3e3;
+}
+
+div#full-banner-nav ul li{
+width:180px;
+height:30px;
+}
+
+div#full-banner-nav ul li a{
+display:block;
+width:180px;
+height:30px;
+text-indent:100%;
+white-space:nowrap;
+overflow:hidden;
+background-position:0 0;
+background-repeat:no-repeat;
+}
+
+div#full-banner-nav ul li a:hover,
+div#full-banner-nav ul li.selected a{
+background-position:-180px 0;
+}
+
+/******************　ビジター（デフォルト）　******************/
+
+div#full-banner-nav li#full-nav-btn-V0 a{
+background-image:url("/web/images/top/btn-full-rakuten_g.gif"); /* 新規口座開設 */
+}
+div#full-banner-nav li#full-nav-btn-V1 a{
+background-image:url("/web/images/top/btn-full-nisa_cp.gif"); /* NISA株投信 */
+}
+div#full-banner-nav li#full-nav-btn-V2 a{
+background-image:url("/web/images/top/btn-full-ms.gif"); /* MS12.1 */
+}
+div#full-banner-nav li#full-nav-btn-V3 a{
+background-image:url("/web/images/top/btn-full-isa.gif"); /* ISA */
+}
+div#full-banner-nav li#full-nav-btn-V4 a{
+background-image:url("/web/images/top/btn-full-ispeed02.gif"); /* ispeed */
+}
+div#full-banner-nav li#full-nav-btn-V5 a{
+background-image:url("/web/images/top/btn-full-fx_cp.gif"); /* FX CP */
+}
+
+/******************　メンバー昼用　******************/
+
+div#full-banner-nav li#full-nav-btn-D0 a{
+background-image:url("/web/images/top/btn-full-nisa_cp.gif"); /* NISA株投信 */
+}
+div#full-banner-nav li#full-nav-btn-D1 a{
+background-image:url("/web/images/top/btn-full-seminar_newyear.gif"); /* 新春講演会 */
+}
+div#full-banner-nav li#full-nav-btn-D2 a{
+background-image:url("/web/images/top/btn-full-margin_cp.gif"); /* 信用取引CP */
+}
+div#full-banner-nav li#full-nav-btn-D3 a{
+background-image:url("/web/images/top/btn-full-isa.gif"); /* ISA */
+}
+div#full-banner-nav li#full-nav-btn-D4 a{
+background-image:url("/web/images/top/btn-full-hp_search.gif"); /* 優待 */
+}
+div#full-banner-nav li#full-nav-btn-D5 a{
+background-image:url("/web/images/top/btn-full-cp_introduction.gif"); /* お友達紹介 CP */
+}
+
+/******************　メンバー夜用　******************/
+
+div#full-banner-nav li#full-nav-btn-N0 a{
+background-image:url("/web/images/top/btn-full-fx_cp.gif"); /* FX CP */
+}
+div#full-banner-nav li#full-nav-btn-N1 a{
+background-image:url("/web/images/top/btn-full-nisa_cp.gif"); /* NISA株投信 */
+}
+div#full-banner-nav li#full-nav-btn-N2 a{
+background-image:url("/web/images/top/btn-full-ispeed02.gif"); /* ispeed */
+}
+div#full-banner-nav li#full-nav-btn-N3 a{
+background-image:url("/web/images/top/btn-full-isa.gif"); /* ISA */
+}
+div#full-banner-nav li#full-nav-btn-N4 a{
+background-image:url("/web/images/top/btn-full-margin_cp.gif"); /* 信用キャンペーン */
+}
+div#full-banner-nav li#full-nav-btn-N5 a{
+background-image:url("/web/images/top/btn-full-cp_introduction.gif"); /* お友達紹介 CP */
+}

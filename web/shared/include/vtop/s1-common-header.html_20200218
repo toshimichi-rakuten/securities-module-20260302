@@ -1,0 +1,365 @@
+<!-- インクルード /web/shared/include/vtop/s1-common-header.html -->
+<!DOCTYPE html><!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"><!--<![endif]-->
+  <head>
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" src="/web/shared/js/googletagmanager.js"></script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <script>
+    var scid = String(location.search);
+    scid = scid.replace( "?" , "&" );
+      if (scid){
+        if (document.referrer.indexOf('rakuten-sec.co.jp') == -1 &&  (
+          (navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) ||
+          navigator.userAgent.indexOf('iPod') > 0 ||
+          (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) ||
+          navigator.userAgent.indexOf('Windows Phone') > 0 )) {
+            if(confirm('楽天証券スマートフォン専用サイトへ移動しますか？')) {
+              location.href = '/smartphone/?l-id=vtop_select_sp' + scid;
+            } else {
+              location.href = '/?l-id=vtop_select_pc' + scid;
+            }
+          }
+        }else{
+          if (document.referrer.indexOf('rakuten-sec.co.jp') == -1 &&  (
+          (navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) ||
+          navigator.userAgent.indexOf('iPod') > 0 ||
+          (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) ||
+          navigator.userAgent.indexOf('Windows Phone') > 0 )) {
+            if(confirm('楽天証券スマートフォン専用サイトへ移動しますか？')) {
+              location.href = '/smartphone/?l-id=vtop_select_sp';
+            } else {
+              location.href = '/?l-id=vtop_select_pc';
+            }
+          }
+        }
+    </script>
+    <meta name="author" content="楽天証券株式会社">
+    <meta name="robots" content="index,follow,noodp,noydir">
+    <meta name="keywords" content="FX,株価,投資信託,ネット証券,オンライン証券,オンライントレード,証券会社,証券,楽天証券,楽天">
+    <meta name="description" content="投資信託や確定拠出年金、NISAなら初心者に選ばれる楽天グループの楽天証券。SPUに仲間入りし、ポイント投資で楽天市場のお買い物のポイントが＋1倍！取引や残高に応じて楽天スーパーポイントが貯まる、使える楽天証券でおトクに資産形成を始めよう！">
+    <meta name="copyright" content="Rakuten Securities, Inc. All Rights Reserved.">
+    <title>楽天証券 | ネット証券（株・FX・投資信託･確定拠出年金･NISA）</title>
+    <meta property="og:title" content="楽天証券 | ネット証券（株・FX・投資信託･確定拠出年金･NISA）">
+    <meta property="og:description" content="投資信託や確定拠出年金、NISAなら初心者に選ばれる楽天グループの楽天証券。SPUに仲間入りし、ポイント投資で楽天市場のお買い物のポイントが＋1倍！取引や残高に応じて楽天スーパーポイントが貯まる、使える楽天証券でおトクに資産形成を始めよう！">
+    <meta property="og:image" content="https://www.rakuten-sec.co.jp/web/shared/images/og-image.gif">
+    <meta property="og:url" content="https://www.rakuten-sec.co.jp/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="楽天証券">
+    <meta property="fb:admins" content="1260619238">
+    <meta property="twitter:account_id" content="79942898">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@RakutenSec">
+    <link rel="start" type="text/html" href="/">
+    <link rel="publisher" href="https://plus.google.com/114468881628225555842">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.rakuten-sec.co.jp/web/shared/images/fixed/favicon.ico">
+    <link rel="canonical" href="https://www.rakuten-sec.co.jp/">
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.rakuten-sec.co.jp/smartphone/">
+    <link rel="alternate" media="handheld" href="http://m.rakuten-sec.co.jp/">
+    <link rel="apple-touch-icon" href="/smartphone/img/securities.png">
+    <link rel="stylesheet" href="/web/shared/css/s1-style_top.css?20180702">
+    <link rel="stylesheet" href="/web/shared/css/s2-style-top-hero.css">
+	<style>
+.s1-carousel{
+	opacity:0;
+}
+#keyboard_body{
+	display:none;
+}
+#vistaUser{
+	padding: 15px 0 15px;
+	border:2px solid #386fdc;
+	text-align:center;
+	background-image:url('/web/info/images/windowsVista.gif');
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	font-size:16px;
+
+}
+#vistaUser a{
+	text-decoration:underline;
+}
+</style>
+  </head>
+  <body>
+<!--#include virtual="/web/shared/include/analysis/analysis-googletagmanager.html" -->
+<div id="vistaUser" style="display:none;">
+Windows Vistaのサポート終了（4/11）に伴う動作推奨環境の変更　<a href="https://www.rakuten-sec.co.jp/web/info/info20170331-01.html">詳しくはこちら</a>
+</div>
+    <!-- MSMCダウンロードバナー -->
+    <div id="MSMCBNR" style="display:none; text-align:center; height:60px; background: rgb(81,92,98);background: -moz-linear-gradient(left,  rgba(81,92,98,1) 0%, rgba(81,92,98,1) 49%, rgba(37,37,35,1) 49%, rgba(37,37,35,1) 100%);background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(81,92,98,1)), color-stop(49%,rgba(81,92,98,1)), color-stop(49%,rgba(37,37,35,1)), color-stop(100%,rgba(37,37,35,1)));background: -webkit-linear-gradient(left,  rgba(81,92,98,1) 0%,rgba(81,92,98,1) 49%,rgba(37,37,35,1) 49%,rgba(37,37,35,1) 100%);background: -o-linear-gradient(left,  rgba(81,92,98,1) 0%,rgba(81,92,98,1) 49%,rgba(37,37,35,1) 49%,rgba(37,37,35,1) 100%);background: -ms-linear-gradient(left,  rgba(81,92,98,1) 0%,rgba(81,92,98,1) 49%,rgba(37,37,35,1) 49%,rgba(37,37,35,1) 100%);background: linear-gradient(to right,  rgba(81,92,98,1) 0%,rgba(81,92,98,1) 49%,rgba(37,37,35,1) 49%,rgba(37,37,35,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515c62', endColorstr='#252523',GradientType=1 );;"><img src="/web/images/banners/ms_mac/950x60.jpg" alt="「MARKETSPEED for Mac」" width="950" height="60" border="0" usemap="#Map"/>
+    <map name="Map">
+    <area shape="rect" coords="515,11,809,53" href="http://marketspeed.jp/mac/download/?l-id=vtop-msmcbnr_download" alt="「MARKETSPEED for Mac」ダウンロードはこちら">
+    <area shape="rect" coords="889,14,919,46" href="javascript:closeMSMCBNR();" alt="閉じる">
+    </map>
+    </div>
+    <script type="text/javascript">
+    <!--
+    if(document.referrer.indexOf('rakuten-sec.co.jp') == -1) {
+      var flg = getCookie("msbnr");
+      if(flg == null) {
+        if((navigator.userAgent.indexOf('Intel Mac OS X 10_9') > 0 || navigator.userAgent.indexOf('Intel Mac OS X 10_10') > 0 )) {
+          document.getElementById("MSMCBNR").style.display="block";
+        }
+      }
+    }
+    function closeMSMCBNR()
+    {
+        document.getElementById("MSMCBNR").style.display="none";
+
+        var nt = new Date().getTime();
+        var ct = new Date(nt + (60 * 60 * 24 * 1000 * 30));
+        var exp = ct.toGMTString();
+        document.cookie = "msbnr=1; expires=" + exp;
+    }
+    function getCookie( name )
+    {
+        var result = null;
+
+        var cookieName = name + '=';
+        var allcookies = document.cookie;
+
+        var position = allcookies.indexOf( cookieName );
+        if( position != -1 )
+        {
+            var startIndex = position + cookieName.length;
+
+            var endIndex = allcookies.indexOf( ';', startIndex );
+            if( endIndex == -1 )
+            {
+                endIndex = allcookies.length;
+            }
+
+            result = decodeURIComponent(
+                allcookies.substring( startIndex, endIndex ) );
+        }
+
+        return result;
+    }
+    -->
+    </script>
+    <!-- MSMCダウンロードバナー -->
+    <img src="https://grp01.xd.rakuten.co.jp/r/f15/t.gif" width="0" height="0" style="display:none;">
+    <!-- Standard RakutenCommonHeader v0.1.4 HTML starts-->
+    <div class="rc-h-standard">
+      <noscript>
+        <div class="rc-h-noscript-bar">
+          <div class="rc-h-inner">
+            <p>JavaScriptが無効の為、一部のコンテンツをご利用いただけません。JavaScriptの設定を有効にしてからご利用いただきますようお願いいたします。（<a href="https://ichiba.faq.rakuten.co.jp/app/answers/detail/a_id/154">設定方法</a>）</p>
+          </div>
+        </div>
+      </noscript>
+      <div class="rc-h-utility-bar">
+        <div class="rc-h-inner">
+          <ul class="rc-h-group-nav">
+            <!-- <li id="grpNote">
+              <noscript><a href="https://card.rakuten.co.jp/entry/">今すぐ2,000ポイント！</a></noscript>
+            </li> -->
+            <li class="rc-h-dropdown rc-h-group-dropdown"><a href="http://www.rakuten.co.jp/sitemap/">楽天グループ<i class="rc-h-icon-arrow"></i></a>
+              <ul class="rc-h-dropdown-panel">
+                <li><a href="https://travel.rakuten.co.jp/?scid=wi_grp_gmx_sec_hepullbu_trv" rel="nofollow">楽天トラベル</a></li>
+                <li><a href="https://gora.golf.rakuten.co.jp/?scid=wi_grp_gmx_sec_hepullbu_gra" rel="nofollow">楽天GORA</a></li>
+                <li><a href="https://books.rakuten.co.jp/?scid=wi_grp_gmx_sec_hepullbu_boo" rel="nofollow">楽天ブックス</a></li>
+                <li><a href="https://broadband.rakuten.co.jp/?scid=wi_grp_gmx_sec_hepullbu_brd" rel="nofollow">楽天ブロードバンド</a></li>
+                <li><a href="https://checkout.rakuten.co.jp/?scid=wi_grp_gmx_sec_hepullbu_chk" rel="nofollow">楽天ペイ</a></li>
+                <li><a href="https://sm.rakuten.co.jp/?scid=wi_grp_gmx_sec_hepullbu_sup&xadid=wi_grp_gmx_sec_hepullbu_sup" rel="nofollow">楽天西友ネットスーパー</a></li>
+                <li><a href="https://www.rakuten.co.jp/sitemap/">サービス一覧</a></li>
+              </ul>
+            </li>
+            <li><a href="/web/link/internal.html?page=https://www.rakuten-bank.co.jp/?scid=wi_grp_gmx_sec_hepullbu_bnk" rel="nofollow">銀行</a></li>
+            <li><a href="https://ad2.trafficgate.net/t/r/8109/1441/99636_99636/" rel="nofollow">カード</a></li>
+            <li><a href="https://www.rakuten-insurance.co.jp/" rel="nofollow">楽天保険の総合窓口</a></li>
+            <li><a href="https://www.rakuten.co.jp/">楽天市場</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rc-h-service-bar">
+        <div class="rc-h-inner">
+          <div class="rc-h-inner__l">
+            <div class="rc-h-site-id">
+              <div class="rc-h-logo">
+                <h1>
+                  <a href="https://www.rakuten-sec.co.jp/">
+                    <img src="/web/shared/img/rc-h-logo@2x.png" srcset="/web/shared/img/rc-h-logo@2x.png 2x,/web/shared/img/rc-h-logo@3x.png 3x" alt="楽天証券">
+                  </a>
+                </h1>
+              </div>
+            </div>
+            <div class="rc-h-site-menu">
+              <div class="rc-h-menu-btns">
+                <ul class="rc-h-help-nav">
+                  <li><a href="/web/company/" onclick="s.lidTrack('vtop-header_company')">楽天証券について</a></li>
+                  <!--<li><a href="/web/security/" onclick="s.lidTrack('vtop-header_security')">セキュリティ</a></li>-->
+                  <li><a href="http://faq.rakuten-sec.co.jp/" onclick="s.lidTrack('vtop-header_faq')">よくあるご質問</a></li>
+                  <li><a href="/web/support/" onclick="s.lidTrack('vtop-header_support')">お問い合わせ</a></li>
+                  <!--<li><a href="/web/sitemap.html" onclick="s.lidTrack('vtop-header_sitemap')">サイトマップ</a></li>-->
+                  <li><a href="/web/ir_support/" onclick="s.lidTrack('vtop-header_ir_support')">上場企業向けIRサービス</a></li>
+                  <li><a href="/web/corporate/" onclick="s.lidTrack('vtop-header_corporate')">法人のお客様</a></li>
+                </ul>
+                <ul class="rc-h-action-nav">
+                  <li>
+                    <form method="GET" action="https://search.rakuten-sec.co.jp/ja_all/search.x" name="search" class="rc-h-action-search">
+                      <input type="text" name="q" value="" id="MF_form_phrase" placeholder="サイト内検索" class="rc-h-search-query"><button type="submit" class="rc-h-search-btn"><i class="s-glyph">&#xf108;</i></button>
+                    </form>
+                  </li>
+                  <li><a href="/ITS/V_ACT_Login.html" class="rc-h-action-btn rc-h-strong-action" onclick="s.lidTrack('vtop-header_login')"><i class="rc-h-btn-icon s-glyph">&#xf109;</i><span class="rc-h-btn-label">ログイン</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rc-h-inner__r">
+            <div class="rc-h-site-bnr"><a href="/web/service/point/investment/" onclick="s.lidTrack('vtop-header_point')"><img src="/web/images/banners/point_investment/180x50.png" alt="ポイント投資" width="180" height="50"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="rc-h-section-bar">
+        <div class="rc-h-inner">
+          <ul class="rc-h-section-nav">
+            <li class="rc-h-nav-beginner"><b data-h-dropdown="beginner"><span>はじめての方へ<i class="rc-h-icon-arrow"></i></span></b></li>
+            <li class="rc-h-nav-merchandise"><b data-h-dropdown="merchandise"><span>商品・サービス<i class="rc-h-icon-arrow"></i></span></b></li>
+            <li class="rc-h-nav-commission"><a href="/web/commission/" onclick="s.lidTrack('vtop-header-nav_commision')"><span>手数料</span></a></li>
+            <li class="rc-h-nav-tool"><b data-h-dropdown="tool"><span>ツール・アプリ<i class="rc-h-icon-arrow"></i></span></b></li>
+            <li class="rc-h-nav-campaign"><a href="/web/campaign/" onclick="s.lidTrack('vtop-header-nav_campaign')"><span>キャンペーン</span></a></li>
+            <li class="rc-h-nav-market"><a href="/web/market/" onclick="s.lidTrack('vtop-header-nav_market')"><span>マーケット情報</span></a></li>
+            <li class="rc-h-nav-support"><a href="/web/support/" onclick="s.lidTrack('vtop-header-nav_support')"><span>お客様サポート</span></a></li>
+            <li class="rc-h-nav-report"><a class="rc-h-nav-report__link" href="https://media.rakuten-sec.net/" onclick="s.lidTrack('vtop-header-nav_toushiru')" target="_blank"><span>トウシル<br><span class="rc-h-nav-report__subtxt">投資情報</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rc-h-float-bar">
+        <div class="rc-h-inner">
+          <div class="rc-h-float-btn">
+            <?php
+              if(isset($_COOKIE["Rg_sec"])){
+                $rg = $_COOKIE["Rg_sec"];
+                if(substr($rg,26,1) !== "0") {
+                  echo '<a href="/ITS/V_ACT_Login.html?l-id=vtop-float-nav_login" class="rc-h-float-btn-member"><i class="s-glyph">&#xf109;</i> ログイン</a>';
+                }
+              }else{
+                echo '<a href="/web/account/rsec.html?l-id=vtop-float-nav_account_open" class="rc-h-float-btn-visitor"><i class="s-glyph">&#xf10a;</i> 口座開設</a>';
+              }
+            ?>
+          </div>
+          <ul class="rc-h-float-nav">
+            <li class="rc-h-nav-beginner"><b data-h-dropdown="beginner"><span>はじめての方へ<i class="rc-h-icon-arrow"></i></span></b></li>
+            <li class="rc-h-nav-merchandise"><b data-h-dropdown="merchandise"><span>商品・サービス<i class="rc-h-icon-arrow"></i></span></b></li>
+            <li class="rc-h-nav-commission"><a href="/web/commission/" onclick="s.lidTrack('vtop-float-nav_commision')"><span>手数料</span></a></li>
+            <li class="rc-h-nav-tool"><b data-h-dropdown="tool"><span>ツール・アプリ<i class="rc-h-icon-arrow"></i></span></b></li>
+            <li class="rc-h-nav-campaign"><a href="/web/campaign/" onclick="s.lidTrack('vtop-float-nav_campaign')"><span>キャンペーン</span></a></li>
+            <li class="rc-h-nav-market"><a href="/web/market/" onclick="s.lidTrack('vtop-float-nav_market')"><span>マーケット情報</span></a></li>
+            <li class="rc-h-nav-support"><a href="/web/support/" onclick="s.lidTrack('vtop-float-nav_support')"><span>お客様サポート</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rc-h-dropdown-menu">
+        <div class="rc-h-inner">
+          <div class="rc-h-dropdown-panel rc-h-panel-beginner">
+            <div class="rc-h-dropdown-panel-inner">
+              <ul class="rc-h-panel-links">
+                <li><a href="/ITS/rakuten_g/" onclick="s.lidTrack('vtop-float-nav_rakuten_g')">新規デビューキャンペーン</a></li>
+                <li><a href="/ITS/rakuten_g/start/" onclick="s.lidTrack('vtop-float-nav_charm')">楽天証券の魅力</a></li>
+                <li><a href="/ITS/rakuten_g/flow/" onclick="s.lidTrack('vtop-float-nav_flow')">口座開設からお取引までの流れ</a></li>
+                <li><a href="/web/learn/" onclick="s.lidTrack('vtop-float-nav_learn')">投資はじめてガイド&amp;セミナー</a></li>
+                <li><a href="/ITS/rakuten_g/start/anshin/" onclick="s.lidTrack('vtop-float-nav_anshin')">楽天証券のあんしん</a></li>
+                <li><a href="https://dc.rakuten-sec.co.jp/admission/" onclick="s.lidTrack('vtop-float-nav_dc_admission')">確定拠出年金をはじめるには</a></li>
+                <li><a href="/nisa/account.html" onclick="s.lidTrack('vtop-float-nav_nisa_account')"><span>NISAをはじめるには</span></a></li>
+                <li><a href="https://member.rakuten-sec.co.jp/service/setup/loginFormInit.do?homeid=wed" onclick="s.lidTrack('vtop-float-nav_initial_setting')"><span>申請番号でのログイン（非会員）</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="rc-h-dropdown-panel rc-h-panel-merchandise">
+            <div class="rc-h-dropdown-panel-inner">
+              <div class="rc-h-panel-strong-link"><a href="/web/products/" onclick="s.lidTrack('vtop-float-nav_products')">商品一覧<i class="rc-h-icon-greater">&gt;</i></a></div>
+              <ul class="rc-h-panel-links">
+                <li><a href="/web/domestic/" onclick="s.lidTrack('vtop-float-nav_domestic')">国内株式・信用取引</a></li>
+                <li><a href="/web/foreign/" onclick="s.lidTrack('vtop-float-nav_foreign')">海外株式・海外ETF</a></li>
+                <li><a href="/web/domestic/ipo/" onclick="s.lidTrack('vtop-float-nav_ipo')">IPO・PO</a></li>
+                <li><a href="/web/fund/" onclick="s.lidTrack('vtop-float-nav_fund')">投資信託・積立</a></li>
+                <li><a href="/web/bond/" onclick="s.lidTrack('vtop-float-nav_bond')">債券</a></li>
+                <li class="links-double"><a href="/web/fx/" onclick="s.lidTrack('vtop-float-nav_fx')">FX（楽天FX・</a><a href="/web/fx/mt4/" onclick="s.lidTrack('vtop-float-nav_fxmt4')">楽天MT4）</a></li>
+                <li><a href="/web/fop/" onclick="s.lidTrack('vtop-float-nav_fop')">先物・オプション</a></li>
+                <li><a href="/web/variety/covered_warrant/" onclick="s.lidTrack('vtop-float-nav_covered_warrant')">eワラント</a></li>
+                <li><a href="/web/commodity/" onclick="s.lidTrack('vtop-float-nav_commodity')">商品先物</a></li>
+                <li><a href="/web/gold/" onclick="s.lidTrack('vtop-float-nav_gold')">金・プラチナ</a></li>
+                <li><a href="https://wrap.rakuten-sec.co.jp/" onclick="s.lidTrack('vtop-float-nav_wrap')">楽ラップ</a></li>
+                <li class="links-double"><a href="/nisa/" onclick="s.lidTrack('vtop-float-nav_nisa')">NISA・</a><a href="/nisa/tsumitate/" onclick="s.lidTrack('vtop-float-nav_tsumitate')">つみたてNISA</a></li>
+                <li><a href="https://dc.rakuten-sec.co.jp" onclick="s.lidTrack('vtop-float-nav_dc')">確定拠出年金(iDeCo)</a></li>
+              </ul>
+              <div class="rc-h-panel-strong-link"><a href="/web/service/" onclick="s.lidTrack('vtop-float-nav_service')">サービス一覧<i class="rc-h-icon-greater">&gt;</i></a></div>
+              <ul class="rc-h-panel-links">
+                <li><a href="/web/service/point/" onclick="s.lidTrack('vtop-float-nav_point')">ポイントプログラム</a></li>
+                <li><a href="/web/service/pay/" onclick="s.lidTrack('vtop-float-nav_pay')">ご入金・ご出金</a></li>
+                <li><a href="/web/service/tsumitate/" onclick="s.lidTrack('vtop-float-nav_tsumitate')">積立サービス</a></li>
+                <li><a href="/web/bank/" onclick="s.lidTrack('vtop-float-nav_bank')">銀行との口座連携</a></li>
+                <li><a href="/web/service/session/" onclick="s.lidTrack('vtop-float-nav_session')">お取引時間</a></li>
+                <li><a href="/web/service/investment/" onclick="s.lidTrack('vtop-float-nav_investment')">投資情報サービス</a></li>
+                <li><a href="/web/service/mailservice/" onclick="s.lidTrack('vtop-float-nav_mailservice')">メールサービス</a></li>
+                <li><a href="/web/service/introduction/" onclick="s.lidTrack('vtop-float-nav_introduction')">ご家族・お友達紹介</a></li>
+                <li><a href="/web/under_age/" onclick="s.lidTrack('vtop-float-nav_under_age')">未成年口座</a></li>
+                <li><a href="/web/service/mynumber/" onclick="s.lidTrack('vtop-float-nav_mynumber')">マイナンバー</a></li>
+                <li><a href="/web/support/tax/" onclick="s.lidTrack('vtop-float-nav_specific')">証券税制・確定申告</a></li>
+                <li><a href="/web/collateral/" onclick="s.lidTrack('vtop-float-nav_collateral')">らくらく担保</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="rc-h-dropdown-panel rc-h-panel-tool">
+            <div class="rc-h-dropdown-panel-inner">
+              <div class="rc-h-panel-strong-link"><a href="/web/service/tool/" onclick="s.lidTrack('vtop-float-nav_tool')">取引ツール<i class="rc-h-icon-greater">&gt;</i></a></div>
+              <ul class="rc-h-panel-links">
+                <li><a href="https://marketspeed.jp/ms2/" onclick="s.lidTrack('vtop-float-nav_ms2');this.href=usergram.link(this.href);">マーケットスピード II</a></li>
+                <li><a href="https://marketspeed.jp/ms1/" onclick="s.lidTrack('vtop-float-nav_ms1');this.href=usergram.link(this.href);">マーケットスピード</a></li>
+                <li><a href="https://marketspeed.jp/mac/" onclick="s.lidTrack('vtop-float-nav_msmc')">マーケットスピード（Mac版）</a></li>
+                <li class="links-double"><a href="https://marketspeed.jp/fx/" onclick="s.lidTrack('vtop-float-nav_msfx')">マーケットスピードFX・</a><a href="/web/fx/mt4/" onclick="s.lidTrack('vtop-float-nav_fxmt4_2')">MT4</a></li>
+                <li><a href="https://marketspeed.jp/cx/" onclick="s.lidTrack('vtop-float-nav_mscx')">マーケットスピードCX</a></li>
+                <li><a href="http://ispeed.jp/" onclick="s.lidTrack('vtop-float-nav_ispeed');this.href=usergram.link(this.href);">iSPEED</a></li>
+                <li><a href="http://ispeed.jp/ipad/" onclick="s.lidTrack('vtop-float-nav_ispeed-ipad')">iSPEED for iPad</a></li>
+                <li><a href="http://ispeed.jp/fx/" onclick="s.lidTrack('vtop-float-nav_ispeed-fx')">iSPEED FX</a></li>
+                <li><a href="http://ispeed.jp/fop/" onclick="s.lidTrack('vtop-float-nav_ispeed-fop')">iSPEED 先物OP</a></li>
+                <li><a href="http://ispeed.jp/cx/" onclick="s.lidTrack('vtop-float-nav_ispeed-cx')">iSPEED CX</a></li>
+              </ul>
+              <div class="rc-h-panel-strong-link"><a href="/web/service/tool/#another_tool" onclick="s.lidTrack('vtop-float-nav_tool-another')">その他のツール・サービス・動作推奨環境<i class="rc-h-icon-greater">&gt;</i></a></div>
+              <ul class="rc-h-panel-links-2col">
+                <li><a href="/web/service/investment/nikkei.html" onclick="s.lidTrack('vtop-float-nav_nikkei')">日経テレコン</a></li>
+                <li><a href="/web/help/operating_condition.html" onclick="s.lidTrack('vtop-float-nav_operating-condition')">動作推奨環境</a></li>
+                <li><a href="/web/fund/search/result.html" onclick="s.lidTrack('vtop-float-nav_fund_search_result')">投信スーパーサーチ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rc-h-subsection-bar-double rc-h-subsection-top-double">
+        <div class="rc-h-inner-double">
+          <!--<div class="rc-h-subsection-label">取扱商品</div>-->
+          <ul class="rc-h-subsection-nav">
+            <li><a href="/web/domestic/" onclick="s.lidTrack('vtop-product-nav_domestic')">国内株式<br>現物･信用</a></li>
+            <li><a href="/web/foreign/" onclick="s.lidTrack('vtop-product-nav_foreign')">海外株式<br>海外ETF</a></li>
+            <li><a href="/web/fund/" onclick="s.lidTrack('vtop-product-nav_fund')">投資信託<br>積立</a></li>
+            <li><a href="/web/bond/" onclick="s.lidTrack('vtop-product-nav_bond')"><span>債券</span></a></li>
+            <li><a href="/web/fx/" onclick="s.lidTrack('vtop-product-nav_fx')"><span>FX</span></a></li>
+            <li><a href="/web/fop/" onclick="s.lidTrack('vtop-product-nav_fop')">先物<br>OP</a></li>
+            <li><a href="/web/commodity/" onclick="s.lidTrack('vtop-product-nav_commodity')"><span>商品先物</span></a></li>
+            <li><a href="/web/gold/" onclick="s.lidTrack('vtop-product-nav_gold')">金<br>プラチナ</a></li>
+            <li><a href="https://wrap.rakuten-sec.co.jp/" onclick="s.lidTrack('vtop-product-nav_wrap')"><span>楽ラップ</span></a></li>
+            <li><a href="/nisa/" onclick="s.lidTrack('vtop-product-nav_nisa')">NISA<br>つみたてNISA</a></li>
+            <li><a href="https://dc.rakuten-sec.co.jp" onclick="s.lidTrack('vtop-product-nav_dc')">確定拠出年金<br>iDeCo(イデコ)</a></li>
+            <li><a href="https://fa.rakuten-sec.co.jp/" onclick="s.lidTrack('vtop-product-nav_ifa')">IFA<br>運用相談</a></li>
+            <li><a href="/web/bank/" onclick="s.lidTrack('vtop-product-nav_bank')">銀行連携<br>マネーブリッジ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="s1-news-box s1-section s1-emergency-box" style="width: 950px; margin:20px auto; border:#C03228 solid 2px; background-color:#FBF2F2;">
+    <ul class="s1-news-box__list">
+    <p style="padding:10px; font-size: 16px;"><a onclick="s.lidTrack('v_visitor_top_emergency_system_info')" href=""></a></p>
+    </ul>
+    </div>
+    -->
+
+  <!-- Standard RakutenCommonHeader v0.1.4 HTML ends-->
+<!-- /インクルード /web/shared/include/vtop/s1-common-header.html -->

@@ -1,0 +1,233 @@
+<hr />
+
+<div id="font-control"></div>
+
+<p style="margin:0 0px 7px;padding:0;"><a onclick="s.lidTrack('visitor_right_bnr_ideco_app_top')" href="https://dc.rakuten-sec.co.jp/redirect/account.html"><img src="/web/images/banners/ideco/180x60.png" alt="個人確定拠出年金iDeCo" width="180" height="60" /></a></p>
+
+<!-- p id="ACC2" style="margin:0 0px 7px;padding:0;"><a href="/ITS/rakuten_g/?l-id=rightnavi_cp_newacc"><img src="/web/shared/images/str-sub-common/bnr-12200cp-01.gif" alt="口座開設＋各種取引でポイントプレゼント" width="180" height="50" /></a></p -->
+
+
+
+
+<script type="text/javascript">
+<!--
+
+  var $ = jqBase;
+  var jQuery = jqBase;
+
+  var rz = $.cookie("Rz");
+  var rg = $.cookie("Rg_sec");
+  var url = 0;
+
+  var pathname = location.pathname;         //URLが信用取引配下だったら、1を立てる
+  re = new RegExp("/web/domestic/margin/", "i");
+  if (pathname.match(re)) {
+    url = 1;
+  } else {
+    url = 0;
+  }
+
+  if((rz == null) && (rg == null)) {      // デフォルト:非会員の場合
+    $("#ACC4").hide();
+    $("#ACC5").hide();
+    $("#ACC6").hide();
+//    $("#PAY1").hide();
+  } else {
+    if((rz != null) && (rg == null)) {    // 非会員・RzCookieを保持の場合
+      $("#ACC4").hide();
+      $("#ACC5").hide();
+      $("#ACC6").hide();
+//      $("#PAY1").hide();
+    } else {
+      if(rg.substr(111,1) == '1'){        // 入金実績
+        $("#ACC3").hide();
+        $("#ACC4").hide();
+//        $("#PAY1").hide();
+      } else {
+        $("#ACC3").hide();
+
+        if(rg.substr(5,1) == '0'){        // 口座申込済みの場合
+          $("#ACC5").hide();
+          $("#ACC6").hide();
+        } else {                          // 初期設定完了済の場合
+          if((rg.substr(92,1) == '0') && (url == 1)){  // 6.会員、かつ、信用口座未開設、かつ、URLが信用配下の場合
+            $("#ACC4").hide();
+            $("#ACC5").hide();
+          } else {                            // 上記以外はNISA
+            $("#ACC4").hide();
+            $("#ACC6").hide();
+          }
+        }
+      }
+    }
+  }
+-->
+</script>
+
+<!--システムメンテナンスのおしらせ-->
+<div style="margin-bottom:10px;padding:4px 6px 6px;border:3px solid #ffc000;background:#eee;font-size:12px;color:#333;line-height:1.3;">
+<div style="font-weight:bold;text-align:center;">お知らせ</div>
+現在、システムメンテナンスのため、総合口座へのログインを停止しています。
+<div style="margin-top:5px;padding:2px 4px;background:#ff7920;font-size:12px;color:#fff;text-align:center;">サービス再開予定</div>
+<div style="padding:2px 4px;background:#fff;font-size:12px;font-weight:bold;color:#333;text-align:center;">%DATE% %TIME%<br>&#8251;最大%MAXTIME%になる場合があります</div>
+<div style="font-weight:bold;text-align:center; margin-top:5px;">楽天FXについて</div>
+楽天FXのメンテナンス等についてはこちら
+<div style="text-align:right;"><a href="/web/company/system/maintenance/">メンテナンススケジュール</a></div>
+</div>
+<!--/システムメンテナンスのおしらせ-->
+
+<div class="login-nfx">
+<div>
+<p class="btn-login"><a href="/web/fx/login.html"><img src="/web/shared/images/str-sub-common/btn-fxlogin-01.gif" alt="楽天FXログイン" width="154" height="24" border="0" /></a></p>
+<p class="link-01"><a href="/web/fx/startup.html" style="display:block;">楽天FX口座を開設</a></p>
+</div>
+</div><!-- /login-nfx -->
+
+<!-- 緊急時障害アナウンス用インクルード(削除禁止) -->
+<!--#include virtual="/ITS/system_info_login_inc.html" -->
+<!-- 緊急時障害アナウンス用インクルード(削除禁止) -->
+
+<!-- <div class="info-system"> -->
+<!-- <h2 id="about_system_information">システム関連のお知らせ</h2> -->
+<!-- 緊急時障害アナウンスロード用スクリプト(削除禁止) -->
+<!--<script>
+
+ $(function(){
+  jQuery.ajaxSetup({ cache: false });
+  jQuery.get("/ITS/system_info_web.xml", function(resp) {
+   $("#system_info").append((resp.documentElement.firstChild.nodeValue).replace(/system_info\//g,"/ITS/system_info/"));
+  });
+ });
+
+</script>//-->
+<!-- 緊急時障害アナウンスロード用スクリプト-削除禁止 -->
+
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+<!-- ### SYSTEM_INFO ### -->
+<!-- <div id="system_info"></div> -->
+<!-- ### SYSTEM_INFO ### -->
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+
+
+<!-- </div> --><!-- /info-system -->
+
+<div class="attention">
+<h2 id="attention_visitor">お客様へのご注意</h2>
+<ul class="list-link-01">
+<!--li><a href="/web/info/view_document.html">重要な書面（取引説明書･約諾書等）の閲覧について </a></li-->
+<li><a href="/ITS/Companyfile/PRNT_Companyfile.html" target="_blank">お取引注意銘柄情報</a></li>
+<li><a href="/web/info/system_maintenance.html">メンテナンス中のご注意</a></li>
+</ul>
+</div><!-- /.attention -->
+
+<div class="inquiry">
+<h2 id="inquiry_help">よくあるご質問</h2>
+<ul class="list-link-01">
+<li><a href="https://faq.rakuten-sec.co.jp/faq.html?scategory=159&t=20120720192240&key=&x=132&y=25" target="_blank">変更手続きのQ＆A</a></li>
+<li><a href="/web/help/#inqury-tel">お電話でのお問い合わせ</a></li>
+<li><a href="http://faq.rakuten-sec.co.jp/" target="_blank">よくあるご質問</a></li>
+<li><a href="/web/help/pc_support.html">パソコン出張サポート</a></li>
+</ul>
+<!-- FAQ -->
+<!--#include virtual="/web/shared/include/str-sub-common/ask-ranking.html" -->
+<!-- FAQ -->
+</div><!-- /.inquiry -->
+
+<!-- MSバナーここから -->
+<p style="margin:0 0px 10px;padding:0;"><a href="https://marketspeed.jp/ms2/download/?l-id=rightnavi_ms2_download"><img src="/web/images/banners/ms2_special_debut/180x40.png" alt="マーケットスピード IIダウンロード" /></a></p>
+<p style="margin:0 0px 10px;padding:0;"><a href="https://marketspeed.jp/download/?l-id=rightnavi_ms_download"><img src="/web/images/index-bnr-msdl.gif" alt="Marketspeedダウンロード" /></a></p>
+<p style="margin:0 0px 10px;padding:0;"><a href="https://marketspeed.jp/mac/download/?l-id=rightnavi_msmc_download"><img src="/web/images/index-bnr-msmcdl.png" alt="Marketspeed for Macダウンロード" /></a></p>
+<p style="margin:0 0px 10px;padding:0;"><a href="https://marketspeed.jp/fx/download/?l-id=rightnavi_msfx_download"><img src="/web/images/index-bnr-msfxdl.gif" alt="MarketspeedFXダウンロード" /></a></p>
+<!-- MSバナーここまで -->
+
+<!-- ともだちバナーここから -->
+<p style="margin:0 0px 10px;padding:0;"><a href="/web/campaign/introduction/" onclick="s.lidTrack('subcom_sv_introduction')"><img src="/web/images/banners/sv_introduction/180x50.gif" alt=" お友達紹介プログラム" width="180" height="50" /></a></p>
+<!-- ともだちバナーここまで -->
+
+<!-- おもてなしバナーここから -->
+<p style="margin:0 0px 10px;padding:0;"><a href="/web/company/voc/"><img src="/web/images/banners/company_voc/180x50.gif" alt="お客様の声をカタチに" width="180" height="50" /></a></p>
+<!-- おもてなしバナーここまで -->
+
+<div id="setupInfoTable"></div> <!-- 未開設の口座・お取引表示制御 -->
+
+<!--#include virtual="/web/shared/include/str-sub-common/point-parts.html" -->
+
+
+<div class="right_portfolio">
+<div id="head"><p>ポートフォリオ機能・お気に入り銘柄機能</p></div>
+
+<div class="inner_portfolio">
+<div id="inner_portfolio_1">
+<p style="margin-bottom:5px;">楽天証券へ資料請求して、今すぐご利用いただけます。</p>
+<p><a href="/web/account/rakuten.html?l-id=rightnavi_ptf_acc">楽天証券資料請求はこちら</a></p>
+</div>
+
+<div id="inner_portfolio_2">
+<p style="margin-bottom:5px;">今すぐご利用いただけます。</p>
+<p><a href="/web/portfolio/?l-id=rightnavi_ptf_portfolio">ポートフォリオ一覧を表示</a></p>
+<p><a href="/web/market/favorite/">お気に入り銘柄一覧を表示</a></p>
+</div>
+
+<div id="inner_portfolio_3">
+<p style="margin-bottom:5px;">「ログイン前の登録銘柄と同期する」設定をしていただくことでご利用いただけます。</p>
+<p><a href="/cgi-bin/CTS/Direct_Login.cgi?homeid=PTF_SYNC_SETTING">設定はこちらから</a></p>
+</div>
+
+<div id="inner_portfolio_4">
+<p style="margin-bottom:5px;">上記より楽天会員にログインしてください。</p>
+<p><a href="/web/info/info20100115-01.html?l-id=rightnavi_ptf_info">ポートフォリオ機能とは？</a></p>
+<p><a href="/web/info/info20100226-01.html">お気に入り登録機能とは？</a></p>
+</div>
+
+<script type="text/javascript" src="/web/shared/js/setupInfoControl.js"></script>
+<script type="text/javascript">
+<!--
+if( $.cookie('Rz') == null || $.cookie('Rz') == ''){
+	document.getElementById('inner_portfolio_1').style.display = "none";
+	document.getElementById('inner_portfolio_2').style.display = "none";
+	document.getElementById('inner_portfolio_3').style.display = "none";
+}
+else if($.cookie('login_flag') != null && $.cookie('login_flag') == '2'){
+	document.getElementById('inner_portfolio_1').style.display = "none";
+	document.getElementById('inner_portfolio_3').style.display = "none";
+	document.getElementById('inner_portfolio_4').style.display = "none";
+}
+else if($.cookie('Rg_sec') != null && $.cookie('Rg_sec') != '' && $.cookie('Rg_sec').substring(5,10) != '00000'){
+	document.getElementById('inner_portfolio_1').style.display = "none";
+	document.getElementById('inner_portfolio_2').style.display = "none";
+	document.getElementById('inner_portfolio_4').style.display = "none";
+}
+else{
+	document.getElementById('inner_portfolio_2').style.display = "none";
+	document.getElementById('inner_portfolio_3').style.display = "none";
+	document.getElementById('inner_portfolio_4').style.display = "none";
+
+}
+
+setupInfoControl(); //未開設の口座・お取引表示制御
+
+//-->
+</script>
+
+</div>
+
+</div><!-- /.right_portfolio -->
+
+<div class="attention" style="margin-bottom:5px; border-top:#CACDD9 solid 1px; padding-top:10px;">
+<ul class="list-link-01">
+<li><a href="/web/info/view_document.html">重要な書面（取引説明書･約諾書等）の閲覧について </a></li>
+<li><a href="/web/info/unlisted_stock.html">未公開株の勧誘にご注意</a></li>
+<li><a href="/web/security/crime/phishing.html">フィッシング詐欺にご注意</a></li>
+</ul>
+</div><!-- /.attention -->
+
+<div class="pay">
+<h2 id="about_money_received">ご入金方法</h2>
+<ul class="list-link-01">
+<li><a href="/web/service/pay/">ご入金・ご出金の流れ</a></li>
+<li><a href="/web/service/pay/billing/#skip03">手数料無料の提携銀行</a></li>
+</ul>
+</div><!-- /.pay -->
+
+
+

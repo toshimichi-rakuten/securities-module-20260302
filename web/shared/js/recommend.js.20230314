@@ -1,0 +1,293 @@
+var request = new XMLHttpRequest();
+var apiUrl;
+
+function readJson(JsonObj) {
+	var objName = "reco";
+	var json = JsonObj[objName];
+	var count = 0;
+	
+	var brandTypeCd = [];
+	var brandCd = [];
+	var brandNm = [];
+	var marketCd = [];
+	var tseKbn = [];
+	var nseKbn = [];
+	var localMarketCd = [];
+	
+	var changeMarketCd = [];
+	var dispMarketNm = [];
+	var dispBrandNm = [];
+	var href = [];
+	var chartUrl = [];
+	var ricMarketCd = [];
+	
+	var responseSize = json.length;
+	
+	for(var i=0;i<responseSize;i++){
+		if( (json[i]['brandTypeCd'] == '1' && json[i]['id'].slice(-1) == '0') 
+		 || json[i]['brandTypeCd'] == '2' ){
+			brandTypeCd[count] = json[i]['brandTypeCd'];
+			brandCd[count] = json[i]['id'];
+			brandNm[count] = json[i]['brandNm'] == null ? "" : json[i]['brandNm'].trim();
+			marketCd[count] = json[i]['marketCd'] == null ? "" : json[i]['marketCd'].trim();
+			tseKbn[count] = json[i]['tseKbn'] == null ? "" : json[i]['tseKbn'].trim();
+			nseKbn[count] = json[i]['nseKbn'] == null ? "" : json[i]['nseKbn'].trim();
+			localMarketCd[count] = json[i]['localMarketCd'] == null ? "" : json[i]['localMarketCd'];
+			count++;
+		}
+	}
+	
+	responseSize = count;
+	
+	/*市場コード生成（日株：市場＋市場部コード）*/
+	changeMarketCd = createmarketCd(responseSize, brandTypeCd, brandNm, marketCd, tseKbn, nseKbn, ricMarketCd, localMarketCd);
+	/*市場名取得*/
+	dispMarketNm = getMarketName(responseSize, brandNm, changeMarketCd);
+	/*表示用銘柄名生成*/
+	dispBrandNm = createDispString(responseSize, brandTypeCd, brandNm, dispMarketNm);
+	/*リンクURL作成*/
+	href = [];
+	for(var a=0;a<responseSize;a++){
+		if(brandTypeCd[a] == '1'){
+			href[a] = "https://www.rakuten-sec.co.jp/web/market/search/quote.html?ric=" + brandCd[a].substr(0,4) + ricMarketCd[a] ;
+		} else if(brandTypeCd[a] == '2'){
+			href[a] = "https://www.rakuten-sec.co.jp/web/market/search/us_search/quote.html?ric=" + brandCd[a] + ricMarketCd[a];
+		};
+	};
+	
+	
+	
+	
+	/*市場コード生成（日株：市場＋市場部コード）*/
+	function createmarketCd(responseSize, brandTypeCd, brandNm, marketCd, tseKbn, nseKbn,ricMarketCd, localMarketCd){
+		for(var j=0;j<responseSize;j++){
+
+			if(brandTypeCd[j] == '1'){
+				// 日株
+				if(marketCd[j] == '1'){
+					changeMarketCd[j] = marketCd[j] + tseKbn[j];
+					ricMarketCd[j] = ".T";
+				} else if(marketCd[j] == '3'){
+					changeMarketCd[j] = marketCd[j] + nseKbn[j];
+					ricMarketCd[j] = ".NG";
+				};
+			} else if(brandTypeCd[j] == '2'){
+				// 米株
+				changeMarketCd[j] = marketCd[j];
+				if(marketCd[j] == "A1"){
+					if(localMarketCd[j] == "3" ){
+					 	ricMarketCd[j] = ".P";
+					}
+					else{
+					 	ricMarketCd[j] = ".N";
+					}
+				}
+				else{
+					ricMarketCd[j] = ".O";
+				};
+			} else {
+				changeMarketCd[j] = "";
+			};
+		};
+		return changeMarketCd;
+	};
+
+	/*市場名取得*/
+	function getMarketName(responseSize, brandNm, changeMarketCd){
+		for(var k=0;k<responseSize;k++){
+			if(changeMarketCd[k] == "1"){
+				dispMarketNm[k] = "東証";
+			} else if(changeMarketCd[k] == "11"){
+				dispMarketNm[k] = "東1";
+			} else if(changeMarketCd[k] == "12"){
+				dispMarketNm[k] = "東2";
+			} else if(changeMarketCd[k] == "15"){
+				dispMarketNm[k] = "ＪＱ";
+			} else if(changeMarketCd[k] == "16"){
+				dispMarketNm[k] = "東マ";
+			} else if(changeMarketCd[k] == "18"){
+				dispMarketNm[k] = "東証";
+			} else if(changeMarketCd[k] == "2"){
+				dispMarketNm[k] = "大証";
+			} else if(changeMarketCd[k] == "3"){
+				dispMarketNm[k] = "名証";
+			} else if(changeMarketCd[k] == "31"){
+				dispMarketNm[k] = "名1";
+			} else if(changeMarketCd[k] == "32"){
+				dispMarketNm[k] = "名2";
+			} else if(changeMarketCd[k] == "36"){
+				dispMarketNm[k] = "名セ";
+			} else if(changeMarketCd[k] == "4"){
+				dispMarketNm[k] = "JNX";
+			} else if(changeMarketCd[k] == "6"){
+				dispMarketNm[k] = "Chi-X";
+			} else if(changeMarketCd[k] == "9"){
+				dispMarketNm[k] = "ＪＱ";
+			} else if(changeMarketCd[k] == "A1"){
+				dispMarketNm[k] = "NYSE";
+			} else if(changeMarketCd[k] == "A9"){
+				dispMarketNm[k] = "NASDAQ";
+			} else {
+				dispMarketNm[k] = "";
+			};
+		};
+		return dispMarketNm;
+	};
+
+	/*表示用銘柄名生成*/
+	function createDispString(responseSize, brandTypeCd, brandNm, dispMarketNm){
+		var size = 0;
+		var maxSize = 0;
+		var flg = new Boolean(false);
+		var ret;
+		for(var l=0;l<responseSize;l++){
+			ret = "";
+			size = brandNm[l].length;
+			maxSize = 0;
+			if(brandTypeCd[l] == '1'){
+				ret = brandNm[l];
+			} else if(brandTypeCd[l] == '2'){
+				maxSize = 20;
+				if(size > maxSize){
+					size = maxSize;
+					flg = true;
+				};
+				ret = brandNm[l].substring(0, size);
+				if(flg == true){
+					ret += "...";
+				};
+			};
+			dispBrandNm[l] = ret + "(" + dispMarketNm[l] +  ")";
+		};
+		return dispBrandNm;
+	};
+
+	getRecommend(dispBrandNm,href,responseSize);
+	return;
+}
+
+
+function judgeDscrCd(){
+	var dscrCd;
+	var brandTypeCd;
+	var retDscrCd;
+	var searchLen;
+	
+	retDscrCd = setDscrCd();
+	searchLen = retDscrCd.indexOf('.');
+	if( searchLen != -1 ){
+		dscrCd = retDscrCd.substr(0,searchLen);
+	}
+	else{
+		dscrCd = retDscrCd;
+	}
+	
+	if( dscrCd.length != 0 ){
+		//数値以外の場合は米株と判断
+		if(isNaN(dscrCd.charAt(0)) == true){
+			brandTypeCd = 2;
+		}
+		//数値の場合は日株と判断
+		else{
+			brandTypeCd = 1;
+			if(dscrCd.length < 5 ){
+				dscrCd = dscrCd + "0"
+			}
+		}
+		/*本番用URL*/
+		apiUrl = "https://rp.rakuten.co.jp/v2/securities/recommend/item_pc?id=" + dscrCd 
+		return;
+	}
+	else{
+		return false;
+	}
+}
+
+$(document).ready(function() {
+	judgeDscrCd();
+	// 推奨銘柄情報の取得
+	initgetRecomendList();
+});
+
+
+// 非同期処理の実態
+var DataListRecommendAsyncCommand = function(url, param, successFunction, errorFunction, autoUpdateTimeOut){
+	//非同期で呼び出すURL
+	this.url = url;
+	//非同期で使用パラメーター
+	this.param = param;
+	//処理成功時に呼び出す関数
+	this.successFunction = successFunction;
+	//処理失敗時に呼び出す関数
+	this.errorFunction = errorFunction;
+	//タイムアウト（ミリ秒）
+	this.autoUpdateTimeOut = autoUpdateTimeOut;
+};
+DataListRecommendAsyncCommand.prototype = {
+		url                     : null,
+		param                   : null,
+		successFunction         : null,
+		errorFunction           : null,
+		getRecomendList       : function(data){
+			$.ajax({
+				type: 'GET',
+				url: this.url,
+			    xhrFields:{
+					withCredentials: true
+				},
+				crossDomain: true,
+				data: data,
+				cache: false,
+				autoUpdateTimerRetry: this.setAutoUpdateTimerRetry,
+				successFunction: this.successFunction,
+				errorFunction: this.errorFunction,
+				timeout: this.autoUpdateTimeOut,
+				success: function(data, status) {
+					
+					if(data != null){
+						if(data["status"] == "Success" && data["reco_count"] != "0"){
+							//取得したデータを画面表示
+							this.successFunction(data);
+							return false;
+						} else if(data["reco_count"] == "0"){
+							this.errorFunction("204");
+							return false;
+						} else {
+							//
+							this.errorFunction();
+							return false;
+						};
+					} else {
+						this.errorFunction();
+					};
+				},
+				error: function(xhr, status, thorwn){
+					//エラー差込
+					this.errorFunction();
+					return false;
+				},
+				complete: function(xhr, status){
+				}
+			});
+		}
+};
+
+function initgetRecomendList(){
+	//リクエストするURL
+	var url = apiUrl;
+	//パラメーター
+	var param = "" ;
+	//タイムアウト（ミリ秒）
+	var timeoutBalanceLst = 30000;
+	
+	request.open("GET", url, true);
+	request.responseType = 'json';
+	request.send();
+	var data = this.response;
+	
+	//オブジェクト生成
+	dataListRecommendAsyncCommand = new DataListRecommendAsyncCommand(url, param, readJson, recommend_lst_err, timeoutBalanceLst);
+	dataListRecommendAsyncCommand.getRecomendList(data);
+}
+
+

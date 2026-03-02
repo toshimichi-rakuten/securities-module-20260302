@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. nav-local
+*	02. nav-local first
+*	03. nav-local second 
+*	04. nav-local third
+*	05. nav-sub-info
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. nav-local
+----------------------------------------------------------------- */
+div#nav-local{
+padding-bottom:53px;
+background:#ffffff url("/web/shared/images/nav-local/local-nav-bg-02.gif") repeat-x 0 100%;
+}
+
+div#nav-local ul{
+margin-bottom:0;
+padding:1px 0 0;
+border:1px solid #c9c9c9;
+}
+
+div#nav-local ul a{
+display:block;
+min-height:15px;
+color:#3535b4;
+text-decoration:none;
+}
+
+div#nav-local ul li span.unlisted{
+padding:5px 20px 3px;
+display:block;
+color:#3535b4;
+font-weight:bold;
+}
+
+/* ----------------------------------------------------------------
+	02. nav-local first
+----------------------------------------------------------------- */
+div#nav-local ul ul{
+border:none;
+}
+
+div#nav-local ul li{
+margin-bottom:1px;
+background:url("/web/shared/images/nav-local/local-nav-bg-01.gif") no-repeat 0 0;
+}
+
+div#nav-local ul li a{
+margin:0 1px;
+padding:5px 20px 3px;
+background:url("/web/shared/images/nav-local/local-nav-arrow-01.gif") no-repeat 5px 11px;
+font-size:95%;
+font-weight:bold;
+}
+
+
+/* ----------------------------------------------------------------
+	03. nav-local second
+----------------------------------------------------------------- */
+div#nav-local ul ul{
+background-color:#ffffff;
+}
+
+div#nav-local li li{
+margin-bottom:1px;
+background-color:#ffffff;
+background-image:none;
+}
+
+div#nav-local li li a{
+padding:5px 10px 3px 25px;
+background:#657db6 url("/web/shared/images/nav-local/local-nav-arrow-02.gif") no-repeat 9px 9px;
+color:#ffffff;
+font-size:81.25%;
+}
+
+div#nav-local li li.selected a{
+margin:0 1px;
+background-color:#3f4da2;
+}
+
+div#nav-local li li a:hover,
+div#nav-local li li a:focus{
+background-color:#3f4da2;
+}
+
+
+
+/* ----------------------------------------------------------------
+	04. nav-local third
+----------------------------------------------------------------- */
+div#nav-local li li.selected ul{
+border-bottom:1px solid #c9c9c9;
+}
+
+div#nav-local li li.selected li{
+margin:0;
+padding-bottom:1px;
+background:url("/web/shared/images/nav-local/local-nav-dot-01.gif") repeat-x 0 100%;
+}
+
+div#nav-local li li.selected li a{
+margin:0;
+padding-top:3px;
+background:url("/web/shared/images/nav-local/local-nav-arrow-03.gif") no-repeat 15px 9px;
+color:#3535b4;
+font-weight:normal;
+}
+
+div#nav-local li li.selected li.selected{
+background-color:#e4eaf7;
+}
+
+div#nav-local li li.selected li a:hover,
+div#nav-local li li.selected li a:focus{
+background-color:#e4eaf7;
+}
+
+div#nav-local li li.selected li.last-child{
+padding-bottom:0;
+border-bottom:none;
+background-image:none;
+}
+
+div#nav-local li li.last-child ul{
+border-bottom:none;
+}
+
+div#nav-local li li.last-child.selected{
+margin-bottom:0;
+}
+
+div#nav-local li.last-child li.last-child{
+margin-bottom:-1px;
+padding-bottom:0;
+position:relative;
+}
+
+
+/* ----------------------------------------------------------------
+	05. nav-sub-info
+----------------------------------------------------------------- */
+div#str-sub ul.nav-sub-info{
+margin-bottom:1em;
+font-size:81.25%;
+}
+
+div#str-sub ul.nav-sub-info li{
+margin-bottom:5px;
+padding:2px;
+border:1px solid #c9c9c9;
+}
+
+div#str-sub ul.nav-sub-info li a{
+padding:5px 10px 5px 20px;
+display:block;
+background:#f2f2f9 url("/web/shared/images/arrow/arrow-01.gif") no-repeat 7px 9px;
+}
+
+div#str-sub ul.nav-sub-info li a:link,
+div#str-sub ul.nav-sub-info li a:visited{
+text-decoration:none;
+}
+div#str-sub ul.nav-sub-info li a:active,
+div#str-sub ul.nav-sub-info li a:hover,
+div#str-sub ul.nav-sub-info li a:focus{
+text-decoration:underline;
+}

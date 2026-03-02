@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: first.css for
+ /web/fund/saving/
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: fund - Common Elements & Custom Modules
+----------------------------------------------------------------*/
+div#str-main div.bk1{
+margin: 0 0 0 10px;
+background: url("/web/fund/saving/images/first/first-img-02.gif") no-repeat 0 0;
+}
+div#str-main div.bk2{
+background: url("/web/fund/saving/images/first/first-img-03.gif") no-repeat 0 0;
+}
+div#str-main div.bk3{
+margin: 0 0 0 10px;
+text-align: center;
+}
+div#str-main div.bk4{
+text-align: center;
+}
+div#str-main div.bk5{
+margin: 0 0 0 10px;
+background: url("/web/fund/saving/images/first/first-img-04.gif") no-repeat 0 0;
+}
+div#str-main div.bk6{
+background: url("/web/fund/saving/images/first/first-img-05.gif") no-repeat 0 0;
+}
+div#str-main div.lyt-column h2{
+font-size: 0.9em;
+margin: 5px 0 15px 10px;
+}
+div#str-main div.lyt-column div.bk1 p{
+margin: 5px 15px 10px 95px;
+font-size: 0.75em;
+}
+div#str-main div.lyt-column div.bk2 p{
+margin: 5px 15px 20px 95px;
+font-size: 0.75em;
+}
+div#str-main div.lyt-column div.bk5 p{
+margin: 5px 15px 20px 95px;
+font-size: 0.75em;
+}
+div#str-main div.lyt-column div.bk6 p{
+margin: 5px 15px 10px 95px;
+font-size: 0.75em;
+}
+div#str-main div.bk3 li{
+text-align: left;
+margin: 10px 0 0 20px;
+}

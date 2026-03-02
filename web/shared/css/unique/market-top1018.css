@@ -1,0 +1,807 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+	column width
+----------------------------------------------------------------- */
+
+body.lyt-column-ms-01 div#str-main div.lyt-column-mkt-top{
+width: 768px;
+}
+
+body.lyt-column-ms-01 div#str-main div.lyt-column-mkt-top div.segment-mkt-top{
+width:375px;
+margin-right: 5px;
+float: left;
+}
+
+/* ----------------------------------------------------------------
+	button-menu
+----------------------------------------------------------------- */
+
+div#str-contents-inner ul.btn-menu-4items{
+margin:0 0 15px;
+}
+div#str-contents-inner ul.btn-menu-4items li{
+float:left;
+width:187px;
+margin-right:2px;
+}
+div#str-contents-inner ul.btn-menu-4items li.last-child{
+margin-right:0px;
+}
+div#str-contents-inner ul.btn-menu-4items li a{
+display:block;
+height:30px;
+padding:0 10px;
+background: url("/web/shared/images/bg-modules/bg-btn-menu-4items.gif") no-repeat;
+font-size:14px;
+font-weight:bold;
+text-decoration:none;
+color:#3535B4;
+text-align:center;
+}
+div#str-contents-inner ul.btn-menu-4items li a:hover{
+background: url("/web/shared/images/bg-modules/bg-btn-menu-4items_on.gif") no-repeat;
+}
+div#str-contents-inner ul.btn-menu-4items li a span{
+padding-left:15px;
+background: url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 50%;
+line-height:30px;
+}
+
+
+/* ----------------------------------------------------------------
+	box-search-top
+----------------------------------------------------------------- */
+
+div#box-search-top{
+margin:0 0 10px;
+border:2px solid #b7cbf4;
+background:#fafafa;
+}
+
+div#box-search-top-inner{
+position:relative;
+border:1px solid #9bb2e2;
+}
+
+div#box-search-top h2{
+margin:0 0 10px;
+padding:12px 10px 10px 40px;
+border-bottom:1px solid #9bb2e2;
+background:url("/web/shared/images/icon/icon-search-03.gif") 7px 6px no-repeat;
+font-size:16px;
+line-height:16px;
+}
+
+div#box-search-top p.link-search-sub{
+position:absolute;
+right:8px;
+top:11px;
+width:12em;
+margin:0;
+text-align:right;
+}
+
+div#box-search-top p.link-search-sub a{
+display:inline-block;
+padding:0 0 0 20px;
+background: url("/web/shared/images/arrow/arrow-01.gif") no-repeat 5px 50%;
+font-size:12px;
+text-decoration:none;
+zoom:1;
+}
+
+div#box-search-top p.link-search-sub a:hover{
+text-decoration:underline;
+}
+
+div#box-search-top ul.search-list{
+margin:0 15px;
+}
+
+div#box-search-top ul.search-list li{
+float:left;
+margin-right:8px;
+padding-right:8px;
+border-right:1px solid #ccc;
+}
+
+div#box-search-top ul.search-list li.last-child{
+border-right:none;
+}
+
+div#box-search-top ul.search-list li.selected a{
+color:#333;
+font-weight:bold;
+text-decoration:none;
+}
+
+div#box-search-top p.text-search{
+margin:0;
+padding:10px 12px 13px;
+}
+
+div#box-search-top input.form-text-01{
+width:240px;
+border: 1px solid #7F9DB9;
+margin-right: 5px;
+padding:5px 8px;
+background:#ffc;
+color:#666;
+-moz-box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.15);
+-webkit-box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.15);
+box-shadow:inset 0px 1px 2px 0px rgba(0,0,0,0.15);
+}
+
+
+/* ----------------------------------------------------------------
+	List-tab Design
+----------------------------------------------------------------- */
+
+div#str-main ul.list-tab{
+margin:0;
+}
+
+div#str-main ul.list-tab li{
+float:left;
+border-right:1px solid #c1c5d4;
+border-bottom:1px solid #c1c5d4;
+}
+
+div#str-main ul.list-tab li.selected{
+border-bottom:none;
+}
+
+div#str-main ul.list-tab li.last-child{
+border-right:none;
+}
+
+div#str-main ul.list-tab li a{
+display:block;
+border:1px solid #fff;
+padding:6px 5px 5px;
+background:#fff url("/web/shared/images/bg-modules/bg-tabbox-01.gif") bottom repeat-x;
+font-size:12px;
+text-align:center;
+line-height:1;
+color:#3535b4;
+text-decoration:none;
+outline:none;
+zoom:1;
+}
+
+div#str-main ul.list-tab li a:hover{
+background:#fff url("/web/shared/images/bg-modules/bg-tabbox-01_on.gif") top repeat-x;
+}
+
+div#str-main ul.list-tab li.selected a{
+background:#fff url("/web/shared/images/bg-modules/bg-tabbox-01_on.gif") top repeat-x;
+color:#333;
+font-weight:bold;
+cursor:default;
+}
+
+
+/* ----------------------------------------------------------------
+	box-box-rate-and-checked
+----------------------------------------------------------------- */
+
+div#str-main div#box-rate-and-checked{
+margin: 0 0 10px;
+border:1px solid #c1c5d4;
+}
+
+/* realTimeRate */
+
+
+
+div#str-main div#realTimeRate{
+padding:5px 5px 2px;
+}
+
+div#str-main div#realTimeRate p.link-01{
+float:left;
+width:100px;
+margin:0 5px 0;
+font-size:11px;
+}
+
+div#str-main div#realTimeRate p.link-01 a{
+background-position:0 50%;
+}
+
+div#str-main div#realTimeRate p.timestamp{
+float:right;
+width:200px;
+margin:0;
+color:#999;
+font-size:11px;
+text-align:right;
+}
+
+
+
+div#str-main div#box-rate-and-checked ul.list-tab li{
+width:186px;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top{
+margin:0 0 5px;
+border-color:#fff;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top thead th{
+padding:3px 3px 1px;
+color:#333;
+text-align:center;
+line-height:1;
+vertical-align:middle;
+background:#ddd;
+font-size:11px;
+border-color:#fff;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody th{
+border-color:#fff;
+padding:1px 3px 1px;
+background:#f1f1f1;
+color:#333;
+line-height:1;
+vertical-align:middle;
+font-size:12px;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody th img{
+vertical-align:-0.2em;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody th span{
+padding-left:5px;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody td{
+padding:2px 3px 1px;
+border-color:#fff;
+background:#fff;
+line-height:1;
+text-align:right;
+vertical-align:middle;
+font-size:12px;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody tr.even th{
+background:#e5e5e5;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody tr.even td{
+background:#f5f5f5;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody td.bid,
+div#str-main table.tbl-data-01.tbl-rate-top tbody td.ask{
+font-weight:bold;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody td.sprd,
+div#str-main table.tbl-data-01.tbl-rate-top tbody tr.even td.sprd{
+text-align:center;
+color:#fff;
+background:#aaa;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-top tbody td.cmpr{
+font-size:11px;
+}
+
+
+/* stockSearchHistory2 */
+
+div#str-main div#stockSearchHistory2{
+padding:8px 0 0;
+}
+
+div#str-main div#stockSearchHistory2 ul{
+margin: 0 12px 7px;
+}
+
+div#str-main div#stockSearchHistory2 h2{
+display:none;;
+}
+
+div#str-main div#stockSearchHistory2 ul li{
+width:170px;
+display: inline-block;
+*display: inline;
+*zoom: 1;
+}
+
+div#str-main div#stockSearchHistory2 ul li a {
+background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 50%;
+padding: 0 10px 0 10px;
+text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------
+	Box Topics
+----------------------------------------------------------------- */
+
+div#str-main div#box-topics{
+min-height:270px;
+margin-bottom:10px;
+border:1px solid #c1c5d4;
+}
+
+div#str-main div#box-topics ul.list-tab li{
+width:124px;
+}
+
+div#str-main div#box-topics ul.list-tab li.last-child{
+width:123px;
+}
+
+div#box-topics div.inner-box{
+padding:10px 10px 10px;
+}
+
+div#box-topics ul.list-link-01{
+margin:5px 10px 0 3px;
+}
+
+div#box-topics table.tbl-topics-02 th,
+div#box-topics table.tbl-topics-02 td{
+padding: 3px 5px;
+}
+
+div#box-topics .box-layout{
+margin:0 0 0;
+}
+
+div#box-topics .box-layout .box-left{
+float:left;
+width:240px;
+}
+
+div#box-topics .box-layout .box-right{
+float:right;
+width:110px;
+}
+
+div#box-topics .box-layout ul.list-link-01{
+margin-bottom:10px;
+}
+
+div#box-topics .box-layout ul.list-link-01 li{
+margin-bottom:0.2em;
+padding-left:10px;
+}
+
+div#box-topics p.image-special{
+margin:0;
+text-align:center;
+}
+
+div#box-topics p.image-special img{
+margin:0 0 5px;
+}
+
+div#box-topics p.image-special span{
+text-align:left;
+font-size:90%;
+}
+
+div#box-topics p.banner{	/* 横長バナー用 */
+margin:0;
+text-align:center;
+}
+
+div#box-topics h3{
+font-size:81.25%;
+font-weight:bold;
+}
+
+div#box-topics p.thumbnail-link{
+margin:0;
+line-height:40px;
+text-decoration:none;
+}
+
+div#box-topics p.thumbnail-link a{
+text-decoration:none;
+}
+
+div#box-topics p.thumbnail-link a:hover{
+text-decoration:underline;
+}
+
+div#box-topics p.thumbnail-link img{
+margin-right:10px;
+}
+
+
+/* 株主優待用 */
+
+div#box-topics ul.list-hp{
+margin:0;
+padding:0;
+font-size:75%;
+}
+
+div#box-topics ul.list-hp li{
+float:left;
+width:80px;
+margin-right:10px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-webkit-text-overflow: ellipsis; /* Safari */
+-o-text-overflow: ellipsis; /* Opera */
+}
+
+div#box-topics ul.list-hp li.last-child{
+margin-right:0;
+}
+
+div#box-topics ul.list-hp li p{
+width:70px;
+height:50px;
+overflow:hidden;
+padding:4px;
+background:#fff;
+border:1px solid #ccc;
+}
+
+div#box-topics ol.list-ordered-03{
+margin:5px 0 10px;
+}
+
+div#box-topics ol.list-ordered-03 li{
+background:none;
+margin-bottom:0;
+}
+
+
+
+
+/* ----------------------------------------------------------------
+	carousel
+----------------------------------------------------------------- */
+
+div#box-tango{
+margin:0 0 15px;
+}
+
+
+/* ----------------------------------------------------------------
+	column-market-01
+----------------------------------------------------------------- */
+div#str-main div.column-market-01{
+margin-bottom:0.2em;
+}
+
+div#str-main div.column-market-01 div.segment{
+margin-right:2px;
+margin-bottom:10px;
+border:1px solid #c3c3c3;
+float:left;
+width:184px;
+}
+
+div#str-main div.column-market-01 div.last-child{
+margin-right:2.25px;
+}
+
+div#str-main div.column-market-01 div.segment table.tbl-data-02{
+margin-bottom:5px;
+border-width:0 0 1px;
+}
+
+div#str-main div.column-market-01 div.segment table.tbl-data-02 th{
+padding:2px 3px;
+width:50%;
+border-width:0 1px 0 0;
+}
+div#str-main div.column-market-01 div.segment table.tbl-data-02 td{
+padding:1px 3px;
+white-space:nowrap;
+border:none;
+}
+
+div#str-main div.column-market-01 div.segment table.tbl-data-02 th a{
+font-weight:bold;
+}
+
+div#str-main div.column-market-01 div.segment table.tbl-data-02 th span{
+color:#666666;
+font-size:87.5%;
+}
+
+div#str-main div.column-market-01 div.image-col1{
+width:180px;
+}
+
+div#str-main div.column-market-01 div.image-col1 p{
+text-align:center;
+}
+
+/* ie7 */
+*+html div#str-main div.column-market-01{
+padding-bottom:10px;
+}
+
+
+/* ----------------------------------------------------------------
+	Box market data
+----------------------------------------------------------------- */
+
+div#str-main div#box-mkt-data{
+margin:0 0 10px;
+}
+
+div#str-main div#box-mkt-data .tab-box{
+min-height:265px;
+}
+
+div#str-main div.mkt-tab-container{
+position:relative;
+}
+
+div#str-main div.mkt-tab-container ul.mkt-tab {
+margin:-5px 0 10px;
+padding-right:100px;
+border-bottom: 3px solid #DCDCF4;
+}
+
+div.mkt-tab-container ul.mkt-tab li {
+background-color: #EAECEB;
+float: left;
+font-size: 13px;
+font-weight: bold;
+margin-left: 3px;
+padding: 5px 12px 4px;
+text-align: center;
+}
+
+div.mkt-tab-container ul.mkt-tab li a{
+color:#3535B4;
+}
+
+div.mkt-tab-container ul.mkt-tab li.selected {
+background-color:#DCDCF4;
+}
+
+div.mkt-tab-container ul.mkt-tab li.selected a {
+color:#333;
+text-decoration: none;
+}
+
+div#str-main div.mkt-tab-container p.btn-renew{
+position:absolute;
+top:1px;
+right:0;
+}
+
+div#box-mkt-data div#box-map{
+position:relative;
+width:373px;
+height:238px;
+border:1px solid #6091d6;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-inout;
+}
+
+div#box-map.map-japan{
+background:#e0eeff url("/web/market/images/map.gif") -220px -130px no-repeat;
+}
+
+div#box-map.map-asia{
+background:#e0eeff url("/web/market/images/map.gif") -150px -160px no-repeat;
+}
+
+div#box-map.map-asean{
+background:#e0eeff url("/web/market/images/map.gif") -140px -230px no-repeat;
+}
+
+div#box-map.map-brics{
+background:#e0eeff url("/web/market/images/map.gif") -630px -270px no-repeat;
+}
+
+div#box-map.map-usa{
+background:#e0eeff url("/web/market/images/map.gif") -550px -140px no-repeat;
+}
+
+div#box-map.map-euro{
+background:#e0eeff url("/web/market/images/map.gif") 105px -75px no-repeat;
+}
+
+
+div#box-mkt-data div#box-map ul.list-area-link{
+position:absolute;
+top:8px;
+left:6px;
+margin:0;
+}
+
+div#box-mkt-data div#box-map ul.list-area-link li{
+width:8em;
+margin:0 0 4px;
+border:1px solid #6091d6;
+background:#fff;
+opacity:0.8;
+filter: alpha(opacity=80);
+}
+
+div#box-mkt-data div#box-map ul.list-area-link li.selected,
+div#box-mkt-data div#box-map ul.list-area-link li:hover{
+background:#d5ecff;
+}
+
+div#box-mkt-data div#box-map ul.list-area-link a{
+display:block;
+padding:10px 10px 9px 26px;
+background:url("/web/market/images/arw-area-link.png") 5px 50% no-repeat;
+color:#297acc;
+font-weight:bold;
+text-decoration:none;
+line-height:1;
+zoom: 1;
+}
+
+
+/* Data Table */
+
+div#box-mkt-data .box-data-table{
+display:none;
+}
+
+
+div#box-mkt-data table.tbl-data-03 {
+background-color: #fff;
+border:none;
+width: 100%;
+font-size:75%;
+line-height:1;
+}
+
+div#box-mkt-data table.tbl-data-03 th,
+div#box-mkt-data table.tbl-data-03 td {
+padding:3px 4px;
+background-color:#fff;
+vertical-align:middle;
+border:none;
+}
+
+div#box-mkt-data table.tbl-data-03 thead th {
+text-align:center;
+color:#333;
+background-color:#f1f1f1;
+font-size:90%;
+}
+
+div#box-mkt-data table.tbl-data-03 tbody th {
+text-align:left;
+background-color:#fff;
+}
+
+div#box-mkt-data table.tbl-data-03 tbody th.company{
+width:20px;
+text-align:center;
+}
+
+div#box-mkt-data table.tbl-data-03 tbody th a{
+text-decoration: none;
+}
+
+div#box-mkt-data table.tbl-data-03 tbody th a:hover{
+text-decoration:underline;
+}
+
+div#box-mkt-data table.tbl-data-03 tbody td {
+text-align:right;
+}
+
+div#box-mkt-data table.tbl-data-03 tr.even th,
+div#box-mkt-data table.tbl-data-03 tr.even td{
+background-color:#E4E5F2;
+}
+
+div#box-mkt-data p.delay{
+margin:5px 0px 0;
+font-size:11px;
+color:#999;
+text-align:right;
+}
+
+
+/* ----------------------------------------------------------------
+	Table Topics
+----------------------------------------------------------------- */
+
+body.lyt-column-ms-01 div#str-main div.box-02 table.tbl-topics-02{
+width:97.2%;
+margin-left:5px;
+margin-right:5px;
+}
+
+body.lyt-column-ms-01 div#str-main div.box-02 p.note{
+margin:5px 10px 5px;
+font-size:11px;
+color:#999;
+}
+
+body.lyt-column-ms-01 div#str-main div.box-02 table.tbl-topics-02 th,
+body.lyt-column-ms-01 div#str-main div.box-02 table.tbl-topics-02 td{
+padding:4px 5px 3px;
+}
+
+div#str-main h3.hdg-fxchart{
+position:relative;
+margin:0 10px 5px;
+font-size:81.25%;
+}
+
+div#str-main h3.hdg-fxchart a{
+position:absolute;
+display:block;
+right:0;
+top:1px;
+width:80px;
+height:16px;
+}
+
+div#str-main ul.link-fxchart{
+margin:0 10px 5px;
+}
+
+/* ----------------------------------------------------------------
+	Others
+----------------------------------------------------------------- */
+
+div#str-main div.hdg-l2-02-container p {
+color: #666666;
+font-size: 81.3%;
+margin: 0;
+position: absolute;
+right: 0.7em;
+text-align: right;
+top: 0.7em;
+width: 10em;
+}
+
+div#str-main p.data-copyright{
+margin:0 0 10px;
+text-align:right;
+line-height:59px;
+color:#666;
+font-size:10px;
+}
+
+div#str-main p.data-copyright span{
+margin-right:20px;
+}
+
+div#str-main p.data-copyright span a{
+color:#666;
+}
+
+
+/* ----------------------------------------------------------------
+	Clear
+----------------------------------------------------------------- */
+div#str-main div.lyt-column-mkt-top:after,
+div#str-main ul.btn-menu-4items:after,
+div#box-search-top ul.search-list:after,
+div#str-main div#box-rate-and-checked ul.list-tab:after,
+div#str-main div#realTimeRate:after,
+div#str-main div#box-topics ul.list-tab:after,
+div#str-main div#box-topics .box-layout:after,
+div#str-main div.mkt-tab-container ul.mkt-tab:after,
+div#box-topics ul.list-hp:after{
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden;
+}

@@ -1,0 +1,64 @@
+		<div id="keyboard_body" style="position:absolute; z-index:999;border:2px solid rgb(102,113,179); font-family:Verdana,Arial,sans-serif; font-size:1.1em; display: none;" class="white_content ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable drag-and-drop">
+			<div id="keyboard_title_bar" >
+				<div  class=" ui-dialog-titlebar ui-widget-header ui-helper-clearfix" style="font-size: 16px; border-width: 0px; padding-bottom: 0.4em; background: url(&quot;/web/shared/img/sprite_key.png&quot;) 15px 10px no-repeat; cursor: -webkit-grab;">
+					<span class="ui-dialog-title" id="ui-dialog-title-keyboard_body">
+						&nbsp;
+					</span>
+					
+					<a  class="ui-dialog-titlebar-close ui-corner-all" role="button" href="javascript:void(0)" onclick="closeClk();" >
+						<span class="ui-icon ui-icon-closethick" style="margin-left: 2px; margin-top: 2px;">close</span>
+					</a>
+				</div>
+			</div>
+		  	<table style = "" width="100%" cellspacing="0" cellpadding="0" border="0">
+			    <tr>
+			    	<td style="width: 22px; padding-left: 15px; border-style:none;"><input id="random_check" onclick="setKeyboad();" type="checkbox"></td>
+			    	<td style=" border-style:none; " align="left"><font size="-1"><label for="random_check"><b>ランダム表示</b></label></font></td>
+			    </tr>
+				<tr id="func1">
+			    	<td style="padding-left: 15px; border-style:none;"><input id="hide_check" type="checkbox"></td>
+			    	<td style=" border-style:none; " align="left"><font size="-1"><label for="hide_check"><b>マウスオン時にボタン非表示</b></label></font></td>
+			    </tr>
+		    </table>
+		  	<div class="keyboard-tab" style="/* height: 33px; *//* background-position: 0px -522px; *//* width: 360px; */">
+				<div id="tabImage" style="margin-left: 7px; float: left;">
+					<div style="float:left;margin-left:7px;">
+						<input type="image" id="loginIdTab" src="/web/shared/img/keyboard_tab_idon.gif" />
+					</div>
+					<div style="float:left;margin-left:7px;">
+						<input type="image" id="passwdTab" src="/web/shared/img/keyboard_tab_passoff.gif" />
+					</div>
+				</div>
+
+				<div id="howuse" style="margin-right: 10px; margin-bottom: 0px; margin-left: 0px; float: right;">
+					<a class="howuse" href="https://www.rakuten-sec.co.jp/web/info/software_keyboard.html" target="_blank">
+					使用方法</a>
+				</div>
+			</div>
+			
+			<div id="keyboard2" style="left: 0px; top: 90px;">
+			
+			</div>
+			
+			<div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix" style="margin-top: 0px; padding-right: 0px;background-color: #FFFFFF;">
+				<div class="ui-dialog-buttonset">
+					<button  class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="background: url(/web/shared/img/sprite_key.png) 0px -286px no-repeat;
+						width: 100px;font-size: 14px;font-weight: bold;border: 0px;padding-bottom: 2px;margin-top: 0px;margin-bottom: 0px;margin-right: 10px;" role="button" onclick="deleteClk();">
+						<span class="ui-button-text" style="padding: 0.3em 0px;">
+							1文字削除</span>
+					</button>
+					<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style=" background: url(/web/shared/img/sprite_key.png) 0px -286px no-repeat; 
+						width: 100px; font-size: 14px; font-weight: bold; border: 0px; padding-bottom: 2px; margin-top: 0px; margin-bottom: 0px; margin-right: 20px;" role="button" onclick="clearClk();" >
+						<span class="ui-button-text" style="padding: 0.3em 0px;">
+							クリア</span>
+					</button>
+					<a id="closeButton" href="javascript:void(0)" onclick="closeClk();" style="padding-right: 20px; padding-left: 30px;">閉じる</a>
+				</div>
+			</div>
+		</div>
+
+
+
+<script type="text/javascript" src="/web/shared/js/Draggable.js" defer></script>
+<script type="text/javascript" src="/web/shared/js/keybord.js" defer></script>
+

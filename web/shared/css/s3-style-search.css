@@ -1,0 +1,609 @@
+[class^="s1-hdg-lv"] {
+    position: relative;
+    font-weight: bold
+}
+
+.s3-hdg-lv1 {
+    margin: 40px 0 24px
+}
+
+.s3-hdg-lv1__element {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 140%;
+    color: #333
+}
+
+.s3-content-area {
+    z-index: 70
+}
+
+.s3-content-area__container {
+    position: relative;
+    margin: 0 auto;
+    width: 1176px
+}
+
+.mf_finder_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "Meiryo", "Yu Gothic", sans-serif
+}
+
+.mf_finder_container .mf_finder_query {
+    display: none
+}
+
+.mf_finder_searchBox {
+    margin: 0
+}
+
+.mf_finder_searchBox_top,
+.mf_finder_searchBox_footer {
+    margin: 0 0 40px;
+    padding: 24px 24px 0;
+    height: auto;
+    background: #f7f7f7;
+    box-sizing: border-box
+}
+
+.mf_finder_searchBox_top::after,
+.mf_finder_searchBox_footer::after {
+    content: "";
+    display: block;
+    padding-top: 24px
+}
+
+.mf_finder_searchBox_footer {
+    margin: auto 0 40px
+}
+
+.mf_finder_searchBox_form {
+    align-items: center
+}
+
+.mf_finder_searchBox_items {
+    display: flex;
+    padding: 0;
+    width: 552px;
+    height: 40px;
+    background: #fff
+}
+
+.mf_finder_searchBox_query_input {
+    padding: 0 8px 0 23px;
+    width: 512px;
+    height: 40px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #d1d1d1;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box
+}
+
+.mf_finder_searchBox_query_input:focus {
+    outline: 0
+}
+
+.mf_finder_searchBox_query_input::placeholder,
+.mf_finder_searchBox_query_input:-ms-input-placeholder,
+.mf_finder_searchBox_query_input::-ms-input-placeholder {
+    color: #9c9c9c
+}
+
+.mf_finder_searchBox_query_wrap:hover .mf_finder_searchBox_query_input{
+    border: 1px solid #bf0000
+}
+.mf_finder_searchBox_query_wrap:focus .mf_finder_searchBox_query_input,
+.mf_finder_searchBox_query_wrap:active .mf_finder_searchBox_query_input {
+    outline: 1px solid #bf0000;
+    background-color: #F7F7F7;
+}
+
+.mf_finder_searchBox_submit {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background: #bf0000;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer
+}
+
+.mf_finder_searchBox_submit:focus {
+    outline: 0
+}
+
+.mf_finder_searchBox_submit::before {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background: no-repeat center/contain url("/web/shared/img/icon/search.png")
+}
+
+.mf_finder_searchBox_submit span {
+    display: none
+}
+
+.mf_finder_searchBox_selects {
+    margin-left: 40px
+}
+
+.mf_finder_searchBox_selects label {
+    display: flex;
+    align-items: center;
+    margin: 0
+}
+
+.mf_finder_searchBox_selects label::after {
+    content: "";
+    top: auto;
+    right: 16px !important;
+    width: 0;
+    height: 0;
+    line-height: 1;
+    border-style: solid;
+    border-width: 5px 3px 0 3px;
+    border-color: #686868 transparent transparent transparent
+}
+
+.mf_finder_searchBox_selects select {
+    padding: 8px 40px 8px 16px;
+    width: auto;
+    min-width: 176px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.mf_finder_searchBox_selects select::-ms-expand {
+    display: none
+}
+
+.mf_finder_searchBox_selects .mf_finder_searchBox_category::before {
+    content: "カテゴリーで絞り込む";
+    margin-right: 24px;
+    width: auto;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "Meiryo", "Yu Gothic", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 172%;
+    vertical-align: middle;
+    color: #333
+}
+
+.mf_finder_searchBox_suggest {
+    z-index: 10
+}
+
+.mf_finder_searchBox_suggest_items {
+    position: relative;
+    padding: 8px 0 4px;
+    width: calc(100% + 40px);
+    background-color: #fff;
+    list-style-type: none;
+    border: 1px solid #ebebeb;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box
+}
+
+.mf_finder_searchBox_suggest_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none
+}
+
+.mf_finder_searchBox_suggest_item::before {
+    content: "";
+    display: block;
+    margin: auto 4px auto 16px;
+    width: 16px;
+    height: 16px;
+    background: no-repeat center/contain url("/web/shared/img/icon/search_gray.png")
+}
+
+.mf_finder_searchBox_suggest_item_cur {
+    background-color: #f7f7f7
+}
+
+.mf_finder_searchBox_suggest_item a {
+    display: inline-block;
+    width: 100%;
+    padding: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #333 !important
+}
+
+.mf_finder_searchBox_suggest_item a:hover {
+    text-decoration: none !important;
+    color: #053ace !important
+}
+
+.mf_finder_msk {
+    margin: 0
+}
+
+.mf_finder_msk_wrapper {
+    margin: -48px 0 40px;
+    padding: 0 24px 24px;
+    width: 100%;
+    background: #f7f7f7
+}
+
+.mf_finder_msk_item::before,
+.mf_finder_msk_item::after {
+    font-size: 14px !important;
+    font-weight: normal;
+    color: #333
+}
+
+.mf_finder_msk_item a {
+    font-size: 14px !important;
+    font-weight: normal;
+    color: #053ace
+}
+
+.mf_finder_msk_item a:link,
+.mf_finder_msk_item a:visited,
+.mf_finder_msk_item a:hover,
+.mf_finder_msk_item a:active {
+    color: #053ace
+}
+
+
+.mf_finder_organic_doc_title_wrapper:active {
+color: #004f75;
+}
+.mf_finder_organic_doc_title_wrapper:hover {
+color: #0085c7;
+text-decoration: underline !important;
+}
+
+
+
+.mf_finder_organic_header_wrapper {
+    margin: 0 0 5px
+}
+
+.mf_finder_organic_hint {
+    display: none;
+    margin-bottom: 80px
+}
+
+.mf_finder_organic_hint_txt {
+    font-size: 16px;
+    line-height: 172%;
+    color: #333
+}
+
+.mf_finder_organic_hint_title {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+    color: #333
+}
+
+.mf_finder_organic_hint_list {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 172%;
+    color: #333
+}
+
+.mf_finder_organic_hint_list_item {
+    display: flex
+}
+
+.mf_finder_organic_hint_list_item::before {
+    content: "・";
+    padding-right: 8px;
+    line-height: 172%;
+    color: #333
+}
+
+.mf_finder_organic_zerohit .mf_finder_organic_header_wrapper>.mf_finder_organic_header,
+.mf_finder_organic_zerohit .mf_finder_organic_pager_wrapper {
+    display: none
+}
+
+.mf_finder_organic_zerohit+.mf_finder_organic_hint {
+    display: block
+}
+
+.mf_finder_organic_zerohit+.mf_finder_organic_hint+.mf_finder_searchBox_footer {
+    display: none
+}
+
+.mf_finder_organic_nums * {
+    font-size: 14px !important;
+    font-weight: normal;
+    text-align: left;
+    color: #333
+}
+
+.mf_finder_organic_nums *::before,
+.mf_finder_organic_nums *::after {
+    font-size: 14px !important;
+    font-weight: normal;
+    color: #333
+}
+
+.mf_finder_organic_wrapper .mf_finder_organic_doc_img {
+    width: 176px
+}
+
+.mf_finder_organic_wrapper .mf_finder_organic_doc_img img {
+    max-width: 176px !important;
+    max-height: auto !important;
+    border: 1px solid #ebebeb
+}
+
+.mf_finder_organic_docs {
+    margin-top: 16px
+}
+
+.mf_finder_organic_docs>div:first-child {
+    border-top: 1px solid #d1d1d1
+}
+
+.mf_finder_organic_doc {
+    padding: 16px 0;
+    border-bottom: 1px solid #d1d1d1
+}
+
+.mf_finder_organic_doc_contents_wrapper {
+    margin-left: 24px
+}
+
+.mf_finder_organic_doc_title {
+    font-weight: normal
+}
+
+.mf_finder_organic_doc_title_wrapper {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #006A9E;
+}
+
+.mf_finder_organic_doc_title_wrapper:link,
+.mf_finder_organic_doc_title_wrapper:visited{
+    color: #006A9E;
+    text-decoration: none !important;
+}
+.mf_finder_organic_doc_title_wrapper:active {
+    color: #004f75;
+}
+.mf_finder_organic_doc_title_wrapper:hover {
+    color: #0085c7;
+    text-decoration: underline !important;
+}
+
+.mf_finder_organic_doc_title_wrapper img {
+    margin: 0 -1px;
+    max-width: 16px;
+    vertical-align: -2px
+}
+
+.mf_finder_organic_doc_body {
+    font-size: 1rem;
+    line-height: 170%
+}
+
+.mf_finder_organic_pager {
+    margin: 40px 0
+}
+
+.mf_finder_organic .mf_finder_mark {
+    background-color: #FFE8E8
+}
+
+.mf_finder_organic a.mf_finder_organic_doc_zoom,
+.mf_finder_organic a.mf_finder_organic_doc_url_wrapper,
+.mf_finder_organic .mf_finder_logo {
+    display: none !important
+}
+
+.mf_finder_pager_items li {
+    width: 40px;
+    height: 40px;
+    line-height: 29px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 4px
+}
+
+.mf_finder_pager_items li:hover,
+.mf_finder_pager_items li:active {
+    background-color: #ebebeb
+}
+
+.mf_finder_pager_items li a {
+    color: #333;
+    background-color: transparent
+}
+
+.mf_finder_pager_items .mf_finder_pager_item {
+    margin: 0 4px
+}
+
+.mf_finder_pager_items .mf_finder_pager_item_first,
+.mf_finder_pager_items .mf_finder_pager_item_prev {
+    margin-right: 12px
+}
+
+.mf_finder_pager_items .mf_finder_pager_item_last,
+.mf_finder_pager_items .mf_finder_pager_item_next {
+    margin-left: 12px
+}
+
+.mf_finder_pager_items .mf_finder_pager_item_first a,
+.mf_finder_pager_items .mf_finder_pager_item_last a,
+.mf_finder_pager_items .mf_finder_pager_item_prev a,
+.mf_finder_pager_items .mf_finder_pager_item_next a,
+.mf_finder_pager_items .mf_finder_pager_item_before a,
+.mf_finder_pager_items .mf_finder_pager_item_after a {
+    color: #333;
+    background-color: transparent
+}
+
+.mf_finder_pager_items .mf_finder_pager_item_current {
+    color: #fff;
+    background-color: #ec0606;
+    border: 1px solid #ec0606;
+}
+
+.mf_finder_pager_items .mf_finder_pager_item_current:hover,
+.mf_finder_pager_items .mf_finder_pager_item_current:active {
+    background-color: #bf0000
+}
+
+.mf_finder_relatedkeywords {
+    margin: 16px 0 -16px;
+    padding: 0;
+    background-color: transparent
+}
+
+.mf_finder_relatedkeywords_head {
+    padding: 0;
+    max-width: 248px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 170%;
+    color: #333
+}
+
+.mf_finder_relatedkeywords_head::before {
+    content: "" !important
+}
+
+.mf_finder_relatedkeywords_items {
+    margin: 16px 0 0 0
+}
+
+.mf_finder_relatedkeywords_item {
+    margin: 0 16px 16px 0
+}
+
+.mf_finder_relatedkeywords_item_link {
+    padding: 8px 14px;
+    min-width: 80px;
+    height: 37px;
+    line-height: 21px;
+    color: #333 !important;
+    box-sizing: border-box
+}
+
+.mf_finder_relatedkeywords_item_link:hover {
+    text-decoration: none !important
+}
+
+.mf_finder_relatedkeywords_item_link span {
+    font-size: 14px;
+    line-height: 21px
+}
+
+.mf_finder_relatedkeywords_item_link span::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: no-repeat center/contain url("/web/shared/img/icon/search_gray.png")
+}
+
+.mf_finder_zubaken {
+    padding: 0;
+    background-color: transparent
+}
+
+.mf_finder_zubaken_wrapper {
+    position: relative;
+    padding: 72px 12px 0;
+    background: #f7f7f7
+}
+
+.mf_finder_zubaken_wrapper::before {
+    content: "おすすめ";
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "Meiryo", "Yu Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 160%;
+    color: #333
+}
+
+.mf_finder_zubaken_wrapper .mf_finder_zubaken_image img {
+    max-width: 168px !important;
+    max-height: auto !important
+}
+
+.mf_finder_zubaken_items {
+    flex-wrap: wrap
+}
+
+.mf_finder_zubaken_item {
+    width: 168px;
+    height: 168px;
+    margin: 0 12px 24px;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.mf_finder_zubaken_item:nth-child(n+13) {
+    display: none
+}
+
+.mf_finder_zubaken_title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 170%;
+    color: #006A9E;
+    text-decoration: none !important;
+}
+.mf_finder_zubaken_item:hover .mf_finder_zubaken_title{
+    color: #0085c7;
+    text-decoration: underline !important;
+}
+.mf_finder_zubaken_item:active .mf_finder_zubaken_title{
+    color: #004f75;
+}
+
+
+.mf_finder_zubaken_title_wrapper {
+    position: absolute;
+    top: 135px
+}
+
+.mf_finder_zubaken_image {
+    width: 168px
+}
+
+.mf_finder_zubaken_image_wrapper {
+    position: absolute;
+    top: 0
+}

@@ -1,0 +1,987 @@
+@charset "utf-8";
+/* ------------------------------------------------------------------
+Source File: top.css for
+ /web/fund/index.html
+CSS file usage: override for module.css, additional custom layout and style　
+Time Stamp: 9:39 2012/03/16
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: fund - Common Elements & Custom Modules
+----------------------------------------------------------------*/
+div#str-main .clearfix:after {
+	display: block;
+	clear:both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	content: ".";
+	font-size: 0.1em;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/* Hides from Mac-IE \*/
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* End hide from Mac-IE */
+
+
+/*---------------------------------------------------------------
+ Page: TOP
+----------------------------------------------------------------*/
+/* sideArea */
+div#nav-local {
+	padding-bottom:10px;
+}
+div#str-sub div#nav-local dl dd ul li a {
+	background: url("/web/fund/images/bg-side-maintitle.gif") repeat-x 0 100% #7db8e9;
+	color:#ffffff;
+}
+div#str-sub div#nav-local dl dd ul li ul li a{
+	background: url("/web/fund/images/bg-side-subtitle01.gif") repeat-x 0 100% #E3E3E3;
+}
+
+/* top feature box:introduce */
+
+#box-introduce {
+	margin-bottom:10px;
+}
+
+#box-introduce .image {
+	position:relative;
+}
+
+#box-introduce .content {
+	padding:5px 8px;
+	border:3px solid #c9f2ff;
+	border-top:none;
+}
+
+#box-introduce .note {
+	font-size:65%;
+	text-align:left;
+}
+
+#box-introduce p {
+	margin-bottom:0.5em;
+	text-align:center;
+}
+
+/* history list */
+.list-history-01 {
+	margin-bottom:5px
+}
+
+div#str-sub div.history ul.list-history-01 li {
+	padding-left:5px;
+	background:none
+}
+
+div#str-sub div.history ul.list-history-01 li .image {
+	float:left;
+}
+
+div#str-sub div.history ul.list-history-01 li span {
+	display:block;
+	margin-left:25px;
+	padding: 5px 10px 5px 25px;
+	background: url("/web/shared/images/arrow/arrow-01.gif") no-repeat 10px 7px;
+}
+
+/* relatives */
+div#str-sub div#relatives{
+	margin-bottom:10px;
+}
+
+.side-subtitle span{
+	display:block;
+	padding:3px 10px;
+	background: url("/web/fund/images/bg-side-title02.gif") repeat-x 0 100% #747db4;
+	font-size:90%;
+	font-weight:bold;
+	color:#ffffff;
+}
+.rel-linklist {
+	padding:5px 10px;
+	border:1px solid #97a2e9;
+	font-size:82%;
+}
+.rel-linklist li a{
+	display: block;
+	padding: 3px 0 3px 15px;
+	background: url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 6px;
+	font-size:90%;
+}
+
+/* mainArea */
+/* common */
+.link-more {
+	position:relative;
+	background: url("/web/fund/images/nav-arrow-02.gif") no-repeat 0 7px transparent;
+	padding: 6px 0 4px 14px;
+	font-size:90%;
+}
+
+* html .link-more {
+	zoom:1;
+}
+
+div#str-main div.box-00 h2.hdg-l2-01,
+div#str-main div.box-01 h2.hdg-l2-01,
+div#str-main div.box-02 h2.hdg-l2-01 {
+	margin-bottom:5px;
+}
+
+/* icon */
+.new-icon {
+	vertical-align:middle
+}
+
+/* tab content */
+div#str-main .tab-list,
+div#str-main div.box-01 .tab-list,
+div#str-main div.box-02 .tab-list {
+	position:relative;
+	float:left;
+	width:100%;
+	margin:0;
+}
+
+.tab-list li {
+	position:relative;
+	float:left;
+	margin-left:3px;
+	font-weight:bold;
+	font-size:11px;
+	text-align:center;
+}
+
+.tab-list li.selected {
+	z-index:2;
+}
+
+.tab-list li.selected a {
+	color:#000;
+	text-decoration:none
+}
+
+.tab-list li a,
+.tab-list li span {
+	display:block;
+	zoom:1;
+	text-decoration:none
+}
+
+* html .tab-list li a,
+* html .tab-list li span {
+	float:left;
+}
+
+.tab-box {
+	clear:both;
+	position:relative;
+	margin-top:0;
+	padding-top:10px;
+	border-top:3px solid #ebebeb;
+	display:none;
+	z-index:1
+}
+
+.selected {
+	display:block
+}
+
+.tab01 {
+	border-bottom:3px solid #848ec4;
+}
+
+.tab01 li {
+	border:1px solid #bfc3e2;
+	border-bottom:none;
+	border-left:none;
+	background: url("/web/fund/images/tab01-def-m.gif") repeat-y 0 0 #e4e6f8;
+}
+
+.tab01 li a {
+	position:relative;
+	margin:-1px -1px 0 0;
+	background: url("/web/fund/images/tab01-def-r.gif") no-repeat 100% 0;
+}
+
+.tab01 li span {
+	padding:8px 10px;
+	min-width:8em;
+	background: url("/web/fund/images/tab01-def-l.gif") no-repeat 0 0;
+}
+
+.tab01 li.selected {
+	position:relative;
+	border-color:#6771ab;
+	background: url("/web/fund/images/tab01-selected-m.gif") repeat-y 0 0 #848ec4;
+}
+
+.tab01 li.selected a {
+	margin:-1px -1px 0 0;
+	color:#ffffff;
+	background: url("/web/fund/images/tab01-selected-r.gif") no-repeat 100% 0;
+}
+
+.tab01 li.selected span {
+	background: url("/web/fund/images/tab01-selected-l.gif") no-repeat 0 0;
+}
+
+.tab02 {
+	border-bottom:1px solid #cccccc;
+}
+
+.tab02 li {
+	border:1px solid #c0c3d2;
+	border-bottom:none;
+}
+
+.tab02 li a {
+	position:relative;
+	margin:-1px -1px 0;
+	background: url("/web/fund/images/tab02-def-r.gif") no-repeat 100% 0;
+}
+
+.tab02 li span {
+	padding:8px 10px;
+	background: url("/web/fund/images/tab02-def-l.gif") no-repeat 0 0;
+}
+
+.tab02 li.selected {
+	position:relative;
+	z-index:2;
+	margin-bottom:-5px;
+	border-top:4px solid #0d1e7c;
+	background:#ffffff;
+}
+
+.tab02 li.selected a {
+	margin:-4px -1px 0;
+	background: url("/web/fund/images/tab02-selected-r.gif") no-repeat 100% 0;
+}
+
+.tab02 li.selected span {
+	padding:10px 5px;
+	background: url("/web/fund/images/tab02-selected-l.gif") no-repeat 0 0;
+}
+
+div#str-main .tab-box div.column-col3 div.segment {
+	width:170px;
+	margin-right:0;
+}
+
+div#str-main div.box-02 div.column-col3 div.segment.nb3 {
+	margin-right:0;
+}
+
+div#str-main .tab-box .column-col3 .segment p {
+	overflow:hidden;
+	margin-right:0;
+	margin-left:0;
+}
+
+div#str-main .tab-box .column-col3 .segment p.image {
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+/* horizontal list */
+.hrlist li {
+	float:left;
+	margin-right:5px;
+}
+
+.hrlist li a {
+	padding-right:5px;
+	border-right:1px solid #3534b4;
+}
+
+/* fund-search box */
+.box-child {
+	padding:0;
+	border-bottom:1px solid #e0e0e0;
+}
+
+div#str-main #fund-search h2.hdg-l2-01 {
+	margin-bottom:0;
+}
+
+div#str-main #fund-search .box-child dl {
+	margin:0;
+	padding:0;
+}
+
+div#str-main .box-child .subtitle05 .titletext {
+	display: block;
+	position:relative;
+	min-height: 25px;
+	height: auto;
+	margin: 0 10px;
+	padding: 6px 0 3px 25px;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 115%;
+}
+
+* html div#str-main .box-child .subtitle05 .titletext {
+	height: 25px;
+	margin-right: 0;
+}
+
+.box-child dd {
+	overflow: hidden;
+}
+
+/* text search box */
+#box-search {
+	padding: 2px 1px;
+}
+
+div#str-main #fund-search #box-search .content{
+	padding: 10px 0;
+	background: #e3e3e3;
+}
+
+#box-search .text-search {
+	line-height: 16px;
+	margin: 0;
+	font-size: 16px;
+}
+
+#box-search .text-search input {
+	margin-right: 5px;
+}
+
+#form-search-stock-prices {
+	color: #CCC;/*input text default color */
+}
+
+div#str-main #box-search input.form-text-01 {
+	width: 150px;
+}
+
+div#str-main #box-search .subtitle05 .titletext {
+	display: inline;/* for IE6 */
+	float: left;
+	line-height: 1;
+	margin-right: 10px;
+	margin-left: 9px;
+	padding-right: 0;
+	background: url("/web/fund/images/icon-search.gif") no-repeat 0 center;
+}
+
+div#str-main #box-search .segment{
+	float:left;
+	margin:0;
+	padding-bottom:0;
+	width:auto
+}
+div#str-main #box-search .nb2{
+	font-size:82%
+}
+
+div#str-main #box-search .segment p {
+	margin:0;
+	font-size:82%
+}
+
+#box-favorite-search .subtitle05 .titletext {
+	background-image: url("/web/fund/images/icon-clip.gif");
+}
+
+#box-ranking-search .subtitle05 .titletext {
+	background-image: url("/web/fund/images/icon-rank.gif");
+}
+
+#box-category-search .subtitle05 .titletext {
+	background-image: url("/web/fund/images/icon-category.gif");
+}
+
+#box-selection-search .subtitle05 .titletext {
+	background-image: url("/web/fund/images/icon-selection.gif");
+}
+
+#box-feature-topocs .subtitle05 .titletext {
+	background-image: url("/web/fund/images/icon-feature.gif");
+}
+
+#box-favorite-search dd {
+	padding-top:6px;
+}
+
+#box-favorite-search .subtitle05 .link-more,
+#box-ranking-search .subtitle05 .link-more {
+	margin-left:10px;
+	font-size:82%;
+	font-weight:normal
+}
+#box-favorite-search .subtitle05,
+#box-ranking-search .subtitle05,
+#box-category-search .subtitle05,
+#box-selection-search .subtitle05,
+#box-feature-topocs .subtitle05 {
+	margin-bottom:5px;
+	background: url("/web/fund/images/bg-gr-title.gif") repeat-x 0 100% #ffffff;
+}
+#box-favorite-search .subtitle05{
+	margin-bottom:0;
+}
+div#str-main #box-category-search div.column-col3 .segment {
+	width:170px;
+	margin-right:10px;
+}
+
+* html div#str-main #box-category-search div.column-col3 .segment {
+	width:160px;
+}
+
+div#str-main #box-ranking-search div.column-col3 .segment {
+	width:165px;
+	margin-right:10px;
+}
+
+* html div#str-main #box-ranking-search div.column-col3 .segment {
+	width:155px;
+}
+
+div#str-main #box-ranking-search div.column-col3 p,
+div#str-main #box-category-search div.column-col3 p {
+	margin:0;
+	font-size:82%;
+}
+
+div#str-main #box-ranking-search .note {
+ margin:0 10px 8px;
+ font-size:82%;
+}
+
+div#str-main #box-category-search div.column-col3 p strong {
+	font-size:110%;
+}
+
+div#str-main #box-ranking-search div.column-col3 div.segment.nb3,
+div#str-main #box-category-search div.column-col3 div.segment.nb3 {
+	margin-right:0;
+}
+
+div#str-main #box-ranking-search .column-col3 .image,
+div#str-main #box-category-search .column-col3 img {
+	float:left;
+	margin-right:10px;
+}
+
+#box-category-search .column-col3 .segment p {
+	overflow:hidden;
+}
+
+#box-ranking-search .column-col3,
+#box-category-search .column-col3 {
+	margin-bottom:5px;
+	margin-left:10px;
+}
+
+#box-ranking-search .column-col3 .segment {
+	border-right:1px dotted #cccccc;
+	padding-right:5px
+}
+
+#box-ranking-search .column-col3 .nb3 {
+	border-right:none
+}
+
+
+div#str-contents-inner #box-ranking-search .rank-more {
+	float: right;
+	background: url("/web/fund/images/nav-arrow-02.gif") no-repeat 0 50% transparent;
+	padding: 0 10px 0 14px;
+	font-size:82%;
+}
+
+div#str-main #box-selection-search div.lyt-image,
+div#str-main #box-feature-topocs div.lyt-image {
+	margin:0;
+	padding:7px 0;
+	text-align:center;
+}
+
+div#str-main #box-selection-search .image {
+	margin-bottom:0;
+	padding:0 0 0 9px;
+	display:inline;
+}
+
+div#str-main #box-feature-topocs .image {
+	width:255px;
+	margin-bottom:0;
+	padding:0 0 0 11px;
+	display:inline;
+}
+
+.nav-more {
+	overflow:hidden;
+}
+
+/* campaign box */
+div#str-main #box-campaign div.lyt-image {
+	margin:0;
+	padding:0 10px;
+}
+
+#box-campaign .box-top .column {
+	margin-left:180px
+}
+
+#box-campaign .list-link-01 {
+	margin-bottom:0.3em;
+}
+
+#box-campaign h2 {
+	position:relative
+}
+
+#box-campaign .link-more {
+	position:absolute;
+	right:10px;
+	top:3px;
+	background-position: 0 10px;
+	font-size:90%;
+	font-weight:normal;
+}
+
+div#str-main #box-campaign p {
+	margin:0 0 5px;
+}
+
+#box-campaign .box-bottom {
+	clear:both;
+	margin:10px;
+	padding:10px 10px 5px;
+	background:#e9ebff
+}
+
+#box-campaign .box-bottom .column {
+	overflow:hidden;
+}
+
+#box-campaign .box-bottom .column ul {
+	margin-right:0;
+	margin-left:0;
+}
+
+#box-campaign .box-bottom .image {
+	float:right;
+}
+
+/* feature box  */
+div#str-main #box-feature dl {
+	margin:10px;
+}
+
+div#str-main #box-feature dt,
+div#str-main #box-feature dd {
+	display:inline;
+}
+
+div#str-main #box-feature dd {
+	padding-left:2em;
+}
+
+/* fundlist box */
+div#str-main #box-fundlist .hrlist {
+	margin:0 10px 10px;
+}
+
+div#str-main #box-fundlist p.image {
+	margin-bottom:5px;
+}
+#netfund li{
+	font-size:90%
+}
+
+/* news box */
+div#str-main #box-news .link-more {
+	margin-top:-10px;
+	float:right;
+	background-position:0 10px;
+}
+
+
+/*---------------------------------------------------------------
+ moved from html inner style code
+----------------------------------------------------------------*/
+div#str-main div.fund-top div.box-fund-ranking div.column-col5 div.segment p.nav-more,
+div#str-main div.fund-top div.box-fund-favorite div.column-col5 div.segment p.nav-more {
+	background-image:none;
+	padding-left:0;
+}
+
+div#str-sub div.new-fund,
+div#str-sub div.pu-fund {
+	background: url("/web/shared/images/str-sub/historybg-01.gif") no-repeat scroll 0 100% transparent;
+	font-size: 81.25%;
+	margin-bottom: 15px;
+	padding: 0 1px 1px;
+}
+
+div#str-sub div.new-fund h2 {
+	margin:0 -1px;
+	padding-bottom:10px;
+}
+
+div#str-sub div.new-fund div.image-L p.image {
+	float: left;
+	padding: 0 10px 10px 10px;
+}
+
+div#str-sub div.new-fund div.lyt-image p {
+	margin: 0 0 0.75em;
+}
+
+div#str-sub div.new-fund div.lyt-image p.nav-more {
+	padding-right:10px;
+}
+
+div#str-sub div.new-fund div.image-L:before,
+div#str-sub div.new-fund div.image-L:after {
+	content:"";
+	display:table;
+}
+
+div#str-sub div.new-fund div.image-L:after {
+	clear:both;
+}
+
+div#str-sub div.new-fund div.image-L {
+	zoom:1;
+}
+
+div#str-sub div.pu-fund p {
+	padding: 0 10px 5px 10px;
+}
+
+div#str-sub div.pu-fund div.image-L p.image {
+	float: left;
+	padding: 0 10px 3px 10px;
+}
+
+div#str-sub div.pu-fund div.lyt-image p {
+	margin: 0 0 3px;
+}
+
+div#str-sub div.pu-fund div.lyt-image p.nav-more {
+	padding-right:10px;
+}
+
+div#str-sub div.pu-fund div.image-L:before,
+div#str-sub div.pu-fund div.image-L:after {
+	content:"";
+	display:table;
+}
+
+div#str-sub div.pu-fund div.image-L:after {
+
+	clear:both;
+}
+
+div#str-sub div.pu-fund div.image-L {
+	zoom:1;
+}
+
+div#str-search {
+	height: 25px;
+}
+
+div#global-search dl dt.label-search {
+	position: absolute;
+	top: 7px;
+	left: 17px;
+}
+
+div#str-search fieldset#form-search-word {
+	position: absolute;
+	top: 6px;
+	left: 90px;
+	width: 320px;
+}
+
+div#str-main div.box-fund-ranking ul.nav-tab-daily {
+	width:541px;
+	height:28px;
+	margin:0 0 5px 0;
+	padding:0;
+	background:url(/web/fund/images/nav-tab-daily-bg-01.gif) 0 bottom repeat-x;
+}
+
+div#str-main div.box-01 ul.nav-tab-daily {
+	width:543px;
+	height:28px;
+	margin:0;
+	padding:2px 0 0 0;
+	background:url(/web/fund/images/nav-tab-daily-bg-01.gif) 0 bottom repeat-x;
+}
+
+div#str-main ul.nav-tab-daily li {
+	width:70px;
+	float: left;
+	margin-left: 3px;
+	padding: 6px 0 4px 0;
+	text-align: center;
+	background:url(/web/fund/images/nav-tab-daily-bg-03.gif) 0 0 no-repeat;
+}
+
+div#str-main ul.nav-tab-daily li a {
+}
+
+div#str-main ul.nav-tab-daily li.selected {
+	font-weight:bold;
+	background:url(/web/fund/images/nav-tab-daily-bg-02.gif) 0 0 no-repeat;
+}
+
+div#str-main ul.nav-tab-daily li.selected a {
+	text-decoration:none;
+}
+
+div#str-main div.box-01 h2.hdg-l2-divided {
+	margin:0;
+	padding:0;
+}
+
+div#str-main div.box-01 table.tbl-data-divided {
+	width:100%;
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th {
+	font-weight:bold;
+	padding:5px;
+	background-color:#ffe2cb;
+	border-color: #C3C3C3;
+	border-style: solid;
+	border-width: 0 0 0 1px;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th a {
+	color:#3535B4;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-01,
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-03,
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-04,
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-05,
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-06 {
+	text-align:center;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-01 {
+	border-left:none;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-02 {
+	width:195px;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-03 {
+	width:50px;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-04 {
+	width:55px;
+}
+
+div#str-main div.box-01 table.tbl-data-divided thead th.th-divided-07 {
+	width:40px;
+}
+
+div#str-main div.box-01 table.tbl-data-divided tbody tr.odd {
+	background:#fffcdd;
+}
+
+div#str-main div.box-01 table.tbl-data-divided tbody tr.even {
+}
+
+div#str-main div.box-01 table.tbl-data-divided tbody th {
+	font-weight: normal;
+	padding: 5px 3px;
+	border:none;
+}
+
+div#str-main div.box-01 table.tbl-data-divided tbody td {
+	border-color: #C3C3C3;
+	border-style: solid;
+	border-width: 0 0 0 1px;
+	font-weight: normal;
+	padding: 5px 3px;
+	vertical-align: top;
+}
+
+div#str-main div.box-01 table.tbl-data-divided tbody td ul.list-add-01 {
+	margin:0;
+	padding:0;
+}
+
+div#str-main div.box-01 table.tbl-data-divided tbody td ul.list-add-01 li {
+	display: inline;
+	padding:0 2px;
+	margin:0;
+}
+
+div#str-main div.box-01 div.box-06-divided {
+	margin-bottom: 0;
+	padding-right: 200px;
+	position: relative;
+	background-color: #F2F2F9;
+	padding: 8px 5px 6px;
+}
+
+div#str-main div.box-01 div.box-06-divided ul.list-link-03 {
+	bottom: 0.45em;
+	position: absolute;
+	right: 0;
+}
+
+div#str-main div.box-01 div.box-06-divided ul.list-link-03 li.more {
+	display: inline-block;
+	float: left;
+}
+
+div#str-main div.box-01 div.box-06-divided ul.list-link-03 li.comparison {
+	background: none repeat scroll 0 0 transparent;
+	padding-left: 10px;
+}
+
+div#str-main div.box-01 div.box-06-divided p,
+div#str-main div.box-06-divided ul {
+	font-size: 68.8%;
+	margin-bottom: 0;
+}
+
+div#str-sub div#nav-local {
+	background:none;
+	margin-bottom: 5px;
+	z-index: 1;
+}
+
+div#str-sub div#nav-local ul {
+	border: none;
+	margin-bottom: 0;
+	padding:0;
+}
+
+div#str-sub div#nav-local dl {
+	border: 1px solid #C2C2C2;
+}
+
+div#str-sub div#nav-local dl dt {
+	height: 0;
+	left: -9999px;
+	position: absolute;
+	top: -9999px;
+}
+
+div#str-sub div#nav-local dl dd ul {
+	border-top: 2px solid #0866B4;
+}
+
+div#str-sub div#nav-local dl dd ul li a {
+	font-size: 87.5%;
+	text-decoration: none !important;
+	padding:2px 0 0 0;
+	border:none;
+	margin:0;
+}
+
+div#str-sub div#nav-local dl dd ul li a span {
+	background: url("/web/fund/images/nav-arrow-01.gif") no-repeat scroll 6px 9px transparent;
+	font-weight: bold;
+	padding: 4px 0 5px 19px;
+}
+
+div#str-sub div#nav-local dl dd ul span {
+	display: block;
+}
+
+div#str-sub div#nav-local dl dd ul li ul {
+	border-top: 1px solid #C2C2C2;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li.selected {
+	background: none repeat scroll 0 0 #E3E3E3;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li {
+	background: none repeat scroll 0 0 #EEEEEE;
+	border-bottom: 1px solid #C2C2C2;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li a {
+	color: #444444 !important;
+	font-size: 75%;
+	padding:0;
+	text-decoration: none !important;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li a span {
+	background: url("/web/fund/images/nav-arrow-02.gif") no-repeat scroll 7px 10px transparent;
+	padding: 6px 0 4px 21px;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li.selected ul li {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-bottom: 1px solid #E3E3E3;
+	border-left: 2px solid #EFEFEF;
+	border-right: 2px solid #EFEFEF;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li.selected ul li a {
+	background: url("/web/fund/images/nav-arrow-03.gif") no-repeat scroll 11px 10px transparent;
+	color: #666666 !important;
+	font-size: 75%;
+	font-weight: normal;
+	padding: 3px 0 2px 22px;
+	text-decoration: none !important;
+}
+
+div#str-sub div#nav-local dl dd ul li ul li.selected ul li.last-child {
+	border-bottom: medium none;
+}
+
+/* box-services */
+div#str-sub div.box-services {
+	margin-bottom:10px;
+	background:#F2F2F9;
+	border:1px solid #97a2e9;
+}
+
+dl.services-linklist{
+	margin:5px;
+	background:#FFF;
+	font-size:75.5%;
+}
+
+dl.services-linklist dd{
+	padding: 3px 0 3px 15px;
+	background:url("/web/shared/images/dot/dot-01.gif") repeat-x scroll 0 100% transparent;
+}
+
+dl.services-linklist dt{
+	padding: 3px 0 3px 15px;
+	background: url("/web/shared/images/arrow/arrow-01.gif") no-repeat 3px 7px;
+}
+

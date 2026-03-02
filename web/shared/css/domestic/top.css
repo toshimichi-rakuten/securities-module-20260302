@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/* ------------------------------------------------------------------
+Source File: top.css for
+ /web/domestic/index.html
+CSS file usage: override for module.css, additional custom layout and style　
+Time Stamp: 9:30 2014/06/06
+---------------------------------------------------------------------*/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+.icon-info-stock, .icon-info-rank, .icon-yen, .icon-yendown, .icon-heart, .icon-mouse, .icon-stats, .icon-nisa, .icon-process, .icon-study, div#str-main .hdg-l2-01 span.icon-beginner,
+div#str-main .hdg-l2-02 span.icon-beginner, div#str-main .hdg-l2-01 span.icon-guest,
+div#str-main .hdg-l2-02 span.icon-guest {
+  background: url("/web/domestic/images/index-sprite-s34fg8fgtty.png");
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+div#str-main div.column-col2 div.segment.border-box .box-head:before, div#str-main .news-box.box-02 .box-inner-01:before, div#str-main .news-box.box-02 .rank-nav-tab ul:before, div#str-main div.market_speed-box:before, div#str-main div.ispeed-box:before,
+div#str-main div.column-col2 div.segment.border-box .box-head:after,
+div#str-main .news-box.box-02 .box-inner-01:after,
+div#str-main .news-box.box-02 .rank-nav-tab ul:after,
+div#str-main div.market_speed-box:after,
+div#str-main div.ispeed-box:after {
+  content: " ";
+  display: table;
+}
+
+div#str-main div.column-col2 div.segment.border-box .box-head:after, div#str-main .news-box.box-02 .box-inner-01:after, div#str-main .news-box.box-02 .rank-nav-tab ul:after, div#str-main div.market_speed-box:after, div#str-main div.ispeed-box:after {
+  clear: both;
+}
+
+div#str-main div.column-col2 div.segment.border-box .box-head, div#str-main .news-box.box-02 .box-inner-01, div#str-main .news-box.box-02 .rank-nav-tab ul, div#str-main div.market_speed-box, div#str-main div.ispeed-box {
+  *zoom: 1;
+}
+
+/*---------------------------------------------------------------
+ Page: Domestic TOP
+----------------------------------------------------------------*/
+.icon-app-ms {
+  display: block;
+  background: url("/web/images/top/sprite-s805d023e00.png");
+  background-position: 0 -440px;
+  width: 32px;
+  height: 32px;
+  margin-top: -14px;
+  margin-left: -16px;
+}
+
+.icon-app-is {
+  display: block;
+  background: url("/web/images/top/sprite-s805d023e00.png");
+  background-position: 0 -172px;
+  width: 47px;
+  height: 46px;
+  margin-top: -21px;
+  margin-left: -23.5px;
+}
+
+.icon-info-stock {
+  background-position: 0px 0px;
+  width: 16px;
+  height: 15px;
+}
+
+.icon-info-rank {
+  background-position: 0px -35px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-yen {
+  background-position: 0px -556px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-yendown {
+  background-position: 0px -304px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-heart {
+  background-position: 0px -178px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-mouse {
+  background-position: 0px -241px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-stats {
+  background-position: 0px -430px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-nisa {
+  background-position: 0px -619px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-process {
+  background-position: 0px -367px;
+  width: 43px;
+  height: 43px;
+}
+
+.icon-study {
+  background-position: 0px -493px;
+  width: 43px;
+  height: 43px;
+}
+
+div#str-main .contents-wapper .list-link-01 a:link,
+div#str-main .contents-wapper .link-01 a:link {
+  text-decoration: underline;
+}
+div#str-main .contents-wapper .list-link-01 a:hover,
+div#str-main .contents-wapper .link-01 a:hover {
+  text-decoration: none;
+}
+div#str-main div.box-promotion-link {
+  margin-bottom: 1.25em;
+}
+div#str-main div.box-promotion-link p {
+  margin: 0;
+}
+div#str-main div.box-promotion-link strong {
+  margin-right: 10px;
+}
+div#str-main div.box-search-stock-01 form {
+  position: relative;
+}
+div#str-main div.box-search-stock-01 form input.input-search-stock-cont {
+  width: 240px;
+  margin-right: 5px;
+  padding: 2px;
+  border: 1px solid #7f9db9;
+  color: #cccccc;
+}
+div#str-main div.box-search-stock-01 form input.submit-search-stoc-btn-cont {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+div#str-main div.box-search-stock-01 form p {
+  float: left;
+}
+div#str-main div.box-search-stock-01 form .list-link-01 {
+  float: left;
+  margin: -10px 0 -10px 20px;
+}
+div#str-main div.box-search-stock-01 form .list-link-01 li {
+  margin: 0;
+  font-size: 87.5%;
+  background-position: 0 5px;
+}
+div#str-main div.column-col2 div.segment {
+  width: 268px;
+  margin-right: 7px;
+}
+div#str-main div.column-col2 div.segment.border-box {
+  width: 264px;
+  margin-bottom: 1.25em;
+  margin-right: 7px;
+  padding: 2px 1px;
+  border: 1px solid #d5d5d5;
+}
+div#str-main div.column-col2 div.segment.border-box .box-inner {
+  height: 100%;
+  margin: -1px 0;
+  border: 1px solid #e8e8e8;
+}
+div#str-main div.column-col2 div.segment.border-box .box-inner p,
+div#str-main div.column-col2 div.segment.border-box .box-inner ul {
+  margin-right: 0;
+  margin-left: 0;
+}
+div#str-main div.column-col2 div.segment.border-box .box-head {
+  padding: 10px 10px 0;
+}
+div#str-main div.column-col2 div.segment.border-box .box-head .icon {
+  float: left;
+}
+div#str-main div.column-col2 div.segment.border-box .box-head h3 {
+  margin-left: 53px;
+  height: 43px;
+}
+div#str-main div.column-col2 div.segment.border-box .box-head .txt {
+  display: inline-block;
+  vertical-align: middle;
+}
+div#str-main div.column-col2 div.segment.border-box .box-head .adjuster {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+div#str-main div.column-col2 div.segment.border-box .box-body {
+  padding: 10px 10px 0;
+}
+div#str-main .hdg-l2-01,
+div#str-main .hdg-l2-02 {
+  position: relative;
+  /* Icon */
+}
+div#str-main .hdg-l2-01 span.txt,
+div#str-main .hdg-l2-02 span.txt {
+  padding-left: 42px;
+}
+div#str-main .hdg-l2-01 span.icon,
+div#str-main .hdg-l2-02 span.icon {
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  padding: 0;
+}
+div#str-main .hdg-l2-01 span.icon-beginner,
+div#str-main .hdg-l2-02 span.icon-beginner {
+  background-position: 0px -71px;
+  width: 24px;
+  height: 33px;
+  left: 8px;
+}
+div#str-main .hdg-l2-01 span.icon-guest,
+div#str-main .hdg-l2-02 span.icon-guest {
+  background-position: 0px -124px;
+  width: 24px;
+  height: 34px;
+  left: 8px;
+}
+div#str-main .hdg-l2-01 span.icon-display,
+div#str-main .hdg-l2-02 span.icon-display {
+  background: url("/web/images/top/sprite-s805d023e00.png") no-repeat;
+  background-position: 0 -688px;
+  width: 38px;
+  height: 34px;
+}
+div#str-main .hdg-l2-01 span.icon-board,
+div#str-main .hdg-l2-02 span.icon-board {
+  background: url("/web/images/top/sprite-s805d023e00.png") no-repeat;
+  background-position: 0 -930px;
+  width: 38px;
+  height: 34px;
+}
+div#str-main .hdg-l2-01 span.icon-balloon,
+div#str-main .hdg-l2-02 span.icon-balloon {
+  background: url("/web/images/top/sprite-s805d023e00.png") no-repeat;
+  background-position: 0 -634px;
+  width: 38px;
+  height: 34px;
+}
+div#str-main .hdg-l2-01 span.icon-present,
+div#str-main .hdg-l2-02 span.icon-present {
+  background: url("/web/images/top/sprite-s805d023e00.png") no-repeat;
+  background-position: 0 -492px;
+  width: 38px;
+  height: 34px;
+}
+div#str-main .news-box.box-02 .box-inner-01 {
+  background: #f4f4fc;
+}
+div#str-main .news-box.box-02 .date {
+  position: absolute;
+  top: 8px;
+  right: 80px;
+  color: #666666;
+  line-height: 1.6;
+}
+div#str-main .news-box.box-02 .note {
+  margin-top: 10px;
+  font-size: 71%;
+  color: #666666;
+}
+div#str-main .news-box.box-02 table, div#str-main .news-box.box-02 dl, div#str-main .news-box.box-02 ul, div#str-main .news-box.box-02 p {
+  margin: 0;
+}
+div#str-main .news-box.box-02 .segment-head {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px dotted #7f87c3;
+  line-height: 20px;
+}
+div#str-main .news-box.box-02 .segment-head .icon {
+  float: left;
+}
+div#str-main .news-box.box-02 .segment-head .txt {
+  margin: 0 44px 0 20px;
+}
+div#str-main .news-box.box-02 .segment-head .nav-link-01 {
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+div#str-main .news-box.box-02 .segment-head .nav-link-01 img {
+  vertical-align: top;
+}
+div#str-main .news-box.box-02 .segment-head select {
+  margin-top: -5px;
+  border: 1px solid #9c9c9c;
+}
+div#str-main .news-box.box-02 .segment-head #chart-select-ric {
+  width: 108px;
+}
+div#str-main .news-box.box-02 .segment-chart {
+  float: left;
+  width: 250px;
+  margin-left: 11px;
+  margin-bottom: 10px;
+}
+div#str-main .news-box.box-02 .segment-ranking {
+  float: right;
+  width: 258px;
+  margin-right: 11px;
+  margin-bottom: 10px;
+}
+div#str-main .news-box.box-02 .chart-info {
+  border: 1px solid #0e2085;
+}
+div#str-main .news-box.box-02 .chart-info .info-head {
+  display: block;
+  padding: 5px 6px;
+  border-bottom: 1px solid #0e2085;
+  background: #f2f2f2;
+}
+div#str-main .news-box.box-02 .chart-info .info-body {
+  padding: 14px 0 4px 10px;
+  background: #ffffff;
+}
+div#str-main .news-box.box-02 .rank-nav-tab {
+  position: relative;
+  margin: 0;
+  padding-bottom: 3px;
+  background: url("/web/shared/images/reuters/bg-nav-tab-01.gif") repeat-x 0 100%;
+}
+div#str-main .news-box.box-02 .rank-nav-tab ul {
+  width: 260px;
+}
+div#str-main .news-box.box-02 .rank-nav-tab li {
+  float: left;
+  width: 62px;
+  height: 24px;
+  padding-right: 2px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 24px;
+  font-size: 13px;
+  color: #0e2085;
+  margin-bottom: 1px;
+}
+div#str-main .news-box.box-02 .rank-nav-tab li.selected {
+  background: url("/web/domestic/images/index-bg-ranking-on.gif") repeat-x 0 0;
+  color: #FFFFFF;
+}
+div#str-main .news-box.box-02 .rank-nav-panel {
+  border: 1px solid #0e2085;
+  padding-bottom: 4px;
+}
+div#str-main .news-box.box-02 .rank-nav-panel table {
+  width: 100%;
+  border: none;
+  font-size: 62.5%;
+}
+div#str-main .news-box.box-02 .rank-nav-panel .note {
+  margin-left: 5px;
+}
+div#str-main .list-image-bnr {
+  margin-right: 0;
+}
+div#str-main .list-image-bnr li {
+  display: inline;
+  margin-right: 7px;
+}
+div#str-main div.box-border {
+  margin-bottom: 15px;
+  border-bottom: #CCC dotted 1px;
+}
+div#str-main .inquiry-box {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 1.25em;
+  padding: 8px 125px 0 15px;
+  border: 1px solid #c3c3c3;
+  background: #f8f8f8;
+}
+div#str-main .inquiry-box p {
+  margin: 0;
+}
+div#str-main .inquiry-box .box-image {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+div#str-main .tool-box {
+  margin: 0 10px 20px;
+  padding: 0 10px 20px;
+  border-bottom: #CCC dotted 1px;
+}
+div#str-main .tool-box.last {
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+div#str-main .tool-box .box-head {
+  margin-bottom: 25px;
+  text-align: center;
+}
+div#str-main .tool-box .box-image {
+  float: left;
+  width: 230px;
+  text-align: center;
+}
+div#str-main .tool-box .box-column {
+  margin-left: 230px;
+}
+div#str-main .tool-box .box-column p{
+  margin: 0 0 1em;
+}
+div#str-main .tool-box .box-btn {
+  margin-bottom: 5px;
+}
+div#str-main .tool-box .box-btn a:hover{
+  opacity: .8;
+}
+/*div#str-main div.market_speed-box .box-links {
+  margin-bottom: 22px;
+  border: 1px solid #c3c3c3;
+}
+div#str-main div.market_speed-box .box-links h4 {
+  margin-bottom: 1em;
+  padding: 2px;
+  border-bottom: 1px solid #c3c3c3;
+}
+div#str-main div.market_speed-box .box-links h4 span {
+  display: block;
+  padding: 2px 9px 1px;
+  background: url("/web/shared/images/heading/hdg-l2-03-bg.gif") repeat-x #e5e5e5;
+}
+div#str-main div.ispeed-box {
+  margin: 0 10px 10px;
+  padding: 10px 10px;
+}
+div#str-main div.ispeed-box .box-head {
+  margin-bottom: 10px;
+}
+div#str-main div.ispeed-box .box-image {
+  float: left;
+}
+div#str-main div.ispeed-box .box-column {
+  margin-left: 230px;
+}
+div#str-main div.ispeed-box p {
+  margin-left: 0;
+  margin-right: 0;
+}*/
+div#str-main div.application-box {
+  width: 545px;
+  height: 124px;
+  margin-bottom: 7px;
+  background: url("/web/domestic/images/index-bg-application.gif") no-repeat;
+}
+div#str-main div.application-box .raluten_user {
+  float: left;
+  width: 354px;
+  margin-left: 8px;
+  padding-top: 15px;
+}
+div#str-main div.application-box .raluten_user p {
+  margin-bottom: 4px;
+}
+div#str-main div.application-box .guest_user {
+  float: right;
+  width: 169px;
+  margin-right: 8px;
+  padding-top: 15px;
+}
+div#str-main div.application-box .guest_user p {
+  margin-bottom: 4px;
+}
+
+#str-sub {
+  /* relatives */
+  /* box-services */
+}
+#str-sub .relatives {
+  margin-bottom: 10px;
+}
+#str-sub .side-subtitle span {
+  display: block;
+  padding: 3px 10px;
+  background: url("/web/domestic/images/bg-side-title02.gif") repeat-x 0 100% #747db4;
+  font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
+}
+#str-sub .box-services {
+  background: #F2F2F9;
+  border: 1px solid #97a2e9;
+}
+#str-sub .box-services .box-services-body {
+  border-top: 1px solid #97a2e9;
+}
+#str-sub dl.services-linklist {
+  margin: 5px;
+  background: #FFF;
+  font-size: 75.5%;
+}
+#str-sub dl.services-linklist dt {
+  padding: 3px 0 3px 15px;
+  background: url("/web/shared/images/arrow/arrow-01.gif") no-repeat 3px 7px;
+}
+#str-sub dl.services-linklist dt.with-icon {
+  position: relative;
+  height: 46px;
+  margin-left: 58px;
+  padding: 7px 0 0 0;
+  background: none;
+}
+#str-sub dl.services-linklist dt.with-icon span.icon {
+  position: absolute;
+  left: -29px;
+  top: 50%;
+}
+#str-sub dl.services-linklist dt.with-icon a {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px;
+  background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+}
+#str-sub dl.services-linklist dt.with-icon .adjuster {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+#str-sub dl.services-linklist dd {
+  padding: 3px 3px 3px 15px;
+  background: url("/web/shared/images/dot/dot-01.gif") repeat-x scroll 0 100% transparent;
+}
+#str-sub dl.services-linklist dd:last-child {
+  background-image: none;
+}
+#str-sub dl.services-linklist dd.with-icon {
+  padding: 3px;
+}

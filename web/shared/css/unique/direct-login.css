@@ -1,0 +1,555 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. login
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. login
+----------------------------------------------------------------- */
+body#direct-login div#str-contents{
+padding-top:1em;
+}
+
+body#direct-login.lyt-column-smc div#str-contents{
+padding-top:0;
+}
+
+body.lyt-column-m div#str-main div.login,
+body.lyt-column-smc div#str-main div.login{
+margin:0 auto 10px;
+padding:3px;
+border:1px solid #e0e0e0;
+width:511px;
+background-color:#ffffff;
+text-align:center;
+}
+
+body.lyt-column-m div#str-main div.login-note,
+body.lyt-column-smc div#str-main div.login-note{
+margin:0 auto 10px;
+padding:3px;
+width:511px;
+background-color:#ffffff;
+text-align:left;
+}
+
+body.lyt-column-m div#str-main div.login div.login-inner,
+body.lyt-column-smc div#str-main div.login div.login-inner{
+background:#7d94c9 url("/web/shared/images/str-sub-common/login-bg-01.gif") repeat 0 0;
+}
+
+body.lyt-column-m div#str-main div.login form,
+body.lyt-column-smc div#str-main div.login form{
+padding:5px 5px 15px 30px;
+position:relative;
+background:url("/web/shared/images/str-sub-common/login-bg-02.gif") repeat-x 0 100%;
+text-align:left;
+}
+
+body.lyt-column-m div#str-main div.login label,
+body.lyt-column-smc div#str-main div.login label{
+padding-right:5px;
+color:#ffffff;
+line-height:2;
+font-weight:bold;
+font-size:12px;
+}
+
+body.lyt-column-m div#str-main div.login p,
+body.lyt-column-smc div#str-main div.login p{
+margin:0 0 5px;
+}
+
+body.lyt-column-m div#str-main div.login input#form-login-id,
+body.lyt-column-smc div#str-main div.login input#form-login-id,
+body.lyt-column-m div#str-main div.login input#form-login-pass,
+body.lyt-column-smc div#str-main div.login input#form-login-pass{
+padding:1px;
+border:1px solid #7f9db9;
+width:110px;
+}
+
+body.lyt-column-m div#str-main div.login input#form-login-id,
+body.lyt-column-smc div#str-main div.login input#form-login-id{
+margin:10px;
+}
+
+body.lyt-column-m div#str-main fieldset#login ul,
+body.lyt-column-smc div#str-main fieldset#login ul{
+margin:0 20px 10px 0;
+text-align:center;
+}
+
+body.lyt-column-m div#str-main fieldset#login ul li,
+body.lyt-column-smc div#str-main fieldset#login ul li{
+padding-right:5px;
+display:inline;
+}
+
+body.lyt-column-m div#str-main ul.login-help,
+body.lyt-column-smc div#str-main ul.login-help{
+margin:0 15px 0 0;
+padding-top:15px;
+text-align:center;
+}
+
+body.lyt-column-m div#str-main ul.login-help li,
+body.lyt-column-smc div#str-main ul.login-help li{
+display:inline;
+}
+
+body.lyt-column-m div#str-main ul.login-help li img,
+body.lyt-column-smc div#str-main ul.login-help li img{
+padding-right:10px;
+}
+
+body#direct-login div#str-main div.box-login{
+margin:20px auto 50px;
+width:auto;
+}
+
+body#direct-login-fx div#str-main div.section-01{
+width:700px;
+margin:0 auto;
+}
+
+body#direct-login-fx div#str-contents-inner{
+padding-bottom:20px;
+}
+
+
+body.lyt-column-m div#str-main div.attention-box{
+width:525px;
+margin:0 auto;
+}
+
+body.lyt-column-m div#str-main div.attention-box p{
+padding:20px;
+border:1px solid #d23100;
+background:#fff3ee;
+text-align:center;
+}
+
+body.lyt-column-m div#str-main div.attention-list-box{
+width:525px;
+margin:0 auto;
+}
+
+
+
+/* ----------------------------------------------------------------
+	Inquiry Component
+----------------------------------------------------------------- */
+div#str-main div.box-inquiry-01{
+width:515px;
+margin:0 auto 3em;
+padding:1px;
+border:1px solid #b7b7b7;
+background-color:#ffffff;
+}
+
+div#str-main div.box-inquiry-01 div.box-inner-01{
+padding:10px;
+border:1px solid #dedede;
+}
+
+div#str-main div.box-inquiry-01 h3{
+padding-bottom:10px;
+font-size:87.5%;
+text-align:center;
+}
+
+div#str-main div.box-inquiry-01 p.tel-number{
+margin-bottom:10px;
+padding:7px;
+background-color:#e9eaed;
+font-size:153.8%;
+font-weight:bold;
+text-align:center;
+}
+
+div#str-main div.box-inquiry-01 p.tel-number img{
+vertical-align:middle;
+}
+
+div#str-main div.box-inquiry-01 dl.schedule{
+margin:0 0 0 80px;
+}
+
+div#str-main div.box-inquiry-01 dl.schedule dt{
+float:left;
+width:5em;
+}
+
+div#str-main div.box-inquiry-01 dl.schedule dd{
+padding-left:5.5em;
+}
+
+div#str-main div.box-inquiry-01 p{
+margin:0;
+text-align:center;
+}
+
+div#str-main div.box-inquiry-01 ul.list-notice-inquiry{
+margin:0;
+padding:10px 0 0 20px;
+}
+
+div#str-main div.box-inquiry-01 ul.list-notice-inquiry li{
+padding-left:1.5em;
+position:relative;
+color:#d23100;
+font-size:87.5%;
+}
+
+div#str-main div.box-inquiry-01 ul.list-notice-inquiry li span{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#str-main div.lyt-inquiry-01{
+width:558px;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01{
+margin-right:13px;
+float:left;
+width:262px;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 dl.schedule{
+margin:0;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 ul.list-notice-inquiry{
+padding-left:0;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01{
+padding-left:12px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:link,
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:visited{
+text-decoration:none;
+}
+
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:active,
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:hover,
+div#str-main div.lyt-inquiry-01 div.box-inquiry-01 p.link-inqury-01 a:focus{
+text-decoration:underline
+}
+
+/* ----------------------------------------------------------------
+	link-openkey
+----------------------------------------------------------------- */
+
+div#str-main div.login p.link-openkey{
+margin:0pt 7px;
+padding-left:22px;
+background:url(/web/shared/images/str-sub-common/icon-keyboard.gif) no-repeat scroll 0pt 0.3em;
+font-size:81.25%;
+text-align:left;
+}
+
+div#str-main div.login p.link-openkey a{
+color:#FFFFFF;
+}
+
+div#str-main div.login p.link-openkey a:link,
+div#str-main div.login p.link-openkey a:visited{
+text-decoration:none;
+}
+
+div#str-main div.login p.link-openkey a:active,
+div#str-main div.login p.link-openkey a:hover,
+div#str-main div.login p.link-openkey a:focus{
+text-decoration:underline;
+}
+
+/* ----------------------------------------------------------------
+	softwarekeyboard
+----------------------------------------------------------------- */
+
+#softwarekeyboard *{
+margin:0;
+padding:0;
+}
+
+#softwarekeyboard{
+position:relative
+}
+
+#keyboard {
+display:none;
+position:absolute;
+border:solid 1px #FFFFFF;
+top:-70px;
+left:320px;
+z-index:1;
+width:348px;
+}
+
+#keyboard .keyinner {
+border:solid 2px #6671b3;
+background:#FFFFFF;
+}
+
+#keyboard .keyinner table{
+margin:0;
+border:0;
+background-color:transparent;
+}
+
+#keyboard .keyinner table td{
+padding:0;
+border:0;
+}
+
+#keyboard .keyinner h2 {
+margin-top:7px;
+margin-left:7px;
+float:left;
+}
+
+#keyboard .keyinner .closeBtn {
+margin:7px 7px 0 0;
+float:right;
+cursor:pointer;
+}
+
+#keyboard .keyinner .tab:after{
+display:block;
+clear:both;
+height:0;
+line-height:1%;
+visibility:hidden;
+content:".";
+}
+
+#keyboard .keyinner .tab {
+padding-top:5px;
+padding-bottom:4px;
+width:344px;
+display:inline-block;
+clear:both;
+background: url(/web/shared/images/keyboard/keyboard_tab_line.gif) repeat-x bottom;
+zoom:1;
+}
+
+#keyboard .keyinner .tab ul{
+margin:0 0 0 2px;
+padding:0;
+list-style:none;
+float:left;
+}
+
+#keyboard .keyinner .tab ul li{
+margin:0 0 0 5px;
+float:left;
+}
+
+#keyboard .keyinner .tab p{
+margin: 5px 12px 0 0;
+float:right;
+font-size:81.25%;
+}
+
+#keyboard .keyinner .tab p a{
+padding-left:10px;
+background:url(/web/shared/images/keyboard/arrow-01.gif) no-repeat 1px 5px;
+}
+
+
+#keyboard .keyinner .btnArea {
+padding: 7px 7px 2px 7px;
+height:272px;
+}
+
+#keyboard .keyinner .btnArea .btninner{
+margin-bottom:5px;
+padding:3px 2px 3px 3px;
+background:#dedef5;
+}
+
+#keyboard .keyinner .btnArea table {
+border-collapse:separate;
+border-spacing:5px;
+display:block;
+}
+
+
+#keyboard .keyinner .btnArea table td {
+width:27px;
+height:27px;
+padding:0;
+border: solid 5px dedef5;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+font-weight:bold;
+}
+
+#keyboard .keyinner .btnArea table td.btns {
+background:url(/web/shared/images/keyboard/keyboard_btns_bg.gif) no-repeat top left;
+cursor:pointer;
+}
+
+#keyboard .keyinner .btnArea table td.btnsover {
+background:url(/web/shared/images/keyboard/keyboard_btns_bg_ovr.gif) no-repeat top left;
+cursor:pointer;
+}
+
+#keyboard .keyinner .editBtnArea {
+background:#6671b3;
+padding: 2px 4px 0 4px;
+}
+
+#keyboard .keyinner .editBtnArea table {
+border-spacing: 10px;
+border-collapse:separate;
+}
+
+#keyboard .keyinner .editBtnArea table td {
+width:100px;
+height:27px;
+text-align:center;
+vertical-align:middle;
+font-size:14px;
+font-weight:bold;
+background:url(/web/shared/images/keyboard/keyboard_btnl_bg.gif) no-repeat top left;
+}
+
+#keyboard .keyinner .editBtnArea table td.btnl{
+cursor:pointer;
+}
+
+/* ----------------------------------------------------------------
+	2017/12/13　追記分
+----------------------------------------------------------------- */
+body.lyt-column-m div#str-main div.d2-login,
+body.lyt-column-smc div#str-main div.d2-login{
+margin:0 auto 10px;
+padding:3px;
+border:1px solid #e0e0e0;
+width:511px;
+background-color:#ffffff;
+text-align:center;
+}
+
+body.lyt-column-m div#str-main div.d2-login div.login-inner,
+body.lyt-column-smc div#str-main div.d2-login div.login-inner{
+background:#7d94c9 url("/web/shared/images/str-sub-common/login-bg-01.gif") repeat 0 0;
+}
+
+body.lyt-column-m div#str-main div.d2-login form,
+body.lyt-column-smc div#str-main div.d2-login form{
+padding:5px 5px 15px 30px;
+position:relative;
+text-align:left;
+}
+
+body.lyt-column-m div#str-main div.d2-login label,
+body.lyt-column-smc div#str-main div.d2-login label{
+padding-right:5px;
+color:#ffffff;
+line-height:2;
+font-weight:bold;
+font-size:12px;
+}
+
+body.lyt-column-m div#str-main div.d2-login p,
+body.lyt-column-smc div#str-main div.d2-login p{
+margin:0 0 5px;
+}
+
+body.lyt-column-m div#str-main div.d2-login input#form-login-id,
+body.lyt-column-smc div#str-main div.d2-login input#form-login-id,
+body.lyt-column-m div#str-main div.d2-login input#form-login-pass,
+body.lyt-column-smc div#str-main div.d2-login input#form-login-pass{
+padding:1px;
+border:1px solid #7f9db9;
+width:110px;
+}
+
+body.lyt-column-m div#str-main div.d2-login input#form-login-id,
+body.lyt-column-smc div#str-main div.d2-login input#form-login-id{
+margin:10px;
+}
+
+p.d2-link-openkey a{
+margin:0pt 7px;
+padding-left:22px;
+background:url(/web/shared/images/str-sub-common/icon-keyboard.gif) no-repeat scroll 0pt 0.3em;
+font-weight: bold;
+text-align:left;
+text-decoration:underline;
+color:#FFFFFF;
+}
+
+body.lyt-column-m div#str-main ul.d2-login-help,
+body.lyt-column-smc div#str-main ul.d2-login-help{
+margin:0 15px 0 0;
+padding-top:7px;
+text-align:center;
+}
+
+body.lyt-column-m div#str-main ul.d2-login-help li,
+body.lyt-column-smc div#str-main ul.d2-login-help li{
+display:inline;
+}
+
+body.lyt-column-m div#str-main ul.d2-login-help li img,
+body.lyt-column-smc div#str-main ul.d2-login-help li img{
+padding-right:10px;
+}
+
+/* ----------------------------------------------------------------
+	2025/9/25　追記分 passkey対応
+----------------------------------------------------------------- */
+
+div.formSeparator{
+  display: block;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin:0 auto 10px auto;
+  width: 511px;
+}
+div.formSeparator::before{
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background:#D1D1D1;
+}
+div.formSeparator span{
+  position: relative;
+  padding: 0 1em;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  color: #333;
+}
+body.lyt-column-m div#str-main div.login form.passkey-form{
+  padding: 0;
+}
+body.lyt-column-m div#str-main div.login input.passkey-btn{
+  padding: 16px 0 34px 0;
+  margin: 0 auto;
+  display: block;
+}
+body.lyt-column-m div#str-main div.login p.login-txt{
+  padding: 0 0 15px 0;
+  margin: 0;
+  text-align: center;
+}
+body.lyt-column-m div#str-main div.login p.login-txt a{
+  color: #FFFFFF;
+  background: url(/web/shared/images/str-sub-common/arrow-06.gif) no-repeat left center;
+  padding-left: 10px;
+}

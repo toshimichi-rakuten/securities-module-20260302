@@ -1,0 +1,1373 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. login
+*	02. login-fx
+*	03. entry
+*	04. biginner
+*	05. info-system
+*	06. attention
+*	07. pay
+*	08. account
+*	09. inquiry
+*	10. advertisement
+*	11. newproducts
+*	12. advertisement-inc
+*	13. bannerList
+*	14. right_portfolio
+*	15. right_sub_account
+*	16. MMF Yield
+*	17. login-01
+*	18. start
+*	19. etcetera
+*	20. right_fund
+----------------------------------------------------------------- */
+
+div#str-sub-common li a:link,
+div#str-sub-common li a:visited{
+text-decoration:none;
+}
+
+div#str-sub-common li a:active,
+div#str-sub-common li a:hover,
+div#str-sub-common li a:focus{
+text-decoration:underline;
+}
+
+/* ----------------------------------------------------------------
+	01. login
+----------------------------------------------------------------- */
+div#str-sub-common div.login{
+margin-bottom:5px;
+padding:3px;
+border:1px solid #e0e0e0;
+background-color:#ffffff;
+text-align:center;
+}
+
+div#str-sub-common div.login form{
+margin-bottom:0;
+padding:5px 0 7px;
+background:#7d94c9 url("/web/shared/images/str-sub-common/login-bg-01.gif") repeat 0 0;
+}
+
+div#str-sub-common div.login label{
+padding-right:5px;
+color:#ffffff;
+line-height:2;
+font-size:81.25%;
+font-weight:bold;
+}
+
+div#str-sub-common div.login input#form-login-id,
+div#str-sub-common div.login input#form-login-pass{
+padding:1px;
+border:1px solid #7f9db9;
+width:80px;
+}
+
+div#str-sub-common div.login input#login-btn{
+margin:2px 0;
+}
+
+div#str-sub-common div.login p.link-01{
+margin:0 7px;
+padding-left:10px;
+background:url("/web/shared/images/str-sub-common/arrow-06.gif") no-repeat 0 0.5em;
+font-size:81.25%;
+text-align:left;
+}
+
+div#str-sub-common div.login p.link-01 a{
+color:#ffffff;
+}
+
+div#str-sub-common div.login p.link-01 a:link,
+div#str-sub-common div.login p.link-01 a:visited{
+text-decoration:none;
+}
+
+div#str-sub-common div.login p.link-01 a:active,
+div#str-sub-common div.login p.link-01 a:hover,
+div#str-sub-common div.login p.link-01 a:focus{
+text-decoration:underline;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.login form{
+padding-left:10px;
+position:relative;
+text-align:left;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login form fieldset{
+padding-right:125px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login div.login-inner{
+background:#7d94c9 url("/web/shared/images/str-sub-common/login-bg-01.gif") repeat 0 0;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login input#login-btn{
+position:absolute;
+top:28px;
+right:10px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login input#fx-login-btn{
+padding:20px 0 0;
+}
+body.lyt-column-ms-02 div#str-sub-common div.login p.login-error{
+position:absolute;
+right:10px;
+bottom:15px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login p.link-01{
+margin:3px 0 0;
+}
+
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.login input#form-login-id,
+body.lyt-start div#str-sub-common div.login input#form-login-pass{
+width:125px;
+}
+
+/* ------------------------------------- */
+
+
+div#str-sub-common div.login-maintenance{
+padding-bottom:10px;
+}
+
+
+/* ----------------------------------------------------------------
+	02. login-fx
+----------------------------------------------------------------- */
+div#str-sub-common div.login-fx{
+margin-bottom:10px;
+background:url("/web/shared/images/str-sub-common/fx-bg-bottom-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub-common div.login-fx p.btn-login{
+padding:8px 5px 10px;
+background:url("/web/shared/images/str-sub-common/fx-bg-top-01.gif") no-repeat 0 0;
+color:#ffffff;
+text-align:center;
+font-size:81.25%;
+font-weight:bold;
+}
+
+div#str-sub-common div.login-fx p.btn-login img{
+padding-top:3px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.login-fx{
+background-image:url("/web/shared/images/str-sub-common/fx-bg-bottom-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login-fx p.btn-login{
+background-image:url("/web/shared/images/str-sub-common/fx-bg-top-02.gif") ;
+}
+
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.login-fx{
+background-image:url("/web/shared/images/str-sub-common/fx-bg-bottom-03.gif");
+}
+
+body.lyt-start div#str-sub-common div.login-fx p.btn-login{
+background-image:url("/web/shared/images/str-sub-common/fx-bg-top-03.gif");
+}
+/* ------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------
+	03. entry
+----------------------------------------------------------------- */
+div#str-sub-common div.entry-simple{
+margin:0 0 10px;
+text-align:center;
+}
+
+div#str-sub-common div.entry-simple p.button{
+margin:0;
+padding:0;
+}
+
+div#str-sub-common div.entry-simple p.speechballoon{
+margin-top:3px;
+}
+
+div#str-sub-common div.entry-simple ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+text-align: left;
+}
+
+div#str-sub-common div.entry-simple ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.entry-simple ul.list-link-01 li a{
+min-height:10px;
+}
+
+div#str-sub-common div.entry{
+margin-bottom:10px;
+padding:0 0 15px;
+background:url("/web/shared/images/str-sub-common/entry-bg-01.gif") no-repeat 0 100%;
+text-align:center;
+}
+
+div#str-sub-common div.entry p{
+margin-bottom:0;
+padding:12px 0 7px;
+}
+
+div#str-sub-common div.entry p.button{
+margin-bottom:10px;
+text-align:center;
+}
+
+div#str-sub-common div.entry p.entry-note{
+margin-top:3px;
+padding:0 2px;
+font-size:81.25%;
+text-align:left;
+}
+
+div#str-sub-common div.entry p img{
+padding-bottom:3px;
+}
+
+div#str-sub-common div.entry ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:156px;
+}
+
+div#str-sub-common div.entry p.visitor{
+padding:10px;
+font-size:81.25%;
+text-align:left;
+}
+
+div#str-sub-common div.entry dl.inquiry{
+margin:0 10px;
+padding:10px 5px;
+background-color:#e9eaed;
+text-align:left;
+}
+
+div#str-sub-common div.entry dl.inquiry dt{
+font-size:68.8%;
+}
+
+div#str-sub-common div.entry dl.inquiry dd{
+padding-left:35px;
+position:relative;
+font-weight:bold;
+zoom:1;
+}
+
+div#str-sub-common div.entry dl.inquiry dd img{
+position:absolute;
+top:0.25em;
+left:5px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.entry{
+padding-bottom:20px;
+background-image:url("/web/shared/images/str-sub-common/entry-bg-02.gif") ;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.entry ul{
+width:240px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.entry p.visitor{
+padding:10px 30px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.entry dl.inquiry dt{
+font-size:81.25%;
+text-align:center;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.entry dl.inquiry dd{
+padding-left:95px;
+position:relative;
+font-weight:bold;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.entry dl.inquiry dd img{
+position:absolute;
+top:0.1em;
+left:55px;
+}
+
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.entry{
+background-image:url("/web/shared/images/str-sub-common/entry-bg-03.gif") ;
+}
+
+body.lyt-start div#str-sub-common div.entry ul{
+width:210px;
+margin-bottom:10px;
+}
+
+body.lyt-start div#str-sub-common div.entry p.visitor{
+padding:10px 20px;
+}
+
+body.lyt-start div#str-sub-common div.entry dl.inquiry dt{
+font-size:81.25%;
+text-align:center;
+}
+
+body.lyt-start div#str-sub-common div.entry dl.inquiry dd{
+padding-left:60px;
+font-size:123.1%;
+}
+
+body.lyt-start div#str-sub-common div.entry dl.inquiry dd img{
+top:0.2em;
+left:20px;
+}
+
+/* ------------------------------------- */
+
+/* ----------------------------------------------------------------
+	03-2. rakuten-entry
+----------------------------------------------------------------- */
+div#str-sub-common div.rakuten-entry{
+margin-bottom:7px;
+padding:0 0 6px;
+background:url("/web/shared/images/str-sub-common/entry-bg-01.gif") no-repeat 0 100%;
+text-align:center;
+}
+
+div#str-sub-common div.rakuten-entry p{
+margin-bottom:0;
+padding:12px 0 7px;
+}
+
+div#str-sub-common div.rakuten-entry p img{
+padding-bottom:0px;
+}
+
+div#str-sub-common div.rakuten-entry ul{
+margin:0 auto;
+border-bottom:1px solid #c4c4c4;
+width:156px;
+}
+
+div#str-sub-common div.rakuten-entry p.visitor{
+padding:10px;
+font-size:81.25%;
+text-align:left;
+}
+
+div#str-sub-common div.rakuten-entry dl.inquiry{
+margin:0 10px;
+padding:10px 5px;
+background-color:#e9eaed;
+text-align:left;
+}
+
+div#str-sub-common div.rakuten-entry dl.inquiry dt{
+font-size:68.8%;
+}
+
+div#str-sub-common div.rakuten-entry dl.inquiry dd{
+padding-left:35px;
+position:relative;
+font-weight:bold;
+zoom:1;
+}
+
+div#str-sub-common div.rakuten-entry dl.inquiry dd img{
+position:absolute;
+top:0.25em;
+left:5px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.rakuten-entry{
+padding-bottom:20px;
+background-image:url("/web/shared/images/str-sub-common/entry-bg-02.gif") ;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.rakuten-entry ul{
+width:240px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.rakuten-entry p.visitor{
+padding:10px 30px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.rakuten-entry dl.inquiry dt{
+font-size:81.25%;
+text-align:center;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.rakuten-entry dl.inquiry dd{
+padding-left:95px;
+position:relative;
+font-weight:bold;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.rakuten-entry dl.inquiry dd img{
+position:absolute;
+top:0.1em;
+left:55px;
+}
+
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.rakuten-entry{
+background-image:url("/web/shared/images/str-sub-common/entry-bg-03.gif") ;
+}
+
+body.lyt-start div#str-sub-common div.rakuten-entry ul{
+width:210px;
+}
+
+body.lyt-start div#str-sub-common div.rakuten-entry p.visitor{
+padding:10px 20px;
+}
+
+body.lyt-start div#str-sub-common div.rakuten-entry dl.inquiry dt{
+font-size:81.25%;
+text-align:center;
+}
+
+body.lyt-start div#str-sub-common div.rakuten-entry dl.inquiry dd{
+padding-left:60px;
+font-size:123.1%;
+}
+
+body.lyt-start div#str-sub-common div.rakuten-entry dl.inquiry dd img{
+top:0.2em;
+left:20px;
+}
+
+/* ------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	04. biginner
+----------------------------------------------------------------- */
+div#str-sub-common div.beginner{
+margin-bottom:10px;
+background:url("/web/shared/images/str-sub-common/inquiry-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub-common div.beginner h2{
+padding-bottom:9px;
+background:url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.beginner ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:164px;
+}
+
+div#str-sub-common div.beginner ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.beginner ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.beginner ul.list-link-01 li a{
+min-height:10px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.beginner{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.beginner ul{
+width:260px;
+}
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.beginner{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-03.gif");
+}
+
+body.lyt-start div#str-sub-common div.beginner ul{
+width:210px;
+}
+/* ------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------
+	05. info-system
+----------------------------------------------------------------- */
+
+div#str-sub-common div.info-system{
+margin-bottom:10px;
+background-color:#e9ebff;
+}
+
+div#str-sub-common div.info-system h2{
+padding-bottom:9px;
+background:url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.info-system ul.list-link-01{
+margin:0 auto 10px;
+padding-bottom:10px;
+width:164px;
+}
+
+div#str-sub-common div.info-system ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.info-system ul.list-link-01 li.outside{
+padding-left:15px;
+background:url("/web/shared/images/str-sub-common/icon-outside-01.gif") no-repeat 0 5px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.info-system ul.list-link-01{
+width:260px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.login-fx p.btn-login{
+background-image:url("/web/shared/images/str-sub-common/fx-bg-top-02.gif") ;
+}
+
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.info-system ul.list-link-01{
+width:210px;
+}
+/* ------------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------------
+	06. attention
+----------------------------------------------------------------- */
+div#str-sub-common div.attention{
+margin-bottom:10px;
+background:url("/web/shared/images/str-sub-common/inquiry-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub-common div.attention h2{
+padding-bottom:9px;
+background:url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.attention ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:164px;
+}
+
+div#str-sub-common div.attention ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.attention ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.attention ul.list-link-01 li a{
+min-height:10px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.attention{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.attention ul{
+width:260px;
+}
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.attention{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-03.gif");
+}
+
+body.lyt-start div#str-sub-common div.attention ul{
+width:210px;
+}
+/* ------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	07. pay
+----------------------------------------------------------------- */
+div#str-sub-common div.pay{
+margin-bottom:10px;
+background:url("/web/shared/images/str-sub-common/inquiry-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub-common div.pay h2{
+padding-bottom:9px;
+background:url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.pay ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:164px;
+}
+
+div#str-sub-common div.pay ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.pay ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.pay ul.list-link-01 li a{
+min-height:10px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.pay{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.pay ul{
+width:260px;
+}
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.pay{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-03.gif");
+}
+
+body.lyt-start div#str-sub-common div.pay ul{
+width:210px;
+}
+/* ------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------
+	08. account
+----------------------------------------------------------------- */
+div#str-sub-common div.account{
+margin-bottom:10px;
+background:url("/web/shared/images/str-sub-common/inquiry-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub-common div.account h2{
+padding-bottom:9px;
+background:url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.account ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:164px;
+}
+
+div#str-sub-common div.account ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.account ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.account ul.list-link-01 li a{
+min-height:10px;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.account{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.account ul{
+width:260px;
+}
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.account{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-03.gif");
+}
+
+body.lyt-start div#str-sub-common div.account ul{
+width:210px;
+}
+/* ------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------
+	09. inquiry
+----------------------------------------------------------------- */
+div#str-sub-common div.inquiry{
+margin-bottom:10px;
+background:url("/web/shared/images/str-sub-common/inquiry-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub-common div.inquiry h2{
+padding-bottom:9px;
+background:url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.inquiry h3{
+margin:0 10px 5px;
+font-size:75%;
+font-weight:bold;
+}
+
+div#str-sub-common div.inquiry ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:164px;
+}
+
+div#str-sub-common div.inquiry ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.inquiry ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking{
+width:166px;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking li{
+padding:1px 0 5px 21px;
+min-height:16px;
+font-size:75%;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking li.ask1{
+background:url("/web/shared/images/str-sub-common/icon-num-01.gif") no-repeat 0px 1px;
+}
+div#str-sub-common div.inquiry ul.list-ask-ranking li.ask2{
+background:url("/web/shared/images/str-sub-common/icon-num-02.gif") no-repeat 0px 1px;
+}
+div#str-sub-common div.inquiry ul.list-ask-ranking li.ask3{
+background:url("/web/shared/images/str-sub-common/icon-num-03.gif") no-repeat 0px 1px;
+}
+
+
+
+
+
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.inquiry{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-02.gif");
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.inquiry ul{
+width:260px;
+}
+
+
+/* ------------------------------------- */
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.inquiry{
+background-image:url("/web/shared/images/str-sub-common/inquiry-bg-03.gif");
+}
+
+body.lyt-start div#str-sub-common div.inquiry ul{
+width:210px;
+}
+/* ------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	10. advertisement
+----------------------------------------------------------------- */
+div#str-sub-common div.advertisement{
+margin-bottom:10px;
+padding:3px 3px 10px;
+border:1px solid #e3e3e3;
+text-align:center;
+}
+
+div#str-sub-common div.advertisement h2{
+color:#ffffff;
+background-color:#999999;
+font-size:81.25%;
+}
+
+div#str-sub-common div.advertisement li{
+padding-top:10px;
+font-size:81.25%;
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.advertisement ul{
+margin-right:-6px;
+padding-left:4px;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.advertisement li{
+margin-right:6px;
+float:left;
+width:140px;
+text-align:left;
+}
+
+body.lyt-column-ms-02 div#str-sub-common div.advertisement li p{
+padding-top:3px;
+}
+/* ------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	11. newproducts
+----------------------------------------------------------------- */
+div#str-sub-common div.newproducts{
+margin-bottom:10px;
+padding-bottom:5px;
+background-color:#e2e2f4;
+}
+
+div#str-sub-common div.newproducts h2{
+}
+
+div#str-sub-common div.newproducts div{
+margin:5px 5px 0;
+padding:1px;
+border:1px solid #c0c0c0;
+background-color:#ffffff;
+font-size:81.25%;
+}
+
+div#str-sub-common div.newproducts h3{
+padding:7px 7px 5px;
+background:#d9d9d9 url("/web/shared/images/str-sub-common/newproducts-bg-other.gif") repeat-x 0 0;
+font-size:95%;
+}
+
+div#str-sub-common div.newproducts p{
+padding:2px 10px;
+font-weight:bold;
+}
+
+div#str-sub-common div.newproducts li{
+padding:3px 7px;
+background:url("/web/shared/images/str-sub-common/dot-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.newproducts li a{
+padding-left:9px;
+display:block;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-05.gif") no-repeat 0 7px;
+}
+
+div#str-sub-common div.newproducts li a img{
+vertical-align:baseline;
+}
+
+/* ---- ss ---------------------------------------------------- */
+div#str-sub-common div.newproducts div.ss{
+border-color:#e3bbbb;
+}
+
+div#str-sub-common div.newproducts div.ss h3{
+background-image:url("/web/shared/images/str-sub-common/newproducts-bg-ss.gif");
+}
+
+div#str-sub-common div.newproducts div.ss p{
+color:#d23100;
+}
+
+div#str-sub-common div.newproducts div.ss li a{
+background-image:url("/web/shared/images/str-sub-common/arrow-02.gif");
+}
+
+/* ---- ss ---------------------------------------------------- */
+div#str-sub-common div.newproducts div.foreign{
+border-color:#a7c49e;
+}
+
+div#str-sub-common div.newproducts div.foreign h3{
+background-image:url("/web/shared/images/str-sub-common/newproducts-bg-foreign.gif");
+}
+
+div#str-sub-common div.newproducts div.foreign p{
+color:#34731e;
+}
+
+div#str-sub-common div.newproducts div.foreign li a{
+background-image:url("/web/shared/images/str-sub-common/arrow-03.gif");
+}
+
+/* ---- ss ---------------------------------------------------- */
+div#str-sub-common div.newproducts div.etf{
+border-color:#9eaddb;
+}
+
+div#str-sub-common div.newproducts div.etf h3{
+background-image:url("/web/shared/images/str-sub-common/newproducts-bg-etf.gif");
+}
+
+div#str-sub-common div.newproducts div.etf p{
+color:#2d47a4;
+}
+
+div#str-sub-common div.newproducts div.etf li a{
+background-image:url("/web/shared/images/str-sub-common/arrow-04.gif");
+}
+
+
+/* ----------------------------------------------------------------
+	12. advertisement-inc
+----------------------------------------------------------------- */
+div#str-sub-common div.advertisement-inc{
+margin-bottom:10px;
+}
+
+div#str-sub-common div.advertisement-inc .pr-bar{
+text-align:center;
+font-size:12px;
+}
+
+div#str-sub-common div.advertisement-inc table{
+margin:auto;
+}
+
+
+/* ----------------------------------------------------------------
+	13. bannerList
+----------------------------------------------------------------- */
+div#str-sub-common ul.list-bn-01 li{
+margin-bottom:10px;
+}
+
+/* ----------------------------------------------------------------
+	14. right_portfolio
+----------------------------------------------------------------- */
+div#str-sub-common div.right_portfolio {
+	font-size: 82%;
+	line-height: 1.2;
+	color: #444444;
+	margin-bottom:5px;
+	padding: 3px 0 0;
+	border-bottom:1px solid #bbbbbb;
+	background:#FFFFFF url(/web/shared/images/myraku/bg_myrakuten180.gif) no-repeat scroll 0 0;
+}
+
+/* head */
+div#str-sub-common div.right_portfolio #head {
+	padding: 5px 10px 0;
+}
+div#str-sub-common div.right_portfolio #head p {
+	color: #bf0000;
+	font-weight: bold;
+	text-align: left;
+}
+
+div#str-sub-common div.right_portfolio div.inner_portfolio {
+	font-size: 90%;
+	border:1px solid #e0e0e0;
+	margin:5px;
+	padding: 5px;
+	background:#FFFFFF
+}
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.right_portfolio {
+	background:#FFFFFF url(/web/shared/images/myraku/bg_myrakuten300.gif) no-repeat scroll 0 0;
+}
+
+/* ----------------------------------------------------------------
+	15. right_sub_account
+----------------------------------------------------------------- */
+div#str-sub-common div.right_sub_account{
+font-size: 82%;
+line-height: 1.2;
+color: #444444;
+margin-bottom:5px;
+padding: 3px 5px 5px;
+border-bottom:1px solid #bbbbbb;
+background:#FFFFFF url(/web/shared/images/myraku/bg_myrakuten180.gif) no-repeat scroll 0 0;
+}
+
+div#str-sub-common div.right_sub_account .head{
+padding: 5px;
+}
+
+div#str-sub-common div.right_sub_account .head p{
+color: #bf0000;
+font-weight: bold;
+text-align: left;
+}
+
+div#str-sub-common div.right_sub_account .text {
+font-size: 90%;
+padding:0 5px 5px;
+}
+
+div#str-sub-common div.right_sub_account table {
+width:100%;
+border:1px solid #e0e0e0;
+}
+
+div#str-sub-common div.right_sub_account table tr{
+background:#fff;
+}
+
+div#str-sub-common div.right_sub_account table tr.even{
+background:#E9EAED;
+}
+
+div#str-sub-common div.right_sub_account table th{
+padding:4px 6px;
+text-align:left;
+font-size: 90%;
+font-weight:normal;
+}
+
+div#str-sub-common div.right_sub_account table td{
+padding:4px 6px;
+text-align:center;
+}
+
+div#str-sub-common div.right_sub_account ul.list-link-01{
+margin-bottom:0;
+padding:0 0 5px 5px;
+border-bottom:none;
+font-size: 90%;
+}
+
+div#str-sub-common div.right_sub_account ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 5px;
+}
+
+div#str-sub-common div.right_sub_account ul.list-link-01 li a{
+min-height:10px;
+}
+
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-sub-common div.right_sub_account{
+background:#FFFFFF url(/web/shared/images/myraku/bg_myrakuten300.gif) no-repeat scroll 0 0;
+}
+
+/* ----------------------------------------------------------------
+	16. MMF Yield
+----------------------------------------------------------------- */
+
+div#str-sub-common div.mmf-yield{
+margin-bottom:10px;
+padding:2px;
+border-right:1px solid #97a2e9;
+border-bottom:1px solid #97a2e9;
+border-left:1px solid #97a2e9;
+background-color:#dfdfdf;
+}
+
+div#str-sub-common p.updated-date{
+padding:3px 6px 2px;
+border-bottom:2px solid #dfdfdf;
+background:#fff;
+font-size:68.8%;
+}
+
+div#str-sub-common table.mmf-yield-table{
+width:100%;
+background:#fff;
+}
+
+div#str-sub-common table.mmf-yield-table td,
+div#str-sub-common table.mmf-yield-table th{
+font-size:75.5%;
+padding:5px 2px;
+}
+
+div#str-sub-common table.mmf-yield-table td.value{
+text-align:right;
+font-weight:bold;
+color:#bf0000;
+}
+
+div#str-sub-common table.mmf-yield-table tr{
+background:#fff url(/web/shared/images/str-sub-common/mmf-bg-tr.gif) bottom repeat-x;
+}
+
+div#str-sub-common p.mmf-note{
+padding:4px 6px;
+border-top:2px solid #dfdfdf;
+background:#fff;
+color:#666;
+font-size:68.8%;
+line-height:1.2;
+}
+
+/* ----------------------------------------------------------------
+	17. login-01
+----------------------------------------------------------------- */
+div#str-sub-common div.login-01{
+background: url("/web/shared/images/str-sub-common/login-01-bg-01.gif") no-repeat scroll 0 0 #FFFFFF;
+border-bottom:1px solid #BBBBBB;
+color:#444444;
+line-height:1.2;
+margin-bottom:5px;
+padding:3px 0 0;
+}
+
+div#str-sub-common div.login-01 h2{
+padding:5px 10px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.login-01 form fieldset{
+/*padding:8px 5px 0;
+background: url("/web/shared/images/str-sub-common/login-01-bg-02.jpg") no-repeat 3px 0;
+min-height:118px;*/
+/* 2011.12.14 style change */
+padding:6px 5px 0;
+background:url(/web/shared/images/str-sub-common/login-01-bg-03.gif) no-repeat 3px 0;
+min-height:140px;
+}
+
+div#str-sub-common div.login-01 label{
+margin-left:10px;
+padding-right:5px;
+line-height:1.7;
+font-size:81.25%;
+font-weight:bold;
+}
+
+div#str-sub-common div.login-01 input#form-login-id,
+div#str-sub-common div.login-01 input#form-login-pass{
+padding:1px;
+border:1px solid #7f9db9;
+width:80px;
+}
+
+div#str-sub-common div.login-01 p.link-openkey {
+background:url("/web/shared/images/str-sub-common/icon-keyboard.gif") no-repeat scroll 0 0.3em transparent;
+font-size:81.25%;
+margin:5px 7px;
+padding-left:22px;
+text-align:left;
+}
+
+div#str-sub-common div.login-01 p.link-openkey a:link,
+div#str-sub-common div.login-01 p.link-openkey a:visited{
+text-decoration:none;
+}
+
+div#str-sub-common div.login-01 p.link-openkey a:active,
+div#str-sub-common div.login-01 p.link-openkey a:hover,
+div#str-sub-common div.login-01 p.link-openkey a:focus{
+text-decoration:underline;
+}
+
+div#str-sub-common div.login-01 input#login-btn{
+margin:0 8px;
+}
+
+
+div#str-sub-common div.login-01 p.fx-btn{
+	margin-bottom:3px;
+	text-align:center;
+}
+
+div#str-sub-common div.login-01 p.cfd-btn{
+	margin-bottom:8px;
+	text-align:center;
+}
+
+div#str-sub-common div.login-01 ul.list-link-01{
+margin:auto 8px 8px 10px;
+}
+
+div#str-sub-common div.login-01 ul.list-link-01 li{
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat scroll 0 5px transparent;
+font-size:81.25%;
+margin-bottom:0.1em;
+min-height:15px;
+padding-left:10px;
+}
+
+/* ----- lyt-start --------------------- */
+body.lyt-start div#str-sub-common div.login-01 input#form-login-id,
+body.lyt-start div#str-sub-common div.login-01 input#form-login-pass{
+width:125px;
+}
+
+/* ------------------------------------- */
+
+
+div#str-sub-common div.login-maintenance{
+padding-bottom:10px;
+}
+
+/* ----------------------------------------------------------------
+	18. start
+----------------------------------------------------------------- */
+div#str-sub-common div.start{
+background: url("/web/shared/images/str-sub-common/start-bg-01.gif") no-repeat scroll 0 0 #FFFFFF;
+border-bottom:1px solid #BBBBBB;
+color:#444444;
+line-height:1.2;
+margin-bottom:5px;
+padding:3px 0 0;
+}
+
+div#str-sub-common div.start h2{
+margin:3px auto 5px 6px;
+}
+
+div#str-sub-common div.start ul.list-btn{
+margin:0 12px 3px 12px;
+}
+
+div#str-sub-common div.start ul.list-btn li{
+}
+
+div#str-sub-common div.start p.list-bnr{
+margin:0 12px 10px 12px;
+}
+
+
+/* ----------------------------------------------------------------
+	19. etcetera
+----------------------------------------------------------------- */
+div#str-sub-common div.etcetera{
+background: url("/web/shared/images/str-sub-common/etcetera-bg-01.gif") no-repeat scroll 0 0 #FFFFFF;
+border-bottom:1px solid #BBBBBB;
+color:#444444;
+line-height:1.2;
+margin-bottom:5px;
+padding:0;
+}
+
+div#str-sub-common div.etcetera h2{
+padding-bottom:9px;
+}
+
+div#str-sub-common div.etcetera ul{
+margin:0 auto 10px;
+width:164px;
+}
+
+div#str-sub-common div.etcetera ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.etcetera ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.etcetera ul.list-link-01 li a{
+min-height:10px;
+}
+
+/* ----------------------------------------------------------------
+	20. right_fund
+----------------------------------------------------------------- */
+div#str-sub-common div.right_fund{
+background: url("/web/shared/images/str-sub-common/right_fund-bg01.gif") no-repeat scroll 0 0 #FFFFFF;
+border-bottom:1px solid #BBBBBB;
+color:#444444;
+line-height:1.2;
+margin-bottom:5px;
+padding:3px 0 0;
+}
+
+div#str-sub-common div.right_fund h2{
+padding:5px 6px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.right_fund div.inner_fund {
+font-size:81.25%;
+border:1px solid #e0e0e0;
+margin: 0 5px 5px 5px;
+padding: 5px;
+background:#fffee9;
+}
+
+div#str-sub-common div.right_fund div.inner_fund dl dt {
+margin-top: 7px;
+}
+div#str-sub-common div.right_fund div.inner_fund dl dd {
+min-height: 34px;
+_height: 34px;
+margin-top: -34px;
+padding-left: 30px;
+}
+div#str-sub-common div.right_fund div.inner_fund dl dt.first-child {
+margin-top: 0;
+}
+
+div#str-sub-common div.right_fund div.inner_fund dl dt img {
+border: solid 1px #CCCCCE;
+}

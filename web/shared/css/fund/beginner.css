@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: navi.css for
+ /web/fund/saving/choice.html
+CSS file usage: override for beginner.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: beginner/indes.html
+----------------------------------------------------------------*/
+div#str-main  div.beginner1{
+background: url("/web/fund/beginner/images/beginner-base01.gif") no-repeat 0 0;
+padding:10px 0 0 12px;
+margin: 0 0 10px 0;
+}
+div #str-main div.beginner1 .cntnts_left{
+float: left;
+width: 250px;
+}
+
+div #str-main div .beginner1 .cntnts_right{
+width: 250px;
+margin: 15px 0 0 270px;
+}
+div#str-main  div.beginner2{
+margin: -5px 0 3px 0;
+background: url("/web/fund/beginner/images/beginner-base01.gif") no-repeat 0 0;
+padding:10px 0 0 12px;
+clear: both;
+}
+div#str-main  div.beginner3{
+margin: 13px 0 0 0;
+background: url("/web/fund/beginner/images/beginner-base02.gif") no-repeat 0 0;
+padding:10px 0 0 12px;
+}
+div#str-main  div.column {
+margin-left: 200px;
+}
+div#str-main  div.column p.lead{
+margin: 0 10px 5px 5px;
+background: url("/web/fund/beginner/images/beginner-line02.gif") no-repeat 0 0;
+padding-left: 10px;
+padding-bottom: 4px;
+border-bottom:1px solid #3f4da2;
+font-size: 80%;
+}
+div#str-main  div.column p.lead span{
+display:block;
+font-size: 170%;
+font-weight:bold;
+line-height:1.1em;
+}
+div#str-main  div.beginner3 .right{
+float: right;
+padding: 0 15px 0 10px;
+}
+div#str-main  div.beginner3 .box-banner-01{
+text-align:center;
+margin: 5px 0 0 0;
+}
+div#str-main  div.beginner3 .box-banner-01 img{
+margin: 0 0 35px 0;
+}
+div#str-main .cara-int{
+background:none;
+font-size: 0.9em;
+margin: -15px 0 5px 0;
+}
+div#str-main .cara-int a{
+background:none;
+}
+
+div#str-main  div.beginner1 .list-link-01{
+margin: 0 0 0 15px;
+}
+div#str-main  div.beginner2 .list-link-01{
+margin: 0 0 0 20px;
+}
+div#str-main  div.beginner3 .list-link-01{
+margin: 0 0 0 20px;
+}
+
+div#str-main  div.beginner1 .list-link-01 li{
+font-size: 0.9em;
+}
+div#str-main  div.beginner2 .list-link-01 li{
+font-size: 0.9em;
+width: 235px;
+float: left;
+}
+div#str-main  div.beginner3 .list-link-01 li{
+font-size: 0.9em;
+}

@@ -1,0 +1,435 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. str-contents
+*	02. beginner
+*	03. member
+*	04. Unordered List Module
+*	05. Definition List Module
+*	06. Link List Module
+*	07. Layout Column Module
+*	08. Table Module
+*	09. Box Module
+*	10. advertisement
+*	11. Layout Images Module
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. str-contents
+----------------------------------------------------------------- */
+body#top div#str-contents{
+padding-top:10px;
+}
+
+body#top div#str-main{
+padding-right:4px;
+width:766px;
+}
+
+body#top div#str-main div.lyt-column-top{
+padding-right:11px;
+float:left;
+width:372px;
+overflow:hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	02. beginner
+----------------------------------------------------------------- */
+body#top div#str-main div.box-replace{
+position:relative;
+}
+
+body#top div#str-main div.beginner{
+margin-bottom:0.5em;
+padding:15px;
+height:212px;
+background:url("/web/images/index-bg-02.jpg") no-repeat 0 0;
+}
+
+body#top div#str-main div.beginner li{
+position:absolute;
+}
+
+body#top div#str-main div.beginner li.option{
+top:62px;
+left:65px;
+}
+
+body#top div#str-main div.beginner li.products{
+top:116px;
+left:18px;
+}
+
+body#top div#str-main div.beginner li.step{
+top:116px;
+left:186px;
+}
+
+body#top div#str-main div.beginner li.commission{
+top:153px;
+left:18px;
+}
+
+body#top div#str-main div.beginner li.case{
+top:153px;
+left:186px;
+}
+
+body#top div#str-main div.beginner li.marketspeed{
+top:192px;
+left:18px;
+}
+
+body#top div#str-main div.beginner li.demo{
+top:192px;
+left:186px;
+}
+
+/* ----------------------------------------------------------------
+	03. member
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+ 	04. Unordered List Module
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	05. Definition List Module
+----------------------------------------------------------------- */
+body#top div#str-main dl.list-guide,
+body#top div#str-main dl.list-report{
+margin:0 5px 5px;
+padding:5px 10px;
+min-height:50px;
+background:url("/web/images/index-bg-01.gif") repeat 0 0;
+}
+
+body#top div#str-main dl.list-guide dt{
+padding-left:75px;
+position:relative;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 60px 6px;
+}
+
+body#top div#str-main dl.list-guide dt a{
+font-weight:bold;
+}
+
+body#top div#str-main dl.list-guide dt img{
+position:absolute;
+top:0;
+left:0;
+}
+
+body#top div#str-main dl.list-guide dt a:link,
+body#top div#str-main dl.list-guide dt a:visited{
+text-decoration:none;
+}
+
+
+body#top div#str-main dl.list-guide dt a:active,
+body#top div#str-main dl.list-guide dt a:hover,
+body#top div#str-main dl.list-guide dt a:focus{
+text-decoration:underline;
+}
+
+
+body#top div#str-main dl.list-guide dd{
+padding:0 0 20px 60px;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 82%;
+}
+
+body#top div#str-main dl.list-guide dd.last-child{
+padding-bottom:5px;
+background-image:none;
+}
+
+body#top div#str-main dl.list-report dt{
+padding-left:60px;
+position:relative;
+font-weight:bold;
+}
+
+body#top div#str-main dl.list-report dt img{
+position:absolute;
+top:0;
+left:0;
+}
+
+body#top div#str-main dl.list-report dd{
+padding:0 0 20px 60px;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 82%;
+}
+
+body#top div#str-main dl.list-report dd.last-child{
+padding-bottom:5px;
+background-image:none;
+}
+
+body#top div#str-main dl.list-feature{
+padding:0 5px;
+min-height:100px;
+}
+
+body#top div#str-main dl.list-feature dt{
+padding:0 0 10px 110px;
+position:relative;
+font-size:107.7%;
+font-weight:bold;
+}
+
+body#top div#str-main dl.list-feature dt img{
+position:absolute;
+top:0;
+left:0;
+}
+
+body#top div#str-main dl.list-feature dd{
+padding-left:110px;
+}
+
+body#top div#str-main dl.list-feature dd p.nav-more{
+text-align:right;
+}
+
+body#top div#str-main dl.list-feature dd p.nav-more a{
+padding-left:15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 2px;
+}
+
+body#top div#str-main dl.list-feature dd p.nav-more a:link,
+body#top div#str-main dl.list-feature dd p.nav-more a:visited{
+text-decoration:none;
+}
+
+body#top div#str-main dl.list-feature dd p.nav-more a:active,
+body#top div#str-main dl.list-feature dd p.nav-more a:hover,
+body#top div#str-main dl.list-feature dd p.nav-more a:focus{
+text-decoration:underline;
+}
+
+/* ie6 */
+*html body#top div#str-main dl.list-guide{
+height:50px;
+}
+
+*html body#top div#str-main dl.list-feature{
+height:100px;
+}
+
+
+/* ----------------------------------------------------------------
+ 	06. Link List Module
+----------------------------------------------------------------- */
+body#top div#str-main ul.list-link-01 li{
+padding-left:10px;
+}
+
+body#top div#str-main ul.list-link-01 li.outside{
+padding-left:15px;
+}
+
+body#top div#str-main ul.list-link-02 li{
+margin-bottom:0.5em;
+line-height:1.3;
+}
+
+body#top div#str-main ul.list-link-02 li a{
+font-weight:bold;
+}
+
+body#top div#str-main ul.list-link-02 li p{
+margin:0 0 0 1px;
+}
+
+body#top div#str-main ul.list-link-02 li p img.icon-new{
+margin-left:2px;
+vertical-align:middle;
+}
+
+body#top div#str-main ul.list-link-02 li p a{
+font-weight:normal;
+}
+
+/* ----------------------------------------------------------------
+	07. Layout Column Module
+----------------------------------------------------------------- */
+body#top div#str-main div.box-02 div.lyt-column{
+padding:0;
+width:370px;
+}
+
+body#top div#str-main div.box-02 div.column-col2 div.segment{
+margin:0;
+padding:0 5px;
+width:175px;
+}
+
+body#top div#str-main div.box-01 ul.list-col3{
+margin:0 0 10px;
+padding-left:10px;
+width:360px;
+}
+
+body#top div#str-main div.box-01 ul.list-col3 li{
+padding-left:13px;
+width:97px;
+}
+
+
+/* ----------------------------------------------------------------
+ 	08. Table Module
+----------------------------------------------------------------- */
+body#top div#str-main div.box-01 table,
+body#top div#str-main div.box-02 table{
+width:97.2%;
+}
+
+body#top div#str-main div.box-02 table th,
+body#top div#str-main div.box-02 table td{
+padding:3px 5px;
+}
+
+body#top div#str-main table tr.cell-01 th,
+body#top div#str-main table tr.cell-01 td{
+padding-bottom:0;
+background-color:#ffffff;
+background-image:none;
+}
+
+body#top div#str-main div.box-top-01 table,
+body#top div#str-main div.box-top-01 table tr.cell-01,
+body#top div#str-main div.box-top-01 table tr.cell-01 th,
+body#top div#str-main div.box-top-01 table tr.cell-01 td{
+background:none;
+}
+
+body#top div#str-main div.box-top-01 table td{
+font-weight:bold;
+}
+
+/* ----------------------------------------------------------------
+ 	09. Box Module
+----------------------------------------------------------------- */
+body#top div#str-main div.box-01,
+body#top div#str-main div.box-02{
+margin-bottom:0.5em;
+}
+
+body#top div#str-main div.box-01 p,
+body#top div#str-main div.box-01 ul,
+body#top div#str-main div.box-01 ol,
+body#top div#str-main div.box-01 dl,
+body#top div#str-main div.box-01 table,
+body#top div#str-main div.box-02 p,
+body#top div#str-main div.box-02 ul,
+body#top div#str-main div.box-02 ol,
+body#top div#str-main div.box-02 dl,
+body#top div#str-main div.box-02 table{
+margin-right:5px;
+margin-left:5px;
+}
+
+body#top div#str-main div.box-02 div.icon-type-01 .hdg-l2-02 span{
+padding-right:170px;
+}
+
+body#top div#str-main div.box-02 div.icon-type-01 ul.nav-link-01{
+margin-right:0;
+}
+
+body#top div#str-main div.box-02 div.icon-type-01 ul.nav-link-01 li{
+margin-right:5px;
+}
+
+body#top div#str-main div.box-top-01{
+margin:0 5px 5px;
+padding:5px 0 1px;
+background:url("/web/images/index-bg-01.gif") repeat 0 0;
+}
+
+/* ----------------------------------------------------------------
+ 	10. advertisement
+----------------------------------------------------------------- */
+body#top div#str-main div.advertisement{
+padding:2px;
+border:1px solid #e3e3e3;
+}
+
+body#top div#str-main div.advertisement h2{
+margin-bottom:10px;
+padding:2px 0;
+color:#ffffff;
+background-color:#999999;
+font-size:75%;
+text-align:center;
+}
+
+/*
+body#top div.super-banner{
+border-top:1px solid #cccccc;
+padding:15px 10px 2em;
+text-align:center;
+}
+*/
+
+
+/* ----------------------------------------------------------------
+	11. Layout Images Module
+----------------------------------------------------------------- */
+body#top div#str-main div.lyt-image{
+padding:0 3px;
+width:368px;
+}
+
+body#top div#str-main div.image-col1-full{
+padding:0;
+width:372px;
+}
+
+body#top div#str-main div.image-col1-full p.image{
+margin:0 0 0.6em;
+}
+
+body#top div#str-main div.image-col2 p.image{
+padding-right:4px;
+width:180px;
+}
+
+/* for IE7 */
+*:first-child+html body#top div#str-main div.image-col2 p.image img{
+padding-bottom:0px;
+}
+
+body#top div#str-main div.lyt-image p{
+margin:0 0 0.6em;
+}
+
+/* ----------------------------------------------------------------
+	12. normallist
+----------------------------------------------------------------- */
+
+div#str-sub-common div.normallist ul{
+margin:0 auto 10px;
+border-bottom:1px solid #c4c4c4;
+width:164px;
+}
+
+div#str-sub-common div.normallist ul.list-link-01{
+margin-bottom:0;
+padding-bottom:10px;
+border-bottom:none;
+}
+
+div#str-sub-common div.normallist ul.list-link-01 li{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+font-size:81.25%;
+}
+
+div#str-sub-common div.normallist ul.list-link-01 li a{
+min-height:10px;
+}
+

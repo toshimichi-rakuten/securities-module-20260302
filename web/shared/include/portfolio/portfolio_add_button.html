@@ -1,0 +1,52 @@
+<!--
+<p style="text-align:right;"><a href="javascript:addFavorite();"><img src="/web/shared/images/button/btn-favorite-01.gif" alt="お気に入り銘柄に登録"  /></a>&nbsp;
+<a href="javascript:addPortfolio();"><img src="/web/shared/images/button/btn-portfolio-01.gif" alt="ポートフォリオに登録"  /></a></p>
+-->
+
+<script type="text/javascript">
+<!--
+function addPortfolio(){
+	//検索履歴登録
+	var ricParam = '';
+	var str = location.search;
+	
+	if(str.indexOf('ric=') == -1){
+		return;
+	}
+	
+	ricParam = str.substring(str.indexOf('ric=') + 4,str.indexOf('.',str.indexOf('ric=')))
+	
+	var portfolio_add_url = '/web/portfolio/ptf_add_dscr_search_jp.html?ric=';
+	if(location.href.indexOf('us_search') > -1){
+		portfolio_add_url = '/web/portfolio/ptf_add_dscr_search_us.html?ric=';
+	}else if(location.href.indexOf('china_search') > -1){
+		portfolio_add_url = '/web/portfolio/ptf_add_dscr_search_ch.html?ric=';
+	}
+	
+	location.href = portfolio_add_url + ricParam;
+}
+
+function addFavorite(){
+	//検索履歴登録
+	var ricParam = '';
+	var str = location.search;
+	
+	if(str.indexOf('ric=') == -1){
+		return;
+	}
+	
+	ricParam = str.substring(str.indexOf('ric=') + 4,str.indexOf('.',str.indexOf('ric=')))
+	
+	var favorite_add_url = '/web/market/favorite/index_add.html?dscrCdNm=';
+	if(location.href.indexOf('us_search') > -1){
+		favorite_add_url = '/web/market/favorite/us_add.html?txtDscrCdNm=';
+	}else if(location.href.indexOf('china_search') > -1){
+		favorite_add_url = '/web/market/favorite/china_add.html?txtDscrCdNm=';
+	}
+	
+	location.href = favorite_add_url + ricParam;
+}
+
+
+// -->
+</script>

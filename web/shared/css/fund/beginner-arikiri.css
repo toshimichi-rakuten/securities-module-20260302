@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+	pageNavArea
+----------------------------------------------------------------- */
+.pageNavArea{
+position:relative;
+height:170px;
+margin-top:10px;
+margin-bottom:20px;
+background:url(/web/fund/beginner/arikiri/images/bg_pagenav.gif) bottom center no-repeat;
+}
+
+.pageNavArea h2{
+position:absolute;
+top:0;
+right:11px;
+}
+
+.pageNavArea ul.pageNav{
+zoom:1;
+position:absolute;
+top:35px;
+left:2px;
+text-indent:-9999px;
+list-style-type:none;
+width:100%;
+}
+
+.pageNavArea ul.pageNav:after{
+content:".";
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+}
+
+.pageNavArea ul.pageNav li{
+float:left;
+width:170px;
+height:59px;
+margin:0 7px 7px 0;
+}
+
+.pageNavArea ul.pageNav li a{
+display:block;
+width:170px;
+height:59px;
+outline:none;
+}
+
+.pageNavArea ul.pageNav li a.story01:link,
+.pageNavArea ul.pageNav li a.story01:visited{
+background:url(/web/fund/beginner/arikiri/images/btn_story01_o.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story01:hover,
+.pageNavArea ul.pageNav li a.story01:active{
+background:url(/web/fund/beginner/arikiri/images/btn_story01_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story02:link,
+.pageNavArea ul.pageNav li a.story02:visited{
+background:url(/web/fund/beginner/arikiri/images/btn_story02_o.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story02:hover,
+.pageNavArea ul.pageNav li a.story02:active{
+background:url(/web/fund/beginner/arikiri/images/btn_story02_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story03:link,
+.pageNavArea ul.pageNav li a.story03:visited{
+background:url(/web/fund/beginner/arikiri/images/btn_story03_o.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story03:hover,
+.pageNavArea ul.pageNav li a.story03:active{
+background:url(/web/fund/beginner/arikiri/images/btn_story03_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story04:link,
+.pageNavArea ul.pageNav li a.story04:visited{
+background:url(/web/fund/beginner/arikiri/images/btn_story04_o.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story04:hover,
+.pageNavArea ul.pageNav li a.story04:active{
+background:url(/web/fund/beginner/arikiri/images/btn_story04_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story05:link,
+.pageNavArea ul.pageNav li a.story05:visited{
+background:url(/web/fund/beginner/arikiri/images/btn_story05_o.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story05:hover,
+.pageNavArea ul.pageNav li a.story05:active{
+background:url(/web/fund/beginner/arikiri/images/btn_story05_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story06:link,
+.pageNavArea ul.pageNav li a.story06:visited{
+background:url(/web/fund/beginner/arikiri/images/btn_story06_o.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li a.story06:hover,
+.pageNavArea ul.pageNav li a.story06:active{
+background:url(/web/fund/beginner/arikiri/images/btn_story06_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li.current01{
+background:url(/web/fund/beginner/arikiri/images/btn_story01_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li.current02{
+background:url(/web/fund/beginner/arikiri/images/btn_story02_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li.current03{
+background:url(/web/fund/beginner/arikiri/images/btn_story03_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li.current04{
+background:url(/web/fund/beginner/arikiri/images/btn_story04_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li.current05{
+background:url(/web/fund/beginner/arikiri/images/btn_story05_h.gif) top center no-repeat;
+}
+
+.pageNavArea ul.pageNav li.current06{
+background:url(/web/fund/beginner/arikiri/images/btn_story06_h.gif) top center no-repeat;
+}
+
+
+div.arikiri-image-float-R p.arikiri-image{
+float:right;
+margin-left:10px;
+}

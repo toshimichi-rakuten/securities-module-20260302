@@ -1,0 +1,2070 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: custom.css for
+ /web/fund/beginner/
+ /web/fund/saving/
+CSS file usage: override for module.css, additional custom layout and style縲
+Time Stamp: 9:39 2012/03/16
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: fund - Common Elements & Custom Modules
+----------------------------------------------------------------*/
+div#str-main .clearfix:after {
+	display:block;
+	clear:both;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+	content:".";
+	font-size:0.1em;
+}
+
+.clearfix {
+	display:inline-block;
+}
+
+/* Hides from Mac-IE \*/
+* html .clearfix {
+	height:1%;
+}
+
+.clearfix {
+	display:block;
+}
+
+/* End hide from Mac-IE */
+
+/*--- btn-wide ---*/
+.btn-wide {
+	background:#c5c5c5;
+}
+
+.btn-wide a {
+	position:relative;
+	top:-2px;
+	left:-2px;
+	display:block;
+	padding:10px;
+	border:1px solid #808080;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-btn-wide.gif") repeat-x 0 100% #fff;
+	text-align:center;
+	font-size:125%;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.btn-wide .btn-link {
+	padding-right:35px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/btn-arrow.gif") no-repeat 100% 0;
+}
+
+.btn-wide .btn-link em {
+	text-decoration:underline;
+}
+
+.btn-wide .caption {
+	padding-left:5px;
+	color:#000000;
+	font-size:62%;
+	font-weight:normal;
+}
+
+/*--- H2 maintitle ---*/
+.maintitle,
+.maintitle02 {
+	position:relative;
+	height:70px;
+	line-height:1.3;
+	margin-bottom:1em;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/maintitle01.jpg") no-repeat 0 0;
+	font-size:90%;
+}
+
+.maintitle span,
+.maintitle02 span {
+	position:absolute;
+	left:61px;
+	top:50%;
+	width:430px;
+	margin-top:-1.1em;
+}
+
+.maintitle02 {
+	height:75px;
+	background-image:url("https://www.rakuten-sec.co.jp/web/fund/images/maintitle02.jpg");
+}
+
+.maintitle02 span {
+	left:93px
+}
+
+/*--- left-right navlist ---*/
+.nav-page-custom {
+	margin:2em 0;
+}
+
+.nav-page-custom li {
+	min-height:15px;
+	height:auto;
+	margin-bottom:0.2em;
+	padding-left:15px;
+	white-space:nowrap;
+}
+
+/* hack for IE6 */
+* html .nav-page-custom li {
+	height:15px;
+}
+
+.nav-page-custom .prev {
+	padding-left:9px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/arrow-02-l.gif") no-repeat 0 7px;
+}
+
+.nav-page-custom .next {
+	padding-right:9px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/arrow-02-r.gif") no-repeat 100% 7px;
+}
+
+.nav-page-custom .prev,
+.nav-page-custom .prev a {
+	display:inline;
+	float:left;
+}
+
+.nav-page-custom .next,
+.nav-page-custom .next a {
+	display:inline;
+	float:right;
+}
+
+/*--- centered navlist ---*/
+.list-link-nav {
+	margin:1.5em 0 0;
+	padding-top:10px;
+	border-top:1px solid #d9dbd0;
+	text-align:center;
+}
+
+.list-link-nav li {
+	display:inline;
+	font-size:90%;
+	white-space:nowrap;
+}
+
+.list-link-nav li a {
+	padding:3px 8px;
+	border-right:1px solid gray;
+}
+
+.list-link-nav li {
+	line-height:2;
+}
+
+*:first-child + html .list-link-nav li a,
+* html .list-link-nav li a {
+	line-height:1;
+}
+
+.list-link-nav .first a {
+	padding-left:0;
+}
+
+.list-link-nav .last a {
+	border:none
+}
+
+/*--- reference link ---*/
+div#str-main .link-ref {
+	margin-right:0;
+	text-align:right;
+}
+
+/*--- Popup conversationList ---*/
+div#str-main .list-conv {
+	margin:0;
+}
+
+/* hack for IE7 */
+*:first-child + html div#str-main dl.list-conv {
+	margin-bottom:40px;
+}
+
+/* hack for IE6 */
+* html div#str-contents-inner div#str-main dl.list-conv {
+	margin-bottom:40px;
+}
+
+/* conversationList - head part width character */
+.list-conv .popup-head {
+	position:relative;
+	clear:both;
+}
+
+.list-conv .popup-head-L {
+	display:inline;
+	float:left;/* popup-head placed left */
+	padding-left:10px
+}
+
+.list-conv .popup-head-R {
+	display:inline;
+	float:right;/* popup-head placed right */
+	padding-right:10px
+}
+
+
+/*-- conversationList - popup part --*/
+/* class:popup for large popup */
+/* class:popup-s for small popup */
+.list-conv .popup,
+.list-conv .popup-s {
+	position:relative;
+	width:405px;
+	margin-top:8px;
+	margin-bottom:40px;
+	z-index:2
+}
+
+.list-conv .popup-s {
+	width:455px;
+	margin-bottom:20px;
+}
+
+/* popup module-Middle part width background */
+/* class:popup-L for popup starting from left */
+/* class:popup-R for popup starting from right */
+.list-conv .popup-L {
+	display:inline;
+	float:right;/* popup placed right */
+	margin-right:10px;
+	display:inline;
+}
+
+.list-conv .popup-R {
+	display:inline;
+	float:left;/* popup placed left */
+	margin-left:10px;
+	display:inline;
+}
+
+/* added number 01 to 05 for for character's number */
+/* popupN-L for N's character popup starting from Left */
+/* popupN-R for N's character popup starting from Right */
+.list-conv .popup01-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-01-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup01-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-01-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup02-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-02-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup02-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-02-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup03-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-03-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup03-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-03-r.gif") repeat-y 0 0;
+}
+
+/*.list-conv .popup04-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-04-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup04-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-04-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup05-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-05-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup05-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-05-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup06-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-06-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup06-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-mid-065r.gif") repeat-y 0 0;
+}
+*/
+
+/* popup small */
+.list-conv .popup01-s-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-01-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup01-s-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-01-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup02-s-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-02-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup02-s-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-02-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup03-s-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-03-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup03-s-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-03-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup04-s-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-04-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup04-s-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-04-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup05-s-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-05-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup05-s-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-05-r.gif") repeat-y 0 0;
+}
+
+.list-conv .popup06-s-L {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-06-l.gif") repeat-y 0 0;
+}
+
+.list-conv .popup06-s-R {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-mid-06-r.gif") repeat-y 0 0;
+}
+
+/* popup module-Top part width background */
+.list-conv .popup .content,
+.list-conv .popup-s .content {
+	position:relative;
+	margin-top:-8px;
+	padding-top:10px;
+	z-index:0;
+}
+
+.list-conv .popup01-L .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-top-01-l.gif") no-repeat 0 0;
+}
+
+.list-conv .popup01-R .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-top-01-r.gif") no-repeat 0 0;
+}
+
+.list-conv .popup02-L .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-top-02-l.gif") no-repeat 0 0;
+}
+
+.list-conv .popup02-R .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-top-02-r.gif") no-repeat 0 0;
+}
+
+.list-conv .popup03-L .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-top-03-l.gif") no-repeat 0 0;
+}
+
+.list-conv .popup03-R .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-top-03-r.gif") no-repeat 0 0;
+}
+
+/* popup small */
+.list-conv .popup03-s-L .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-top-03-l.gif") no-repeat 0 0;
+}
+
+.list-conv .popup03-s-R .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-top-03-r.gif") no-repeat 0 0;
+}
+
+.list-conv .popup04-s-L .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-top-04-l.gif") no-repeat 0 0;
+}
+
+.list-conv .popup04-s-R .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-top-04-r.gif") no-repeat 0 0;
+}
+
+.list-conv .popup05-s-L .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-top-05-l.gif") no-repeat 0 0;
+}
+
+.list-conv .popup05-s-R .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-top-05-r.gif") no-repeat 0 0;
+}
+
+/* popup module-Bottom part width background */
+div#str-main .list-conv .popup .content p,
+div#str-main .list-conv .popup-s .content p {
+	position:relative;
+	min-height:80px;
+	height:auto;
+	margin-bottom:-8px;
+	padding-bottom:10px;
+}
+
+div#str-main .list-conv .popup-s .content p {
+	min-height:20px;
+}
+
+/* hack for IE6 */
+* html .list-conv .popup .content p {
+	height:80px;
+}
+
+* html .list-conv .popup-s .content p {
+	height:20px;
+}
+
+.list-conv .popup-L .content p {
+	padding:0 22px 10px 40px;
+}
+
+.list-conv .popup-R .content p {
+	padding:0 40px 10px 22px;
+}
+
+.list-conv .popup01-L .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-bottom-01-l.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup01-R .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-bottom-01-r.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup02-L .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-bottom-02-l.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup02-R .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-bottom-02-r.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup03-L .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-bottom-03-l.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup03-R .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-bottom-03-r.gif") no-repeat 0 100%;
+}
+
+/* popup small */
+.list-conv .popup03-s-L .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-bottom-03-l.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup03-s-R .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-bottom-03-r.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup04-s-L .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-bottom-04-l.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup04-s-R .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-bottom-04-r.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup05-s-L .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-bottom-05-l.gif") no-repeat 0 100%;
+}
+
+.list-conv .popup05-s-R .content p {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-popup-s-bottom-05-r.gif") no-repeat 0 100%;
+}
+
+/*---------------------------------------------------------------
+* Page: beginners TOP
+----------------------------------------------------------------*/
+body.lyt-column-ms-01 div#str-main div.mainimage {
+	margin-bottom:20px;
+	padding:102px 0 7px 7px;
+	background:#d8f4fd url("/web/fund/beginner/images/mainImage.jpg") 0 0 no-repeat;
+	border:#38c3f0 solid 1px;
+}
+
+body.lyt-column-ms-01 div#str-main div.mainimage div.memo {
+	width:550px;
+	background:url("/web/fund/beginner/images/bg_memo.gif") 0 0 repeat-y;
+}
+
+body.lyt-column-ms-01 div#str-main div.mainimage div.memo_top {
+	background:url("/web/fund/beginner/images/bg_memo_top.gif") 0 0 no-repeat;
+}
+
+body.lyt-column-ms-01 div#str-main div.mainimage div.memo p {
+	padding:18px 7px 7px 7px;
+	margin:0;
+	text-align:left;
+	line-height:1.3;
+	background:url("/web/fund/beginner/images/bg_memo_bottom.gif") 0 100% no-repeat;
+}
+
+body.lyt-column-ms-01 div#str-main p span a {
+	display:inline;
+	float:right;
+}
+
+body.lyt-column-ms-01 div#str-main div.beginner {
+	width:755px;
+	margin-bottom:15px;
+	overflow:hidden; /*clearfix*/
+	zoom:1; /*clearfix*/
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox {
+	display:inline;
+	float:left;
+	width:370px;
+	margin-right:15px;
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox.mrnone {
+	margin-right:0;
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox div.image {
+	display:inline;
+	float:left;
+	width:100px;
+	border:#c0c0c0 solid 1px;
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox div.column {
+	margin-left:105px;
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox div.column ul.check {
+	margin-bottom:5px;
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox div.column ul.check li {
+	padding-left:20px;
+	background:url("/web/fund/beginner/images/icon_check.gif") 0 0 no-repeat;
+}
+
+body.lyt-column-ms-01 div#str-main div.columnBox div.column p.lead {
+	margin-bottom:5px; /*overwrite*/
+	font-weight:bold;
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-03-odd {
+	margin-bottom:15px;
+}
+
+body.lyt-column-ms-01 div#str-main div.list-index-03-odd ul li {
+	margin-bottom:0;
+	font-size:90%;
+}
+
+body.lyt-column-ms-01 div#str-main ul.list-image-01 {
+	text-align:center;
+}
+
+body.lyt-column-ms-01 div#str-main ul.list-image-01 li {
+	margin:0 5px;
+}
+
+/*---------------------------------------------------------------
+ Page: about TOP, about Safety, about Merit, about BankSaving
+----------------------------------------------------------------*/
+/* feature content module */
+div#str-contents-inner div#str-main div.cmod-feature {
+	position:relative;
+}
+
+.cmod-feature .list-feature {
+	margin-bottom:0;
+	list-style-type:none;
+}
+
+.cmod-feature .list-feature li {
+	position:absolute;
+	width:210px;
+	line-height:1.2;
+	font-weight:bold;
+}
+
+.cmod-feature .list-feature .child01,
+.cmod-feature .list-feature .child03 {
+	left:65px;
+}
+
+.cmod-feature .list-feature .child02,
+.cmod-feature .list-feature .child04 {
+	left:315px;
+}
+
+.cmod-feature .list-feature .child01,
+.cmod-feature .list-feature .child02 {
+	top:68px;
+}
+
+.cmod-feature .list-feature .child03,
+.cmod-feature .list-feature .child04 {
+	top:118px;
+}
+
+.cmod-feature .list-feature .child04 {
+	top:111px;
+}
+
+div#str-main div.cmod-feature02 {
+	margin-bottom:10px;
+	border:1px solid #cccccc;
+}
+
+.cmod-feature02 .subtitle {
+	margin:1px;
+	padding:3px 5px;
+	font-size:90%;
+	background:#cccccc;
+	text-align:center;
+}
+
+/* subtitle01 with background */
+div#str-main h3.subtitle01 {
+	min-height:25px;
+	height:auto;
+	margin-bottom:10px;
+	padding:5px 95px 5px 40px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/subtitle01.gif") no-repeat 0 0;
+}
+
+/* hack for IE6 */
+* html div#str-main h3.subtitle01 {
+	height:35px;
+}
+
+/* 3column custom */
+div#str-contents-inner div#str-main div.list-index-03-odd.list-index-custom {
+	padding-bottom:0;
+}
+
+div#str-main div.lyt-column.column-col3-custom div.segment {
+	width:171px;
+	padding-bottom:3px;
+	border:1px solid #BFBFC0;
+	background:url("/web/shared/images/bg-modules/bg-list-index-02.gif") no-repeat 0 100%;
+}
+
+div#str-contents-inner div#str-main div.list-index-03-odd.list-index-custom ul.type-01 li dl {
+	padding:0;
+}
+
+div#str-main div.list-index-custom ul.type-01 li dl dt {
+	padding:3px 0 2px;
+	border-bottom:1px solid #CACDD9;
+	text-align:center;
+}
+
+div#str-main div.list-index-custom ul.type-01 li dl.nb1 dt {
+	color:#056363;
+	background:#B3E9ED;
+}
+
+div#str-main div.list-index-custom ul.type-01 li dl.nb2 dt {
+	color:#633B0C;
+	background:#F8D6AE;
+}
+
+div#str-main div.list-index-custom ul.type-01 li dl.nb3 dt {
+	color:#514704;
+	background:#FEFFBE;
+}
+
+div#str-main div.list-index-custom ul.type-01 li dl dd {
+	padding:7px
+}
+
+/* pagelink nav */
+.nav-custom {
+	position:relative;
+	margin-bottom:1em;
+	padding-top:4px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-navbox-top.gif") no-repeat 0 0;
+}
+
+.nav-custom .content {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-navbox-mid.gif") repeat-y 0 0;
+}
+
+.nav-custom .list-nav-custom {
+	position:relative;
+	margin-left:0;
+	margin-bottom:-7px;
+	padding:10px 0 17px;
+	list-style-type:none;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-navbox-bottom.gif") no-repeat 0 100%;
+}
+
+.nav-custom .list-nav-custom li {
+	margin-left:14px;
+	margin-bottom:0.5em;
+	padding-left:70px;
+}
+
+.content-demerit .nav-custom .list-nav-custom li {
+	padding-left:80px;
+}
+
+.nav-custom ol.list-nav-custom .me01 {
+	background:url("/web/fund/beginner/about/images/me01.gif") no-repeat 0 center;
+}
+
+.nav-custom .list-nav-custom .me02 {
+	background:url("/web/fund/beginner/about/images/me02.gif") no-repeat 0 center;
+}
+
+.nav-custom .list-nav-custom .me03 {
+	background:url("/web/fund/beginner/about/images/me03.gif") no-repeat 0 center;
+}
+
+.nav-custom .list-nav-custom .me04 {
+	background:url("/web/fund/beginner/about/images/me04.gif") no-repeat 0 center;
+}
+
+.nav-custom .list-nav-custom .dem01 {
+	background:url("/web/fund/beginner/about/images/dem01.gif") no-repeat 0 center;
+}
+
+.nav-custom .list-nav-custom .dem02 {
+	background:url("/web/fund/beginner/about/images/dem02.gif") no-repeat 0 center;
+}
+
+/* content merit */
+/* subtitle02 with background */
+.subtitle02 {
+	min-height:35px;
+	height:auto;
+	line-height:2.5;
+	margin-top:2em;
+	margin-bottom:.5em;
+	padding-left:45px;
+	color:#025476;
+	font-size:90%;
+}
+
+/* hack for IE6 */
+* html .subtitle02 {
+	height:35px;
+}
+
+#merit01 {
+	background:url("/web/fund/beginner/about/images/me-count01.gif") no-repeat 0 center;
+}
+
+#merit02 {
+	background:url("/web/fund/beginner/about/images/me-count02.gif") no-repeat 0 center;
+}
+
+#merit03 {
+	background:url("/web/fund/beginner/about/images/me-count03.gif") no-repeat 0 center;
+}
+
+#merit04 {
+	background:url("/web/fund/beginner/about/images/me-count04.gif") no-repeat 0 center;
+}
+
+/* content demerit */
+#demerit01 {
+	background:url("/web/fund/beginner/about/images/dem-count01.gif") no-repeat 0 center;
+}
+
+#demerit02 {
+	background:url("/web/fund/beginner/about/images/dem-count02.gif") no-repeat 0 center;
+}
+
+/* content memo */
+.content-memo {
+	margin-bottom:2em;
+	padding:5px;
+	border:1px solid #ded8b0;
+	background:#fef6de;
+}
+
+/* subtitle03 with background */
+.content-memo .subtitle03 {
+	position:relative;
+	min-height:35px;
+	margin-bottom:1em;
+	height:auto;
+	color:#a3852d;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/subtitle02.gif") no-repeat 0 center;
+	font-size:90%;
+}
+
+/* hack for IE6 */
+* html .content-memo .subtitle03 {
+	height:35px;
+}
+
+.content-memo .subtitle03 span {
+	position:absolute;
+	top:50%;
+	left:45px;
+	margin-top:-0.7em;
+}
+
+.content-memo strong {
+	display:inline;
+	float:none;
+	color:#000000;
+}
+
+div#str-main .content-memo .image {
+	display:inline;
+	float:right;
+	margin:0;
+}
+
+div#str-main .content-memo .lead {
+	display:inline;
+	float:left;
+	width:300px
+}
+
+/*---------------------------------------------------------------
+ Page: beginner Character
+----------------------------------------------------------------*/
+.characters .chara-name {
+	display:block;
+	font-size:115%;
+	color:#025476;
+	text-align:center;
+}
+
+.characters .image {
+	display:inline;
+	float:left;
+	width:120px;
+}
+
+.characters .column {
+	margin-left:130px;
+}
+
+.characters .head-caption {
+	color:#33c0ed;
+	text-align:right;
+}
+
+div#str-contents-inner div#str-main div.characters div.image-parallel {
+	padding-top:12px;
+	border-top:2px solid #99dff6;
+}
+
+div#str-main div.characters div.image-parallel dl {
+	margin:0;
+}
+
+/*---------------------------------------------------------------
+ Page: saving Top
+----------------------------------------------------------------*/
+.question {
+	position:relative;
+	text-align:center;
+}
+
+.question .text-hidden {
+	display:none;
+}
+
+div#str-main .question .comment01 {
+	position:absolute;
+	top:105px;
+	left:100px;
+	width:340px;
+	font-size:100%;
+	font-weight:bold;
+	color:#b13333
+}
+
+div#str-main .question .comment02 {
+	position:relative;
+	margin-top:-3em;
+	text-align:center
+}
+
+div#str-main .question .comment02 strong {
+	font-size:150%;
+	font-weight:bold;
+	color:#b13333
+}
+
+.subtitle04 {
+	margin-bottom:10px;
+	border:1px solid #ffb692;
+	background:#ffebe0
+}
+
+.subtitle04 span {
+	min-height:16px;
+	height:auto;
+	padding:5px 10px 5px 42px;
+	display:block;
+	border:1px solid #fff;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/icon-att.gif") no-repeat 8px 50%;
+	font-size:90%
+}
+
+* html .subtitle04 span {
+	height:16px;
+}
+
+/* box memo*/
+.box-memo {
+	margin-bottom:20px;
+	margin-left:20px;
+	padding-bottom:3px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-box-memo-bottom.gif") no-repeat 0 100%;
+}
+
+.box-memo .content-parent {
+	padding-top:3px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-box-memo-top.gif") no-repeat 0 0;
+}
+
+div#str-main .box-memo .content-child {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/images/bg-box-memo-mid.gif") repeat-y 0 0;
+}
+
+div#str-main div.column-col2.box-memo div.segment {
+	display:inline;
+	position:relative;
+	width:249px;
+	margin-right:15px;
+	padding-bottom:3px;
+	z-index:2;
+}
+
+div#str-main div.column-col2.box-memo div.segment p {
+	margin:10px 10px 5px;
+}
+
+.memo-title {
+	margin:5px 10px;
+	border-bottom:1px dotted #ff8920;
+	text-indent:0.3em;
+	color:#ff5400;
+	font-size:90%;
+}
+
+.box-memo2 p {
+	text-align:center
+}
+
+div#str-main .box-memo2 .segment strong {
+	font-size:150%
+}
+
+/* pickup fund */
+div#str-main .box-pickup-fund .list-add-01 {
+	margin-left:0;
+}
+
+.box-pickup-fund .list-add-01 li {
+	display:inline;
+	padding-right:5px;
+}
+
+.box-pickup-fund .content .link-01 a {
+	font-weight:bold;
+}
+
+.box-pickup-fund .content {
+	margin-bottom:15px;
+	padding-bottom:5px;
+	border-bottom:1px dotted #8a92c6;
+}
+
+.box-pickup-fund .content.last-child {
+	border:none;
+}
+
+/*---------------------------------------------------------------
+ Page:saving Understanding
+----------------------------------------------------------------*/
+div#str-main.feature-understainding h1 span span {
+	display:inline;
+	margin:0;
+	padding:0;
+	font-size:65%;
+	background:none;
+}
+
+div#str-main.feature-understainding h3.hdg-l3-01 {
+	margin-top:2.5em;
+}
+
+div#str-main.feature-understainding .lyt-image {
+	margin-top:1.5em;
+}
+
+.feature-understainding .comment {
+	margin-top:1.5em
+}
+
+#str-contents .characterimage{margin-bottom:10px}
+
+/*---------------------------------------------------------------
+ Page: saving Understanding part2
+----------------------------------------------------------------*/
+/*--- H2 maintitle ---*/
+.main-understamd {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/saving/images/main-txt-top.gif") no-repeat 0 0;
+	text-align:center;
+}
+.main-understamd .understamd-title {
+	padding-bottom:15px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/saving/images/main-txt-btm.gif") no-repeat 0 100%;
+}
+div#str-main .main-understamd .lead {
+	line-height:1.3;
+	margin:5px 60px 0 95px;
+	font-size:90%;
+	font-weight:bold;
+	text-align:left;
+}
+
+.main-understamd .title span {
+	position:absolute;
+	left:93px;
+	top:50%;
+	width:430px;
+	margin-top:-1.1em;
+}
+/*--- cara int ---*/
+div#str-main  .cara-int {
+	margin-bottom:10px;
+	text-align:right;
+}
+div#str-main  .cara-int a {
+	padding-left:10px;
+    background:url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat scroll 1px 5px transparent;
+	font-size:80%;
+	text-decoration:none;
+}
+
+/*--- main image ---*/
+#main-contents .main-image {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/saving/images/part02-main-bg.gif") no-repeat 0 100%;
+}
+#main-contents .main-image .chara03-text {
+	display:inline;
+	float:left;
+	width:230px;
+	margin:0;
+	padding-bottom:190px;
+	color:#9d001b;
+}
+#main-contents .main-image .chara02-text {
+	display:inline;
+	float:right;
+	width:260px;
+	margin:0;
+	color:#5d2e00;
+}
+
+/* list conv */
+.feature-understainding #main-contents {
+	padding:0 20px;
+}
+.feature-understainding #main-contents .list-conv .popup-s {
+	width:452px;
+}
+.feature-understainding #main-contents .list-conv .popup-head-L {
+	padding-left:0;
+}
+
+.list-conv .popup-head-R {
+	padding-right:0;
+}
+
+#main-contents .emphasis {
+	color:#ff4801;
+}
+
+/* popup module-Middle part width background */
+/* class:popup-L for popup starting from left */
+/* class:popup-R for popup starting from right */
+.feature-understainding #main-contents .list-conv .popup-L {
+	margin-right:0;
+}
+
+.feature-understainding #main-contents .list-conv .popup-R {
+	margin-left:0;
+}
+/* memo text */
+.feature-understainding #main-contents .memo-text {
+	margin-bottom:10px;
+	padding:10px 2px 5px;
+	background:#eef3ff;
+}
+.feature-understainding #main-contents .memo-text p {
+	margin-bottom:5px;
+}
+/* image memo */
+.feature-understainding #main-contents .image-memo {
+	margin:0 20px 10px;
+	text-align:left;
+}
+
+/* content memo */
+div#str-main #main-contents .content-memo .lead {
+	width:290px
+}
+div#str-main #main-contents .content-memo .lead dt strong {
+	color:#a3852d;
+}
+div#str-main #main-contents .content-memo .lead dd li {
+	padding-left:15px;
+	background:url("https://www.rakuten-sec.co.jp/web/fund/saving/images/list-dot01.gif") no-repeat 0 0;
+}
+
+
+/*---------------------------------------------------------------
+ Page: saving Understanding chara balloon
+----------------------------------------------------------------*/
+div#str-main .charaBalloon {
+	margin: 0 0 20px;
+}
+.charaBalloon dt {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(https://www.rakuten-sec.co.jp/web/fund/images/icon-chara-small.gif) 0 0 no-repeat;
+}
+.charaBalloon .syoko {
+	display:inline;
+	float: left;
+	background-position: 0 0;
+}
+.charaBalloon .rakumi {
+	display:inline;
+	float: left;
+	background-position: -50px 0;
+}
+.charaBalloon .rakutaro {
+	display:inline;
+	float: left;
+	background-position: -100px 0;
+}
+.charaBalloon .rakusuke {
+	display:inline;
+	float: left;
+	background-position: -150px 0;
+}
+.charaBalloon .rakuyo {
+	display:inline;
+	float: right;
+	background-position: -200px 0;
+}
+.charaBalloon .ken{
+	display:inline;
+	float: right;
+	background-position: -250px 0;
+}
+
+.charaBalloon dd {
+	display: block;
+	width: 452px;
+	margin-bottom: 15px;
+	background: url(https://www.rakuten-sec.co.jp/web/fund/images/img-chara-balloon-452.gif) -452px 0 repeat-y;
+}
+.charaBalloon dd .content {
+	display: block;
+	background: url(https://www.rakuten-sec.co.jp/web/fund/images/img-chara-balloon-452.gif) -904px 100% no-repeat;
+}
+.charaBalloon dd .content p {
+	padding: 15px;
+	background: url(https://www.rakuten-sec.co.jp/web/fund/images/img-chara-balloon-452.gif) 0 0 no-repeat;
+}
+
+.charaBalloon .syokoBalloon {
+	margin-left: 50px;
+	background-position: -452px 0;
+}
+.charaBalloon .rakumiBalloon {
+	margin-left: 50px;
+	background-position: -1808px 0;
+}
+.charaBalloon .rakutaroBalloon {
+	margin-left: 50px;
+	background-position: -3164px 0;
+}
+.charaBalloon .rakusukeBalloon {
+	margin-left: 50px;
+	background-position: -4520px 0;
+}
+.charaBalloon .rakuyoBalloon {
+	margin-right: 50px;
+	background-position: -5876px 0;
+}
+.charaBalloon .kenBalloon {
+	margin-right: 50px;
+	background-position: -7232px 0;
+}
+div#str-main .charaBalloon dd .content p {
+	margin: 0;
+}
+
+.charaBalloon .syokoBalloon .content {
+	background-position: -904px 100%;
+}
+.charaBalloon .rakumiBalloon .content {
+	background-position: -2260px 100%;
+}
+.charaBalloon .rakutaroBalloon .content {
+	background-position: -3616px 100%;
+}
+.charaBalloon .rakusukeBalloon .content {
+	background-position: -4972px 100%;
+}
+.charaBalloon .rakuyoBalloon .content {
+	background-position: -6328px 100%;
+}
+.charaBalloon .kenBalloon .content {
+	background-position: -7684px 100%;
+}
+
+.charaBalloon .syokoBalloon .content p {
+	padding-left: 30px;
+	background-position: 0 0;
+}
+.charaBalloon .rakumiBalloon .content p {
+	padding-left: 30px;
+	background-position: -1356px 0;
+}
+.charaBalloon .rakutaroBalloon .content p {
+	padding-left: 30px;
+	background-position: -2712px 0;
+}
+.charaBalloon .rakusukeBalloon .content p {
+	padding-left: 30px;
+	background-position: -4068px 0;
+}
+.charaBalloon .rakuyoBalloon .content p {
+	padding-right: 30px;
+	background-position: -5424px 0;
+}
+.charaBalloon .kenBalloon .content p {
+	padding-right: 30px;
+	background-position: -6780px 0;
+}
+
+/*---------------------------------------------------------------
+ Page: saving Understanding part3
+----------------------------------------------------------------*/
+/*--- main image ---*/
+#main-contents .main-image-03 {
+	background:url("https://www.rakuten-sec.co.jp/web/fund/saving/images/part03-main-bg.gif") no-repeat 0 100%;
+}
+
+#main-contents .main-image-03 .chara03-text {
+	margin:0;
+	color:#9d001b;
+}
+#main-contents .main-image-03 .chara02-text {
+	width:260px;
+	padding:0 0 30px 130px;
+	color:#5d2e00;
+}
+
+
+/*---------------------------------------------------------------
+ Page: saving Understanding part4
+----------------------------------------------------------------*/
+/*--- main image ---*/
+#main-contents .main-image-04 {
+	background:url("/web/fund/saving/images/image04-01.gif") no-repeat 0 100%;
+}
+
+#main-contents .main-image-04 .chara03-text {
+	width:450px;
+	margin:0;
+	color:#9d001b;
+}
+#main-contents .main-image-04 .chara02-text {
+	width:320px;
+	padding:10px 0 180px 180px;
+	color:#5d2e00;
+}
+/* point text */
+#main-contents .point-text {
+	margin-bottom:20px;
+	padding:10px;
+	background:#eef3ff;
+}
+#main-contents .point-text div {
+	margin-bottom:5px;
+	color:#3535b4;
+	font-weight:bold;
+	font-size:90%;
+}
+#main-contents .point-text div img{
+	margin-right:5px;
+}
+#main-contents .point-text p {
+	margin-bottom:5px;
+}
+/* actiont text */
+#main-contents .actiont-text {
+	margin-bottom:20px;
+	padding:10px;
+	background:#f0fff4;
+}
+#main-contents .actiont-text div {
+	margin-bottom:5px;
+	color:#006600;
+	font-weight:bold;
+	font-size:90%;
+}
+#main-contents .actiont-text div img{
+	margin-right:5px;
+}
+#main-contents .actiont-text p {
+	margin-bottom:15px;
+	padding-bottom:10px;
+	background:url("/web/fund/saving/images/line04-01.gif") no-repeat 0 100%;
+}
+#main-contents .actiont-text p.actiontblock{
+	display: block;
+	margin:20px 0;
+	padding:10px;
+	background:none!important;
+	background:#ffffff!important;
+	border:1px solid #9ab988;
+}
+#main-contents .risk {
+	position:relative;
+}
+#main-contents .chara04-text {
+	width:450px;
+	position:absolute;
+	left:75px;
+	top:197px;
+	font-weight:bold;
+	color:#ffffff;
+}
+#main-contents .chara05-text {
+	width:320px;
+	position:absolute;
+	left:315px;
+	top:197px;
+	font-weight:bold;
+	color:#ffffff;
+}
+#main-contents .chara06-text {
+	width:200px;
+	position:absolute;
+	left:25px;
+	top:230px;
+	color:#333333;
+	font-size:80%;
+}
+#main-contents .chara07-text {
+	width:200px;
+	position:absolute;
+	left:270px;
+	top:230px;
+	color:#333333;
+	font-size:80%;
+}
+
+
+/*---------------------------------------------------------------
+ Page: saving Understanding part5
+----------------------------------------------------------------*/
+/*--- main image ---*/
+#main-contents .main-image-05 {
+margin-right: -20px;
+margin-left: -20px;
+}
+
+#main-contents .main-image-05 .chara03-text {
+	width:480px;
+	margin:0;
+	color:#9d001b;
+}
+
+/* point text */
+#main-contents .point-text {
+	margin-bottom:20px;
+	padding:10px;
+	background:#eef3ff;
+}
+#main-contents .point-text div {
+	margin-bottom:5px;
+	color:#3535b4;
+	font-weight:bold;
+	font-size:90%;
+}
+#main-contents .point-text div img{
+	margin-right:5px;
+}
+#main-contents .point-text p {
+	margin-bottom:5px;
+}
+/* actiont text */
+#main-contents .actiont-text {
+	margin-bottom:20px;
+	padding:10px;
+	background:#f0fff4;
+}
+#main-contents .actiont-text div {
+	margin-bottom:5px;
+	color:#006600;
+	font-weight:bold;
+	font-size:90%;
+}
+#main-contents .actiont-text div img{
+	margin-right:5px;
+}
+#main-contents .actiont-text p {
+	margin-bottom:15px;
+	padding-bottom:10px;
+	background:url("/web/fund/saving/images/line04-01.gif") no-repeat 0 100%;
+}
+#main-contents .actiont-text p.actiontblock{
+	display: block;
+	margin:20px 0;
+	padding:10px;
+	background:none!important;
+	background:#ffffff!important;
+	border:1px solid #9ab988;
+}
+#main-contents .risk {
+	position:relative;
+}
+#main-contents .chara04-text {
+	width:450px;
+	position:absolute;
+	left:75px;
+	top:197px;
+	font-weight:bold;
+	color:#ffffff;
+}
+#main-contents .chara05-text {
+	width:320px;
+	position:absolute;
+	left:315px;
+	top:197px;
+	font-weight:bold;
+	color:#ffffff;
+}
+#main-contents .chara06-text {
+	width:200px;
+	position:absolute;
+	left:25px;
+	top:230px;
+	color:#333333;
+	font-size:80%;
+}
+#main-contents .chara07-text {
+	width:200px;
+	position:absolute;
+	left:270px;
+	top:230px;
+	color:#333333;
+	font-size:80%;
+}
+
+.mt_6 {
+	margin-top: 6px;
+}
+#main-contents .retire {
+	margin-top: 9px;
+	width: 505px;
+	background: #eef3ff;
+	margin-bottom: 27px;
+}
+#main-contents .retire p {
+	padding: 14px 14px 2px 14px;
+	margin: 0;
+}
+
+/*--- centered navlist ---*/
+.list-link-nav {
+	margin:1.5em 0 0;
+	padding-top:10px;
+	border-top:1px solid #d9dbd0;
+	text-align:center;
+}
+
+.list-link-nav li {
+	display:inline;
+	font-size:90%;
+	white-space:nowrap;
+}
+
+.list-link-nav li a {
+	padding:3px 2px;
+	border-right:1px solid gray;
+}
+
+.list-link-nav li {
+	line-height:2;
+}
+
+*:first-child + html .list-link-nav2 li a,
+* html .list-link-nav2 li a {
+	line-height:1;
+}
+
+.list-link-nav .first a {
+	padding-left:0;
+}
+
+.list-link-nav .last a {
+	border:none
+}
+
+div#str-main ul.list-link-nav {
+margin-right: 0;
+margin-left: 0;
+font-size: 81.25%;
+}
+
+
+
+/*---------------------------------------------------------------
+ Page: fund demo favorite_system.html
+----------------------------------------------------------------*/
+
+.func_img {
+	margin-bottom: 8px;
+}
+h2.ttl {
+
+}
+h2.ttl span {
+	display: block;
+	font-size:112.5%;
+	color: #333333;
+	text-indent: 39px;
+	height: 30px;
+	padding-top: 17px;
+	background: url(/web/fund/demo/images/ttl_02_bg.gif) no-repeat left bottom;
+	margin-bottom: 14px;
+}
+h2.ttl span{
+	font-size/*\**/: 95%;
+}
+#str-main .lead p {
+	font-size: 90%;
+	margin-bottom: 0.5em;
+}
+
+#str-main .regist p {
+	font-size: 95%;
+}
+
+.ex {
+	width: 545px;
+	background: #eff8f7 url(/web/fund/demo/images/ex_bg.gif) no-repeat left top;
+	padding-bottom: 1px;
+}
+.ex_wrap {
+	background: #eff8f7;
+}
+.ex ul {
+	padding-top: 21px;
+	padding-left: 15px;
+}
+.cap {
+	margin-top: 22px;
+	margin-bottom: 11px;
+}
+
+
+/*---------------------------------------------------------------
+ Page: fund demo index.html
+----------------------------------------------------------------*/
+div#str-main .function p {
+	margin-left: 24px;
+	margin-right: 70px;
+}
+
+
+/*---------------------------------------------------------------
+ H3 
+---------------------------------------------------------------*/
+h3.ttl1  {
+	display: block;
+	height:28px;
+	margin-left:5px;
+	margin-bottom:20px;
+	background: url(/web/fund/demo/images/h3_1.gif) no-repeat left bottom;	
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+h3.ttl2  {
+	display: block;
+	height:28px;
+	margin-top:30px;
+	margin-left:5px;
+	margin-bottom:20px;
+	background: url(/web/fund/demo/images/h3_2.gif) no-repeat left bottom;
+	text-indent:100%;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.compare {
+	padding:0;
+	margin:0;
+	margin-bottom:40px;
+}
+
+.app {
+	padding:0;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:40px;
+}
+
+/*---------------------------------------------------------------
+ other function
+---------------------------------------------------------------*/
+
+#other_function {
+	margin:0;
+	padding:0;
+	width:545px;	
+	height:200px;
+	}
+	
+#other_function ul {
+	/*width:520px;*/
+	margin:0;
+	padding:0;
+	/*margin-left:50px;*/
+	background:#CCCCCC;
+}
+
+#other_function li {
+	float:left;
+	padding:0;
+	margin:0;
+	height:70px;
+	width:240px;
+	/*background:#993300;*/
+	border:1px solid #CCCCCC;
+	margin-right:5px;
+	margin-bottom:20px;
+	margin-left:15px;
+	}
+	
+#other_function p img{
+	float:left;
+	
+	}	
+	
+#other_function img{
+	margin-right:10px;
+	margin-left:5px;
+	margin-top:0;
+	margin-bottom:4px;
+	}
+	
+div#str-main #other_function ul li p{
+	margin:0;
+	padding:0;	
+	font-size:95%;
+	line-height:120%;
+	padding-top:5px;
+	}
+	
+div#str-main #other_function ul li em{
+	
+	font-size:120%;
+	line-height:1.2;
+	}
+
+
+/*---------------------------------------------------------------
+ cost html customize section
+---------------------------------------------------------------*/
+
+
+div .example-header{
+	width:545px;
+	height:25px;
+	background: url(../../../fund/service/images/example_header.jpg);  
+	margin-top:10px;
+	padding:0;
+	}
+	
+div .example-content{
+	width:545px;
+	/*height:60px;*/
+	background: url(../../../fund/service/images/example_bg.jpg) repeat-y;  
+	margin:0;
+	padding:0;
+	}
+	
+div#str-main .example-content p{
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:15px;
+	padding-bottom:10px;
+	margin:0;
+	margin-left:10px;
+	}
+		
+div .example-footer{
+	width:545px;
+	height:10px;
+	background: url(../../../fund/service/images/example_footer.jpg);  
+	margin:0;
+	margin-bottom:10px;
+	padding:0;
+	}
+
+
+div .question-header{
+	width:524px;
+	height:27px;
+	background: url(../../../fund/service/images/question_header.gif) no-repeat top left;
+	margin-top:10px;
+	margin-left:7px;
+	padding:0;
+	}
+	
+div .question-content{
+	width:524px;
+	background: url(../../../fund/service/images/question_bg.gif) repeat-y left top;  
+	margin:0;
+	padding:0;
+	margin-left:7px;
+	}
+	
+div#str-main .question-content p{
+	padding-top:10px;
+	padding-left:12px;
+	padding-bottom:0;
+	margin-bottom: 0;
+	}
+		
+div .question-footer{
+	width:524px;
+	height:15px;
+	background: url(../../../fund/service/images/question_footer.gif) no-repeat top left;
+	margin:0;
+	margin-bottom:0;
+	padding-bottom:0;
+	margin-left:7px;
+	}
+
+
+div .answer-header{
+	width:524px;
+	height:27px;
+	background: url(../../../fund/service/images/answer_header.gif) no-repeat top left;
+	margin-top:10px;
+	margin-left:7px;
+	padding:0;
+	}
+	
+div .answer-content{
+	width:524px;
+	background: url(../../../fund/service/images/answer_bg.gif) repeat-y;  
+	margin:0;
+	margin-left:7px;
+	padding:0;
+	}
+	
+
+div#str-main .answer-content p{
+	padding-top:10px;
+	padding-left:12px;
+	/*height:20px;*/
+	margin:0;
+	margin-left:10px;
+	/*padding-bottom:10px;*/
+	padding-right:18px;
+	}
+		
+div .answer-footer{
+	width:524px;
+	height:23px;
+	background: url(../../../fund/service/images/answer_footer.gif) no-repeat top left;
+	margin:0;
+	margin-left:7px;
+	margin-bottom:10px;
+	padding:0;
+	}
+
+div.description {
+	line-height:1.7;
+	margin-bottom:20px;
+	}
+	
+.h-align{
+	width:16px;
+	margin:0;
+	margin-left:5px;
+	padding:0;
+	padding-left:5px;	
+	}
+	
+div.notice {
+	
+	margin-left:-10px;
+	}	
+	
+div#str-main ul.list-notice-numbered-01 li.space_20 {
+	margin-bottom:20px;
+	}
+	
+div#str-main table tbody tr td span.notice {
+	font-size:90%;
+	color:#D23100;
+	}	
+	
+#anchor-link {
+	/*float:left;*/
+	width:540px;
+	height:30px;	
+	/*margin-bottom:20px;	*/
+	
+	}	
+	
+#anchor-link ul li {
+	float:left;
+	}	
+	
+#anchor-link  li {
+	margin-right:10px;
+	}	
+
+div#str-main div.nav-contents-02 ul li.cost {
+margin-right: -5px;
+}
+
+/*---------------------------------------------------------------
+ distributions html customize section
+---------------------------------------------------------------*/
+div#str-main .lead {
+	margin-bottom: 37px;
+}
+
+div#str-main .images{
+	margin: 0 0 0.75em 0;
+}
+
+div#str-main div.schedule{
+	margin-bottom: 46px;
+}
+
+div#str-main div.schedule h2{
+	font-size: 87.5%;
+	margin-bottom:15px;
+}
+
+div#str-main div.schedule h2 img{
+	vertical-align:text-top;
+}
+
+div#str-main table#schedule th {
+	font-weight:bold;
+	vertical-align:middle;
+}
+
+div#str-main #schedule th.money,
+div#str-main #schedule th.close {
+	white-space:nowrap;
+}
+
+div#str-main table#schedule {
+	border-top:1px solid #c3c3c3;
+	border-left:1px solid #c3c3c3;
+	width:100%;
+	font-size:81.25%;
+}
+
+div#str-main table#schedule thead th {
+	padding: 5px;
+	border-right:1px solid #c3c3c3;
+	border-bottom:1px solid #c3c3c3;
+	background-color: #3F4DA2;
+	color:#fff;
+	font-size: 75%;
+}
+
+div#str-main table#schedule tbody th {
+	text-align:right;
+	font-weight:normal;
+	background-color: #ced5f1;
+}
+
+div#str-main table#schedule tbody th {
+	font-size: 90%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+div#str-main table#schedule tbody td {
+	vertical-align:middle;
+}
+
+div#str-main table#schedule .date {
+	text-align:center;
+	font-weight:normal;
+}
+
+div#str-main #schedule td.money {
+	text-align:right;
+	font-size: 90%;
+}
+
+div#str-main #schedule td.close {
+	text-align:right;
+	font-size: 85%;
+}
+
+div#str-main .schedule .note {
+	font-size:85.5%;
+}
+
+div#str-main dl.faq {
+	margin: 0 15px 30px;
+	font-weight:bold;
+}
+
+div#str-main dl.faq dt,
+div#str-main dl.faq dd {
+	position:relative;
+	margin-bottom:16px;
+	padding-left:46px;
+	
+}
+
+div#str-main dl.faq dt img,
+div#str-main dl.faq dd img {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+div#str-main .hdg-l2-06 .popular {
+	vertical-align: text-top;
+}
+
+div#str-main .annotations {
+	margin:0 0 10px;
+	padding:8px 10px;
+	border:1px solid #faf18e;
+	background-color:#fffde6;
+}
+
+div#str-main .annotations h3 {
+	margin-bottom:12px;
+}
+
+div#str-main .annotations ol.list-ordered-02 {
+	margin-left:0;
+}
+
+div#str-main .knowledge {
+	margin-bottom:10px;
+	padding:11px 7px 16px;
+	border:1px solid #d2f2da;
+	background-color:#f0faf3;
+}
+
+div#str-main .knowledge h3 {
+	margin-bottom:16px;
+}
+
+div#str-main .knowledge dl {
+	margin:14px 0 0;
+}
+
+div#str-main .knowledge dt {
+	float:left;
+	width:10em;
+}
+
+div#str-main .knowledge dt img {
+	vertical-align:middle;
+}
+
+div#str-main .knowledge dd {
+	margin-left:10em;
+}
+
+div#str-main .knowledge dd.first-child {
+	padding-bottom:24px;
+}
+
+div#str-main .addUp {
+	margin-bottom:12px;
+	padding:8px 10px;
+	border:1px solid #cde1f6;
+	background-color:#eff7ff;
+}
+
+div#str-main .addUp h3 {
+	margin-bottom:17px;
+}
+
+
+div#str-main .addUp .point {
+	padding:21px 15px 0 94px;
+	height:52px;
+	background:transparent url("/web/fund/service/images/distributions-img-10.gif") no-repeat left top;
+	font-weight:bold;
+}
+
+div#str-main .check {
+	float:right;
+	margin-bottom:40px;
+	background:none;
+}
+
+div#str-main .check a {
+	padding-left: 10px;
+	min-height: 15px;
+	background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+}
+
+div#str-main .dividend {
+	clear:both;
+	margin-bottom:40px;
+}
+
+/* js */
+div#str-main table#schedule .date {
+	position:relative;
+	padding-left: 43px;
+}
+
+div#str-main table#schedule .date img {
+	position:absolute;
+	left: 3px;
+	top: 0;
+}
+
+div#str-main table#schedule .date span.current {
+	font-size: 85%;
+}

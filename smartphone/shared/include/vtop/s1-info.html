@@ -1,0 +1,22 @@
+<!-- お知らせ start -->
+<section class="s1-section--02 hdg-bg">
+  <div class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element icon-01">お知らせ</h2>
+  </div>
+
+  <div class="s1-news">
+  <!--#include virtual="/web/shared/include/vtop/emergency/s1-emergency-visitor-bottom.html"-->
+
+    <ul class="s1-news__list">
+    <!-- インクルード /web/shared/include/vtop/s1-info.html -->
+    <!-- スマホ掲載のお知らせ -->
+    <?php
+      $segment = "";
+      include("../../../../web/shared/include/vtop/s1-info.html");
+    ?>
+    <!-- /インクルード /web/shared/include/vtop/s1-info.html -->
+    </ul>
+  </div>
+  <p class="s1-news__archive"><a onclick="s.lidTrack('v_visitor_smt-top_info_txt_all');" href="/smartphone/info/?l-id=sp_top_info">お知らせ一覧</a></p>
+</section>
+<!-- お知らせ end -->

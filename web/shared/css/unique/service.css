@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. box-pay-01
+*	02. 
+*	03. 
+*	04. 
+*	05. 
+*	06. 
+*	07. 
+*	08. 
+*	09. 
+*	10. 
+*	11. 
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. box-pay-01
+----------------------------------------------------------------- */
+div#str-main div.box-pay-01{
+margin-bottom:1.25em;
+}
+
+div#str-main div.box-pay-01 p.nav-more{
+text-align:center;
+}
+
+div#str-main div.box-pay-01 dl.explanation{
+margin-bottom:0;
+padding-top:8px;
+}
+
+div#str-main div.box-pay-01 dl.explanation dt{
+margin-bottom:10px;
+float:left;
+width:105px;
+clear:both;
+}
+
+div#str-main div.box-pay-01 dl.explanation dd{
+margin-bottom:10px;
+float:left;
+width:399px;
+}
+
+div#str-main div.box-pay-01 dl.explanation dd.type-01{
+padding-top:10px;
+min-height:50px;
+}
+div#str-main div.box-pay-01 dl.explanation dd.type-02{
+text-align: right;
+}
+
+
+div#str-main div.box-payment-01,
+div#str-main div.box-payment-02,
+div#str-main div.box-payment-03{
+position:relative;
+background:#ffffff url("/web/service/pay/images/index-bg-01.gif") repeat-y 0 0;
+}
+
+div#str-main div.box-payment-01 h2,
+div#str-main div.box-payment-02 h2{
+position:absolute;
+top:40%;
+left:1%;
+}
+
+div#str-main div.box-payment-03 h2{
+position:absolute;
+top:15%;
+left:1%;
+}
+
+div#str-main div.box-payment-01,
+div#str-main div.box-payment-02,
+div#str-main div.box-payment-03{
+margin-bottom:5px;
+}
+
+div#str-main div.box-payment-01 div.box-realtime,
+div#str-main div.box-payment-01 div.box-regular,
+div#str-main div.box-payment-02 div.box-payable,
+div#str-main div.box-payment-03 div.box-foreign,
+div#str-main div.box-payment-01 div.box-rakuraku,
+div#str-main div.box-payment-02 div.box-rakuraku{
+margin-left:25px;
+padding-bottom:1px;
+}
+
+div#str-main div.box-payment-01 div.box-realtime{
+margin-bottom:0;
+background-color:#fef0c4;
+}
+
+div#str-main div.box-payment-01 div.box-regular{
+background-color:#e4f2ff;
+}
+
+div#str-main div.box-payment-02 div.box-payable{
+background-color:#dcead5;
+}
+
+div#str-main div.box-payment-03 div.box-foreign{
+padding-top:10px;
+background-color:#fce1e1;
+}
+
+div#str-main div.box-payment-01 div.box-rakuraku,
+div#str-main div.box-payment-02 div.box-rakuraku{
+background-color:#fffbe0;
+}
+
+div#str-main div.box-payment-01 div.box-realtime em{
+color:#f46319;
+}
+
+div#str-main div.box-payment-01 div.box-regular em{
+color:#0e87c0;
+}
+
+div#str-main div.box-payment-02 div.box-payable em{
+color:#377415;
+}
+
+div#str-main div.box-payment-01 div.box-rakuraku em,
+div#str-main div.box-payment-02 div.box-rakuraku em{
+color:#f46319;
+}
+
+div#str-main div.box-pay-01 em.em-l2{
+font-size:123.1%;
+}
+
+/* ie6 */
+*html div#str-main div.box-pay-01 dl.explanation dd.type-01{
+height:47px;
+}
+
+/* ie7 */
+
+*+html div#str-main div.box-pay-01 dl.explanation{
+margin-bottom:10px;
+}

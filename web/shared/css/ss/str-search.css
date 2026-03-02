@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. str-search
+*	02. form-search-stock
+*	03. form-search-stock-prices
+*	04. font-control
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. str-search
+----------------------------------------------------------------- */
+div#str-search{
+margin-bottom:7px;
+padding:6px 180px 8px 90px;
+position:relative;
+border-bottom:1px solid #d6d7e2;
+background-color:#ececec;
+line-height:1.45;
+}
+
+div#str-search p,
+div#str-search ul,
+div#str-search ol,
+div#str-search dl{
+margin-top:0;
+margin-bottom:0;
+}
+
+
+/* ----------------------------------------------------------------
+	02. form
+----------------------------------------------------------------- */
+div#str-search dl dt.label-search{
+position:absolute;
+top:7px;
+left:17px;
+}
+
+div#str-search dl dd label img{
+vertical-align:middle;
+}
+
+div#str-search fieldset{
+width:600px;
+}
+
+div#str-search form,
+div#str-search fieldset{
+margin:0;
+padding:0;
+border:0;
+}
+
+div#str-search input,
+div#str-search select{
+margin:0;
+padding:0;
+border:0;
+vertical-align:middle;
+font-size:13px;
+}
+
+div#str-search label{
+cursor:pointer;
+}
+
+div#str-search legend{
+display:none;
+}
+
+div#str-search p.label-search{
+position:absolute;
+top:7px;
+left:17px;
+}
+
+div#str-search form{
+float:left;
+}
+
+div#str-search select#stoc-type,
+div#str-search input#form-search-stock-prices{
+margin-right:5px;
+padding:1px 3px;
+border:1px solid #7f9db9;
+width:165px;
+}
+
+div#str-search input#form-search-stock-prices{
+color:#cccccc;
+}
+
+div#str-search select#stoc-type{
+padding:0;
+width:100px;
+}
+
+div#str-search input#form-search-stock-btn,
+div#str-search input#form-search-btn{
+cursor:pointer;
+}
+
+/* IE6 */
+
+*html div#str-search select#stoc-type,
+*html div#str-search input#form-search-stock-prices{
+margin-top:1px;
+}
+
+/* IE7 */
+
+*+html div#str-search select#stoc-type,
+*+html div#str-search input#form-search-stock-prices{
+margin-top:1px;
+}
+
+
+/* ----------------------------------------------------------------
+	03. form-search-keywords
+----------------------------------------------------------------- */
+
+div#str-search fieldset#form-search-word{
+position:absolute;
+top:6px;
+left:470px;
+width:320px;
+}
+
+div#str-search input#form-search-keywords{
+margin-right:10px;
+padding:1px 3px;
+border:1px solid #7f9db9;
+color:#cccccc;
+width:150px;
+}
+
+div#str-search input#MF_form_phrase{
+margin-right:10px;
+padding:1px 3px;
+border:1px solid #7f9db9;
+color:#cccccc;
+width:150px;
+}
+
+div#str-search input#form-search-btn{
+cursor:pointer;
+}
+
+/* IE6 */
+
+*html div#str-search fieldset#form-search-word{
+top:8px;
+}
+
+*html div#str-search input#form-search-btn{
+padding-bottom:1px;
+}
+
+/* IE7 */
+
+*+html div#str-search fieldset#form-search-word{
+top:8px;
+}
+
+*+html div#str-search input#form-search-btn{
+padding-bottom:1px;
+}
+
+
+/* ----------------------------------------------------------------
+	04. font-control
+----------------------------------------------------------------- */
+div#font-control{
+position:absolute;
+top:8px;
+right:17px;
+width:130px;
+text-align:right;
+}
+
+div#font-control dl{
+padding-left:65px;
+position:relative;
+text-align:left;
+}
+
+div#font-control dl dt{
+position:absolute;
+top:3px;
+left:0;
+line-height:1;
+font-size:5px;
+}
+
+div#font-control dl dd{
+width:61px;
+}
+
+div#font-control dl dd ul li{
+display:inline;
+line-height:1;
+font-size:5px;
+}
+
+div#font-control dl dd ul li img{
+padding-right:2px;
+vertical-align:top;
+cursor:pointer;
+}

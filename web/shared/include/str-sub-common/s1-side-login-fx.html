@@ -1,0 +1,40 @@
+<!--/web/shared/include/str-sub-common/s1-side-login-fx_StartTemp.htmlも修正必須-->
+<div class="s1-login-form">
+  <div class="s1-login-form__toggle-button s1-login-form__heading--close">各種ログイン<i class="s-glyph">&nbsp;&#xf11a</i></div>
+  <div style="display:none;" class="s1-login-form__body">
+    <form name="loginform" method="post" action="https://member.rakuten-sec.co.jp/app/MhLogin.do" target="_top">
+      <div class="s1-login-form__field">
+        <label for="form-login-id" class="s1-login-form__input-label">ログインID</label>
+        <input id="form-login-id" type="text" name="loginid" value="" maxlength="8" tabindex="1" onfocus="chfocus('0')" class="s1-login-form__input">
+      </div>
+      <div class="s1-login-form__field">
+        <label for="form-login-pass" class="s1-login-form__input-label">パスワード</label>
+        <input id="form-login-pass" type="password" name="passwd" value="" maxlength="20" tabindex="2" onfocus="chfocus('1')" class="s1-login-form__input">
+      </div>
+      <a id="keyboard_opener" href="#" class="s1-login-form__softkey"><i class="s1-login-form__softkey-sprite-icon"></i>ソフトウェアキーボードで入力</a>
+      <div class="s1-login-form__block">
+        <select id="homeid" name="homeid" tabindex="3" class="s1-login-form__select">
+          <option value="ACC_NFX_OPEN" selected="selected">楽天FX</option>
+          <option value="BO_TOP">らくオプ取引</option>
+          <option value="HOME">ホーム画面にログイン</option>
+          <option value="STK_POS">保有商品一覧にログイン</option>
+          <option value="MARKET_FAVORITE">お気に入り銘柄情報にログイン</option>
+          <option value="MARKET_TOP">マーケットにログイン</option>
+          <option value="PTF_INFO_BASIC_VST">ポートフォリオにログイン</option>
+          <option value="BILLING_VST">リアルタイム入金にログイン</option>
+          <option value="JP_STK_BUY_SEARCH">株式注文にログイン</option>
+          <option value="ACC_REG_CHANGE_TOP">設定・変更にログイン</option>
+        </select>
+      </div>
+      <input id="form-login-path" type="hidden" name="memberPath">
+      <button type="submit" tabindex="4" class="s1-login-form__login-button">ID･パスワードでログイン</button>
+    </form>
+    <p class="s1-login-form__Separator"><span>または</span></p>
+    <form id="passkeyLoginForm" name="loginform" method="post" action="https://member.rakuten-sec.co.jp/app/MhLogin.do?login_type=2" target="_top">
+      <input type="hidden" id="homeid-passkey" name="homeid" value="HOME">
+      <button type="submit" id="login-passkey" class="s1-login-form__passkey-button">パスキーでログイン</button>
+    </form>
+    <a href="/web/security/passkey/" class="s1-login-form__confirm-text" data-ratid="pc-login_security_passkey" data-ratevent="click" data-ratparam="all">パスキー認証について</a>
+    <a href="/web/help/care_login.html" class="s1-login-form__confirm-text" data-ratid="login_care_login" data-ratevent="click" data-ratparam="all">ログインにお困りの方</a>
+  </div>
+</div>

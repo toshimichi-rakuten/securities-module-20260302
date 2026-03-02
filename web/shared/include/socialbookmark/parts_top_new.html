@@ -1,0 +1,23 @@
+<div class="social-service top">
+<div id="fb-root"></div>
+<script type="text/javascript">
+//FB
+(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)) return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/ja_JP/all.js#xfbml=1";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));
+//Twitter
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+//Pocket
+!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/platform.js">{lang: 'ja'}</script>
+<script type="text/javascript" src="https://b.hatena.ne.jp/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<script type="text/javascript" src="/web/shared/js/app/jquery.share-button.js"></script>
+
+<ul class="service-list">
+<li class="facebook-like"></li>
+<li class="twitter-share"><a href="https://twitter.com/share" class="twitter-share-button" data-via="RakutenSec" data-lang="ja" data-hashtags="rsec" onclick="s.lidTrack('sns-tw-top')">ツイート</a></li>
+<li class="google-plus-share"></li>
+<li class="pocket-bookmark"><a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a></li>
+<li class="hatena-bookmark"><img src="https://b.hatena.ne.jp/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></li>
+<li class="line-share"></li>
+</ul>
+</div>

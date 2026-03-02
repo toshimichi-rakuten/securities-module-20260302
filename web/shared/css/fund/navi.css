@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: navi.css for
+ /web/fund/saving/navi
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: saving/navi/index.html
+----------------------------------------------------------------*/
+
+div#str-main div.box-step{
+margin-bottom: 20px;
+border-bottom: 1px dotted #bbbbbb;
+}
+
+div#str-main div.box-step-last{
+margin: 0;
+border: none;
+}
+
+div#str-main div.column-col2 div.step-column-01{
+width: 171px;
+margin: 0 44px 10px 51px;
+text-align: center;
+background: url("/web/fund/saving/navi/images/bg-step-column-01.gif") no-repeat 0 0;
+}
+
+div#str-main div.column-col2 div.step-column-01 h3{
+height: 30px;
+padding: 15px 4px 0;
+font-size: 72.5%;
+}
+
+div#str-main div.column-col2 div.step-column-01 .align-L{
+text-align: left;
+}
+
+div#str-main div.column-col2 div.step-column-01 .link-01{
+margin-top: 5px;
+padding-top: 5px;
+border-top: 1px dotted #8a92c6;
+text-align:left;
+}
+
+div#str-main div.column-col4 div.segment{
+margin-right:13px;
+width:126px;
+}
+
+/*---------------------------------------------------------------
+ Page: saving/navi/cencel.html
+----------------------------------------------------------------*/
+div#str-main div.box-fund-step-01 li.step-01{
+	z-index: 3;
+}
+div#str-main div.box-fund-step-01 li.step-02{
+	z-index: 2;
+}
+div#str-main div.box-fund-step-01 li.step-03{
+	z-index: 1;
+}
+
+div#str-main div.box-step-01{
+padding:0!important;
+}
+div#str-main div.box-step-01 .lyt-image{
+padding:0!important;
+}
+div#str-main div.box-step-01 .box-inner-01{
+padding:0 8px!important;
+}

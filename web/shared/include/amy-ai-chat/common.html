@@ -1,0 +1,45 @@
+<!-- インクルード /web/shared/include/amy-ai-chat/common.html -->
+<style>/*
+  <!-- CSS -->
+  <link rel="stylesheet" href="/web/shared/css/ai-chat.min.css" />
+  <!-- Chat Bot -->
+  <div id="ai-chat">
+    <p class="ai-chat-balloon">ご質問は<br>ありませんか？</p>
+    <button type="button" class="ai-chat-btn-minimize js-ai-chat-btn-minimize" aria-label="最小化する"></button>
+    <a href="#" class="ai-chat-main js-ai-chat-trigger" onclick="s.lidTrack('chatbottrigger|' + s.pageName);" aria-label="チャットで問合せる">
+      <div class="ai-chat-icon" role="img" aria-hidden="true" aria-label="チャットボットのアイコン">
+        <span class="ai-chat-icon__robo"></span>
+        <span class="ai-chat-icon__operator"></span>
+      </div>
+      <p class="ai-chat-main__heading" aria-hidden="true">チャットで問合せ</p>
+    </a>
+
+    <!-- サポートメッセージ - SP -->
+    <div class="ai-chat-support__open" role="alert" aria-labelledby="ai-chat-support-msg">
+      <button type="button" class="ai-chat-support__btn-close ai-chat-btn-minimize js-ai-chat-btn-close" aria-label="閉じる"></button>
+      <div id="ai-chat-support-msg" class="ai-chat-support__message">
+        <div class="ai-chat-icon ai-chat-icon--support" role="img" aria-label="チャットボットのアイコン">
+          <span class="ai-chat-icon__robo">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M62.5 119.96a9.07 9.07 0 100-18.15 9.07 9.07 0 000 18.15zM137.5 119.96a9.07 9.07 0 100-18.15 9.07 9.07 0 000 18.15z" fill="#053ace"/>
+              <path d="M197.18 88.5h-18.95c-3.43-24.79-26.21-47.37-49.6-47.37h-9.48v-8.47a9.81 9.81 0 00-9.67-9.68h-4.84V9.68a3.53 3.53 0 00-3.43-3.43h-2.42a3.53 3.53 0 00-3.43 3.43v13.3h-4.84a9.81 9.81 0 00-9.67 9.68v8.47h-9.48c-23.18 0-46.17 22.58-49.6 47.38H2.82A2.76 2.76 0 000 91.33v31.86A2.76 2.76 0 002.82 126h18.55v2.42a36.91 36.91 0 0036.9 36.9h21.77c-.2.4-.6.8-.6 1.4l-2.83 9.88c-.6 2.02.6 3.23 2.62 2.42l35.69-13.5h26.61a36.91 36.91 0 0036.9-36.9v-2.42h18.55a2.76 2.76 0 002.82-2.82V91.33c.2-1.41-1.01-2.82-2.62-2.82zM89.92 32.67c0-.4.2-.6.6-.6h18.96c.4 0 .6.2.6.6v8.47H89.92v-8.47zm77.62 95.57c0 14.31-11.7 25.8-25.8 25.8H58.46a25.86 25.86 0 01-25.8-25.8V94.76c0-20.97 19.55-42.34 38.9-42.34h57.46c19.16 0 38.91 21.37 38.91 42.34v33.47h-.4z" fill="#053ace"/>
+            </svg>
+          </span>
+          <span class="ai-chat-icon__operator">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M74.83 94a9.1 9.1 0 00-9.08 9.08c0 5 4.08 9.09 9.08 9.09s9.09-4.09 9.09-9.09S79.83 94 74.83 94zM125.17 94a9.1 9.1 0 00-9.09 9.08c0 5 4.09 9.09 9.09 9.09s9.08-4.09 9.08-9.09-4.08-9.08-9.08-9.08z" fill="#053ace"/>
+              <path d="M162.17 93.25c0-30.67-22.17-56-51.34-61.17-.33-.08-.75-.08-1.08-.16-3.17-.5-6.42-.84-9.75-.84h-.08-.09c-1.91 0-3.75.09-5.66.25-1.34.17-2.67.34-4.09.59-.41.08-.75.08-1.16.16-.09 0-.09 0-.17.09a64.29 64.29 0 00-9.17 2.41c-.25.09-.66.25-1 .42a57.77 57.77 0 00-8.33 3.75c-.25.08-.42.17-.58.25a72.23 72.23 0 00-6.75 4.42c-.59.5-1.17.91-1.75 1.33-2 1.67-3.92 3.42-5.75 5.25-.75.75-1.42 1.5-2.09 2.25-1.25 1.5-2.5 3.08-3.66 4.67a48.83 48.83 0 00-2.5 3.75 39.02 39.02 0 00-2.5 4.5 34.26 34.26 0 00-1.75 3.5 53.3 53.3 0 00-2.34 6.41c-.41 1.34-.75 2.75-1.08 4.09-.33 1.5-.58 3-.83 4.5-.17 1.08-.5 2-.59 3.08h.09a62.17 62.17 0 10124 6.5zM100 143.75a50.57 50.57 0 01-50.5-50.5c0-2 .17-4 .42-6 24.33-.08 46.83-8 65.16-21.25C125.25 75 137 82.25 150 87.08h.08c.25 2 .42 4.09.42 6.09a50.6 50.6 0 01-50.5 50.58z" fill="#053ace"/>
+              <path d="M197.42 88.5h-11.75C183.5 43.08 145.92 6.75 100 6.75S16.5 43.08 14.33 88.5H2.83A2.71 2.71 0 000 91.33v32.5a2.56 2.56 0 002.58 2.34H23a2.81 2.81 0 002.83-2.84V92.5c0-41 33.17-74.17 74.17-74.17s74.17 33.17 74.17 74.17v1.17a73.6 73.6 0 01-23.75 54.16c-1.92-.75-4-1.25-6.25-1.25-9.17 0-16.67 7.5-16.67 16.67 0 9.17 7.5 16.67 16.67 16.67 9.16 0 16.66-7.5 16.66-16.67 0-2.75-.75-5.25-1.91-7.5a85.97 85.97 0 0020.41-29.58h17.84a2.71 2.71 0 002.83-2.84v-32.5a2.56 2.56 0 00-2.58-2.33z" fill="#053ace"/>
+              <path d="M100.52 131.02c-3.6 0-7.3-1.2-11.4-3.5a3.9 3.9 0 01-1.6-5.4c1.1-2 3.5-2.7 5.4-1.6 5.9 3.3 9.2 3.3 15.1 0 1.9-1.1 4.4-.4 5.4 1.5 1.1 1.9.4 4.4-1.5 5.4-4.1 2.4-7.8 3.6-11.4 3.6z" fill="#053ace"/>
+            </svg>
+          </span>
+        </div>
+        <p class="ai-chat-support-label"><span class="ai-chat-support-text">チャットは<br>サポートページから<br>利用できます</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="/web/shared/js/ai-chatbot/ai_chat_renewal.js" defer></script>
+*/</style>
+<!-- /インクルード /web/shared/include/amy-ai-chat/common.html -->

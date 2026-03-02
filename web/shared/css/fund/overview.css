@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: overview.css for
+ /web/fund/saving/
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: fund - Common Elements & Custom Modules
+----------------------------------------------------------------*/
+div#str-main div.column-col3 div.segment{
+margin-right:10px;
+width:175px;
+}

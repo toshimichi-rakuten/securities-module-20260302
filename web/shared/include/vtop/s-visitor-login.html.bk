@@ -1,0 +1,156 @@
+<!-- ============ソフトウェアキーボード============ -->
+<div class="softwarekeyboard">
+  <div id="keyboard" class="keyboard">
+    <div class="keyinner">
+      <h2>ソフトウェアキーボード</h2>
+      <p class="closeBtn"><a href="javascript:;" onclick="closekey()" ondblclick="closekey()">閉じる</a></p>
+      <div class="tab">
+        <ul>
+          <li id="key_tab0"><img src="/web/shared/img/keyboard_tab_idon.gif" width="100" height="26" alt="ログインID"></li>
+          <li id="key_tab1"><img src="/web/shared/img/keyboard_tab_passoff.gif" width="100" height="26" alt="パスワード"></li>
+        </ul>
+        <p><a href="/web/info/software_keyboard.html">使用方法</a></p>
+      </div>
+      <div id="btnArea" class="btnArea">
+        <div id="keyarea0" class="btninner">
+          <table cellspacing="5">
+            <tr>
+              <td id="key0" onmouseover="keyon('0')" onmouseout="keyoff('0')" onclick="keypush('0')" class="btns">0</td>
+              <td id="key1" onmouseover="keyon('1')" onmouseout="keyoff('1')" onclick="keypush('1')" class="btns">1</td>
+              <td id="key2" onmouseover="keyon('2')" onmouseout="keyoff('2')" onclick="keypush('2')" class="btns">2</td>
+              <td id="key3" onmouseover="keyon('3')" onmouseout="keyoff('3')" onclick="keypush('3')" class="btns">3</td>
+              <td id="key4" onmouseover="keyon('4')" onmouseout="keyoff('4')" onclick="keypush('4')" class="btns">4</td>
+              <td id="key5" onmouseover="keyon('5')" onmouseout="keyoff('5')" onclick="keypush('5')" class="btns">5</td>
+              <td id="key6" onmouseover="keyon('6')" onmouseout="keyoff('6')" onclick="keypush('6')" class="btns">6</td>
+              <td id="key7" onmouseover="keyon('7')" onmouseout="keyoff('7')" onclick="keypush('7')" class="btns">7</td>
+              <td id="key8" onmouseover="keyon('8')" onmouseout="keyoff('8')" onclick="keypush('8')" class="btns">8</td>
+              <td id="key9" onmouseover="keyon('9')" onmouseout="keyoff('9')" onclick="keypush('9')" class="btns">9</td>
+            </tr>
+          </table>
+        </div>
+        <div id="keyarea1" class="btninner">
+          <table cellspacing="5">
+            <tr>
+              <td id="keyA" onmouseover="keyon('A')" onmouseout="keyoff('A')" onclick="keypush('A')" class="btns">A</td>
+              <td id="keyB" onmouseover="keyon('B')" onmouseout="keyoff('B')" onclick="keypush('B')" class="btns">B</td>
+              <td id="keyC" onmouseover="keyon('C')" onmouseout="keyoff('C')" onclick="keypush('C')" class="btns">C</td>
+              <td id="keyD" onmouseover="keyon('D')" onmouseout="keyoff('D')" onclick="keypush('D')" class="btns">D</td>
+              <td id="keyE" onmouseover="keyon('E')" onmouseout="keyoff('E')" onclick="keypush('E')" class="btns">E</td>
+              <td id="keyF" onmouseover="keyon('F')" onmouseout="keyoff('F')" onclick="keypush('F')" class="btns">F</td>
+              <td id="keyG" onmouseover="keyon('G')" onmouseout="keyoff('G')" onclick="keypush('G')" class="btns">G</td>
+              <td id="keyH" onmouseover="keyon('H')" onmouseout="keyoff('H')" onclick="keypush('H')" class="btns">H</td>
+              <td id="keyI" onmouseover="keyon('I')" onmouseout="keyoff('I')" onclick="keypush('I')" class="btns">I</td>
+              <td id="keyJ" onmouseover="keyon('J')" onmouseout="keyoff('J')" onclick="keypush('J')" class="btns">J</td>
+            </tr>
+            <tr>
+              <td id="keyK" onmouseover="keyon('K')" onmouseout="keyoff('K')" onclick="keypush('K')" class="btns">K</td>
+              <td id="keyL" onmouseover="keyon('L')" onmouseout="keyoff('L')" onclick="keypush('L')" class="btns">L</td>
+              <td id="keyM" onmouseover="keyon('M')" onmouseout="keyoff('M')" onclick="keypush('M')" class="btns">M</td>
+              <td id="keyN" onmouseover="keyon('N')" onmouseout="keyoff('N')" onclick="keypush('N')" class="btns">N</td>
+              <td id="keyO" onmouseover="keyon('O')" onmouseout="keyoff('O')" onclick="keypush('O')" class="btns">O</td>
+              <td id="keyP" onmouseover="keyon('P')" onmouseout="keyoff('P')" onclick="keypush('P')" class="btns">P</td>
+              <td id="keyQ" onmouseover="keyon('Q')" onmouseout="keyoff('Q')" onclick="keypush('Q')" class="btns">Q</td>
+              <td id="keyR" onmouseover="keyon('R')" onmouseout="keyoff('R')" onclick="keypush('R')" class="btns">R</td>
+              <td id="keyS" onmouseover="keyon('S')" onmouseout="keyoff('S')" onclick="keypush('S')" class="btns">S</td>
+              <td id="keyT" onmouseover="keyon('T')" onmouseout="keyoff('T')" onclick="keypush('T')" class="btns">T</td>
+            </tr>
+            <tr>
+              <td id="keyU" onmouseover="keyon('U')" onmouseout="keyoff('U')" onclick="keypush('U')" class="btns">U</td>
+              <td id="keyV" onmouseover="keyon('V')" onmouseout="keyoff('V')" onclick="keypush('V')" class="btns">V</td>
+              <td id="keyW" onmouseover="keyon('W')" onmouseout="keyoff('W')" onclick="keypush('W')" class="btns">W</td>
+              <td id="keyX" onmouseover="keyon('X')" onmouseout="keyoff('X')" onclick="keypush('X')" class="btns">X</td>
+              <td id="keyY" onmouseover="keyon('Y')" onmouseout="keyoff('Y')" onclick="keypush('Y')" class="btns">Y</td>
+              <td id="keyZ" onmouseover="keyon('Z')" onmouseout="keyoff('Z')" onclick="keypush('Z')" class="btns">Z</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+        <div id="keyarea2" class="btninner">
+          <table cellspacing="5">
+            <tr>
+              <td id="keya1" onmouseover="keyon1('a')" onmouseout="keyoff1('a')" onclick="keypush1('a')" class="btns">a</td>
+              <td id="keyb1" onmouseover="keyon1('b')" onmouseout="keyoff1('b')" onclick="keypush1('b')" class="btns">b</td>
+              <td id="keyc1" onmouseover="keyon1('c')" onmouseout="keyoff1('c')" onclick="keypush1('c')" class="btns">c</td>
+              <td id="keyd1" onmouseover="keyon1('d')" onmouseout="keyoff1('d')" onclick="keypush1('d')" class="btns">d</td>
+              <td id="keye1" onmouseover="keyon1('e')" onmouseout="keyoff1('e')" onclick="keypush1('e')" class="btns">e</td>
+              <td id="keyf1" onmouseover="keyon1('f')" onmouseout="keyoff1('f')" onclick="keypush1('f')" class="btns">f</td>
+              <td id="keyg1" onmouseover="keyon1('g')" onmouseout="keyoff1('g')" onclick="keypush1('g')" class="btns">g</td>
+              <td id="keyh1" onmouseover="keyon1('h')" onmouseout="keyoff1('h')" onclick="keypush1('h')" class="btns">h</td>
+              <td id="keyi1" onmouseover="keyon1('i')" onmouseout="keyoff1('i')" onclick="keypush1('i')" class="btns">i</td>
+              <td id="keyj1" onmouseover="keyon1('j')" onmouseout="keyoff1('j')" onclick="keypush1('j')" class="btns">j</td>
+            </tr>
+            <tr>
+              <td id="keyk1" onmouseover="keyon1('k')" onmouseout="keyoff1('k')" onclick="keypush1('k')" class="btns">k</td>
+              <td id="keyl1" onmouseover="keyon1('l')" onmouseout="keyoff1('l')" onclick="keypush1('l')" class="btns">l</td>
+              <td id="keym1" onmouseover="keyon1('m')" onmouseout="keyoff1('m')" onclick="keypush1('m')" class="btns">m</td>
+              <td id="keyn1" onmouseover="keyon1('n')" onmouseout="keyoff1('n')" onclick="keypush1('n')" class="btns">n</td>
+              <td id="keyo1" onmouseover="keyon1('o')" onmouseout="keyoff1('o')" onclick="keypush1('o')" class="btns">o</td>
+              <td id="keyp1" onmouseover="keyon1('p')" onmouseout="keyoff1('p')" onclick="keypush1('p')" class="btns">p</td>
+              <td id="keyq1" onmouseover="keyon1('q')" onmouseout="keyoff1('q')" onclick="keypush1('q')" class="btns">q</td>
+              <td id="keyr1" onmouseover="keyon1('r')" onmouseout="keyoff1('r')" onclick="keypush1('r')" class="btns">r</td>
+              <td id="keys1" onmouseover="keyon1('s')" onmouseout="keyoff1('s')" onclick="keypush1('s')" class="btns">s</td>
+              <td id="keyt1" onmouseover="keyon1('t')" onmouseout="keyoff1('t')" onclick="keypush1('t')" class="btns">t</td>
+            </tr>
+            <tr>
+              <td id="keyu1" onmouseover="keyon1('u')" onmouseout="keyoff1('u')" onclick="keypush1('u')" class="btns">u</td>
+              <td id="keyv1" onmouseover="keyon1('v')" onmouseout="keyoff1('v')" onclick="keypush1('v')" class="btns">v</td>
+              <td id="keyw1" onmouseover="keyon1('w')" onmouseout="keyoff1('w')" onclick="keypushw('w')" class="btns">w</td>
+              <td id="keyx1" onmouseover="keyon1('x')" onmouseout="keyoff1('x')" onclick="keypushx('x')" class="btns">x</td>
+              <td id="keyy1" onmouseover="keyon1('y')" onmouseout="keyoff1('y')" onclick="keypush1('y')" class="btns">y</td>
+              <td id="keyz1" onmouseover="keyon1('z')" onmouseout="keyoff1('z')" onclick="keypush1('z')" class="btns">z</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="editBtnArea">
+        <table cellspacing="10">
+          <tr>
+            <td onclick="del(0)" ondblclick="del(0)" class="btnl">1文字削除</td>
+            <td onclick="del(1)" ondblclick="del(1)" class="btnl">クリア</td>
+            <td onclick="closekey()" ondblclick="closekey()" class="btnl">閉じる</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============ソフトウェアキーボード============ -->
+
+<form name="loginform" method="post" action="https://member.rakuten-sec.co.jp/bv/app/MhLogin.do" target="_top" class="s-form s-form-vertical s-form-login s-container-20">
+  <h2 class="s-ttl">総合口座ログイン</h2>
+  <div class="s-container-child">
+    <div class="s-controls">
+      <p class="s-input-field">
+        <label for="form-login-id">ログインID</label>
+        <input id="form-login-id" type="text" name="loginid" value="" maxlength="8" tabindex="1">
+      </p>
+      <p class="s-input-field">
+        <label for="form-login-pass">パスワード</label>
+        <input id="form-login-pass" type="password" name="passwd" value="" maxlength="8" tabindex="2">
+      </p><span class="s-icon"></span><a id="keyboard_opener" href="#" class="s-softkey"><i class="sprite-icon-keyboard"></i>ソフトウェアキーボードで入力</a>
+      <select name="homeid" tabindex="3">
+        <option value="HOME" selected="selected">ホーム画面にログイン</option>
+        <option value="STK_POS">保有商品一覧にログイン</option>
+        <option value="MARKET_FAVORITE">お気に入り銘柄情報にログイン</option>
+        <option value="MARKET_TOP">マーケットにログイン</option>
+        <option value="PTF_INFO_BASIC_VST">ポートフォリオにログイン</option>
+        <option value="BILLING_VST">リアルタイム入金にログイン</option>
+        <option value="JP_STK_BUY_SEARCH">株式注文にログイン</option>
+        <option value="ACC_REG_CHANGE_TOP">口座情報にログイン</option>
+      </select>
+    </div>
+  </div>
+  <div class="s-container-child">
+    <button type="submit" class="s-btn s-btn-login-small"><i class="s-glyph">&#xf109;</i> ログイン</button><a href="/web/help/care_login.html">IDパスワードはWebで確認できます。<span class="s-link-arrow">&nbsp;&gt;</span></a>
+  </div>
+</form>
+<div class="s-form s-container-20 s-fx">
+  <div class="s-controls"><a href="/web/fx/login.html" class="s-btn s-btn-secondary-small">楽天FXへログイン</a></div>
+</div>

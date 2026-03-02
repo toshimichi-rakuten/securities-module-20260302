@@ -1,0 +1,88 @@
+function Device() {
+	this.tagId = "smartphoneSite";
+	this.isIPhone = function() {
+		if(navigator.userAgent.match(/iPhone/)) {
+			return true && !this.isIPod() && !this.isIPad();
+		}
+		return false;
+	};
+	this.isIPod = function() {
+		if(navigator.userAgent.match(/iPod/)) {
+			return true;
+		}
+		return false;
+	};
+	this.isIPad = function() {
+		if(navigator.userAgent.match(/iPad/)) {
+			return true;
+		}
+		return false;
+	};
+	this.isAndroid = function() {
+		if(navigator.userAgent.match(/Android/)) {
+			return true;
+		}
+		return false;
+	};
+}
+
+function showLink(device,quarystring) {
+	linkField = document.getElementById(device.tagId);
+	linkField.style.display = "none";
+	linkField.style.visibility = "hidden";
+
+	isSmartphone = false;
+
+	if(device.isIPhone()) {
+		isSmartphone = true;
+		linkField.innerHTML = '<nobr><a href="https://stgwww.rakuten-sec.co.jp/web/fund/smartphone/products/fund/detail/' + quarystring + '"><img src="https://stgwww.rakuten-sec.co.jp/web/images/index-btn-fund-site.jpg" border="0"></a></nobr>';
+	} else if(device.isIPod()) {
+		isSmartphone = true;
+		linkField.innerHTML = '<nobr><a href="https://stgwww.rakuten-sec.co.jp/web/fund/smartphone/products/fund/detail/' + quarystring + '"><img src="https://stgwww.rakuten-sec.co.jp/web/images/index-btn-fund-site.jpg" border="0"></a></nobr>';
+	} else if (device.isAndroid()) {
+		isSmartphone = true;
+		linkField.innerHTML = '<nobr><a href="https://stgwww.rakuten-sec.co.jp/web/fund/smartphone/products/fund/detail/' + quarystring + '"><img src="https://stgwww.rakuten-sec.co.jp/web/images/index-btn-fund-site.jpg" border="0"></a></nobr>';
+	}
+	
+/* Å´èâä˙ê›íËÅ´
+*	if(device.isIPhone()) {
+*		isSmartphone = true;
+*		linkField.innerHTML = '<nobr><a href="http://ispeed.jp/iphone/?l-id=vtop_smartphone_ispeed_iphone"><img src="/web/images/index-btn-iphone-01.gif" border="0"></a>'
+*			+ '<a href="https://www.rakuten-sec.co.jp/smartphone/?l-id=vtop_smartphone_iphone"><img src="/web/images/index-btn-iphone-02.gif" border="0"></a></nobr>';
+*	} else if(device.isIPod()) {
+*		isSmartphone = true;
+*		linkField.innerHTML = '<nobr><a href="http://ispeed.jp/iphone/?l-id=vtop_smartphone_ispeed_iphone"><img src="/web/images/index-btn-iphone-01.gif" border="0"></a>'
+*			+ '<a href="https://www.rakuten-sec.co.jp/smartphone/?l-id=vtop_smartphone_iphone"><img src="/web/images/index-btn-iphone-02.gif" border="0"></a></nobr>';
+*	} else if(device.isIPad()) {
+*		isSmartphone = true;
+*		linkField.innerHTML = '<a href="http://ispeed.jp/ipad/?l-id=vtop_smartphone_ipad"><img src="/web/images/index-btn-ipad.gif" border="0"></a>';
+*	} else if (device.isAndroid()) {
+*		isSmartphone = true;
+*		linkField.innerHTML = '<a href="https://www.rakuten-sec.co.jp/smartphone/?l-id=vtop_smartphone_android"><img src="/web/images/index-btn-smartphone.gif" border="0"></a>';
+*	}
+*/
+
+	if(isSmartphone) {
+		linkField.style.width="";
+		linkField.style.height="";
+
+		linkField.style.visibility = "visible";
+		linkField.style.display = "";
+	}
+}
+
+function getQuaryString(){
+        if(location.search.length > 1){
+                return location.search;
+        }
+        else{
+        	return ""
+	}
+}
+
+function sMain(){
+	qs = getQuaryString();
+	device = new Device();
+	showLink(device,qs);
+}
+

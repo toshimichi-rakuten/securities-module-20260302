@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  : import.css
+ style info : 
+=================================================================== */
+
+/* reset Style - 
+----------------------------------------------------------- */
+@import url("/smartphone/shared/css/reuters/reset.css");
+
+/* common Style - 
+----------------------------------------------------------- */
+@import url("/smartphone/shared/css/reuters/style.css?20171013");
+

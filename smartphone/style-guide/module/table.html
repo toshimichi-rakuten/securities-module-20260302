@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>テーブルモジュール一覧 | 楽天証券</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Rakuten Securities, Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://www.rakuten-sec.co.jp/web/products/">
+<link rel="apple-touch-icon-precomposed" href="/smartphone/img/securities.png">
+
+<!-- og -->
+<meta property="og:title" content="テーブルモジュール一覧 | 楽天証券" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://www.rakuten-sec.co.jp/web/shared/images/og-image.gif" />
+<meta property="og:url" content="https://www.rakuten-sec.co.jp/smartphone/style-guide/module/table.html" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="楽天証券" />
+<!-- /og -->
+
+<!-- ::::::::::::: ▼▼ stylesheet include :  start ▼▼ ::::::::::::::::: -->
+<!--#include virtual="/smartphone/shared/include/s1-stylesheet-bottom.html" -->
+<!-- ::::::::::::: ▲▲ stylesheet include :  end ▲▲ ::::::::::::::::: -->
+
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="/web/shared/css/styleguide.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules_smt.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+</head>
+
+<body id="top">
+
+<a id="pagetop"></a>
+
+<!--#include virtual="/smartphone/shared/include/header/s1-smt-header.html" -->
+
+
+<div class="s1-content-wrap title-area">
+  <div class="s1-hdg-lv1"><h1 class="s1-hdg-lv1__element">テーブル（表組み）</h1></div>
+  <div class="hdg-txt-box">
+    <p class="hdg-txt-box__lead">使い方はモジュールをご覧くださいませ</p>
+  </div><!-- /.hdg-txt-box -->
+</div><!-- /.s1-content-wrap -->
+
+
+<!-- ::::::::::::: ▼▼ 表組み : start ▼▼ ::::::::::::::::: -->
+<div class="s1-content">
+
+  <div class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element">table（表組み）</h2>
+  </div>
+
+  <div class="s1-content-area s1-content-first">
+
+    <p class="fw-b fc-01 mb-normal">※ 当モジュールは下層ページのみ有効となります</p>
+
+    <ul class="s1-list-standard">
+      <li>セル幅用汎用クラスは下記で用意しています。（5%刻み）<br>
+        <span class="fw-b fs14">.s1-tbl--width-10～.s1-tbl--width-60</span><br>
+      </li>
+      <li>縦要素の指定方法は下記クラスで可能です。
+        <ul>
+          <li><span class="fw-b">va-b</span> : vertical-align:bottom</li>
+          <li><span class="fw-b">va-m</span> : vertical-align:middle</li>
+        </ul>
+      </li>
+      <li><span class="fc-02">ボーダー用クラスを追加しました。</span>
+        <ul>
+          <li><span class="fw-b">tbl-bdr-top</span> : 上</li>
+          <li><span class="fw-b">tbl-bdr-right</span> : 右</li>
+          <li><span class="fw-b">tbl-bdr-bottom</span> : 下</li>
+          <li><span class="fw-b">tbl-bdr-left</span> : 左</li>
+        </ul>
+        <span class="fc-01">※ 非表示用クラス</span>
+        <ul>
+          <li><span class="fw-b">tbl-bdr-none--none</span> : 上下左右</li>
+        </ul>
+      </li>
+      <li><a href="https://www.rakuten-sec.co.jp/smartphone/commission/">手数料ページ</a>で多用しているので参考にどうぞ</li>
+    </ul>
+
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み1（ストライプ）</h4>
+    </div>
+    <div class="module-sample">
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 s1-tbl--row-color mb-triple">
+      <thead>
+        <tr>
+          <th>上項目A</th>
+          <th>上項目B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fc-05 fw-b">横項目横項目A<br>横項目横項目B<br>横項目横項目C</td>
+          <td>３行の例３行の例３行の例３行の例</td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">横項目横項目D</td>
+          <td>2行の例2行の例2行の例2行の例</td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">横項目横項目E</td>
+          <td>1行の例</td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">横項目横項目F</td>
+          <td>1行の例</td>
+        </tr>
+      </tbody>
+    </table>
+    </div><!-- /.module-sample -->
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み2（thが左にある場合）</h4>
+    </div>
+    <div class="module-sample">
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+      <tbody>
+        <tr>
+          <th>横項目横項目A<br>横項目横項目B<br>横項目横項目C</th>
+          <td>３行の例３行の例３行の例３行の例</td>
+        </tr>
+        <tr>
+          <th>横項目横項目D</th>
+          <td>2行の例2行の例2行の例2行の例</td>
+        </tr>
+        <tr>
+          <th>横項目横項目E</th>
+          <td>1行の例</td>
+        </tr>
+        <tr>
+          <th>横項目横項目F</th>
+          <td>1行の例</td>
+        </tr>
+      </tbody>
+    </table>
+    </div><!-- /.module-sample -->
+
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み（theadにrowspanがあるパターン）</h4>
+    </div>
+    <div class="module-sample">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+        <thead>
+          <tr>
+            <th rowspan="2">テキスト : th</th>
+            <th>テキスト : th</th>
+            <th>テキスト : th</th>
+          </tr>
+          <tr>
+            <th>テキスト : th</th>
+            <th>テキスト : th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>テキスト : td</td>
+            <td>テキスト : td</td>
+            <td>テキスト : td</td>
+          </tr>
+          <tr>
+            <td>テキスト : td</td>
+            <td>テキスト : td</td>
+            <td>テキスト : td</td>
+          </tr>
+          <tr>
+            <td>テキスト : td</td>
+            <td>テキスト : td</td>
+            <td>テキスト : td</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み（tbodyにrowspanがあるパターン）</h4>
+    </div>
+    <div class="module-sample">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01">
+        <thead>
+          <tr class="line-color--01">
+            <th>コールオプション<br>（円安）</th>
+            <th>ペイアウト</th>
+            <th>損益</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ta-c" rowspan="2">買い手</td>
+            <td class="ta-c" rowspan="2">受取る</td>
+            <td>テキストテキストテキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <td>テキストテキストテキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <td class="ta-c" rowspan="2">売り手</td>
+            <td class="ta-c" rowspan="2">支払う</td>
+            <td>テキストテキストテキストテキストテキストテキスト</td>
+          </tr>
+          <tr>
+            <td>テキストテキストテキストテキストテキストテキスト</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み（複雑パターン）</h4>
+    </div>
+    <ul class="s1-list-notice-a">
+      <li>サンプル用で少々過剰に組んでいます</li>
+    </ul>
+    <div class="module-sample">
+      <p class="scroll-txt">表は横にスクロールします</p>
+      <div class="scroll-box">
+        <table class="s1-tbl-data01 s1-tbl-data01--type01">
+          <thead>
+            <tr>
+              <th rowspan="2">テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th colspan="2">テキスト : th</th>
+              <th>テキスト : th</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>テキスト : th</th>
+              <th rowspan="2">テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td rowspan="2">テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th rowspan="2">テキスト : th</th>
+              <th>テキスト : th</th>
+              <td colspan="2">テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th colspan="2">テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <ul class="s1-list-notice-a">
+      <li>ストライプパターンで背景色を変更したい場合は<a href="#color-class">クラス</a>で調整してください。</li>
+    </ul>
+    <div class="module-sample">
+      <p class="scroll-txt">表は横にスクロールします</p>
+      <div class="scroll-box">
+        <table class="s1-tbl-data01 s1-tbl-data01--type01  s1-tbl--row-color">
+          <thead>
+            <tr>
+              <th rowspan="2">テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <th colspan="2">テキスト : th</th>
+              <th>テキスト : th</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>テキスト : th</th>
+              <th rowspan="2">テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td class="bg-w" rowspan="2">背景色調整セル（参考）</td>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th rowspan="2">テキスト : th</th>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td colspan="2">テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th colspan="2">テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+            <tr>
+              <th>テキスト : th</th>
+              <th>テキスト : th</th>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+              <td>テキスト : td</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み3（横スクロールあり）</h4>
+    </div>
+    <ul class="s1-list-notice-a fs12 mb-normal">
+      <li>表の横幅がコンテンツ幅に収まらない場合に使用する</li>
+    </ul>
+    <div class="module-sample">
+      <p class="scroll-txt">表は横にスクロールします</p>
+      <div class="scroll-box mb-triple">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 s1-tbl--row-color">
+        <thead>
+          <tr class="line-color--01">
+            <th>上項目A</th>
+            <th>上項目B</th>
+            <th>上項目C</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fc-05 fw-b">横項目横項目A<br>横項目横項目B<br>横項目横項目C</td>
+            <td>３行の例３行の例３行の例<br>３行の例</td>
+            <td>３行の例３行の例３行の例３行の例</td>
+          </tr>
+          <tr>
+            <td class="fc-05 fw-b">横項目横項目D</td>
+            <td>2行の例2行の例2行の例2行の例</td>
+            <td>2行の例2行の例2行の例2行の例</td>
+          </tr>
+          <tr>
+            <td class="fc-05 fw-b">横項目横項目E</td>
+            <td>1行の例</td>
+            <td>1行の例</td>
+          </tr>
+          <tr>
+            <td class="fc-05 fw-b">横項目横項目F</td>
+            <td>1行の例</td>
+            <td>1行の例</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div><!-- /.module-sample -->
+
+    <div class="module-sample">
+    <div class="s1-hdg-lv4" id="color-class">
+      <h4 class="s1-hdg-lv4__element">表組み4<br>(縦幅広、ストライプ無し、背景色クラスで指定)</h4>
+    </div>
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 mb-triple">
+      <thead>
+        <tr>
+          <th>上項目A</th>
+          <th>上項目B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-y">背景色 : 黄<br>クラス名 : bg-y</td>
+          <td>テキストテキストテキストテキスト : td</td>
+        </tr>
+        <tr>
+          <td>テキストテキスト : td</td>
+          <td class="bg-r-01">背景色 : 赤<br>クラス名 : bg-r-01</td>
+        </tr>
+        <tr>
+          <td class="bg-r-02">背景色 : 赤（暗め）<br>クラス名 : bg-r-02</td>
+          <td class="bg-b">背景色 : 青<br>クラス名 : bg-b</td>
+        </tr>
+        <tr>
+          <td>テキストテキスト : td</td>
+          <td>テキストテキスト : td</td>
+        </tr>
+      </tbody>
+    </table>
+    </div><!-- /.module-sample -->
+
+    <div class="module-sample">
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み5<br>(縦幅広:縦余白違い、ストライプ無し、背景色クラスで指定)</h4>
+    </div>
+    <ul class="s1-list-notice-a fs12 mb-normal">
+      <li>縦幅広の用途は不明…</li>
+    </ul>
+    <table class="s1-tbl-data01 s1-tbl-data01--type02">
+      <thead>
+        <tr>
+          <th>上項目A</th>
+          <th>上項目B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bg-y">背景色 : 黄<br>クラス名 : bg-y</td>
+          <td>テキストテキストテキストテキスト : td</td>
+        </tr>
+        <tr>
+          <td>テキストテキスト : td</td>
+          <td class="bg-r-01">背景色 : 赤<br>クラス名 : bg-r-01</td>
+        </tr>
+        <tr>
+          <td class="bg-r-02">背景色 : 赤（暗め）<br>クラス名 : bg-r-02</td>
+          <td class="bg-b">背景色 : 青<br>クラス名 : bg-b</td>
+        </tr>
+        <tr>
+          <td>テキストテキスト : td</td>
+          <td>テキストテキスト : td</td>
+        </tr>
+        <tr>
+          <td class="bg-gr">背景色 : 緑（暗め）<br>クラス名 : bg-gr</td>
+          <td class="bg-o">背景色 : オレンジ<br>クラス名 : bg-o</td>
+        </tr>
+        <tr>
+          <td class="bg-p">背景色 : ムラサキ<br>クラス名 : bg-p</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+    </div><!-- /.module-sample -->
+
+
+
+
+
+    <div class="module-sample">
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">表組み6（横スクロールあり）<br>※投信で使ってるよ（★・積立ボタン付き）</h4>
+    </div>
+    <p class="scroll-txt">表は横にスクロールします</p>
+    <div class="scroll-box mb-triple">
+    <table class="s1-tbl-data01 s1-tbl-data01--type01 s1-tbl--row-color">
+      <thead>
+        <tr class="line-color--01">
+          <th>タイプ</th>
+          <th>商品正式名称</th>
+          <th>基本配分</th>
+          <th>安定</th>
+          <th>積極</th>
+          <th>お気に入り</th>
+          <th>積立設定</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fc-05 fw-b">先進国債権<br>（ヘッジ付き）</td>
+          <td><a href="">モルガン・スタンレー・グローバル・ボンド・オープン</a></td>
+          <td>35%</td>
+          <td>50%</td>
+          <td>20%</td>
+          <td class="ta-c"><span class="btn-fav"><a href="">★</a></span></td>
+          <td class="ta-c pr-20"><span class="btn-fund"><a href="">積立</a></span></td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">国内株式</td>
+          <td><a href="">ニッセイ日経225インデックスファンド</a></td>
+          <td>20%</td>
+          <td>15%</td>
+          <td>25%</td>
+          <td class="ta-c"><span class="btn-fav"><a href="">★</a></span></td>
+          <td class="ta-c pr-20"><span class="btn-fund"><a href="">積立</a></span></td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">先進国株式</td>
+          <td><a href="">テンプルトン・グローバル株式ファンド</a></td>
+          <td>20%</td>
+          <td>15%</td>
+          <td>25%</td>
+          <td class="ta-c"><span class="btn-fav"><a href="">★</a></span></td>
+          <td class="ta-c pr-20"><span class="btn-fund"><a href="">積立</a></span></td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">新興国株式</td>
+          <td><a href="">インデックスファンﾄﾞ海外新興国（エマージング）株式</a></td>
+          <td>35%</td>
+          <td>50%</td>
+          <td>20%</td>
+          <td class="ta-c"><span class="btn-fav"><a href="">★</a></span></td>
+          <td class="ta-c pr-20"><span class="btn-fund"><a href="">積立</a></span></td>
+        </tr>
+        <tr>
+          <td class="fc-05 fw-b">国内リート</td>
+          <td><a href="">＜購入・換金手数料なし＞ニッセイ Jリートインデックスファンド</a></td>
+          <td>35%</td>
+          <td>50%</td>
+          <td>20%</td>
+          <td class="ta-c"><span class="btn-fav"><a href="">★</a></span></td>
+          <td class="ta-c pr-20"><span class="btn-fund"><a href="">積立</a></span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    </div><!-- /.module-sample -->
+
+
+<div class="module-sample">
+<div class="s1-hdg-lv4">
+  <h4 class="s1-hdg-lv4__element">表組み7（横スクロールあり その2）</h4>
+</div>
+<div class="scroll-box-wrap">
+  <p class="scroll-txt">表は横にスクロールします</p>
+  <div class="scroll-box">
+      <table class="s1-tbl-data01 s1-tbl-data01--type01 s1-tbl--row-color">
+        <thead>
+          <tr class="line-color--01">
+            <th class="tbl-bdr-bottom"></th>
+            <th>Excel2010<br>（32bit）</th>
+            <th>Excel2010<br>（64bit）</th>
+            <th>Excel2013<br>（32bit）</th>
+            <th>Excel2013<br>（64bit）</th>
+            <th>Excel2016<br>（32bit）</th>
+            <th>Excel2016<br>（64bit）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="ta-c">Windows7<br>（32bit）</th>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+          </tr>
+          <tr>
+            <th class="ta-c">Windows7<br>（64bit）</th>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+          </tr>
+          <tr>
+            <th class="ta-c">Windows8.1<br>（32bit）</th>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+          </tr>
+          <tr>
+            <th class="ta-c">Windows8.1<br>（64bit）</th>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+          </tr>
+          <tr>
+            <th class="ta-c">Windows10<br>（32bit）</th>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m">—</td>
+          </tr>
+          <tr>
+            <th class="ta-c">Windows10<br>（64bit）</th>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+            <td class="ta-c va-m"><img src="/smartphone/help/images/choice_company-icon-02.gif" alt="" height="19" width="19"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div><!-- /.module-sample -->
+
+
+  </div><!-- /.s1-content-area -->
+</div><!-- /s1-content-area -->
+<!-- ::::::::::::: ▲▲ 表組み : end ▲▲ ::::::::::::::::: -->
+
+
+
+<!-- ::::::::::::: ▼▼ パンくず : start ▼▼ ::::::::::::::::: -->
+<div class="s1-breadcrumbs-wrap">
+  <ul class="s1-breadcrumbs">
+    <li><a href="/smartphone/style-guide/">スタイルガイド</a>&nbsp;&gt;&nbsp;</li>
+    <li><a href="/smartphone/style-guide/module/">モジュール</a>&nbsp;&gt;&nbsp;</li>
+    <li>テーブルモジュール一覧</li>
+  </ul>
+</div>
+<!-- ::::::::::::: ▲▲ パンくず : end ▲▲ ::::::::::::::::: -->
+
+
+
+
+<!-- s1-common-bottom-footer include start -->
+<!--#include virtual="/smartphone/shared/include/s1-common-bottom-footer.html" -->
+<!-- s1-common-bottom-footer include end -->
+
+
+<!-- ============ログ解析============ -->
+<!-- SiteCatalyst code -->
+<script type="text/javascript" src="/web/shared/js/sc/s_code.js"></script>
+<script type="text/javascript"><!--
+void(s.t())
+//--></script>
+<!-- End SiteCatalyst code -->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

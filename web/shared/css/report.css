@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	レポート用CSS
+----------------------------------------------------------------- */
+
+div#str-main p {
+font-size:100%;
+line-height:1.7em;
+margin-bottom:1.7em;
+word-wrap:break-word;
+word-break:normal;
+}
+
+div#str-main h1 span{
+font-size:120%;
+font-weight:bold;
+line-height:1.2em;
+}
+
+div#str-main h2 span{
+font-size:150%;
+line-height:1.2em;
+}
+
+div#str-main h3 span{
+font-size:150%;
+}
+
+div#str-main ul li,
+div#str-main ol li,
+div#str-main dl dt,
+div#str-main dl dd{
+font-size:115%;
+line-height:1.7em;
+margin-bottom:0.5em;
+}
+
+div#str-main div.box-attention-01 dl.list-normal-01 dd ul.list-bullet-02 li{
+font-size:100%;
+}
+
+div#str-main ol.list-ordered-02 {
+font-size:90%;
+}
+
+div#str-main table.tbl-data-01, div#str-main table.tbl-data-02, div#str-main table.tbl-data-03, div#str-main table.tbl-data-04 {
+font-size:100%;
+}

@@ -1,0 +1,84 @@
+
+<!-- 追加バナー -->
+<p class="ta-c pt-normal pl-8 pr-8">
+  <a href="https://ac.ebis.ne.jp/tr_set.php?argument=ZMhPE4GP&ai=rgp_mno_004272" target="_blank"><img src="/web/images/banners/ads_mobile_un-limit/375x50.png" alt="" style="max-width: 100%;"></a>
+</p>
+<!-- 追加バナー -->
+
+<!-- footer : start -->
+<footer class="p-rf-f mt-normal footer-content-area" role="contentinfo">
+  <div class="p-rf-f__inner -top">
+    <div class="l-rf-container">
+        <!-- s4-common-sitemap include start -->
+        <!--#include virtual="/smartphone/shared/include/s4-common-sitemap.html" -->
+        <!-- s4-common-sitemap include end -->
+        <!-- s4-common-footer include start -->
+        <!--#include virtual="/smartphone/shared/include/s4-common-footer.html" -->
+        <!-- s4-common-footer include end -->
+    </div>
+  </div>
+  <!-- s4-common-footer-bottom include start -->
+  <!--#include virtual="/smartphone/shared/include/s4-common-footer-bottom.html" -->
+  <!-- s4-common-footer-bottom include end -->
+</footer>
+
+<ul class="bottom-icon__list" style="display: none;">
+  <li class="bottom-icon__item scrolltop">
+    <div class="rex-icon rex-icon--bottom rex-icon-arrow-up"></div>
+    <span class="bottom-icon__text">上へ</span>
+  </li>
+</ul>
+
+<!-- ::::::::::::: ▼▼ javaScript include :  start ▼▼ ::::::::::::::::: -->
+<script src="/smartphone/shared/js/jquery-3.3.1.min.js"></script>
+<script src="/smartphone/shared/js/scripts_sp.js" defer></script>
+<!-- ::::::::::::: ▲▲ javaScript include :  end ▲▲ ::::::::::::::::: -->
+
+<!-- ::::::::::::: ▼▼ scripts 検索機能 :  start ▼▼ ::::::::::::::::: -->
+<script src="/smartphone/shared/js/rsearch.js" defer></script>
+<script src="/smartphone/shared/js/style_sp-rsearch.js" defer></script>
+<!-- ::::::::::::: ▲▲ scripts 検索機能 :  end ▲▲ ::::::::::::::::: -->
+
+<script>
+
+  $(window).on('load scroll',function(){
+
+    var scrollBtn    = $('.bottom-icon__list'),
+          windowHeight = $(this).scrollTop(),
+          scrollAmount = 56;
+
+    if( windowHeight > scrollAmount ){
+      scrollBtn.addClass('fixed').fadeIn();
+    }else if( windowHeight < scrollAmount ){
+      scrollBtn.removeClass('fixed').fadeOut();
+    }
+
+  });
+
+  $('.bottom-icon__item.scrolltop').on('click',function(){
+
+    var speed    = 500,
+        easing   = 'swing',
+        target   = $('#pagetop'),
+        head     = $('#VHEAD'),
+        position = target.offset().top - head.outerHeight();
+
+    $("html, body").animate({scrollTop:position}, speed, easing);
+
+    return false;
+
+  });
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="//c.marsflag.com/mf/mfx/1.0-latest/css/mfx-serp.css" media="all" charset="UTF-8">
+<link rel="stylesheet" href="/smartphone/shared/css/style-search.css" media="all">
+
+<script type="text/javascript">
+	!function(){
+		var G = GALFSRAM = window.GALFSRAM || {}
+		G.mfx = G.mfx || {}
+		G.mfx.router_mode = 'history'
+	}();
+</script>
+<!-- footer : end -->

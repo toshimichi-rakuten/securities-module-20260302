@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+	column-fxpanel-01
+----------------------------------------------------------------- */
+div#str-main div#rate-panel-area{
+margin:0 0 10px;
+}
+
+
+div.column-fxpanel-01{
+margin:0 0 0 2px;
+}
+
+div#str-main div.column-fxpanel-01 div.segment{
+border-color:#acafbb;
+border-style:solid;
+border-width:1px 0 1px 1px;
+margin:0 0 5px;
+float:left;
+width:186px;
+position:relative;
+}
+
+div#str-main div.column-fxpanel-01 div.segment.last-child{
+border-right:1px solid #acafbb;
+}
+
+div#str-main div.column-fxpanel-01 h3.pair img{
+vertical-align:-0.15em;
+}
+
+div#str-main div.column-fxpanel-01 h3.pair{
+padding:4px 5px 3px;
+background:#d5d5d5 url("/web/shared/images/bg-modules/bg-fxpanel-01.gif") top repeat-x;
+font-size:16px;
+font-weight:bold;
+}
+
+div#str-main div.column-fxpanel-01 h3.pair span{
+padding-left:5px;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel{
+border-color:#fff;
+border-style:solid;
+border-width:1px 0 0 1px;
+margin:0;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel th{
+padding:2px 5px 1px;
+border-color:#fff;
+border-style:solid;
+border-width:0 1px 1px 0;
+width:50%;
+font-size:12px;
+line-height:1;
+text-align:center;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel th.rabel-bid{
+background:#cdd7ec url("/web/shared/images/bg-modules/bg-fxpanel-02.gif") top repeat-x;
+color:#1859e1;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel th.rabel-ask{
+background:#ecd6cd url("/web/shared/images/bg-modules/bg-fxpanel-03.gif") top repeat-x;
+color:#cc0000;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel td{
+padding:5px 5px 3px;
+border-color:#fff;
+border-style:solid;
+border-width:0 1px 1px 0;
+line-height:1;
+text-align:center;
+background:#dcdcdc url("/web/shared/images/bg-modules/bg-fxpanel-04.gif") top repeat-x;
+font-family:Arial, Helvetica, sans-serif;
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel span.integer{
+font-size:21px;
+display:block;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel span.decimal{
+font-size:36px;
+display:block;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-panel span.decimal span{
+font-size:24px;
+}
+
+
+div#str-main div.column-fxpanel-01 table.tbl-hl{
+border-color:#fff;
+border-style:solid;
+border-width:0 0 0 1px;
+margin:0;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-hl th,
+div#str-main div.column-fxpanel-01 table.tbl-hl td{
+padding:2px 5px 1px;
+border-color:#fff;
+border-style:solid;
+border-width:0 1px 1px 0;
+font-size:12px;
+line-height:1.2;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-hl th{
+color:#777;
+}
+
+div#str-main div.column-fxpanel-01 table.tbl-hl td{
+text-align:right;
+}
+
+div#str-main div.column-fxpanel-01 p.spread{
+position:absolute;
+top:4.2em;
+left:50%;
+width:26px;
+margin-left:-14px;
+padding:3px 1px 1px;
+background:#9c9c9c url("/web/shared/images/bg-modules/bg-fxpanel-05.gif") top repeat-x;
+font-size:12px;
+color:#fff;
+text-align:center;
+line-height:1;
+border-radius:2px;
+}
+
+/* ie7 */
+*+html div#str-main div.column-fxpanel-01{
+padding-bottom:10px;
+}
+
+
+div#str-main div.nav-tab-container ul.list-btn-renew{
+position:absolute;
+right:4px;
+top:0;
+}
+
+div#str-main div.nav-tab-container ul.list-btn-renew li{
+padding:0;
+}
+
+div#str-main div.nav-tab-container ul.list-btn-renew li.update{
+margin-left:5px;
+}
+
+
+/* Rate Table */
+
+div#str-main table.tbl-data-01.tbl-rate-01{
+margin-bottom:0.5em;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 thead th{
+padding:3px 5px 2px;
+color:#333;
+text-align:center;
+line-height:1;
+vertical-align:middle;
+background:#ddd;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 tbody th{
+padding:4px 5px 3px;
+background:#f1f1f1;
+color:#333;
+line-height:1;
+font-weight:bold;
+font-size:14px;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 tbody th img{
+vertical-align:-0.15em;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 tbody th span{
+padding-left:5px;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 tbody td{
+padding:4px 5px 3px;
+background:#fff;
+line-height:1;
+text-align:right;
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 tbody tr.even th{
+background:#e5e5e5;
+}
+
+div#str-main table.tbl-data-01.tbl-rate-01 tbody tr.even td{
+background:#f5f5f5;
+}
+
+div#str-main p#show-all-pair{
+text-align:center;
+}
+
+div#str-main p#show-all-pair img:hover{
+cursor:pointer;
+}
+
+/* ----------------------------------------------------------------
+	column-fxpanel-02
+----------------------------------------------------------------- */
+div#str-main div#small-rate-panel{
+margin:0 0 10px;
+padding:3px 4px;
+background:#e6e6e6;
+}
+
+div#str-main div.column-fxpanel-02 div.segment{
+margin-right:3px;
+border:1px solid #acafbb;
+float:left;
+width:245px;
+position:relative;
+}
+
+div#str-main div.column-fxpanel-02 div.segment.last-child{
+margin-right:0;
+}
+
+
+div#str-main div.column-fxpanel-02 h3.pair{
+float:left;
+width:70px;
+padding:5px 5px 3px;
+border-right:1px solid #acafbb;
+background:#d5d5d5 url("/web/shared/images/bg-modules/bg-fxpanel-01.gif") top repeat-x;
+font-size:12px;
+font-weight:bold;
+text-align:center;
+}
+
+div#str-main div.column-fxpanel-02 h3.pair img{
+margin-bottom:3px;
+vertical-align:-0.15em;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2{
+float:right;
+width:164px;
+border-color:#fff;
+border-style:solid;
+border-width:1px 0 0 1px;
+margin:0;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 th{
+padding:2px 5px 1px;
+border-color:#fff;
+border-style:solid;
+border-width:0 1px 1px 0;
+width:50%;
+font-size:11px;
+line-height:1;
+text-align:center;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 th.rabel-bid{
+background:#cdd7ec url("/web/shared/images/bg-modules/bg-fxpanel-02.gif") top repeat-x;
+color:#1859e1;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 th.rabel-ask{
+background:#ecd6cd url("/web/shared/images/bg-modules/bg-fxpanel-03.gif") top repeat-x;
+color:#cc0000;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 td{
+padding:9px 5px 4px;
+border-color:#fff;
+border-style:solid;
+border-width:0 1px 1px 0;
+line-height:1;
+text-align:center;
+background:#dcdcdc url("/web/shared/images/bg-modules/bg-fxpanel-04.gif") top repeat-x;
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 span.integer{
+font-size:16px;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 span.decimal{
+font-size:16px;
+}
+
+div#str-main div.column-fxpanel-02 table.tbl-panel2 span.decimal span{
+font-size:12px;
+}
+
+div#str-main div.column-fxpanel-02 p.spread{
+position:absolute;
+top:8px;
+right:60px;
+width:26px;
+padding:3px 1px 1px;
+background:#9c9c9c url("/web/shared/images/bg-modules/bg-fxpanel-05.gif") top repeat-x;
+font-size:12px;
+color:#fff;
+text-align:center;
+line-height:1;
+border-radius:2px;
+}
+
+
+div#str-main div.nav-tab-container ul.list-btn-renew{
+position:absolute;
+right:4px;
+top:0;
+}
+
+div#str-main div.nav-tab-container ul.list-btn-renew li{
+padding:0;
+}
+
+div#str-main div.nav-tab-container ul.list-btn-renew li.update{
+margin-left:5px;
+}
+
+

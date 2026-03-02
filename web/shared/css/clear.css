@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Float Clearing
+*	02. Get hasLayout
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Float Clearing
+----------------------------------------------------------------- */
+div#str-search:after,
+div#str-contents:after,
+div#nav-global ul:after,
+body#top div#str-main:after,
+
+body.lyt-column-ms-02 div#str-sub-common div.advertisement ul:after,
+body.lyt-column-ms-02 div#str-sub-common div.account ul:after,
+
+div#str-footer div#nav-summary:after,
+
+div#str-main ul.list-col2:after,
+div#str-main ul.list-col3:after,
+div#str-main ul.nav-page-01:after,
+div#str-main ul.nav-page-02:after,
+div#str-contents-inner div.nav-tab-container:after,
+div#str-contents-inner div.nav-tab-container ul:after,
+
+div#str-main div.box-step-index-01 ol:after,
+div#str-main div.list-index-01 ul:after,
+div#str-main div.list-index-02 ul:after,
+div#str-main div.list-index-01-odd ul:after,
+div#str-main div.list-index-02-odd ul:after,
+div#str-main div.list-index-03 ul:after,
+div#str-main div.list-index-03-odd ul:after,
+
+div#str-main ul.list-link-05:after,
+
+div#str-main ul.list-charm-01 li ul.list-btn-01:after,
+div#str-main div.box-history-01 ul.list-history-01:after,
+
+div#str-main div.box-banner-02 li:after,
+div#str-main div.box-banner-03 ul:after,
+div#str-main div.box-banner-04 ul:after,
+div#str-main div.box-banner-04 li:after,
+
+div#str-main div.lyt-image:after,
+div#str-main div.lyt-inquiry-01:after,
+
+div#str-main div.lyt-column:after,
+div#str-contents-inner div.lyt-column:after,
+div#str-main div.box-column:after,
+
+div#str-main div.tbl-flow-01:after,
+
+div#str-main div.box-login ul.list-btn-02:after,
+
+div#str-main div.box-pay-01 dl.explanation:after,
+
+div#str-contents-inner div.box-fund-search:after,
+div#str-main div.box-fund-topics div.lyt-fund-topics:after,
+div#str-main div.box-fund-step-01 ol.nav-step-01:after,
+div#str-main div.nav-fund-stockprice ul:after,
+
+div#str-main div.form-01 ul.list-form-01:after,
+div#str-main div.form-02 ul.list-form-01:after,
+div#str-main div.form-result-01 div.lyt-form-result-01
+div#str-main div.form-result-01 ul.list-form-01:after,
+div#str-main div.form-search-more-01 div.lyt-form-search-more-01:after,
+div#str-main div.form-search-more-01 ul.list-form-01:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+/* ----------------------------------------------------------------
+    02. Get hasLayout
+----------------------------------------------------------------- */
+div, ul, li, dl, dt, dd, p,
+
+div#nav-local ul a,
+#str-main ol.list-ordered-03 li span,
+
+#str-main div.box-step-01 .hdg-step,
+
+div#str-main ul.list-charm-01 li li,
+div#str-main div.box-step-01 ol.list-ordered-03 div.box-inner-01 ul.list-notice-01 li,
+div#str-main div.nav-contents-03 ol li a,
+div#str-main div.box-step-index-01 ol li.selected span,
+div#str-main div.box-step-index-01 ol li span a{
+zoom:1;
+}
+
+ol li,
+body.lyt-column-ms-01 div#str-contents-inner,
+body.lyt-column-ms-02 div#str-contents-inner,
+div#str-main ul.list-charm-01 li div.charm-inner,
+
+div#str-main div.box-02 div.hdg-l2-02-container,
+
+div#str-main ul.list-charm-01 li,
+
+#str-main div.image-L p,
+#str-main div.image-R p,
+
+div#nav-local ul,
+div#nav-local ul li{
+zoom:0;
+}
+

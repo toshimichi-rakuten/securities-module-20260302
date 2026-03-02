@@ -1,0 +1,177 @@
+@charset "UTF-8";
+form {
+  margin: 0; }
+
+/***  お問い合わせ page  ***/
+#inquiry-body {
+  padding: 8px 0px;
+  width: auto;
+  max-width: 735px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.inquiry-title {
+  background-color: #999999;
+  padding: 5px; }
+
+.inquiry-title-font {
+  color: #ffffff;
+  font-size: 14px; }
+
+.hr_style {
+  margin: 10px 0px; }
+
+.inquiry-detail {
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: 1em;
+  box-sizing: border-box; }
+  .inquiry-detail tbody tr {
+    width: 100%; }
+  .inquiry-detail th {
+    font-size: 100%;
+    font-weight: normal;
+    padding: 1em 0.5em;
+    text-align: left;
+    width: 25%;
+    box-sizing: border-box; }
+    @media screen and (max-width: 767px) {
+      .inquiry-detail th {
+        display: block;
+        width: 100%; } }
+  .inquiry-detail td {
+    box-sizing: border-box; }
+    @media screen and (max-width: 767px) {
+      .inquiry-detail td {
+        display: block;
+        width: 100%; } }
+    @media screen and (max-width: 767px) {
+      .inquiry-detail td input {
+        width: 100%;
+        box-sizing: border-box; } }
+  .inquiry-detail .right-column {
+    font-size: 12px;
+    padding: 1em 0.5em;
+    text-align: left;
+    box-sizing: border-box; }
+    .inquiry-detail .right-column textarea {
+      width: 100% !important;
+      font-size: 12px;
+      box-sizing: border-box; }
+  .inquiry-detail #sub_btn {
+    font-size: 12px;
+    padding: 0.2em 0.5em;
+    text-align: center; }
+  .inquiry-detail td#inquiry-notice {
+    padding: 1em 0 1em 0.5em; }
+  .inquiry-detail .necessary {
+    color: #EE0000; }
+  .inquiry-detail .inquiry_zipcode {
+    ime-mode: disabled; }
+  .inquiry-detail .inquiry_phone {
+    ime-mode: disabled; }
+  .inquiry-detail .inquiry_mail {
+    ime-mode: disabled; }
+  .inquiry-detail .in_url {
+    ime-mode: disabled; }
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.inquiry-info {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em; }
+  .inquiry-info th {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 0.2em 0.5em;
+    text-align: left; }
+  .inquiry-info td {
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    padding: 0.2em 0.5em;
+    text-align: left;
+    vertical-align: top;
+    width: 85%; }
+  .inquiry-info td.title {
+    background-color: #CCCCCC;
+    border: 1px solid #CCCCCC; }
+  .inquiry-info td#confArea {
+    text-align: center; }
+  .inquiry-info td#sub_btn {
+    text-align: center; }
+  .inquiry-info td.title h4 {
+    float: left;
+    font-size: 120%;
+    margin: 0pt;
+    padding: 0pt; }
+  .inquiry-info #inquiry_other {
+    font-weight: normal;
+    padding: 0.2em 0.5em;
+    text-align: left; }
+    .inquiry-info #inquiry_other .left-content {
+      float: left; }
+    .inquiry-info #inquiry_other .right-content {
+      float: right; }
+
+#inquiry-confirm th, #inquiry-confirm td {
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
+/*** recommend ***/
+.recommendTop {
+  width: 100%; }
+
+.recommendTop .recommendArea #recommend-td {
+  padding: 20px 0px 20px 0px; }
+
+.recommendArea {
+  border: 0; }
+
+.recommendArea #recommend-td {
+  padding: 20px 80px 20px 80px; }
+
+.recommendArea #recommend-td #recommend-list {
+  background-color: #FEFEFE;
+  border: 2px solid #999999;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: auto; }
+
+.recommendTop .recommendArea #recommend-td #recommend-list {
+  width: 100%; }
+  .recommendTop .recommendArea #recommend-td #recommend-list #recommend-list-detail {
+    margin-left: auto;
+    margin-right: auto; }
+
+.recommendArea #recommend-td #recommend-list #recommend-list-detail {
+  padding: 15px 10px 15px 20px;
+  text-align: left; }
+  .recommendArea #recommend-td #recommend-list #recommend-list-detail .recommend-url {
+    font-size: 0.9em; }
+
+.recommendArea #recommend-td #recommend-title {
+  font-weight: bold; }
+
+.err-msg {
+  color: #FF0000;
+  font-size: 12px;
+  text-align: left; }
+
+#InquiryMsgArea {
+  font-size: 13px;
+  padding-bottom: 20px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto; }
+
+.err-message {
+  color: #FF0000;
+  font-size: 12px;
+  text-align: left; }
+
+/***************************/

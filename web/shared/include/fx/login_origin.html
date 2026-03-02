@@ -1,0 +1,27 @@
+﻿<!-- UTF-8 BOM付、CR+LF -->
+<!--default-->
+<p style="margin:0;text-align:center;"><img src="images/img-id-pass-note.gif" alt="楽天 FXのログインID・パスワードは「楽天証券のID・パスワード」と同じです。ただし、楽天FXのログインID・パスワードとは異なります。" /></p>
+
+<div class="login">
+<div class="login-inner">
+<form id="LoginForm" name="loginform" method="post" action="https://fx.rakuten-sec.co.jp/web/webMainLogin.action">
+<fieldset id="login">
+<legend>ログイン</legend>
+<p><label for="form-login-id">ログインID</label><input type="text" id="form-login-id" name="loginId" maxlength="8" tabindex="1" style="ime-mode:inactive" />
+<label for="form-login-pass">パスワード</label><input type="password" id="form-login-pass" name="password" maxlength="20" tabindex="2" /></p>
+<p class="link-openkey"><a href="javascript:void(0)" id="keyboard_opener">ソフトウェアキーボードをご利用いただくと便利です</a></p>
+<ul>
+<li><input type="image" value="ログイン" src="/web/shared/images/button/btn-direct-login-01.gif" id="login-btn" tabindex="3" />
+</li>
+<li><input type="image" value="クリア" onclick="this.form.reset();return false" src="/web/shared/images/button/btn-direct-clear-01.gif" id="reset-btn" tabindex="4" /></a>
+</li>
+</ul>
+</fieldset>
+<p style="margin:0 25px 0 0; padding-top:15px; text-align: center;"><a href="/web/help/care_login.html#care_login-02" style="color:#FFFFFF; background: url(/web/shared/images/str-sub-common/arrow-06.gif) no-repeat left center; padding-left: 10px;">ログインできない方はこちら</a></p>
+</form>
+</div><!-- /.login-inner -->
+</div>
+<!-- ============ソフトウェアキーボード============ -->
+<!--#include virtual="/web/shared/include/software_keyboard/software_keyboard.html" -->
+<!-- ============ソフトウェアキーボード============ -->
+<!--/default-->

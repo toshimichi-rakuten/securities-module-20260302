@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. commission-container
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. commission-container
+----------------------------------------------------------------- */
+div#str-main div.commission-container{
+margin-bottom:1.25em;
+}
+
+div#str-main div.commission-container h4{
+margin-bottom:20px;
+}
+
+div#str-main div.commission-container table.tbl-data-01 td{
+	text-align:center;
+	vertical-align:middle;
+}
+
+div#str-main div.commission-container table.tbl-data-01 td.cell-03{
+	background:#F2FAFD;
+	color:#138EC9;
+	font-weight:bold;
+}
+
+div#str-main div.commission-container table.tbl-data-01 td.cell-02{
+	background:#FCFCD6;
+	color:#A26C00;
+	font-weight:bold;
+}
+
+div#str-main div.commission-container table.tbl-data-01 td.cell-04{
+	background:#f8f8f8;
+	font-weight:bold;
+}
+
+div#str-main div.commission-container table.tbl-data-01 td.cell-05{
+	background:#F4E7E2;
+	color:#B2491E;
+	font-weight:bold;
+}

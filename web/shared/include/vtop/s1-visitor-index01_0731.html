@@ -1,0 +1,449 @@
+<!--#include virtual="/web/shared/include/vtop/s1-hero.html" -->
+
+<!-- インクルード /web/shared/include/vtop/s1-visitor-index01.html -->
+<div class="s1-main">
+
+<div class="s1-dashboard">
+<div class="s1-dashboard__inner">
+<div class="s1-dashboard__main">
+
+<!--#include virtual="/web/shared/include/vtop/s1-visitor-banner.html" -->
+<!--#include virtual="/web/shared/include/vtop/emergency/s1-emergency-visitor-bottom.html" -->
+
+<div class="s1-section">
+<div class="s1-news">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">お知らせ</span></h2>
+</div>
+
+<ul class="s1-news__list">
+<?php
+  $segment = "visitor";
+  include("./web/shared/include/vtop/s1-info.html");
+?>
+</ul>
+<p class="s1-news__archive"><a onclick="s.lidTrack('v_visitor_top_info_txt_all');" href="/web/info/">お知らせ一覧<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+</div>
+
+</div>
+
+<div class="s1-section">
+<div class="s1-market-info s-market-info">
+<p class="s1-market-info__hdg">マーケット情報</p>
+<ul class="s1-market-info__list s-list-horizontal">
+<li class="s1-market-info__item">日経平均<span class="s-num">----</span><span class="s-num-sub"></span>円<span class="s-text-sub">（20分ディレイ）</span></li>
+<li class="s1-market-info__item">ドル／円<span class="s-num">----</span><span class="s-num-sub"></span>円</li>
+</ul><a href="/web/market/data/index_top.html">詳細<span class="s1-link-arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+
+<div class="s1-section s1-grid">
+<div class="s1-grid__cell-1-2 s1-info s1-info--double-column">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">投資コラム・レポート</span></h2>
+</div>
+<div class="s1-info__inner">
+<ul id="REPLST" class="s1-info__list"></ul>
+<p class="align-right"><a onclick="s.lidTrack('v_visitor_top_report_block_all');" href="/web/market/opinion/">投資コラム・レポート一覧<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+</div>
+</div>
+<script type="text/javascript">
+
+function choice01(data)
+{
+   var str = "";
+   for(i=0; i<data.List.length; i++) {
+       str = str + "<li class=\"s1-info__item s1-info__item--border\"><a href=\"" + data.List[i].Link + "\" onclick=\"s.lidTrack(\'" + makeSID("v_visitor_top_report_block_", data.List[i].Date, data.List[i].Link) + "\')\" target=\"_blank\">";
+       str = str + "<div class=\"s1-info__thumb\"><img src=\"" + data.List[i].Image + "\" width=\"90\" height=\"60\" alt=\"\"></div>";
+       str = str + "<div class=\"s1-info__txt\">";
+       str = str + "<p class=\"s1-info__date\">" + data.List[i].Date;
+       if(data.List[i].Newflg == 1) {
+         str = str + "<span class=\"color-red\">NEW!</span>";
+       }
+       str = str + "</p>";
+       str = str + "<p class=\"s1-info__link\">" + data.List[i].Title;
+       if(data.List[i].Author) {
+          str = str + "：" + data.List[i].Author;
+       }
+       str = str + "</p></div></a></li>";
+   }
+
+   document.getElementById("REPLST").innerHTML = str;
+
+}
+
+function makeSID(prefix, date, link)
+{
+ var sid = "";
+
+ var dt = date.split("/");
+ var at = link.split("/");
+
+ sid = prefix + dt[0] + dt[1] + dt[2] + "_" + at[5];
+
+ return sid;
+}
+
+</script>
+<script type="text/javascript" src="https://post.media.rakuten-sec.net/list/feed/choice01.js" charset="utf-8"></script>
+
+<div class="s1-grid__cell-1-2 s1-info s1-info--double-column">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">セミナー情報</span></h2>
+</div>
+
+<div class="s1-info__inner">
+<ul class="s1-info__list">
+<!--#include virtual="/web/shared/include/vtop/s1-seminar.html" -->
+</ul>
+<p class="align-right"><a onclick="s.lidTrack('v_visitor_top_seminar_block_all');" href="/web/learn/seminar/">セミナー情報一覧<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+</div>
+
+</div>
+</div>
+
+<script language="JavaScript" src="/web/shared/js/str-search/ecl_new.js"></script>
+<script language="JavaScript" src="/web/shared/js/str-search/cmmn.js"></script>
+
+<div class="s1-section">
+<form action="javascript:changeSearchResult('market_search','stoc-type', 'name')" method="get" name="market_search" id="s-search-form" class="s1-form-search">
+<div class="s1-form-search__input">
+<select name="stoc-type">
+<option value="0" selected class="srch_jp">国内株式</option>
+<option value="1" class="srch_us">米国株式</option>
+<option value="2" class="srch_ch">中国株式</option>
+<option value="5" class="srch_as">アセアン株式</option>
+<option value="3" class="srch_fn">投資信託</option>
+</select>
+<input type="text" name="name" placeholder="銘柄名 / コード / ファンド名" class="s1-form-search__txt">
+</div>
+<div class="s1-form-search__submit">
+<button type="submit" class="s1-btn-secondary-mini s1-form-search__btn"><i class="s-icon-font s-glyph">&#xf108;</i></button>
+</div>
+</form>
+</div>
+
+<!--#include virtual="/web/shared/include/vtop/emergency/s1-emergency-member-bottom-2.html" -->
+
+</div>
+<div class="s1-dashboard__side">
+
+<!--#include virtual="/web/shared/include/vtop/s1-visitor-login.html" -->
+<div class="s1-fx-login"><a href="/web/fx/login.html" class="s1-btn-secondary-small s1-btn--narrow">楽天FXへログイン</a></div>
+
+<div class="s1-attention">
+<div class="s1-news-box" style="border-color:#dd4f42; border-width:2px;">
+<a style="padding:10px;" class="s1-attention__txt txt-11" onclick="s.lidTrack('v_visitor_top_security')" target="_blank" href="/web/support/security/">不正な画面等によってお客様の情報を盗み取るサイトにご注意ください。</a>
+</div>
+</div>
+
+<div class="s1-system">
+<div class="s1-system__container">
+<p class="s1-system__hdg">システム関連情報</p><!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+<!-- ### SYSTEM_INFO ### -->
+<p id="system_info" class="s-text">お知らせはございません</p><!-- ### SYSTEM_INFO ### -->
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+</div>
+</div>
+
+<div class="s1-side-ad">
+<a onclick="s.lidTrack('v_visitor_top_bnr_sp_kabusuke_stamp04')" href="https://www.rakuten-sec.co.jp/web/special/kabusuke_stamp/04.html" class="s1-side-ad__bnr"><img width="220" height="70" style="display: inline;" alt="かぶ助くんViberステッカー（無料）第4弾" data-original="/web/images/banners/sp_kabusuke_stamp04/580x180.png" src="/web/shared/img/blank.png" class="s-lazy"></a>
+<a href="https://corp.rakuten.co.jp/donation/kyushu201707_ja/kyushu201707_ja.html" target="_blank" class="s1-side-ad__bnr" onclick="s.lidTrack('v_visitor_top_bnr_kyushu201707_ja')"><img width="220" height="157" style="display: inline;" alt="楽天クラッチ募金" data-original="/web/images/banners/kyushu201707_ja/220x157.png" src="/web/shared/img/blank.png" class="s-lazy"></a>
+</div>
+
+<div class="s1-attention">
+<a href="/ITS/Companyfile/PRNT_Companyfile.html" target="_blank" onclick="s.lidTrack('v_visitor_top_PRNT_Companyfile')" class="s1-attention__txt">お取引注意銘柄情報<span class="s1-link-arrow">&nbsp;&gt;</span></a><br>
+<a href="/web/info/fake.html" onclick="s.lidTrack('v_visitor_top_info_fake')" class="s1-attention__txt">投資詐欺にご注意<span class="s1-link-arrow">&nbsp;&gt;</span></a><br>
+<br>
+<a href="/web/company/fiduciary/" onclick="s.lidTrack('v_visitor_top_fiduciary')" class="s1-attention__txt">お客様本位の業務運営宣言<span class="s1-link-arrow">&nbsp;&gt;</span></a>
+</div>
+
+<!--
+<div class="s1-side-ad">
+<a onclick="s.lidTrack('v_visitor_top_bnr_sp_kabusuke_stamp')" href="https://www.rakuten-sec.co.jp/web/special/kabusuke_stamp/" class="s1-side-ad__bnr"><img width="220" height="70" style="display: inline;" alt="楽天証券オリジナルViberステッカーをリリース" data-original="/web/images/banners/sp_kabusuke_stamp/220x70.png" src="/web/shared/img/blank.png" class="s-lazy"></a>
+</div>-->
+
+
+</div>
+</div>
+</div>
+<div class="s1-content">
+<div class="s1-content__inner">
+
+
+<div class="s1-section s1-section--double-margin">
+
+<div class="s1-hdg-lv2 s1-hdg-lv2--content">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">取引ツール</span></h2>
+</div>
+
+<div class="s1-top-grid is-autoheight s1-tools">
+<div class="s1-top-grid__cell-3-6 s1-top-grid__cell--divided">
+<div class="s1-tools__cell">
+<dl class="s1-tools__list">
+<dt class="s1-tools__term"><a href="http://marketspeed.jp/" onclick="s.lidTrack('v_visitor_top_tool_img_ms');">
+<div class="s1-tools__img"><img src="/web/shared/img/blank.png" alt="マーケットスピード" class="s-lazy" data-original="/web/shared/img/top/s1-tool-soft.png" width="315" height="155"></div><span class="s1-tools__subtitle">オンライントレードツール</span>
+<h3 class="s1-tools__hdg">マーケットスピード</h3></a></dt>
+<dd class="s1-tools__definition">WindowsやMacに対応したPC用のトレーディングツール。リアルタイムかつ豊富な情報で、初心者からアクティブトレーダーまで投資家の皆様の投資活動をサポートするオンライントレードツールです。</dd>
+</dl>
+<div class="s1-tools__btn">
+<a href="http://marketspeed.jp/" class="s1-btn-hollow" onclick="s.lidTrack('v_visitor_top_tool_btn_ms');">マーケットスピード<span class="s1-link-arrow">&nbsp;&gt;</span></a>
+<a href="http://marketspeed.jp/fx/" class="s1-btn-hollow" onclick="s.lidTrack('v_visitor_top_tool_btn_ms-fx');">マーケットスピードFX<span class="s1-link-arrow">&nbsp;&gt;</span></a>
+<a href="http://marketspeed.jp/mac/" class="s1-btn-hollow" onclick="s.lidTrack('v_visitor_top_tool_btn_ms-mac');">MARKETSPEED for Mac<span class="s1-link-arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+</div>
+<div class="s1-top-grid__cell-3-6">
+<div class="s1-tools__cell">
+<dl class="s1-tools__list">
+<dt class="s1-tools__term"><a href="http://ispeed.jp/" onclick="s.lidTrack('v_visitor_top_tool_img_ispeed');">
+<div class="s1-tools__img"><img src="/web/shared/img/blank.png" alt="iSPEED" class="s-lazy" data-original="/web/shared/img/top/s1-tool-app.png" width="394" height="155"></div><span class="s1-tools__subtitle">モバイルトレーディングツール</span>
+<h3 class="s1-tools__hdg">iSPEED</h3></a></dt>
+<dd class="s1-tools__definition">累計<b>150万超のダウンロード数。一日1,000本以上のニュース</b>配信や、<b>会社四季報</b>へのアクセスも。場所や時間を選ばず、どこでも快適にトレードできるモバイルトレーディングツールです。</dd>
+</dl>
+<div class="s1-tools__btn">
+<a href="http://ispeed.jp/" class="s1-btn-hollow" onclick="s.lidTrack('v_visitor_top_tool_btn_ispeed');">iSPEED<span class="s1-link-arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="s1-section s1-section--double-margin">
+
+<div class="s1-hdg-lv2 s1-hdg-lv2--content">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">お客様の声</span></h2>
+</div>
+
+<div class="s1-top-grid is-autoheight s1-profile">
+<div class="s1-top-grid__cell-2-6 s1-top-grid__cell--divided">
+<div class="s1-profile">
+<div class="s1-customer">
+<div class="s1-customer__thumb"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-prof-1.png" class="s-lazy"></div>
+<div class="s1-customer__txt">
+<p><b>赤石 光広 さん(仮名)</b><span>個人投資家</span></p>
+</div>
+</div>
+<div class="s1-annotation">
+<dl class="s1-annotation__list">
+<dt class="s1-annotation__term">運用商品</dt>
+<dd class="s1-annotation__definition">現物株式</dd>
+<dd class="s1-annotation__definition">信用取引</dd>
+</dl>
+</div>
+<h3 class="s1-profile__hdg">四季報や日経テレコンまで<br>利用できるのはうれしいですね。</h3>
+<p>投資歴55年ですが、毎日投資するのが楽しみのひとつです。<b>マーケットスピード</b>がとても使いやすいので、知り合いにもすすめていますよ。<br>日経テレコンや四季報が無料で使えるのも魅力のひとつですね。</p>
+<p class="align-right"><a class="s-float-right" href="/web/special/interviews/" onclick="s.lidTrack('v_visitor_top_voice_txt_akaishi');">詳細を見る<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+
+</div>
+</div>
+<div class="s1-top-grid__cell-2-6 s1-top-grid__cell--divided">
+<div class="s1-profile">
+<div class="s1-customer">
+<div class="s1-customer__thumb"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-prof-2.png" class="s-lazy"></div>
+<div class="s1-customer__txt">
+<p><b>金井 優香子 さん(仮名)</b><span>製薬会社勤務</span></p>
+</div>
+</div>
+<div class="s1-annotation">
+<dl class="s1-annotation__list">
+<dt class="s1-annotation__term">運用商品</dt>
+<dd class="s1-annotation__definition">株主優待</dd>
+<dd class="s1-annotation__definition">現物株式</dd>
+</dl>
+</div>
+<h3 class="s1-profile__hdg">食品系の株主優待を定期的にもらうのが楽しみです。</h3>
+<p>楽天市場や楽天カード、楽天トラベルをよく使うので、楽天証券に口座を開設するときも、<b>安心して</b>開設できました。<br>銀行に預けていても金利がまったくつかないので、<b>株主優待</b>狙いで、現物株式を取引しています。普段はスマートフォンから月に2、3回は株価をチェックするようにしています。</p>
+
+</div>
+</div>
+<div class="s1-top-grid__cell-2-6">
+<div class="s1-profile">
+<div class="s1-customer">
+<div class="s1-customer__thumb"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-prof-3.png" class="s-lazy"></div>
+<div class="s1-customer__txt">
+<p><b>江波 憲志 さん(仮名)</b><span>放送局勤務</span></p>
+</div>
+</div>
+<div class="s1-annotation">
+<dl class="s1-annotation__list">
+<dt class="s1-annotation__term">運用商品</dt>
+<dd class="s1-annotation__definition">株式</dd>
+<dd class="s1-annotation__definition">FX</dd>
+</dl>
+</div>
+<h3 class="s1-profile__hdg">ツールの使いやすさと<br />投資情報が役に立ってます。</h3>
+<p>楽天証券は<b>低スプレッド</b>なところと<b>ツールの使いやすさ</b>がいいですね。<b>システムも強い</b>ですし、<b>キャンペーンも豊富</b>なので、初心者が始めるのにはおすすめできると思います。後は<b>レポート</b>も最近読み出したのですが、面白いですね。役に立ってます。</p>
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="s1-section s1-section--divided">
+<div class="s1-section s1-section--double-margin">
+<div class="s1-top-grid is-autoheight">
+
+<div class="s1-top-grid__cell-3-6 s1-help">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">ヘルプ＆サポート</span></h2>
+</div>
+
+<div class="s1-help__inner">
+<div class="s1-help__img"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-support.png" class="s-lazy"></div>
+<div class="s1-help__container">
+<h3 class="s1-help__hdg">あなたのお取引、サポートします。</h3>
+<p class="s1-help__txt">口座開設のお手続きから、各種お手続き、マーケットスピードのインストールや操作方法まで。<br />
+お気軽にご連絡ください。楽天証券のスタッフがあなたのお取り引きをサポートします。</p>
+<p class="align-right"><a class="s1-help__link" href="/web/support/" onclick="s.lidTrack('v_visitor_top_support_block_support');">詳細を見る<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+<div class="s1-help__hdi" style="padding-top:10px;border-top:1px dotted #999;">
+<div class="s1-help__hdi__img"><a href="/web/special/hdi/2016/"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/logo/hdi/2016/3SCP_3SSP_mark.png" class="s-lazy"></a></div>
+<p class="s1-help__hdi__txt"><a href="/web/special/hdi/2016/">2016年、HDI-Japanが実施している「問合せ窓口格付け」「ウェブサポート格付け」において、最高位評価の「三つ星」を受賞しました。</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="s1-top-grid__cell-3-6 s1-ifa">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">お客様の声から学びました</span></h2>
+</div>
+
+<div class="s1-ifa__inner" style="min-height:384px;">
+<div class="s1-ifa__img"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-voc.png" class="s-lazy"></div>
+<div class="s1-ifa__container">
+<h3 class="s1-ifa__hdg">お客様からいただいたご意見・ご要望に学び、<br />さらなるサービスの改善に取り組んでいます。</h3>
+<p class="s1-ifa__txt">お客様からいただいたご意見・ご要望はカスタマーサービスセンターで記録し、担当部門で実現に向けて検討いたします。実現したサービスはウェブサイトでもご報告しています。お客様の声をぜひ弊社にお寄せください。</p>
+<p class="align-right"><a class="s1-ifa__link" href="/web/company/voc/" onclick="s.lidTrack('v_visitor_top_voc_block_voc');">詳細を見る<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="s1-section s1-section--double-margin">
+<div class="s1-top-grid is-autoheight">
+
+<div class="s1-top-grid__cell-3-6 s1-ifa">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">セキュリティ</span></h2>
+</div>
+
+<div class="s1-ifa__inner" style="min-height:356px;">
+<div class="s1-ifa__img"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-measures.png" class="s-lazy"></div>
+<div class="s1-ifa__container">
+<h3 class="s1-ifa__hdg">お客様の資産と情報を守るために、<br />「セキュリティ」の強化に取り組んでいます。</h3>
+<p class="s1-ifa__txt">悪意のある第三者のなりすましやフィッシング詐欺、不正アクセスなどの脅威からお客様の大切な資産や情報を守るセキュリティ対策をご紹介しています。お客様での予防策もご案内していますので、ぜひご一読ください。</p>
+<p class="align-right"><a class="s1-ifa__link" href="/web/support/security/" onclick="s.lidTrack('v_visitor_top_security_block_security');">詳細を見る<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+</div>
+</div>
+</div>
+
+<div class="s1-top-grid__cell-3-6 s1-ifa">
+<div class="s1-hdg-lv2">
+<h2 class="s1-hdg-lv2__hdg"><span class="s1-hdg-lv2__border">アドバイザリーサービス</span></h2>
+</div>
+
+<div class="s1-ifa__inner">
+<div class="s1-ifa__img"><img src="/web/shared/img/blank.png" data-original="/web/shared/img/top/s1-ifa.png" class="s-lazy"></div>
+<div class="s1-ifa__container">
+<h3 class="s1-ifa__hdg">大切なご資産のこと、<br />相談できるアドバイザーはいますか？</h3>
+<p class="s1-ifa__txt">資産を守り、育てるパートナー。楽天証券の独立系フィナンシャルアドバイザー（IFA）だからお話しできることがあります。資産運用にとどまらず、ライフプランの実現に向けていつでも気軽にご相談をいただける、そんな人生のよきパートナーです。</p>
+<p class="align-right"><a class="s1-ifa__link" href="/web/ifa/" onclick="s.lidTrack('v_visitor_top_ifa_block_ifa');">詳細を見る<span class="s1-link-arrow">&nbsp;&gt;</span></a></p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+      <div class="s1-section s1-action">
+            <h2 class="s1-action__hdg">まずは無料の口座開設から。</h2><a href="/web/account/rsec.html" class="s1-btn-v-acc-large s1-btn--wide s1-action__btn" onclick="s.lidTrack('v_visitor_top_account_btn_account-open');"><i class="s-glyph">&#xf10a;</i> 今すぐ口座開設する</a>
+            <p class="s1-action__txt">口座開設費、口座維持費は、すべて<span>０</span>円です。</p>
+      </div>
+      <!-- // suport section -->
+
+<div class="s1-section s1-opinion">
+<!--#include virtual="/web/shared/include/vtop/s1-opinion.html" -->
+</div>
+
+      <div class="s1-section s1-social">
+          <div class="s1-social__inner">
+            <ul class="s1-social__list">
+              <li class="s1-social__item">
+                <ul class="s1-social-icon s1-social-icon__list">
+                  <li class="s1-social-icon__item--only"><a href="http://www.facebook.com/RakutenSec" onclick="s.lidTrack('v_visitor_top_social_icon_facebook');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-glyph">&#xf101;</i></span><span class="s1-social-icon__txt">Facebook</span></a></li>
+                  <li class="s1-social-icon__item--only"><a href="http://twitter.com/RakutenSec" onclick="s.lidTrack('v_visitor_top_social_icon_twitter');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-glyph">&#xf102;</i></span><span class="s1-social-icon__txt">Twitter</span></a></li>
+                  <li class="s1-social-icon__item--only"><a href="https://plus.google.com/114468881628225555842/" onclick="s.lidTrack('v_visitor_top_social_icon_google-plus');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-glyph">&#xf103;</i></span><span class="s1-social-icon__txt">Google+</span></a></li>
+                  <li class="s1-social-icon__item--only"><a href="https://www.youtube.com/user/RakutenSec" onclick="s.lidTrack('v_visitor_top_social_icon_youtube');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-glyph">&#xf104;</i></span><span class="s1-social-icon__txt">Youtube</span></a></li>
+                </ul>
+              </li>
+              <li class="s1-social__item--last">
+                <ul class="s1-social-icon s1-social-icon__list">
+                  <li class="s1-social-icon__item"><a href="http://marketspeed.jp/" onclick="s.lidTrack('v_visitor_top_tool_icon_ms');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-glyph">&#xf105;</i></span><span class="s1-social-icon__txt">マーケットスピード</span></a></li>
+                  <li class="s1-social-icon__item"><a href="http://marketspeed.jp/mac/" onclick="s.lidTrack('v_visitor_top_tool_icon_ms-mac');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-glyph">&#xf106;</i></span><span class="s1-social-icon__txt">MARKETSPEED for Mac</span></a></li>
+                  <li class="s1-social-icon__item"><a href="http://marketspeed.jp/fx/" onclick="s.lidTrack('v_visitor_top_tool_icon_ms-fx');"><span class="s1-social-icon__inner sprite-bkg-social-rounded"><i class="s1-social-icon__ico s-glyph">&#xf106;</i></span><span class="s1-social-icon__txt">マーケットスピードFX</span></a></li>
+                  <li class="s1-social-icon__item"><a href="http://ispeed.jp/" onclick="s.lidTrack('v_visitor_top_tool_icon_ispeed');"><span class="s1-social-icon__inner sprite-bkg-social-circle"><i class="s1-social-icon__ico s-icon-ispeed s-glyph">&#xf107;</i></span><span class="s1-social-icon__txt">iSPEED</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="s1-section s1-links">
+          <div class="s1-links__container">
+            <h2 class="s1-links__hdg">ご注意ください</h2>
+            <ul class="s1-links__list s1-grid">
+              <li class="s1-links__item s1-grid__cell-1-3">
+                <p><a href="/web/info/view_document.html">重要書面(取引説明書・約諾書等)の閲覧について</a></p>
+                <p><a href="/web/help/security03.html">フィッシング詐欺にご注意</a></p>
+                <p><a href="/web/company/attention/work_financial.html">登録金融機関にお勤めの方へ</a></p>
+              </li>
+              <li class="s1-links__item s1-grid__cell-1-3">
+                <p><a href="/web/company/attention/unfair.html">不公正取引(不公正行為)について</a></p>
+                <p><a href="/web/info/unlisted_stock.html">未公開株の勧誘にご注意</a></p>
+                <p><a href="/web/info/system_maintenance.html">メンテナンス中のご注意</a></p>
+              </li>
+              <li class="s1-links__item s1-grid__cell-1-3">
+                <p><a href="/web/company/attention/insider.html">インサイダー取引について</a></p>
+                <p><a href="/web/info/fake.html">「楽天」を名乗った投資勧誘にご注意</a></p>
+                <p><a href="https://www.fsa.go.jp/sesc/watch/">証券取引等監視委員会&lt;情報受付窓口&gt;</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="s1-links__container">
+            <h2 class="s1-links__hdg">各種方針・取引ルール</h2>
+            <ul class="s1-links__list s1-grid">
+              <li class="s1-links__item s1-grid__cell-1-3">
+                <p><a href="/web/company/solicitation_policy.html">勧誘方針</a></p>
+                <p><a href="/web/company/conflict.html">利益相反管理方針</a></p>
+                <p><a href="/web/company/privacy_policy.html">個人情報保護方針</a></p>
+                <p><a href="/web/company/failure/">システム障害時の対応</a></p>
+              </li>
+              <li class="s1-links__item s1-grid__cell-1-3">
+                <p><a href="/web/company/best_execution_policy.html">最良執行方針</a></p>
+                <p><a href="/web/company/document/">取引説明書・取引約款・規定</a></p>
+                <p><a href="/web/company/privacy.html">個人情報保護宣言</a></p>
+                <p><a href="/web/company/gold_attention.html">特定商取引法に基づく表記</a></p>
+              </li>
+              <li class="s1-links__item s1-grid__cell-1-3">
+                <p><a href="/web/company/disclosure/separate.html">分別管理</a></p>
+                <p><a href="/web/company/risk.html">投資にかかる手数料等およびリスク</a></p>
+                <p><a href="/web/company/antisocial_forces.html">反社会的勢力に対する基本方針</a></p>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+</div>
+</div>
+<!-- /インクルード /web/shared/include/vtop/s1-visitor-index01.html -->
+<!-- SiteCatalyst custom tag (start) -->
+<script type="text/javascript">
+var trackingParam = {};
+trackingParam.prop34=document.getElementById("s-main-area").style.backgroundImage;
+</script>
+<!-- SiteCatalyst custom tag (end) -->

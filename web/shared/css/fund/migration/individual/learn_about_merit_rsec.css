@@ -1,0 +1,70 @@
+.migration div.charm-fund-img-number-01{
+  left: 74px;
+  position: absolute;
+  text-align: center;
+  top: -56px;
+  width: 150px;
+  color: #ff8200;
+  font-weight: 700;
+}
+.migration div.charm-fund-img-number-02{
+  left:164px;
+  position:absolute;
+  text-align:center;
+  top:-63px;
+  width:150px;
+  color:#D09F29;
+  font-weight: 700;
+}
+.migration div.charm-fund-img-number-03{
+  left:318px;
+  position:absolute;
+  text-align:center;
+  top:-63px;
+  width:150px;
+  color:#D09F29;
+  font-weight: 700;
+}
+.migration div.charm-fund-img-number-04,.migration div.charm-fund-img-number-05,.migration div.charm-fund-img-number-06{
+  position: absolute;
+  color:#db1b0f;
+  text-align:center;
+  width: 145px;
+  left: 4px;
+  font-weight:bold;
+}
+.migration div.charm-fund-img-number-04{
+  top: -100px;
+}
+.migration div.charm-fund-img-number-05{
+  top: -52px;
+  background-color:#fddddb;
+  font-size:75.25%;
+}
+.migration div.charm-fund-img-number-06{
+  top: -32px;
+  background-color:#fddddb;
+  font-size:75.25%;
+}
+.migration div#str-main div.lyt-image p.judge_txt {
+  margin: 20px 0;
+  padding: 10px 18px 16px;
+  border: 1px solid #cecece;
+  font-size: 108%;line-height: 2;
+}
+.migration div#str-main div.lyt-image p.judge_txt strong {
+  font-size: 150%;margin: 0 3px;
+}
+.migration div#str-main div.lyt-image p.judge_txt span {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 8px;
+  padding: 2px 8px;
+}
+.migration div#str-main div.lyt-image p.judge_txt .day {
+  background: #FC880C;
+}
+.migration div#str-main div.lyt-image p.judge_txt .month {
+  background: #3DB69F;
+}

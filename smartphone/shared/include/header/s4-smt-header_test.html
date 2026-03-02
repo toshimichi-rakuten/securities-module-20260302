@@ -1,0 +1,536 @@
+<!-- ::::::::::::: ▼▼ s1-most_top_banner.html include :  start ▼▼ ::::::::::::::::: -->
+<!--#include virtual="/smartphone/shared/include/common/s1-most_top_banner.html" -->
+<!-- ::::::::::::: ▲▲ s1-most_top_banner.html include :  end ▲▲ ::::::::::::::::: -->
+
+<header class="p-rf-h" role="banner" id="VHEAD">
+<div class="p-rf-h__main">
+	<div class="p-rf-h_main">
+	<div class="l-rf-container">
+		<button class="c-rf-button js-trigger" type="button" data-type="icon" data-modal-target="main-menu" data-modal-trigger="open" onclick="s.lidTrack('hdr_menu')" data-ratid="hdr_menu" data-ratevent="click" data-ratparam="all"><span><i class="rex-icons-menu" aria-hidden="true"></i><span class="c-rf-button__text">メニュー</span></span></button>
+		<div class="p-rf-h_main__wrap -left">
+		<p class="p-rf-h_main__logo"><a href="/smartphone/" onclick="s.lidTrack('hdr_logo')" data-ratid="hdr_logo" data-ratevent="click" data-ratparam="all"><img src="https://www.rakuten-sec.co.jp/member/smt/assets/logo/Securitites_sp_40px.svg" alt="楽天証券"></a></p>
+		</div>
+		<div class="p-rf-h_main__wrap -right">
+		<ul>
+			<li>
+        <button class="c-rf-button js-trigger" type="button" aria-expanded="false" aria-controls="h-search" data-type="search" onclick="s.lidTrack('hdr_search')" data-ratid="hdr_search" data-ratevent="click" data-ratparam="all"><span><i class="rex-icons-search" aria-hidden="true"></i><span class="c-rf-button__text"><span>検索</span></span></span></button>
+
+        <div class="p-rf-h_rsearch" id="h-search" aria-hidden="true">
+        <!--#include virtual="/web/shared/include/rsearch/message_error.html" -->
+  
+          <div class="p-rf-h_rsearch__inner">
+            <div class="c-rf-search">
+  
+              <form action="" role="search">
+              <div class="c-rf-search__wrap">
+                <input type="checkbox" name="hidden-search" id="hidden-search">
+                <div class="hidden-search-box">
+                  <div class="mf_finder_header hidden-search-container">
+                    <div class="mf_finder_rsearchBox mf_finder_rsearchBox_useSelects">
+                      <form method="get" action="/smartphone/rsearch/" class="mf_finder_rsearchBox_form">
+                        <div class="mf_finder_rsearchBox_items_wrapper">
+                          <div class="mf_finder_rsearchBox_items">
+                            <div class="mf_finder_rsearchBox_query_wrap">
+                              <input id="rsearch-increment" title="検索キーワード" aria-label="銘柄・サイト内検索" type="text" name="q" autocapitalize="none" autocomplete="off" autocorrect="off" placeholder="銘柄・サイト内検索" class="mf_finder_rsearchBox_query_input js-search-modal-input" aria-expanded="false">
+                            </div>
+                            <button id="rsearch-increment-submit" type="submit" class="mf_finder_rsearchBox_submit js-search-modal-submit" aria-label="検索する"><i class="rex-icons-search" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </form>
+            </div>
+            <button class="c-rf-close-button js-searchClose" type="button" aria-label="閉じる" data-type="close"><i class="rex-icons-close" aria-hidden="true"></i></button>
+          </div>
+  
+          <div id="rsearch-help" class="p-rf-h-help" aria-hidden="false">
+            <section class="p-rf-h-help__section">
+              <h2 class="p-rf-h-help__title">検索履歴</h2>
+              <ul id="v1-rsearch-history" class="p-rf-h-help__lists">
+              </ul>
+            </section>
+  
+            <section class="p-rf-h-help__section">
+              <h2 class="p-rf-h-help__title">よく検索されるワード</h2>
+              <ul id="v1-rsearch-frequent-keywords" class="p-rf-h-help__lists">
+              </ul>
+            </section>
+  
+            <section class="p-rf-h-help__section">
+              <h2 class="p-rf-h-help__title">よくあるご質問</h2>
+              <ul id="v1-rsearch-frequent-questions" class="p-rf-h-help__lists -lead">
+              </ul>
+            </section>
+          </div>
+  
+          <div id="rsearch-increment-result" class="p-rf-h-increment-result" aria-hidden="true">
+            <div id="rsearch-increment-result-area" class="js-search-modal-result">
+            </div>
+          </div>
+  
+          <div class="p-rf-h-help">
+            <div class="p-rf-h-help__section -banners">
+              <ul class="p-rf-h-help__grid v1-rsearch-modal__banners">
+                <li class="p-rf-h-help__column">
+                  <figure class="p-rf-h-help__banner"><img src="/smartphone/images/rsearch/banners/164x70.png" alt="バナー 164x70" width="328" height="140" loading="lazy"></figure>
+                </li>
+                <li class="p-rf-h-help__column">
+                  <figure class="p-rf-h-help__banner"><img src="/smartphone/images/rsearch/banners/164x70.png" alt="バナー 164x70" width="328" height="140" loading="lazy"></figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+			</li>
+			<li class="rex-btn-account"><a class="c-rf-button" href="/web/account/" data-type="icon" onclick="s.lidTrack('hdr_account')" data-ratid="hdr_account" data-ratevent="click" data-ratparam="all"><span><i class="rex-icons-edit-outlined" aria-hidden="true"></i><span class="c-rf-button__text">口座開設</span></span></a></li>
+			<li class="rex-btn-support"><a class="c-rf-button" href="/smartphone/support/" data-type="icon" onclick="s.lidTrack('hdr_support')" data-ratid="hdr_support" data-ratevent="click" data-ratparam="all"><span><i class="sure-icon-faq-outline" aria-hidden="true"></i><span class="c-rf-button__text">サポート</span></span></a></li>
+			<li><a class="c-rf-button" href="/smartphone/login.html" data-type="icon" data-type="icon" onclick="s.lidTrack('hdr_login')" data-ratid="hdr_login" data-ratevent="click" data-ratparam="all"><span><i class="rex-icons-login" aria-hidden="true"></i><span class="c-rf-button__text">ログイン</span></span></a></li>
+		</ul>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="p-rf-h__gnav">
+	<div class="p-rf-h_gnav is-hide is-close" id="main-menu" data-role="main-menu" aria-labelledby="menuTitle">
+	<div tabindex="0" data-modal-position="start"></div>
+	<div class="l-rf-container">
+		<div class="p-rf-h_gnav__head">
+		<div class="p-rf-h_gnav__title" id="menuTitle" tabindex="-1">メニュー</div>
+		<button class="c-rf-button js-trigger" type="button" data-type="icon" data-modal-target="main-menu" data-modal-trigger="close"><span><i class="rex-icons-close" aria-hidden="true"></i><span class="c-rf-button__text">閉じる</span></span></button>
+		</div>
+		<nav class="p-rf-gnav" role="navigation" aria-label="メインメニュー">
+		<ul class="p-rf-gnav__list">
+			<!--ホーム-->
+			<li data-level="1">
+			<a class="c-rf-button" href="/smartphone/" data-type="mega-link" onclick="s.lidTrack('gnavi_home')" data-ratid="gnavi_home" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon--pickup rex-icon-home" aria-hidden="true"></i><span class="c-rf-button__text">ホーム</span></span></a>
+			</li>
+			<!--ピックアップ-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger is-active" type="button" data-type="mega-down" aria-expanded="true" aria-controls="h-menu1"><span><span class="c-rf-button__text">ピックアップ</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap is-open" id="h-menu1" aria-hidden="false" style="display: block;">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+						<li data-regexp="^/smartphone/nisa/"><a class="c-rf-link -basic" href="/smartphone/nisa/" onclick="s.lidTrack('gnavi_pick_01_nisa')" data-ratid="gnavi_pick_01_nisa" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon--pickup rex-icon-nisa"></i><span class="c-rf-button__text">NISA</span></span></a></li>
+						<li><a class="c-rf-link -basic" href="https://dc.rakuten-sec.co.jp/" onclick="s.lidTrack('gnavi_pick_02_ideco')" data-ratid="gnavi_pick_02_ideco" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon--pickup rex-icon-ideco"></i><span class="c-rf-button__text">確定拠出年金iDeCo（イデコ）</span></span></a></li>
+						<li data-regexp="^(?!.*(^/smartphone/service/point/investment/fund.html)).*(?=^/smartphone/service/point/investment/).*$"><a class="c-rf-link -basic" href="/smartphone/service/point/investment/" onclick="s.lidTrack('gnavi_pick_03_point')" data-ratid="gnavi_pick_03_point" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon--pickup rex-icon-point-program"></i><span class="c-rf-button__text">ポイント投資</span></span></a></li>
+						<li><a class="c-rf-link -basic" href="https://media.rakuten-sec.net/list/shareholders" target="_blank" onclick="s.lidTrack('gnavi_pick_05_toshiru');this.href=usergram.link(this.href);" data-ratid="gnavi_pick_05_toshiru" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon--pickup rex-icon-gift"></i><span class="c-rf-button__text">株主優待情報（トウシル）</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+						<li data-regexp="^/smartphone/wealthnavi-r/"><a class="c-rf-link -basic" href="/smartphone/wealthnavi-r/" onclick="s.lidTrack('gnavi_pick_06_wealthnavi-r')" data-ratid="gnavi_pick_06_wealthnavi-r" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon--pickup sure-icon-general-outline" aria-hidden="true"></i><span class="c-rf-button__text">ウェルスナビ×R</span></span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			</li>
+			<!--はじめての方へ-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu2"><span><span class="c-rf-button__text">はじめての方へ</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap" id="h-menu2" aria-hidden="true">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li data-regexp="^/smartphone/campaign/accamp.html$"><a class="c-rf-link -basic" href="/smartphone/campaign/accamp.html" onclick="s.lidTrack('gnavi_bgnr_campaign')" data-ratid="gnavi_bgnr_campaign" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">新規デビューキャンペーン</span></span></a></li>
+					<li data-regexp="^/smartphone/reason/"><a class="c-rf-link -basic" href="/smartphone/reason/" onclick="s.lidTrack('gnavi_bgnr_reason')" data-ratid="gnavi_bgnr_reason" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天証券が選ばれる理由</span></span></a></li>
+					<li data-regexp="^/smartphone/account-flow/$"><a class="c-rf-link -basic" href="/smartphone/account-flow/" onclick="s.lidTrack('gnavi_bgnr_flow')" data-ratid="gnavi_bgnr_flow" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">口座開設の流れ</span></span></a></li>
+					<li data-regexp="^/smartphone/learn/$"><a class="c-rf-link -basic" href="/smartphone/learn/" onclick="s.lidTrack('gnavi_bgnr_guide')" data-ratid="gnavi_bgnr_guide" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">投資はじめてガイド</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="https://member.rakuten-sec.co.jp/service/setup/smartLoginFormInit.do" onclick="s.lidTrack('gnavi_bgnr_login')" data-ratid="gnavi_bgnr_login" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">申請番号でのログイン（非会員）</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="/smartphone/guidance/" onclick="s.lidTrack('gnavi_bgnr_guidance')" data-ratid="gnavi_bgnr_guidance" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">初期設定のご案内</span></span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			</li>
+			<!--キャンペーン-->
+			<li data-level="1" data-regexp="^(?!.*(/accamp.html$)).*(?=^/smartphone/campaign/).*$">
+			<a class="c-rf-button" href="/smartphone/campaign/" data-type="mega-link" onclick="s.lidTrack('gnavi_campaign')" data-ratid="gnavi_campaign" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">キャンペーン</span></span></a>
+			</li>
+			<!--取扱商品-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu3"><span><span class="c-rf-button__text">取扱商品</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap" id="h-menu3" aria-hidden="true">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li data-regexp="^/smartphone/products/$"><a class="c-rf-link -basic" href="/smartphone/products/" onclick="s.lidTrack('gnavi_product')" data-ratid="gnavi_product" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">取扱商品トップ</span></span></a></li>
+					</ul>
+				</div>
+				<div class="p-rf-gnav__menuWrap">
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-1" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">国内株式</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-1">
+						<ul>
+						<li data-regexp="^(?!.*(/domestic/stock/|/domestic/margin/|/domestic/lending/|/domestic/etf/|/domestic/reit/|/domestic/pts/|/domestic/ipo/|/domestic/off_auction/)).*(?=^/smartphone/domestic/).*$"><a class="c-rf-link -basic" href="/smartphone/domestic/" onclick="s.lidTrack('gnavi_prdct_d_stock')" data-ratid="gnavi_prdct_d_stock" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">国内株式トップ</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/stock/"><a class="c-rf-link -basic" href="/smartphone/domestic/stock/" onclick="s.lidTrack('gnavi_d_stock')" data-ratid="gnavi_d_stock" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">現物取引</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/margin/"><a class="c-rf-link -basic" href="/smartphone/domestic/margin/" onclick="s.lidTrack('gnavi_d_margin')" data-ratid="gnavi_d_margin" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">信用取引</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/ols/"><a class="c-rf-link -basic" href="/smartphone/domestic/ols/" onclick="s.lidTrack('gnavi_d_ols')" data-ratid="gnavi_d_ols" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">かぶミニ<sup class="va-t">&reg;</sup>（単元未満株取引）</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/saving/"><a class="c-rf-link -basic" href="/smartphone/domestic/saving/" onclick="s.lidTrack('gnavi_d_saving')" data-ratid="gnavi_d_saving" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">かぶツミ<sup class="va-t">&reg;</sup>（国内株式積立）</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/lending/"><a class="c-rf-link -basic" href="/smartphone/domestic/lending/" onclick="s.lidTrack('gnavi_d_lending')" data-ratid="gnavi_d_lending" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">貸株サービス</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/etf/"><a class="c-rf-link -basic" href="/smartphone/domestic/etf/" onclick="s.lidTrack('gnavi_d_etf')" data-ratid="gnavi_d_etf" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">国内ETF／ETN</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/reit/"><a class="c-rf-link -basic" href="/smartphone/domestic/reit/" onclick="s.lidTrack('gnavi_d_reit')" data-ratid="gnavi_d_reit" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">国内REIT（リート）</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/pts/"><a class="c-rf-link -basic" href="/smartphone/domestic/pts/" onclick="s.lidTrack('gnavi_d_pts')" data-ratid="gnavi_d_pts" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">夜間取引／PTS取引・SOR注文</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/ipo/"><a class="c-rf-link -basic" href="/smartphone/domestic/ipo/" onclick="s.lidTrack('gnavi_d_ipo')" data-ratid="gnavi_d_ipo" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">新規公開株式（IPO）／公募増資・売出（PO）</span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/tob/"><a class="c-rf-link -basic" href="/smartphone/domestic/tob/" onclick="s.lidTrack('gnavi_d_tob')" data-ratid="gnavi_d_tob" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">株式公開買付(TOB) </span></span></a></li>
+						<li data-regexp="^/smartphone/domestic/off_auction/"><a class="c-rf-link -basic" href="/smartphone/domestic/off_auction/" onclick="s.lidTrack('gnavi_d_off_auction')" data-ratid="gnavi_d_off_auction" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">立会外分売</span></span></a></li>
+						<li data-regexp="^/smartphone/market/info/pagecontent\?(screener=true&amp;pid=201|pid=305)"><a class="c-rf-link -basic" href="/smartphone/market/info/pagecontent?screener=true&amp;pid=201&amp;xid=0&amp;page=0&amp;keyword=" onclick="s.lidTrack('gnavi_d_info')" data-ratid="gnavi_d_info" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">株価検索</span></span></a></li>
+						<li><a class="c-rf-link -basic" href="https://member.rakuten-sec.co.jp/app/smt_market_courtesy_visitor.do?eventType=visitorInit" target="_blank" onclick="s.lidTrack('gnavi_d_incentives')" data-ratid="gnavi_d_incentives" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">株主優待検索</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+						</ul>
+					</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-2" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">米国株式</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-2">
+							<ul>
+							<li><a class="c-rf-link -basic" href="/smartphone/us/" onclick="s.lidTrack('gnavi_f_us')" data-ratid="gnavi_f_us" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">米国株式トップ</span></span></a></li>
+							<li><a class="c-rf-link -basic" href="/smartphone/us/stock/" onclick="s.lidTrack('gnavi_f_us-stock')" data-ratid="gnavi_f_us-stock" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">現物取引</span></span></a></li>
+							<li><a class="c-rf-link -basic" href="/smartphone/us/margin/" onclick="s.lidTrack('gnavi_f_us-margin')" data-ratid="gnavi_f_us-margin" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">信用取引</span></span></a></li>
+							<li><a class="c-rf-link -basic" href="/smartphone/us/saving/" onclick="s.lidTrack('gnavi_f_us-saving')" data-ratid="gnavi_f_us-saving" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">米株積立</span></span></a></li>
+							<li><a class="c-rf-link -basic" href="/smartphone/foreign/etf/" onclick="s.lidTrack('gnavi_f_etf')" data-ratid="gnavi_f_etf" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">海外ETF</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-3" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">中国・アセアン株式</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-3">
+							<ul>
+							<li><a class="c-rf-link -basic" href="/smartphone/foreign/" onclick="s.lidTrack('gnavi_prdct_f_stock')" data-ratid="gnavi_prdct_f_stock" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">中国・アセアン株式トップ</span></span></a></li>
+							<li><a class="c-rf-link -basic" href="/smartphone/foreign/china/" onclick="s.lidTrack('gnavi_f_china')" data-ratid="gnavi_f_china" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">中国株式</span></span></a></li>
+							<li><a class="c-rf-link -basic" href="/smartphone/foreign/asean/" onclick="s.lidTrack('gnavi_f_asean')" data-ratid="gnavi_f_asean" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">アセアン株式</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-4" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">投資信託</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-4">
+							<ul>
+								<li data-regexp="^(?!.*(/smartphone/saving/|/smartphone/products/fund/$|/smartphone/products/fund/ranking/|/smartphone/products/fund/search/|/smartphone/products/fund/detail/)).*(?=^/web/fund/smartphone/).*$"><a class="c-rf-link -basic" href="/web/fund/smartphone/" onclick="s.lidTrack('gnavi_prdct_assets')" data-ratid="gnavi_prdct_assets" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">投資信託トップ</span></span></a></li>
+								<li data-regexp="^/web/fund/smartphone/saving/"><a class="c-rf-link -basic" href="/web/fund/smartphone/saving/" onclick="s.lidTrack('gnavi_asst_saving')" data-ratid="gnavi_asst_saving" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">投資信託積立</span></span></a></li>
+								<li data-regexp="^(?!.*(/web/fund/smartphone/products/fund/ranking/)).*(?=^/web/fund/smartphone/products/fund/search/).*$"><a class="c-rf-link -basic" href="/web/fund/smartphone/products/fund/search/" onclick="s.lidTrack('gnavi_asst_search')" data-ratid="gnavi_asst_search" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">投資信託を探す</span></span></a></li>
+								<li data-regexp="/smartphone/service/point/investment/fund.html"><a class="c-rf-link -basic" href="/smartphone/service/point/investment/fund.html" onclick="s.lidTrack('gnavi_asst_point')" data-ratid="gnavi_asst_point" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ポイント投資</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/web/fund/smartphone/find/foreign_mmf/" onclick="s.lidTrack('gnavi_asst_f_mmf')" data-ratid="gnavi_asst_f_mmf" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">外貨建てMMF</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/web/lp/cash_fund/" onclick="s.lidTrack('gnavi_asst_r-cash')" data-ratid="gnavi_asst_cash_fund" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天キャッシュ決済</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-5" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">債券</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-5">
+							<ul>
+								<li data-regexp="^(?!.*(/bond/jbond/|/bond/foreignbond/)).*(?=^/smartphone/bond/).*$"><a class="c-rf-link -basic" href="/smartphone/bond/" onclick="s.lidTrack('gnavi_prdct_bond')" data-ratid="gnavi_prdct_bond" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">債券トップ</span></span></a></li>
+								<li data-regexp="^/smartphone/bond/jbond/"><a class="c-rf-link -basic" href="/smartphone/bond/jbond/" onclick="s.lidTrack('gnavi_j_bond')" data-ratid="gnavi_j_bond" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">国内債券</span></span></a></li>
+								<li data-regexp="^/smartphone/bond/foreignbond/"><a class="c-rf-link -basic" href="/smartphone/bond/foreignbond/" onclick="s.lidTrack('gnavi_f_bond')" data-ratid="gnavi_f_bond" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">外国債券</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/smartphone/yield-investment_funds/" onclick="s.lidTrack('gnavi_bond-funds')" data-ratid="gnavi_bond-funds" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">利回り投資（Funds）- 提携サービス</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-6" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">FX</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-6">
+							<ul>
+								<li data-regexp="^(?!.*(/fx/dedicated-account/|/fx/beginner/|/fx/mt4/)).*(?=^/smartphone/fx/).*$"><a class="c-rf-link -basic" href="/smartphone/fx/" onclick="s.lidTrack('gnavi_prdct_fx')" data-ratid="gnavi_prdct_fx" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">FXトップ</span></span></a></li>
+								<li data-regexp="^/smartphone/fx/dedicated-account/"><a class="c-rf-link -basic" href="/smartphone/fx/dedicated-account/" onclick="s.lidTrack('gnavi_fx_dediaccount')" data-ratid="gnavi_fx_dediaccount" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">FX専用口座</span></span></a></li>
+								<li data-regexp="^/smartphone/fx/beginner/"><a class="c-rf-link -basic" href="/smartphone/fx/beginner/" onclick="s.lidTrack('gnavi_fx_bgnrs')" data-ratid="gnavi_fx_bgnrs" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天FXビギナーズガイド</span></span></a></li>
+								<li data-regexp="^/smartphone/fx/mt4/"><a class="c-rf-link -basic" href="/smartphone/fx/mt4/" onclick="s.lidTrack('gnavi_fx_mt4')" data-ratid="gnavi_fx_mt4" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天MT4口座</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-9" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">CFD</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-9">
+							<ul>
+								<li><a class="c-rf-link -basic" href="/smartphone/rcfd/" onclick="s.lidTrack('vis_sp_CFD_toCFDTopPage')" data-ratId="vis_sp_CFD_toCFDTopPage" data-ratEvent="click" data-ratParam="all"><span><span class="c-rf-button__text">楽天CFD</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/smartphone/cfd/" onclick="s.lidTrack('vis_sp_CFD_toMT4CFDTopPage')" data-ratId="vis_sp_CFD_toMT4CFDTopPage" data-ratEvent="click" data-ratParam="all"><span><span class="c-rf-button__text">楽天MT4CFD</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li data-regexp="^/smartphone/bo/"><a class="c-rf-link -basic" href="/smartphone/bo/" onclick="s.lidTrack('gnavi_prdct_bo')" data-ratid="gnavi_prdct_bo" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">バイナリーオプション（らくオプ）</span></span></a></li>
+					<li data-regexp=".*(^(/smartphone/fop/|/smartphone/foreign_futures/))"><a class="c-rf-link -basic" href="/smartphone/fop/" onclick="s.lidTrack('gnavi_prdct_fop')" data-ratid="gnavi_prdct_fop" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">先物・オプション</span></span></a></li>
+					<li data-regexp="^/smartphone/gold/"><a class="c-rf-link -basic" href="/smartphone/gold/" onclick="s.lidTrack('gnavi_prdct_gold')" data-ratid="gnavi_prdct_gold" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">金･プラチナ･銀</span></span></a></li>
+					</ul>
+				</div>
+				<div class="p-rf-gnav__menuWrap">
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-8" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">おまかせ資産運用サービス</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-8">
+							<ul>
+								<li><a class="c-rf-link -basic" href="/smartphone/automatic-operation-service/" onclick="s.lidTrack('gnavi_prdct_auto-operation-service')" data-ratid="gnavi_prdct_auto-operation-service" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">おまかせ資産運用サービストップ</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/smartphone/raku2-inv/" onclick="s.lidTrack('gnavi_asst_raku2-inv')" data-ratid="gnavi_asst_raku2-inv" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">らくらく投資</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/smartphone/wealthnavi-r/" onclick="s.lidTrack('gnavi_asst_wealthnavi-r')" data-ratid="gnavi_asst_wealthnavi-r" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ウェルスナビ×R</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="https://wrap.rakuten-sec.co.jp/" onclick="s.lidTrack('gnavi_prdct_wrap')" data-ratid="gnavi_prdct_wrap" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ロボアドバイザー（楽ラップ）</span></span></a></li>
+								<li><a class="c-rf-link -basic" href="/smartphone/automatic-operation-service/us-wrap/" onclick="s.lidTrack('gnavi_prdct_us-wrap')" data-ratid="gnavi_prdct_us-wrap" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">米国ETFラップ（提携サービス）</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu3-7" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">NISA（ニーサ）</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu3-7">
+							<ul>
+								<li data-regexp="^(?!.*(/nisa/basicinc/|/nisa/tsumitate/|/nisa/junior/|/nisa/account.html|/nisa/learn.html|/nisa/account.html|/nisa/commission.html|/nisa/learn.html|/nisa/rakuten-sec.html|/nisa/point/|/nisa/summary.html)).*(?=^/smartphone/nisa/).*$"><a class="c-rf-link -basic" href="/smartphone/nisa/" onclick="s.lidTrack('gnavi_prdct_nisa')" data-ratid="gnavi_prdct_nisa" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">NISA（ニーサ）トップ</span></span></a></li>
+								<li data-regexp="(^/smartphone/nisa/basicinc/|/nisa/learn.html|/nisa/commission.html|/nisa/learn.html|/nisa/rakuten-sec.html|/nisa/point/|/nisa/summary.html)"><a class="c-rf-link -basic" href="/smartphone/nisa/basicinc/" onclick="s.lidTrack('gnavi_nisa')" data-ratid="gnavi_nisa" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">一般NISA（ニーサ）</span></span></a></li>
+								<li data-regexp="^/smartphone/nisa/tsumitate/"><a class="c-rf-link -basic" href="/smartphone/nisa/tsumitate/" onclick="s.lidTrack('gnavi_nisa_tsumi')" data-ratid="gnavi_nisa_tsumi" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">つみたてNISA（ニーサ）</span></span></a></li>
+								<li data-regexp="^/smartphone/nisa/junior/"><a class="c-rf-link -basic" href="/smartphone/nisa/junior/" onclick="s.lidTrack('gnavi_nisa_junior')" data-ratid="gnavi_nisa_junior" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ジュニアNISA（ニーサ）</span></span></a></li>
+								<li data-regexp="^/smartphone/nisa/startup/"><a class="c-rf-link -basic" href="/smartphone/nisa/startup/" onclick="s.lidTrack('gnavi_nisa_guide')" data-ratid="gnavi_nisa_guide" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">NISAをはじめるには</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li><a class="c-rf-link -basic" href="https://dc.rakuten-sec.co.jp/" onclick="s.lidTrack('gnavi_prdct_ideco')" data-ratid="gnavi_prdct_ideco" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">確定拠出年金iDeCo（イデコ）</span></span></a></li>
+					<!-- <li data-regexp="^/smartphone/crowdfunding/"><a class="c-rf-link -basic" href="/smartphone/crowdfunding/" onclick="s.lidTrack('gnavi_prdct_crowdfunding')" data-ratid="gnavi_prdct_crowdfunding" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">クラウドファンディング（提携サービス）</span></span></a></li> -->
+					</ul>
+				</div>
+				</div>
+			</div>
+			</li>
+			<!--サービス-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu4"><span><span class="c-rf-button__text">サービス</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap" id="h-menu4" aria-hidden="true">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li data-regexp="^(?!.*(/service/point/|/service/pay/|/service/session/|/service/specific/|/service/tsumitate/|/service/mailservice/|/service/investment/|/smartphone/service/channel/|/smartphone/service/tool/|/smartphone/service/introduction/)).*(?=^/smartphone/service/).*$"><a class="c-rf-link -basic" href="/smartphone/service/" onclick="s.lidTrack('gnavi_service')" data-ratid="gnavi_service" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">サービストップ</span></span></a></li>
+					<li data-regexp="^/smartphone/service/channel/"><a class="c-rf-link -basic" href="/smartphone/service/channel/" onclick="s.lidTrack('gnavi_srvc_channel')" data-ratid="gnavi_srvc_channel" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">取引チャネル</span></span></a></li>
+					<li data-regexp="^/smartphone/service/tool/"><a class="c-rf-link -basic" href="/smartphone/service/tool/" onclick="s.lidTrack('gnavi_srvc_tool')" data-ratid="gnavi_srvc_tool" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ツール・アプリ</span></span></a></li>
+					<li data-regexp="^(?!.*(^/smartphone/service/point/investment/)).*(?=^/smartphone/service/point/).*$"><a class="c-rf-link -basic" href="/smartphone/service/point/" onclick="s.lidTrack('gnavi_srvc_p_program')" data-ratid="gnavi_srvc_p_program" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ポイントプログラム</span></span></a></li>
+					<li data-regexp="^(?!.*(^/smartphone/service/family_program/)).*(?=^/smartphone/service/family_program/).*$"><a class="c-rf-link -basic" href="/smartphone/service/family_program/" onclick="s.lidTrack('gnavi_srvc_family-program')" data-ratid="gnavi_srvc_family-program" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">家族プログラム</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="/smartphone/service/coupon/" onclick="s.lidTrack('gnavi_srvc_coupon')" data-ratid="gnavi_srvc_coupon" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">クーポンサービス</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="/smartphone/service/birthday_program/" onclick="s.lidTrack('gnavi_srvc_birthday-program')" data-ratid="gnavi_srvc_birthday-program" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">バースデープログラム</span></span></a></li>
+					<li data-regexp="^/smartphone/service/introduction/"><a class="c-rf-link -basic" href="/smartphone/service/introduction/" onclick="s.lidTrack('gnavi_srvc_friend')" data-ratid="gnavi_srvc_friend" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ご家族・お友達紹介プログラム</span></span></a></li>
+					<li data-regexp="^/smartphone/bank/"><a class="c-rf-link -basic" href="/smartphone/bank/" onclick="s.lidTrack('gnavi_srvc_bank')" data-ratid="gnavi_srvc_bank" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">銀行連携　マネーブリッジ</span></span></a></li>
+					<li data-regexp="^/smartphone/service/pay/"><a class="c-rf-link -basic" href="/smartphone/service/pay/" onclick="s.lidTrack('gnavi_srvc_pay')" data-ratid="gnavi_srvc_pay" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">入出金</span></span></a></li>
+					<li data-regexp="^/smartphone/service/transfer/"><a class="c-rf-link -basic" href="/smartphone/service/transfer/" onclick="s.lidTrack('gnavi_srvc_transfer')" data-ratid="gnavi_srvc_transfer" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">振替(移管)</span></span></a></li>
+					<li data-regexp="^/smartphone/service/session/"><a class="c-rf-link -basic" href="/smartphone/service/session/" onclick="s.lidTrack('gnavi_srvc_session')" data-ratid="gnavi_srvc_session" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">取引時間・注文受付時間</span></span></a></li>
+					<li data-regexp="^/smartphone/commission/"><a class="c-rf-link -basic" href="/smartphone/commission/" onclick="s.lidTrack('gnavi_srvc_fees')" data-ratid="gnavi_srvc_fees" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">手数料</span></span></a></li>
+					<li data-regexp="^/smartphone/under_age/"><a class="c-rf-link -basic" href="/smartphone/under_age/about.html" onclick="s.lidTrack('gnavi_srvc_minor')" data-ratid="gnavi_srvc_minor" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">未成年口座</span></span></a></li>
+					<li data-regexp="^/smartphone/products/"><a class="c-rf-link -basic" href="/smartphone/products/account.html" onclick="s.lidTrack('gnavi_srvc_account')" data-ratid="gnavi_srvc_account" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">各種口座の開設方法</span></span></a></li>
+					<li data-regexp="^/smartphone/support/tax/specific/"><a class="c-rf-link -basic" href="/smartphone/support/tax/specific/" onclick="s.lidTrack('gnavi_srvc_specific')" data-ratid="gnavi_srvc_specific" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">特定口座／確定申告</span></span></a></li>
+					<li data-regexp="^/smartphone/service/mynumber/"><a class="c-rf-link -basic" href="/smartphone/service/mynumber/" onclick="s.lidTrack('gnavi_srvc_mynumber')" data-ratid="gnavi_srvc_mynumber" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">マイナンバー制度</span></span></a></li>
+					<li data-regexp="^/smartphone/service/tsumitate/"><a class="c-rf-link -basic" href="/smartphone/service/tsumitate/" onclick="s.lidTrack('gnavi_srvc_tsumitate')" data-ratid="gnavi_srvc_tsumitate" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">積立サービス</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="https://lifeplan.rakuten-sec.co.jp/advisor/" onclick="s.lidTrack('gnavi_srvc_with-advisor')" data-ratid="gnavi_srvc_with-advisor" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">アドバイザー運用相談</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="/smartphone/collateral/" onclick="s.lidTrack('gnavi_srvc_collateral')" data-ratid="gnavi_srvc_collateral" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">らくらく担保</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="https://fa.rakuten-sec.co.jp/" onclick="s.lidTrack('gnavi_srvc_ifa')" data-ratid="gnavi_srvc_ifa" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">IFA　運用相談</span></span></a></li>
+					<li><a class="c-rf-link -basic" href="https://fa.rakuten-sec.co.jp/partner/" onclick="s.lidTrack('gnavi_srvc_ifa_partner')" data-ratid="gnavi_srvc_ifa_partner" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">IFA支援サービス</span></span></a></li>
+					<li data-regexp="^/smartphone/service/mailservice/"><a class="c-rf-link -basic" href="/smartphone/service/mailservice/" onclick="s.lidTrack('gnavi_srvc_mail')" data-ratid="gnavi_srvc_mail" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">メールサービス</span></span></a></li>
+					<li data-regexp="^/smartphone/service/investment/"><a class="c-rf-link -basic" href="/smartphone/service/investment/" onclick="s.lidTrack('gnavi_srvc_invest')" data-ratid="gnavi_srvc_invest" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">投資情報サービス</span></span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			</li>
+			<!--マーケット情報-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu5"><span><span class="c-rf-button__text">マーケット情報</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap" id="h-menu5" aria-hidden="true">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks"><li data-regexp="^/smartphone/market/info/pagecontent\?pid=200&amp;"><a class="c-rf-link -basic" href="/smartphone/market/info/pagecontent?pid=200&amp;xid=0&amp;l-id=sp_menu_screen" onclick="s.lidTrack('gnavi_mkrt_screening')" data-ratid="gnavi_mkrt_screening" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">スクリーニング</span></span></a></li>
+					<li data-regexp="^/smartphone/market/info/pagecontent\?pid=(100&amp;|40)"><a class="c-rf-link -basic" href="/smartphone/market/info/pagecontent?pid=100&amp;l-id=sp_menu_market&amp;pulldownrefresh=1" onclick="s.lidTrack('gnavi_mkrt_index')" data-ratid="gnavi_mkrt_index" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">指数・金利・為替</span></span></a></li>
+					<li data-regexp="^/smartphone/market/info/pagecontent\?pid=600&amp;"><a class="c-rf-link -basic" href="/smartphone/market/info/pagecontent?pid=600&amp;xid=0&amp;rid=4" onclick="s.lidTrack('gnavi_mkrt_rank')" data-ratid="gnavi_mkrt_rank" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ランキング</span></span></a></li>
+					<li data-regexp="^/smartphone/market/info/pagecontent\?pid=(500&amp;|500$|501$|502$|503$|504$|505$)"><a class="c-rf-link -basic" href="/smartphone/market/info/pagecontent?pid=500&amp;l-id=sp_menu_news" onclick="s.lidTrack('gnavi_mkrt_news')" data-ratid="gnavi_mkrt_news" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ニュース</span></span></a></li>
+					<li data-regexp="^/smartphone/market/closing_account/\?l-id=sp_menu_kessan_sub"><a class="c-rf-link -basic" href="/smartphone/market/closing_account/?l-id=sp_menu_kessan_sub" onclick="s.lidTrack('gnavi_mkrt_fi_results')" data-ratid="gnavi_mkrt_fi_results" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">国内株式決算発表</span></span></a></li>
+					<li data-regexp="^/smartphone/market/calendar/\?l-id=sp_menu_calendar_sub"><a class="c-rf-link -basic" href="/smartphone/market/calendar/?l-id=sp_menu_calendar_sub" onclick="s.lidTrack('gnavi_mkrt_indicator')" data-ratid="gnavi_mkrt_indicator" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">経済指標</span></span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			</li>
+			<!--学び・セミナー-->
+			<li data-level="1">
+				<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu5"><span><span class="c-rf-button__text">学び・セミナー</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+				<div class="p-rf-gnav__wrap" id="h-menu5" aria-hidden="true">
+					<div class="p-rf-gnav__menu">
+						<div class="p-rf-gnav__menuWrap">
+							<dl class="p-rf-gnav__menuBox">
+								<dt class="p-rf-gnav__menuBoxHead">
+									<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu6-1" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">本で学ぶ</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+								</dt>
+								<dd class="p-rf-gnav__menuBoxBody" id="h-menu6-1">
+									<ul>
+										<li data-level="2" data-regexp="^/smartphone/learn/kobo/"><a class="c-rf-link -basic" href="/smartphone/learn/kobo/" onclick="s.lidTrack('gnavi_learn_kobo')" data-ratid="gnavi_learn_kobo" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">おすすめマネー本</span></span></a></li>
+										<li data-level="2" data-regexp="^/smartphone/learn/magazine/"><a class="c-rf-link -basic" href="/smartphone/learn/magazine/" onclick="s.lidTrack('gnavi_learn_magazine')" data-ratid="gnavi_learn_magazine" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">おすすめマネー雑誌</span></span></a></li>
+									</ul>
+								</dd>
+							</dl>
+						  </div>
+					<div class="p-rf-gnav__menuWrap">
+						<ul class="p-rf-gnav__menuLinks">
+						<li data-regexp="^/smartphone/learn/seminar/"><a class="c-rf-link -basic" href="/smartphone/learn/seminar/" onclick="s.lidTrack('gnavi-learn_seminar-list')" data-ratid="gnavi-learn_seminar-list" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">セミナー情報一覧</span></span></a></li>
+						<li data-regexp="^/smartphone/learn/seminar/archives.html"><a class="c-rf-link -basic" href="/smartphone/learn/seminar/archives.html" onclick="s.lidTrack('gnavi-learn_seminar-archives')" data-ratid="gnavi-learn_seminar-archives" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">過去のセミナー一覧</span></span></a></li>
+						<li data-regexp="^/smartphone/learn/seminar/application.html"><a class="c-rf-link -basic" href="/smartphone/learn/seminar/application.html" onclick="s.lidTrack('gnavi-learn_seminar-application')" data-ratid="gnavi-learn_seminar-application" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">セミナー参加方法</span></span></a></li>
+						<li data-regexp="^/smartphone/learn/seminar/view.html"><a class="c-rf-link -basic" href="/smartphone/learn/seminar/view.html" onclick="s.lidTrack('gnavi-learn_seminar-view')" data-ratid="gnavi-learn_seminar-view" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">セミナー視聴方法</span></span></a></li>
+						<li data-regexp="^/smartphone/learn/toushiru/"><a class="c-rf-link -basic" href="/smartphone/learn/toushiru/" onclick="s.lidTrack('gnavi_learn_ToushiruAcademy')" data-ratid="gnavi_learn_ToushiruAcademy" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">トウシルアカデミー</span></span></a></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</li>
+			<!--楽天証券について-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu6"><span><span class="c-rf-button__text">楽天証券について</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap" id="h-menu6" aria-hidden="true">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li data-regexp="^(?!.*(/smartphone/company/fiduciary/|/smartphone/company/profile/|/smartphone/company/disclosure/|/smartphone/company/newsrelease/|/smartphone/company/document/|/smartphone/company/attention/|/smartphone/company/system/|/smartphone/company/system/failure/|/smartphone/security/)).*(?=^/smartphone/company/).*$"><a class="c-rf-link -basic" href="/smartphone/company/" onclick="s.lidTrack('gnavi_about_rsec')" data-ratid="gnavi_about_rsec" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天証券についてトップ</span></span></a></li>
+					<li data-regexp="^/smartphone/company/fiduciary/"><a class="c-rf-link -basic" href="/smartphone/company/fiduciary/" onclick="s.lidTrack('gnavi_about_fiduciary')" data-ratid="gnavi_about_fiduciary" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">「お客様本位の業務運営」について</span></span></a></li>
+					</ul>
+				</div>
+				<div class="p-rf-gnav__menuWrap">
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu6-1" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">会社案内</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu6-1">
+							<ul>
+								<li data-level="2" data-regexp="^/smartphone/company/profile/"><a class="c-rf-link -basic" href="/smartphone/company/profile/" onclick="s.lidTrack('gnavi_about_profile')" data-ratid="gnavi_about_profile" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">会社概要</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/disclosure/"><a class="c-rf-link -basic" href="/smartphone/company/disclosure/" onclick="s.lidTrack('gnavi_about_disclosure')" data-ratid="gnavi_about_disclosure" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">開示情報</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/newsrelease/"><a class="c-rf-link -basic" href="/smartphone/company/newsrelease/" onclick="s.lidTrack('gnavi_about_newsrelease')" data-ratid="gnavi_about_newsrelease" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">ニュースリリース</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu6-2" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">ポリシー</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu6-2">
+							<ul>
+								<li data-level="2" data-regexp="^/smartphone/company/solicitation_policy.html"><a class="c-rf-link -basic" href="/smartphone/company/solicitation_policy.html" onclick="s.lidTrack('gnavi_about_solicitation')" data-ratid="gnavi_about_solicitation" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">勧誘方針</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/best_execution_policy.html"><a class="c-rf-link -basic" href="/smartphone/company/best_execution_policy.html" onclick="s.lidTrack('gnavi_about_bestexecution')" data-ratid="gnavi_about_bestexecution" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">最良執行方針</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/separate.html"><a class="c-rf-link -basic" href="/smartphone/company/separate.html" onclick="s.lidTrack('gnavi_about_separate')" data-ratid="gnavi_about_separate" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">分別管理</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/privacy.html"><a class="c-rf-link -basic" href="/smartphone/company/privacy.html" onclick="s.lidTrack('gnavi_about_privacy')" data-ratid="gnavi_about_privacy" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">個人情報保護宣言</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/privacy_policy.html"><a class="c-rf-link -basic" href="/smartphone/company/privacy_policy.html" onclick="s.lidTrack('gnavi_about_privacypolicy')" data-ratid="gnavi_about_privacypolicy" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">個人情報保護方針</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/conflict.html"><a class="c-rf-link -basic" href="/smartphone/company/conflict.html" onclick="s.lidTrack('gnavi_about_conflict')" data-ratid="gnavi_about_conflict" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">利益相反管理方針</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/antisocial_forces.html"><a class="c-rf-link -basic" href="/smartphone/company/antisocial_forces.html" onclick="s.lidTrack('gnavi_about_antisocial')" data-ratid="gnavi_about_antisocial" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">反社会的勢力に対する基本方針</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/rakuten_g_info.html"><a class="c-rf-link -basic" href="/smartphone/company/rakuten_g_info.html" onclick="s.lidTrack('gnavi_about_rakutenginfo')" data-ratid="gnavi_about_rakutenginfo" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天グループへの情報提供に関して</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu6-3" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">お取引に関わる重要事項</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu6-3">
+							<ul>
+								<li data-level="2" data-regexp="^/smartphone/company/identification.html"><a class="c-rf-link -basic" href="/smartphone/company/identification.html" onclick="s.lidTrack('gnavi_about_identification')" data-ratid="gnavi_about_identification" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">本人確認・本人認証</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/complaint.html"><a class="c-rf-link -basic" href="/smartphone/company/complaint.html" onclick="s.lidTrack('gnavi_about_complaint')" data-ratid="gnavi_about_complaint" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天証券に対する苦情のお申立て</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/risk.html"><a class="c-rf-link -basic" href="/smartphone/company/risk.html" onclick="s.lidTrack('gnavi_about_risk')" data-ratid="gnavi_about_risk" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">投資にかかる手数料等およびリスク</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/document/"><a class="c-rf-link -basic" href="/smartphone/company/document/" onclick="s.lidTrack('gnavi_about_document')" data-ratid="gnavi_about_document" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">取引説明書・取引約款・規定</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/dendai.html"><a class="c-rf-link -basic" href="/smartphone/company/dendai.html" onclick="s.lidTrack('gnavi_about_dendai')" data-ratid="gnavi_about_dendai" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">電子決済等代行業について</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/gold_attention.html"><a class="c-rf-link -basic" href="/smartphone/company/gold_attention.html" onclick="s.lidTrack('gnavi_about_goldattention')" data-ratid="gnavi_about_goldattention" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">特定商取引法に基づく表記（金･プラチナ取引）</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/attention/borrowed_name.html"><a class="c-rf-link -basic" href="/smartphone/company/attention/borrowed_name.html" onclick="s.lidTrack('gnavi_about_borrowedname')" data-ratid="gnavi_about_borrowedname" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">仮名・借名取引について</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/attention/insider.html"><a class="c-rf-link -basic" href="/smartphone/company/attention/insider.html" onclick="s.lidTrack('gnavi_about_insider')" data-ratid="gnavi_about_insider" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">インサイダー取引規制について</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/attention/unfair.html"><a class="c-rf-link -basic" href="/smartphone/company/attention/unfair.html" onclick="s.lidTrack('gnavi_about_unfair')" data-ratid="gnavi_about_unfair" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">不公正取引について</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/attention/work_financial.html"><a class="c-rf-link -basic" href="/smartphone/company/attention/work_financial.html" onclick="s.lidTrack('gnavi_about_workfinancial')" data-ratid="gnavi_about_workfinancial" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">金融機関にお勤めのお客様のお取引制限について</span></span></a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+						<dt class="p-rf-gnav__menuBoxHead">
+							<button class="c-rf-button u-hidden-lg js-trigger" type="button" aria-controls="h-menu6-4" aria-expanded="false" data-type="acc"><span><span class="c-rf-button__text">システム・セキュリティ</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+						</dt>
+						<dd class="p-rf-gnav__menuBoxBody" id="h-menu6-4">
+							<ul>
+								<li data-level="2" data-regexp="^(?!.*(/company/system/failure/|/company/system/failure_archive/|/company/system/maintenance/|/company/system/restart_archive/)).*(?=^/smartphone/company/system/).*$"><a class="c-rf-link -basic" href="/smartphone/company/system/" onclick="s.lidTrack('gnavi_about_system')" data-ratid="gnavi_about_system" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">システム</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/company/system/failure/"><a class="c-rf-link -basic" href="/smartphone/company/system/failure/" onclick="s.lidTrack('gnavi_about_systemfail')" data-ratid="gnavi_about_systemfail" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">システム障害発生時の対応</span></span></a></li>
+								<li data-level="2" data-regexp="^/smartphone/security/"><a class="c-rf-link -basic" href="/smartphone/security/" onclick="s.lidTrack('gnavi_about_security')" data-ratid="gnavi_about_security" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">セキュリティ</span></span></a></li>
+							</ul>
+						</dd>
+
+					</dl>
+					<dl class="p-rf-gnav__menuBox">
+					<ul class="p-rf-gnav__menuLinks">
+						<li data-regexp="^/smartphone/company/recruit/"><a class="c-rf-link -basic" href="/smartphone/company/recruit/" onclick="s.lidTrack('gnavi_about_recruit')" data-ratid="gnavi_about_recruit" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">採用について</span></span></a></li>
+					</ul>
+					</dl>
+				</div>
+				</div>
+			</div>
+			</li>
+			<!--よくあるご質問-->
+			<li data-level="1">
+			<a class="c-rf-button" href="http://faq.rakuten-sec.co.jp/sp/" data-type="mega-link" onclick="s.lidTrack('gnavi_faq')" data-ratid="gnavi_faq" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">よくあるご質問</span></span></a>
+			</li>
+			<!--お客様サポート・お問い合わせ-->
+			<li data-level="1" data-regexp="(?=^/smartphone/support/)">
+			<a class="c-rf-button" href="/smartphone/support/" data-type="mega-link" onclick="s.lidTrack('gnavi_contact')" data-ratid="gnavi_contact" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">お客様サポート・お問い合わせ</span></span></a>
+			</li>
+			<!--法人・事業主のお客様へ-->
+			<li data-level="1" data-regexp="(?=^/smartphone/corporate/)">
+			<a class="c-rf-button" href="/smartphone/corporate/" data-type="mega-link" onclick="s.lidTrack('gnavi_about_corporate')" data-ratid="gnavi_about_corporate" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">法人・事業主のお客様へ</span></span></a>
+			</li>
+			<!--楽天グループサービス-->
+			<li data-level="1">
+			<button class="c-rf-button js-trigger" type="button" data-type="mega-down" aria-expanded="false" aria-controls="h-menu7"><span><span class="c-rf-button__text">楽天グループサービス</span><i class="rex-icons-chevron-down" aria-hidden="true"></i></span></button>
+			<div class="p-rf-gnav__wrap" id="h-menu7" aria-hidden="true">
+				<div class="p-rf-gnav__menu">
+				<div class="p-rf-gnav__menuWrap">
+					<ul class="p-rf-gnav__menuLinks">
+					<li data-active="no"><a class="c-rf-link -basic" href="https://www.rakuten.co.jp/" target="_blank" onclick="s.lidTrack('gnavi_group_ichiba')" data-ratid="gnavi_group_ichiba" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天市場</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+
+					<li data-active="no"><a class="c-rf-link -basic" href="https://www.rakuten-card.co.jp/smart/" target="_blank" onclick="s.lidTrack('gnavi_group_card')" data-ratid="gnavi_group_card" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天カード</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+
+					<li data-active="no"><a class="c-rf-link -basic" href="https://www.rakuten-bank.co.jp/smartphone/" target="_blank" onclick="s.lidTrack('gnavi_group_bank')" data-ratid="gnavi_group_bank" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天銀行</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+
+					<li data-active="no"><a class="c-rf-link -basic" href="https://www.rakuten-life.co.jp/" target="_blank" onclick="s.lidTrack('gnavi_group_life')" data-ratid="gnavi_group_life" data-ratevent="click" data-ratparam="all"><span><span class="c-rf-button__text">楽天生命</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			</li>
+		</ul>
+		</nav>
+		<dl class="p-rf-external">
+		<dt>投資を学べる情報メディア</dt>
+		<dd>
+			<ul>
+			<li><a class="c-rf-link" href="https://media.rakuten-sec.net/" target="_blank" onclick="s.lidTrack('gnavi_toshiru');this.href=usergram.link(this.href);" data-ratid="gnavi_toshiru" data-ratevent="click" data-ratparam="all" rel="noopener noreferrer"><span><i class="rex-icon rex-icon-toushiru rex-icon--pickup" aria-hidden="true"></i><span class="c-rf-link__text">トウシル</span><i class="rex-icons-new-window-outlined" aria-label="新しいタブまたはウィンドウで開く"></i></span></a></li>
+			</ul>
+		</dd>
+		</dl>
+		<dl class="p-rf-external">
+		<dt>楽天証券のアプリ</dt>
+		<dd>
+			<ul>
+			<li><a class="c-rf-link" href="javascript:start_ispeed();" onclick="s.lidTrack('gnavi_app_ispeed')" data-ratid="gnavi_app_ispeed" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon rex-icon-ispeed rex-icon--pickup"></i><span class="c-rf-link__text">株</span></span></a></li>
+			<li><a class="c-rf-link" href="javascript:start_fx();" onclick="s.lidTrack('gnavi_app_fx')" data-ratid="gnavi_app_fx" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon rex-icon-ispeed-fx rex-icon--pickup"></i><span class="c-rf-link__text">FX取引</span></span></a></li>
+			<li><a class="c-rf-link" href="javascript:start_op();" onclick="s.lidTrack('gnavi_app_op')" data-ratid="gnavi_app_op" data-ratevent="click" data-ratparam="all"><span><i class="rex-icon rex-icon-ispeed-op rex-icon--pickup"></i><span class="c-rf-link__text">先物・オプション取引</span></span></a></li>
+			</ul>
+		</dd>
+		</dl>
+	</div>
+	<div tabindex="0" data-modal-position="end"></div>
+	</div>
+</div>
+</header>
+
+<!-- ::::::::::::: ▼▼ s1-bamboo.html include :  start ▼▼ ::::::::::::::::: -->
+<!--#include virtual="/smartphone/shared/include/s1-bamboo.html" -->
+<!-- ::::::::::::: ▲▲ s1-bamboo.html include :  end ▲▲ ::::::::::::::::: -->
+
+<style>
+#hidden-search{ display: none;}
+</style>

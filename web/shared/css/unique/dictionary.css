@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+div#str-main table.term {
+margin:0 0 1em;
+border:0;
+}
+
+div#str-main table.term th {   
+width:100px;   
+padding:5px 5px 4px;   
+border-right:1px solid #fff;
+border-bottom:3px solid #fff;
+background:#333399;
+color:#fff;
+text-align:center;
+} 
+
+div#str-main table.term td {
+padding:5px 5px 5px 10px;
+border-right:0;
+border-bottom:3px solid #fff;
+font-weight:bold;
+background:#eee;
+}  
+

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: navi.css for
+ /web/fund/saving/choice.html
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: saving/choice.html
+----------------------------------------------------------------*/
+div#str-main table {
+table-layout: fixed;
+}
+div#str-main div.image-col1-full p{
+text-align: left;
+}
+div#str-main div.image-col2 {
+margin-bottom: 1em;
+padding: 0 10px;
+}
+div#str-main div.image-col2 p {
+width: 265px;
+margin: 0;
+padding: 0;
+}
+div#str-main div.image-col2 p img {
+display: block;
+padding: 0 4px 4px 0;
+}
+div#str-main div.column-col3 p {
+margin: 0 0 1em; 
+}
+div#str-main div.column-col3  div.segment {
+padding-top: 31px;
+}
+div#str-main div.column-col3  div.segment h4 {
+position: relative;
+margin-top: -31px;
+}
+div#str-main div.column-col3  div.segment ul.list-add-01 {
+margin: 0 0 1em; 
+}
+div#str-main div.column-col3  div.segment ul.list-add-01 li {
+padding: 0 5px;
+display: inline;
+}
+div#str-main  div.box-column-select {
+margin-bottom: 1em;
+padding:2px;
+border: 1px solid #dfa24a;
+background:#ffffff;
+}
+div#str-main  div.box-column-select div.box-column-inner {
+background:#fff7e6;
+}
+div#str-main  div.box-column-select h3{
+padding:5px 10px;
+color: #db8300;
+font-size: 87.5%;
+}
+div#str-main  div.box-column-select p{
+margin: 0; 
+padding:5px 10px;
+}

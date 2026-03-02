@@ -1,0 +1,441 @@
+<hr />
+
+<div id="right-acc-area">
+<p id="ACC2" class="button"><a href="/ITS/rakuten_g/?l-id=rightnavi_cp_newacc"><img src="/web/shared/images/str-sub-common/bnr-12200cp-01.gif" alt="口座開設＋各種取引でポイントプレゼント" width="180" height="50" /></a></p>
+<div id="ACC3" class="box-new-account">
+<h2><img src="/web/shared/images/str-sub-common/entry-hdg-01.gif" alt="口座をお持ちでない方へ" /></h2>
+<div class="box-new-account-inner">
+<p class="sub-hdg">まずは無料で口座開設</p>
+<p id="ACC31" class="button"><a href="/web/account/rakuten.html?l-id=rightnavi_account_rakuten"><img alt="口座開設" src="/web/shared/images/str-sub-common/entry-btn-red.gif"></a></p>
+<p id="ACC32" class="txt-link"><a href="/web/account/?l-id=rightnavi_account">楽天会員でない方はこちら</a></p>
+</div>
+</div>
+<div id="ACC4" class="processing">
+<h3>口座開設中のお客様</h3>
+<ul class="list-link-01">
+<li><a href="/ITS/rakuten_g/flow/?l-id=accrightnavi_flow">口座開設までの流れ</a></li>
+</ul>
+<h3>クイック口座開設手続き中のお客様</h3>
+<ul class="list-link-01">
+<li><a href="https://member.rakuten-sec.co.jp/service/setup/loginFormInit.do?homeid=wed">初期設定ログイン</a></li>
+</ul>
+</div>
+<div id="ACC5">
+<p class="banner"><a href="/isa/?l-id=mrightnavi_isa"><img alt="ISA口座" src="/web/images/banners/isa_index/180x50.gif"></a></p>
+<p class="button"><a href="/web/account/?l-id=mrightnavi_account"><img alt="口座開設" src="/web/shared/images/str-sub-common/entry-btn-07.gif"></a></p>
+</div>
+<script type="text/javascript">
+<!--
+  var rz = $.cookie("Rz");
+  var rg = $.cookie("Rg_sec");
+
+  if((rz == null) && (rg == null)) {		// 1.デフォルト:非会員の場合
+    $("#ACC2").hide();
+    $("#ACC4").hide();
+    $("#ACC5").hide();
+  } else {
+    if((rz != null) && (rg == null)) {		// 2.非会員・RzCookieを保持の場合
+      $("#ACC2").hide();
+      $("#ACC32").hide();
+      $("#ACC4").hide();
+      $("#ACC5").hide();
+    } else {
+      if(rg.substr(5,1) == '0'){			// 3.口座申込済みの場合
+        $("#ACC2").hide();
+        $("#ACC5").hide();
+      } else {								// 4.初期設定完了済の場合
+        $("#ACC2").hide();
+        $("#ACC3").hide();
+        $("#ACC4").hide();
+      }
+    }
+  }
+-->
+</script>
+</div><!-- /#right-acc-area -->
+
+
+<div id="login-area">
+
+<ul id="tab-login">
+<li id="tab-login-account" class="selected">総合口座</li>
+<li id="tab-login-fx">楽天FX</li>
+</ul>
+
+<div id="login-container">
+
+<div id="box-login">
+<!--システムメンテナンスのおしらせ-->
+<!--
+<div class="box-maintenance">
+<p>現在システムメンテナンス中のため、ログインを停止しています。（楽天FXを除く）</p>
+<p class="reopen"><span>サービス再開予定</span>12/18（土） 16：00</p>
+</div>
+-->
+<!--/システムメンテナンスのおしらせ-->
+
+<form id="loginform" name="loginform" action="https://member.rakuten-sec.co.jp/bv/app/MhLogin.do" method="post" target="_top">
+<fieldset id="login">
+<legend>ログイン</legend>
+<label for="form-login-id" class="lbl-login-id">ログインID</label><input type="text" id="form-login-id" class="input-area" name="loginid" maxlength="8" tabindex="1" onfocus="chfocus('0')" /><br />
+<label for="form-login-pass" class="lbl-login-pass">パスワード</label><input type="password" id="form-login-pass" class="input-area" name="passwd" maxlength="8" tabindex="2" onfocus="chfocus('1')" />
+<p class="link-openkey"><a href="javascript:void(0)" onclick="javascript:openkey();return false;">ソフトウェアキーボード</a></p>
+<input type="image" value="ログイン" src="/web/shared/images/str-sub-common/btn-login-01.gif" id="login-btn" class="input-btn" name="submit%template" tabindex="3" />
+<p id="select-page">
+<select id="homeid" name="homeid" tabindex="4">
+<option value="HOME" selected="selected">ホーム画面にログイン</option>
+<option value="STK_POS">保有商品一覧にログイン</option>
+<option value="MARKET_FAVORITE">お気に入り銘柄情報にログイン</option>
+<option value="MARKET_TOP">マーケットにログイン</option>
+<option value="PTF_INFO_BASIC_VST">ポートフォリオにログイン</option>
+<option value="BILLING_VST">リアルタイム入金にログイン</option>
+<option value="JP_STK_BUY_SEARCH">株式注文にログイン</option>
+<option value="ACC_REG_CHANGE_TOP">口座情報にログイン</option>
+</select></p>
+</fieldset>
+</form>
+<script type="text/javascript">
+<!--
+$('#home-id').bind('change', function() {
+	$.cookie("homeid", $("#home-id").val(),{ expires:30, path:"/"})
+});
+var cookie = $.cookie("homeid");
+if(cookie != null) {
+	$("#home-id").val(cookie);
+}
+-->
+</script>
+</div><!-- /#box-login -->
+
+
+<div id="box-fxlogin" style="display:none;">
+<form id="fxloginform" name="LoginForm" action="https://fx.rakuten-sec.co.jp/web/webMainLogin.action" method="post" target="_top">
+<fieldset id="fxlogin">
+<legend>ログイン</legend>
+<label for="form-fxlogin-id" class="lbl-login-id">ログインID</label><input type="text" id="form-fxlogin-id" class="input-area" name="loginId" maxlength="8" tabindex="1" onfocus="chfocus('0')" /><br />
+<label for="form-fxlogin-pass" class="lbl-login-pass">パスワード</label><input type="password" id="form-fxlogin-pass" class="input-area" name="password" maxlength="8" tabindex="2" onfocus="chfocus('1')" />
+<p class="link-openkey"><a href="javascript:void(0)" onclick="javascript:openkeyfx();return false;">ソフトウェアキーボード</a></p>
+<input type="image" value="ログイン" src="/web/shared/images/str-sub-common/btn-login-01.gif" id="fxlogin-btn" class="input-btn" tabindex="3" />
+</fieldset>
+</form>
+</div><!-- /#box-fxlogin -->
+
+
+<ul class="list-link-01">
+<li><a href="/web/help/care_login.html">ログインできない方はこちら</a></li>
+<li><a href="/web/info/maintenance.html">計画メンテナンスの予定</a></li>
+</ul>
+
+</div><!-- /#login-container -->
+
+<script type="text/javascript">
+<!--
+$(function() {
+
+	$('#tab-login-account').click(function(){
+		$('#tab-login li').removeClass('selected');
+		$(this).addClass('selected');
+		$('#box-fxlogin').hide();
+		$('#box-login').show(); 
+		closekey();
+	});
+
+	$('#tab-login-fx').click(function(){
+		$('#tab-login li').removeClass('selected');
+		$(this).addClass('selected');
+		$('#box-login').hide();
+		$('#box-fxlogin').show(); 
+		closekey();
+	});
+
+});
+// -->
+</script>
+
+
+</div><!-- /.login -->
+
+<!-- ============ソフトウェアキーボード============ -->
+<script type="text/javascript" src="/web/shared/js/keyboard.js"></script>
+
+<div class="softwarekeyboard">
+<div id="keyboard" class="keyboard">
+<div class="keyinner">
+
+<h2>ソフトウェアキーボード</h2>
+<p class="closeBtn"><a href="javascript:;" onclick="closekey();" ondblclick="closekey()">閉じる</a></p>
+
+<div class="tab">
+<ul>
+<li id="key_tab0"><img src="/web/shared/images/fixed/keyboard/keyboard_tab_idon.gif" width="100" height="26" alt="ログインID" /></li>
+<li id="key_tab1"><img src="/web/shared/images/fixed/keyboard/keyboard_tab_passoff.gif" width="100" height="26" alt="パスワード" /></li>
+</ul>
+<p><a href="/web/info/software_keyboard.html">使用方法</a></p>
+</div><!-- /.tab -->
+
+<div class="btnArea" id="btnArea">
+
+<div class="btninner" id="keyarea0">
+<table cellspacing="5">
+<tr>
+<td class="btns" onmouseover="keyon('0')" onmouseout="keyoff('0')" onclick="keypush('0')" id="key0">0</td>
+<td class="btns" onmouseover="keyon('1')" onmouseout="keyoff('1')" onclick="keypush('1')" id="key1">1</td>
+<td class="btns" onmouseover="keyon('2')" onmouseout="keyoff('2')" onclick="keypush('2')" id="key2">2</td>
+<td class="btns" onmouseover="keyon('3')" onmouseout="keyoff('3')" onclick="keypush('3')" id="key3">3</td>
+<td class="btns" onmouseover="keyon('4')" onmouseout="keyoff('4')" onclick="keypush('4')" id="key4">4</td>
+<td class="btns" onmouseover="keyon('5')" onmouseout="keyoff('5')" onclick="keypush('5')" id="key5">5</td>
+<td class="btns" onmouseover="keyon('6')" onmouseout="keyoff('6')" onclick="keypush('6')" id="key6">6</td>
+<td class="btns" onmouseover="keyon('7')" onmouseout="keyoff('7')" onclick="keypush('7')" id="key7">7</td>
+<td class="btns" onmouseover="keyon('8')" onmouseout="keyoff('8')" onclick="keypush('8')" id="key8">8</td>
+<td class="btns" onmouseover="keyon('9')" onmouseout="keyoff('9')" onclick="keypush('9')" id="key9">9</td>
+</tr>
+</table>
+</div><!-- /.btninner -->
+
+<div class="btninner" id="keyarea1">
+<table cellspacing="5">
+<tr>
+<td class="btns" onmouseover="keyon('A')" onmouseout="keyoff('A')" onclick="keypush('A')" id="keyA">A</td>
+<td class="btns" onmouseover="keyon('B')" onmouseout="keyoff('B')" onclick="keypush('B')" id="keyB">B</td>
+<td class="btns" onmouseover="keyon('C')" onmouseout="keyoff('C')" onclick="keypush('C')" id="keyC">C</td>
+<td class="btns" onmouseover="keyon('D')" onmouseout="keyoff('D')" onclick="keypush('D')" id="keyD">D</td>
+<td class="btns" onmouseover="keyon('E')" onmouseout="keyoff('E')" onclick="keypush('E')" id="keyE">E</td>
+<td class="btns" onmouseover="keyon('F')" onmouseout="keyoff('F')" onclick="keypush('F')" id="keyF">F</td>
+<td class="btns" onmouseover="keyon('G')" onmouseout="keyoff('G')" onclick="keypush('G')" id="keyG">G</td>
+<td class="btns" onmouseover="keyon('H')" onmouseout="keyoff('H')" onclick="keypush('H')" id="keyH">H</td>
+<td class="btns" onmouseover="keyon('I')" onmouseout="keyoff('I')" onclick="keypush('I')" id="keyI">I</td>
+<td class="btns" onmouseover="keyon('J')" onmouseout="keyoff('J')" onclick="keypush('J')" id="keyJ">J</td>
+</tr>
+<tr>
+<td class="btns" onmouseover="keyon('K')" onmouseout="keyoff('K')" onclick="keypush('K')" id="keyK">K</td>
+<td class="btns" onmouseover="keyon('L')" onmouseout="keyoff('L')" onclick="keypush('L')" id="keyL">L</td>
+<td class="btns" onmouseover="keyon('M')" onmouseout="keyoff('M')" onclick="keypush('M')" id="keyM">M</td>
+<td class="btns" onmouseover="keyon('N')" onmouseout="keyoff('N')" onclick="keypush('N')" id="keyN">N</td>
+<td class="btns" onmouseover="keyon('O')" onmouseout="keyoff('O')" onclick="keypush('O')" id="keyO">O</td>
+<td class="btns" onmouseover="keyon('P')" onmouseout="keyoff('P')" onclick="keypush('P')" id="keyP">P</td>
+<td class="btns" onmouseover="keyon('Q')" onmouseout="keyoff('Q')" onclick="keypush('Q')" id="keyQ">Q</td>
+<td class="btns" onmouseover="keyon('R')" onmouseout="keyoff('R')" onclick="keypush('R')" id="keyR">R</td>
+<td class="btns" onmouseover="keyon('S')" onmouseout="keyoff('S')" onclick="keypush('S')" id="keyS">S</td>
+<td class="btns" onmouseover="keyon('T')" onmouseout="keyoff('T')" onclick="keypush('T')" id="keyT">T</td>
+</tr>
+<tr>
+<td class="btns" onmouseover="keyon('U')" onmouseout="keyoff('U')" onclick="keypush('U')" id="keyU">U</td>
+<td class="btns" onmouseover="keyon('V')" onmouseout="keyoff('V')" onclick="keypush('V')" id="keyV">V</td>
+<td class="btns" onmouseover="keyon('W')" onmouseout="keyoff('W')" onclick="keypush('W')" id="keyW">W</td>
+<td class="btns" onmouseover="keyon('X')" onmouseout="keyoff('X')" onclick="keypush('X')" id="keyX">X</td>
+<td class="btns" onmouseover="keyon('Y')" onmouseout="keyoff('Y')" onclick="keypush('Y')" id="keyY">Y</td>
+<td class="btns" onmouseover="keyon('Z')" onmouseout="keyoff('Z')" onclick="keypush('Z')" id="keyZ">Z</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div><!-- /.btninner -->
+
+<div class="btninner" id="keyarea2">
+<table cellspacing="5">
+<tr>
+<td class="btns" onmouseover="keyon1('a')" onmouseout="keyoff1('a')" onclick="keypush1('a')" id="keya1">a</td>
+<td class="btns" onmouseover="keyon1('b')" onmouseout="keyoff1('b')" onclick="keypush1('b')" id="keyb1">b</td>
+<td class="btns" onmouseover="keyon1('c')" onmouseout="keyoff1('c')" onclick="keypush1('c')" id="keyc1">c</td>
+<td class="btns" onmouseover="keyon1('d')" onmouseout="keyoff1('d')" onclick="keypush1('d')" id="keyd1">d</td>
+<td class="btns" onmouseover="keyon1('e')" onmouseout="keyoff1('e')" onclick="keypush1('e')" id="keye1">e</td>
+<td class="btns" onmouseover="keyon1('f')" onmouseout="keyoff1('f')" onclick="keypush1('f')" id="keyf1">f</td>
+<td class="btns" onmouseover="keyon1('g')" onmouseout="keyoff1('g')" onclick="keypush1('g')" id="keyg1">g</td>
+<td class="btns" onmouseover="keyon1('h')" onmouseout="keyoff1('h')" onclick="keypush1('h')" id="keyh1">h</td>
+<td class="btns" onmouseover="keyon1('i')" onmouseout="keyoff1('i')" onclick="keypush1('i')" id="keyi1">i</td>
+<td class="btns" onmouseover="keyon1('j')" onmouseout="keyoff1('j')" onclick="keypush1('j')" id="keyj1">j</td>
+</tr>
+<tr>
+<td class="btns" onmouseover="keyon1('k')" onmouseout="keyoff1('k')" onclick="keypush1('k')" id="keyk1">k</td>
+<td class="btns" onmouseover="keyon1('l')" onmouseout="keyoff1('l')" onclick="keypush1('l')" id="keyl1">l</td>
+<td class="btns" onmouseover="keyon1('m')" onmouseout="keyoff1('m')" onclick="keypush1('m')" id="keym1">m</td>
+<td class="btns" onmouseover="keyon1('n')" onmouseout="keyoff1('n')" onclick="keypush1('n')" id="keyn1">n</td>
+<td class="btns" onmouseover="keyon1('o')" onmouseout="keyoff1('o')" onclick="keypush1('o')" id="keyo1">o</td>
+<td class="btns" onmouseover="keyon1('p')" onmouseout="keyoff1('p')" onclick="keypush1('p')" id="keyp1">p</td>
+<td class="btns" onmouseover="keyon1('q')" onmouseout="keyoff1('q')" onclick="keypush1('q')" id="keyq1">q</td>
+<td class="btns" onmouseover="keyon1('r')" onmouseout="keyoff1('r')" onclick="keypush1('r')" id="keyr1">r</td>
+<td class="btns" onmouseover="keyon1('s')" onmouseout="keyoff1('s')" onclick="keypush1('s')" id="keys1">s</td>
+<td class="btns" onmouseover="keyon1('t')" onmouseout="keyoff1('t')" onclick="keypush1('t')" id="keyt1">t</td>
+</tr>
+<tr>
+<td class="btns" onmouseover="keyon1('u')" onmouseout="keyoff1('u')" onclick="keypush1('u')" id="keyu1">u</td>
+<td class="btns" onmouseover="keyon1('v')" onmouseout="keyoff1('v')" onclick="keypush1('v')" id="keyv1">v</td>
+<td class="btns" onmouseover="keyon1('w')" onmouseout="keyoff1('w')" onclick="keypush1('w')" id="keyw1">w</td>
+<td class="btns" onmouseover="keyon1('x')" onmouseout="keyoff1('x')" onclick="keypush1('x')" id="keyx1">x</td>
+<td class="btns" onmouseover="keyon1('y')" onmouseout="keyoff1('y')" onclick="keypush1('y')" id="keyy1">y</td>
+<td class="btns" onmouseover="keyon1('z')" onmouseout="keyoff1('z')" onclick="keypush1('z')" id="keyz1">z</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div><!-- /.btninner -->
+
+</div><!-- /.btnArea -->
+
+<div class="editBtnArea">
+<table cellspacing="10">
+<tr>
+<td class="btnl" onclick="del(0)" ondblclick="del(0)">1文字削除</td>
+<td class="btnl" onclick="del(1)" ondblclick="del(1)">クリア</td>
+<td class="btnl" onclick="closekey()" ondblclick="closekey()">閉じる</td>
+</tr>
+</table>
+</div><!-- /.editBtnArea -->
+
+</div><!-- /.keyinner -->
+</div><!-- /.keyboard -->
+</div><!-- /.softwarekeyboard -->
+<!-- ============ソフトウェアキーボード============ -->
+
+
+<!-- 緊急時障害アナウンス用インクルード(削除禁止) -->
+<!--#include virtual="/ITS/system_info_login_inc.html" -->
+<!-- 緊急時障害アナウンス用インクルード(削除禁止) -->
+
+<div class="info-system">
+<h2 id="about_system_information">システム関連のお知らせ</h2>
+<!-- 緊急時障害アナウンスロード用スクリプト(削除禁止) -->
+<script>
+<!--
+ $(function(){
+  jQuery.ajaxSetup({ cache: false });
+  jQuery.get("/ITS/system_info_web.xml", function(resp) {
+   $("#system_info").append((resp.documentElement.firstChild.nodeValue).replace(/system_info\//g,"/ITS/system_info/"));
+  });
+ });
+//-->
+</script>
+<!-- 緊急時障害アナウンスロード用スクリプト-削除禁止 -->
+
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+<!-- ### SYSTEM_INFO ### -->
+<div id="system_info"></div>
+<!-- ### SYSTEM_INFO ### -->
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+
+</div><!-- /info-system -->
+
+
+<ul class="list-bn-01">
+<!-- MSバナーここから -->
+<li><a href="http://marketspeed.jp/download/?l-id=rightnavi_ms_download"><img src="/web/images/index-bnr-msdl.gif" alt="Marketspeedダウンロード" /></a></li>
+<li><a href="http://marketspeed.jp/fx/download/?l-id=rightnavi_msfx_download"><img src="/web/images/index-bnr-msfxdl.gif" alt="MarketspeedFXダウンロード" /></a></li>
+<!-- MSバナーここまで -->
+
+<!-- ともだちバナーここから -->
+<li><a href="/web/campaign/introduction/" onclick="s.lidTrack('subcom_sv_introduction')"><img src="/web/images/banners/sv_introduction/180x50.gif" alt=" お友達紹介プログラム" width="180" height="50" /></a></li>
+<!-- ともだちバナーここまで -->
+
+<!-- おもてなしバナーここから -->
+<li><a href="/web/company/voc/"><img src="/web/images/banners/company_voc/180x50.gif" alt="お客様の声をカタチに" width="180" height="50" /></a></li>
+<!-- おもてなしバナーここまで -->
+</ul>
+
+
+<div id="setupInfoTable"></div> <!-- 未開設の口座・お取引表示制御 -->
+
+<!--#include virtual="/web/shared/include/str-sub-common/point-parts.html" -->
+
+
+<div class="right_portfolio">
+<div id="head"><p>ポートフォリオ機能・お気に入り銘柄機能</p></div>
+
+<div class="inner_portfolio">
+<div id="inner_portfolio_1">
+<p style="margin-bottom:5px;">楽天証券へ資料請求して、今すぐご利用いただけます。</p>
+<p><a href="/web/account/rakuten.html?l-id=rightnavi_ptf_acc">楽天証券資料請求はこちら</a></p>
+</div>
+
+<div id="inner_portfolio_2">
+<p style="margin-bottom:5px;">今すぐご利用いただけます。</p>
+<p><a href="/web/portfolio/?l-id=rightnavi_ptf_portfolio">ポートフォリオ一覧を表示</a></p>
+<p><a href="/web/market/favorite/">お気に入り銘柄一覧を表示</a></p>
+</div>
+
+<div id="inner_portfolio_3">
+<p style="margin-bottom:5px;">「ログイン前の登録銘柄と同期する」設定をしていただくことでご利用いただけます。</p>
+<p><a href="/cgi-bin/CTS/Direct_Login.cgi?homeid=PTF_SYNC_SETTING">設定はこちらから</a></p>
+</div>
+
+<div id="inner_portfolio_4">
+<p style="margin-bottom:5px;">上記より楽天会員にログインしてください。</p>
+<p><a href="/web/info/info20100115-01.html?l-id=rightnavi_ptf_info">ポートフォリオ機能とは？</a></p>
+<p><a href="/web/info/info20100226-01.html">お気に入り登録機能とは？</a></p>
+</div>
+
+<script type="text/javascript" src="/web/shared/js/setupInfoControl.js"></script>
+<script type="text/javascript">
+<!--
+if( $.cookie('Rz') == null || $.cookie('Rz') == ''){
+	document.getElementById('inner_portfolio_1').style.display = "none";
+	document.getElementById('inner_portfolio_2').style.display = "none";
+	document.getElementById('inner_portfolio_3').style.display = "none";
+}
+else if($.cookie('login_flag') != null && $.cookie('login_flag') == '2'){
+	document.getElementById('inner_portfolio_1').style.display = "none";
+	document.getElementById('inner_portfolio_3').style.display = "none";
+	document.getElementById('inner_portfolio_4').style.display = "none";
+}
+else if($.cookie('Rg_sec') != null && $.cookie('Rg_sec') != '' && $.cookie('Rg_sec').substring(5,10) != '00000'){
+	document.getElementById('inner_portfolio_1').style.display = "none";
+	document.getElementById('inner_portfolio_2').style.display = "none";
+	document.getElementById('inner_portfolio_4').style.display = "none";
+}
+else{
+	document.getElementById('inner_portfolio_2').style.display = "none";
+	document.getElementById('inner_portfolio_3').style.display = "none";
+	document.getElementById('inner_portfolio_4').style.display = "none";
+
+}
+
+setupInfoControl(); //未開設の口座・お取引表示制御
+
+//-->
+</script>
+
+</div>
+
+</div><!-- /.right_portfolio -->
+
+<div class="attention no-heading">
+<ul class="list-link-01">
+<li><a href="/web/info/view_document.html">重要な書面（取引説明書･約諾書等）の閲覧について </a></li>
+<li><a href="/web/info/unlisted_stock.html">未公開株の勧誘にご注意</a></li>
+<li><a href="/web/info/phishing.html">フィッシング詐欺にご注意</a></li>
+</ul>
+</div><!-- /.attention -->
+
+<div class="pay">
+<h2 id="about_money_received">ご入金方法</h2>
+<ul class="list-link-01">
+<li><a href="/web/service/pay/">ご入金・ご出金の流れ</a></li>
+<li><a href="/web/service/pay/billing/#skip03">手数料無料の提携銀行</a></li>
+</ul>
+</div><!-- /.pay -->
+
+<div class="attention">
+<h2 id="attention_visitor">お客様へのご注意</h2>
+<ul class="list-link-01">
+<!--li><a href="/web/info/view_document.html">重要な書面（取引説明書･約諾書等）の閲覧について </a></li-->
+<li><a href="/ITS/Companyfile/PRNT_Companyfile.html" target="_blank">お取引注意銘柄情報</a></li>
+<li><a href="/web/info/system_maintenance.html">メンテナンス中のご注意</a></li>
+</ul>
+</div><!-- /.attention -->
+
+<div class="inquiry">
+<h2 id="inquiry_help">ヘルプ</h2>
+<ul class="list-link-01">
+<li><a href="https://faq.rakuten-sec.co.jp/faq.html?scategory=159&t=20120720192240&key=&x=132&y=25" target="_blank">変更手続きのQ＆A</a></li>
+<li><a href="/web/help/#inqury-tel">お電話でのお問い合わせ</a></li>
+<li><a href="http://faq.rakuten-sec.co.jp/" target="_blank">よくあるご質問</a></li>
+<li><a href="/web/help/pc_support.html">パソコン出張サポート</a></li>
+</ul>
+<!-- FAQ -->
+<!--#include virtual="/web/shared/include/str-sub-common/ask-ranking.html" -->
+<!-- FAQ -->
+</div><!-- /.inquiry -->
+

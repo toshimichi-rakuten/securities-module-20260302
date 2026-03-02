@@ -1,0 +1,60 @@
+<div id="str-search" style="margin-bottom:0;">
+<script language="JavaScript" src="/web/shared/js/str-search/ecl_new.js"></script>
+<script language="JavaScript" src="/web/shared/js/str-search/cmmn.js"></script>
+<form action="javascript:changeSearchResult('search','stoc-type', 'name')" method="GET" name="search">
+<fieldset id="form-search-stock">
+<legend>株価検索</legend>
+<dl>
+<dt class="label-search">
+<label for="form-search-stock-prices"><img src="/web/shared/images/str-search/search.gif" alt="検索" width="59" height="22"></label></dt>
+<dd>
+<input type="text" id="form-search-stock-prices" name="name" value="銘柄名&frasl;コード&frasl;ファンド名" onfocus="this.value='';this.style.color='#000000';">
+<select id="stoc-type" name="stoc-type">
+<option value="0" selected="selected">国内株式</option>
+<option value="1">米株（銘柄名）</option>
+<option value="4">米株（Ticker）</option>
+<option value="2">中国株式</option>
+<option value="3">投資信託</option>
+</select>
+<input type="image" value="検索" src="/web/shared/images/str-search/btn-search.gif" id="form-search-stock-btn" onclick="">
+</dd>
+</dl>
+</fieldset>
+</form>
+
+<form name="searchform" method="GET" action="http://csearch.rakuten.co.jp/sbr/usearch?sitem=fx&sv=3" onsubmit='chkSearchValue();'>
+<div>
+<input type="hidden" name="sv" value="3">
+<input type="hidden" name="f" value="A">
+<fieldset id="form-search-word">
+<legend>サイト内検索</legend>
+<p><input type="text" name="sitem" value="キーワードを入力" class="searchInput" id="form-search-keywords"  onfocus="onSiteSearchFocus(); return false;" onblur="onSiteSearchBlur(); return false;"><input type="image" src="/web/shared/images/str-search/btn-search-word.gif" value="サイト内検索" id="form-search-btn"></p>
+</fieldset>
+</div>
+</form>
+
+<div id="font-control">
+<dl>
+<dt><img src="/web/shared/images/str-search/font.gif" alt="文字サイズ" width="54" height="11"></dt>
+<dd>
+<ul>
+<li><img src="/ITS/ss/common/img/fsize_btn_small.gif" alt="小" name="g_radio_1" width="18" height="18" id="g_radio_1" onclick="ChengeFs('small','/ITS/ss/common/');"></li><li><img src="/ITS/ss/common/img/fsize_btn_medium_ovr.gif" alt="中" name="g_radio_2" width="18" height="18" id="g_radio_2" onclick="ChengeFs('middle','/ITS/ss/common/');"></li><li><img src="/ITS/ss/common/img/fsize_btn_large.gif" alt="大" name="g_radio_3" width="18" height="18" id="g_radio_3" onclick="ChengeFs('large','/ITS/ss/common/');"></li>
+</ul>
+
+</dd>
+</dl>
+</div><!-- /#font-control -->
+
+<hr>
+</div><!-- /#str-search -->
+
+<p style="margin:0 0 7px;padding:0;">
+<img src="/web/shared/images/str-search/bnr_linktext_950x30.gif" alt="注目！最新情報" width="950" height="30" border="0" usemap="#pbnr">
+<map name="pbnr" id="pbnr">
+<area shape="rect" coords="11,5,251,25" href="/web/cfd/?l-id=pbnr_cfd" alt="【楽天CFD】12/24ついにサービス開始！">
+<area shape="rect" coords="259,5,627,25" href="/ITS/rakuten_g/?l-id=pbnr_rakuten_g&id=" alt="【12/19から11日間限定】口座開設と取引で最大合計15,700pt！">
+<area shape="rect" coords="632,6,941,25" href="http://marketspeed.jp/special03/index.html?l-id=pbnr_msjp" alt="東証フル板搭載マーケットスピードver9.0！1月リリース">
+</map>
+</p>
+
+<script language="JavaScript" src="/web/shared/js/site_search.js"></script>

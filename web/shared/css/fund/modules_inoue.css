@@ -1,0 +1,1205 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. box-fund-search
+*	02. nav-tab-fund
+*	03. box-fund-favorite
+*	04. box-fund-ranking
+*	05. box-fund-topics
+*	06. box-fund-keyword
+*	07. box-fund-stockprice
+*	08. box-fund-detail
+*	09. box-fund-step
+*	10. box-fund-mmf
+*	11. lyt-fund-ranking
+*	12. box-history-01
+*	13. nav-fund-stockprice
+*	14. tooltip modules
+*	15. form module
+*	16. form-result-01
+*	17. form-search-more-01
+*	18. box-fund-search-stock-01
+*	19. box-attention-01
+*	20. tbl-fund-mmf-01
+*	21. fund common
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	00. tooltip error IE7 
+----------------------------------------------------------------- */
+
+/* IE7 */
+*:first-child+html div#str-main>div.str-main-inner{
+position:relative;
+}
+
+
+/* ----------------------------------------------------------------
+	01. box-fund-search
+----------------------------------------------------------------- */
+
+div#str-contents-inner div.box-fund-search div.form{
+margin:0;
+padding-bottom:10px;
+float:left;
+width:380px;
+font-size:81.25%;
+}
+
+div#str-contents-inner div.box-fund-search div.form p{
+margin:0;
+}
+
+div#str-contents-inner div.box-fund-search div.form input#form-text-01{
+margin-right:3px;
+padding:2px;
+border:1px #7f9db9 solid;
+width:280px;
+}
+
+div#str-contents-inner div.box-fund-search ul.list-link-03{
+margin:0;
+float:right;
+width:370px;
+line-height:1.2;
+font-size:81.25%;
+text-align:left;
+}
+
+div#str-contents-inner div.box-fund-search ul.list-link-03 li{
+padding:0 10px 0 12px;
+font:normal;
+display:inline;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 2px;
+}
+
+div#str-contents-inner div.box-fund-search ul.list-link-03 li a{
+}
+
+div#str-contents-inner div.box-fund-search ul.list-link-03 li a:link,
+div#str-contents-inner div.box-fund-search ul.list-link-03 li a:visited{
+text-decoration:none;
+}
+div#str-contents-inner div.box-fund-search ul.list-link-03 li a:active,
+div#str-contents-inner div.box-fund-search ul.list-link-03 li a:hover,
+div#str-contents-inner div.box-fund-search ul.list-link-03 li a:focus{
+text-decoration:underline;
+}
+
+
+/* ----------------------------------------------------------------
+	02. nav-tab-fund
+----------------------------------------------------------------- */
+
+div#str-contents-inner div.nav-tab-fund{
+margin-bottom:10px;
+font-size:81.25%;
+}
+
+div#str-contents-inner div.nav-tab-fund ul{
+float:right;
+}
+
+
+/* ----------------------------------------------------------------
+	03. box-fund-favorite
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-favorite div.column-col5{
+padding:0 0 10px 3px;
+width:auto;
+}
+/* IE6 */
+*html div#str-main div.box-fund-favorite div.lyt-column{width:540px;}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment{
+margin:0;
+padding:0 5px;
+width:97px;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment p,
+div#str-main div.box-fund-favorite div.column-col5 div.segment ul{
+margin:0 0 5px;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment p.image{
+margin-bottom:5px;
+text-align:center;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment p.nav-more{
+margin-bottom:5px;
+padding-left:15px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 4px;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment ul.list-add-01{
+margin:5px 0 10px;
+text-align:center;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment ul.list-add-01 li{
+padding:0 5px;
+display:inline;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment p.nav-more a:link,
+div#str-main div.box-fund-favorite div.column-col5 div.segment p.nav-more a:visited{
+text-decoration:none;
+}
+
+div#str-main div.box-fund-favorite div.column-col5 div.segment p.nav-more a:active,
+div#str-main div.box-fund-favorite div.column-col5 div.segment p.nav-more a:hover,
+div#str-main  div.box-fund-favorite div.column-col5 div.segment p.nav-more a:focus{
+text-decoration:underline;
+}
+
+div#str-main  div.box-fund-favorite div.box-06{
+margin-bottom:0;
+}
+
+div#str-main  div.box-fund-favorite div.box-06 p{
+margin:0;
+text-align:right;
+}
+
+
+/* ----------------------------------------------------------------
+	04. box-fund-ranking
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-ranking{
+margin-bottom:10px;
+padding-top:10px;
+border:2px #c0c3d2 solid;
+}
+
+div#str-main div.box-fund-ranking div.lyt-column{
+width:auto;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment{
+width:100px;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.last-child{
+margin-right:0;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.image{
+margin:0 0 5px;
+text-align:center;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.image img{
+margin-bottom:3px;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.image a{
+text-decoration:none;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.nav-more{
+margin-bottom:5px;
+padding-left:15px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 4px;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment ul.list-add-01{
+margin:0 0 15px;
+text-align:center;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment ul.list-add-01 li{
+padding:0 5px;
+display:inline;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.nav-more a:link,
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.nav-more a:visited{
+text-decoration:none;
+}
+
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.nav-more a:active,
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.nav-more a:hover,
+div#str-main div.box-fund-ranking div.column-col5 div.segment p.nav-more a:focus{
+text-decoration:underline;
+}
+
+
+div#str-main div.box-fund-ranking div.box-06{
+margin-bottom:0;
+padding-right:200px;
+position:relative;
+}
+
+div#str-main div.box-fund-ranking div.box-06 ul.list-link-03{
+position:absolute;
+bottom:0.45em;
+right:0;
+}
+
+div#str-main div.box-fund-ranking div.box-06 ul.list-link-03 li.more{
+display:inline-block;
+float:left;
+}
+
+div#str-main div.box-fund-ranking div.box-06 ul.list-link-03 li.comparison{
+background:none;
+padding-left:10px;
+}
+
+
+/* ----------------------------------------------------------------
+	05. box-fund-topics
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-topics div.lyt-fund-topics{
+margin-right:-10px;
+_margin-right:-20px;
+}
+
+div#str-main div.box-fund-topics div.lyt-fund-topics div.segment{
+margin-right:10px;
+float:left;
+width:266px;
+}
+
+div#str-main div.box-fund-topics div.lyt-fund-topics p.doc-catchcopy-01 a strong{
+color:#3535b4;
+}
+
+/* ----------------------------------------------------------------
+	06. box-fund-keyword
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-keyword ul.list-col3{
+margin-right:-10px;
+width:auto;
+}
+
+div#str-main div.box-fund-keyword ul.list-col3 li{
+width:151px;
+}
+
+
+/* ----------------------------------------------------------------
+	07. box-fund-stockprice
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-stockprice{
+padding-top:10px;
+}
+
+div#str-main div.box-fund-stockprice ul.list-fund-01 li{
+padding-right:10px;
+display:inline;
+}
+
+
+/* ----------------------------------------------------------------
+	08. box-fund-detail
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-detail{
+margin-bottom:10px;
+padding:0;
+background:url("/web/shared/images/bg-modules/bg-box-fund-detail.gif") no-repeat 0 100%;
+position:relative;
+}
+
+div#str-main div.box-fund-detail div.lyt-image{
+padding:0 0 20px 50px;
+}
+
+div#str-main div.box-fund-detail .box-fund-detail-hdg-01{
+padding-left:10px;
+border-left:4px #3f4da2 solid;
+font-size:112.5%;
+}
+
+div#str-main div.box-fund-detail .box-fund-detail-hdg-01 span{
+display:block;
+font-size:70%;
+}
+
+
+/* ----------------------------------------------------------------
+	09. box-fund-step
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-fund-step-01
+ -------------------------------- */
+div#str-main div.box-fund-step-01{
+margin-bottom:2em;
+}
+
+div#str-main div.box-fund-step-01 div.nav-step-01-container{
+margin-bottom:20px;
+padding:10px;
+background:#f4f5f9;
+}
+
+/* ---------------------------------
+	box-fund-step-01 > ol.nav-step-01
+ -------------------------------- */
+ 
+div#str-main div.box-fund-step-01 ol.nav-step-01{
+margin:0;
+list-style:none;
+}
+
+div#str-main div.box-fund-step-01 ol.nav-step-01 li{
+margin:0 -7px 3px 0;
+float:left;
+position:relative;
+}
+
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-01,
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-06{
+z-index:5;
+}
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-02,
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-07{
+z-index:4;
+}
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-03,
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-08{
+z-index:3;
+}
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-04,
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-09{
+z-index:2;
+}
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-05,
+div#str-main div.box-fund-step-01 ol.nav-step-01 li.step-10{
+z-index:1;
+}
+
+
+/* ---------------------------------
+	box-fund-step-01 > ol.list-step-contents
+ -------------------------------- */
+
+div#str-main div.box-fund-step-01 ol.list-step-contents{
+margin:0;
+list-style:none;
+}
+
+div#str-main div.box-fund-step-01 ol.list-step-contents li img{
+margin-bottom:15px;
+}
+
+div#str-main div.box-fund-step-01 ol.list-step-contents li .hdg-l3-01{
+font-size:100%;
+}
+
+div#str-main div.box-fund-step-01 ol.list-step-contents li .hdg-l3-01 span{
+background-position:3px 4px;
+}
+
+/* ---------------------------------
+	box-fund-step-01 > js control
+ -------------------------------- */
+div#str-main div.box-fund-step-01 ol.tabs li.tabPanel{display:none;}
+
+div#str-main div.box-fund-step-01 ol.tabs li.active{display:block;}
+
+/* ----------------------------------------------------------------
+	10. box-fund-mmf
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	box-fund-mmf-01
+ -------------------------------- */
+div#str-main div.box-fund-mmf-01{
+margin:0 auto 20px;
+padding:0 5px;
+border:1px #F5d825 solid;
+width:60%;
+background:#FFF5BC;
+}
+
+div#str-main div.box-fund-mmf-01 table.tbl-document-01{
+margin-bottom:0;
+background:#FFF5BC;
+}
+
+div#str-main div.box-fund-mmf-01 table.tbl-document-01 th{
+vertical-align:middle;
+}
+
+div#str-main div.box-fund-mmf-01 table.tbl-document-01 img.thumb-01{
+margin-right:10px;
+vertical-align:middle;
+}
+
+div#str-main div.box-fund-mmf-01 .doc-per-01{
+font-size:280%;
+}
+
+/* ----------------------------------------------------------------
+	11. lyt-fund-ranking
+----------------------------------------------------------------- */
+
+div#str-main div.lyt-fund-ranking div.segment{
+width:269px;
+}
+
+div#str-main div.lyt-fund-ranking div.hdg-l2-02-container,
+div#str-main div.lyt-fund-ranking div.hdg-l2-02-container .hdg-l2-02{
+margin-bottom:0;
+}
+
+div#str-main div.lyt-fund-ranking div.hdg-l2-02-container .hdg-l2-02 span{
+_margin-right:-1px;
+padding-right:100px;
+}
+
+div#str-main div.lyt-fund-ranking div.hdg-l2-02-container p.nav-more{
+margin:0;
+position:absolute;
+top:8px;
+right:5px;
+}
+
+div#str-main div.lyt-fund-ranking div.box-06{
+margin-bottom:0;
+padding:3px 0 2px;
+}
+
+div#str-main div.lyt-fund-ranking div.box-06 p{
+margin-right:5px;
+line-height:1.7;
+}
+
+div#str-main div.lyt-fund-ranking div.box-06 p span{
+float:right;
+}
+
+div#str-main div.lyt-fund-ranking table{
+margin:5px;
+width:96.5%;
+}
+
+div#str-main div.lyt-fund-ranking table th{
+width:28px;
+}
+
+div#str-main div.lyt-fund-ranking table th,
+div#str-main div.lyt-fund-ranking table td{
+border-width:0 0 1px;
+}
+
+div#str-main div.lyt-fund-ranking table tr.last-child th,
+div#str-main div.lyt-fund-ranking table tr.last-child td{
+border:none;
+}
+
+div#str-main div.lyt-fund-ranking table p.nav-more{
+margin:0;
+padding-left:12px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 4px;
+}
+
+div#str-main div.lyt-fund-ranking table ul.list-add-01{
+margin:0;
+width:45px;
+text-align:right;
+}
+
+div#str-main div.lyt-fund-ranking table ul.list-add-01 li{
+padding:2px;
+display:inline;
+}
+
+div#str-main div.lyt-fund-ranking table a:link,
+div#str-main div.lyt-fund-ranking table a:visited{
+text-decoration:none;
+}
+div#str-main div.lyt-fund-ranking table a:active,
+div#str-main div.lyt-fund-ranking table a:hover,
+div#str-main div.lyt-fund-ranking table a:focus{
+text-decoration:underline;
+}
+
+/* ---------------------------------
+	.box-ranking-01
+ -------------------------------- */
+
+div#str-main div.box-ranking-01{
+margin-bottom:1.25em;
+padding:5px 10px 1px;
+border-width:0 1px 1px 1px;
+border-color:#c3c3c3;
+border-style:solid;
+width:auto;
+}
+
+div#str-main div.box-ranking-01 div.segment{
+width:258px;
+}
+
+div#str-main div.box-ranking-01 div.segment div.box-02{
+margin-bottom:10px;
+}
+
+
+/* ----------------------------------------------------------------
+	12. box-history-01
+----------------------------------------------------------------- */
+
+div#str-main div.box-history-01{
+margin-bottom:1.25em;
+border:1px solid #cacdd9;
+}
+
+div#str-main div.box-history-01 h2,
+div#str-main div.box-history-01 h3,
+div#str-main div.box-history-01 h4,
+div#str-main div.box-history-01 h5,
+div#str-main div.box-history-01 h6{
+margin-bottom:14px;
+border-bottom:1px solid #cacdd9;
+font-size:87.5%;
+}
+
+div#str-main div.box-history-01 h2 span,
+div#str-main div.box-history-01 h3 span,
+div#str-main div.box-history-01 h4 span,
+div#str-main div.box-history-01 h5 span,
+div#str-main div.box-history-01 h6 span{
+margin:1px;
+padding:2px 100px 2px 7px;
+background:#e4e5f2 url("/web/shared/images/heading/hdg-l3-relation-bg.gif") repeat-x 0 0;
+display:block;
+}
+
+div#str-main div.box-history-01 p.hdg-nav-more{
+margin-top:-37px;
+text-align:right;
+}
+
+div#str-main div.box-history-01 ul.list-history-01{
+margin-right:0;
+}
+
+div#str-main div.box-history-01 ul.list-history-01 li{
+padding:0 15px 10px 12px;
+float:left;
+width:122px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 4px;
+}
+
+
+/* ----------------------------------------------------------------
+	13. nav-fund-stockprice
+----------------------------------------------------------------- */
+
+div#str-main div.nav-fund-stockprice ul li{
+border-width:1px 0 1px 1px;
+border-style:solid;
+border-color:#cccccc;
+float:left;
+}
+
+div#str-main div.nav-fund-stockprice ul li.last-child{
+border-right:1px solid #cccccc;
+}
+
+div#str-main div.nav-fund-stockprice ul li a{
+padding:2px 15px;
+display:block;
+background:#e5e5e5 url("/web/shared/images/bg-modules/bg-nav-01-o.gif") repeat-x 0 0;
+}
+
+
+div#str-main div.nav-fund-stockprice ul li a:hover,
+div#str-main div.nav-fund-stockprice ul li a:focus{
+color:#ffffff;
+background-color:#3f4da2;
+background-image:url("/web/shared/images/bg-modules/bg-nav-01-h.gif");
+}
+
+div#str-main div.nav-fund-stockprice ul li.selected a{
+color:#ffffff;
+background-color:#3f4da2;
+background-image:url("/web/shared/images/bg-modules/bg-nav-01-h.gif");
+font-weight:bold;
+text-decoration:none;
+}
+
+
+/* ----------------------------------------------------------------
+	14. tooltip module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	tooltip icon
+ -------------------------------- */
+div#str-contents-inner div#str-main span.tooltip{
+padding:0;
+display:inline;
+background:none;
+}
+
+div#str-main span.tooltip img{
+padding:0 0 3px 3px;
+vertical-align:middle;
+}
+
+/* ---------------------------------
+	section-tooltip
+ -------------------------------- */
+div#str-main div.section-tooltip div.tooltip{
+border:2px #737dbb solid;
+padding:1px;
+width:280px;
+background:#fff;
+outline:none;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0px 2px 4px 0px #999;
+-moz-box-shadow: 0px 2px 4px 0px #999;
+box-shadow: 0px 2px 4px 0px #999;
+}
+
+div#str-main div.section-tooltip div.tooltip div.box-inner{
+padding:10px;
+position:relative;
+background:#f3f7ff;
+}
+
+div#str-main div.section-tooltip div.tooltip div.box-inner p.align-C{
+margin-bottom:5px;
+}
+
+div#str-main div.section-tooltip div.tooltip .hdg-l3-01 span{
+padding-right:30px;
+}
+
+div#str-main div.section-tooltip div.tooltip div.box-inner p.close{
+margin:0;
+position:absolute;
+top:10px;
+right:15px;
+}
+
+
+/* ----------------------------------------------------------------
+	15. form module
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	form-text
+ -------------------------------- */
+form div#str-main input.form-text-01,
+div#str-main form input.form-text-01{
+padding:1px;
+border:1px #7f9db9 solid;
+width:270px;
+}
+
+/* ---------------------------------
+	form-select
+ -------------------------------- */
+div#str-main form select.form-select-01{
+padding:1px;
+border:1px #7f9db9 solid;
+}
+
+
+/* ----------------------------------------------------------------
+	16. form-result-01
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	form-result-01
+ -------------------------------- */
+div#str-main div.form-result-01{
+margin-bottom:10px;
+}
+
+/* ---------------------------------
+	form-result-01 > list-form-01
+ -------------------------------- */
+div#str-contents div#str-main div.form-result-01 div.form-01{
+margin:0;
+padding-right:10px;
+float:left;
+width:320px;
+}
+
+
+div#str-main div.form-01 ul.list-form-01 li{
+padding-right:5px;
+float:left;
+width:100px;
+}
+
+/* ---------------------------------
+	form-result-01 > list-form-02
+ -------------------------------- */
+div#str-contents div#str-main div.form-result-01 div.form-02{
+margin:0;
+padding:0 10px;
+border-left:1px #cacdd9 solid;
+float:left;
+width:215px;
+}
+
+/* IE6 */
+*html div#str-contents div#str-main div.form-result-01 div.form-02 ul,
+*html div#str-contents div#str-main div.form-result-01 div.form-02 dl{margin-bottom:0;}
+
+/* IE7 */
+*:first-child+html div#str-contents div#str-main div.form-result-01 div.form-02 ul,
+*:first-child+html div#str-contents div#str-main div.form-result-01 div.form-02 dl{margin-bottom:0;}
+
+div#str-main div.form-02 ul.list-form-01 li{
+padding-right:5px;
+float:left;
+width:100px;
+}
+
+div#str-main div.form-02 ul.list-form-02 li{
+padding-right:7px;
+display:inline;
+}
+
+
+/* ---------------------------------
+	form-result-01 > result-01
+ -------------------------------- */
+div#str-contents div#str-main div.form-result-01 div.result-01{
+margin:0;
+padding:0 0 1px;
+float:right;
+width:155px;
+min-height:160px;
+background:#f9ead2 url("/web/shared/images/bg-modules/bg-form-result-01-02.gif") no-repeat 0 100%;
+}
+
+div#str-main div.form-result-01 div.result-01 p.result{
+margin:0;
+padding:30px 10px 10px 30px;
+background:#f9ead2 url("/web/shared/images/bg-modules/bg-form-result-01-01.gif") no-repeat 0 0;
+}
+
+div#str-main div.form-result-01 div.result-01 p.result span{
+display:block;
+zoom:1;
+}
+
+div#str-main div.form-result-01 div.result-01 p.result strong{
+font-size:350%;
+}
+
+div#str-main div.form-result-01 div.result-01 ul.list-link-03 li{
+padding-left:12px;
+background-position:0 2px;
+}
+
+/* IE6 */
+*html div#str-contents div#str-main div.form-result-01 div.result-01{height:180px;}
+/* IE7 */
+*:first-child+html div#str-contents div#str-main div.form-result-01 div.result-01{min-height:180px;}
+
+
+/* ---------------------------------
+	form-result-01 > search-01
+ -------------------------------- */
+div#str-contents div#str-main div.form-result-01 div.search-01{
+margin:0;
+padding:0 10px;
+float:right;
+width:135px;
+min-height:160px;
+background:#f2f2F9 url("/web/shared/images/bg-modules/bg-form-search-01-01.gif") no-repeat 0 48%;
+}
+
+/* IE6 */
+*html div#str-contents div#str-main div.form-result-01 div.search-01{height:180px;}
+/* IE7 */
+*:first-child+html div#str-contents div#str-main div.form-result-01 div.search-01{min-height:180px;}
+
+div#str-main div.form-result-01 div.search-01 p.search{
+padding:75px 0 10px 35px;
+}
+
+
+/* ----------------------------------------------------------------
+	17. form-search-more-01
+----------------------------------------------------------------- */
+
+div#str-contents div#str-main div.form-search-more-01{
+margin-top:10px;
+}
+
+div#str-contents div#str-main div.form-search-more-01 div.form-01{
+margin:0;
+padding-right:10px;
+float:left;
+width:340px;
+}
+
+div#str-contents div#str-main div.form-search-more-01 div.form-02{
+margin:0;
+padding-left:10px;
+border-left:1px #cacdd9 solid;
+float:left;
+width:360px;
+min-height:773px;
+}
+
+/* IE6 */
+*html div#str-contents div#str-main div.form-search-more-01 div.form-02{
+height:773px;
+}
+
+div#str-main div.form-search-more-01  ul.list-form-01 li{
+width:165px;
+}
+
+div#str-main div.form-search-more-01  ul.list-form-02 li{
+width:170px;
+}
+
+div#str-main div.form-search-more-01 dd{
+margin-bottom:15px;
+}
+
+
+/* ----------------------------------------------------------------
+	18. box-fund-search-stock-01
+----------------------------------------------------------------- */
+
+div#str-main div.box-fund-search-stock-01{
+margin-bottom:20px;
+padding-bottom:15px;
+background:url("/web/shared/images/bg-modules/box-fund-search-stock-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div.box-fund-search-stock-01 div.box-inner-01{
+background:url("/web/shared/images/bg-modules/box-fund-search-stock-01-middle.gif") repeat-y 0 0;
+}
+
+div#str-main div.box-fund-search-stock-01 div.box-inner-02{
+padding:15px 200px 0 15px;
+position:relative;
+background:url("/web/shared/images/bg-modules/box-fund-search-stock-01-top.gif") no-repeat 0 0;
+}
+
+/* ---------------------------------
+	body.lyt-column-smc > box-fund-search-stock-01
+ -------------------------------- */
+body.lyt-column-smc div#str-main div.box-fund-search-stock-01{
+background-image:url("/web/shared/images/bg-modules/bg-search-01-bottom.gif");
+}
+
+body.lyt-column-smc div#str-main div.box-fund-search-stock-01 div.box-inner-01{
+background-image:url("/web/shared/images/bg-modules/bg-search-01-middle.gif");
+}
+
+body.lyt-column-smc div#str-main div.box-fund-search-stock-01 div.box-inner-02{
+background-image:url("/web/shared/images/bg-modules/bg-search-01-top.gif");
+padding-right:50px;
+}
+
+/* ---------------------------------
+	box-fund-search-stock-0 > hdg-l2-06-containe
+ -------------------------------- */
+ 
+div#str-main div.box-fund-search-stock-01 div.hdg-l2-06-container{
+color:#fff;
+}
+
+div#str-main div.box-fund-search-stock-01 div.hdg-l2-06-container .hdg-l2-06{
+padding:0;
+border:none;
+}
+
+div#str-main div.box-fund-search-stock-01 div.hdg-l2-06-container .hdg-l2-06 span{
+padding-right:200px;
+background-image:none;
+}
+
+/* ---------------------------------
+	box-fund-search-stock-01 > ul
+ -------------------------------- */
+div#str-main div.box-fund-search-stock-01 ul{
+margin:0;
+}
+
+div#str-main div.box-fund-search-stock-01 ul li{
+padding-right:15px;
+display:inline;
+}
+
+div#str-main div.box-fund-search-stock-01 select.form-select-01{
+padding:1px;
+border:1px #7f9db9 solid;
+width:100px;
+}
+
+div#str-main div.box-fund-search-stock-01 label{
+font-weight:bold;
+}
+
+/* ---------------------------------
+	box-fund-search-stock-0 > ul.form-list-01
+ -------------------------------- */
+div#str-main div.box-fund-search-stock-01 ul.form-list-01 li{
+margin-bottom:5px;
+display:block;
+}
+
+div#str-main div.box-fund-search-stock-01 ul.form-list-01 li span{
+float:left;
+width:70px;
+clear:both;
+font-weight:bold;
+}
+
+div#str-main div.box-fund-search-stock-01 ul.form-list-01 li li{
+margin:0;
+padding-right:15px;
+display:inline;
+font-weight:normal;
+}
+
+div#str-main div.box-fund-search-stock-01 ul.form-list-01 li li label{
+font-weight:normal;
+}
+ 
+/* ---------------------------------
+	box-fund-search-stock-0 > p
+ -------------------------------- */
+div#str-main div.box-fund-search-stock-01 p.btn-view{
+margin:0;
+position:absolute;
+top:13px;
+right:130px;
+}
+
+/* ---------------------------------
+	body.lyt-column-smc > box-fund-search-stock-0 > p
+ -------------------------------- */
+body.lyt-column-smc div#str-main div.box-fund-search-stock-01 p.btn-view{
+right:100px;
+}
+
+
+/* ----------------------------------------------------------------
+	19. box-attention-01
+----------------------------------------------------------------- */
+
+div#str-main div.box-attention-01 div.box-scroll{
+margin-top:-14px;
+height:200px;
+overflow:auto;
+}
+
+/* IE6 */
+*html div#str-main div.box-attention-01 div.box-scroll ul.list-notice-01 li,
+*html div#str-main div.box-attention-01 div.box-scroll ul.list-notice-01 li span{
+position:static;
+}
+
+/* IE7 */
+*:first-child+html div#str-main div.box-attention-01 div.box-scroll ul.list-notice-01 li,
+*:first-child+html div#str-main div.box-attention-01 div.box-scroll ul.list-notice-01 li span{
+position:static;
+}
+
+
+/* ----------------------------------------------------------------
+	20. tbl-fund-mmf
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	  Layout Column Module
+ -------------------------------- */
+div#str-main table.tbl-fund-mmf-01{
+}
+
+div#str-main table.tbl-fund-mmf-01 tbody th{
+color:#fff;
+background:#3f4da2;
+text-align:center;
+}
+
+div#str-main table.tbl-fund-mmf-01 tbody td{
+vertical-align:middle;
+text-align:center;
+}
+
+div#str-main table.tbl-fund-mmf-01 tbody td .doc-per-01{
+font-size:250%;
+}
+
+div#str-main table.tbl-fund-mmf-01 tbody td img.thumb-01{
+margin:0 10px 10px 0;
+vertical-align:middle;
+}
+
+div#str-main table.tbl-fund-mmf-01 tbody td p.btn-order-01{
+margin:10px 0 0;
+}
+
+
+/* ----------------------------------------------------------------
+	21. fund common
+----------------------------------------------------------------- */
+
+/* ---------------------------------
+	  Heading Module
+ -------------------------------- */
+div#str-main .hdg-l1-03-container .hdg-l1-03 span.name{
+padding:5px 0 0;
+min-height:0;
+background:none;
+font-size:72.2%;
+}
+
+div#str-main .hdg-l1-03-container p.nav-page-prev a{
+padding-left:15px;
+background:url("/web/shared/images/arrow/arrow-back-01.gif") no-repeat 0 3px;
+}
+
+
+/* ---------------------------------
+	  Layout Column Module
+ -------------------------------- */
+div#str-contents-inner div.lyt-column div.segment{
+float:left;
+}
+
+/* ---------------------------------
+	 Paragraph Module
+ -------------------------------- */
+div#str-main p img.icon{
+vertical-align:middle;
+}
+
+div#str-main .doc-unlink-01{
+color:#999;
+}
+
+div#str-main .doc-yen-01,
+div#str-main .doc-per-01{
+font-size:200%;
+font-weight:bold;
+}
+
+/* ---------------------------------
+	 List Module
+ -------------------------------- */
+div#str-main dl.list-icon-sup-01{
+margin:0 0 5px 10em;
+position:relative;
+}
+
+div#str-main dl.list-icon-sup-01 dt{
+position:absolute;
+top:-9999px;
+left:-9999px;
+}
+
+div#str-main dl.list-icon-sup-01 dd ul{
+margin:0;
+text-align:right;
+}
+
+div#str-main dl.list-icon-sup-01 dd ul li{
+padding-left:15px;
+display:inline;
+font-size:84.6%;
+}
+div#str-main dl.list-icon-sup-01 dd img{
+padding-bottom:2px;
+vertical-align:middle;
+}
+
+/* ---------------------------------
+	 body#fund-top > list-icon-sup-01
+ -------------------------------- */
+body#fund-top dl.list-icon-sup-01{
+margin:0 10px 5px 10em;
+position:relative;
+}
+
+body#fund-top dl.list-icon-sup-01 dt{
+position:absolute;
+top:-9999px;
+left:-9999px;
+}
+
+body#fund-top dl.list-icon-sup-01 dd ul{
+margin:0;
+text-align:right;
+}
+
+body#fund-top dl.list-icon-sup-01 dd ul li{
+padding-left:15px;
+color:#fff;
+display:inline;
+}
+body#fund-top dl.list-icon-sup-01 dd img{
+padding-bottom:2px;
+vertical-align:middle;
+}
+
+
+/* ---------------------------------
+	 body#fund-top > banner-full
+ -------------------------------- */
+div#str-main div.banner-full {
+margin:0 0 1em 0;
+text-align:center;
+}
+div#str-main div.banner-full ul{
+margin:0;
+}
+div#str-main div.banner-full li{
+margin: 0;
+padding: 0 7px;
+float:left;
+width:258px;
+}
+
+div#str-main div.banner-full ul:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+/* ---------------------------------
+	 Table Module
+ -------------------------------- */
+div#str-main table.tbl-stripe-01 tbody th,
+div#str-main table.tbl-stripe-01 tbody td{
+background:#fff;
+}
+
+div#str-main table.tbl-stripe-01 tbody tr.even th,
+div#str-main table.tbl-stripe-01 tbody tr.even td{
+background:#f3f3f3;
+}
+
+div#str-main tbody.v-align-M th,
+div#str-main tbody.v-align-M td{
+vertical-align:middle;
+}
+
+div#str-main table tbody th.cell-01,
+div#str-main table tbody td.cell-01{
+background:#ffd8de;
+}

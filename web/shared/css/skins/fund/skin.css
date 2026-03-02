@@ -1,0 +1,97 @@
+.jcarousel-skin-fund .jcarousel-container {
+	background: #D2D2F1;
+	height:105px;
+}
+.jcarousel-skin-fund .jcarousel-direction-rtl {
+	direction: rtl;
+}
+.jcarousel-skin-fund .jcarousel-container-horizontal {
+	width: 326px;
+	padding: 0 17px;
+	display: block;
+	overflow: hidden;
+}
+.jcarousel-skin-fund .jcarousel-container-vertical {
+	width: 75px;
+	padding: 40px 20px;
+}
+.jcarousel-skin-fund .jcarousel-clip {
+	overflow: hidden;
+	display: block;
+}
+.jcarousel-skin-fund .jcarousel-clip-horizontal {
+	width: 355px;
+}
+.jcarousel-skin-fund .jcarousel-clip-vertical {
+	width: 77px;
+}
+.jcarousel-skin-fund .jcarousel-item {
+	width: 150px;
+	height: 105px;
+	padding-top: 5px;
+	float: left;
+	list-style-type: none;
+	list-style-position: initial;
+	list-style-image: initial;
+}
+.jcarousel-skin-fund .jcarousel-item:hover, .jcarousel-skin-fund .jcarousel-item:focus {
+	border-color: #808080;
+}
+.jcarousel-skin-fund .jcarousel-item-horizontal {
+	margin-left: 0;
+	margin-right: 2px;
+}
+.jcarousel-skin-fund .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 7px;
+	margin-right: 0;
+}
+.jcarousel-skin-fund .jcarousel-item-vertical {
+	margin-bottom: 7px;
+}
+.jcarousel-skin-fund .jcarousel-item-placeholder {
+}
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-fund .jcarousel-next-horizontal {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 15px;
+	height: 105px;
+	cursor: pointer;
+	/*
+	background-position: 0 -593px;
+	background: transparent url(/web/images/top201106/sprite_carousel_fund_tab.png) no-repeat top left;*/
+	background: url("/web/images/top201106/sprite_utility01.png") no-repeat;
+	background-position: -399px 0;
+}
+.jcarousel-skin-fund .jcarousel-direction-rtl .jcarousel-next-horizontal {
+}
+.jcarousel-skin-fund .jcarousel-next-horizontal:hover, .jcarousel-skin-fund .jcarousel-next-horizontal:focus {
+}
+.jcarousel-skin-fund .jcarousel-next-horizontal:active {
+}
+.jcarousel-skin-fund .jcarousel-next-disabled-horizontal, .jcarousel-skin-fund .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-fund .jcarousel-next-disabled-horizontal:focus, .jcarousel-skin-fund .jcarousel-next-disabled-horizontal:active {
+}
+.jcarousel-skin-fund .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 15px;
+	height: 105px;
+	cursor: pointer;
+	/*
+	background: transparent url(/web/images/top201106/sprite_carousel_fund_tab.png) no-repeat top left;
+	background-position: 0 -458px;*/
+	background: url("/web/images/top201106/sprite_utility01.png") no-repeat;
+	background-position: -379px 0;
+}
+.jcarousel-skin-fund .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+}
+.jcarousel-skin-fund .jcarousel-prev-horizontal:hover, .jcarousel-skin-fund .jcarousel-prev-horizontal:focus {
+}
+.jcarousel-skin-fund .jcarousel-prev-horizontal:active {
+}
+.jcarousel-skin-fund .jcarousel-prev-disabled-horizontal, .jcarousel-skin-fund .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-fund .jcarousel-prev-disabled-horizontal:focus, .jcarousel-skin-fund .jcarousel-prev-disabled-horizontal:active {
+}

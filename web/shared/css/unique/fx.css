@@ -1,0 +1,756 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. str-main
+*	02. Page Navigation Module
+*	03. Heading Module
+*	04. Box Module
+*	05. Layout Column Module
+*	06. Unordered List Module
+*	07. Definition List Module
+*	08. Q and A Component
+*	09. Table
+*	10. list-index
+*	11. clear
+*	12. rfx-style
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. str-main
+----------------------------------------------------------------- */
+div#str-main{
+position:relative;
+}
+
+/* ----------------------------------------------------------------
+	02. Page Navigation Module
+----------------------------------------------------------------- */
+div#str-main ul.nav-tab-01{
+margin:1em 0 1.25em 0;
+padding:0 0 16px 8px;
+background:url("/web/fx/rfx/basic/images/index-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-main ul.nav-tab-01 li{
+padding-right:5px;
+float:left;
+}
+
+body.basic2 div#str-main ul.nav-tab-01{
+background-image:url("/web/fx/rfx/basic/images/trade-bg-01.gif");
+}
+
+div#str-main ul.nav-tab-02,
+div#str-main ul.nav-tab-03{
+margin:0;
+}
+
+div#str-main ul.nav-tab-02 li,
+div#str-main ul.nav-tab-03 li{
+float:left;
+}
+
+div#str-main ul.nav-tab-03{
+position:absolute;
+top:228px;
+left:80px;
+}
+
+div#str-main ul.nav-tab-03 li{
+padding-right:10px;
+}
+
+div#str-main p.nav-more{
+padding:5px 10px;
+background-color:#e9e9e9;
+text-align:right;
+}
+
+
+/* ----------------------------------------------------------------
+	03. Heading Module
+----------------------------------------------------------------- */
+div#str-main .hdg-l1,
+div#str-main .hdg-l2,
+div#str-main .hdg-l3,
+div#str-main .hdg-l4{
+margin-bottom:15px;
+}
+
+div#str-main .hdg-l2{
+padding-top:5px;
+}
+
+div#str-main div.hdg-l4-container{
+position:relative;
+}
+
+div#str-main div.hdg-l4-container p.nav-btn{
+margin:0;
+position:absolute;
+top:130px;
+left:20px;
+}
+
+/* ie6 */
+*html div#str-main div.hdg-l4-container p.nav-btn{
+bottom:25px;
+left:20px;
+}
+/* ie7 */
+*+html div#str-main div.hdg-l4-container p.nav-btn{
+bottom:25px;
+left:20px;
+}
+
+div#str-main .hdg-l4-01,
+div#str-main .hdg-l4-03{
+padding-bottom:10px;
+background-image:url("/web/fx/rfx/beginner/images/beginner-bg-01.gif");
+}
+
+div#str-main .hdg-l4-01 span,
+div#str-main .hdg-l4-03 span{
+padding-left:8px;
+background-image:none;
+font-size:115.4%;
+}
+
+div#str-main .hdg-l4-03 span img{
+vertical-align:middle;
+}
+
+div#str-main .hdg-l5-01{
+border-left:6px solid #1a83df;
+background-image:none;
+}
+
+/* ----------------------------------------------------------------
+	04. Box Module
+----------------------------------------------------------------- */
+div#str-main div.box-copy-beginner{
+position:relative;
+}
+
+div#str-main div.box-copy-beginner p{
+margin:0;
+}
+
+div#str-main div.box-copy-beginner ul{
+position:absolute;
+top:7px;
+right:5px;
+}
+
+div#str-main div.box-copy-beginner  ul li{
+float:left;
+padding-left:15px
+}
+
+div#str-main div.box-copy-beginner  ul li.fx img{
+padding-top:3px;
+}
+
+div#str-main .box-fx-01{
+margin-bottom:1.25em;
+padding:14px;
+border-width:0 1px 1px;
+border-color:#00a510;
+border-style:solid;
+}
+
+body.basic2 div#str-main .box-fx-01{
+border-color:#0f7cba;
+}
+
+div#str-main .box-fx-01 p,
+div#str-main .box-fx-01 ul,
+div#str-main .box-fx-01 ol,
+div#str-main .box-fx-01 dl,
+div#str-main .box-fx-01 table{
+margin-right:0;
+margin-left:0;
+}
+
+div#str-main .box-fx-01 div.lyt-image{
+padding-right:0;
+padding-left:0;
+}
+
+div#str-main .box-fx-02{
+margin-bottom:1.25em;
+padding:20px 15px;
+background-color:#f1f4e3;
+}
+
+div#str-main div.box-fx-03,
+div#str-main div.box-fx-04,
+div#str-main div.box-fx-05{
+margin:0 0 1.25em;
+padding:0 10px 10px;
+background:#dff1ff url("/web/fx/rfx/beginner/images/keyword-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-main div.box-fx-04{
+background-color:#ffead8;
+background-image:url("/web/fx/rfx/beginner/images/keyword-bg-02.gif");
+}
+
+body.lyt-column-ms-01 div#str-main div.box-fx-04 div.lyt-column{
+margin-right:-20px;
+width:auto;
+}
+
+body.lyt-column-ms-01 div#str-main div.box-fx-04 div.segment,
+body.lyt-column-ms-01 div#str-main div.box-fx-05 div.segment{
+margin-right:20px;
+width:357px;
+}
+
+div#str-main div.box-fx-05{
+background-color:#f3dcf3;
+background-image:url("/web/fx/rfx/beginner/images/keyword-bg-03.gif");
+}
+
+div#str-main div.box-fx-06{
+position:relative;
+}
+
+div#str-main div.box-fx-06 p.nav-btn{
+margin:0;
+position:absolute;
+top:75px;
+left:260px;
+}
+
+div#str-main div.type-fx{
+background:url("/web/fx/rfx/images/index-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-main div.type-fx table.tbl-topics-01{
+background:none;
+}
+
+div#str-main div.type-fx table.tbl-topics-01 tr.type-fx th,
+div#str-main div.type-fx table.tbl-topics-01 tr.type-fx td{
+background-image:none;
+}
+
+div#str-main div.type-fx table.tbl-topics-01 div.lyt-image{
+margin-right:0;
+margin-left:0;
+padding:0;
+}
+
+div#str-main div.box-01 div.separate{
+padding-top:15px;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 0;
+}
+
+
+/* ie6 */
+*html div#str-main div.box-fx-06 p.nav-btn{
+bottom:58px;
+left:260px;
+}
+/* ie7 */
+*+html div#str-main div.box-fx-06 p.nav-btn{
+bottom:58px;
+left:260px;
+}
+
+body.basic2 div.image-container-01{
+position:relative;
+width:724px;
+height:741px;
+overflow:hidden;
+}
+
+body.basic2 div.image-container-01 img{
+position:absolute;
+top:0;
+left:0;
+z-index:1;
+}
+
+
+/* ----------------------------------------------------------------
+	05. Layout Column Module
+----------------------------------------------------------------- */
+body.lyt-column-ms-01 div#str-main .box-fx-01 div.lyt-column{
+margin-right:-20px;
+width:auto;
+}
+
+body.lyt-column-ms-01 div#str-main .box-fx-01 div.column-col2 div.segment{
+margin-right:0;
+padding-right:20px;
+width:352px;
+}
+
+.stepBoxCo01 {
+border:5px solid #F7DEF7;
+padding:15px 20px 1px;
+}
+.imgSection {
+background:transparent url(/web/fx/rfx/beginner/images/trading-bg-01.gif) repeat-x scroll left bottom;
+margin-bottom:20px;
+}
+
+.hdType06Co03 {
+border-left:6px solid #A735A8;
+margin-bottom:13px;
+padding-left:4px;
+}
+
+.stepBoxCo02Read {
+background-color:#F7F5B4;
+padding:0pt 20px 1px;
+}
+
+.stepBoxCo02 {
+border:5px solid #F7F5B4;
+padding:15px 20px 1px;
+}
+
+.stepBoxCo03 {
+border:5px solid #CEE8A5;
+margin-bottom:20px;
+padding:15px 20px 1px;
+position:relative;
+}
+
+.dlTypeExclamation dt {
+background:transparent url(/web/fx/rfx/beginner/images/trading_icon_exclamation.gif) no-repeat scroll 0pt 0em;
+font-weight:bold;
+margin-bottom:5px;
+padding:3px 0pt 3px 27px;
+}
+
+div#str-main div.nav-fx-index-container div.order div.box-inner div.trading{
+background-image:url(/web/fx/rfx/beginner/images/index-bg-03-01-top.gif);
+}
+
+/* ----------------------------------------------------------------
+	06. Unordered List Module
+----------------------------------------------------------------- */
+div#str-main ul.list-consecutive-02 li{
+padding-right:10px;
+color:#d23100;
+font-weight:bold;
+display:inline;
+}
+
+div#str-main ul.list-image-fx-01{
+margin:0 0 1.25em;
+width:759px;
+}
+
+div#str-main ul.list-image-fx-01 li{
+margin:0 5px 15px 0;
+float:left;
+}
+
+div#str-main ul.list-image-fx-02,
+div#str-main ul.list-image-fx-04{
+margin:0 -15px 0 0;
+}
+
+div#str-main ul.list-image-fx-02 li,
+div#str-main ul.list-image-fx-04 li{
+padding-right:15px;
+float:left;
+width:229px;
+position:relative;
+}
+
+div#str-main ul.list-image-fx-02 li img,
+div#str-main ul.list-image-fx-04 li img{
+padding-bottom:5px;
+}
+
+div#str-main ul.list-image-fx-02 li p.nav-more,
+div#str-main ul.list-image-fx-04 li p.nav-more{
+margin:0;
+position:absolute;
+bottom:5px;
+left:60px;
+background:none;
+}
+
+div#str-main ul.list-image-fx-03{
+text-align:center;
+}
+
+div#str-main ul.list-image-fx-04 li{
+width:350px;
+}
+
+div#str-main ul.list-image-fx-04 li p.nav-more{
+left:110px;
+}
+
+/* ----------------------------------------------------------------
+	07. Definition List
+----------------------------------------------------------------- */
+div#str-main dl.list-normal-01 dt.di-01,
+div#str-main dl.list-normal-01 dt.di-02{
+padding:0 5px;
+color:#ffffff;
+width:3em;
+background-color:#00b6b9;
+text-align:center;
+font-weight:bold;
+}
+
+div#str-main dl.list-normal-01 dt.di-02{
+background-color:#ff0000;
+}
+
+/* ----------------------------------------------------------------
+	08. Q and A Component
+----------------------------------------------------------------- */
+
+div#str-main div.list-qa-container{
+padding-left:82px;
+position:relative;
+min-height:109px;
+_height:109px;
+background:#ffffff url("/web/fx/rfx/beginner/images/keyword-qa-bg-01.gif") no-repeat 0 0;
+}
+
+div#str-main div.list-qa-container dl.list-qa-fx-01{
+margin-bottom:0;
+padding-right:160px;
+}
+
+div#str-main div.list-qa-container dl.list-qa-fx-01 dt.q{
+color:#8cc903;
+font-weight:bold;
+}
+
+div#str-main div.list-qa-container dl.list-qa-fx-01 dt.a{
+color:#ff7800;
+font-weight:bold;
+}
+
+
+div#str-main div.list-qa-container p.image{
+position:absolute;
+top:20px;
+right:0;
+}
+
+/* ----------------------------------------------------------------
+	09. Table
+----------------------------------------------------------------- */
+div#str-main table.tbl-data-01 th.di-01{
+color:#ffffff;
+background-color:#00b6b9;
+font-weight:bold;
+}
+
+div#str-main table.tbl-data-01 th.di-02{
+color:#ffffff;
+background-color:#ff0000;
+font-weight:bold;
+}
+
+div#str-main table.tbl-data-01 th.adx{
+color:#ffffff;
+background-color:#277b27;
+font-weight:bold;
+}
+
+div#str-main table.tbl-data-01 td.di-01{
+background-color:#cceeef;
+}
+
+div#str-main table.tbl-data-01 td.di-02{
+background-color:#ffd7d7;
+}
+
+div#str-main table.tbl-data-01 td.adx{
+background-color:#cfffcf;
+}
+
+/* ----------------------------------------------------------------
+	10. list-index
+----------------------------------------------------------------- */
+div#str-main div.nav-fx-index-container{
+padding:10px;
+background:url("/web/fx/rfx/beginner/images/index-bg-06.gif") repeat 0 0;
+}
+
+div#str-main div.nav-fx-index-container div.keyword,
+div#str-main div.nav-fx-index-container div.order,
+div#str-main div.nav-fx-index-container div.chart,
+div#str-main div.nav-fx-index-container div.report{
+margin-bottom:10px;
+position:relative;
+min-height:145px;
+background:#ffffff url("/web/fx/rfx/beginner/images/index-bg-02-bottm.gif") no-repeat 0 100%;
+}
+div#str-main div.nav-fx-index-container div.order{
+background-image:url("/web/fx/rfx/beginner/images/index-bg-03-bottm.gif");
+}
+div#str-main div.nav-fx-index-container div.chart{
+background-image:url("/web/fx/rfx/beginner/images/index-bg-04-bottm.gif");
+}
+div#str-main div.nav-fx-index-container div.report{
+margin-bottom:0;
+background-image:url("/web/fx/rfx/beginner/images/index-bg-05-bottm.gif");
+}
+
+div#str-main div.nav-fx-index-container div.box-inner{
+padding:5px 5px 5px 50px;
+background:url("/web/fx/rfx/beginner/images/index-bg-02-top.gif") no-repeat 0 0;
+}
+div#str-main div.nav-fx-index-container div.keyword div.box-inner{
+}
+div#str-main div.nav-fx-index-container div.order div.box-inner{
+background-image:url("/web/fx/rfx/beginner/images/index-bg-03-01-top.gif");
+}
+div#str-main div.nav-fx-index-container div.chart div.box-inner{
+background-image:url("/web/fx/rfx/beginner/images/index-bg-04-top.gif");
+}
+div#str-main div.nav-fx-index-container div.report div.box-inner{
+background-image:url("/web/fx/rfx/beginner/images/index-bg-05-top.gif");
+}
+
+div#str-main div.nav-fx-index-container div.keyword h2,
+div#str-main div.nav-fx-index-container div.order h2,
+div#str-main div.nav-fx-index-container div.chart h2,
+div#str-main div.nav-fx-index-container div.report h2{
+position:absolute;
+top:10px;
+left:10px;
+}
+
+div#str-main div.nav-fx-index-container h3{
+margin-bottom:10px;
+padding-bottom:1px;
+background:url("/web/fx/rfx/beginner/images/index-bg-01.gif") no-repeat 15px 100%;
+}
+
+div#str-main div.nav-fx-index-container p{
+margin:0 0 1em 10px;
+}
+
+div.nav-fx-index-container div.keyword div.box-inner p,
+div.nav-fx-index-container div.order div.box-inner p,
+div.nav-fx-index-container div.chart div.box-inner p{
+padding-right:90px;
+}
+
+div.nav-fx-index-container div.report ul.list-index-fx-01 li p{
+padding-right:95px;
+}
+div.nav-fx-index-container div.report ul.list-index-fx-01 li.returns1 p{
+background:url("/web/fx/rfx/beginner/images/index-img-01.gif") no-repeat 100% 0;
+}
+div.nav-fx-index-container div.report ul.list-index-fx-01 li.returns2 p{
+background:url("/web/fx/rfx/beginner/images/index-img-02.gif") no-repeat 100% 0;
+}
+
+div#str-main div.nav-fx-index-container p.nav-more{
+margin:0 auto 1em;
+padding:0;
+width:149px;
+background:#3e59bd url("/web/fx/rfx/beginner/images/index-btn-01-bottom.gif") no-repeat 0 100%;
+font-weight:bold;
+text-align:left;
+}
+
+div#str-main div.nav-fx-index-container p.nav-more a{
+padding:5px 5px 5px 40px;
+display:block;
+color:#ffffff;
+background:url("/web/fx/rfx/beginner/images/index-btn-01-top.gif") no-repeat 0 0;
+}
+
+div#str-main div.nav-fx-index-container p.nav-more a:link,
+div#str-main div.nav-fx-index-container p.nav-more a:visited{
+text-decoration:none;
+}
+div#str-main div.nav-fx-index-container p.nav-more a:active,
+div#str-main div.nav-fx-index-container p.nav-more a:hover,
+div#str-main div.nav-fx-index-container p.nav-more a:focus{
+text-decoration:underline;
+}
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-01{
+margin:0 -20px 0 0;
+}
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-01 li{
+padding-right:20px;
+float:left;
+width:330px;
+}
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-02 li{
+position:relative;
+}
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-02 li img{
+position:absolute;
+top:3px;
+left:0;
+}
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-02 li.rsi img{
+padding-left:162px;
+}
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-02 li p.nav-more{
+margin-left:300px;
+}
+
+/* ie6 */
+*html div#str-main div.nav-fx-index-container div.keyword,
+*html div#str-main div.nav-fx-index-container div.order,
+*html div#str-main div.nav-fx-index-container div.chart,
+*html div#str-main div.nav-fx-index-container div.report{
+height:145px;
+}
+
+
+
+/* ----------------------------------------------------------------
+	11. clear
+----------------------------------------------------------------- */
+div#str-main ul.nav-tab-02:after,
+div#str-main ul.nav-tab-03:after,
+div#str-main ul.nav-tab-01:after,
+div#str-main ul.list-image-fx-01:after,
+div#str-main ul.list-image-fx-02:after,
+div#str-main ul.list-image-fx-04:after,
+
+div#str-main div.nav-fx-index-container ul.list-index-fx-01:after,
+div#str-main div.box-copy-beginner ul:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+
+
+/* ----------------------------------------------------------------
+	12. rfx-style
+----------------------------------------------------------------- */
+@charset "UTF-8";
+
+div#str-main div.new {
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:270px;
+	background:#3F4DA2 url("/web/fx/rfx/images/new_bar.gif") repeat-x 0 0;
+}
+
+
+/* ----manabi--------------------------------- */
+
+div#str-main div.ttlgreen {
+	width:500px;
+	line-height:1.1em;
+	margin:10px;
+	padding:5px 5px 5px 15px;
+	background:#4eb503 url("/web/fx/rfx/images/green_bg.gif") repeat-x 0 0;
+	color:#ffffff;
+	font-size:90%;
+	font-weight:bold;
+}
+
+div#str-main div.box-04-01 {
+	margin:0 6px 14px 6px;
+	padding:1px;
+	border:1px solid #b7b7b7;
+	background-color:#ffffff;
+}
+
+
+* html div#str-main div.box-04-01 {
+	margin:0 7px 14px 7px;
+	padding:1px;
+	border:1px solid #b7b7b7;
+	background-color:#ffffff;
+}
+
+div#str-main div.box-04-01 div.box-inner-01 {
+	padding:10px 0 0;
+	background:#f9f9fc url("/web/shared/images/bg-modules/bg-box-02.gif") repeat-x 0 0;
+}
+
+div#str-main div.box-04-01 p,
+div#str-main div.box-04-01 table,
+div#str-main div.box-04-01 div.lyt-image {
+	margin-right:0;
+	margin-left:0;
+}
+
+div#str-main div.box-04-01 div.lyt-image {
+	padding-right:6px;
+	padding-left:6px;
+}
+
+
+
+/* -----------------hdg-l2-03-1"-------------------- */
+
+div#str-main .hdg-l2-03-1 {
+	margin-bottom:8px;
+	padding-bottom:3px;
+	border-bottom:1px solid #3f4da2;
+	font-size:87.5%;
+}
+
+div#str-main .hdg-l2-03-1 span {
+	padding:3px 10px 0;
+	border-left:4px solid #3f4da2;
+	display:block;
+	min-height:20px;
+	background:#e5e5e5 url("/web/shared/images/heading/hdg-l2-03-bg.gif") repeat-x 0 0;
+	height:1%;
+}
+
+/* ------------------------------------- */
+.lyt-column-smc #str-container #str-contents #str-contents-inner #str-main .image-col4 .image a {
+text-decoration: none;
+}
+
+div#str-main table.index-beginner th,
+div#str-main table.index-beginner td {
+border: none;
+border-right: solid 2px #FFFFFF;
+border-collapse:separate;
+padding: 2px 6px;
+margin:0;
+}
+div#str-main table.index-beginner th{
+width:19%;
+background: #368F0F;
+color:#FFFFFF;
+text-align: center;
+}
+
+#str-contents #str-contents-inner #str-main a {
+text-decoration: none;
+}
+#str-contents #str-contents-inner #str-main a:hover {
+text-decoration: underline;
+}
+#str-contents #str-contents-inner #str-main .lyt-image .image a {
+text-decoration: none !important;
+}
+#str-contents #str-contents-inner #str-main .lyt-image .image a:hover {
+text-decoration: underline !important;
+}
+#str-contents #str-contents-inner #str-main .box-01 .lyt-image .column .doc-catchcopy-01 a {
+text-decoration: underline;
+}
+#str-contents #str-contents-inner #str-main .box-01 .lyt-image .column .doc-catchcopy-01 a:hover {
+text-decoration:none;
+}

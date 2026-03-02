@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<title>ページ構成のパターン | Rakuten Securities MobileSite Design Guideline</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/base.css" media="screen,print">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header id="header">
+	<h1 class="logo01">Rakuten Securities MobileSite Design Guideline</h1>
+	<div id="hbg"><a href="#menu" class="menuTrigger openMenu"><span></span><span></span><span></span></a></div>
+</header>
+
+<div id="overlay"></div>
+<nav id="menu">
+		<div class="vessel">
+		<div class="close01"><a href="#"><span></span><span></span></a></div>
+		<div class="indexArea01">
+			<h1 class="logo01"><span class="en">MENU</span></h1>
+		<ul class="link01">
+			<li class="linkCate">- ガイドライン</li>
+			<li><a href="a3introduction.html">ガイドラインの目的</a></li>
+			<li><a href="a-4design_concept.html">デザイン設計コンセプト</a></li>
+			<li><a href="a-5colorscheme.html">カラースキーム </a></li>
+			<li><a href="a-6font.html">フォント</a></li>
+			<li><a href="a-8basic_rayout.html">基本構成</a></li>
+			<li><a href="a-9layout_pattern.html">ページ構成のパターン</a></li>
+			<li><a href="a-10margin.html">余白</a></li>
+			<li><a href="a-11revision_history.html">改訂履歴</a></li>
+		</ul>
+		<ul class="link01">
+			<li class="linkCate">- コンポーネント集</li>
+			<li><a href="b-1localnavi.html">ナビゲーション1-ローカルナビゲーション</a></li>
+			<li><a href="b-2furiwakemenu.html">ナビゲーション2-振り分けメニュー</a></li>
+			<li><a href="b-3mokuji.html">ナビゲーション3-目次</a></li>
+			<li><a href="b-4tab.html">ナビゲーション4-タブ</a></li>
+			<li><a href="b-5title.html">見出し・セクション</a></li>
+			<li><a href="b-6introduction.html">導入</a></li>
+			<li><a href="b-7information.html">お知らせ</a></li>
+			<li><a href="b-8promotion.html">プロモーションバナー</a></li>
+			<li><a href="b-9linkbuttons.html">リンク・ボタン</a></li>
+			<li><a href="b-10linkbuttons.html">口座開設ボタン</a></li>
+			<li><a href="b-11linkbuttons.html">主導線ボタン詳細</a></li>
+			<li><a href="b-12linkbuttons.html">テキストリンク詳細</a></li>
+			<li><a href="b-13table.html">表組み</a></li>
+			<li><a href="b-14step.html">ステップ</a></li>
+			<li><a href="b-15accordion.html">アコーディオン</a></li>
+			<li><a href="b-16caution.html">ご注意</a></li>
+			<li><a href="b-17emphasis.html">強調表現</a></li>
+			<li><a href="a-11revision_history.html">改訂履歴</a></li>
+		</ul>
+		<ul class="link01">
+			<li class="linkCate">- モジュール集</li>
+			<li><a href="/smartphone/style-guide/module/">モジュールガイド</a></li>
+			<li><a href="/smartphone/style-guide/module/index-bottom.html">モジュール一覧</a></li>
+			<li><a href="/smartphone/style-guide/module/button.html">ボタン</a></li>
+			<li><a href="/smartphone/style-guide/module/container.html">コンテナ</a></li>
+			<li><a href="/smartphone/style-guide/module/text.html">見出し・テキスト・リンク</a></li>
+			<li><a href="/smartphone/style-guide/module/table.html">テーブル（表組み）</a></li>
+			<li><a href="/smartphone/style-guide/module/jquery.html">jquery（カルーセル・タブ）</a></li>
+			<li><a href="/smartphone/style-guide/module/jquery_02.html">jquery（トグル開閉系）</a></li>
+			<li><a href="/smartphone/style-guide/module/unique.html"> 固有モジュール</a></li>
+		</ul>
+		<ul class="link02">
+			<li><a href="index.html">TOPへ</a></li>
+		</ul>
+		</div>
+	<!--/vessel--></div>
+<!--/menu--></nav>
+
+<div class="headMainMod01">
+	<div class="vessel">
+		<div class="inner">
+			<h2 class="title01"><span class="en">06 LAYOUT PATTERN</span><span class="ja">ページ構成のパターン</span></h2>
+		<!--/inner--></div>
+	<!--/vessel--></div>
+<!--/headMainMod01--></div>
+
+<div id="main">
+
+	<div class="textMod01">
+		<p>ページのレイアウトパターンには大きく分けて３種類あります。ページ内容やページの役割にあったレイアウトを使用します。</p>
+	<!--/textMod01--></div>
+
+	<h3 class="headMod01">アウトライン</h3>
+	<div class="lo3clmMod01 clearfix">
+		<div class="firstBlock01">
+			<div class="textBlock03">
+				<h4 class="headMod03"><span class="en">A</span>インデックページ</h4>
+				<p>振り分けがメイン+<br>カテゴリ全体の説明もあり</p>
+			</div>
+			<div class="textBlock02">
+				<p>下層ページへの振り分けが主な役割であるページに使用します。<br>カテゴリ全体のメリット訴求や楽天証券の強み訴求などもあわせて行います。</p>
+			<!--/textBlock01--></div>			
+			<div class="imgMod01 alC"><img src="img/a-9layoutpattern_img_01.png" alt=""></div>
+		<!--/firstBlock01--></div>
+		
+		<div class="secondBlock01">
+			<div class="textBlock03">
+				<h4 class="headMod03"><span class="en">B</span>下層ページの内容紹介ページ</h4>
+				<p>振り分け先の説明＋誘導</p>
+			</div>
+			<div class="textBlock02">
+				<p>カテゴリ全体の概要紹介と、下層ページの内容のコンパクトな訴求と誘導の役割がある場合に使用します。<br>
+				詳細ページと、インデックスページの中間的な役割となります。</p>
+			<!--/textBlock01--></div>				
+			<div class="imgMod01 alC"><img src="img/a-9layoutpattern_img_02.png" alt=""></div>
+		<!--/secondBlock01--></div>
+		
+	  <div class="thirdBlock01">
+			<div class="textBlock03">
+				<h4 class="headMod03"><span class="en">C</span>詳細ページ、末端ページ</h4>
+			</div>
+			<div class="textBlock02">
+				<p>下層ページのないページです。</p>
+			<!--/textBlock01--></div>				
+			<div class="imgMod01 alC"><img src="img/a-9layoutpattern_img_03.png" alt=""></div>
+		<!--/thirdBlock01--></div>
+		
+	<!--/lo3clmMod01--></div>
+
+	<div class="textMod01 mgt3r lh1half">
+		<p class="fsMod12">※A、またはBの場合、目次の設置は必須ではありません。<br>コンテンツが長い場合や、ページの下部に見せたいコンテンツがある場合などに設置します。<br><br>
+		※Aの場合、見出し1のコンテンツがメニューだけであれば、大見出しはつきません。</p>
+	<!--/textMod01--></div>
+
+<!--/main--></div>
+
+<!--/wrapper--></div>
+
+</body>
+</html>

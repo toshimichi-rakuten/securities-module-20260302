@@ -1,0 +1,28 @@
+<!-- インクルード /web/shared/include/vtop/s3-engagement.html -->
+
+  <!-- 平日のみ表示 -->
+  <!--<div data-days="!Sat,!Sun" data-time="8:30-22:59" class="s1-emergency schedule-item" style="margin-top: 0;">
+    <p>カスタマーサービスセンターが大変混み合っており、電話がつながりにくい状況が続いております。<br>「<a href="https://faq.rakuten-sec.co.jp/" data-ratid="vis_pc_top_faq_congestion" data-ratevent="click" data-ratparam="all">よくあるご質問</a>」「<a href="#" onclick="window.open('/web/help/chat/visitor/','chat','width=400,height=600,noopener');return false;" data-ratid="pc_vis_top_chat_congestion" data-ratevent="click" data-ratparam="all">AIチャット</a>」も是非ご活用ください。</p>
+    <p class="mt-half" style="margin-top: 0.5em;">パスキー認証に関するよくあるお問い合わせは<a href="/web/security/passkey/#faq" data-ratid="vis_pc_top_security_passkey_faq" data-ratevent="click" data-ratparam="all">こちら</a></p>
+  </div>-->
+  <!-- / 平日のみ表示 -->
+
+  <!-- 土日のみ表示 -->
+  <!--<div data-days="Sat,Sun" data-time="9:00-16:59" class="s1-emergency schedule-item" style="margin-top: 0;">
+    <p>カスタマーサービスセンターが大変混み合っており、電話がつながりにくい状況が続いております。<br>「<a href="https://faq.rakuten-sec.co.jp/" data-ratid="vis_pc_top_faq_congestion" data-ratevent="click" data-ratparam="all">よくあるご質問</a>」「<a href="#" onclick="window.open('/web/help/chat/visitor/','chat','width=400,height=600,noopener');return false;" data-ratid="pc_vis_top_chat_congestion" data-ratevent="click" data-ratparam="all">AIチャット</a>」も是非ご活用ください。</p>
+    <p class="mt-half" style="margin-top: 0.5em;">パスキー認証に関するよくあるお問い合わせは<a href="/web/security/passkey/#faq" data-ratid="vis_pc_top_security_passkey_faq" data-ratevent="click" data-ratparam="all">こちら</a></p>
+  </div>-->
+  <!-- / 土日のみ表示 -->
+
+  <!-- プロモーション用の梅枠と別管理 -->
+  <p style="text-align: center; margin-bottom: 10px;"><a href="/web/security/passkey/?l-id=pc_top_visitor_bnr_security_passkey#case" data-ratid="pc_top_visitor_bnr_security_passkey" data-ratevent="click" data-ratparam="all"><img decoding="async" src="/web/images/banners/security_passkey/03/1872x180.png" alt="パスキー認証でログインがもっと簡単に（お困りの方はこちら）" width="100%"></a></p>
+  <!-- <p style="text-align: center; margin-bottom: 10px;"><a href="/web/info/info20251010-01.html?l-id=pc_top_visitor_bnr_info_20251010-01" data-ratid="pc_top_visitor_bnr_info_20251010-01" data-ratevent="click" data-ratparam="all"><img decoding="async" src="/web/images/banners/info_20251010-01/1872x180.png" alt="リアルタイムフィッシング詐欺にご注意ください" width="100%"></a></p> -->
+  <!-- /プロモーション用の梅枠と別管理 -->
+
+  <p style="text-align: center; margin-bottom: 30px;">
+    <a href="https://personal-finance.rakuten.co.jp/campaign/newyear2026/?scid=syoken" data-ratid="pc_top_visitor_bnr_ext_kakeibo_20251215-01" data-ratevent="click" data-ratparam="all" target="_blank"><img decoding="async" src="/web/images/banners/ext_kakeibo_20251215-01/1872x180.png" alt="楽天家計簿×楽天証券お金の見直し応援キャンペーン！エントリー＆条件達成で最大26,400円相当お得！" width="100%"></a>
+  </p>
+
+  <!-- <p style="text-align: center; margin-bottom: 30px;"><a href="/web/nisa/henkou/?l-id=pc_top_visitor_bnr_nisa-henkou" data-ratid="pc_top_visitor_bnr_nisa-henkou" data-ratevent="click" data-ratparam="all"><img decoding="async" src="/web/images/banners/nisa_henkou/02/1872x180.png" alt="楽天証券にNISAをのりかえませんか？ 株2,000円分プレゼント" width="100%"></a></p> -->
+
+<!-- /インクルード /web/shared/include/vtop/s3-engagement.html -->

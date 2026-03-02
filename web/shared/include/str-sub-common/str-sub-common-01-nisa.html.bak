@@ -1,0 +1,190 @@
+<hr />
+
+<div id="font-control"></div>
+
+<!-- <p id="ACC2" style="margin:0 0px 7px;padding:0;"><a href="/ITS/rakuten_g/?l-id=rightnavi_cp_newacc"><img src="/web/shared/images/str-sub-common/bnr-12200cp-01.gif" alt="口座開設＋各種取引でポイントプレゼント" width="180" height="50" /></a></p> -->
+
+<div id="ACC3" style="margin:0 0 10px">
+<h2 style="margin:0;"><img src="/web/shared/images/str-sub-common/entry-hdg-06.gif" alt="楽天証券の口座をお持ちでない方" /></h2>
+<div style="padding:5px 0 0;border:solid 1px #e4e4e4;border-top:0;background:#f1f1f1;box-shadow:inset 0 0 2px #d9d9d9;">
+<p style="margin:0 0 4px;text-align:center;color:#e51b1b;font-size:81.25%;font-weight:bold;">まずは総合口座を開設</p>
+<p id="ACC31" style="margin:0 0 7px;text-align:center;"><a href="/web/account/rakuten.html?l-id=rightnavi_account_rakuten"><img alt="口座開設" src="/web/shared/images/str-sub-common/entry-btn-red-02.gif"></a></p>
+<p id="ACC32" style="margin:0 10px 7px;text-align:center;font-size:81.25%;"><a href="/web/account/?l-id=rightnavi_account">楽天会員でない方はこちら</a></p>
+</div>
+</div>
+
+<div id="ACC4" class="attention" style="margin:0 0 7px; border-top:#CACDD9 solid 1px; padding:7px 0 0;">
+<p style="margin:0 10px;font-size:81.25%;font-weight:bold;">口座開設中のお客様</p>
+<ul class="list-link-01" style="padding:0 0 5px;">
+<li><a href="/ITS/rakuten_g/flow/?l-id=accrightnavi_flow">口座開設までの流れ</a></li>
+</ul>
+<p style="margin:0 10px;font-size:81.25%;font-weight:bold;">クイック口座開設手続き中のお客様</p>
+<ul class="list-link-01" style="padding:0 0 5px;">
+<li><a href="https://member.rakuten-sec.co.jp/service/setup/loginFormInit.do?homeid=wed">初期設定ログイン</a></li>
+</ul>
+</div>
+
+
+
+<div id="ACC5" style="margin:0 0 10px">
+<h2 style="margin:0;"><img src="/web/shared/images/str-sub-common/entry-hdg-07.gif" alt="楽天証券の口座をお持ちの方" /></h2>
+<div style="padding:10px 0 0;border:solid 1px #e4e4e4;border-top:0;background:#f1f1f1;box-shadow:inset 0 0 2px #d9d9d9;">
+<p style="margin:0 0 7px;text-align:center;"><a href="https://www.rakuten-sec.co.jp/nisa/login.html?l-id=rightnavi_account_nisa"><img alt="NISA口座申込" src="/web/shared/images/str-sub-common/entry-btn-nisa.gif"></a></p>
+
+<div>
+<p style="margin:0 10px 7px;font-size:81.25%;"><a href="/nisa/campaign/nisa_resident/">無料！NISAをはじめよう！住民票取得代行サービス</a></p>
+</div>
+
+<!--
+<div style="background-image: url("/web/shared/images/str-sub-common/presentbox.gif");">
+<img src="/web/shared/images/str-sub-common/presentbox.gif" alt="楽天証券の口座をお持ちの方" style="float:left; margin:2px 4px 0 9px;" />
+<p style="margin:0 10px 7px;font-size:81.25%;"><a href="/nisa/campaign/nisa_fundpresent/">NISA口座開設で投資信託買付代金1000円分プレゼント</a></p>
+</div>
+-->
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+<!--
+
+  var rz = $.cookie("Rz");
+  var rg = $.cookie("Rg_sec");
+
+  if((rz == null) && (rg == null)) {		// 1.デフォルト:非会員の場合
+    $("#ACC4").hide();
+  } else {
+    if((rz != null) && (rg == null)) {		// 2.非会員・RzCookieを保持の場合
+      $("#ACC32").hide();
+      $("#ACC4").hide();
+    } else {
+      if(rg.substr(5,1) == '0'){			// 3.口座申込済みの場合
+        $("#ACC3").hide();
+        $("#ACC4").hide();
+      } else {								// 4.初期設定完了済の場合
+        $("#ACC3").hide();
+        $("#ACC4").hide();
+      }
+    }
+  }
+-->
+</script>
+
+
+
+
+<div class="login-01">
+<form name="loginform" action="http://devmw.rakuten-sec.co.jp:81/bv/app/MhLogin.do" method="post" target="_top">
+
+<h2>総合口座ログイン</h2>
+<fieldset id="login">
+<legend>ログイン</legend>
+<label for="form-login-id" style="margin-right:0.2em;">ログインID</label><input type="text" id="form-login-id" name="loginid" maxlength="8" tabindex="1" onfocus="chfocus('0')" /><br />
+<label for="form-login-pass" style="margin-right:0.1em;">パスワード</label><input type="password" id="form-login-pass" name="passwd" maxlength="20" tabindex="2" onfocus="chfocus('1')" />
+<p class="link-openkey"><a href="javascript:void(0)" id="keyboard_opener">ソフトウェアキーボード</a></p>
+<p style="select-page"><select id="homeid" name="homeid" tabindex="3" style="width:152px;border:1px solid #7F9DB9;margin:0 8px 5px;">
+<option value="HOME" selected="selected">ホーム画面にログイン</option>
+<option value="STK_POS">保有商品一覧にログイン</option>
+<option value="MARKET_FAVORITE">お気に入り銘柄情報にログイン</option>
+<option value="MARKET_TOP">マーケットにログイン</option>
+<option value="PTF_INFO_BASIC_VST">ポートフォリオにログイン</option>
+<option value="BILLING_VST">リアルタイム入金にログイン</option>
+<option value="JP_STK_BUY_SEARCH">株式注文にログイン</option>
+<option value="ACC_REG_CHANGE_TOP">口座情報にログイン</option>
+</select></p>
+<input type="image" value="ログイン" src="/web/shared/images/str-sub-common/btn-login-01.gif" id="login-btn" name="submit%template" tabindex="3" />
+<script type="text/javascript">
+<!--
+$('#homeid').bind('change', function() {
+	$.cookie("homeid", $("#homeid").val(),{ expires:30, path:"/"})
+});
+var cookie = $.cookie("homeid");
+if(cookie != null) {
+	$("#homeid").val(cookie);
+}
+-->
+</script>
+</fieldset>
+
+<ul class="list-link-01">
+<li><a href="/web/help/care_login.html">IDパスワードはWebで確認できます</a></li>
+<li><a href="/web/help/security02.html">暗証番号は定期的に更新</a></li>
+</ul>
+
+</form>
+</div><!-- /.login -->
+
+<!-- ============ソフトウェアキーボード============ -->
+<!--#include virtual="/web/shared/include/software_keyboard/software_keyboard.html" -->
+<!-- ============ソフトウェアキーボード============ -->
+
+<!--システムメンテナンスのおしらせ-->
+<!--
+<div style="margin-bottom:10px;padding:4px 6px 6px;border:3px solid #ffc000;background:#eee;font-size:12px;color:#333;line-height:1.3;">
+<div style="font-weight:bold;text-align:center;">お知らせ</div>
+現在システムメンテナンス中のため、ログインを停止しています。（楽天FXを除く）
+<div style="margin-top:5px;padding:2px 4px;background:#ff7920;font-size:12px;color:#fff;text-align:center;">サービス再開予定</div>
+<div style="padding:2px 4px;background:#fff;font-size:12px;font-weight:bold;color:#333;text-align:center;">12/18（土） 16：00</div>
+</div>
+-->
+<!--/システムメンテナンスのおしらせ-->
+
+
+<!-- 緊急時障害アナウンス用インクルード(削除禁止) -->
+<!--#include virtual="/ITS/system_info_login_inc.html" -->
+<!-- 緊急時障害アナウンス用インクルード(削除禁止) -->
+
+<div class="info-system">
+<h2 id="about_system_information">システム関連のお知らせ</h2>
+<!-- 緊急時障害アナウンスロード用スクリプト(削除禁止) -->
+<script>
+<!--
+ $(function(){
+  jQuery.ajaxSetup({ cache: false });
+  jQuery.get("/ITS/system_info_web.xml", function(resp) {
+   $("#system_info").append((resp.documentElement.firstChild.nodeValue).replace(/system_info\//g,"/ITS/system_info/"));
+  });
+ });
+//-->
+</script>
+<!-- 緊急時障害アナウンスロード用スクリプト-削除禁止 -->
+
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+<!-- ### SYSTEM_INFO ### -->
+<div id="system_info"></div>
+<!-- ### SYSTEM_INFO ### -->
+<!--緊急時障害アナウンス作成プログラム専用タグ　当タグの削除禁止-->
+
+
+</div><!-- /info-system -->
+
+<div class="attention">
+<h2 id="attention_visitor">お客様へのご注意</h2>
+<ul class="list-link-01">
+<!--li><a href="/web/info/view_document.html">重要な書面（取引説明書･約諾書等）の閲覧について </a></li-->
+<li><a href="/ITS/Companyfile/PRNT_Companyfile.html" target="_blank">お取引注意銘柄情報</a></li>
+<li><a href="/web/info/system_maintenance.html">メンテナンス中のご注意</a></li>
+</ul>
+</div><!-- /.attention -->
+
+<div class="inquiry">
+<h2 id="inquiry_help">よくあるご質問</h2>
+<ul class="list-link-01">
+<li><a href="https://faq.rakuten-sec.co.jp/faq.html?scategory=159&t=20120720192240&key=&x=132&y=25" target="_blank">変更手続きのQ＆A</a></li>
+<li><a href="/web/help/#inqury-tel">お電話でのお問い合わせ</a></li>
+<li><a href="http://faq.rakuten-sec.co.jp/" target="_blank">よくあるご質問</a></li>
+<li><a href="/web/help/pc_support.html">パソコン出張サポート</a></li>
+</ul>
+<!-- FAQ -->
+<!--#include virtual="/web/shared/include/str-sub-common/ask-ranking.html" -->
+<!-- FAQ -->
+</div><!-- /.inquiry -->
+
+
+<!-- ともだちバナーここから -->
+<p style="margin:0 0px 10px;padding:0;"><a href="/nisa/campaign/nisa_introduction/" onclick="s.lidTrack('subcom_sv_nisa_introduction')"><img src="/web/images/banners/nisa_introduction/180x50.png" alt="紹介プログラム" width="180" height="50" /></a></p>
+<!-- ともだちバナーここまで -->
+
+
+

@@ -1,0 +1,137 @@
+/* モーダルと背景の指定 */
+.modal-exitintent{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.modal-exitintent p{
+  margin: 0;
+}
+
+/* モーダルの擬似要素の指定 */
+.modal-exitintent:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -0.2em;
+}
+@media screen and (max-width: 519px) {
+  .modal-exitintent:before{
+    height: 25%;
+  }
+}
+
+/* クラスが追加された時の指定 */
+.modal-exitintent.is-active{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダル内側の指定 */
+.modal-exitintent__container{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 28px 25px 30px 25px;
+  box-sizing: border-box;
+  max-width: 700px;
+  background: #fff;
+  border: #9c9c9c 10px solid;
+  border-radius: 16px;
+  cursor: pointer;
+}
+@media screen and (max-width: 519px) {
+  .modal-exitintent__container{
+    width: 100%;
+    border: #9c9c9c 6px solid;
+    padding: 10px;
+  }
+}
+
+/* モーダルのコンテンツ部分の指定 */
+.modal-exitintent__content{
+  text-align: left;
+  line-height: 1.8;
+}
+@media screen and (max-width: 519px) {
+  .modal-exitintent__content img{
+    width: 100%;
+  }
+}
+
+/* モーダルを閉じるボタンの指定 */
+.modal-exitintent-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  color: #333;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 519px) {
+  .modal-exitintent-close{
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;    
+  }
+}
+.modal-exitintent-x{
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.modal-exitintent-x::before,.modal-exitintent-x::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 21px;
+  background: #333;
+  border-radius: 3px;
+}
+.modal-exitintent-x::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+ 
+.modal-exitintent-x::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.modal-exitintent-pc-only{
+  display: block;
+}
+.modal-exitintent-sp-only{
+  display: none;
+}
+
+@media screen and (max-width: 519px) {
+  .modal-exitintent-pc-only{
+    display: none;
+  }
+  .modal-exitintent-sp-only{
+    display: block;
+  }
+}

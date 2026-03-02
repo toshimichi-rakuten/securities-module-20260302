@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+div#str-contents-inner div.fund-ranking div.hdg-l1-05-container ul {
+    top:.4em;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking,
+div#str-contents-inner div.fund-ranking div.columns2 table{
+	border-collapse: collapse;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking th,
+div#str-contents-inner div.fund-ranking table.table-fund-ranking td{
+	border:1px solid #999999;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking th{
+	padding:0;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr:first-child th:first-child {
+	border-top-color:#FFF;
+	border-left-color:#FFF;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr.rank th{
+	background-color: #ffe8e8;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr.rank td{
+	padding:10px 6px;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr.rank td a.ranking-items{
+    display:block;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr.more th,
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr.more td{
+	border:none;
+	background-color: #fff;
+	padding:5px 0;
+	text-align:center;
+}
+
+div#str-contents-inner div.fund-ranking table.table-fund-ranking tr.rank td img{
+	margin:5px 0 0;
+}
+
+div#str-contents-inner div.fund-ranking p {
+	margin-bottom:0;
+}
+
+div#str-contents-inner div.fund-ranking div.hdg-fund-rank{
+	position: relative;
+	margin-bottom:10px;
+}
+
+div#str-contents-inner div.fund-ranking div.hdg-fund-rank h2{
+	background:url(/web/fund/ranking/images/icon-ranking-.gif) 2px 3px no-repeat;
+	padding-left: 20px;
+	line-height: 1;
+}
+
+div#str-contents-inner div.fund-ranking div.hdg-fund-rank p{
+	position: absolute;
+	right:0;
+	top:0;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 > div{
+	width:371px;
+	float:left;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 > div:first-child{
+	margin-right: 13px;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table{
+	border:1px solid #999999;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table th{
+	padding:0;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table th,
+div#str-contents-inner div.fund-ranking div.columns2 table td{
+	border-bottom:1px solid #999999;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table tr td{
+	padding-left:30px;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table tr th div{
+	position:relative;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table tr th img.btn{
+	position:absolute;
+    left: 280px;
+    top: 10px;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table tr td.nb1{
+	background:url('/web/fund/ranking/images/icon-ranking-01.gif') 5px 5px no-repeat;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table tr td.nb2{
+	background:url('/web/fund/ranking/images/icon-ranking-02.gif') 5px 5px no-repeat;
+}
+
+div#str-contents-inner div.fund-ranking div.columns2 table tr td.nb3{
+	background:url('/web/fund/ranking/images/icon-ranking-03.gif') 5px 5px no-repeat;
+}
+
+div#str-contents-inner div.fund-ranking div.columns3 > dl{
+	width:234px;
+	float:left;
+	border-left: 1px dotted #999;
+	margin:0;
+	padding:0 8px;
+}
+
+div#str-contents-inner div.fund-ranking div.columns3 > dl:first-child{
+	border:none;
+}
+
+div#str-contents-inner div.fund-ranking div.ranking-list div.list-content{
+	border:1px solid #316a96;
+	padding:10px 0;
+    margin-bottom:20px;
+}
+
+div#str-contents-inner div.fund-ranking div.ranking-list dl dt{
+    background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 7px;
+    margin: .3em 0 0;
+    padding-left: 10px;
+}
+
+div#str-contents-inner div.fund-ranking div.ranking-list dl dd{
+    padding-left: 10px;
+    font-size:.8em;
+}
+
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 1%;
+    visibility: hidden;
+}

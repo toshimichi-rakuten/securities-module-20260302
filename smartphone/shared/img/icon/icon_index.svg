@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="list outline">
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M7 7H11V6H7V7Z" fill="#EC0606"/>
+<path id="Fill 2" fill-rule="evenodd" clip-rule="evenodd" d="M5 7H6V6H5V7Z" fill="#EC0606"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M7 9.5H11V8.5H7V9.5Z" fill="#EC0606"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M5 9.5H6V8.5H5V9.5Z" fill="#EC0606"/>
+<path id="Fill 5" fill-rule="evenodd" clip-rule="evenodd" d="M7 12H11V11H7V12Z" fill="#EC0606"/>
+<path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd" d="M5 12H6V11H5V12Z" fill="#EC0606"/>
+<path id="Fill 7" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 5H13.5L9.5 1V4C9.5 4.552 9.948 5 10.5 5Z" fill="#EC0606"/>
+<path id="Fill 9" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 14H3.5V2H8.5V1H3.5C2.948 1 2.5 1.448 2.5 2V14C2.5 14.552 2.948 15 3.5 15H12.5C13.052 15 13.5 14.552 13.5 14V6H12.5V14Z" fill="#EC0606"/>
+</g>
+</svg>

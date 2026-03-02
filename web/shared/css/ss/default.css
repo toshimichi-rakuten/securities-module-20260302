@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Structure
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Structure
+----------------------------------------------------------------- */
+body{
+background:#e9eaed;
+_font-family:'ＭＳ Ｐゴシック',sans-serif;
+}
+
+*:first-child+html body{
+font-family:'ＭＳ Ｐゴシック',sans-serif;
+}
+
+html>/**/body{   
+font-family /*\**/:'ＭＳ Ｐゴシック',sans-serif\9;
+}  
+
+div#str-container{
+margin:0 auto;
+padding:0 10px;
+width:950px;
+background:#ffffff;
+}

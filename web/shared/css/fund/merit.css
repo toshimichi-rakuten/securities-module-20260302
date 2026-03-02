@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: merit.css for
+ /web/fund/saving/
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: fund - Common Elements & Custom Modules
+----------------------------------------------------------------*/
+div#str-main div#column div.box-column{
+}
+div#str-main div#column div.box-column div.box-txt p{
+margin-top:0.25em;
+}
+div#str-main div#column div.box-column div.box-txt,
+div#str-main div#column div.box-column div.box-btn{
+float:left;
+}
+div#str-main div#column div.box-column div.box-txt{
+margin-right:13px;
+width:364px;
+}
+div#str-main div#column div.box-column div.box-btn{
+width:152px;
+}
+/* ---------------------------------
+	box-attention-03
+ -------------------------------- */
+div#str-main div#column{
+margin-top:1.25em;
+margin-bottom:1.25em;
+}
+div#str-main div#column h4{
+position:relative;
+margin-top:1.25em;
+margin-bottom:0.5em;
+}
+
+div#str-main div#column h5{
+position:relative;
+margin-top:1em;
+margin-bottom:0.5em;
+font-size:0.9em;
+}
+div#str-main div#column h4 span{
+color:#467047;
+display:block;
+text-align:left;
+position:absolute;
+top:4px; left:120px;
+font-size:0.9em;
+}
+div#str-main div#column h4 img{
+position:relative;
+}
+div#str-main p.center{
+text-align:center;
+}
+
+div#str-main .hdg-l3-04{
+margin-top:2em;
+}

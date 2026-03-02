@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+<script src="/web/shared/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="//jp.rakuten-static.com/1/js/grp/ftr/js/parm_selector_footer.js"></script>
+<script type="text/javascript">
+<!--
+$(function() {
+$.ajax({
+	  type: 'GET',
+	  url: 'v1-str-footer.html',
+	  dataType: 'html',
+	  success: function(data) {
+	  $('#foot-toushiru').html($(data).find('#ajax-toushiru'));
+	}
+  });
+});
+$(window).click(function(event) {
+  var target = $(event.target);
+  if (!target.is("a")) {
+    target = target.parents("a").first();
+  }
+  target.filter(
+      "[href^=http]:not([href*='" + location.hostname + "'])"
+    ).attr("target", "_blank");
+});
+-->
+</script>
+</head>
+
+<body style="min-width:950px;">
+
+<div class="footer-common">
+  <div class="rc-f-standard rc-f-fixed rc-f-custom00">
+    <div id="foot-toushiru"></div>
+  </div>
+</div>
+
+</body>
+</html>

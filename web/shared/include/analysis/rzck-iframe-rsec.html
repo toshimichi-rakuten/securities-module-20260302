@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex, nofollow" />
+</head>
+
+<body>
+    <script type="text/javascript">
+    (function() {
+        if (window == parent) {
+            return -1;
+        }
+
+        var whiteList = [];
+
+        function getQueryParam(param) {
+            function getUrlVars() {
+                var vars = [],
+                    hash;
+                var hashes = decodeURIComponent(window.location.search).substring(1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+            var arr = getUrlVars();
+            return arr[param];
+        }
+
+        //whitelist of domains where the message can be sent
+        whiteList = [
+            /^http[s]?:\/\/media\.rakuten\-sec\.net$/,
+            /^http[s]?:\/\/marketspeed\.jp$/,
+            /^http[s]?:\/\/ispeed\.jp$/,
+            /^http[s]?:\/\/www\.ris\-asia\.com$/,
+            /^http[s]?:\/\/www\.trkd\-asia\.com$/,
+            /^http[s]?:\/\/knowledgebasket\.com$/,
+            /^http[s]?:\/\/marketspeed\.dougahelp\.com$/,
+            /^http[s]?:\/\/id\.rakuten\.co\.jp$/,
+            /^http[s]?:\/\/kuji\.rakuten\.co\.jp$/,
+            /^http[s]?:\/\/www\.commodity\.co\.jp$/,
+            /^http[s]?:\/\/fxcmasia\.com$/,
+            /^http[s]?:\/\/sec\.rakuten\.com$/,
+            /^http[s]?:\/\/dc\.rakuten\-sec\.co\.jp$/,
+            /^http[s]?:\/\/faq\.rakuten\-sec\.co\.jp$/,
+            /^http[s]?:\/\/wrap\.rakuten\-sec\.co\.jp$/,
+            /^http[s]?:\/\/reset\.rakuten\-sec\.co\.jp$/,
+            /^http[s]?:\/\/rfx\.rakuten\-sec\.co\.jp$/,
+            /^http[s]?:\/\/fa\.rakuten\-sec\.co\.jp$/,
+            /^http[s]?:\/\/tsmt4\.rakuten\-sec\.co\.jp$/,
+
+        ];
+
+        function getCookie(name) {
+            var cookieValue, cookies, cookie, i, len;
+            if (document.cookie) {
+                cookies = document.cookie.split('; ');
+                for (i = 0, len = cookies.length; i < len; i++) {
+                    cookie = cookies[i];
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        function sendData(data) {
+            var receiver, str, parentUrl,
+                query, protocol, parentHost, matches, n, len;
+
+            receiver = window.parent;
+
+            dataObj = {
+                'type': 'ratCk',
+                'data': data
+            };
+            str = JSON && JSON.stringify(dataObj);
+            if (str) {
+                // Check the parent host
+                parentUrl = getQueryParam('o-id');
+                len = whiteList.length;
+                for (n = 0; n < len; n++) {
+                    if (parentUrl && parentUrl.match(whiteList[n])) {
+                        receiver.postMessage(str, parentUrl);
+                        break;
+                    }
+                }
+            }
+        }
+
+        function init() {
+            var data = {},
+                custommerID;
+            custommerID = getCookie("Rz_sec");
+            if (custommerID) {
+                data.rzck = custommerID;
+            }
+            sendData(data);
+        }
+        init();
+    })();
+    </script>
+</body>
+
+</html>

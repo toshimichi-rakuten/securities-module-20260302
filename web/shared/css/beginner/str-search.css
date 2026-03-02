@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. str-search
+*	02. form-search-stock
+*	03. form-search-stock-prices
+*	04. font-control
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. str-search
+----------------------------------------------------------------- */
+div#str-search{
+margin-bottom:7px;
+padding:0 180px 8px 110px;
+position:relative;
+border-bottom:1px solid #d6d7e2;
+background-color:#ececec;
+}
+
+div#str-search p,
+div#str-search ul,
+div#str-search ol,
+div#str-search dl{
+margin-top:0;
+margin-bottom:0;
+}
+
+div#str-search p.label-search{
+position:absolute;
+top:3px;
+left:17px;
+}
+
+
+
+/* ----------------------------------------------------------------
+	02. form
+----------------------------------------------------------------- */
+div#str-search fieldset{
+width:500px;
+}
+
+div#str-search form,
+div#str-search fieldset{
+margin:0;
+padding:0;
+border:0;
+}
+
+div#str-search input,
+div#str-search select{
+margin:0;
+padding:0;
+border:0;
+vertical-align:middle;
+font-size:13px;
+}
+
+div#str-search label{
+cursor:pointer;
+}
+
+div#str-search legend{
+display:none;
+}
+
+div#str-search p.label-search{
+position:absolute;
+top:1px;
+left:17px;
+}
+
+div#str-search form{
+float:left;
+}
+
+div#str-search select#stoc-type,
+div#str-search input#form-search-stock-prices{
+margin-right:10px;
+padding:1px;
+border:1px solid #7f9db9;
+width:165px;
+}
+
+div#str-search select#stoc-type{
+padding:0;
+width:150px;
+}
+
+div#str-search input#form-search-stock-btn,
+div#str-search input#form-search-btn{
+cursor:pointer;
+}
+
+
+/* ----------------------------------------------------------------
+	03. form-search-stock-prices
+----------------------------------------------------------------- */
+div#str-search input#form-search-stock-btn{
+margin-right:40px;
+}
+
+
+/* ----------------------------------------------------------------
+	04. font-control
+----------------------------------------------------------------- */
+div#font-control{
+position:absolute;
+top:2px;
+right:17px;
+width:130px;
+text-align:right;
+}
+
+div#font-control dl{
+padding-left:65px;
+position:relative;
+text-align:left;
+}
+
+div#font-control dl dt{
+position:absolute;
+top:3px;
+left:0;
+line-height:1;
+font-size:5px;
+}
+
+div#font-control dl dd{
+width:61px;
+}
+
+div#font-control dl dd ul li{
+display:inline;
+line-height:1;
+font-size:5px;
+}
+
+div#font-control dl dd ul li img{
+padding-right:2px;
+vertical-align:top;
+cursor:pointer;
+}

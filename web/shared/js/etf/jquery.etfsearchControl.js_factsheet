@@ -1,0 +1,909 @@
+var cbInfo = function(flg, key, txt, sch, cnt) {
+  this.flg = flg;
+  this.key = key;
+  this.txt = txt;
+  this.sch = sch;
+  this.cnt = cnt;
+}
+
+cbInfo.prototype = {
+  setON : function () {
+    this.flg = 1;
+    $("input[name=" + this.key + "]").attr("checked", true);
+  },
+  setOFF : function() {
+    this.flg = 0;
+    $("input[name=" + this.key + "]").attr("checked", false);
+  },
+  toHtml : function() {
+//  return "<li><label><input type=\"checkbox\" name=\"" + this.key + "\" />" + this.txt + "<span class=\"number\">(" + this.cnt +")</span></label></li>";
+    return "<li><label><input type=\"checkbox\" name=\"" + this.key + "\" />" + this.txt + "</label></li>";
+  }
+};
+
+var sort_by = function(field, reverse, primer){
+   reverse = (reverse) ? -1 : 1;
+   return function(a,b){
+     if(primer == parseFloat) {
+       a = a[field];
+       b = b[field];
+       if(reverse == 1){
+         if(a=='NA') a = 99999;
+         if(b=='NA') b = 99999;
+       } else {
+         if(a=='NA') a = -99999;
+         if(b=='NA') b = -99999;
+       }
+     }else{
+       a = a[field];
+       b = b[field];
+     }
+
+     if (typeof(primer) != 'undefined'){
+       a = primer(a);
+       b = primer(b);
+     }
+     if (a<b) return reverse * -1;
+     if (a>b) return reverse * 1;
+     return 0;
+  }
+}
+
+jQuery(document).ready(function() {
+  data = "";
+
+  $.ajax({
+    async : false,
+    url : "/web/market/search/etf_search/etf.json",
+    type : "post",
+    dataType : "json",
+    cache : false,
+    success : function(data){
+
+      // ETFデータ退避
+      ETFDB = data;
+
+
+      // ---- チェックボックスマッピング ----
+      cbMap = [];
+
+      // 上場市場
+      cbMap["mktch_jp"] = new cbInfo(0, "mktch_jp", "国内市場", ["東京","大阪","名古屋"], 0);
+      cbMap["mktch_us"] = new cbInfo(0, "mktch_us", "米国市場", ["ニューヨーク","ナスダック"], 0);
+      cbMap["mktch_hk"] = new cbInfo(0, "mktch_hk", "香港市場", ["香港"], 0);
+      cbMap["mktch_sg"] = new cbInfo(0, "mktch_sg", "シンガポール市場", ["シンガポール"], 0);
+
+      // 資産タイプ
+      cbMap["astch_st"] = new cbInfo(0, "astch_st",   "株式",   ["株式"], 0);
+      cbMap["astch_bo"] = new cbInfo(0, "astch_bo",   "債券",   ["債券"], 0);
+      cbMap["astch_co"] = new cbInfo(0, "astch_co",   "商品",   ["商品"], 0);
+      cbMap["astch_re"] = new cbInfo(0, "astch_re", "不動産", ["不動産"], 0);
+      cbMap["astch_cu"] = new cbInfo(0, "astch_cu",   "通貨",   ["通貨"], 0);
+      cbMap["astch_el"] = new cbInfo(0, "astch_el", "その他", ["その他"], 0);
+
+      // 通貨
+      cbMap["curch_jp"] = new cbInfo(0, "curch_jp",   "日本円",       ["円"], 0);
+      cbMap["curch_us"] = new cbInfo(0, "curch_us",   "米ドル",   ["米ドル"], 0);
+      cbMap["curch_hk"] = new cbInfo(0, "curch_hk", "香港ドル", ["香港ドル"], 0);
+
+      // 経費率
+      cbMap["exrch_1"] = new cbInfo(0, "exrch_1",           "0.5%未満", ["0.0","0.5"], 0);
+      cbMap["exrch_2"] = new cbInfo(0, "exrch_2", "0.5%以上～1.0%未満", ["0.5","1.0"], 0);
+      cbMap["exrch_3"] = new cbInfo(0, "exrch_3",           "1.0%以上", ["1.0","9.9"], 0);
+
+      // 投資地域
+      cbMap["geoch_glb"] = new cbInfo(0, "geoch_glb",     "グローバル",           ["国際"], 0);
+      cbMap["geoch_eur"] = new cbInfo(0, "geoch_eur",     "ヨーロッパ",     ["ヨーロッパ"], 0);
+      cbMap["geoch_pac"] = new cbInfo(0, "geoch_pac",         "太平洋",         ["太平洋"], 0);
+      cbMap["geoch_emg"] = new cbInfo(0, "geoch_emg",       "新興諸国",       ["新興諸国"], 0);
+      cbMap["geoch_aem"] = new cbInfo(0, "geoch_aem", "アジア新興諸国", ["アジア新興諸国"], 0);
+      cbMap["geoch_usa"] = new cbInfo(0, "geoch_usa",           "米国",       ["アメリカ"], 0);
+      cbMap["geoch_jpn"] = new cbInfo(0, "geoch_jpn",           "日本",           ["日本"], 0);
+      cbMap["geoch_hkg"] = new cbInfo(0, "geoch_hkg",           "香港",           ["香港"], 0);
+      cbMap["geoch_bra"] = new cbInfo(0, "geoch_bra",       "ブラジル",       ["ブラジル"], 0);
+      cbMap["geoch_ind"] = new cbInfo(0, "geoch_ind",         "インド",         ["インド"], 0);
+      cbMap["geoch_asa"] = new cbInfo(0, "geoch_asa",         "アジア",         ["アジア"], 0);
+      cbMap["geoch_sgp"] = new cbInfo(0, "geoch_sgp",   "シンガポール",   ["シンガポール"], 0);
+      cbMap["geoch_kor"] = new cbInfo(0, "geoch_kor",           "韓国",           ["韓国"], 0);
+      cbMap["geoch_twn"] = new cbInfo(0, "geoch_twn",           "台湾",           ["台湾"], 0);
+      cbMap["geoch_chn"] = new cbInfo(0, "geoch_chn",           "中国",           ["中国"], 0);
+      cbMap["geoch_mys"] = new cbInfo(0, "geoch_mys",     "マレーシア",     ["マレーシア"], 0);
+      cbMap["geoch_tha"] = new cbInfo(0, "geoch_tha",           "タイ",           ["タイ"], 0);
+      cbMap["geoch_vnm"] = new cbInfo(0, "geoch_vnm",       "ベトナム",       ["ベトナム"], 0);
+      cbMap["geoch_phl"] = new cbInfo(0, "geoch_phl",     "フィリピン",     ["フィリピン"], 0);
+      cbMap["geoch_idn"] = new cbInfo(0, "geoch_idn",   "インドネシア",   ["インドネシア"], 0);
+      cbMap["geoch_mex"] = new cbInfo(0, "geoch_mex",       "メキシコ",       ["メキシコ"], 0);
+      cbMap["geoch_sam"] = new cbInfo(0, "geoch_sam",     "南アメリカ",     ["南アメリカ"], 0);
+      cbMap["geoch_rus"] = new cbInfo(0, "geoch_rus",         "ロシア",         ["ロシア"], 0);
+      cbMap["geoch_pol"] = new cbInfo(0, "geoch_pol",     "ポーランド",     ["ポーランド"], 0);
+      cbMap["geoch_tur"] = new cbInfo(0, "geoch_tur",         "トルコ",         ["トルコ"], 0);
+      cbMap["geoch_aus"] = new cbInfo(0, "geoch_aus", "オーストラリア", ["オーストラリア"], 0);
+      cbMap["geoch_zaf"] = new cbInfo(0, "geoch_zaf",     "南アフリカ",     ["南アフリカ"], 0);
+      cbMap["geoch_dom"] = new cbInfo(0, "geoch_dom",     "国内保管型",     ["国内保管型"], 0);
+      // ---- チェックボックスマッピング ----
+
+      // ----  管理会社抽出 ----
+      var wIssuers = new Array();
+
+      for(var i=0; i<data.numCode; i++) {
+        var r = data.docs[i];
+  
+        wIssuers[r.Issuer] = r.Issuer;
+      }
+      
+      var Issuers = new Array();
+      var j = 0;
+      for (var i in wIssuers) {
+        Issuers[j] = wIssuers[i];
+        j = j + 1;
+      }
+      Issuers.sort();
+      // ----  管理会社抽出 ----
+ 
+      // ---- URLパラメータ解析とチェックボックス表示 ---
+      var parm = getUrlVars();
+
+      // キーワード
+      if("form-text-01" in parm)  $("input[name=form-text-01]").val(decodeURI(parm['form-text-01']));
+
+      var str = "";
+
+      // 上場市場
+      str = "<ul>";
+      str = str + cbMap["mktch_jp"].toHtml();
+      str = str + cbMap["mktch_us"].toHtml();
+      str = str + cbMap["mktch_hk"].toHtml();
+      str = str + cbMap["mktch_sg"].toHtml();
+      str = str + "</ul>";
+      $("#cnd-market").html(str);
+
+      if("mktch_jp" in parm) cbMap["mktch_jp"].setON();
+      if("mktch_us" in parm) cbMap["mktch_us"].setON();
+      if("mktch_hk" in parm) cbMap["mktch_hk"].setON();
+      if("mktch_sg" in parm) cbMap["mktch_sg"].setON();
+
+      // 資産タイプ
+      str = "<ul>";
+      str = str + cbMap["astch_st"].toHtml();
+      str = str + cbMap["astch_bo"].toHtml();
+      str = str + cbMap["astch_co"].toHtml();
+      str = str + cbMap["astch_re"].toHtml();
+      str = str + cbMap["astch_cu"].toHtml();
+      str = str + cbMap["astch_el"].toHtml();
+      str = str + "</ul>";
+      $("#cnd-asset-type").html(str);
+
+      if("astch_st" in parm) cbMap["astch_st"].setON();
+      if("astch_bo" in parm) cbMap["astch_bo"].setON();
+      if("astch_co" in parm) cbMap["astch_co"].setON();
+      if("astch_re" in parm) cbMap["astch_re"].setON();
+      if("astch_cu" in parm) cbMap["astch_cu"].setON();
+      if("astch_el" in parm) cbMap["astch_el"].setON();
+
+      // 通貨
+      str = "<ul>";
+      str = str + cbMap["curch_jp"].toHtml();
+      str = str + cbMap["curch_us"].toHtml();
+      str = str + cbMap["curch_hk"].toHtml();
+      str = str + "</ul>";
+      $("#cnd-currency").html(str);
+
+      if("curch_jp" in parm) cbMap["curch_jp"].setON();
+      if("curch_us" in parm) cbMap["curch_us"].setON();
+      if("curch_hk" in parm) cbMap["curch_hk"].setON();
+
+      // 経費率
+      str = "<ul>";
+      str = str + cbMap["exrch_1"].toHtml();
+      str = str + cbMap["exrch_2"].toHtml();
+      str = str + cbMap["exrch_3"].toHtml();
+      str = str + "</ul>";
+      $("#cnd-cost-ratio").html(str);
+
+      if("exrch_1" in parm) cbMap["exrch_1"].setON();
+      if("exrch_2" in parm) cbMap["exrch_2"].setON();
+      if("exrch_3" in parm) cbMap["exrch_3"].setON();
+
+      // 管理会社
+      var sel = "";
+      if("form-select-01" in parm) sel = decodeURI(parm['form-select-01']);
+      
+      if(sel.length == 0) {
+        str = "<option value=\"NONE\" selected>指定なし</option>";
+      } else {
+        str = "<option value=\"NONE\">指定なし</option>";
+      }
+      
+//      for (var i in Issuers) {
+      for (var i=0; i<Issuers.length; i++) {
+        if(sel.indexOf(Issuers[i]) > -1) {
+          str = str + "<option value=\"" + Issuers[i] + "\" selected>" + Issuers[i] + "</option>";
+        } else {
+          str = str + "<option value=\"" + Issuers[i] + "\">" + Issuers[i] + "</option>";
+        }
+      }
+      $("#form-select-01").html(str);
+
+      // 投資地域
+      str = "<ul>";
+      str = str + cbMap["geoch_glb"].toHtml();
+      str = str + cbMap["geoch_eur"].toHtml();
+      str = str + cbMap["geoch_pac"].toHtml();
+      str = str + cbMap["geoch_emg"].toHtml();
+      str = str + cbMap["geoch_aem"].toHtml();
+      str = str + cbMap["geoch_usa"].toHtml();
+      str = str + cbMap["geoch_jpn"].toHtml();
+      str = str + cbMap["geoch_hkg"].toHtml();
+      str = str + cbMap["geoch_bra"].toHtml();
+      str = str + cbMap["geoch_ind"].toHtml();
+
+      str = str + "</ul><p class=\"show-more\"><a href=\"#\" onclick=\"return false\;\">もっと見る</a></p><ul>";
+
+      str = str + cbMap["geoch_asa"].toHtml();
+      str = str + cbMap["geoch_sgp"].toHtml();
+      str = str + cbMap["geoch_kor"].toHtml();
+      str = str + cbMap["geoch_twn"].toHtml();
+      str = str + cbMap["geoch_chn"].toHtml();
+      str = str + cbMap["geoch_mys"].toHtml();
+      str = str + cbMap["geoch_tha"].toHtml();
+      str = str + cbMap["geoch_vnm"].toHtml();
+      str = str + cbMap["geoch_phl"].toHtml();
+      str = str + cbMap["geoch_idn"].toHtml();
+      str = str + cbMap["geoch_mex"].toHtml();
+      str = str + cbMap["geoch_sam"].toHtml();
+      str = str + cbMap["geoch_rus"].toHtml();
+      str = str + cbMap["geoch_pol"].toHtml();
+      str = str + cbMap["geoch_tur"].toHtml();
+      str = str + cbMap["geoch_aus"].toHtml();
+      str = str + cbMap["geoch_zaf"].toHtml();
+      str = str + cbMap["geoch_dom"].toHtml();
+      str = str + "</ul>";
+      $("#cnd-region").html(str);
+      
+      if("geoch_glb" in parm) cbMap["geoch_glb"].setON();
+      if("geoch_eur" in parm) cbMap["geoch_eur"].setON();
+      if("geoch_pac" in parm) cbMap["geoch_pac"].setON();
+      if("geoch_emg" in parm) cbMap["geoch_emg"].setON();
+      if("geoch_aem" in parm) cbMap["geoch_aem"].setON();
+      if("geoch_usa" in parm) cbMap["geoch_usa"].setON();
+      if("geoch_jpn" in parm) cbMap["geoch_jpn"].setON();
+      if("geoch_hkg" in parm) cbMap["geoch_hkg"].setON();
+      if("geoch_bra" in parm) cbMap["geoch_bra"].setON();
+      if("geoch_ind" in parm) cbMap["geoch_ind"].setON();
+      if("geoch_asa" in parm) cbMap["geoch_asa"].setON();
+      if("geoch_sgp" in parm) cbMap["geoch_sgp"].setON();
+      if("geoch_kor" in parm) cbMap["geoch_kor"].setON();
+      if("geoch_twn" in parm) cbMap["geoch_twn"].setON();
+      if("geoch_chn" in parm) cbMap["geoch_chn"].setON();
+      if("geoch_mys" in parm) cbMap["geoch_mys"].setON();
+      if("geoch_tha" in parm) cbMap["geoch_tha"].setON();
+      if("geoch_vnm" in parm) cbMap["geoch_vnm"].setON();
+      if("geoch_phl" in parm) cbMap["geoch_phl"].setON();
+      if("geoch_idn" in parm) cbMap["geoch_idn"].setON();
+      if("geoch_mex" in parm) cbMap["geoch_mex"].setON();
+      if("geoch_sam" in parm) cbMap["geoch_sam"].setON();
+      if("geoch_rus" in parm) cbMap["geoch_rus"].setON();
+      if("geoch_pol" in parm) cbMap["geoch_pol"].setON();
+      if("geoch_tur" in parm) cbMap["geoch_tur"].setON();
+      if("geoch_aus" in parm) cbMap["geoch_aus"].setON();
+      if("geoch_zaf" in parm) cbMap["geoch_zaf"].setON();
+      if("geoch_dom" in parm) cbMap["geoch_dom"].setON();
+      // ---- URLパラメータ解析とチェックボックス表示 ---
+
+
+      // ETF検索項目抽出処理
+      etf_fetch();
+
+      // ETF一覧表示処理
+      etf_list();
+    }
+  });
+
+  // ---- COOKIE＆イベント処理 ----
+
+  // 上場(COOKIE)
+  var cookie = $.cookie("ttl-market");
+  if(cookie == null) {
+    $("#cnd-market").fadeIn("fast");
+    $("#ttl-market").removeClass("closed");
+  } else {
+    $("#cnd-market").fadeOut("fast");
+    $("#ttl-market").addClass("closed");
+  }
+ 
+  // 上場(CLICK)
+  $(".title-text","#ttl-market").click(function() {
+    var cookie = $.cookie("ttl-market");
+    if(cookie == null) {
+      $.cookie("ttl-market","1",{ path:"/"});
+      $("#cnd-market").fadeOut("fast");
+      $("#ttl-market").addClass("closed");
+    } else {
+      $.cookie("ttl-market","",{ expires: -1, path:"/"})
+      $("#cnd-market").fadeIn("fast");
+      $("#ttl-market").removeClass("closed");
+    }
+  })
+
+
+  // 資産タイプ(COOKIE)
+  var cookie = $.cookie("ttl-asset-type");
+  if(cookie == null) {
+    $("#cnd-asset-type").fadeIn("fast");
+    $("#ttl-asset-type").removeClass("closed");
+  } else {
+    $("#cnd-asset-type").fadeOut("fast");
+    $("#ttl-asset-type").addClass("closed");
+  }
+ 
+  // 資産タイプ(CLICK)
+  $(".title-text","#ttl-asset-type").click(function() {
+    var cookie = $.cookie("ttl-asset-type");
+    if(cookie == null) {
+      $.cookie("ttl-asset-type","1",{ path:"/"});
+      $("#cnd-asset-type").fadeOut("fast");
+      $("#ttl-asset-type").addClass("closed");
+    } else {
+      $.cookie("ttl-asset-type","",{ expires: -1, path:"/"})
+      $("#cnd-asset-type").fadeIn("fast");
+      $("#ttl-asset-type").removeClass("closed");
+    }
+  })
+
+  // 投資地域(COOKIE)
+  var cookie = $.cookie("cnd-region");
+  if(cookie == null) {
+    $("ul","#cnd-region").eq(1).fadeOut("fast");
+  } else {
+    $("p.show-more","#cnd-region").fadeOut("fast");
+    $("ul","#cnd-region").eq(1).fadeIn("fast");
+  }
+  var cookie = $.cookie("ttl-region");
+  if(cookie == null) {
+    $("#cnd-region").fadeIn("fast");
+    $("#ttl-region").removeClass("closed");
+  } else {
+    $("#cnd-region").fadeOut("fast");
+    $("#ttl-region").addClass("closed");
+  }
+  
+  // 投資地域(CLICK)
+  $(".title-text","#ttl-region").click(function(){
+    var cookie = $.cookie("ttl-region");
+    if(cookie == null) {
+      $.cookie("ttl-region","1",{ path:"/"});
+      $("#cnd-region").fadeOut("fast");
+      $("#ttl-region").addClass("closed");
+    } else {
+      $.cookie("ttl-region","",{ expires: -1, path:"/"})
+      $("#cnd-region").fadeIn("fast");
+      $("#ttl-region").removeClass("closed");
+    }
+  })
+  $("p.show-more","#cnd-region").click(function() {
+    $.cookie("cnd-region","1",{ path:"/"});
+    $("p.show-more","#cnd-region").fadeOut("fast");
+    $("ul","#cnd-region").eq(1).fadeIn("fast");
+  })
+
+
+  // 分配金利回り(COOKIE)
+  var cookie = $.cookie("ttl-yield");
+  if(cookie == null) {
+    $("#cnd-yield").fadeIn("fast");
+    $("#ttl-yield").removeClass("closed");
+  } else {
+    $("#cnd-yield").fadeOut("fast");
+    $("#ttl-yield").addClass("closed");
+  }
+ 
+  // 分配金利回り(CLICK)
+  $(".title-text","#ttl-yield").click(function() {
+    var cookie = $.cookie("ttl-yield");
+    if(cookie == null) {
+      $.cookie("ttl-yield","1",{ path:"/"});
+      $("#cnd-yield").fadeOut("fast");
+      $("#ttl-yield").addClass("closed");
+    } else {
+      $.cookie("ttl-yield","",{ expires: -1, path:"/"})
+      $("#cnd-yield").fadeIn("fast");
+      $("#ttl-yield").removeClass("closed");
+    }
+  })
+  
+  // 経費率(COOKIE)
+  var cookie = $.cookie("ttl-cost-ratio");
+  if(cookie == null) {
+    $("#cnd-cost-ratio").fadeIn("fast");
+    $("#ttl-cost-ratio").removeClass("closed");
+  } else {
+    $("#cnd-cost-ratio").fadeOut("fast");
+    $("#ttl-cost-ratio").addClass("closed");
+  }
+ 
+  // 経費率(CLICK)
+  $(".title-text","#ttl-cost-ratio").click(function() {
+    var cookie = $.cookie("ttl-cost-ratio");
+    if(cookie == null) {
+      $.cookie("ttl-cost-ratio","1",{ path:"/"});
+      $("#cnd-cost-ratio").fadeOut("fast");
+      $("#ttl-cost-ratio").addClass("closed");
+    } else {
+      $.cookie("ttl-cost-ratio","",{ expires: -1, path:"/"})
+      $("#cnd-cost-ratio").fadeIn("fast");
+      $("#ttl-cost-ratio").removeClass("closed");
+    }
+  })
+
+   // 管理会社(COOKIE)
+  var cookie = $.cookie("ttl-company");
+  if(cookie == null) {
+    $("#cnd-company").fadeIn("fast");
+    $("#ttl-company").removeClass("closed");
+  } else {
+    $("#cnd-company").fadeOut("fast");
+    $("#ttl-company").addClass("closed");
+  }
+ 
+  // 管理会社(CLICK)
+  $(".title-text","#ttl-company").click(function() {
+    var cookie = $.cookie("ttl-company");
+    if(cookie == null) {
+      $.cookie("ttl-company","1",{ path:"/"});
+      $("#cnd-company").fadeOut("fast");
+      $("#ttl-company").addClass("closed");
+    } else {
+      $.cookie("ttl-company","",{ expires: -1, path:"/"})
+      $("#cnd-company").fadeIn("fast");
+      $("#ttl-company").removeClass("closed");
+    }
+  })
+
+
+  // 通貨(COOKIE)
+  var cookie = $.cookie("ttl-currency");
+  if(cookie == null) {
+    $("#cnd-currency").fadeIn("fast");
+    $("#ttl-currency").removeClass("closed");
+  } else {
+    $("#cnd-currency").fadeOut("fast");
+    $("#ttl-currency").addClass("closed");
+  }
+ 
+  // 通貨(CLICK)
+  $(".title-text","#ttl-currency").click(function() {
+    var cookie = $.cookie("ttl-currency");
+    if(cookie == null) {
+      $.cookie("ttl-currency","1",{ path:"/"});
+      $("#cnd-currency").fadeOut("fast");
+      $("#ttl-currency").addClass("closed");
+    } else {
+      $.cookie("ttl-currency","",{ expires: -1, path:"/"})
+      $("#cnd-currency").fadeIn("fast");
+      $("#ttl-currency").removeClass("closed");
+    }
+  })
+
+
+  // タブ切替
+  $('ul.nav-tab-result li').css('cursor', 'pointer');
+
+  $("div.table_box li:first-child", this).addClass("selected");
+  $("div.table_box:not(:first)", this).hide();
+
+  $("ul.nav-tab-result li", this).toggle(function() {
+    var tabIndex = $("ul.nav-tab-result li").index(this);
+    $("ul.nav-tab-result li").removeClass("selected");
+    $(this).addClass("selected");
+    $("div.table_box").hide();
+    $("div.table_box:eq("+tabIndex+")").fadeIn();
+  },function() {
+    var tabIndex = $("ul.nav-tab-result li").index(this);
+    $("ul.nav-tab-result li").removeClass("selected");
+    $(this).addClass("selected");
+    $("div.table_box").hide();
+    $("div.table_box:eq("+tabIndex+")").fadeIn();
+  });
+
+  // 分配金文言での検索の場合は、分配金タブを表示
+  if($("input[name=form-text-01]").val().indexOf("分配金") > -1) {
+    $("ul.nav-tab-result li").removeClass("selected");
+    $("ul.nav-tab-result li").eq(2).addClass("selected");
+    $("div.table_box").hide();
+    $("div.table_box:eq("+"2"+")").fadeIn();
+  }
+
+  // チェックボタン
+  $("#searchCondition :checkbox").click(function() {
+    if(this.checked) {
+      cbMap[this.name].setON();
+    } else {
+      cbMap[this.name].setOFF();
+    }
+  });
+  
+  // 検索開始
+  $(".btn-search").click(function() {
+    // ETF検索項目抽出処理
+      etf_fetch();
+
+    // ETF一覧表示処理
+    etf_list();
+  });
+
+  $("li",".btn-search-lower").eq(0).click(function() {
+    // ETF検索項目抽出処理
+    etf_fetch();
+
+    // ETF一覧表示処理
+    etf_list();
+  });
+
+  // クリアボタンで項目初期化(
+  $("li",".btn-search-lower").eq(1).click(function() {
+    $("input[type='text'], textarea").not("input[readonly='true'], input[type='hidden'], :button, :submit, :reset").val("");
+    $("input[type='radio'], input[type='checkbox'], select").removeAttr("checked").removeAttr("selected");
+    $("select option:first-child").attr("selected", "selected");
+  })
+  // ---- COOKIE＆イベント処理 ----
+
+})
+function sortList(flg, fld)
+{
+  if(fld == 'NetAssetValue') {
+    tmpETFDB.sort(sort_by(fld, flg, parseFloat));
+  } else if((fld=='Return1w') || (fld=='Return1m') || (fld=='Return3m') || (fld=='Return1y') || (fld=='ReturnYTD') || (fld=='DividendYeild') || (fld=='ExpenseRatio')){ 
+    tmpETFDB.sort(sort_by(fld, flg, parseFloat));
+  } else {
+    tmpETFDB.sort(sort_by(fld, flg, function(a){return a.toUpperCase()}));
+  }
+
+  // ETF一覧表示処理
+  etf_list();
+}
+
+function setArrowBtn(fld)
+{     
+  var str  = "<ul class=\"list-image-01\">";
+      str += "<li><a href=\"javascript:sortList(false, \'" + fld + "\');\">";
+      str += "<img src=\"/web/shared/images/arrow/arrow-top-01.gif\" alt=\"昇順\" class=\"rollover\" /></a></li>";
+      str += "<li><a href=\"javascript:sortList(true,\'" + fld + "\');\">";
+      str += "<img src=\"/web/shared/images/arrow/arrow-bottom-02.gif\" alt=\"降順\" class=\"rollover\" /></a></li>";
+      str += "</ul>";
+
+  return str;
+}
+
+// ---- ETF一覧表示処理 ----
+function etf_list()
+{
+  // 基本情報(table1)
+  var str1  = "<table class=\"tbl-data-02 tbl-stripe-01\" border=\"1\" cellspacing=\"0\"><thead><tr>";
+      str1 += "<th class=\"align-C w-10\" scope=\"col\">コード" + setArrowBtn("Code") + "</th>";
+      str1 += "<th class=\"align-C w-30\" scope=\"col\">銘柄名" + setArrowBtn("Description_j") + "</th>";
+      str1 += "<th class=\"align-C w-15\" scope=\"col\">市場" + setArrowBtn("PrimaryExchange") + "</th>";
+      str1 += "<th class=\"align-C\" scope=\"col\">連動指標" + setArrowBtn("UnderlyingIndex") + "</th>";
+      str1 += "<th class=\"align-C\" scope=\"col\">経費率" + setArrowBtn("ExpenseRatio") + "</th>";
+      str1 += "<th class=\"align-C w-10\" scope=\"col\">資産<br />クラス" + setArrowBtn("AssetClass") + "</th>";
+      str1 += "<th class=\"align-C w-10\" scope=\"col\">投資地域" + setArrowBtn("Geography") + "</th>";
+      str1 += "<th class=\"align-C w-10\" scope=\"col\">外部情報</th>";
+      str1 += "</tr></thead><tbody class=\"v-align-M\">";
+
+  // パフォーマンス(table2)
+  var str2  = "<table class=\"tbl-data-02 tbl-stripe-01\" border=\"1\" cellspacing=\"0\"><thead><tr>";
+      str2 += "<th class=\"align-C w-10\" scope=\"col\">コード" + setArrowBtn("Code") + "</th>";
+      str2 += "<th class=\"align-C w-30\" scope=\"col\">銘柄名" + setArrowBtn("Description_j") + "</th>";
+      str2 += "<th class=\"align-C\" scope=\"col\">騰落率<br />（1週間）" + setArrowBtn("Return1w") + "</th>";
+      str2 += "<th class=\"align-C\" scope=\"col\">騰落率<br />（１ヵ月）" + setArrowBtn("Return1m") + "</th>";
+      str2 += "<th class=\"align-C\" scope=\"col\">騰落率<br />（３ヵ月）" + setArrowBtn("Return3m") + "</th>";
+      str2 += "<th class=\"align-C\" scope=\"col\">騰落率<br />（１年）" + setArrowBtn("Return1y") + "</th>";
+      str2 += "<th class=\"align-C\" scope=\"col\">騰落率<br />（年初来）" + setArrowBtn("ReturnYTD") + "</th>";
+      str2 += "</tr></thead><tbody class=\"v-align-M\">";
+
+  // 分配金(table3)
+  var str3  = "<table class=\"tbl-data-02 tbl-stripe-01\" border=\"1\" cellspacing=\"0\"><thead><tr>";
+      str3 += "<th class=\"align-C w-10\" scope=\"col\">コード" + setArrowBtn("Code") + "</th>";
+      str3 += "<th class=\"align-C w-30\" scope=\"col\">銘柄名" + setArrowBtn("Description_j") + "</th>";
+      str3 += "<th class=\"align-C w-10\" scope=\"col\">通貨" + setArrowBtn("Currency") + "</th>";
+      str3 += "<th class=\"align-C\" scope=\"col\">分配金<br />利回り" + setArrowBtn("DividendYeild") + "</th>";
+      str3 += "<th class=\"align-C\" scope=\"col\">NAV(基準日)" + setArrowBtn("NetAssetValue") + "</th>";
+      str3 += "</tr></thead><tbody class=\"v-align-M\">";
+
+  // 概要(table4)
+  var str4  = "<table class=\"tbl-data-02 tbl-stripe-01\" border=\"1\" cellspacing=\"0\"><thead><tr>";
+      str4 += "<th class=\"align-C w-10\" scope=\"col\">コード" + setArrowBtn("Code") + "</th>";
+      str4 += "<th class=\"align-C w-30\" scope=\"col\">銘柄名" + setArrowBtn("Description_j") + "</th>";
+      str4 += "<th class=\"align-C w-15\" scope=\"col\">管理会社" + setArrowBtn("Issuer") + "</th>";
+      str4 += "<th class=\"align-C w-80\" scope=\"col\">概要</th>";
+      str4 += "</tr></thead><tbody class=\"v-align-M\">";
+
+
+  data = tmpETFDB;
+  
+  var len  = data.length;
+  var flen = factlist.length
+
+  for(var i=0; i<len; i++) {
+    var r = data[i];
+
+    if((i % 2) == 0) {
+      str1 = str1 + "<tr>";
+      str2 = str2 + "<tr>";
+      str3 = str3 + "<tr>";
+      str4 = str4 + "<tr>";
+    } else {
+      str1 = str1 +  "<tr class=\"even\">";
+      str2 = str2 +  "<tr class=\"even\">";
+      str3 = str3 +  "<tr class=\"even\">";
+      str4 = str4 +  "<tr class=\"even\">";
+    }
+
+    var pxName = "";
+    var pUrl   = "";
+    if(r.PrimaryExchange.indexOf("東京") >  -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/quote.html?ric=" + r.Code + ".T";
+      pxName = "東証";
+    } else if(r.PrimaryExchange.indexOf("大阪") >  -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/quote.html?ric=" + r.Code + ".OS";
+      pxName = "大証";
+    } else if(r.PrimaryExchange.indexOf("名古屋") >  -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/quote.html?ric=" + r.Code + ".NG";
+      pxName = "名証";
+    } else if(r.PrimaryExchange.indexOf("香港") >  -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/china_search/quote.html?ric=" + r.Code.substring(1,5) + ".HK";
+      pxName = "香港";
+    } else if(r.PrimaryExchange.indexOf("ニューヨーク") >  -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/us_search/quote.html?ric=" + r.Code + ".P";
+      pxName = "NYSE Arca";
+    } else if(r.PrimaryExchange.indexOf("ナスダック") > -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/us_search/quote.html?ric=" + r.Code + ".O";
+      pxName = "NASDAQ";
+    } else if(r.PrimaryExchange.indexOf("シンガポール") > -1) {
+      pUrl   = "https://www.rakuten-sec.co.jp/web/market/search/asean_search/quote.html?ric=" + r.Code + ".SI";
+      pxName = "シンガポール";
+    }
+
+    // 基本情報(table1)
+    if(pUrl.length > 1) {
+      str1 = str1 + "<th class=\"align-C\" scope=\"row\"><a href=\"" + pUrl + "\">" + r.Code + "</a></th>";
+      str1 = str1 + "<td><a href=\"" + pUrl + "\">" + r.Description_j + "</a></td>";
+    } else {
+      str1 = str1 + "<th class=\"align-C\" scope=\"row\">" + r.Code + "</th>";
+      str1 = str1 + "<td>" + r.Description_j + "</td>";
+    }
+    str1 = str1 + "<td class=\"align-C\">" + pxName + "</td>";
+    str1 = str1 + "<td>" + r.UnderlyingIndex + "</td>";
+    str1 = str1 + "<td class=\"align-R\">" + r.ExpenseRatio + "</td>";
+    str1 = str1 + "<td class=\"align-C\">" + r.AssetClass + "</td>";
+    str1 = str1 + "<td class=\"align-C\">" + r.Geography + "</td>";
+    str1 = str1 + "<td class=\"align-C\">";
+
+    for(var p=0; p<flen; p++) {
+      if(r.Code == factlist[p][0]) {
+        if(factlist[p][1])
+          str1 = str1 + "<a href=\"" + factlist[p][1] + "\" target=\"_blank\"><img height=\"14\" width=\"14\" title=\"ファクトシート\" src=\"/web/shared/images/icon/icon-pdf-01.gif\"/></a>";
+        if(factlist[p][2])
+          str1 = str1 + " <a href=\"" + factlist[p][2] + "\" target=\"_blank\"><img height=\"14\" width=\"14\" title=\"銘柄詳細のサイトへ\" src=\"/web/shared/images/icon/icon-outside-01.gif\"/></a>";
+        break;
+      }
+    }
+    str1 = str1 + "</td>";
+    str1 = str1 + "</tr>";
+
+    // パフォーマンス(table2)
+    if(pUrl.length > 1) {
+      str2 = str2 + "<th class=\"align-C\" scope=\"row\"><a href=\"" + pUrl + "\">" + r.Code + "</a></th>";
+      str2 = str2 + "<td><a href=\"" + pUrl + "\">" + r.Description_j + "</a></td>";
+    } else {
+      str2 = str2 + "<th class=\"align-C\" scope=\"row\">" + r.Code + "</th>";
+      str2 = str2 + "<td>" + r.Description_j + "</td>";
+    }
+    str2 = str2 + "<td class=\"align-R\">" + r.Return1w  + "</td>";
+    str2 = str2 + "<td class=\"align-R\">" + r.Return1m  + "</td>";
+    str2 = str2 + "<td class=\"align-R\">" + r.Return3m  + "</td>";
+    str2 = str2 + "<td class=\"align-R\">" + r.Return1y  + "</td>";
+    str2 = str2 + "<td class=\"align-R\">" + r.ReturnYTD + "</td>";
+    str2 = str2 + "</tr>";
+
+    // 分配金(table3)
+    if(pUrl.length > 1) {
+      str3 = str3 + "<th class=\"align-C\" scope=\"row\"><a href=\"" + pUrl + "\">" + r.Code + "</a></th>";
+      str3 = str3 + "<td><a href=\"" + pUrl + "\">" + r.Description_j + "</a></td>";
+    } else {
+      str3 = str3 + "<th class=\"align-C\" scope=\"row\">" + r.Code + "</th>";
+      str3 = str3 + "<td>" + r.Description_j + "</td>";
+    }
+    str3 = str3 + "<td class=\"align-C\">" + r.Currency  + "</td>";
+    str3 = str3 + "<td class=\"align-R\">" + r.DividendYeild  + "</td>";
+    str3 = str3 + "<td class=\"align-R\">" + r.NetAssetValue + " (" + r.NavDate + ")"  + "</td>";
+    str3 = str3 + "</tr>";
+
+    // 概要(table4)
+    if(pUrl.length > 1) {
+      str4 = str4 + "<th class=\"align-C\" scope=\"row\"><a href=\"" + pUrl + "\">" + r.Code + "</a></th>";
+      str4 = str4 + "<td><a href=\"" + pUrl + "\">" + r.Description_j + "</a></td>";
+    } else {
+      str4 = str4 + "<th class=\"align-C\" scope=\"row\">" + r.Code + "</th>";
+      str4 = str4 + "<td>" + r.Description_j + "</td>";
+    }
+    str4 = str4 + "<td>" + r.Issuer  + "</td>";
+    str4 = str4 + "<td class=\"connected-index\">" + r.Comment_l.replace(/。・/g,"。<br />・")  + "</td>";
+    str4 = str4 + "</tr>";
+
+  }
+
+  // 基本情報(table1)
+  str1 = str1 + "</tbody></table>";
+  $("#table1").html(str1);
+
+  // パフォーマンス(table2)
+  str2 = str2 + "</tbody></table>";
+  $("#table2").html(str2);
+
+  // 分配金(table3)
+  str3 = str3 + "</tbody></table>";
+  $("#table3").html(str3);
+
+  // パフォーマンス(table3)
+  str4 = str4 + "</tbody></table>";
+  $("#table4").html(str4);
+
+
+}
+// ---- ETF一覧表示処理 ----
+
+// ---- URLパラメータ解析処理 ----
+function getUrlVars()
+{     
+  var vars = [], hash;
+  var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+  for(var i = 0; i < hashes.length; i++) {
+    hash = hashes[i].split('=');
+    vars.push(hash[0]);
+    vars[hash[0]] = decodeURI(hash[1]);
+  }
+  
+  return vars;
+}
+// ---- URLパラメータ解析処理 ----
+
+// ---- ETF検索項目抽出処理 ----
+function etf_fetch()
+{
+
+  tmpETFDB = [];
+
+  var j = 0;
+  data = ETFDB;
+  for(var i=0; i<data.numCode; i++) {
+    var r = data.docs[i];
+
+    // キーワード
+    var kflg = 0;
+    kwd = $("input[name=form-text-01]").val();
+    if(kwd.length == 0) {
+      kflg = 1;
+    } else {
+      if((r.Code.indexOf(kwd) > -1)            ||
+         (r.Description_j.indexOf(kwd) > -1)   ||
+         (r.Description_e.indexOf(kwd) > -1)   ||
+         (r.UnderlyingIndex.indexOf(kwd) > -1) ||
+         (r.Comment_s.indexOf(kwd) > -1)       ||
+         (r.Comment_l.indexOf(kwd) > -1)       ||
+         (r.Issuer.indexOf(kwd) > -1)          ||
+         (r.Portfolio.indexOf(kwd) > -1)       ||
+         (r.Feature.indexOf(kwd) > -1)         ||
+         (r.Keyword.indexOf(kwd) > -1)
+      ) kflg = 1;
+    }
+
+    // 上場市場
+    var mflg = 0;
+    if($("input[type=checkbox]:checked","#cnd-market").length == 0) {
+      mflg = 1;
+    } else {
+      if((cbMap["mktch_jp"].flg==1) && (r.PrimaryExchange.indexOf("東京")                == 0)) { mflg = 1;
+      } else if((cbMap["mktch_jp"].flg==1) && (r.PrimaryExchange.indexOf("大阪")         == 0)) { mflg = 1;
+      } else if((cbMap["mktch_jp"].flg==1) && (r.PrimaryExchange.indexOf("名古屋")       == 0)) { mflg = 1;
+      } else if((cbMap["mktch_hk"].flg==1) && (r.PrimaryExchange.indexOf("香港")         == 0)) { mflg = 1;
+      } else if((cbMap["mktch_us"].flg==1) && (r.PrimaryExchange.indexOf("ニューヨーク") == 0)) { mflg = 1;
+      } else if((cbMap["mktch_us"].flg==1) && (r.PrimaryExchange.indexOf("ナスダック")   == 0)) { mflg = 1;
+      } else if((cbMap["mktch_sg"].flg==1) && (r.PrimaryExchange.indexOf("シンガポール") == 0)) { mflg = 1;
+      }
+    }
+
+    // 資産タイプ
+    var aflg = 0;
+    if($("input[type=checkbox]:checked","#cnd-asset-type").length == 0) {
+      aflg = 1;
+    } else {
+      if((cbMap["astch_st"].flg==1) && (r.AssetClass.indexOf("株式")          == 0)) { aflg = 1;
+      } else if((cbMap["astch_bo"].flg==1) && (r.AssetClass.indexOf("債券")   == 0)) { aflg = 1;
+      } else if((cbMap["astch_co"].flg==1) && (r.AssetClass.indexOf("商品")   == 0)) { aflg = 1;
+      } else if((cbMap["astch_re"].flg==1) && (r.AssetClass.indexOf("不動産") == 0)) { aflg = 1;
+      } else if((cbMap["astch_cu"].flg==1) && (r.AssetClass.indexOf("通貨")   == 0)) { aflg = 1;
+      } else if((cbMap["astch_el"].flg==1) && (r.AssetClass.indexOf("その他") == 0)) { aflg = 1;
+      }
+    }
+
+    // 投資地域
+    var gflg = 0;
+    if($("input[type=checkbox]:checked","#cnd-region").length == 0) {
+      gflg = 1;
+    } else {
+      if((cbMap["geoch_jpn"].flg==1) && (r.Geography.indexOf("日本")                  == 0)) { gflg = 1;
+      } else if((cbMap["geoch_sgp"].flg==1) && (r.Geography.indexOf("シンガポール")   == 0)) { gflg = 1;
+      } else if((cbMap["geoch_hkg"].flg==1) && (r.Geography.indexOf("香港")           == 0)) { gflg = 1;
+      } else if((cbMap["geoch_kor"].flg==1) && (r.Geography.indexOf("韓国")           == 0)) { gflg = 1;
+      } else if((cbMap["geoch_twn"].flg==1) && (r.Geography.indexOf("台湾")           == 0)) { gflg = 1;
+      } else if((cbMap["geoch_bra"].flg==1) && (r.Geography.indexOf("ブラジル")       == 0)) { gflg = 1;
+      } else if((cbMap["geoch_mex"].flg==1) && (r.Geography.indexOf("メキシコ")       == 0)) { gflg = 1;
+      } else if((cbMap["geoch_rus"].flg==1) && (r.Geography.indexOf("ロシア")         == 0)) { gflg = 1;
+      } else if((cbMap["geoch_pol"].flg==1) && (r.Geography.indexOf("ポーランド")     == 0)) { gflg = 1;
+      } else if((cbMap["geoch_chn"].flg==1) && (r.Geography.indexOf("中国")           == 0)) { gflg = 1;
+      } else if((cbMap["geoch_aus"].flg==1) && (r.Geography.indexOf("オーストラリア") == 0)) { gflg = 1;
+      } else if((cbMap["geoch_ind"].flg==1) && (r.Geography.indexOf("インド")         == 0)) { gflg = 1;
+      } else if((cbMap["geoch_mys"].flg==1) && (r.Geography.indexOf("マレーシア")     == 0)) { gflg = 1;
+      } else if((cbMap["geoch_idn"].flg==1) && (r.Geography.indexOf("インドネシア")   == 0)) { gflg = 1;
+      } else if((cbMap["geoch_tha"].flg==1) && (r.Geography.indexOf("タイ")           == 0)) { gflg = 1;
+      } else if((cbMap["geoch_phl"].flg==1) && (r.Geography.indexOf("フィリピン")     == 0)) { gflg = 1;
+      } else if((cbMap["geoch_vnm"].flg==1) && (r.Geography.indexOf("ベトナム")       == 0)) { gflg = 1;
+      } else if((cbMap["geoch_sam"].flg==1) && (r.Geography.indexOf("南アメリカ")     == 0)) { gflg = 1;
+      } else if((cbMap["geoch_tur"].flg==1) && (r.Geography.indexOf("トルコ")         == 0)) { gflg = 1;
+      } else if((cbMap["geoch_glb"].flg==1) && (r.Geography.indexOf("国際")           == 0)) { gflg = 1;
+      } else if((cbMap["geoch_eur"].flg==1) && (r.Geography.indexOf("ヨーロッパ")     == 0)) { gflg = 1;
+      } else if((cbMap["geoch_pac"].flg==1) && (r.Geography.indexOf("太平洋")         == 0)) { gflg = 1;
+      } else if((cbMap["geoch_aem"].flg==1) && (r.Geography.indexOf("アジア新興諸国") == 0)) { gflg = 1;
+      } else if((cbMap["geoch_emg"].flg==1) && (r.Geography.indexOf("新興諸国")       == 0)) { gflg = 1;
+      } else if((cbMap["geoch_asa"].flg==1) && (r.Geography.indexOf("アジア")         == 0)) { gflg = 1;
+      } else if((cbMap["geoch_zaf"].flg==1) && (r.Geography.indexOf("南アフリカ")     == 0)) { gflg = 1;
+      } else if((cbMap["geoch_usa"].flg==1) && (r.Geography.indexOf("アメリカ")       == 0)) { gflg = 1;
+      } else if((cbMap["geoch_dom"].flg==1) && (r.Geography.indexOf("国内保管型")     == 0)) { gflg = 1;
+      }
+    }
+
+    // 管理会社
+    var iflg = 0;
+    var sel = $("#form-select-01").val();
+    if(sel.indexOf("NONE") == 0) {
+      iflg = 1;
+    } else {
+      if(r.Issuer == sel) iflg = 1;
+    }
+    
+    // 通貨
+    var cflg = 0;
+    if($("input[type=checkbox]:checked","#cnd-currency").length == 0) {
+      cflg = 1;
+    } else {
+      if((cbMap["curch_jp"].flg==1) && (r.Currency.indexOf("円")              == 0)) { cflg = 1;
+      } else if((cbMap["curch_us"].flg==1) && (r.Currency.indexOf("米ドル")   == 0)) { cflg = 1;
+      } else if((cbMap["curch_hk"].flg==1) && (r.Currency.indexOf("香港ドル") == 0)) { cflg = 1;
+      }
+    }
+
+    // 経費率
+    var eflg = 0;
+    if($("input[type=checkbox]:checked","#cnd-cost-ratio").length == 0) {
+      eflg = 1;
+    } else {
+      var exr = parseFloat(r.ExpenseRatio);
+      if((cbMap["exrch_1"].flg==1) &&                          (exr < 0.5)) { eflg = 1;
+      } else if((cbMap["exrch_2"].flg==1) && ((exr >= 0.5) && (exr < 1.0))) { eflg = 1;
+      } else if((cbMap["exrch_3"].flg==1) &&                  (exr >= 1.0)) { eflg = 1;
+      }
+    }
+
+    if((kflg == 1) && (mflg == 1) && (aflg == 1) && (gflg == 1) && (iflg == 1) && (eflg == 1) && (cflg == 1)) {
+      tmpETFDB[j] = r;
+      j = j + 1;
+    }
+  }
+
+  
+  // 検索件数表示
+  var str = "<span><strong>" + tmpETFDB.length + "</strong>件</span>";
+  $(".result").html(str);
+}
+// ---- ETF検索項目抽出処理 ----

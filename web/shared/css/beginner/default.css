@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Structure
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Structure
+----------------------------------------------------------------- */
+
+body{
+margin:0;
+padding:0;
+background:#e9eaed;
+}
+
+div#str-container{
+margin:0 auto;
+padding:0 10px;
+width:950px;
+background:#ffffff;
+}
+
+/* ----------------------------------------------------------------
+	02. Heading Module
+----------------------------------------------------------------- */
+div#grpheader h1,
+div#grpheader h2,
+div#grpheader h3,
+div#grpheader h4,
+div#grpheader h5,
+div#grpheader h6,
+div#nav-global h1,
+div#nav-global h2,
+div#nav-global h3,
+div#nav-global h4,
+div#nav-global h5,
+div#nav-global h6,
+div#str-sub-common h1,
+div#str-sub-common h2,
+div#str-sub-common h3,
+div#str-sub-common h4,
+div#str-sub-common h5,
+div#str-sub-common h6{
+margin:0;
+padding:0;
+font-size:100%;
+}
+
+
+/* ----------------------------------------------------------------
+	03. Text Module
+----------------------------------------------------------------- */
+div#grpheader p,
+div#nav-global p,
+div#str-sub-common p{
+margin:0;
+padding:0;
+}
+
+div#grpheader strong,
+div#nav-global strong,
+div#str-sub-common strong{
+color:#d23100;
+font-weight:bold;
+}
+
+div#grpheader em,
+div#nav-global em,
+div#str-sub-common em{
+font-style:normal;
+font-weight:bold;
+}
+
+div#grpheader address,
+div#nav-global address,
+div#str-sub-common address{
+margin:0;
+padding:0;
+font-style:normal;
+}
+
+div#grpheader pre,
+div#nav-global pre,
+div#str-sub-common pre{
+font-size:75%;
+}
+
+
+
+/* ----------------------------------------------------------------
+	05. List Module
+----------------------------------------------------------------- */
+div#grpheader ul,
+div#grpheader ol,
+div#grpheader dl,
+div#nav-global ul,
+div#nav-global ol,
+div#nav-global dl,
+div#str-sub-common ul,
+div#str-sub-common ol,
+div#str-sub-common dl{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+div#grpheader ol,
+div#nav-global ol,
+div#str-sub-common ol{
+margin-left:2.5em;
+list-style-type:decimal;
+}
+
+div#grpheader li,
+div#grpheader dt,
+div#grpheader dd,
+div#nav-global li,
+div#nav-global dt,
+div#nav-global dd,
+div#str-sub-common li,
+div#str-sub-common dt,
+div#str-sub-common dd{
+margin:0;
+padding:0;
+}
+
+div#grpheader li p,
+div#grpheader li li,
+div#grpheader li dt,
+div#grpheader li dd,
+div#grpheader dd p,
+div#grpheader dd li,
+div#grpheader dd dt,
+div#grpheader dd dd,
+div#nav-global li p,
+div#nav-global li li,
+div#nav-global li dt,
+div#nav-global li dd,
+div#nav-global dd p,
+div#nav-global dd li,
+div#nav-global dd dt,
+div#nav-global dd dd,
+div#str-sub-common li p,
+div#str-sub-common li li,
+div#str-sub-common li dt,
+div#str-sub-common li dd,
+div#str-sub-common dd p,
+div#str-sub-common dd li,
+div#str-sub-common dd dt,
+div#str-sub-common dd dd{
+font-size:100%;
+}
+
+
+/* ----------------------------------------------------------------
+	01. Image Module
+----------------------------------------------------------------- */
+div#grpheader img,
+div#nav-global img,
+div#str-sub-common img{
+border:0;
+vertical-align:bottom;
+}
+
+/* ----------------------------------------------------------------
+	07. Form Module
+----------------------------------------------------------------- */
+
+form,
+fieldset{
+margin:0;
+padding:0;
+border:0;
+}
+
+input,
+select{
+margin:0;
+padding:0;
+border:0;
+vertical-align:middle;
+font-size:13px;
+}
+
+label{
+cursor:pointer;
+}
+
+legend{
+display:none;
+}
+
+/* ----------------------------------------------------------------
+	08. Horizontal Rule
+----------------------------------------------------------------- */
+hr{
+display:none;
+}

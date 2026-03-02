@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* ===============================
+共通
+ =============================== */
+/* 広告掲載日 */
+.u-spread_ad_day {
+  display: none !important;
+  margin: 0 0 30px 0 !important;
+  font-size: 16px !important;
+  color: #000 !important;
+  text-align: right !important;
+}
+.u-spread_lp .u-spread_ad_day { /* LPの場合のみ表示 */
+  display: block !important;
+}
+@media screen and (max-width: 999px){
+  .u-spread_ad_day {
+    font-size: 13px !important;
+  }
+}
+
+/* 注釈 */
+.u-spread_caution {
+  color:#666 !important;
+  font-size:94.4% !important;
+  margin:0px 0px 10px 0px !important;
+  padding-left: 1.3em !important;
+  text-indent: -1.3em !important;
+}
+.u-spread_caution::before {
+  content:"※ ";
+}
+@media screen and (max-width: 999px){
+  .u-spread_caution {
+    margin:0px 0px 10px 0px !important;
+    font-size:92.8% !important;
+  }
+}
+
+.u-spread_fc_red {
+  color: #bf0000 !important;
+}
+
+/* PCSP */
+@media screen and (min-width: 768px){
+  .u-spread_sp {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px){
+  .u-spread_pc {
+    display: none !important;
+  }
+}
+
+/* ===============================
+スプレッド 落とし 戻し
+ =============================== */
+/* 通常時 */
+.u-spread_switch.-u-type_switch_out {
+  display: none !important;
+}
+@media screen and (max-width: 767px){
+  .main_img_wrap {
+    height: 170vw;
+  }
+}
+
+/* 落としの時 */
+/* .u-spread_switch.-u-type_switch_in {
+  display: none !important;
+} */
+
+/* 落としの時 テーブル表示Ver */
+/* .u-spread_switch.-u-type_switch_in {
+  display: none !important;
+}
+.u-spread_switch.-u-type_switch_in.-u-type_switch_table {
+  display: block !important;
+} */

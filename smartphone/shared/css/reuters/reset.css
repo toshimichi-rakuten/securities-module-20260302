@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* ===================================================================
+CSS information
+ file name  :  reset.css
+ style info :
+=================================================================== */
+
+/*
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+		margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+*/
+
+body {
+	line-height:1;
+	margin:0;
+	color:#333;
+	font-size:100%;
+	font-family: ArialMT, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", メイリオ, sans-serif;
+  -webkit-text-size-adjust: none; /* フォントサイズ自動調整 */
+	border:0;
+	outline:0;
+	/*vertical-align:baseline;*/
+	background:transparent;
+	letter-spacing:-0.05em;
+}
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
+	margin: 0;
+	font-weight:normal;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+hr {
+	display:block;
+	height:1px;
+	border:0;
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+li {
+	padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	/*-webkit-tap-highlight-color: rgba(200,200,555,.6);*/
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}

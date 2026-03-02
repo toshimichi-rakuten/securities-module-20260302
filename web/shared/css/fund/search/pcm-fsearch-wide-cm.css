@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*# CM add */
+body#pcm-vitior {
+    min-width: 1280px;
+}
+#pcm-vitior #pcm-fsearch-header .pcm-fsearch-inner-header > h1 {
+    font-weight: bold;
+}
+#pcm-vitior .pcm-fsearch-keyword > button {
+    font-size: 16px;
+    line-height: 1.0;
+}
+#pcm-vitior .pcm-fsearch-snackbar {
+    bottom: 72px;
+}
+
+#pcm-vitior .pcm-fsearch-table th{
+    font-weight: bold;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-container__side .pcm-fsearch-condition-select__box--keyword {
+    padding: 12px 12px 16px;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-table--fund-score, #pcm-vitior #pcm-fsearch .pcm-fsearch-table--return,
+#pcm-vitior #pcm-fsearch .pcm-fsearch-table--Sharperatio,
+#pcm-vitior #pcm-fsearch .pcm-fsearch-table--standard-deviation{
+    border-spacing: 4px;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-dropdown__content{
+  z-index: 1000;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-floating-button{
+    bottom: 72px;
+    z-index: 1000;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-floating-button .rex-icon-chevron-down {
+    height: 24px;
+    vertical-align: sub;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-result-table__button--fav:focus > span {
+  display: inherit;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-result-table__button--fav > span{
+    line-height: 16px;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-result-table__button--fav > span:focus {
+  display: inline-grid;
+}
+#pcm-vitior .pcm-fsearch-tag__dismiss{
+    line-height: 0.8;
+    bottom: -1px;
+}
+#pcm-vitior .pcm-fsearch-modal{
+  z-index: 9999;
+}
+#pcm-vitior #pcm-fsearch .pcm-fsearch-floating-button.is-move {
+  -webkit-animation: move .12s;
+  bottom: 247px;
+  animation: move .12s;
+}
+
+@-webkit-keyframes move {
+  from {
+    bottom: 72px;
+  }
+  to {
+    bottom: 247px;
+  }
+}
+
+@keyframes move {
+  from {
+    bottom: 72px;
+  }
+  to {
+    bottom: 247px;
+  }
+}
+#pcm-vitior .pcm-fsearch-snackbar.is-open-footer-fav {
+  bottom: 250px
+}
+
+#pcm-vitior .pcm-fsearch-snackbar.is-open-footer-fav.is-show2 {
+  -webkit-animation: fadein2 .3s, fadeout2 .3s 3.6s;
+  visibility: visible;
+  animation: fadein2 .3s, fadeout2 .3s 3.6s
+}
+
+@-webkit-keyframes fadein2 {
+  from {
+      bottom: 0;
+      opacity: 0
+  }
+  to {
+      bottom: 250px;
+      opacity: 1
+  }
+}
+
+@keyframes fadein2 {
+  from {
+      bottom: 0;
+      opacity: 0
+  }
+  to {
+      bottom: 250px;
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeout2 {
+  from {
+      bottom: 250px;
+      opacity: 1
+  }
+  to {
+      bottom: 0;
+      opacity: 0
+  }
+}
+
+@keyframes fadeout2 {
+  from {
+      bottom: 250px;
+      opacity: 1
+  }
+  to {
+      bottom: 0;
+      opacity: 0
+  }
+}
+
+
+#pcm-fsearch-risk .s1-risk-common__container{
+    width: 1176px;
+}
+
+
+/*
+  CX 追記
+*/
+#pcm-fsearch-header .pcm-fsearch-inner-header {
+  margin: 32px 0 16px;
+}
+
+#pcm-vitior .pcm-fsearch-result--bottom .pcm-fsearch-result-pagination .pcm-fsearch-page-link--prev > span,
+#pcm-vitior .pcm-fsearch-result--bottom .pcm-fsearch-result-pagination .pcm-fsearch-page-link--next > span {
+  height: 18px;
+}
+
+/* スナックバー */
+#pcm-vitior .pcm-fsearch-snackbar .pcm-fsearch-snackbar__icon {
+  width: 24px;
+  height: 24px;
+}
+#pcm-vitior .pcm-fsearch-snackbar .pcm-fsearch-snackbar__link {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ヘルプアイコン - サイドメニュー */
+#pcm-vitior .pcm-fsearch-container__side .pcm-fsearch-condition-select__header .pcm-fsearch-tooltip__outer {
+  display: block;
+}
+#pcm-vitior .pcm-fsearch-container__side .pcm-fsearch-condition-select__header .pcm-fsearch-tooltip__outer > span {
+  height: 20px;
+}
+
+#pcm-vitior .pcm-fsearch-detailed-condition__header > a > span:last-child {
+  height: 20px;
+}
+
+/* フッターエリア　グラデーション削除 */
+#pcm-vitior .footer-fav {
+  background: transparent;
+  height: auto;
+}
+
+#pcm-vitior .footer-fav__container {
+  height: 175px;
+  margin: 0 auto;
+}
+
+#pcm-vitior .footer-fav__favs-button,
+#pcm-vitior .footer-fav__checked-button {
+  top: -40px;
+}
+
+#pcm-vitior .footer-fav__checked-items {
+  top: 20px;
+}

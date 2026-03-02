@@ -1,0 +1,737 @@
+@charset "UTF-8";
+/* =========================================================
+ settings
+========================================================= */
+/*!
+ * Variables
+ */
+/* 各種ラベルカラー
+ * ガイドラインとははずれても良い
+ */
+/* =========================================================
+ tool
+========================================================= */
+/*!
+ * Utility Mixins
+ */
+/*!
+ * Button Variables
+ */
+/*!
+ * Button Mixins
+ */
+/* ====================
+ * Ghost button module
+ ==================== */
+@font-face {
+  font-family: "glyphs";
+  src: url("/web/shared/font/glyphs.eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "glyphs";
+  src: url("/web/shared/font/glyphs.eot");
+  src: url("/web/shared/font/glyphs.eot?#iefix") format("embedded-opentype"), url("/web/shared/font/glyphs.woff") format("woff"), url("/web/shared/font/glyphs.ttf") format("truetype"), url("/web/shared/font/glyphs.svg?#glyphs") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.s-glyph {
+  font-family: "glyphs";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon_101_facebook:before {
+  content: "\f101"; }
+
+.icon_102_twitter:before {
+  content: "\f102"; }
+
+.icon_103_google:before {
+  content: "\f103"; }
+
+.icon_104_youtube:before {
+  content: "\f104"; }
+
+.icon_105_marketspeed:before {
+  content: "\f105"; }
+
+.icon_106_marketspeedfx:before {
+  content: "\f106"; }
+
+.icon_107_ispeed:before {
+  content: "\f107"; }
+
+.icon_108_search:before {
+  content: "\f108"; }
+
+.icon_109_lock:before {
+  content: "\f109"; }
+
+.icon_10a_pen:before {
+  content: "\f10a"; }
+
+.icon_10b_check:before {
+  content: "\f10b"; }
+
+.icon_10c_uncheck:before {
+  content: "\f10c"; }
+
+.icon_10d_chevron-down:before {
+  content: "\f10d"; }
+
+.icon_10e_chevron-left:before {
+  content: "\f10e"; }
+
+.icon_10f_chevron-right:before {
+  content: "\f10f"; }
+
+.icon_110_chevron-up:before {
+  content: "\f110"; }
+
+.icon_111_caret-down:before {
+  content: "\f111"; }
+
+.icon_112_caret-left:before {
+  content: "\f112"; }
+
+.icon_113_caret-right:before {
+  content: "\f113"; }
+
+.icon_114_caret-up:before {
+  content: "\f114"; }
+
+.icon_115_triangle-down:before {
+  content: "\f115"; }
+
+.icon_116_triangle-right:before {
+  content: "\f116"; }
+
+.icon_117_triangle-left:before {
+  content: "\f117"; }
+
+.icon_118_triangle-up:before {
+  content: "\f118"; }
+
+.icon_119_exclamation-triangle:before {
+  content: "\f119"; }
+
+.icon_11a_triangle-small-down:before {
+  content: "\f11a"; }
+
+.icon_11b_triangle-small-right:before {
+  content: "\f11b"; }
+
+.icon_11c_triangle-small-left:before {
+  content: "\f11c"; }
+
+.icon_11d_triangle-small-up:before {
+  content: "\f11d"; }
+
+.icon_11e_bullet_small:before {
+  content: "\f11e"; }
+
+.icon_11f_customer_service:before {
+  content: "\f11f"; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/* =========================================================
+ module
+========================================================= */
+.vact-grid {
+  margin: 0 auto;
+  zoom: 1;
+}
+.vact-grid:before, .vact-grid:after {
+  content: " ";
+  display: table;
+}
+.vact-grid:after { clear: both;}
+.vact-grid__cell { float: left;}
+.vact-grid__cell:first-child { width: 560px;}
+.vact-grid__cell:last-child {
+  width: 360px;
+  margin-left: 20px;
+}
+
+.vact-login-form {
+  border: 4px solid #ddd;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.vact-login-form__inner {
+  background-color: #f5f5f5;
+  padding: 28px;
+}
+.vact-login-form__hdg {
+  font-size: 22px;
+  color: #003399;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.vact-login-form__softkey-sprite-icon {
+  display: inline-block;
+  background-image: url(/web/shared/img/sprites-shared.png?1489628248511);
+  background-position: -124px -96px;
+  width: 21px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.vact-login-form__login-button {
+  padding: 8px 10px 5px;
+  border-radius: 3px;
+  font-size: 16px;
+  position: relative;
+  background: #334298;
+  border: 1px solid #334298;
+  box-shadow: 0 3px 0 0 #182882;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+}
+.vact-login-form__login-button:link,
+.vact-login-form__login-button:visited,
+.vact-login-form__login-button:hover,
+.vact-login-form__login-button:active {
+  color: #fff;
+}
+* + html .vact-login-form__login-button {
+  display: inline;
+  zoom: 1;
+}
+.lt-ie9 .vact-login-form__login-button {
+  border: 0;
+  border-bottom: 3px solid #182882;
+  outline: 0;
+}
+.vact-login-form__login-button:hover {
+  top: 3px;
+  text-decoration: none;
+  box-shadow: none;
+}
+.lt-ie9 .vact-login-form__login-button:hover {
+  top: 3px;
+  border-bottom-color: transparent;
+}
+
+.vact-login-form-field {
+  margin-top: 14px;
+  margin-bottom: 7px;
+}
+.vact-login-form-field__label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+.vact-login-form-field__input {
+  border: 1px solid #ddd;
+  font-size: 18px;
+  padding: 7px 14px;
+  box-sizing: border-box;
+  width: 14em;
+}
+.vact-login-form-field__input--pass {
+  width: 100%;
+  margin-bottom: 7px;
+}
+.vact-login-form-field__pass-chk { color: #0069c7;}
+.vact-login-form-field + .vact-login-form-field { margin-bottom: 14px;}
+
+
+
+.vact-login-form-02 {
+  background-color: #ebebeb;
+  padding: 16px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.vact-login-form-02__inner {
+  padding: 0;
+}
+
+.vact-login-form-02-field {
+  width: 302px;
+  float: left;
+}
+
+.help-content-area{
+  width: 200px;
+  padding: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+  float: right;
+}
+
+
+/* ------------------------------------
+  keyboard icon layout 
+------------------------------------*/
+.vact-login-form-02__softkey{
+  position: relative;
+  padding-left: 27px;
+}
+.vact-login-form-02__softkey::before {
+  content: '';
+  display: inline-block;
+  background-image: url("/web/shared/images/icon/V_ACT_Login_new-icon-keyboard-02.png");
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+.vact-login-form-02__softkey:link,
+.vact-login-form-02__softkey:visited {
+  color: #053ace;
+}
+
+
+
+.vact-login-form-02-field__label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+.vact-login-form-02-field__label span {
+  font-weight: normal;
+}
+.vact-login-form-02-field__input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-bottom: 4px;
+  padding: 7px 14px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.vact-login-form-02-field__input:focus {
+  outline: 2px solid #004f75;
+  background-color: #f7f7f7 !important;
+}
+.vact-login-form-02-field__input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* .vact-login-form-02-field__input--pass {
+  margin-bottom: 24px;
+} */
+
+.form-text-block{
+  margin-bottom: 4px;
+}
+.vact-login-form-02-field__label,
+.vact-login-form-02-field__conf{
+  width: 50%;
+}
+
+/* ------------------------------------
+  question icon layout 
+------------------------------------*/
+.vact-login-form-02-field__conf,
+.vact-login-form-02__loginhelp{
+  vertical-align: middle;
+  position: relative;
+  margin-top: 2px;
+}
+.vact-login-form-02-field__conf::before,
+.vact-login-form-02__loginhelp::before{
+  content: '';
+  display: inline-block;
+  background-image: url("/web/shared/images/icon/V_ACT_Login_new-icon-question.png");
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  position: absolute;
+  top: -2px;
+  left: 26px;
+}
+
+.vact-login-form-02-field__conf a{ line-height: 1;}
+.vact-login-form-02-field__conf a:link,
+.vact-login-form-02-field__conf a:visited { color: #006a9e;}
+
+.vact-login-form-02__loginhelp{
+  position: relative;
+  padding-left: 27px;
+}
+.vact-login-form-02__loginhelp::before{
+  left: 0;
+}
+
+.vact-login-form-02-field__pass-chk {
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.vact-login-form-02-btn {
+  zoom: 1;
+}
+.vact-login-form-02-btn:before,
+.vact-login-form-02-btn:after {
+  content: " ";
+  display: table;
+}
+.vact-login-form-02-btn:after { clear: both;}
+
+/* ================ add button style 20180423 ================ */
+
+.vact-login-form-02-btn__item button{
+  padding: 0;
+  border: none;
+  line-height: 1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #bf0000;
+  border-radius: 4px;
+  height: 52px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* 「ログイン」ボタン幅 */
+.vact-login-form-02-btn--login{
+  width: 320px;
+  float: left;
+}
+/* 「クリア」ボタン幅 */
+.vact-login-form-02-btn--clear{
+  float: right;
+  width: 184px;
+}
+
+.vact-login-form-02-btn--login button,
+.vact-login-form-02-btn--clear button{
+  width: 100%;
+}
+.vact-login-form-02-btn--clear button{
+  border: 1px solid #d1d1d1;
+  color: #333;
+  background-color: #fff;
+}
+.vact-login-form-02-btn--login button .s-glyph{
+  margin-top: -4px;
+}
+
+/* 「ログインID再通知」「パスワード再設定」ボタン */
+.vact-login-form-02-btn--02{
+  width: 200px;
+}
+.vact-login-form-02-btn--02 a{
+  display: block;
+  line-height: 1;
+  color: #ec0606;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 12px 0 11px;
+  border: 1px solid #ec0606;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.support-guide-text{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+.support-guide-text::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ec0606;
+  margin-right: 6px;
+}
+
+
+.passwd-form-aera{
+  position: relative;
+}
+.passwd-form-aera .toggle-password{
+  margin: 0;
+  position: absolute;
+}
+
+input::-ms-reveal {
+  visibility:hidden
+}
+
+/* ================ account login style 20210305 ================ */
+
+.vact-login-form-03{
+  margin:auto;
+  padding:24px;
+  width:708px;
+  background-color:#c2d0f7;
+  box-sizing:border-box;
+}
+.vact-login-form-03__inner{
+  padding:0;
+}
+.vact-login-form-03-field{
+  width:442px;
+  float:left;
+}
+.vact-login-form-03-tbl{
+  display:table;
+}
+.vact-login-form-03-tbl__item{
+  display:table-cell;
+}
+.vact-login-form-03-field__label{
+  width:112px;
+  font-size:18px;
+  font-weight:bold;
+  color:#000;
+}
+.vact-login-form-03-field__alphanumeric,.vact-login-form-03-field__pass-chk{
+  margin-bottom:18px;
+  font-size:11px;
+  text-decoration:none;
+}
+.vact-login-form-03-field__input{
+  margin-bottom:4px;
+  padding:7px 14px;
+  width:320px;
+  font-size:18px;
+  border:1px solid #ddd;
+  border-radius:3px;
+  box-sizing:border-box;
+}
+.vact-login-form-03 .help-content-area{
+  padding:16px 16px 20px 16px;
+  width:204px;
+}
+.vact-login-form-03__softkey,.vact-login-form-03__loginhelp{
+  position:relative;
+  padding-left:27px;
+  vertical-align:middle;
+}
+.vact-login-form-03__softkey::before {
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:0;
+  display:inline-block;
+  margin-right:7px;
+  width:24px;
+  height:24px;
+  background-image:url("/web/shared/images/icon/V_ACT_Login_new-icon-keyboard-02.png");
+}
+.vact-login-form-03__loginhelp::before {
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:0;
+  display:inline-block;
+  margin-right:6px;
+  width:24px;
+  height:24px;
+  background-image:url(/web/shared/images/icon/V_ACT_Login_new-icon-question.png);
+}
+.vact-login-form-03__softkey:link,.vact-login-form-03__softkey:visited,.vact-login-form-03__loginhelp:link,.vact-login-form-03__loginhelp:visited {
+  color:#053ace;
+}
+.vact-login-form-03-btn{
+  display:table;
+  margin:auto;
+  width:405px;
+  zoom:1;
+}
+.vact-login-form-03-btn--login{
+  width:255px;
+  float:left;
+}
+.vact-login-form-03-btn--clear{
+  width:126px;
+  float:right;
+}
+.vact-login-form-03-btn--login button,.vact-login-form-03-btn--clear button{
+  width:100%;
+}
+.vact-login-form-03-btn__item button{
+  position:relative;
+  padding:0;
+  height:52px;
+  font-size:16px;
+  font-weight:bold;
+  letter-spacing:1px;
+  line-height:1;
+  color:#fff;
+  background-color:#053ace;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+/* ================ add passkey style 20250925 ================ */
+
+.vact-login-form-03-separator{
+  display: block;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin: 8px auto 8px auto;
+  width: 405px;
+}
+.vact-login-form-03-separator::before{
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background:#9496A4;
+}
+.vact-login-form-03-separator span{
+  position: relative;
+  padding: 0 1em;
+  font-size: 12px;
+  background-color: #c2d0f7;
+  color: #000;
+}
+.vact-login-form-03-passkey-btn{
+  padding: 0;
+  height: 52px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #053ace;
+  background-color: #fff;
+  border: 1px solid #053ace;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 405px;
+  margin: 0 auto;
+  display: block;
+}
+
+.vact-login-form-02-separator{
+  display: block;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin: 14px auto;
+  width: 100%;
+}
+.vact-login-form-02-separator::before{
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background:#D1D1D1;
+}
+.vact-login-form-02-separator span{
+  position: relative;
+  padding: 0 1em;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333333;
+}
+.vact-login-form-02-passkey-btn{
+  display: block;
+  line-height: 1;
+  color: #ec0606;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 12px 0 11px;
+  border: 1px solid #ec0606;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  height: 52px;
+  width: 100%;
+}
+.vact-login-form-02-passkey-btn i{
+  font-size: 24px;
+  vertical-align: middle;
+}
+.vact-login-form-02-passkey-question{
+  text-align: center;
+  margin: 14px 0 0 0;
+}
+.vact-login-form-02-passkey-question a{
+  position: relative;
+  padding-left: 30px;
+}
+.vact-login-form-02-passkey-question a::before{
+  content: '';
+  display: inline-block;
+  background-image: url(/web/shared/images/icon/V_ACT_Login_new-icon-question.png);
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}

@@ -1,0 +1,11 @@
+<svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="11" rx="1" fill="#053ACE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.2853V10C0 10.5523 0.447715 11 1 11H2.18931L15.8699 0.506344C15.6979 0.203948 15.3728 0 15 0H12.1052L0 9.2853Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.760254 10.9727C0.836914 10.9922 0.91748 11 1 11H2.20312L15.8745 0.515625C15.7622 0.3125 15.5825 0.152344 15.3662 0.0664062C15.2715 0.03125 15.1694 0.0078125 15.063 0C15.042 0 15.021 0 15 0L0.760254 10.9727Z" fill="#D80000"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.16377 0H0.999937C0.451438 0 0.00607972 0.441598 0 0.988657L13.0518 11H14.9999C15.5522 11 15.9999 10.5523 15.9999 10V9.84598L3.16377 0Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.423531 0.183594C0.169273 0.363262 0.00256638 0.658593 0 0.992999L13.0472 11.0008H14.5259L0.423531 0.183594Z" fill="#D80000"/>
+<rect y="3.5" width="16" height="4" fill="white"/>
+<rect x="6" width="4" height="11" fill="white"/>
+<rect y="4.5" width="16" height="2" fill="#D80000"/>
+<rect x="7" width="2" height="11" fill="#D80000"/>
+</svg>

@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+f-standard.scss
+
+フッターのスタイルはここに書く
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+variables.scss
+
+共通して使う文字スタイルや色情報は変数で管理する
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*リンクカラー指定　関数*/
+/*フォントサイズ指定用　関数*/
+/*バックグラウンド画像をSP時、表示を2分の1にする　関数*/
+/*レスポンシブメソッド*/
+.s1-footer {
+  width: 100%;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, MS-PGothic, sans-serif;
+}
+.s1-footer .copyright {
+  padding: 10px 0;
+  border-top: solid 1px #555;
+  font-size: 12px;
+  font-size: 0.75rem;
+  box-sizing: border-box;
+}
+.s1-footer .copyright p {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.s1-footer .contents-liner:after {
+  content: "";
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+.s1-footer .contents-liner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 959px) {
+  .s1-footer .contents-liner {
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .s1-footer .contents-liner {
+    max-width: 950px;
+  }
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+h-standard.scss
+
+ヘッダーのスタイルはここに書く
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.s1-header {
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, MS-PGothic, sans-serif;
+  box-shadow: 0px 3px 11px -5px rgba(0, 0, 0, 0.51);
+  position: relative;
+  z-index: 9999;
+  height: 56px;
+  background-color: #fff;
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .s1-header {
+    height: 70px;
+  }
+}
+.s1-header.border {
+  box-shadow: none;
+  border-bottom: 2px solid #bf0000;
+}
+.s1-header.floating {
+  position: fixed;
+  top: 0;
+}
+.s1-header.floating + .main-visual {
+  margin-top: 56px;
+}
+@media screen and (min-width: 960px) {
+  .s1-header.floating + .main-visual {
+    margin-top: 70px;
+  }
+}
+.s1-header.floating + .contents, .s1-header.floating + .main-visual {
+  margin-top: 70px;
+}
+.s1-header.scroll-animation {
+  position: fixed;
+  top: 0;
+  transition: transform 0.4s ease;
+}
+.s1-header.scroll-animation--unpinned {
+  transform: translateY(-120%);
+}
+.s1-header.scroll-animation + .main-visual {
+  margin-top: 56px;
+}
+@media screen and (min-width: 960px) {
+  .s1-header.scroll-animation + .main-visual {
+    margin-top: 70px;
+  }
+}
+.s1-header.scroll-animation + .contents, .s1-header.scroll-animation + .main-visual {
+  margin-top: 70px;
+}
+
+.s1-lp-header {
+  width: 100%;
+  position: relative;
+}
+.s1-lp-header__inner {
+  padding: 0 8px;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header__inner {
+    padding: 8px 10px;
+  }
+}
+.s1-lp-header-logo {
+  margin-top: 8px;
+  display: inline-block;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header-logo {
+    margin-top: 4px;
+    max-width: 232px;
+  }
+}
+.s1-lp-header-logo a {
+  display: inline-block;
+}
+.s1-lp-header-logo a:hover {
+  text-decoration: none;
+}
+.s1-lp-header-logo img {
+  max-width: 100%;
+}
+.s1-lp-header-right {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 56px;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 359px) {
+  .s1-lp-header-right {
+    display: none;
+  }
+}
+.s1-lp-header-right li {
+  margin-left: 10px;
+}
+.s1-lp-header-right li a {
+  text-decoration: none;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header-right li {
+    margin-left: 14px;
+  }
+}
+.s1-lp-header-ichiba a {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.s1-lp-header-ichiba a:link, .s1-lp-header-ichiba a:visited, .s1-lp-header-ichiba a:hover, .s1-lp-header-ichiba a:active {
+  color: #333;
+}
+.s1-lp-header-ichiba a:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header-ichiba a {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .s1-lp-header-ichiba a:hover {
+    background-color: #f0f0f0;
+  }
+}
+.s1-lp-header-nav {
+  margin-top: -12px;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header-nav {
+    margin-top: -10px;
+  }
+}
+.s1-lp-header-account > a, .s1-lp-header-login > a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 14px;
+  height: 44px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s cubic-bezier(0.25, 0, 0.45, 1), color 0.3s cubic-bezier(0.25, 0, 0.45, 1), outline 0.3s cubic-bezier(0.25, 0, 0.45, 1);
+  outline: none;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header-account > a, .s1-lp-header-login > a {
+    padding: 0 16px;
+    height: 48px;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+.s1-lp-header-account > a {
+  background: #bf0000;
+  border: solid 1px transparent;
+}
+.s1-lp-header-account > a:link, .s1-lp-header-account > a:visited, .s1-lp-header-account > a:hover, .s1-lp-header-account > a:active {
+  color: #fff;
+}
+.s1-lp-header-account > a:hover {
+  text-decoration: none;
+  background: #ec0606;
+}
+.s1-lp-header-account > a:active {
+  background: #8C0000;
+}
+.s1-lp-header-login > a {
+  background: #fff;
+  border: solid 1px #bf0000;
+}
+.s1-lp-header-login > a:link, .s1-lp-header-login > a:visited, .s1-lp-header-login > a:hover, .s1-lp-header-login > a:active {
+  color: #bf0000;
+}
+.s1-lp-header-login > a:hover {
+  text-decoration: none;
+  background: #f7f7f7;
+}
+.s1-lp-header-login > a:active {
+  background: #f7f7f7;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+.headerのみの場合はロゴのみを表示
+.headerに対し.ichiba又は.account際は右に表示
+
+/////////////////////////////////////////////////////////////////////////////*/
+.s1-lp-header-ichiba {
+  display: none;
+}
+.s1-header.ichiba .s1-lp-header-ichiba {
+  display: block;
+}
+
+.s1-lp-header-account {
+  display: none;
+}
+.s1-header.account .s1-lp-header-account {
+  display: block;
+}
+
+.s1-lp-header-login {
+  display: none;
+}
+.s1-header.login .s1-lp-header-login {
+  display: block;
+}
+
+.s1-lp-header-nav {
+  display: none;
+}
+.s1-header.nav .s1-lp-header-nav { /*PC/SP共通表示*/
+  display: block;
+}
+.s1-header.sp-nav .s1-lp-header-nav { /*SPのみ表示*/ }
+@media screen and (max-width: 959px) {
+  .s1-header.sp-nav .s1-lp-header-nav {
+    display: block;
+  }
+}
+
+.s1-lp-header-nav-list {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .s1-header.nav-list .s1-lp-header-nav-list {
+    display: block;
+  }
+}
+.s1-lp-header-nav-list.active {
+  display: block;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  margin: 0 !important;
+  width: 100%;
+  background-color: #fff;
+}
+@media screen and (min-width: 960px) {
+  .s1-lp-header-nav-list.active {
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .s1-lp-header-nav-list.active:before {
+    content: "";
+    background: inherit; /*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1; /*重なり順序を一番下にしておく*/
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+PC/SPでロゴデザインを出しわけ
+
+/////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 959px) {
+  .hdg-img-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hdg-img-sp {
+    display: none;
+  }
+}
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+ユーザー側でjavascriptが使用できない設定になっている場合に表示する
+
+/////////////////////////////////////////////////////////////////////////////*/
+.s1-lp-header-noscript-bar {
+  background-color: #f99;
+}
+.s1-lp-header-noscript-bar__inner {
+  text-align: center;
+  padding: 10px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+メニューボタン
+jQueryでオンオフを制御しています
+
+/////////////////////////////////////////////////////////////////////////////*/
+/* ===============
+This humberger button was generated by Zarigani Design Office Humberger Button Generator.
+
+Zarigani Design Office's Hamberger Button
+Copyright: 2019 Zarigani Design Office
+URL: https://zarigani-design-office.com/hamberger/
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+================*/
+/*+++ Reset +++*/
+.s1-global-nav-btn * {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+}
+
+.s1-global-nav-btn {
+  display: block;
+  padding: 0;
+  width: 35px;
+  height: 20px;
+  position: relative;
+  background: none;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  outline: none;
+}
+@media screen and (min-width: 960px) {
+  .s1-global-nav-btn {
+    width: 42px;
+    height: 26px;
+  }
+}
+.s1-global-nav-btn > span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  transition: all 0.2s;
+  transform-origin: 0% 0%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0;
+}
+.s1-global-nav-btn > span:nth-of-type(1) {
+  top: 0;
+}
+.s1-global-nav-btn > span:nth-of-type(2) {
+  top: 50%;
+}
+.s1-global-nav-btn > span:nth-of-type(3) {
+  top: 100%;
+}
+@media screen and (min-width: 960px) {
+  .s1-global-nav-btn > span {
+    width: 42px;
+  }
+}
+.s1-global-nav-btn.active > span {
+  width: 28.28px;
+  left: 7.5px;
+}
+@media screen and (min-width: 960px) {
+  .s1-global-nav-btn.active > span {
+    width: 36.77px;
+    left: 8px;
+  }
+}
+.s1-global-nav-btn.active > span:nth-of-type(1) {
+  transform: rotate(45deg) translateY(-50%);
+  top: 0px;
+}
+.s1-global-nav-btn.active > span:nth-of-type(2) {
+  opacity: 0;
+}
+.s1-global-nav-btn.active > span:nth-of-type(3) {
+  transform: rotate(-45deg) translateY(-50%);
+  top: 100%;
+}
+.s1-global-nav-btn.active .s1-global-nav-btn__menu {
+  display: none;
+}
+.s1-global-nav-btn.active .s1-global-nav-btn__close {
+  display: block;
+}
+
+.s1-global-nav-btn__text {
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.s1-global-nav-btn__close {
+  letter-spacing: 0.08em;
+  display: none;
+}
+
+/*+++ Default Button Color +++*/
+.s1-global-nav-btn {
+  color: #000;
+}
+.s1-global-nav-btn > span {
+  background-color: #000;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////
+
+SP時はメニューリスト
+
+/////////////////////////////////////////////////////////////////////////////*/
+.s1-header-nav-list {
+  border-bottom: 1px solid #aaa;
+}
+.s1-header-nav-list .s1-header-nav-list {
+  border-bottom: none;
+}
+@media screen and (min-width: 960px) {
+  .s1-header-nav-list {
+    border: none;
+  }
+}
+.s1-header-nav-list > li {
+  margin: 0;
+  padding: 0 8px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  border-top: 1px solid #aaa;
+}
+@media screen and (min-width: 960px) {
+  .s1-header-nav-list > li {
+    font-size: 22px;
+    font-size: 1.375rem;
+    border: none;
+  }
+}
+.s1-header-nav-list > li > a {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 8px;
+  line-height: 1.2;
+}
+.s1-header-nav-list > li > a:link, .s1-header-nav-list > li > a:visited, .s1-header-nav-list > li > a:hover, .s1-header-nav-list > li > a:active {
+  color: #000;
+}
+
+.sp-nav .s1-lp-header-nav-list {
+  float: left;
+  margin: 0;
+}
+@media screen and (min-width: 960px) {
+  .sp-nav .s1-header-nav-list {
+    display: flex;
+    align-items: center;
+  }
+}
+.sp-nav .s1-header-nav-list > li {
+  width: 100%;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 960px) {
+  .sp-nav .s1-header-nav-list > li {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .sp-nav .s1-header-nav-list > li > a {
+    display: inline-block;
+    padding: 5px 8px;
+    text-align: center;
+  }
+}
+.sp-nav .s1-header-nav-list > li > a:hover {
+  opacity: 0.6;
+}
+
+.nav .s1-header-nav-list.active {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  .contents.blur {
+    filter: blur(2px);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

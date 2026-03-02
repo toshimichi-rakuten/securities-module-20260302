@@ -1,0 +1,274 @@
+.seminar-label {
+  display: flex;
+  flex-wrap: wrap;
+}
+.seminar-label > span {
+  flex-basis: 80px;
+  margin-right: 10px;
+  background-color: #fff;
+  line-height: 24px;
+  font-size: 12px;
+  color: #0069c7;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  border: 1px solid #0069c7;
+  box-sizing: border-box;
+}
+
+.seminar-label-color01 {
+  border: none !important;
+  color: #fff !important;
+  background-color: #3377ff !important;
+}
+
+.seminar-label-color02 {
+  border: none !important;
+  color: #fff !important;
+  background-color: #ff3508 !important;
+}
+
+.seminar-label-color03 {
+  border: none !important;
+  color: #fff !important;
+  background-color: #78b400 !important;
+}
+
+.seminar-label-color04 {
+  border: none !important;
+  color: #fff !important;
+  background-color: #468cbe !important;
+}
+
+.seminar-label-color05 {
+  border-color: #ff3508 !important;
+  color: #ff3508 !important;
+}
+
+.seminar-icon-time-outlined {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path fill="%230069c7" class="cls-1" d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"/><polygon fill="%230069c7" class="cls-1" points="17 7 15 7 15 16.66 22.61 19.92 23.39 18.08 17 15.34 17 7"/></svg>') no-repeat center center;
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+}
+
+.seminar-icon-location-outlined {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32"><path fill="%230069c7" class="cls-1" d="M16,9a4,4,0,1,0,4,4A4,4,0,0,0,16,9Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,16,15Z"/><path fill="%230069c7" class="cls-1" d="M16,3A10,10,0,0,0,6,13c0,7,10,16,10,16s10-9,10-16A10,10,0,0,0,16,3Zm0,23.19C12.94,23,8,17.06,8,13a8,8,0,0,1,16,0C24,17.06,19.06,23,16,26.19Z"/></svg>') no-repeat center center;
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+}
+
+.seminar-date {
+  margin-bottom: 0 !important;
+}
+.seminar-date span {
+  font-size: 24px;
+}
+.seminar-date + .seminar-date {
+  margin-top: 7px;
+  margin-bottom: 14px !important;
+}
+.seminar-date--index {
+  display: inline-block;
+  font-size: 16px;
+}
+.seminar-date--index + .seminar-date--index {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  margin-left: 24px;
+}
+
+.seminar-txt01 {
+  font-size: 133%;
+  font-weight: bold;
+}
+
+.seminar-txt02 {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.seminar-index-info {
+  margin-bottom: 24px;
+}
+.seminar-index-info:last-child {
+  margin-bottom: 0;
+}
+.seminar-index-info.is-hidden {
+  display: none;
+}
+.seminar-index-info__link {
+  border: #CCCCCC 1px solid;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  text-decoration: none;
+  background-color: #fff;
+}
+.seminar-index-info__link:link, .seminar-index-info__link:visited, .seminar-index-info__link:active {
+  color: #000;
+}
+.seminar-index-info__link:hover {
+  color: #000;
+  text-decoration: none !important;
+  opacity: 0.75;
+}
+.seminar-index-info__l {
+  flex-basis: 124px;
+  margin-right: 20px;
+  vertical-align: middle;
+  padding-top: 16px;
+}
+.seminar-index-info__l span:nth-child(1) {
+  display: block;
+  font-weight: bold;
+}
+.seminar-index-info__l span:nth-child(2) {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+.seminar-index-info__l span:nth-child(3) {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.seminar-index-info__r {
+  flex-grow: 5;
+}
+.seminar-index-info__c {
+  flex-basis: 124px;
+  margin-right: 20px;
+}
+.seminar-index-info__c img {
+  width: 124px;
+}
+.seminar-index-info__hdg {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0069c7;
+  margin-bottom: 10px;
+}
+
+.seminar-status {
+  display: block;
+  line-height: 30px;
+  width: 124px;
+  font-size: 14px;
+  color: #F53A3A;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #F53A3A;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.seminar-status--off {
+  color: #686868;
+  border-color: #686868;
+}
+.seminar-status--unnecessary {
+  color: #0069C7;
+  border-color: #0069C7;
+}
+
+.seminar-profile {
+  padding: 0 !important;
+}
+.seminar-profile > li {
+  display: flex;
+  list-style: none !important;
+}
+.seminar-profile > li span {
+  display: block;
+}
+.seminar-profile > li span:first-child {
+  flex-basis: 8em;
+}
+
+.seminar-company-logo {
+  width: 240px;
+}
+
+.seminar-index-content {
+  background-color: #F6F6F8;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.seminar-filter {
+  background: #fff;
+  padding: 12px 24px 24px;
+  box-sizing: border-box;
+}
+.seminar-filter__head {
+  border-bottom: #EBEBEB 1px solid;
+  display: flex;
+  padding-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.seminar-filter__hdg {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+.seminar-filter__hdg > i {
+  margin-right: 4px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.seminar-filter__clear-btn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #D1D1D1;
+  background: #F7F7F7;
+  box-shadow: 0px 1px 0px 0px #D1D1D1;
+  color: #006A9E;
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.seminar-filter__body {
+  margin-top: 16px;
+}
+
+.seminar-filter-flag {
+  display: flex;
+  justify-content: space-between;
+}
+.seminar-filter-flag__hdg {
+  color: #686868;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 4px;
+}
+.seminar-filter-flag__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 704px;
+}
+.seminar-filter-flag__item {
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 100px;
+  border: 1px solid #D1D1D1;
+  background-color: #fff;
+  color: #BF0000;
+  font-size: 14px;
+}
+.seminar-filter-flag__item > i {
+  margin-right: 4px;
+}
+.seminar-filter-flag__item.is-selected {
+  background: #FFF5F5;
+  border-color: #BF0000;
+}
+.seminar-filter-flag + .seminar-filter-flag {
+  margin-top: 16px;
+}

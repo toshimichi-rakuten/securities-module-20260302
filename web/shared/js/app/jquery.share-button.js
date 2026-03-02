@@ -1,0 +1,5 @@
+/**
+ *  jquery.share-button.js
+ *  Ver 3.2
+ */
+(function(a){a.fn.socialService=function(b){var c=a.extend({line:".line-share",enUrl:encodeURIComponent(location.href),enDoc:encodeURIComponent(document.title),noUrl:location.href,charset:"utf-8"},b);a(c.line).each(function(){if(!navigator.userAgent.match(/(iPhone|iPad|iPod)/)){a(this).hide()}else{a(this).show()}});return this}})(jQuery);$(function(){var a=$("div.social-service");a.socialService();if($.browser.msie&&$.browser.version==7){a.addClass("IE7").find(".twitter-share").css("display","none")}else{if($.browser.msie&&$.browser.version==6){a.addClass("IE6").find(".twitter-share").css("display","none")}else{if($.browser.msie&&$.browser.version==8){a.addClass("IE8").find(".twitter-share").css("display","none")}else{!function(g,b,h){var f,c=g.getElementsByTagName(b)[0],e=/^http:/.test(g.location)?"http":"https";if(!g.getElementById(h)){f=g.createElement(b);f.id=h;f.src=e+"://platform.twitter.com/widgets.js";c.parentNode.insertBefore(f,c)}}(document,"script","twitter-wjs")}}}});

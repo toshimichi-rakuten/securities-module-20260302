@@ -1,0 +1,187 @@
+﻿@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Structure
+*	02. Heading Module
+*	03. Text Module
+*	04. List Module
+*	05. Table Module
+*	06. Image Module
+*	07. Form Module
+*	08. Horizontal Rule
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Structure
+----------------------------------------------------------------- */
+body{
+margin:0;
+padding:0;
+color:#333;
+background:#ffffff;
+font-family:"ＭＳ Ｐゴシック", Arial, sans-serif, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
+font-size:100.01%;
+line-height:1.45;
+}
+
+div#str-container{
+margin:0;
+padding:0;
+width:740px;
+background:#ffffff;
+}
+
+
+/* ----------------------------------------------------------------
+	02. Heading Module
+----------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin:0;
+padding:0;
+font-size:100%;
+}
+
+
+/* ----------------------------------------------------------------
+	03. Text Module
+----------------------------------------------------------------- */
+p{
+margin:0;
+padding:0;
+}
+
+strong{
+color:#b30000;
+font-weight:bold;
+}
+
+em{
+font-style:normal;
+font-weight:bold;
+}
+
+address{
+margin:0;
+padding:0;
+font-style:normal;
+}
+
+
+/* ----------------------------------------------------------------
+	04. Hypertext Module
+----------------------------------------------------------------- */
+a:link{
+color:#3535b4;
+text-decoration:underline;
+}
+
+a:visited{
+color:#6e36b3;
+text-decoration:underline;
+}
+
+a:hover, a:active, a:focus{
+text-decoration:none;
+}
+
+
+/* ----------------------------------------------------------------
+	05. List Module
+----------------------------------------------------------------- */
+ul,
+ol,
+dl{
+margin:0;
+padding:0;
+list-style:none;
+}
+
+ol{
+margin-left:2.5em;
+list-style-type:decimal;
+}
+
+li,
+dt,
+dd{
+margin:0;
+padding:0;
+}
+
+li p,
+li li,
+li dt,
+li dd,
+dd p,
+dd li,
+dd dt,
+dd dd{
+font-size:100%;
+}
+
+
+/* ----------------------------------------------------------------
+	06. Table Module
+----------------------------------------------------------------- */
+table{
+margin:0;
+padding:0;
+}
+
+td p,
+td li,
+td dt,
+td dd{
+font-size:100%;
+}
+
+
+/* ----------------------------------------------------------------
+	01. Image Module
+----------------------------------------------------------------- */
+img{
+border:0;
+vertical-align:bottom;
+}
+
+
+/* ----------------------------------------------------------------
+	07. Form Module
+----------------------------------------------------------------- */
+form,
+fieldset{
+margin:0;
+padding:0;
+border:0;
+}
+
+input,
+select{
+margin:0;
+padding:0;
+border:0;
+vertical-align:middle;
+font-size:13px;
+}
+
+label{
+cursor:pointer;
+}
+
+legend{
+display:none;
+}
+
+
+/* ----------------------------------------------------------------
+	08. Horizontal Rule
+----------------------------------------------------------------- */
+hr{
+display:none;
+}
+

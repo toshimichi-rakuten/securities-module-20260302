@@ -1,0 +1,130 @@
+@charset "EUC-JP";
+
+/*//////////////////////////////////////////////////////////////////
+
+    NAME: help.css
+    DATE: 2011/10/18
+    UPDATE: 2018/09/26
+
+
+//////////////////////////////////////////////////////////////////*/
+
+#help-page{
+	margin-top:10px;
+ 	background-color:#fff;
+}
+
+#help-page div#grpheader{
+	border-bottom:#003399 8px solid;
+	padding-bottom:9px;
+	margin-bottom:36px;
+}
+
+#help-page div#font-control{
+	top:80px;
+	left:800px;
+}
+
+#help-page h1{
+	margin-bottom:20px;
+}
+
+#help-page div.editable-area{
+	width:900px;
+}
+
+#help-page table.tbl-data-01 tbody td strong {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/*
+#help-page table.tbl-data-01 ul li{
+	list-style:disc outside;
+	margin-left:1em;	
+}*/
+
+
+#help-page p.entitle {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 5px;
+    padding: 0;
+	font-weight:bold;
+}
+
+#help-page .mb20{
+	margin-bottom:20px;
+}
+
+#help-page div.lyt-image.image-parallel.image-R div.image {
+    float: right;
+    padding-left: 15px;
+}
+
+#help-page ul.nav-contents-01{
+	margin-bottom:20px;
+}
+/*
+#help-page p.tel-number{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#help-page p.tel-number img{
+	vertical-align:middle;
+}*/
+
+
+#help-page div.box-inquiry-02 {
+    background-color: #FFFFFF;
+    border: 1px solid #616D9D;
+    margin-bottom: 1.25em;
+	height:23em;
+}
+#help-page div.box-inquiry-02 h3{
+	margin: 0 0 10px 0;
+    background-color: #616D9D;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+#help-page div.box-inquiry-02 p.tel-number-free {
+	margin: 0 8px 10px 8px;
+	padding: 10px 0 10px 80px; 
+    background: url("https://www.rakuten-sec.co.jp/web/help/images/index-icon-free-dial.png") no-repeat 10px center #E9EAED;
+    font-size: 153.8%;
+    font-weight: bold;
+
+}
+
+#help-page div.box-inquiry-02 p.tel-number-mob {
+	margin: 0 8px 10px 8px;
+	padding: 10px 0 10px 80px; 
+    background: url("https://www.rakuten-sec.co.jp/web/help/images/index-icon-mob.png") no-repeat 10px center #E9EAED;
+    font-size: 153.8%;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+#help-page div.box-inquiry-03 p{
+    background-color: #616D9D;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 100%;
+    margin: 0 0 30px 0;
+}
+
+#help-page .mb30{
+	margin-bottom:30px;
+}
+
+#help-page table.tbl-data-01 .cell-02{
+	background-color: #E1EDF3;
+	background-image:none;
+}

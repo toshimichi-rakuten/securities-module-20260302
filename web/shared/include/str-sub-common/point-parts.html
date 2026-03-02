@@ -1,0 +1,55 @@
+<div id="membership180" class="point-auth-01" style="display: none; margin-bottom:5px;">
+<div id="head"><p>楽天会員情報</p></div>
+<div id="memberInfo">
+
+<p class="sp-title">楽天ポイント
+<span><a href="javascript:;"><img src="/web/shared/images/myraku/btn-display-01.gif" alt="表示" /></a></span></p>
+</div>
+</div><!--div id="membership"-->
+
+
+<div id="membership180" class="point-auth-02" style="display: none; margin-bottom:5px;">
+<div id="head"><p>楽天会員情報</p></div>
+<div id="memberInfo">
+
+<p class="caption2">このエリアは楽天会員情報の表示エリアです。楽天市場等、楽天グループでご登録いただいているお名前、楽天スーパーポイント、会員ランクが表示されます。</p>
+<p class="caption2">（ご注意）</p>
+<p class="caption2">ご家族でパソコンを共有する等、同一パソコンで複数の楽天会員IDを利用されている場合は、最後に利用された楽天会員IDの上記会員情報が表示されます。</p>
+<p class="point-agree"><a href="javascript:;"><img src="/web/shared/images/myraku/btn-agree-01.gif" alt="同意" /></a></p>
+
+</div>
+</div><!--div id="membership"-->
+
+<div id="point-disp" style="display: none;">
+<script type="text/javascript" src="https://point.widget.rakuten.co.jp/openid/parts?access_key=SUX8vuTHsalsmLXhxxz0FEtWrxSDsyRljCsCj3VvoJHsalsAVTtSulpDwLl4sTy4Q=="></script>
+
+<div class="attention" style="margin:5px 0; border-top:#CACDD9 solid 1px; padding:5px 10px; font-size:60%;">
+<p>「楽天会員ログイン」で次のページが表示されない場合は、お客さまが利用されているPC、ブラウザ環境をご確認ください。<br /><a href="/web/info/info20180926-01.html">詳しくはこちら</a></p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+<!--
+jQuery(document).ready(function() {
+  var cookie = $.cookie("point-auth");
+  if(cookie == null) {
+    $(".point-auth-01").show();
+  } else {
+    $("#point-disp").show();
+  }
+})
+
+$(".sp-title").click(function() {
+  $(".point-auth-01").hide();
+  $(".point-auth-02").show();
+})
+
+$(".point-agree").click(function() {
+  $(".point-auth-02").hide();
+  $.cookie("point-auth","1",{ path:"/"});
+  $("#point-disp").show();
+})
+
+-->
+</script>

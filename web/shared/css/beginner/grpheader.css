@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. grpheader
+*	02. tagLine
+*	03. siteID
+*	04. form-search-keywords
+*	05. remoteNav
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. grpheader
+----------------------------------------------------------------- */
+div#grpheader{
+padding:5px 0 0 10px;
+min-height:45px;
+position:relative;
+background-color:#ffffff;
+}
+
+div#grpheader p,
+div#grpheader ul,
+div#grpheader ol,
+div#grpheader dl{
+margin-top:0;
+margin-bottom:0;
+line-height:1.45;
+}
+
+div#grpheader a:link{
+color:#3535b4;
+}
+
+div#grpheader a:visited{
+color:#6e36b3;
+}
+
+div#grpheader a:hover,
+div#grpheader a:active, a:focus{
+text-decoration:none;
+}
+
+
+/* ie6 */
+*html div#grpheader{
+height:45px;
+}
+
+hr{
+display:none;
+}
+
+/* ----------------------------------------------------------------
+	02. tagLine
+----------------------------------------------------------------- */
+div#grpheader p#tagLine{
+color:#999999;
+font-size:81.25%;
+text-align:right;
+}
+
+
+/* ----------------------------------------------------------------
+	03. siteID
+----------------------------------------------------------------- */
+div#grpheader #siteID img{
+padding-right:14px;
+vertical-align:middle;
+}
+
+
+/* ----------------------------------------------------------------
+	04. form-search-keywords
+----------------------------------------------------------------- */
+div#grpheader form,
+div#grpheader fieldset{
+margin:0;
+padding:0;
+border:0;
+}
+
+div#grpheader input,
+div#grpheader select{
+margin:0;
+padding:0;
+border:0;
+vertical-align:middle;
+font-size:13px;
+}
+
+div#grpheader label{
+cursor:pointer;
+}
+
+div#grpheader fieldset legend{
+display:none;
+}
+
+div#grpheader fieldset#form-search-word{
+position:absolute;
+top:3em;
+left:400px;
+}
+
+div#grpheader input#form-search-keywords{
+margin-right:10px;
+padding:1px;
+border:1px solid #7f9db9;
+width:150px;
+}
+
+div#grpheader input#form-search-btn{
+border-width:2px 2px 2px 1px;
+border-color:#d4d0c8 #999999 #999999 #d4d0c8;
+border-style:solid;
+cursor:pointer;
+width:6.5em;
+}
+
+
+/* ----------------------------------------------------------------
+	05. remoteNav
+----------------------------------------------------------------- */
+div#grpheader dl#remoteNav{
+margin:-40px 0 0 650px;
+position:relative;
+font-size:81.25%;
+}
+
+div#grpheader dl#remoteNav dt{
+position:absolute;
+left:-9999px;
+}
+
+div#grpheader dl#remoteNav dd{
+text-align:right;
+}
+
+div#grpheader dl#remoteNav ul li{
+padding:0 0.4em;
+display:inline;
+background:url("/web/shared/images/grpheader/bg-line-01.gif") no-repeat 100% 50%;
+}
+
+div#grpheader dl#remoteNav ul li.last-child{
+background-image:none;
+}
+
+div#grpheader dl#remoteNav ul li.grpHome{
+background-image:none;
+font-weight:bold;
+}
+
+

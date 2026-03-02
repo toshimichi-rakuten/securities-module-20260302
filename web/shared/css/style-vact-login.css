@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* =========================================================
+ settings
+========================================================= */
+/*!
+ * Variables
+ */
+/* 各種ラベルカラー
+ * ガイドラインとははずれても良い
+ */
+/* =========================================================
+ tool
+========================================================= */
+/*!
+ * Utility Mixins
+ */
+/*!
+ * Button Variables
+ */
+/*!
+ * Button Mixins
+ */
+/* ====================
+ * Ghost button module
+ ==================== */
+@font-face {
+  font-family: "glyphs";
+  src: url("/web/shared/font/glyphs.eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "glyphs";
+  src: url("/web/shared/font/glyphs.eot");
+  src: url("/web/shared/font/glyphs.eot?#iefix") format("embedded-opentype"), url("/web/shared/font/glyphs.woff") format("woff"), url("/web/shared/font/glyphs.ttf") format("truetype"), url("/web/shared/font/glyphs.svg?#glyphs") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.s-glyph {
+  font-family: "glyphs";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon_101_facebook:before {
+  content: "\f101"; }
+
+.icon_102_twitter:before {
+  content: "\f102"; }
+
+.icon_103_google:before {
+  content: "\f103"; }
+
+.icon_104_youtube:before {
+  content: "\f104"; }
+
+.icon_105_marketspeed:before {
+  content: "\f105"; }
+
+.icon_106_marketspeedfx:before {
+  content: "\f106"; }
+
+.icon_107_ispeed:before {
+  content: "\f107"; }
+
+.icon_108_search:before {
+  content: "\f108"; }
+
+.icon_109_lock:before {
+  content: "\f109"; }
+
+.icon_10a_pen:before {
+  content: "\f10a"; }
+
+.icon_10b_check:before {
+  content: "\f10b"; }
+
+.icon_10c_uncheck:before {
+  content: "\f10c"; }
+
+.icon_10d_chevron-down:before {
+  content: "\f10d"; }
+
+.icon_10e_chevron-left:before {
+  content: "\f10e"; }
+
+.icon_10f_chevron-right:before {
+  content: "\f10f"; }
+
+.icon_110_chevron-up:before {
+  content: "\f110"; }
+
+.icon_111_caret-down:before {
+  content: "\f111"; }
+
+.icon_112_caret-left:before {
+  content: "\f112"; }
+
+.icon_113_caret-right:before {
+  content: "\f113"; }
+
+.icon_114_caret-up:before {
+  content: "\f114"; }
+
+.icon_115_triangle-down:before {
+  content: "\f115"; }
+
+.icon_116_triangle-right:before {
+  content: "\f116"; }
+
+.icon_117_triangle-left:before {
+  content: "\f117"; }
+
+.icon_118_triangle-up:before {
+  content: "\f118"; }
+
+.icon_119_exclamation-triangle:before {
+  content: "\f119"; }
+
+.icon_11a_triangle-small-down:before {
+  content: "\f11a"; }
+
+.icon_11b_triangle-small-right:before {
+  content: "\f11b"; }
+
+.icon_11c_triangle-small-left:before {
+  content: "\f11c"; }
+
+.icon_11d_triangle-small-up:before {
+  content: "\f11d"; }
+
+.icon_11e_bullet_small:before {
+  content: "\f11e"; }
+
+.icon_11f_customer_service:before {
+  content: "\f11f"; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/* =========================================================
+ module
+========================================================= */
+.vact-grid {
+  margin: 0 auto;
+  zoom: 1; }
+  .vact-grid:before, .vact-grid:after {
+    content: " ";
+    display: table; }
+  .vact-grid:after {
+    clear: both; }
+  .vact-grid__cell {
+    float: left; }
+    .vact-grid__cell:first-child {
+      width: 560px; }
+    .vact-grid__cell:last-child {
+      width: 360px;
+      margin-left: 20px; }
+
+.vact-login-form {
+  border: 4px solid #ddd;
+  padding: 2px;
+  box-sizing: border-box; }
+  .vact-login-form__inner {
+    background-color: #f5f5f5;
+    padding: 28px; }
+  .vact-login-form__hdg {
+    font-size: 22px;
+    color: #003399;
+    font-weight: bold;
+    margin-bottom: 7px; }
+  .vact-login-form__softkey-sprite-icon {
+    display: inline-block;
+    background-image: url(/web/shared/img/sprites-shared.png?1489628248511);
+    background-position: -124px -96px;
+    width: 21px;
+    height: 12px;
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 12px; }
+  .vact-login-form__login-button {
+    padding: 8px 10px 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    position: relative;
+    background: #334298;
+    border: 1px solid #334298;
+    box-shadow: 0 3px 0 0 #182882;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    width: 100%; }
+    .vact-login-form__login-button:link, .vact-login-form__login-button:visited, .vact-login-form__login-button:hover, .vact-login-form__login-button:active {
+      color: #ffffff; }
+    * + html .vact-login-form__login-button {
+      display: inline;
+      zoom: 1; }
+    .lt-ie9 .vact-login-form__login-button {
+      border: 0;
+      border-bottom: 3px solid #182882;
+      outline: 0; }
+    .vact-login-form__login-button:hover {
+      top: 3px;
+      text-decoration: none;
+      box-shadow: none; }
+      .lt-ie9 .vact-login-form__login-button:hover {
+        top: 3px;
+        border-bottom-color: transparent; }
+
+.vact-login-form-field {
+  margin-top: 14px;
+  margin-bottom: 7px; }
+  .vact-login-form-field__label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block; }
+  .vact-login-form-field__input {
+    border: 1px solid #ddd;
+    font-size: 18px;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    width: 14em; }
+    .vact-login-form-field__input--pass {
+      width: 100%;
+      margin-bottom: 7px; }
+  .vact-login-form-field__pass-chk {
+    color: #0069c7; }
+  .vact-login-form-field + .vact-login-form-field {
+    margin-bottom: 14px; }
+
+.vact-login-form-02 {
+  border: 2px solid #89a2d8;
+  padding: 2px;
+  box-sizing: border-box; }
+  .vact-login-form-02__inner {
+    background-color: #89a2d8;
+    padding: 14px 28px 20px;}
+  .vact-login-form-02__softkey {
+    background-image: url("/web/shared/images/icon/V_ACT_Login_new-icon-keyboard.png");
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 0 25px;
+    margin: 0 0 0 245px; }
+    .vact-login-form-02__softkey:link, .vact-login-form-02__softkey:visited {
+      color: #ffffff; }
+
+.vact-login-form-02-field {
+  margin-top: 14px;
+  margin-bottom: 7px; }
+  .vact-login-form-02-field__label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    color: #ffffff; }
+    .vact-login-form-02-field__label span {
+      font-weight: normal; }
+  .vact-login-form-02-field__input {
+    border: 1px solid #ddd;
+    font-size: 18px;
+    padding: 7px 14px;
+    box-sizing: border-box;
+    width: 14em; }
+    .vact-login-form-02-field__input--pass {
+      width: 22em;
+      margin-bottom: 7px; }
+  .vact-login-form-02-field__conf {
+    color: #ffffff;
+    vertical-align: sub;
+    font-size: 14px; }
+    .vact-login-form-02-field__conf a:link, .vact-login-form-02-field__conf a:visited {
+      color: #ffffff; }
+  .vact-login-form-02-field__pass-chk {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 14px; }
+
+.vact-login-form-02-btn {
+  zoom: 1; }
+  .vact-login-form-02-btn:before, .vact-login-form-02-btn:after {
+    content: " ";
+    display: table; }
+  .vact-login-form-02-btn:after {
+    clear: both; }
+  .vact-login-form-02-btn__item {
+    float: left; }
+    .vact-login-form-02-btn__item + .vact-login-form-02-btn__item {
+      float: right; }
+
+
+
+
+/* ================ add button style 20180423 ================ */
+
+.vact-login-form-02-btn__item button{
+  padding: 0;
+  border: none;
+  line-height: 1;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: #334298;
+  -webkit-box-shadow: 0 3px 0 0 #182882;
+  box-shadow: 0 3px 0 0 #182882;
+  border-radius: 4px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.vact-login-form-02-btn__item button:hover{
+  top: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.vact-login-form-02-btn--login button{
+  width: 320px;
+}
+.vact-login-form-02-btn--login button .s-glyph{
+  margin-top: -4px;
+}
+.vact-login-form-02-btn--clear button{
+  width: 120px;
+}
+
+.vact-login-form-02-btn--02{
+  width: 200px;
+}
+.vact-login-form-02-btn--02 a{
+  display: block;
+  line-height: 1;
+  color: #333;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  padding: 12px 0 11px;
+  border-bottom: 3px solid #7f7f7f;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+.vact-login-form-02-btn--02 a::before{
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 6px;
+  border-color: transparent transparent transparent #333333;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+}
+.vact-login-form-02-btn--02 a:hover{
+  top: 3px;
+  border-bottom: none;
+}

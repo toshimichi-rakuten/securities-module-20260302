@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------------------------------------------------------------
+	clear
+----------------------------------------------------------------- */
+body#seminar div#str-main dl,
+body#seminar div#str-main ul,
+body#seminar div#str-main ol,
+/*body#seminar div#str-main li, */
+body#seminar div#str-main p.images {
+	margin-right: 0;
+	margin-left: 0;
+}
+body#seminar div#str-main ul p {
+	margin: 0;
+}
+/* ----------------------------------------------------------------
+	seminar
+----------------------------------------------------------------- */
+/*	str-main	*/
+
+/*	difficultyArea	*/
+body#seminar div#str-main div.difficultyArea {
+	margin: -10px 0 10px 0;
+	overflow: hidden;
+	zoom: 1;
+}
+body#seminar div#str-main div.difficultyArea dl {
+	width: auto;
+	float: right;
+	margin: 0;
+}
+body#seminar div#str-main div.difficultyArea dt,
+body#seminar div#str-main div.difficultyArea dd {
+	display: inline;
+	margin-right: 10px;
+}
+/*	close	*/
+body#seminar div#str-main p.close {
+	text-align: center;
+	margin: 0 0 15px 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #d23100;
+}
+/*	sns-sbs	*/
+* html body#seminar div#str-main div.sns-sbs ul {
+	padding-bottom: 0;
+}
+body#seminar div#str-main div.sns-sbs ul {
+	overflow: hidden;
+	zoom: 1;
+}
+/*	freeArea	*/
+body#seminar div#str-main div.freeArea {
+	margin-bottom: 15px;
+}
+body#seminar div#str-main div.freeArea h2 {
+	margin: 0 0 10px 0;
+}
+body#seminar div#str-main div.freeArea p {
+	margin-bottom: 0;
+}
+/*	featuredArea	*/
+body#seminar div#str-main div.featuredArea {
+	background: #ededed;
+	margin-bottom: 15px;
+	padding: 10px 10px 0 10px;
+	border: 1px solid #e3e2e2;
+}
+body#seminar div#str-main div.featuredArea dl.featuredInner {
+	background: #ffffff url(/web/learn/seminar/images/bg-featured_btm.jpg) no-repeat 0 100%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+body#seminar div#str-main div.featuredArea dl.featuredInner dt {
+	font-size: 110%;
+	font-weight: bold;
+	color: #3a85c7;
+	background: url(/web/learn/seminar/images/bg-featured_top.jpg) no-repeat 0 0;
+}
+body#seminar div#str-main div.featuredArea dl.featuredInner dt span {
+	background: url(/web/learn/seminar/images/line.gif) repeat-x 0 100%;
+	display: block;
+	padding: 10px 0;
+}
+body#seminar div#str-main div.featuredArea dl.featuredInner dt span span {
+	background: url(/web/learn/seminar/images/icn_head.gif) no-repeat 0 50%;
+	display: block;
+	margin-left: 20px;
+	padding: 0 0 0 10px;
+}
+body#seminar div#str-main div.featuredArea dl.featuredInner dd ul {
+	margin-top: 10px;
+}
+body#seminar div#str-main div.featuredArea dl.featuredInner dd li {
+	background: url(/web/learn/seminar/images/icn_list.gif) no-repeat 0 8px;
+	margin: 0 0 5px 35px;
+	padding-left: 10px;
+	max-width: 470px;
+}
+/*	entryArea	*/
+body#seminar div#str-main div.entryArea {
+	background: #f6f6f6;
+	padding: 1px;
+	margin-bottom: 15px;
+}
+body#seminar div#str-main div.entryArea div.entryInner {
+	background: #f6f6f6;
+	padding: 15px 15px 5px 15px;
+	border: 1px solid #ffffff;
+}
+body#seminar div#str-main ul li.asterisk {
+	background: url(/web/learn/seminar/images/icn_asterisk.gif) no-repeat 0 4px;
+	padding-left: 12px;
+}
+body#seminar div#str-main  div.entryArea div.entryInner p.btmArea {
+	text-align: center;
+}
+body#seminar div#str-main div.entryArea div.entryInner ul.entrybtm2 {
+	overflow: hidden;
+	zoom: 1;
+	margin-left: -10px;
+	width: 545px;
+}
+* html body#seminar div#str-main div.entryArea div.entryInner ul.entrybtm2 {
+	margin-left: -20px;
+}
+body#seminar div#str-main div.entryArea div.entryInner ul.entrybtm2 li {
+	float: left;
+	width: 265px;
+	text-align: center;
+}
+body#seminar div#str-main div.entryArea div.entryInner ul li dl {
+	text-align: center;
+	margin: 0;
+}
+body#seminar div#str-main div.entryArea div.entryInner ul li dl dt {
+	width: 265px;
+	font-weight: bold;
+	font-size: 110%;
+	margin-bottom: 5px;
+}
+body#seminar div#str-main div.entryArea div.entryInner ul li dl dt.account {
+	color: #f47401;
+}
+body#seminar div#str-main div.entryArea div.entryInner ul li dl dt.accountNon {
+	color: #4c85f4;
+}
+body#seminar div#str-main table tbody th.bgNon {
+	background-color: #ffffff;
+}
+/*	importantArea */
+body#seminar div#str-main div.importantArea {
+	margin-bottom:1.25em;
+	border:1px solid #cacdd9;
+}
+
+body#seminar div#str-main div.importantArea h3 {
+	margin-bottom:14px;
+	border-bottom:1px solid #cacdd9;
+	font-size:87.5%;
+	text-align:center;
+}
+body#seminar div#str-main div.importantArea h3 span {
+	margin:1px;
+	padding:2px 7px;
+	background-color:#f2f2f9;
+	display:block;
+}
+body#seminar div#str-main p.read {
+	padding: 0 15px 15px 15px;
+}
+body#seminar div#str-main div.importantArea ol {
+	list-style: none;
+	margin-bottom: 15px;
+}
+body#seminar div#str-main div.importantArea ol li {
+	list-style: none;
+}
+body#seminar div#str-main div.importantArea ol li dl {
+	padding: 0 15px;
+}
+body#seminar div#str-main div.importantArea ol li dl dt {
+	font-size:110%;
+	background: #fffbac;
+	font-weight: bold;
+	color: #d23100;
+	padding: 3px 7px;
+	margin-bottom: 15px;
+}
+body#seminar div#str-main div.importantArea ol li dl dd {
+	margin-bottom: 15px;
+}
+
+/*	lecturerArea */
+body#seminar div#str-main div.lecturerArea {
+	overflow: hidden;
+	zoom: 1;
+	padding: 15px 15px 0;
+	border-top: 1px solid #c3c3c3;
+}
+body#seminar div#str-main div.lecturerArea.top {
+	padding-top: 0;
+	border-top: none;
+}
+body#seminar div#str-main div.lecturerArea p.lecturerImg {
+	float: left;
+	width: 100px;
+	margin-right: 15px;
+}
+
+body#seminar div#str-main div.lecturerArea dl.lecturerData {
+	float: left;
+	width: 380px;
+}
+body#seminar div#str-main div.lecturerArea dl.lecturerData dt {
+	color: #003399;
+	font-weight: bold;
+}
+body#seminar div#str-main div.lecturerArea dl.lecturerData dd ul {
+	margin-left: 10px;
+}
+
+/*	bannerArea */
+body#seminar div#str-main div.bannerArea ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+body#seminar div#str-main div.bannerArea ul li p {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+body#seminar div#str-main div.bannerArea ul li a {
+	margin-top: 5px;
+	display: block;
+}
+body#seminar div#str-main div.bannerArea ul.oneColumn li {
+	width: 530px;
+	margin: 5px auto 0;
+}
+body#seminar div#str-main div.bannerArea ul.twoColumn {
+	overflow: hidden;
+	zoom: 1;
+}
+* html body#seminar div#str-main div.bannerArea ul.twoColumn {
+	margin-left: -15px;
+}
+body#seminar div#str-main div.bannerArea ul.twoColumn li {
+	float: left;
+	width: 250px;
+	margin-left: 15px;
+}
+body#seminar div#str-main div.bannerArea ul.threeColumn {
+	overflow: hidden;
+	zoom: 1;
+	margin-left: -10px;
+}
+* html body#seminar div#str-main div.bannerArea ul.threeColumn {
+	margin-left: -20px;
+}
+body#seminar div#str-main div.bannerArea ul.threeColumn li {
+	float: left;
+	width: 175px;
+	margin-left: 10px;
+}
+
+div#str-main span.date,
+div#str-main span.sDate,
+div#str-main span.eDate {
+    display:none;
+}

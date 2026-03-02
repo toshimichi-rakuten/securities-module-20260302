@@ -1,0 +1,22 @@
+<script defer>
+window.addEventListener( 'load', function(){
+
+$(function(){
+// footer要素の後に「上へ・表示モード」ボタン設置
+$('.smPusher').after('<ul class="bottom-icon__list" style="display: none;"><li class="bottom-icon__item" id="float-modeselect"><a href="/smartphone/mode-select.html"><div class="rex-icon rex-icon--bottom rex-icon-mode-switching"></div><span class="bottom-icon__text">表示モード</span></a></li><li class="bottom-icon__item scrolltop"><div class="rex-icon rex-icon--bottom rex-icon-arrow-up"></div><span class="bottom-icon__text">上へ</span></li></ul>');
+
+// ---------------------------------------------------------
+//  スクロール（アニメーション）処理
+$('.bottom-icon__item.scrolltop').on('click',function(){
+
+  var speed    = 500,
+      easing   = 'swing',
+      target   = $('#top'),
+      head   = $('#VHEAD'),
+      position = target.offset().top - head.outerHeight();
+  $("html, body").animate({scrollTop:position}, speed, easing);
+  return false;
+});
+});
+}, false);
+</script>

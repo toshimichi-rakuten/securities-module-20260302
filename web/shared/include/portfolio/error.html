@@ -1,0 +1,66 @@
+<div id="half_login_3">
+<p style="font-size:100%;"><strong>お気に入り登録機能は、楽天会員<span style="font-size:81.75%">（※1）</span>であれば、いますぐご利用いただくことができます。</strong></p>
+<p>※1ご利用いただくには、楽天会員かつ、楽天証券に><a href="/web/account/rakuten.html">口座開設のお申込み</a>をおこなっていただく必要があります。</p>
+<p>すでに楽天会員のお客様は、以下よりログインしてください。</p>
+<p style="font-size:100%;"><a href="https://api.id.rakuten.co.jp/openid/auth?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.rakuten-sec.co.jp%2F&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup">楽天会員にログイン</a></p>
+<p>楽天会員でない方は以下より楽天会員新規会員登録（無料）をおこなってください。</p>
+<p><a href="http://www.rakuten.co.jp/myrakuten/help/"><img src="/web/shared/images/myraku/btn_regist_mouseoff.gif" border="0" alt="新規会員登録（無料）"></a></p>
+<p style="text-align:center;"><a href="/web/account/rakuten.html"><img src="/web/account/images/index_btn_sq.gif" alt="スーパークイック口座申込" width="364" height="78" border="0" 
+onMouseOver="this.src='/web/account/images/index_btn_sq_h.gif';" 
+onMouseOut="this.src='/web/account/images/index_btn_sq.gif';"
+/></a></p>
+
+</div>
+
+<div id="half_login_2">
+<p style="font-size:100%;"><strong>お気に入り登録機能は、楽天証券に口座開設のお申込みをおこなっていただくことで、いますぐご利用いただくことができます。</strong></p>
+<div class="box-login">
+<ul><li class="entry">
+<p><em>楽天会員様専用フォーム</em></p>
+<p>楽天証券なら「総合取引口座」も「外国証券取引口座」も<em>口座開設料・口座管理料は無料！</em>しかも、楽天会員の方なら、ご登録いただいている情報があらかじめ表示されているので、<em>30秒程度</em>のご入力でカンタンにお手続できます！</p>
+</li></ul>
+
+<p style="text-align:center;"><a href="/web/account/rakuten.html"><img src="/web/account/images/index_btn_sq.gif" alt="スーパークイック口座申込" width="364" height="78" border="0" 
+onMouseOver="this.src='/web/account/images/index_btn_sq_h.gif';" 
+onMouseOut="this.src='/web/account/images/index_btn_sq.gif';"
+/></a></p>
+</div>
+</div>
+
+
+<div id="half_login_1">
+<p style="font-size:100%;"><strong>ログイン前のお気に入り登録機能は、楽天会員であれば、ログイン後の画面にて設定をしていただくことで、ログイン後のお気に入り機能と同期することができます。</strong></p>
+<p>すでに楽天会員のお客様は、以下よりログインしてください。</p>
+<p style="font-size:100%;"><a href="https://api.id.rakuten.co.jp/openid/auth?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.rakuten-sec.co.jp%2F&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup">楽天会員にログイン</a></p>
+<p>楽天会員でない方は以下より楽天会員新規会員登録（無料）をおこなってください。</p>
+<p><a href="http://www.rakuten.co.jp/myrakuten/help/"><img src="/web/shared/images/myraku/btn_regist_mouseoff.gif" border="0" alt="新規会員登録（無料）"></a></p>
+<p style="text-align:center;"><a href="/cgi-bin/CTS/Direct_Login.cgi?homeid=PTF_SYNC_SETTING"><img src="/web/shared/images/button/btn-login-syncro.gif" alt="ログイン前の登録銘柄と同期する"></a></p>
+</div>
+
+<script type="text/javascript">
+<!--
+
+var half_rg_sec = getHalfCookie('Rg_sec');
+var rz_cookie = getHalfCookie('Rz');
+
+if(half_rg_sec != null && half_rg_sec != '' && half_rg_sec.substring(5,10) != '00000'){
+	//会員
+	document.getElementById('half_login_2').style.display = "none";
+	document.getElementById('half_login_3').style.display = "none";
+}
+else if(rz_cookie != null && rz_cookie != ''){
+	//資料請求済み
+	document.getElementById('half_login_1').style.display = "none";
+	document.getElementById('half_login_3').style.display = "none";
+}
+else{
+	//非会員
+	document.getElementById('half_login_1').style.display = "none";
+	document.getElementById('half_login_2').style.display = "none";
+}
+
+function getHalfCookie(key){
+	return $.cookie(key); 
+}
+//-->
+</script>

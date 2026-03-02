@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. history
+*	02. favorite
+*	03. mmf-yield
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. history
+----------------------------------------------------------------- */
+
+div#str-sub div.history{
+margin-bottom:15px;
+padding:0 1px 1px;
+background:url("/web/shared/images/str-sub/historybg-01.gif") no-repeat 0 100%;
+font-size:81.25%;
+}
+
+div#str-sub div.history h2{
+margin:0 -1px;
+}
+
+div#str-sub div.history p.hdg-nav-more{
+margin:-19px 5px 10px 25px;
+text-align:right;
+}
+
+
+div#str-sub div.history ul.list-history-01 li{
+padding:5px 10px 5px 22px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 10px 7px;
+font-size:84.6%;
+}
+
+div#str-sub div.history ul.list-history-01 li.even{
+background-color:#e4e5f2;
+}
+
+
+/* ----------------------------------------------------------------
+	02. favorite
+----------------------------------------------------------------- */
+
+div#str-sub div.favorite{
+margin-bottom:15px;
+padding:0 1px 1px;
+background:url("/web/shared/images/str-sub/historybg-01.gif") no-repeat 0 100%;
+font-size:81.25%;
+}
+
+div#str-sub div.favorite h2{
+margin:0 -1px;
+}
+
+div#str-sub div.favorite p.hdg-nav-more{
+margin:-19px 5px 4px 0;
+text-align:right;
+}
+
+/* ---------------------------------
+	delay-container
+ -------------------------------- */
+ 
+div#str-sub div.favorite div.delay-container{
+margin-bottom:5px;
+padding:2px;
+position:relative;
+min-height:25px;
+background-color:#ebebeb;
+font-size:84.6%;
+}
+
+div#str-sub div.favorite div.delay-container p{
+margin:0;
+padding-left:7px;
+}
+
+div#str-sub div.favorite div.delay-container p.delay{
+padding:7px 70px 0 5px;
+line-height:1;
+color:#666666;
+}
+/* IE6 */
+* html div#str-sub div.favorite div.delay-container p.delay{padding-bottom:5px;}
+
+div#str-sub div.favorite div.delay-container p.btn-renew{
+position:absolute;
+top:5px;
+right:3px;
+}
+
+/* ---------------------------------
+	nav-page
+ -------------------------------- */
+ 
+div#str-sub div.favorite ul.nav-page{
+margin:0 5px 10px;
+position:relative;
+font-size:92.3%;
+}
+
+div#str-sub div.favorite ul.nav-page li.prev{
+position:absolute;
+top:0;
+left:0;
+width:2em;
+}
+
+div#str-sub div.favorite ul.nav-page li.next{
+position:absolute;
+top:0;
+right:0;
+width:2em;
+text-align:right;
+}
+
+div#str-sub div.favorite ul.nav-page li.page-number{
+padding:0 1.55em;
+text-align:center;
+}
+
+div#str-sub div.favorite ul.nav-page li.page-number ul{
+margin:0;
+}
+
+div#str-sub div.favorite ul.nav-page li.page-number li{
+padding:0 1px;
+display:inline;
+}
+/* IE6 */
+* html div#str-sub div.favorite ul.nav-page li.page-number li{padding:0 2px;}
+/* IE7 */
+*:first-child+html div#str-sub div.favorite ul.nav-page li.page-number li{padding:0 2px;}
+
+
+div#str-sub div.favorite ul.nav-page li.page-number li.selected a{
+text-decoration:none;
+font-weight:bold;
+}
+
+/* ---------------------------------
+	table
+ -------------------------------- */
+ 
+div#str-sub div.favorite table{
+width:100%;
+border:none;
+background-color:#ffffff;
+font-size:81.25%;
+}
+
+div#str-sub div.favorite table th,
+div#str-sub div.favorite table td{
+padding:4px;
+vertical-align:top;
+}
+
+div#str-sub div.favorite table th{
+border:none;
+background-color:#ffffff;
+vertical-align:middle;
+text-align:left;
+font-weight:normal;
+}
+
+div#str-sub div.favorite table td{
+border:none;
+background-color:#ffffff;
+text-align:right;
+}
+
+div#str-sub div.favorite table tr.odd th,
+div#str-sub div.favorite table tr.odd td{
+background-color:#e4e5f2;
+}
+
+div#str-sub div.favorite table span.up-01{
+color:#ff0101;
+}
+
+div#str-sub div.favorite table span.down-01{
+color:#4eba00;
+}
+
+/* ---------------------------------
+	favorite-error
+ -------------------------------- */
+
+div#str-sub div.favorite-error{
+padding:0 7px 7px;
+background:url("/web/shared/images/str-sub/favorite-error-bg-01.gif") no-repeat 0 100%;
+}
+
+div#str-sub div.favorite-error h2{
+margin:0 -7px 5px;
+}
+
+div#str-sub div.favorite-error p{
+margin-bottom:5px;
+}
+
+div#str-sub div.favorite-error p.link-01{
+margin-bottom:10px;
+padding-left:13px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 4px;
+}
+
+div#str-sub div.favorite-error ul.list-notice-numbered-01{
+color:#888;
+font-size:92.3%;
+}
+
+div#str-sub div.favorite-error ul.list-notice-numbered-01 li{
+margin-bottom:0.25em;
+padding-left:2em;
+position:relative;
+}
+
+div#str-sub div.favorite-error ul.list-notice-numbered-01 li span{
+position:absolute;
+top:0;
+left:0;
+}
+
+div#str-sub div.favorite-error ul.list-link-01 li{
+padding-left:13px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 5px;
+}
+
+
+/* ----------------------------------------------------------------
+	02. mmf-yield
+----------------------------------------------------------------- */
+
+div#str-sub div.mmf-yield{
+margin-bottom:10px;
+padding:0 2px 2px;
+border-width:0 1px 1px;
+border-color:#97a2e9;
+border-style:solid;
+background-color:#dfdfdf;
+}
+
+div#str-sub div.mmf-yield h2{
+margin:0 -3px 0;
+border-bottom:1px #97a2e9 solid;
+background:#46529b url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub p.updated-date{
+padding:3px 6px 2px;
+border-width:2px 0;
+border-color:#dfdfdf;
+border-style:solid;
+background:#fff;
+font-size:68.8%;
+}
+
+div#str-sub table.mmf-yield-table{
+width:100%;
+background:#fff;
+}
+
+div#str-sub table.mmf-yield-table td,
+div#str-sub table.mmf-yield-table th{
+font-size:75.5%;
+padding:5px 2px;
+}
+
+div#str-sub table.mmf-yield-table td.value{
+text-align:right;
+font-weight:bold;
+color:#bf0000;
+}
+
+div#str-sub table.mmf-yield-table tr{
+background:#fff url("/web/shared/images/str-sub-common/mmf-bg-tr.gif") bottom repeat-x;
+}
+
+div#str-sub p.mmf-note{
+padding:4px 6px;
+border-top:2px solid #dfdfdf;
+background:#fff;
+color:#666;
+font-size:68.8%;
+line-height:1.2;
+}
+
+

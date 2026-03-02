@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>【 簡易モジュール : お知らせ・CP 】 | 楽天証券</title>
+<meta name="Keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Rakuten Securities, Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://www.rakuten-sec.co.jp/web/info/">
+<link rel="apple-touch-icon-precomposed" href="/smartphone/img/securities.png">
+
+<!-- ::::::::::::: ▼▼ stylesheet include :  start ▼▼ ::::::::::::::::: -->
+<!--#include virtual="/smartphone/shared/include/s1-stylesheet-bottom.html" -->
+<!-- ::::::::::::: ▲▲ stylesheet include :  end ▲▲ ::::::::::::::::: -->
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="/web/shared/css/styleguide.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules_smt.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+<link rel="stylesheet" href="/smartphone/shared/css/pcsp-quick.css" media="all">
+
+</head>
+
+<body id="top">
+
+<a id="pagetop"></a>
+
+
+<!--#include virtual="/smartphone/shared/include/header/s1-smt-header.html" -->
+
+<h1 class="q1-hdg-lv1">キャンペーンタイトルh1が入ります。1行はおよそ15文字です</h1>
+
+<section id="pcsp-quick" style="margin-bottom: 1rem;">
+
+<h2>見出し2</h2>
+
+<section>
+  <p>簡易モジュールはソースを共通化し、少ない手間でページを作成できるところを目的としています。</p>
+  <p>PCページとSPページ互いのソースを持ってくることでページが完成することを想定して設計していますが、h2見出しが画面全幅に広がるデザインのためh2以下の要素（白いボックス）をsectionタグで囲む必要があります。</p>
+  <p>PC→SPの順番で作成する際はsectionタグで囲うのを忘れないようにしてください。<br>（SP→PCで作成する場合はでPCでsectionタグが無視されるので問題はありません）</p>
+</section>
+
+<section>
+
+<div class="module-sample">
+<h3>見出し3</h3>
+</div>
+
+<div class="module-sample">
+<h4>見出し4</h4>
+</div>
+
+<h4>テキスト</h4>
+<div class="module-sample">
+<p>ほげほげほげほげほげ<a href="/web/" data-sp-href="/smartphone/">PCとSPで違うリンク</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげ<a href="#">遷移先がPCリンク（同窓表示）</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげ<a href="#" target="_blank">別ドメインへのリンク（別窓表示）</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげ<a href="/hoge.pdf" target="_blank">PDFファイルやで</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげコメジルシ<sub>※</sub>だよ、連番コメジルシ<sub>※1</sub>だよ。</p>
+<p>ほげほげほげほげほげ<strong>赤字赤字赤字</strong>ほげほげ<b>太字太字太字</b>ほげほげほげ</p>
+</div><!-- /.module-sample -->
+<div class="q1-box q1-box--r bg-r-01-light">
+<h4 class="mt-0">文中リンクをコピペする際の注意</h4>
+<p>※ PCのソースと挙動を合わせるため<strong><b>class="link"</b></strong>が動的に付与されます。SPページから作成する際はclass="link"を除去してください</p>
+</div>
+
+<div class="q1-box q1-box--r bg-r-01-light">
+<h4 class="mt-0">遷移先がレスポンシブ対応ページの場合</h4>
+<p>対応方法 : 「PCとSPで違うリンク」の<strong>herf属性とdata-sp-href属性に同じURLを指定</strong>する</p>
+<p>例）ほげほげほげほげほげ<a href="/web/campaign/moneybridge/" data-sp-href="/web/campaign/moneybridge/">マネブリ</a>ほげほげほげほげほげ</p>
+<h4 class="mt-0">遷移先がレスポンシブ対応ページで別窓アイコンを付与したいとき（別ウインドウで表示させたい）</h4>
+<p>対応方法 : 「別ドメインへのリンク」を使用する</p>
+<p>例）ほげほげほげほげほげ<a href="/web/campaign/moneybridge/" target="_blank">マネブリ</a>ほげほげほげほげほげ</p>
+</div>
+
+
+<h4>リスト</h4>
+<div class="module-sample">
+<ul>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ul>
+</div>
+
+<h4>番号リスト</h4>
+<div class="module-sample">
+<ol>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ol>
+</div>
+
+<h4>※リスト</h4>
+<div class="module-sample">
+<ul class="q1-notice">
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ul>
+</div>
+
+<h4>※1リスト</h4>
+<div class="module-sample">
+<ul class="q1-notice-count">
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ul>
+</div>
+
+<h4>リンクリスト</h4>
+<div class="module-sample">
+<ul class="q1-list-link">
+  <li><a href="/web/" data-sp-href="/smartphone/">PCとSPで違うリンク</a></li>
+  <li><a href="/web/">遷移先がPCリンク（同窓表示）</a></li>
+  <li><a href="#" target="_blank">別ドメインへのリンク（別窓表示）</a></li>
+  <li><a href="/hoge.pdf" target="_blank">PDFアイコン</a></li>
+</ul>
+</div>
+<div class="q1-box q1-box--r bg-r-01-light">
+<h4 class="mt-0">遷移先がレスポンシブ対応ページの場合</h4>
+<p>対応方法 : 「PCとSPで違うリンク」のherf属性とdata-sp-href属性に同じURLを指定する</p>
+<ul class="q1-list-link">
+  <li><a href="/web/campaign/moneybridge/" data-sp-href="/web/campaign/moneybridge/">例）マネブリ</a></li>
+</ul>
+<h4 class="mt-0">遷移先がレスポンシブ対応ページで別窓アイコンを付与したいとき（別ウインドウで表示させたい）</h4>
+<p>対応方法 : 「別ドメインへのリンク」を使用する</p>
+<ul class="q1-list-link">
+  <li><a href="/web/campaign/moneybridge/" target="_blank">例）マネブリ</a></li>
+</ul>
+</div>
+
+<h4>アンカーリスト</h4>
+<div class="module-sample">
+<ul class="q1-list-anchor">
+  <li><a href="#">リストリスト</a></li>
+  <li><a href="#">リストリスト</a></li>
+  <li><a href="#">リストリスト</a></li>
+</ul>
+</div>
+<div class="q1-box q1-box--r bg-r-01-light">
+<h4 class="mt-0">リンクリスト・アンカーリストをコピペする際の注意</h4>
+<p>※ PCのソースと挙動を合わせるため<strong><b>class="link"</b></strong>が動的に付与されます。SPページから作成する際はclass="link"を除去してください</p>
+</div>
+
+<h4>ボタン</h4>
+<div class="module-sample">
+<div class="s1-btn-general01">
+  <a href="javascript:;">基本ボタン</a>
+</div>
+
+<div class="s1-btn-general01 s1-btn-general--narrow">
+  <a href="javascript:;">小ボタン</a>
+</div>
+
+<div class="s1-btn-general01 s1-btn-general--normal">
+  <a href="javascript:;">中ボタン</a>
+</div>
+
+<div class="s1-btn-general01 s1-btn-general--wide">
+  <a href="javascript:;">大ボタン</a>
+</div>
+
+<div class="s1-btn-account-open s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;口座申込</a>
+</div>
+
+<div class="s1-btn-account-sub s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;サブ口座申込</a>
+</div>
+
+<div class="s1-btn-account-nisa s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;NISA口座申込</a>
+</div>
+</div>
+
+
+
+<h4>テーブル</h4>
+<div class="module-sample">
+<table>
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4>テーブル（横スクロールあり）</h4>
+<div class="module-sample">
+<p class="scroll-txt hidden-pc">表は横にスクロールします</p>
+<div class="scroll-box-wrap">
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>テキスト</th>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+        </tr>
+        <tr>
+          <th>テキスト</th>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+        </tr>
+        <tr>
+          <th>テキスト</th>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><!-- scroll-box-wrap -->
+</div>
+
+
+<h4>PCSP切り替えテーブル</h4>
+<div class="module-sample">
+<table class="q1-tbl-switch">
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4>画像</h4>
+<div class="module-sample">
+<figure>
+  <img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" />
+</figure>
+</div><!-- /.module-sample -->
+
+<h4>画像（リンクあり）</h4>
+<div class="module-sample">
+<a href="#" data-sp-href="">
+  <img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" />
+</a>
+</div><!-- /.module-sample -->
+
+<h4>画像（リンクあり:別窓）</h4>
+<ul>
+  <li>※ figureタグ以外の画像に別窓リンク設定すると自動的に別窓アイコンがついてしまうので、aタグに<b>.is-removed</b>をつけてアイコンを消してください。</li>
+</ul>
+<div class="module-sample">
+<a href="#" target="_blank" class="is-removed">
+  <img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" />
+</a>
+</div><!-- /.module-sample -->
+
+<h4>枠ボックス</h4>
+<div class="module-sample">
+<div class="q1-box">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+
+<div class="q1-box q1-box--r">
+  <p>赤枠なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+
+<div class="q1-box q1-box--r bg-r-01-light">
+  <p>赤枠赤背景なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+
+<h4>要約ボックス</h4>
+<div class="module-sample">
+<div class="q1-box-abstract">
+  <div class="q1-box-abstract__hdg">要約すると</div>
+  <ul>
+    <li>926円で現物も信用も取引金額100万円まで1日に何回取引してもOK!</li>
+    <li>プラス1,080円でさらに取引金額100万円アップ！</li>
+    <li>日計り取引（デイトレード）ならさらに手数料が安く！</li>
+  </ul>
+</div>
+</div>
+
+
+<h4>お知らせ固有Q＆A</h4>
+<div class="module-sample">
+<dl class="q1-faq s1-accordion">
+  <dt class="s1-accordion-btn"><span>Q</span>よくあるご質問１がはいりますよくあるご質問１がはいります？</dt>
+  <dd><span>A</span>よくあるご質問の回答が入りますよくあるご質問の回答が入りますよくあるご質問の回答が入ります。</dd>
+  <dt class="s1-accordion-btn"><span>Q</span>よくあるご質問２がはいります？</dt>
+  <dd><span>A</span>よくあるご質問の回答が入りますよくあるご質問の回答が入りますよくあるご質問の回答が入ります。</dd>
+</dl>
+</div><!-- /.module-sample -->
+
+<h4>CP固有リスクボックス</h4>
+<div class="module-sample">
+<div class="q1-cp-box">
+  <ul class="q1-notice">
+    <li>CP固有リスクボックス</li>
+    <li>汎用ボックス2（注意ボックス）に該当</li>
+    <li>CP固有リスクボックス</li>
+  </ul>
+</div>
+</div>
+
+<h4>CP固有リスクボタン</h4>
+<div class="module-sample">
+<div class="s1-btn-hollow01 full hidden-pc">
+  <a href="/web/company/risk.html" data-sp-href="/smartphone/company/risk.html">投資にかかる手数料等およびリスク</a>
+</div>
+</div>
+
+
+<h4>CP固有エントリーボタン</h4>
+<div class="module-sample">
+<div class="s1-btn-cp-entry s1-btn-general--wide">
+  <a href="javascript:;">キャンペーンのエントリーはこちら</a>
+</div>
+</div>
+
+
+<h4>グリッド</h4>
+<p>グリッドモジュールについてはこちら↓<br><a href="quick_grid.html" data-sp-href="quick_grid.html" class="link">グリッドレイアウトモジュールページへ</a></p>
+
+
+
+</section>
+
+</section><!-- /#pcsp-quick -->
+
+<section>
+<h4 style="padding: 0 16px; line-height: 1.5;">簡易モジュール（pcsp-quick）外にボタンを設置する場合</h4>
+<p style="padding: 0 16px; line-height: 1.5;">div#btn-areaで囲ってください</p>
+<div class="module-sample">
+<div id="btn-area">
+
+<div class="s1-btn-cp-entry s1-btn-general--wide">
+  <a href="javascript:void(0);" onclick="sharedLinkPage.jumpPage(sharedLinkPage.villageCampAppInput + '&amp;campaignCd=YYMMxx0101' + getDisplayParam());return false;">キャンペーンのエントリーはこちら</a>
+</div>
+
+<div class="s1-btn-account-sub s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;サブ口座申込</a>
+</div>
+
+<div class="s1-btn-account-nisa s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;NISA口座申込</a>
+</div>
+
+</div><!-- /#btn-area -->
+</div>
+
+
+<!-- socialbookmark include start -->
+<!--#include virtual="/smartphone/shared/include/socialbookmark/s1-parts.html" -->
+<!-- socialbookmark include end -->
+</section>
+
+
+<!-- s1-common-bottom-footer include start -->
+<!--#include virtual="/smartphone/shared/include/s1-common-bottom-footer.html" -->
+<!-- s1-common-bottom-footer include end -->
+
+<script src="/smartphone/shared/js/pcsp-quick.js"></script>
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- analysis-common.html include start -->
+<!--#include virtual="/smartphone/shared/include/analysis/analysis-common.html" -->
+<!-- analysis-common.html include end -->
+
+</body>
+</html>

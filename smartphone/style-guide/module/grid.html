@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>グリッドモジュール一覧 | 楽天証券</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="Rakuten Securities, Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://www.rakuten-sec.co.jp/web/products/">
+<link rel="apple-touch-icon-precomposed" href="/smartphone/img/securities.png">
+
+<!-- og -->
+<meta property="og:title" content="グリッドモジュール一覧 | 楽天証券" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://www.rakuten-sec.co.jp/web/shared/images/og-image.gif" />
+<meta property="og:url" content="https://www.rakuten-sec.co.jp/smartphone/style-guide/module/grid.html" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="楽天証券" />
+<!-- /og -->
+
+<!-- ::::::::::::: ▼▼ stylesheet include :  start ▼▼ ::::::::::::::::: -->
+<!--#include virtual="/smartphone/shared/include/s1-stylesheet-bottom.html" -->
+<!-- ::::::::::::: ▲▲ stylesheet include :  end ▲▲ ::::::::::::::::: -->
+
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="/web/shared/css/styleguide.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules_smt.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+</head>
+
+<body id="top">
+
+<a id="pagetop"></a>
+
+<!--#include virtual="/smartphone/shared/include/header/s1-smt-header.html" -->
+
+
+<div class="s1-content-wrap title-area">
+  <div class="s1-hdg-lv1"><h1 class="s1-hdg-lv1__element">グリッドレイアウト</h1></div>
+  <div class="hdg-txt-box">
+    <p class="hdg-txt-box__lead">使い方はモジュールをご覧くださいませ</p>
+  </div><!-- /.hdg-txt-box -->
+</div><!-- /.s1-content-wrap -->
+
+
+<!-- ::::::::::::: ▼▼ 表組み : start ▼▼ ::::::::::::::::: -->
+<div class="s1-content">
+
+  <div class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element">グリッドレイアウト</h2>
+  </div>
+
+  <div class="s1-content-area s1-content-first">
+
+    <!-- <p class="mb-normal">カラムの親要素には必ず<br><span class="fw-b">class="s1-grid <span class="fc-02">flex-fixed</span>"</span>を付与してください</p> -->
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">2カラム</h3>
+    </div>
+    <div class="module-sample">
+    <div class="s1-grid">
+      <div class="s1-grid__col-1-2 bg-b"><p>テスト</p></div>
+      <div class="s1-grid__col-1-2"><p>テストテスト</p></div>
+    </div>
+    </div><!-- /.module-sample -->
+
+
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">2カラム<br><span class="fs12">要素が2つ以上の場合カラムが落ちます</span></h3>
+    </div>
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__col-1-2 bg-b"><p>1テスト</p></div>
+        <div class="s1-grid__col-1-2"><p>2テストテスト</p></div>
+        <div class="s1-grid__col-1-2 bg-b"><p>3テスト</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">例 : 2カラム（要素が5つ）</h4>
+    </div>
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__col-1-2 bg-b"><p>1テスト</p></div>
+        <div class="s1-grid__col-1-2"><p>2テストテスト</p></div>
+        <div class="s1-grid__col-1-2 bg-b"><p>3テスト</p></div>
+        <div class="s1-grid__col-1-2"><p>4テストテスト</p></div>
+        <div class="s1-grid__col-1-2 bg-b"><p>5テスト</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+
+
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">3カラム<br><span class="fs12">要素が6つあるパターン</span></h3>
+    </div>
+    <ul class="s1-list-standard mb-normal">
+      <li>モバイル幅だとあまり実用性はないかも</li>
+    </ul>
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__col-1-3 bg-b"><p>1テスト</p></div>
+        <div class="s1-grid__col-1-3"><p>2テストテスト</p></div>
+        <div class="s1-grid__col-1-3 bg-b"><p>4テストテスト</p></div>
+        <div class="s1-grid__col-1-3"><p>3テスト</p></div>
+        <div class="s1-grid__col-1-3 bg-b"><p>5テスト</p></div>
+        <div class="s1-grid__col-1-3"><p>6テストテスト</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+
+
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">4カラム<br><span class="fs12">1ブロックに要素が8つあるパターン</span></h3>
+    </div>
+    <ul class="s1-list-standard mb-normal">
+      <li>やめたほうが良いと思います</li>
+    </ul>
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__col-1-4 bg-b"><p>1テスト</p></div>
+        <div class="s1-grid__col-1-4"><p>2テストテスト</p></div>
+        <div class="s1-grid__col-1-4 bg-b"><p>3テスト</p></div>
+        <div class="s1-grid__col-1-4"><p>4テストテスト</p></div>
+        <div class="s1-grid__col-1-4 bg-b"><p>5テスト</p></div>
+        <div class="s1-grid__col-1-4"><p>6テストテスト</p></div>
+        <div class="s1-grid__col-1-4 bg-b"><p>7テスト</p></div>
+        <div class="s1-grid__col-1-4"><p>8テストテスト</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+
+
+    <div class="s1-hdg-lv3">
+      <h3 class="s1-hdg-lv3__element">隙間ありパターン</h3>
+    </div>
+    <ul class="s1-list-standard mb-normal">
+      <li><span class="fw-b">s1-grid__cell</span>を<span class="fw-b">s1-grid__cell<span class="fc-02">--thin</span></span>にすればもう一段階余白が詰まります</li>
+      <!-- <li>class="<span class="fc-02 fw-b">flex-fixed</span>"の付け忘れに注意<br>（カラムが全幅で表示されていしまいます。）</li> -->
+    </ul>
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell-1-2 bg-b"><p>1/2</p></div>
+        <div class="s1-grid__cell-1-2 bg-r-01"><p>1/2</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell-1-3 bg-b"><p>1/3</p></div>
+        <div class="s1-grid__cell-2-3 bg-r-01"><p>2/3</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell-1-4 bg-b"><p>1/4</p></div>
+        <div class="s1-grid__cell-3-4 bg-r-01"><p>3/4</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell-3-4 bg-r-01"><p>3/4</p></div>
+        <div class="s1-grid__cell-1-4 bg-b"><p>1/4</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+    <p>↑規則に沿ってクラスを指定することで逆パターンも可能</p>
+    <div class="s1-hdg-lv4">
+      <h4 class="s1-hdg-lv4__element">余白詰めパターン</h4>
+    </div>
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell--thin-1-2 bg-b"><p>1/2</p></div>
+        <div class="s1-grid__cell--thin-1-2 bg-r-01"><p>1/2</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell--thin-1-3 bg-b"><p>1/3</p></div>
+        <div class="s1-grid__cell--thin-2-3 bg-r-01"><p>2/3</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+    <div class="module-sample">
+      <div class="s1-grid">
+        <div class="s1-grid__cell--thin-1-4 bg-b"><p>1/4</p></div>
+        <div class="s1-grid__cell--thin-3-4 bg-r-01"><p>3/4</p></div>
+      </div>
+    </div><!-- /.module-sample -->
+
+
+
+
+  </div><!-- /.s1-content-area -->
+</div><!-- /s1-content-area -->
+<!-- ::::::::::::: ▲▲ 表組み : end ▲▲ ::::::::::::::::: -->
+
+
+
+
+<!-- ::::::::::::: ▼▼ パンくず : start ▼▼ ::::::::::::::::: -->
+<div class="s1-breadcrumbs-wrap">
+  <ul class="s1-breadcrumbs">
+    <li><a href="/smartphone/style-guide/">スタイルガイド</a>&nbsp;&gt;&nbsp;</li>
+    <li><a href="/smartphone/style-guide/module/">モジュール</a>&nbsp;&gt;&nbsp;</li>
+    <li>グリッドモジュール一覧</li>
+  </ul>
+</div>
+<!-- ::::::::::::: ▲▲ パンくず : end ▲▲ ::::::::::::::::: -->
+
+
+
+
+<!-- s1-common-bottom-footer include start -->
+<!--#include virtual="/smartphone/shared/include/s1-common-bottom-footer.html" -->
+<!-- s1-common-bottom-footer include end -->
+
+
+<!-- ============ログ解析============ -->
+<!-- SiteCatalyst code -->
+<script type="text/javascript" src="/web/shared/js/sc/s_code.js"></script>
+<script type="text/javascript"><!--
+void(s.t())
+//--></script>
+<!-- End SiteCatalyst code -->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

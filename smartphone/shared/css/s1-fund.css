@@ -1,0 +1,29 @@
+#hidden-search{
+  display: none;
+}
+.hidden-search-box{
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: -100px;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 16px 8px 0;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 99999;
+}
+#hidden-search:checked + .hidden-search-box{
+  top: 0;
+  transition: .3s;
+}
+.hidden-search-container{
+  flex-grow: 1;
+}
+.hidden-search-lebel{
+  width: max-content;
+  padding-bottom: 8px;
+  color: #053ace;
+}

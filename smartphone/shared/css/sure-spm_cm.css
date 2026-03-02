@@ -1,0 +1,50 @@
+
+.rex-header {
+  z-index: 2398;
+}
+
+.rex-header .rf-font-chinese,
+.rex-header .rf-font-japanese,
+.rex-header :lang(ja),
+.rex-header :lang(zh){
+  line-height:13px;
+}
+.s1-ss-risk-wrap .s1-content{
+  padding-top: 16px !important;
+}
+.s1-box-link-07__item.point,
+.s1-box-link-07__item.reserve{
+  list-style-type: none;
+}
+.s1-hdg-lv1.s1-fund-ss{
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #D1D1D1;
+}
+.menu-trigger {
+  z-index: 2397;
+}
+.bottom-icon__list.fixed {
+  z-index: 1599;
+}
+.localnav-fixed .s1-local-nav-cat.s1-float-local-nav {
+  z-index: 2396
+}
+.headerSearchBox input.inputSearch {
+  font-size: 16px;
+}
+.ai-chat__open{
+  z-index: 1599 !important;
+}
+.spm-skb {
+  bottom: 80px;
+}
+.result .localnav-btn.menu-trigger.localnav--animation {
+  transform: none;
+}
+
+/* CX 追加分 */
+.spm-js-flt-filterheadwt .spm-flt-filterheadwt__head.hide.active {
+  opacity: 1;
+  visibility: visible;
+}

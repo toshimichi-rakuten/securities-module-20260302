@@ -1,0 +1,130 @@
+﻿{
+"top":[
+{
+"renewalTerm" : "毎週金曜日更新",
+"lidTrack" : "imanaka_weekly",
+"product" : ["stock","国内株式"],
+"author" : "今中能夫",
+"date" : "2015/01/30",
+"authorImage" : "photo_imanaka.jpg",
+"Title":"「楽天証券投資Weekly：セクター・投資テーマ編」",
+"reportTimes" : "第37回　",
+"reportLinkPath":"/web/market/opinion/stock/imanaka_weekly/0037.html",
+"reportTitle":"日経平均は引き続き18,000円を窺う動き決算コメント：コロプラ、任天堂、VOYAGE GROUP、日野自動車、日本通信"
+},
+{
+"renewalTerm" : "テスト",
+"lidTrack" : "dejima",
+"product" : ["stock","国内株式"],
+"author" : "出島昇",
+"date" : "2014/12/24",
+"authorImage" : "photo_dejima.jpg",
+"Title":"「柴田罫線をベースとした相場分析」",
+"reportTimes" : "第257回　",
+"reportLinkPath":"/web/market/opinion/stock/dejima/0257.html",
+"reportTitle":"今週は、日米ともに休日をはさんでおり、上値追いは慎重"
+}
+],
+"reporttop":[
+{
+"product" : ["stock","国内株式"],
+"author" : "窪田真之",
+"date" : "2015/02/04",
+"authorImage" : "photo_kubota.jpg",
+"Title":"「3分でわかる！今日の投資戦略」",
+"reportTimes" : "第244回　",
+"reportLinkPath":"/web/market/opinion/kubota/redirect.html",
+"reportTitle":"テストです。"
+},
+{
+"product" : ["stock","国内株式"],
+"author" : "今中能夫",
+"date" : "2015/01/30",
+"authorImage" : "photo_imanaka.jpg",
+"Title":"「楽天証券投資Weekly：セクター・投資テーマ編」",
+"reportTimes" : "第37回　",
+"reportLinkPath":"/web/market/opinion/stock/imanaka_weekly/0037.html",
+"reportTitle":"日経平均は引き続き18,000円を窺う動き<br />決算コメント：コロプラ、任天堂、VOYAGE GROUP、日野自動車、日本通信"
+},
+{
+"product" : ["stock","国内株式"],
+"author" : "出島昇",
+"date" : "2015/01/30",
+"authorImage" : "photo_dejima.jpg",
+"Title":"｢柴田法則個別銘柄分析」",
+"reportTimes" : "",
+"reportLinkPath":"/web/market/opinion/stock/dejima_individual/0031.html",
+"reportTitle":"12月第4週"
+},
+{
+"product" : ["stock","国内株式"],
+"author" : "土信田雅之",
+"date" : "2015/01/29",
+"authorImage" : "photo_doshida.jpg",
+"Title":"「テクニカル風林火山」",
+"reportTimes" : "第33回　",
+"reportLinkPath":"/web/market/opinion/stock/fuurinkazan/0033.html",
+"reportTitle":"調整深押し後に急反発。25日移動平均線回復後の動向がカギ"
+},
+{
+"product" : ["fop","先物"],
+"author" : "池水雄一",
+"date" : "2014/12/24",
+"authorImage" : "photo_ikemizu.jpg",
+"Title":"「他にはない特別な金のレポート Bruceレポート拾い読み！」",
+"reportTimes" : "第9回　",
+"reportLinkPath":"/web/market/opinion/fop/ikemizu/0009.html",
+"reportTitle":"クリスマス入りで動きなし"
+},
+{
+"product" : ["stock","国内株式"],
+"author" : "出島昇",
+"date" : "2014/12/24",
+"authorImage" : "photo_dejima.jpg",
+"Title":"「柴田罫線をベースとした相場分析」",
+"reportTimes" : "第257回　",
+"reportLinkPath":"/web/market/opinion/stock/dejima/0257.html",
+"reportTitle":"今週は、日米ともに休日をはさんでおり、上値追いは慎重"
+},
+{
+"product" : ["fx","FX"],
+"author" : "ハッサク",
+"date" : "2014/12/24",
+"authorImage" : "photo_hassaku.jpg",
+"Title":"「ハッサクのなるほど為替超入門」",
+"reportTimes" : "第29回　",
+"reportLinkPath":"/web/market/opinion/fx/h_beginner/0029.html",
+"reportTitle":"動かない時間帯　〜　クリスマスと年末・年始の相場"
+},
+{
+"product" : ["fund","投資信託"],
+"author" : "山崎元",
+"date" : "2014/12/19",
+"authorImage" : "photo_yamazaki.jpg",
+"Title":"「ホンネの投資教室」",
+"reportTimes" : "第235回　",
+"reportLinkPath":"/web/market/opinion/fund/yamazaki/0235.html",
+"reportTitle":"アベノミクスに関する疑問の整理"
+},
+{
+"product" : ["fx","FX"],
+"author" : "石原順",
+"date" : "2014/12/18",
+"authorImage" : "photo_ishihara.jpg",
+"Title":"「外為市場アウトルック」",
+"reportTimes" : "第378回　",
+"reportLinkPath":"/web/market/opinion/fx/ishihara/0378.html",
+"reportTitle":"円相場は大波乱も逆オイルショック一服で買戻し、ドル/円は次のトレンド待ちの状況"
+},
+{
+"product" : ["stock","国内株式"],
+"author" : "足立武志",
+"date" : "2014/12/18",
+"authorImage" : "photo_adachi_t.jpg",
+"Title":"「知って納得！株式投資で負けないための実践的基礎知識」",
+"reportTimes" : "第265回　",
+"reportLinkPath":"/web/market/opinion/stock/adachi/0265.html",
+"reportTitle":"株式投資で失敗する2つのパターンとその対処法"
+}
+]
+}

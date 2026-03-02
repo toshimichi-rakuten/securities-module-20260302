@@ -1,0 +1,27 @@
+.swiper-container{
+  margin:0 84px;
+  padding:24px 0 40px 0;
+  overflow:visible;
+}
+.swiper-container .s3-member-banner__list{
+  overflow:visible;
+}
+.swiper-container-initialized .s3-member-banner__item{
+  opacity:1;
+}
+
+.s3-member-banner__inner > .swiper-button-next{right:-64px;margin-top:-52px;width:40px;height:40px;background:url('/web/shared/img/top/s3-hero-arrow-next.png') no-repeat;background-size:contain;}
+.s3-member-banner__inner > .swiper-button-next:hover,.s3-member-banner__inner > .swiper-button-next:focus{background-position:0 0}
+.s3-member-banner__inner > .swiper-button-prev{left:-64px;margin-top:-52px;width:40px;height:40px;background:url('/web/shared/img/top/s3-hero-arrow-prev.png') no-repeat;background-size:contain;}
+.s3-member-banner__inner > .swiper-button-prev:hover,.s3-member-banner__inner > .swiper-button-prev:focus{background-position:0 0}
+.s3-member-banner__inner > .swiper-button-next::after,.s3-member-banner__inner > .swiper-button-prev::after{content:"";}
+
+.s3-member-banner__inner >.swiper-pagination-bullets{
+  bottom:80px;
+}
+.s3-member-banner__inner >.swiper-pagination-bullets .swiper-pagination-bullet{
+  background:#fff;border:1px solid #053ace;border-radius:4px;box-sizing:border-box;opacity:1;
+}
+.s3-member-banner__inner >.swiper-pagination-bullets .swiper-pagination-bullet-active{
+  background:#053ace;
+}

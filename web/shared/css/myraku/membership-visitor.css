@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ==============================================
+   会員情報枠
+============================================== */
+#membership180 {
+	font-size: 75%;
+	line-height: 1.2;
+	color: #444444;
+	width: 180px;
+	margin: 0;
+	padding: 3px 0 0;
+	border-bottom:1px solid #bbbbbb;
+	background:#F8F8F8 url(https://www.rakuten-sec.co.jp/web/shared/images/myraku/bg_myrakuten180.gif) no-repeat scroll 0 0;
+}
+
+/* link */
+#membership180 a:link.linkRed,a:visited.linkRed,a:hover.linkRed,a:active.linkRed {
+	color: #bf0000;
+}
+#membership180 a:link.linkNone,a:visited.linkNone,a:hover.linkNone,a:active.linkNone {
+	color: #444444;
+}
+#membership180 a:link.linkPremium,a:visited.linkPremium,a:hover.linkPremium,a:active.linkPremium {
+	color: #0099cc;
+	font-weight: bold;
+}
+#membership180 a:link.linkGold,a:visited.linkGold,a:hover.linkGold,a:active.linkGold {
+	color: #996600;
+	font-weight: bold;
+}
+#membership180 a:link.linkSilver,a:visited.linkSilver,a:hover.linkSilver,a:active.linkSilver {
+	color: #565656;
+	font-weight: bold;
+}
+#membership180 a:link.linkNormal,a:visited.linkNormal,a:hover.linkNormal,a:active.linkNormal {
+	color: #000000;
+	font-weight: bold;
+}
+
+/* head */
+#membership180 #head {
+	padding: 5px 10px 0;
+}
+#membership180 #head p {
+	color: #bf0000;
+	font-weight: bold;
+	text-align: left;
+}
+
+/* ----------------------------------------------
+   会員情報枠login 
+---------------------------------------------- */
+/* memberInfo */
+#memberInfo {
+	color: #444444;
+	padding: 0px 3px 2px;
+	text-align: center;
+}
+#memberInfo p {
+	margin: 5px;
+}
+
+/* ==============================================
+   会員情報枠180
+============================================== */
+#membership180 .caption2 {
+	font-size: 82%;
+	text-align:left;
+}
+
+#membership180 p.sp-title {
+	position:relative;
+	margin:5px;
+	padding:5px 50px 5px 0;
+}
+
+#membership180 p.sp-title span{
+	display:block;
+	position:absolute;
+	top:2px;
+	right:0px;
+	width:44px;
+}
+
+/* clearfix */
+#membership180 #head {
+	overflow: inherit;
+	zoom: 1;
+}

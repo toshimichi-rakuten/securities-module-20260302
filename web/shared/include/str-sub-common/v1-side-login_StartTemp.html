@@ -1,0 +1,40 @@
+  <div class="login-form"><!-- login-form-->
+
+    <div class="login-form--toggle-button login-form__heading--close">総合口座ログイン<i class="s-glyph">&nbsp;&#xf11a;</i></div>
+    <div style="display:none;" class="login-form__body">
+      <form name="loginform" method="post" action="https://member.rakuten-sec.co.jp/bv/app/MhLogin.do" target="_top">
+        <div class="login-form__field">
+          <label for="form-login-id" class="login-form__input-label">ログインID</label>
+          <input id="form-login-id" type="text" name="loginid" value="" maxlength="8" tabindex="1" onfocus="chfocus('0')" class="login-form__input">
+        </div>
+        <div class="login-form__field">
+          <label for="form-login-pass" class="login-form__input-label">パスワード</label>
+          <input id="form-login-pass" type="password" name="passwd" value="" maxlength="20" tabindex="2" onfocus="chfocus('1')" class="login-form__input">
+        </div><a id="keyboard_opener" href="#" class="login-form__softkey"><i class="login-form__softkey-sprite-icon"></i>ソフトウェアキーボードで入力</a>
+        <select id="homeid" name="homeid" tabindex="3" class="login-form__select">
+          <!-- <option value="EQUAL">同一画面にログイン</option> -->
+          <option value="HOME" selected="selected">ホーム画面にログイン</option>
+          <option value="STK_POS">保有商品一覧にログイン</option>
+          <option value="MARKET_FAVORITE">お気に入り銘柄情報にログイン</option>
+          <option value="MARKET_TOP">マーケットにログイン</option>
+          <option value="PTF_INFO_BASIC_VST">ポートフォリオにログイン</option>
+          <option value="BILLING_VST">リアルタイム入金にログイン</option>
+          <option value="JP_STK_BUY_SEARCH">株式注文にログイン</option>
+          <option value="ACC_REG_CHANGE_TOP">設定・変更にログイン</option>
+        </select>
+        <input id="form-login-path" type="hidden" name="memberPath">
+        <button type="submit" tabindex="4" class="login-form__login-button"><i class="s-glyph">&#xf109;</i> ログイン</button><a href="/web/help/care_login.html" onclick="s.lidTrack('vtop-login_care_login')" class="login-form__confirm-text" style="display:block; text-align:center;">ログインにお困りの方</a>
+      </form>
+    </div>
+
+    <!-- システムメンテナンス時
+    <div style="margin-bottom:10px;padding:4px 6px 6px;border:3px solid #ffc000;background:#eee;font-size:12px;color:#333;line-height:1.3;">
+      <div style="font-weight:bold;text-align:center;">お知らせ</div>
+        現在システムメンテナンス中のため、ログインを停止しています。（楽天FXを除く）
+      <div style="margin-top:5px;padding:2px 4px;background:#ff7920;font-size:12px;color:#fff;text-align:center;">サービス再開予定</div>
+      <div style="padding:2px 4px;background:#fff;font-size:12px;font-weight:bold;color:#333;text-align:center;">9/25（日） 1：30</div>
+    </div>
+    -->
+
+  </div><!-- login-form-->
+  <div class="local-nav"></div>

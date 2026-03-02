@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+Source File: pointback.css for
+ /web/fund/saving/
+CSS file usage: override for module.css
+Time Stamp: 14:39 2012/06/04
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------
+ Page: fund - Common Elements & Custom Modules
+----------------------------------------------------------------*/
+div#str-main .link-right{
+	clear:both;
+	display:block;
+	text-align:right;
+}
+
+div#str-main .link-right .link-01{
+	clear:both;
+	display:block;
+}
+
+div.box-attention-03 div.box-column{
+padding:7px 10px;
+}
+
+div.box-attention-03 div.box-column div.column-01 div.box-txt p{
+margin-top:1.25em;
+}
+
+div.box-attention-03 div.box-column div.box-txt,
+div.box-attention-03 div.box-column div.box-btn{
+float:left;
+}
+
+div.box-attention-03 div.box-column div.box-txt{
+margin-right:13px;
+width:304px;
+}
+
+div.box-attention-03 div.box-column div.box-btn{
+width:202px;
+}
+
+
+/* ---------------------------------
+	box-attention-03
+ -------------------------------- */
+div#str-main div.box-attention-03{
+margin-bottom:1.25em;
+/*border:1px solid #cacdd9;*/
+}
+
+/*div#str-main div.box-attention-03 h2{
+margin-bottom:14px;
+font-size:87.5%;
+text-align:center;
+background-color:#fff388;
+}
+
+div#str-main div.box-attention-03 h2 span{
+margin:1px;
+padding:2px 7px;
+color:#333333;
+height:48px;
+display:block;
+text-align:left;
+}*/
+
+div#str-main div.box-attention-03 h2 span img{
+margin:0 5px 2px 10px;
+vertical-align:middle;
+float:left;
+}
+
+div#str-main div.box-attention-03 h3{
+margin:0 15px;
+}
+
+div#str-main div.box-attention-03 div.box-note{
+margin:14px 14px 1.25em;
+padding:10px 5px;
+background-color:#e9ebff;
+}

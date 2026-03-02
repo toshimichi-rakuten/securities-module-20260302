@@ -1,0 +1,28 @@
+<form name="loginform" method="post" action="https://member.rakuten-sec.co.jp/app/MhLogin.do" target="_top" class="s1-form-login">
+  <h2 class="s1-form-login__hdg">総合口座ログイン</h2>
+  <div class="s1-form-login__container" style="margin-bottom: 8px;">
+      <p class="s1-form-login__input-field">
+        <label for="form-login-id">ログインID</label>
+        <input id="form-login-id" type="text" name="loginid" value="" maxlength="8" tabindex="1" onfocus="chfocus('0')">
+      </p>
+      <p class="s1-form-login__input-field">
+        <label for="form-login-pass">パスワード</label>
+        <input id="form-login-pass" type="password" name="passwd" value="" maxlength="20" tabindex="2" onfocus="chfocus('1')">
+      </p><span class="s-icon"></span><a id="keyboard_opener" href="#" class="s-softkey"><i class="sprite-icon-keyboard"></i>ソフトウェアキーボードで入力</a>
+      <select id="homeid" name="homeid" tabindex="3">
+        <option value="HOME" selected="selected">ホーム画面にログイン</option>
+        <option value="STK_POS">保有商品一覧にログイン</option>
+        <option value="MARKET_FAVORITE">お気に入り銘柄情報にログイン</option>
+        <option value="MARKET_TOP">マーケットにログイン</option>
+        <option value="PTF_INFO_BASIC_VST">ポートフォリオにログイン</option>
+        <option value="BILLING_VST">リアルタイム入金にログイン</option>
+        <option value="JP_STK_BUY_SEARCH">株式注文にログイン</option>
+        <option value="ACC_REG_CHANGE_TOP">設定・変更にログイン</option>
+      </select>
+    </div>
+    <div class="s1-form-login__container">
+    <button type="submit" class="s1-btn-login-small s1-form-login__btn s1-btn--narrow" tabindex="4"><i class="s-glyph">&#xf109;</i> ログイン</button>
+    <a href="/web/help/care_login.html" onclick="s.lidTrack('vtop-login_care_login')" class="s1-form-login__confirm-text" style="font-size:10px; margin-bottom:7px; line-height:1.4;"><span class="sprite-icon-alert"></span>ログインにお困りの方<span class="s-link-arrow">&nbsp;&gt;</span></a>
+    <a href="/web/help/care_login_vacant.html" onclick="s.lidTrack('vtop-login_care_login_vacant')" class="s1-form-login__confirm-text" style="font-size:10px; line-height:1.4;"><span class="sprite-icon-alert"></span>久しぶりに口座を利用されたいお客様へ<span class="s-link-arrow">&nbsp;&gt;</span></a>
+    </div>
+</form>

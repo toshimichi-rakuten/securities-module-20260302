@@ -1,0 +1,16 @@
+
+.rex-header {
+  z-index: 2410;
+}
+
+
+.spm-mdl,
+.spm-mdl-fullscreen,.spm-mdl-simple {
+  z-index: 12500;
+}
+.spm-mdl-backdrop {
+  z-index: 12410;
+}
+.spm-shs-overlay {
+  z-index: 12399;
+}

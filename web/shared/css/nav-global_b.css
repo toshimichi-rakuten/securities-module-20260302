@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. nav-global
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. nav-global
+----------------------------------------------------------------- */
+div#nav-global{
+margin-top:12px;
+background-color:#ffffff;
+}
+
+div#nav-global dl{
+margin-bottom:0;
+position:relative;
+}
+
+div#nav-global dl dt{
+position:absolute;
+left:-9999px;
+}
+
+div#nav-global dl dd{
+min-height:40px;
+}
+
+div#nav-global dl dd ul.main-menu{
+margin-bottom:0;
+border-bottom:2px #003399 solid;
+background:#ececec url("/web/shared/images/nav-global/global-nav-bg-01.gif") repeat-x 0 0;
+}
+
+div#nav-global dl dd ul li{
+padding:3px 3px 0 0;
+float:left;
+min-height:24px;
+line-height:0.5;
+zoom:0;
+}
+
+div#nav-global dl dd ul.main-menu li.selected{
+padding-top:0;
+}
+
+div#nav-global dl dd ul.main-menu li.nav-sub{
+margin-left:14px;
+}
+
+div#nav-global dl dd ul.sub-menu{
+padding:1px 0;
+width:950px;
+border-bottom:1px #5c5c5c solid;
+background:#cfdcf7 url("/web/shared/images/nav-global/nav-bg-02.gif") repeat-x 0 0;
+}
+
+div#nav-global dl dd ul.sub-menu li{
+padding: 0;
+border-right:1px #5c5c5c solid;
+font-size:81.25%;
+white-space:nowrap;
+}
+
+div#nav-global dl dd ul.sub-menu li.last-child{
+}
+
+div#nav-global dl dd ul.sub-menu li a{
+display:block;
+min-height:0.65em;
+padding:12px 7px 9px;
+color: #003399;
+}
+
+div#nav-global dl dd ul.sub-menu li a:active,
+div#nav-global dl dd ul.sub-menu li a:hover,
+div#nav-global dl dd ul.sub-menu li a:focus{
+background:#01359a url("/web/shared/images/nav-global/nav-bg-03.gif") repeat-x 0 0;
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+div#nav-global dl dd.type-01 li{
+padding-bottom:4em;
+}
+
+div#nav-global dl dd.type-01 li li{
+padding-bottom:9px;
+}
+
+div#nav-global dl dd.type-02{
+min-height:29px;
+background-color:#ececec;
+}
+div#nav-global dl dd.type-02 ul{
+padding-bottom:0;
+background-color:#003399;
+}
+div#nav-global dl dd.type-02 li{
+padding-bottom:7px;
+}
+
+div#nav-global dl dd.type-02 li li{
+padding-bottom:9px;
+}
+
+div#nav-global dl dd.type-03 ul{
+background:#ececec url("/web/shared/images/nav-global/global-nav-bg-02.gif") repeat-x 0 0;
+}
+
+div#nav-global dl dd ul li img.new1{
+position:absolute;
+right:420px;
+top:-6px;
+}
+
+div#nav-global dl dd ul li img.new2{
+position:absolute;
+right:265px;
+top:-6px;
+}
+
+div#nav-global dl dd ul li img.etf1{
+position:absolute;
+left:148px;
+top:-6px;
+}
+
+div#nav-global dl dd ul li img.etf2{
+position:absolute;
+left:248px;
+top:-6px;
+}
+
+div#nav-global dl dd ul li img.moneybridge{
+position:absolute;
+left:891px;
+top:-6px;
+}
+
+
+div#nav-global dl dd ul li img.fx{
+position:absolute;
+left:540px;
+top:-6px;
+}
+
+div#nav-global dl dd ul li img.gold{
+position:absolute;
+left:747px;
+top:-6px;
+}
+
+/* ----------------------------------------------------------------
+	02. nav-global (vtop)
+----------------------------------------------------------------- */
+body#top div#nav-global{
+margin-top:12px;
+background-color:#ffffff;
+}
+
+body#top div#nav-global dl{
+margin-bottom:0;
+position:relative;
+}
+
+body#top div#nav-global dl dt{
+position:absolute;
+left:-9999px;
+}
+
+body#top div#nav-global dl dd{
+min-height:40px;
+}
+
+body#top div#nav-global dl dd ul.main-menu{
+margin-bottom:0;
+border-bottom:2px #003399 solid;
+background:#ececec url("/web/shared/images/nav-global/global-nav-bg-01.gif") repeat-x 0 0;
+}
+
+body#top div#nav-global dl dd ul li{
+padding:3px 3px 0 0;
+float:left;
+min-height:24px;
+line-height:0.5;
+zoom:0;
+}
+
+body#top div#nav-global dl dd ul.main-menu li.selected{
+padding-top:0;
+}
+
+body#top div#nav-global dl dd ul.main-menu li.nav-sub{
+margin-left:14px;
+}
+
+body#top div#nav-global dl dd ul.sub-menu{
+padding:1px 0;
+width:950px;
+border-bottom:1px #5c5c5c solid;
+background:#cfdcf7 url("/web/shared/images/nav-global/nav-bg-02.gif") repeat-x 0 0;
+}
+
+body#top div#nav-global dl dd ul.sub-menu li{
+padding: 0;
+border-right:1px #5c5c5c solid;
+font-size:81.25%;
+white-space:nowrap;
+}
+
+body#top div#nav-global dl dd ul.sub-menu li.last-child{
+}
+
+body#top div#nav-global dl dd ul.sub-menu li a{
+display:block;
+min-height:0.65em;
+padding:12px 9px 9px;
+color: #003399;
+}
+
+body#top div#nav-global dl dd ul.sub-menu li a:active,
+body#top div#nav-global dl dd ul.sub-menu li a:hover,
+body#top div#nav-global dl dd ul.sub-menu li a:focus{
+background:#01359a url("/web/shared/images/nav-global/nav-bg-03.gif") repeat-x 0 0;
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+
+body#top div#nav-global dl dd.type-01 li{
+padding-bottom:4em;
+}
+
+body#top div#nav-global dl dd.type-01 li li{
+padding-bottom:9px;
+}
+
+body#top div#nav-global dl dd.type-02{
+padding-bottom:5px;
+min-height:29px;
+background-color:#ececec;
+}
+body#top div#nav-global dl dd.type-02 ul{
+padding-bottom:0;
+background-color:#003399;
+}
+body#top div#nav-global dl dd.type-02 li{
+padding-bottom:7px;
+}
+
+body#top div#nav-global dl dd.type-02 li li{
+padding-bottom:9px;
+}
+
+body#top div#nav-global dl dd.type-03 ul{
+background:#ececec url("/web/shared/images/nav-global/global-nav-bg-02.gif") repeat-x 0 0;
+}
+

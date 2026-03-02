@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* ----------------------------------------------------------------
+*	01. str-contents
+*	02. modules
+*	03. iframe
+*	04. set_hight.js
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Default
+----------------------------------------------------------------- */
+body{
+background-color:#ffffff;
+}
+
+html>/**/body.lyt-column-smc div#str-contents-innner,
+html>/**/body.lyt-column-ms-01 div#str-contents,
+html>/**/body.lyt-column-ms-02 div#str-contents{ 
+display:table !important;
+} 
+
+html>/**/body.lyt-column-smc div#str-contents-inner,
+html>/**/body.lyt-column-ms-01 div#str-contents-inner{
+direction:rtl !important;
+}
+
+html>/**/body.lyt-column-smc div#str-main, 
+html>/**/body.lyt-column-smc div#str-sub,
+html>/**/body.lyt-column-ms-01 div#str-main, 
+html>/**/body.lyt-column-ms-01 div#str-sub{
+direction:ltr !important;
+}
+
+html>/**/body div#str-main, 
+html>/**/body div#str-sub,
+html>/**/body div#str-sub-common{ 
+display:table-cell !important; 
+float:none !important;
+}
+
+div#str-sub{
+padding-right:0;
+overflow:hidden;
+}
+
+div#str-search{
+display:none;
+}
+
+div#str-footer hr{
+display:block;
+}
+
+div#str-footer ul.nav-contents-01{
+display:none;
+}
+
+div#str-footer div#nav-summary{
+clear:both;
+border:none;
+}
+
+
+/* ----------------------------------------------------------------
+	02. modules
+----------------------------------------------------------------- */
+
+body.lyt-column-smc div#str-contents-inner .hdg-l1-01 span{
+direction:ltr !important;
+}
+
+div#str-main div.box-search-stock-01{
+display:none;
+}
+
+div#str-main div.list-index-01 ul li,
+div#str-main div.list-index-01-odd ul li{
+float:none;
+width:auto;
+}
+
+body.lyt-column-smc div#str-main div.box-inner-02 div.lyt-column div.segment{
+font:none;
+width:auto;
+}
+
+/* campaign */
+body.lyt-column-ms-01 div.nav-container ul{
+zoom:99.8%;
+}
+
+/* ----------------------------------------------------------------
+	Box Login Component
+----------------------------------------------------------------- */
+div#str-main div.box-login ul li div.box-inner div.box-txt{
+width:auto;
+}
+/* ----------------------------------------------------------------
+	FX Box Module
+----------------------------------------------------------------- */
+div#str-main .box-fx-02{
+padding:10px;
+}
+div#str-main .box-fx-02 ul.list-image-fx-04{
+margin-right:0;
+}
+
+
+
+/* ----------------------------------------------------------------
+	03. iframe
+----------------------------------------------------------------- */
+
+iframe{
+}
+
+iframe.iframe-smc-01,
+iframe.iframe-ms-02-01,
+iframe.iframe-ms-02-sub-01{
+}
+
+
+
+/* ----------------------------------------------------------------
+	04. set_hight.js
+----------------------------------------------------------------- */
+span#js_etalon_wrapper span#js_etalon{
+text-indent:-9999px;
+}
+

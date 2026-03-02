@@ -1,0 +1,39 @@
+<div id="str-search" style="margin-bottom:0;">
+<script language="JavaScript" src="/web/shared/js/str-search/ecl_new.js"></script>
+<script language="JavaScript" src="/web/shared/js/str-search/cmmn.js"></script>
+<form action="javascript:changeSearchResult('search','stoc-type', 'name')" method="GET" name="search">
+<fieldset id="form-search-stock">
+<legend>株価検索</legend>
+<dl>
+<dt class="label-search">
+<label for="form-search-stock-prices"><img src="/web/shared/images/str-search/search.gif" alt="検索" width="59" height="22"></label></dt>
+<dd>
+<input type="text" id="form-search-stock-prices" name="name" value="銘柄名&frasl;コード&frasl;ファンド名" onfocus="this.value='';this.style.color='#000000';">
+<select id="stoc-type" name="stoc-type">
+<option value="0" selected="selected">国内株式</option>
+<option value="1">米株株式</option>
+<option value="2">中国株式</option>
+<option value="3">投資信託</option>
+</select>
+<input type="image" value="検索" src="/web/shared/images/str-search/btn-search.gif" id="form-search-stock-btn" onclick="">
+</dd>
+</dl>
+</fieldset>
+</form>
+
+<form name="searchform" method="GET" action="http://csearch.rakuten.co.jp/sbr/usearch?sitem=fx&sv=3" onsubmit='chkSearchValue();'>
+<div>
+<input type="hidden" name="sv" value="3">
+<input type="hidden" name="f" value="A">
+<fieldset id="form-search-word">
+<legend>サイト内検索</legend>
+<p><input type="text" name="sitem" value="キーワードを入力" class="searchInput" id="form-search-keywords" onfocus="this.value='';this.style.color='#000000';"><input type="image" src="/web/shared/images/str-search/btn-search-word.gif" value="サイト内検索" id="form-search-btn"></p>
+</fieldset>
+</div>
+</form>
+
+<div id="font-control">
+</div><!-- /#font-control -->
+<hr />
+</div><!-- /#str-search -->
+<p style="margin:0 0 7px;padding:0;"><a href="/web/special/20090811/?l-id=pbnr_special_20090811"><img src="/web/shared/images/str-search/bnr_pricecut_950x40.gif" alt="緊急告知！国内株式手数料さらに値下げ！" width="950" height="40" border="0"></a></p>

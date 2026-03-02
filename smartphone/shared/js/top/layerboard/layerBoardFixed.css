@@ -1,0 +1,87 @@
+html,body {
+	height: 100%;
+}
+
+* html .layer_board_bg,
+* html .layer_board {
+	position: absolute;
+}
+
+/*.layer_board_area{
+	width: 100%;
+	height: 100%;
+	z-index: 20000;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+}*/
+
+.layer_board_bg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 150%;
+	height: 150%;
+	display: none;
+	cursor: pointer;
+	background: #000;
+	z-index: 20000;
+}
+
+.layer_board {
+	display: none;
+	width: 80%;;
+	line-height: 1.3;
+	background-color: #fff;
+	z-index: 20001;
+	position: fixed;
+	max-height: 80%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 20px 10px 10px;
+	margin: auto;
+	top: 10%;
+	bottom: 10%;
+	left: 10%;
+	right: 10%;
+}
+
+.layer_board p{
+	margin-bottom: 10px;
+}
+
+.btn_close {
+	right: -15px;
+	top: -15px;
+	position: absolute;
+	z-index: 20002;
+}
+
+.layer_board .bnr_first {
+	padding-top: 20px;
+	
+}
+
+.layer_board_inner{
+	background-color: #fff;
+	max-height: 100%;
+	overflow: auto;
+	padding: 0 10px;
+}
+
+.layer_board_inner::-webkit-scrollbar{
+    width: 5px;
+    background: #a9b2d8;
+}
+.layer_board_inner::-webkit-scrollbar:horizontal{
+    height: 5px;
+    background: #a9b2d8;
+}
+.layer_board_inner::-webkit-scrollbar-thumb{
+    background: #51B7FF;
+    border-radius: 2px;
+}
+.layer_board_inner::-webkit-scrollbar-thumb:horizontal{
+    background: #51B7FF;
+    border-radius: 2px;
+}

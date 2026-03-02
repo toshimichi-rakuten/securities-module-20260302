@@ -1,0 +1,32 @@
+<!-- インクルード /web/shared/include/vtop/s1-visitor-login.html -->
+<!--/web/shared/include/vtop/s1-visitor-login_StartTemp.htmlも修正必須-->
+<!-- .login(システム再開時) -->
+<div class="s3-form-login">
+  <div class="s3-form-login__container">
+    <h2 class="s3-form-login__hdg">総合口座ログイン</h2>
+    <form id="idPassLoginForm" name="loginform" method="post" action="https://member.rakuten-sec.co.jp/app/MhLogin.do?login_type=1" target="_top" class="s3-form-login__login">
+      <input id="form-login-id" type="text" name="loginid" value="" maxlength="8" tabindex="1" onfocus="chfocus('0')" placeholder="ログインID" class="s3-form-login__input">
+      <div class="s3-passwd-form">
+        <input id="form-login-pass" type="password" name="passwd" value="" maxlength="20" tabindex="2" onfocus="chfocus('1')" placeholder="パスワード" class="s3-form-login__input">
+        <span class="s3-passwd-form__toggle"><i class="rex-icon-eye-filled"></i><i class="rex-icon-eyeban-filled"></i></span>
+      </div>
+      <p class="s3-form-login__keyboard"><i class="rex-icon-keyboard-outline"></i> <a id="keyboard_opener" href="#" class="s-softkey">画面キーボードを使う</a></p>
+      <input type="hidden" id="homeid" name="homeid" value="HOME">
+      <button type="submit" id="login-btn" class="s3-form-login__btn" tabindex="4"><i class="rex-icon-login-outline"></i>ID･パスワードでログイン</button>
+    </form>
+    <form id="passkeyLoginForm" name="loginform" method="post" action="https://member.rakuten-sec.co.jp/app/MhLogin.do?login_type=2" target="_top" class="s3-form-login__login">
+      <hr class="s3-form-login__hr">
+      <input type="hidden" id="homeid-passkey" name="homeid" value="HOME">
+      <button type="submit" id="login-passkey" class="s3-form-login__btn-passkey"><i class="sure-icon-passkey-outline"></i> パスキーでログイン</button>
+      <p class="s3-form-login__txt-passkey"><a href="/web/security/passkey/" data-ratid="vtop-login_security_passkey" data-ratevent="click" data-ratparam="all">パスキーを作成する <i class="rex-icon-chevron-right"></i></a></p>
+      <hr class="s3-form-login__hr-bottom">
+    </form>
+  </div>
+  <div class="s3-form-login__container s3-form-login__container--help">
+    <p class="s3-form-login__help s3-form-login__help--1"><i class="rex-icon-help-outline"></i> <a onclick="s.lidTrack('vtop-login_care_login')" href="/web/help/care_login.html">ログインにお困りの方</a></p>
+    <p class="s3-form-login__help s3-form-login__help--2"><i class="rex-icon-help-outline"></i> <a onclick="s.lidTrack('vtop-login_care_login_vacant')" href="/web/help/care_login_vacant.html">久しぶりに口座を利用されたいお客様へ</a></p>
+    <!-- <p class="s3-form-login__help s3-form-login__help--3"><i class="rex-icon-help-outline"></i> <a onclick="s.lidTrack('vtop-login_add_authentication')" href="/web/security/add_authentication/">ログイン追加認証を利用されたい方</a></p> -->
+  </div>
+</div>
+<!-- /.login(システム再開時) -->
+<!-- /インクルード /web/shared/include/vtop/s1-visitor-login.html -->

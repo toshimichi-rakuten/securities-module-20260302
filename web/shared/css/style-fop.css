@@ -1,0 +1,514 @@
+/* pdfリンクアイコン */
+a[href$=".pdf"]:after {
+  background: url(/web/shared/img/icon/link_pdf.png) no-repeat 0 center;
+  background-size: 16px 16px;
+  content: " ";
+  display: inline;
+  margin-left: 4px;
+  padding-right: 25px;
+}
+/* flex */
+.s1-flex {
+  display: flex
+}
+.s1-flex-gap10 {
+  gap: 10px
+}
+.s1-flex-fill {
+  flex: 1 1 auto
+}
+.s1-flex-evenly {
+  flex: 1
+}
+.s1-flex-content--end {justify-content: flex-end;}
+.s1-flex-content--center {justify-content: center;}
+.s1-flex-content--between {justify-content: space-between;}
+.s1-flex-items--end {align-items: flex-end;}
+.s1-flex-items--center {align-items: center;}
+.s1-flex-items--stretch {align-items: stretch;}
+
+/* アイコンテーブル */
+.s1-icon-tbl {
+  display: table;
+  padding: 14px 10px;
+}
+.s1-icon-tbl__content {
+  display: table-cell;
+}
+.s1-icon-tbl__icon {
+  margin-right: 20px;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+.s1-icon-tbl__icon span {
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
+.s1-icon-tbl__hdg {
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.s1-icon-tbl__txt {
+  margin-bottom: 14px;
+}
+
+/* タグリンク */
+.s1-tag-link {
+  display: inline-block;
+  background-color: #ddd;
+  color: #0069c7;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-bottom: #b3b3b3 1px solid;
+}
+.s1-tag-link a {
+  text-decoration: none;
+}
+
+/* スライダー設定 */
+.s1-slick-slider--2,
+.s1-slick-slider--3 {
+  display: none;
+  padding-left: 0
+}
+.s1-slick-slider--2.slick-initialized,
+.s1-slick-slider--3.slick-initialized {
+  display: block
+}
+.s1-slick-slider--2 .slick-slide,
+.s1-slick-slider--3 .slick-slide {
+  margin: 0
+}
+.s1-slick-slider--2 .slick-slide a,
+.s1-slick-slider--3 .slick-slide a {
+  display: block;
+  width: 100%
+}
+.s1-slick-slider--2 img {
+  width: 248px;
+  margin: 0 auto
+}
+.s1-slick-slider--3 img {
+  width: 182px;
+  margin: 0 auto
+}
+
+/* 先物・オプション */
+/* アイコン */
+.fop-icon-beginner {
+  width: 41px;
+  height: 64px;
+  background: url(/web/shared/images/icon/ico-beginner.svg) no-repeat center center;
+}
+.fop-icon-value--01 {
+  width: 50px;
+  height: 44px;
+  background: url(/web/shared/images/icon/ico-48.svg) no-repeat center center;
+}
+.fop-icon-value--02 {
+  width: 60px;
+  height: 47px;
+  background: url(/web/shared/images/icon/ico-49.svg) no-repeat center center;
+}
+.fop-icon-value--03 {
+  width: 46px;
+  height: 36px;
+  background: url(/web/shared/images/icon/ico-50.svg) no-repeat center center;
+}
+.fop-icon-value--04 {
+  width: 47px;
+  height: 58px;
+  background: url(/web/shared/images/icon/ico-51.svg) no-repeat center center;
+}
+.fop-icon-value--05 {
+  width: 47px;
+  height: 58px;
+  background: url(/web/shared/images/icon/ico-54.svg) no-repeat center center;
+}
+.fop-icon-futures-merit--01 {
+  width: 46px;
+  height: 44px;
+  background: url(/web/shared/images/icon/ico-46.svg) no-repeat center center;
+}
+.fop-icon-futures-merit--02{
+  width: 54px;
+  height: 55px;
+  background: url(/web/shared/images/icon/ico-47.svg) no-repeat center center;
+}
+.fop-icon-futures-merit--03 {
+  width: 50px;
+  height: 50px;
+  background: url(/web/shared/images/icon/ico-33.svg) no-repeat center center;
+}
+.fop-icon-futures-merit--04 {
+  width: 49px;
+  height: 49px;
+  background: url(/web/shared/images/icon/ico-19.svg) no-repeat center center;
+}
+.fop-icon-option-merit--01 {
+  width: 40px;
+  height: 58px;
+  background: url(/web/shared/images/icon/ico-11.svg) no-repeat center center;
+}
+.fop-icon-option-merit--02{
+  width: 68px;
+  height: 60px;
+  background: url(/web/shared/images/icon/ico-53.svg) no-repeat center center;
+}
+.fop-icon-option-merit--03 {
+  width: 70px;
+  height: 62px;
+  background: url(/web/shared/images/icon/ico-32.svg) no-repeat center center;
+}
+.foreign-futures-icon-merit--01 {
+  width: 52px;
+  height: 48px;
+  background: url(/web/shared/images/icon/ico-28.svg) no-repeat center center;
+}
+.foreign-futures-icon-merit--02 {
+  width: 58px;
+  height: 62px;
+  background: url(/web/shared/images/icon/ico-52.svg) no-repeat center center;
+}
+.foreign-futures-icon-merit--03 {
+  width: 44px;
+  height: 50px;
+  background: url(/web/shared/images/icon/ico-06.svg) no-repeat center center;
+}
+
+/* 先物・オプション トップ */
+/* トップローテーションバナー ここから*/
+.s1-swiper-area {
+  position: relative;
+  height: 230px;
+}
+.s1-swiper-area .s1-swiper {
+  margin-right: 53px;
+  margin-left: 53px;
+}
+.s1-swiper-area .s1-swiper-button-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.s1-swiper-area .s1-swiper-button-prev .swiper-button-prev {
+  position: initial;
+  display: table-cell;
+  width: 52px;
+  height: 210px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff1f1;
+  color: #ec0606;
+}
+.s1-swiper-area .s1-swiper-button-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.s1-swiper-area .s1-swiper-button-next .swiper-button-next {
+  position: initial;
+  display: table-cell;
+  width: 52px;
+  height: 210px;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff1f1;
+  color: #ec0606;
+}
+.s1-swiper-area .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 6px;
+  line-height: 0;
+  z-index: 0;
+}
+.s1-swiper-area .swiper-pagination-bullet {
+  display: inline-block;
+  margin-left: 10px;
+  width: 30px;
+  height: 6px;
+  border-radius: 0%;
+}
+.s1-swiper-area .swiper-pagination-bullet-active {
+  background-color: #ec0606;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next::after {
+  display: none;
+}
+/* トップローテーションバナー 　ここまで　*/
+
+.fop-market-summary {
+  font-family: 'Roboto', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo
+}
+
+.fop-market-summary__hdg {
+  background-color: #000;
+  padding: 7px 14px;
+  color: #fff;
+  font-weight: bold;
+  position: relative
+}
+
+.fop-market-summary__price {
+  position: absolute;
+  top: 7px;
+  right: 14px;
+  font-weight: normal
+}
+
+.fop-market-summary__content {
+  -webkit-box-shadow: 0px 2px #eee;
+  box-shadow: 0px 2px #eee
+}
+
+.fop-market-summary__tbl {
+  width: 100%;
+  margin-bottom: 7px
+}
+
+.fop-market-summary__tbl thead th {
+  background-color: #ccc;
+  font-size: 10px;
+  padding: 4px 14px
+}
+
+.fop-market-summary__tbl tbody tr+tr {
+  border-top: 1px solid #ccc
+}
+
+.fop-market-summary__tbl tbody td {
+  background-color: #fff;
+  font-size: 10px;
+  padding: 10px 14px
+}
+
+.fop-market-summary__tbl tbody td img {
+  vertical-align: middle
+}
+
+.fop-market-summary__tbl tbody td:nth-child(2) {
+  text-align: right
+}
+
+.fop-market-summary__tbl tbody td:nth-child(3) {
+  text-align: right
+}
+
+.fop-market-summary__tbl tbody td:nth-child(4) {
+  text-align: right
+}
+
+.fop-market-summary__tbl tbody td a {
+  text-decoration: none
+}
+
+.fop-market-summary__tbl tbody td a:link,
+.fop-market-summary__tbl tbody td a:visited,
+.fop-market-summary__tbl tbody td a:hover,
+.fop-market-summary__tbl tbody td a:active {
+  color: #000
+}
+
+.fop-simulation th {
+  white-space: nowrap;
+}
+.fop-simulation-input__text {
+  border:solid 1px #686868;
+}
+.fop-simulation-btn__submit {
+  padding: 4px 12px;
+  background-color: #f7f7f7;
+  border: solid 1px #686868;
+  border-radius: 4px;
+}
+.fop-simulation-btn__submit:hover {
+  background-color: #d1d1d1;
+  text-decoration: none !important;
+}
+
+/* 日経225オプション取引トップ */
+.fop-link-panel--beginner::after,.fop-link-panel--beginner:hover::after {
+  border-color: transparent #00ada0 #00ada0 transparent!important;
+}
+.fop-link-panel--beginner .s1-icon-tbl__icon {
+  background-color: transparent!important;
+}
+.fop-link-panel--beginner .s1-icon-tbl__hdg {
+  color: #00ada0!important;
+}
+.fop-link-panel--beginner .s1-icon-tbl__txt {
+  color: #333!important;
+}
+
+/* 理解度診断 */
+/* アコーディオン */
+.check-list-wrap {
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.check-list-heading {
+  font-size: 24px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.check-list {
+  background-color: #fff;
+  padding: 16px;
+  position: relative;
+}
+.check-list:not(:first-child) {
+  margin-top: 28px;
+}
+.check-list:not(:first-child)::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -26px;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  background: url(/web/fop/special/images/img-flow-yes.svg) no-repeat 0 0;
+  width: 80px;
+  height: 24px;
+}
+.check-list .lead-txt {
+  font-weight: 600;
+}
+.check-list .check-btn {
+  color: #006A9E;
+  cursor:pointer;
+  display: inline-block;
+  padding-right: 22px;
+  position: relative;
+}
+.check-list .check-btn::after {
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-top: -8px;
+  border-bottom: solid 2px #006A9E;
+  border-right: solid 2px #006A9E;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 2px;
+}
+.check-list .is-current .check-btn::after {
+  margin-top: -3px;
+  border-bottom: none;
+  border-top: solid 2px #006A9E;
+  transform: rotate(-45deg);
+}
+.check-list .accordion-body {
+  border-top: 1px solid #D1D1D1;
+  display: none;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.check-list-footer {
+  margin-top: 20px;
+  padding: 14px;
+  text-align: center;
+}
+.check-list-footer .txt {
+  font-weight: bold;
+}
+
+/*商品先物取引トップ*/
+.commodity-debut {
+  display: table;
+  padding: 14px 10px;
+  }
+.commodity-debut__icon {
+  display: table-cell;
+  padding-right: 20px;
+}
+.commodity-debut__icon p {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+}
+.commodity-debut__icon p span {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.commodity-debut__icon--lower p {
+  background-color: #f5f5f5;
+}
+.commodity-debut__content {
+  display: table-cell;
+  vertical-align: top;
+}
+.commodity-debut__hdg {
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.commodity-debut__txt {
+  margin-bottom: 14px;
+}
+
+/*商品先物取引トップ*/
+/*各アイコン画像*/
+.commodity-icon-merit-01 {
+  display: inline-block;
+  background-image: url('/web/shared/images/icon/ico-36.svg');
+  background-position: center;
+  width: 68px;
+  height: 52px;
+  vertical-align: middle;
+}
+.commodity-icon-merit-02 {
+  display: inline-block;
+  background-image: url('/web/shared/images/icon/ico-11.svg');
+  background-position: center;
+  width: 40px;
+  height: 58px;
+  vertical-align: middle;
+}
+.commodity-icon-merit-03 {
+  display: inline-block;
+  background-image: url('/web/shared/images/icon/ico-33.svg');
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.commodity-icon-merit-04 {
+  display: inline-block;
+  background-image: url('/web/shared/images/icon/ico-19.svg');
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}

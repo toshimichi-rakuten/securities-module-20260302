@@ -1,0 +1,2054 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Default Mragin
+*	02. Heading Module
+*	03. Paragraph Module
+*	04. Ordered List Module
+*	05. Unordered List Module
+*	06. Definition List Module
+*	07. Link List Module
+*	08. Index List Module
+*	09. Page Navigation Module
+*	10. Contents Navigation Module
+*	11. Notice Module
+*	12. Table Module
+*	13. Layout Images Module
+*	14. Layout Column Module
+*	15. Box Module
+*	16. Plugin Download Module
+*	17. Form Module
+*	18. Inquiry Component
+*	19. Q and A Component
+*	20. Topics Module
+*	21. column-market-01
+*	22. Common Style
+----------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	01. Default Margin
+----------------------------------------------------------------- */
+div#str-main div#hp-template p,
+div#str-main div#hp-template ul,
+div#str-main div#hp-template ol,
+div#str-main div#hp-template dl,
+div#str-main div#hp-template table{
+margin-bottom:1em;
+}
+
+div#str-main div#hp-template ul p,
+div#str-main div#hp-template ul ul,
+div#str-main div#hp-template ul ol,
+div#str-main div#hp-template ul dl,
+div#str-main div#hp-template ul table,
+div#str-main div#hp-template ol p,
+div#str-main div#hp-template ol ul,
+div#str-main div#hp-template ol ol,
+div#str-main div#hp-template ol dl,
+div#str-main div#hp-template ol table,
+div#str-main div#hp-template dl p,
+div#str-main div#hp-template dl ul,
+div#str-main div#hp-template dl ol,
+div#str-main div#hp-template dl dl,
+div#str-main div#hp-template dl table{
+margin-top:0.15em;
+margin-bottom:0.35em;
+font-size:100%;
+}
+
+div#str-main div#hp-template table p,
+div#str-main div#hp-template table ul,
+div#str-main div#hp-template table ol,
+div#str-main div#hp-template table dl,
+div#str-main div#hp-template table table{
+margin:0;
+font-size:100%;
+}
+
+
+/* ----------------------------------------------------------------
+	02. Heading Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template div.hdg-l1-01-container,
+div#str-main div#hp-template div.hdg-l1-02-container{
+margin-bottom:15px;
+border-bottom:2px solid #f2f2f2;
+position:relative;
+}
+
+div#str-main div#hp-template .hdg-l1-01,
+div#str-main div#hp-template .hdg-l1-02{
+padding:1px;
+border:1px solid #cacdd9;
+background:#ffffff;
+font-size:112.5%;
+}
+
+div#str-main div#hp-template .hdg-l1-01 span{
+padding:3px 17px 4px;
+display:block;
+min-height:25px;
+background:#dddddd url("/web/shared/images/heading/hdg-l1-01-bg.gif") no-repeat 0 0;
+zoom:1;
+}
+
+div#str-main div#hp-template .hdg-l1-02 span{
+padding:3px 17px 4px 37px;
+display:block;
+min-height:25px;
+background:#dddddd url("/web/shared/images/heading/hdg-l1-02-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+div#str-main div#hp-template .hdg-l1-02 span.type-01{
+padding-left:68px;
+}
+
+div#str-main div#hp-template div.hdg-l1-02-container ul.nav-link-01{
+margin:0;
+position:absolute;
+top:6px;
+left:7px;
+}
+
+div#str-main div#hp-template div.hdg-l1-02-container ul.nav-link-01 li{
+padding-right:5px;
+float:left;
+}
+
+div#str-main div#hp-template .hdg-l2-01,
+div#str-main div#hp-template .hdg-l2-02{
+margin-bottom:15px;
+padding:1px;
+border:1px solid #cacdd9;
+background:#ffffff;
+font-size:87.5%;
+}
+div#str-main div#hp-template .hdg-l2-01 span,
+div#str-main div#hp-template .hdg-l2-02 span{
+padding:7px 10px 2px;
+display:block;
+min-height:20px;
+background:#dfdfdf url("/web/shared/images/heading/hdg-l2-01-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+div#str-main div#hp-template div.hdg-l2-02-container{
+margin-bottom:15px;
+position:relative;
+}
+
+div#str-main div#hp-template .hdg-l2-02{
+margin-bottom:0;
+}
+
+div#str-main div#hp-template .hdg-l2-02 span{
+padding-right:50px;
+}
+
+div#str-main div#hp-template div.hdg-l2-02-container ul.nav-link-01{
+margin:0;
+position:absolute;
+top:9px;
+right:7px;
+}
+
+div#str-main div#hp-template div.hdg-l2-02-container ul.nav-link-01 li{
+float:right;
+line-height:1;
+}
+
+
+div#str-main div#hp-template .hdg-l2-03,
+div#str-main div#hp-template .hdg-l2-04,
+div#str-main div#hp-template .hdg-l2-05{
+margin-bottom:15px;
+padding-bottom:3px;
+border-bottom:1px solid #3f4da2;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template .hdg-l2-03 span,
+div#str-main div#hp-template .hdg-l2-04 span,
+div#str-main div#hp-template .hdg-l2-05 span{
+padding:3px 10px 0;
+border-left:4px solid #3f4da2;
+display:block;
+min-height:20px;
+background:#e5e5e5 url("/web/shared/images/heading/hdg-l2-03-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+
+div#str-main div#hp-template div.hdg-l2-04-container,
+div#str-main div#hp-template div.hdg-l2-05-container{
+position:relative;
+}
+
+div#str-main div#hp-template .hdg-l2-04 span{
+padding-right:15em;
+}
+
+div#str-main div#hp-template div.hdg-l2-04-container p{
+margin:0;
+}
+
+div#str-main div#hp-template div.hdg-l2-04-container p.date{
+position:absolute;
+top:0.2em;
+right:120px;
+width:7em;
+color:#666666;
+font-size:81.25%;
+}
+
+div#str-main div#hp-template div.hdg-l2-04-container p.btn-renew{
+position:absolute;
+top:-2px;
+right:10px;
+}
+
+div#str-main div#hp-template .hdg-l2-05 span{
+padding-right:250px;
+}
+
+div#str-main div#hp-template .hdg-l2-05 span span{
+padding:0 20px;
+border:none;
+display:inline;
+background:none;
+font-size:92.9%;
+font-weight:normal;
+}
+
+div#str-main div#hp-template div.hdg-l2-05-container ul.nav-link-01{
+margin:0;
+position:absolute;
+top:0;
+right:0;
+}
+
+div#str-main div#hp-template div.hdg-l2-05-container ul.nav-link-01 li{
+padding-right:5px;
+float:left;
+line-height:1;
+}
+
+div#str-main div#hp-template .hdg-l3-01,
+div#str-main div#hp-template .hdg-l3-02,
+div#str-main div#hp-template .hdg-l3-03{
+margin-bottom:10px;
+background:url("/web/shared/images/heading/hdg-dot-01.gif") repeat-x 0 100%;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template .hdg-l3-05{
+padding-left: 10px;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template .hdg-l3-01 span,
+div#str-main div#hp-template .hdg-l3-02 span,
+div#str-main div#hp-template .hdg-l3-03 span{
+padding:0 0 3px 22px;
+display:block;
+min-height:20px;
+background:url("/web/shared/images/heading/hdg-bullet-01.gif") no-repeat 3px 5px;
+zoom:1;
+}
+
+div#str-main div#hp-template div.hdg-l3-02-container{
+position:relative;
+}
+
+div#str-main div#hp-template .hdg-l3-02 span{
+padding-right:15em;
+}
+
+div#str-main div#hp-template div.hdg-l3-02-container p{
+margin:0;
+position:absolute;
+top:0.2em;
+right:0.2em;
+width:13em;
+color:#666666;
+font-size:81.25%;
+text-align:right;
+}
+
+div#str-main div#hp-template .hdg-l3-03 span img{
+vertical-align:top;
+}
+
+div#str-main div#hp-template .hdg-l3-04{
+margin-bottom:10px;
+padding-bottom:3px;
+background:url("/web/shared/images/heading/hdg-dot-01.gif") repeat-x 0 100%;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template .hdg-l3-04 img{
+vertical-align:top;
+}
+
+div#str-main div#hp-template .hdg-l3-04 span{
+display:block;
+zoom:1;
+}
+
+div#str-main div#hp-template .hdg-l4-01,
+div#str-main div#hp-template .hdg-l4-02{
+margin-bottom:10px;
+padding-left:12px;
+background:url("/web/shared/images/heading/hdg-l4-01-bg.gif") no-repeat 0 0;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template .hdg-l4-02 img{
+padding-top:3px;
+vertical-align:top;
+}
+
+
+div#str-main div#hp-template .hdg-l5-01{
+margin-bottom:10px;
+padding-left:12px;
+background:url("/web/shared/images/heading/hdg-l5-01-bg.gif") repeat-y 0 0;
+font-size:87.5%;
+} 
+
+div#str-main div#hp-template .hdg-l6-01{
+margin-bottom:5px;
+padding-left:10px;
+font-size:81.25%;
+}
+
+
+/* --- lyt-column-smc lyt-column-ms-02 -- */
+body.lyt-column-smc div#str-main div#hp-template div.hdg-container,
+body.lyt-column-ms-02 div#str-main div#hp-template div.hdg-container{
+position:relative;
+}
+
+body.lyt-column-smc div#str-main div#hp-template div.hdg-container p,
+body.lyt-column-ms-02 div#str-main div#hp-template div.hdg-container p{
+margin:0;
+padding:0;
+position:absolute;
+top:4px;
+right:7px;
+}
+/* ------------------------------------- */
+
+
+/* ie6 */
+* html div#str-main div#hp-template .hdg-l3-03 span{
+background-position:3px 1px;
+}
+* html div#str-main div#hp-template .hdg-l3-03 span img{
+padding-bottom:3px;
+}
+* html div#str-main div#hp-template .hdg-l4-02 img{
+margin-top:-3px;
+}
+
+/* ie7 */
+*+html div#str-main div#hp-template .hdg-l4-02 img{
+margin-top:-3px;
+}
+
+
+/* ----------------------------------------------------------------
+	03. Paragraph Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template p{
+margin-right:8px;
+margin-left:8px;
+font-size:81.25%;
+}
+
+div#str-main div#hp-template p.align-C{
+text-align:center;
+}
+
+div#str-main div#hp-template p.align-R{
+text-align:right;
+}
+
+div#str-main div#hp-template p.delay-01{
+margin-bottom:0.5em;
+text-align:right;
+}
+
+div#str-main div#hp-template em.em-l1{
+font-weight:bold;
+}
+
+div#str-main div#hp-template em.em-l2{
+color:#297acc;
+}
+
+div#str-main div#hp-template strong.strong-l1{
+color:#d23100;
+font-weight:normal;
+}
+
+div#str-main div#hp-template strong.strong-l2{
+color:#d23100;
+font-weight:bold;
+}
+
+div#str-main div#hp-template p.doc-catchcopy-01,
+div#str-main div#hp-template p.doc-catchcopy-02{
+margin-bottom:0.7em;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template p.doc-catchcopy-01 strong{
+color:#333333;
+}
+
+div#str-main div#hp-template p.doc-catchcopy-02 strong{
+color:#297acc;
+}
+
+div#str-main div#hp-template p.doc-catchcopy-link-01{
+margin-bottom:0.7em;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template sup.note-01,
+div#str-main div#hp-template sup.note-02{
+vertical-align:baseline;
+color:#297acc;
+}
+
+div#str-main div#hp-template p a.outside,
+div#str-main div#hp-template li a.outside,
+div#str-main div#hp-template table a.outside{
+padding-left:17px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 2px;
+}
+
+div#str-main div#hp-template .link-01 img{
+vertical-align:middle;
+}
+
+div#str-main div#hp-template .link-01 a{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+}
+
+div#str-main div#hp-template table a.link-01{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 4px;
+}
+
+div#str-main div#hp-template p a.outside:link,
+div#str-main div#hp-template li a.outside:link,
+div#str-main div#hp-template table a.outside:link,
+div#str-main div#hp-template .link-01 a:link,
+div#str-main div#hp-template table a.link-01:link,
+div#str-main div#hp-template p a.outside:visited,
+div#str-main div#hp-template li a.outside:visited,
+div#str-main div#hp-template table a.outside:visited,
+div#str-main div#hp-template .link-01 a:visited,
+div#str-main div#hp-template table a.link-01:visited{
+text-decoration:none;
+}
+
+div#str-main div#hp-template p a.outside:active,
+div#str-main div#hp-template li a.outside:active,
+div#str-main div#hp-template table a.outside:active,
+div#str-main div#hp-template .link-01 a:active,
+div#str-main div#hp-template table a.link-01:active,
+div#str-main div#hp-template p a.outside:hover,
+div#str-main div#hp-template li a.outside:hover,
+div#str-main div#hp-template table a.outside:hover,
+div#str-main div#hp-template .link-01 a:hover,
+div#str-main div#hp-template table a.link-01:hover,
+div#str-main div#hp-template p a.outside:focus,
+div#str-main div#hp-template li a.outside:focus,
+div#str-main div#hp-template table a.outside:focus,
+div#str-main div#hp-template .link-01 a:focus,
+div#str-main div#hp-template table a.link-01:focus{
+text-decoration:underline;
+}
+
+/* ie6 */
+*html div#str-main div#hp-template p.link-01{
+line-height:1.45;
+height:15px;
+}
+
+/* ie7 */
+*+html div#str-main div#hp-template p.link-01{
+zoom:0;
+}
+
+/* ----------------------------------------------------------------
+	04. Ordered List Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template ol{
+font-size:81.25%;
+}
+
+
+/* ----------------------------------------------------------------
+	05. Unordered List Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template ul{
+margin-right:8px;
+margin-left:8px;
+font-size:81.25%;
+}
+
+div#str-main div#hp-template ul.list-bullet-01 li{
+margin-bottom:0.2em;
+padding-left:20px;
+min-height:15px;
+background:url("/web/shared/images/bullet/bullet-01.gif") no-repeat 0 3px;
+}
+
+div#str-main div#hp-template ul.list-attention-01 li{
+margin-bottom:0.45em;
+padding-left:25px;
+min-height:20px;
+background:url("/web/shared/images/icon/icon-attention-01.gif") no-repeat 0 0;
+}
+
+div#str-main div#hp-template ul.list-images-01 li{
+padding-right:3px;
+display:inline;
+}
+
+div#str-main div#hp-template ul.list-images-02 li{
+padding:0 20px 3px 0;
+display:inline;
+}
+
+div#str-main div#hp-template ul.list-images-02 li img{
+vertical-align:middle;
+}
+
+
+/* ----------------------------------------------------------------
+	06. Definition List Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template dl{
+margin-right:8px;
+margin-left:8px;
+font-size:81.25%;
+zoom:normal;
+}
+
+div#str-main div#hp-template dl.list-normal-01 dt{
+float:left;
+width:6em;
+font-weight:bold;
+}
+
+div#str-main div#hp-template dl.list-normal-01 dd{
+margin-bottom:1em;
+padding-left:7em;
+}
+
+/* ie6 */
+*html div#str-main div#hp-template dl.list-normal-01 dd{
+padding-left:1em;
+}
+
+/* ie7 */
+*+html div#str-main div#hp-template dl.list-normal-01 dd{
+padding-left:1em;
+}
+
+/* ----------------------------------------------------------------
+	07. Link List Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template ul.list-link-01 li,
+div#str-main div#hp-template ul.list-link-02 li{
+margin-bottom:0.2em;
+padding-left:15px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 7px;
+}
+
+div#str-main div#hp-template ul.list-link-01 li.inside,
+div#str-main div#hp-template ul.list-link-02 li.inside{
+padding-left:17px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div#hp-template ul.list-link-01 li.outside,
+div#str-main div#hp-template ul.list-link-02 li.outside{
+padding-left:17px;
+background:url("/web/shared/images/icon/icon-outside-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div#hp-template ul.list-link-01 li p,
+div#str-main div#hp-template ul.list-link-02 li p{
+margin:0 0 0.5em 0;
+}
+
+div#str-main div#hp-template ul.list-link-01 li img,
+div#str-main div#hp-template ul.list-link-02 li img{
+vertical-align:middle;
+}
+
+div#str-main div#hp-template ul.list-link-01 li a:link,
+div#str-main div#hp-template ul.list-link-01 li a:visited,
+div#str-main div#hp-template ul.list-link-02 li a:link,
+div#str-main div#hp-template ul.list-link-02 li a:visited{
+text-decoration:none;
+}
+
+div#str-main div#hp-template ul.list-link-01 li a:active,
+div#str-main div#hp-template ul.list-link-01 li a:hover,
+div#str-main div#hp-template ul.list-link-01 li a:focus,
+div#str-main div#hp-template ul.list-link-02 li a:active,
+div#str-main div#hp-template ul.list-link-02 li a:hover,
+div#str-main div#hp-template ul.list-link-02 li a:focus{
+text-decoration:underline;
+}
+
+div#str-main div#hp-template ul.list-link-02 li{
+padding-right:10px;
+display:inline;
+line-height:1.7;
+background-position:0 4px;
+zoom:0;
+}
+
+div#str-main div#hp-template ul.list-link-02 li.inside,
+div#str-main div#hp-template ul.list-link-02 li.outside{
+background-position:0 2px;
+}
+
+/* ----------------------------------------------------------------
+	08. Index List Module
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	09. Page Navigation Module
+----------------------------------------------------------------- */
+/* ----- nav-page-01 ------------------- */
+div#str-main div#hp-template ul.nav-page-01{
+margin:0 0 2.5em;
+position:relative;
+}
+
+div#str-main div#hp-template ul.nav-page-01 a{
+text-decoration:none;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.prev{
+padding-left:17px;
+position:absolute;
+top:0;
+left:0;
+width:80px;
+background:url("/web/shared/images/arrow/arrow-back-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.next{
+padding-right:17px;
+position:absolute;
+top:0;
+right:0;
+width:80px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 100% 5px;
+text-align:right;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.page-number{
+padding:0 100px;
+text-align:center;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.page-number li{
+padding:0 1px;
+display:inline;
+line-height:2;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.page-number li a{
+padding:3px;
+border:1px solid #b7b7b7;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.page-number li a:hover,
+div#str-main div#hp-template ul.nav-page-01 li.page-number li a:focus{
+background-color:#3f4da2;
+color:#ffffff;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.page-number li.selected a{
+background-color:#3f4da2;
+color:#ffffff;
+}
+
+div#str-main div#hp-template ul.nav-page-01 li.page-number span{
+position:absolute;
+top:0;
+left:-9999px;
+height:0;
+font-size:0;
+}
+/* ------------------------------------- */
+
+/* ----- nav-page-02 ------------------- */
+
+div#str-main div#hp-template ul.nav-page-02{
+margin:-1.2em 0 1.5em;
+padding:7px;
+background:#eee;
+position:relative;
+}
+
+div#str-main div#hp-template ul.nav-page-02 li{
+padding:0 6px;
+display:inline;
+background:url("/web/shared/images/reuters/bg-line-01.gif") no-repeat 100% 50%;
+}
+
+div#str-main div#hp-template ul.nav-page-02 li.selected a{
+padding:2px;
+color:#ffffff;
+background-color:#3f4da2;
+font-weight:bold;
+text-decoration:none;
+}
+
+div#str-main div#hp-template ul.nav-page-02 li.last-child{
+padding-right:0;
+background-image:none;
+}
+
+/* ------------------------------------- */
+
+/* ----- nav-page-03 ------------------- */
+div#str-main div#hp-template ul.nav-page-03{
+margin:0 0 2.5em 232px;
+position:relative;
+}
+
+div#str-main div#hp-template ul.nav-page-03 a{
+text-decoration:none;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.prev{
+padding-left:13px;
+position:absolute;
+top:0;
+left:0;
+width:70px;
+background:url("/web/shared/images/arrow/arrow-back-01.gif") no-repeat 0 5px;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.next{
+padding-right:14px;
+position:absolute;
+top:0;
+right:0;
+width:70px;
+background:url("/web/shared/images/arrow/arrow-01.gif") no-repeat 100% 5px;
+text-align:right;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.page-number{
+padding:0 100px;
+text-align:center;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.page-number ul{
+margin:0;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.page-number li{
+padding:0 2px;
+display:inline;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.page-number li a{
+text-decoration:underline;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.page-number li.selected a{
+text-decoration:none;
+}
+
+div#str-main div#hp-template ul.nav-page-03 li.page-number span{
+position:absolute;
+top:0;
+left:-9999px;
+height:0;
+font-size:0;
+}
+/* ------------------------------------- */
+
+/* ----- nav-tab images ---------------- */
+div#str-main div#hp-template div.nav-tab-container{
+margin-bottom:1em;
+padding-bottom:3px;
+background:url("/web/shared/images/reuters/bg-nav-tab-01.gif") repeat-x 0 100%;
+position:relative;
+}
+
+div#str-main div#hp-template div.nav-tab-container ul{
+margin:0;
+margin-bottom:0;
+}
+div#str-main div#hp-template div.nav-tab-container ul li{
+padding-right:2px;
+float:left;
+}
+
+div#str-main div#hp-template div.nav-tab-container p.date{
+margin:0 115px 0 420px;
+position:absolute;
+top:5px;
+left:0;
+width:100px;
+text-align:right;
+}
+
+div#str-main div#hp-template div.nav-tab-container p.btn-renew{
+margin:0;
+position:absolute;
+top:0;
+right:0;
+}
+/* ------------------------------------- */
+
+/* ----- nav-tab text ------------------ */
+div#str-main div#hp-template ul.nav-tab{
+margin:0 0 1px 0;
+padding-left:4px;
+border-bottom:3px solid #dcdcf4;
+}
+
+div#str-main div#hp-template ul.nav-tab li{
+margin-right:2px;
+float:left;
+text-align:center;
+}
+
+div#str-main div#hp-template ul.nav-tab li a{
+padding:3px 7px;
+display:block;
+background-color:#ebebeb;
+font-weight:bold;
+}
+
+div#str-main div#hp-template ul.nav-tab li.selected a{
+color:#333333;
+background-color:#dcdcf4;
+text-decoration:none;
+}
+
+body.lyt-column-smc div#str-main div#hp-template ul.nav-tab li,
+body.lyt-column-ms-02 div#str-main div#hp-template ul.nav-tab li,
+body.top div#str-main div#hp-template ul.nav-tab li{
+font-size:75%;
+}
+
+body.lyt-column-smc div#str-main div#hp-template ul.nav-tab li a{
+padding:3px 2px;
+}
+
+/* ------------------------------------- */
+
+/* ----- nav-chart --------------------- */
+div#str-main div#hp-template div.nav-chart{
+margin-top:0.5em;
+margin-bottom:1em;
+position:relative;
+}
+
+div#str-main div#hp-template div.nav-chart ul{
+padding-right:130px;
+}
+
+div#str-main div#hp-template div.nav-chart ul li{
+border-width:1px 0 1px 1px;
+border-style:solid;
+border-color:#cccccc;
+float:left;
+}
+
+div#str-main div#hp-template div.nav-chart ul li.last-child{
+border-right:1px solid #cccccc;
+}
+
+div#str-main div#hp-template div.nav-chart ul li a{
+padding:2px 15px;
+display:block;
+background:#e5e5e5 url("/web/shared/images/reuters/bg-nav-01-o.gif") repeat-x 0 0;
+}
+
+div#str-main div#hp-template div.nav-chart ul li span{
+padding:2px 15px;
+display:block;
+background:#e5e5e5 url("/web/shared/images/reuters/bg-nav-01-o.gif") repeat-x 0 0;
+}
+
+div#str-main div#hp-template div.nav-chart ul li a:hover,
+div#str-main div#hp-template div.nav-chart ul li a:focus{
+color:#ffffff;
+background-color:#3f4da2;
+background-image:url("/web/shared/images/reuters/bg-nav-01-h.gif");
+}
+
+div#str-main div#hp-template div.nav-chart ul li.selected a{
+color:#ffffff;
+background-color:#3f4da2;
+background-image:url("/web/shared/images/reuters/bg-nav-01-h.gif");
+font-weight:bold;
+text-decoration:none;
+}
+
+div#str-main div#hp-template div.nav-chart p.btn-technical-chart{
+position:absolute;
+top:0;
+right:0;
+}
+
+div#str-main div#hp-template div.lyt-column div.nav-chart ul li a{
+padding:2px 8px;
+}
+
+/* ie6 */
+*html div#str-main div#hp-template div.nav-chart{
+margin-bottom:0;
+}
+/* ie7 */
+*+html div#str-main div#hp-template div.nav-chart{
+margin-bottom:0;
+}
+
+/* ----------------------------------------------------------------
+	10. Contents Navigation Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template ul.nav-contents-01{
+margin:2.5em 0 ;
+}
+
+div#str-main div#hp-template ul.nav-contents-01 li.top{
+text-align:right;
+}
+
+div#str-main div#hp-template ul.nav-contents-01 li.top a{
+padding-left:10px;
+min-height:15px;
+background:url("/web/shared/images/arrow/arrow-backtop-01.gif") no-repeat 0 2px;
+font-size:87.5%;
+text-decoration:none;
+}
+
+
+/* ----------------------------------------------------------------
+	11. Notice Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template ul.list-notice-01 li{
+margin-bottom:0.25em;
+padding-left:1.35em;
+position:relative;
+}
+
+div#str-main div#hp-template ul.list-notice-01 li span{
+position:absolute;
+top:0;
+left:0;
+color:#d23100;
+}
+
+/* ----------------------------------------------------------------
+	12. Table Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template table{
+width:100%;
+border:none;
+background-color:#ffffff;
+font-size:81.25%;
+}
+
+div#str-main div#hp-template table th,
+div#str-main div#hp-template table td{
+padding:3px 6px;
+border-width:0 1px 1px 0;
+border-color:#c3c3c3;
+border-style:solid;
+vertical-align:top;
+font-weight:normal;
+text-align:left;
+}
+
+div#str-main div#hp-template table tbody th{
+vertical-align:middle;
+}
+
+div#str-main div#hp-template form table tbody th{
+vertical-align:top;
+}
+
+div#str-main div#hp-template table tfoot th,
+div#str-main div#hp-template table tfoot td{
+background-color:#f9ead2;
+}
+
+div#str-main div#hp-template table.tbl-data-01,
+div#str-main div#hp-template table.tbl-data-02{
+border-width:1px 0 0 1px;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main div#hp-template table.tbl-data-01 tr.even td{
+background-color:#f3f3f3;
+}
+
+div#str-main div#hp-template table.tbl-data-01 thead th{
+background-color:#3f4da2;
+color:#ffffff;
+text-align:center;
+}
+
+div#str-main div#hp-template table.tbl-data-01 tbody th,
+div#str-main div#hp-template table.tbl-data-02 tbody th{
+background-color:#cfd5ef;
+}
+
+div#str-main div#hp-template table.tbl-data-01 td{
+text-align:right;
+}
+
+div#str-main div#hp-template table.tbl-data-02 thead th{
+background-color:#cfd5ef;
+color:#333333;
+}
+
+div#str-main div#hp-template table.tbl-data-03 thead th,
+div#str-main div#hp-template table.tbl-data-04 thead th{
+background-color:#3f4da2;
+color:#333333;
+text-align:center;
+}
+
+div#str-main div#hp-template table.tbl-data-03 th,
+div#str-main div#hp-template table.tbl-data-04 th,
+div#str-main div#hp-template table.tbl-data-05 th{
+border:none;
+background-color:#ffffff;
+text-align:left;
+}
+
+div#str-main div#hp-template table.tbl-data-03 td,
+div#str-main div#hp-template table.tbl-data-04 td,
+div#str-main div#hp-template table.tbl-data-05 td{
+border:none;
+background-color:#ffffff;
+text-align:right;
+}
+
+div#str-main div#hp-template table.tbl-data-03 tr.odd th,
+div#str-main div#hp-template table.tbl-data-03 tr.odd td{
+background-color:#e4e5f2;
+}
+
+div#str-main div#hp-template table.tbl-data-04 tr.odd th,
+div#str-main div#hp-template table.tbl-data-04 tr.odd td{
+background-color:#ebebeb;
+}
+
+div#str-main div#hp-template table.tbl-data-05 thead th{
+background-color:#ebebeb;
+text-align:center;
+}
+
+div#str-main div#hp-template table.tbl-data-06{
+border-width:0 0 0 1px;
+border-color:#ffffff;
+border-style:solid;
+}
+
+div#str-main div#hp-template table.tbl-data-06 tr.even th,
+div#str-main div#hp-template table.tbl-data-06 tr.even td{
+background-color:#f3f3f3;
+}
+
+div#str-main div#hp-template table.tbl-data-06 th,
+div#str-main div#hp-template table.tbl-data-06 td{
+border-width:0 1px 1px 0;
+border-color:#ffffff;
+border-style:solid;
+}
+
+div#str-main div#hp-template table.tbl-data-06 td{
+text-align:right;
+}
+
+div#str-main div#hp-template table.tbl-data-06 thead th{
+background-color:#e8ebf7;
+}
+
+div#str-main div#hp-template table.tbl-data-06 tbody th{
+text-align:left;
+font-weight:bold;
+}
+
+div#str-main div#hp-template table.tbl-data-07,
+div#str-main div#hp-template table.tbl-data-08{
+border-width:1px 0 0 1px;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main div#hp-template table.tbl-data-07 tr.even th,
+div#str-main div#hp-template table.tbl-data-07 tr.even td,
+div#str-main div#hp-template table.tbl-data-08 tr.even th,
+div#str-main div#hp-template table.tbl-data-08 tr.even td{
+background-color:#f3f3f3;
+}
+
+div#str-main div#hp-template table.tbl-data-07 th,
+div#str-main div#hp-template table.tbl-data-07 td,
+div#str-main div#hp-template table.tbl-data-08 th,
+div#str-main div#hp-template table.tbl-data-08 td{
+border-width:0 1px 1px 0;
+border-color:#c3c3c3;
+border-style:solid;
+}
+
+div#str-main div#hp-template table.tbl-data-07 td{
+text-align:right;
+}
+
+div#str-main div#hp-template table.tbl-data-07 thead th,
+div#str-main div#hp-template table.tbl-data-08 thead th{
+background-color:#cfd5ef;
+vertical-align:middle;
+text-align:center;
+}
+
+div#str-main div#hp-template table.tbl-data-07 tbody th,
+div#str-main div#hp-template table.tbl-data-08 tbody th{
+text-align:center;
+}
+
+/* ----- lyt-column-smc ---------------- */
+body.lyt-column-smc div#str-main div#hp-template table{
+font-size:62.5%;
+}
+
+body.lyt-column-smc div#str-main div#hp-template table th,
+body.lyt-column-smc div#str-main div#hp-template table td{
+padding:5px 3px;
+}
+
+body.lyt-column-smc div#str-main div#hp-template table.tbl-data-04 th{
+vertical-align:top;
+}
+
+body.lyt-column-smc div#str-main div#hp-template table.tbl-data-05 th,
+body.lyt-column-smc div#str-main div#hp-template table.tbl-data-05 td{
+padding:2px 3px;
+}
+
+body.lyt-column-smc div#str-main div#hp-template table.tbl-data-05 th{
+text-align:center;
+}
+/* ------------------------------------- */
+
+/* ----- lyt-column-ms-02 -------------- */
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-05 thead th{
+font-size:75%;
+}
+
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-05 tbody th{
+font-weight:bold;
+text-align:center;
+}
+
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-05 tr.even th,
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-05 tr.even td{
+background-color:#f3f3f3;
+}
+
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-05 th,
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-05 td{
+padding:3px;
+vertical-align:middle;
+font-size:92.3%;
+}
+
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-06 thead th{
+font-size:84.6%;
+}
+
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-06 th,
+body.lyt-column-ms-02 div#str-main div#hp-template table.tbl-data-06 td{
+padding:3px;
+}
+/* ------------------------------------- */
+
+
+/* ----- cell -------------------------- */
+div#str-main div#hp-template table .cell-01{
+background-color:#f9ead2;
+}
+
+div#str-main div#hp-template table .cell-02{
+border-width:0 0 1px 0;
+}
+
+div#str-main div#hp-template table thead th.date-renew{
+width:15%;
+}
+
+div#str-main div#hp-template table .w-10{
+width:10%;
+}
+
+div#str-main div#hp-template table .w-15{
+width:15%;
+}
+
+div#str-main div#hp-template table .w-20{
+width:20%;
+}
+
+div#str-main div#hp-template table .w-25{
+width:25%;
+}
+
+div#str-main div#hp-template table .w-30{
+width:30%;
+}
+
+div#str-main div#hp-template table .w-35{
+width:35%;
+}
+
+div#str-main div#hp-template table .w-40{
+width:40%;
+}
+
+div#str-main div#hp-template table th.align-C,
+div#str-main div#hp-template table td.align-C{
+text-align:center;
+}
+
+div#str-main div#hp-template table th.align-R,
+div#str-main div#hp-template table td.align-R{
+text-align:right
+}
+
+div#str-main div#hp-template table th.align-L,
+div#str-main div#hp-template table td.align-L{
+text-align:left;
+}
+
+div#str-main div#hp-template table th.align-M,
+div#str-main div#hp-template table td.align-M{
+vertical-align:middle
+}
+/* ------------------------------------- */
+
+/* ----- stoc -------------------------- */
+div#str-main div#hp-template table .up-01{
+color:#ff0101;
+font-weight:bold;
+}
+div#str-main div#hp-template table .up-02{
+color:#ff0101;
+}
+
+div#str-main div#hp-template table .down-01{
+color:#4eba00;
+font-weight:bold;
+}
+div#str-main div#hp-template table .down-02{
+color:#4eba00;
+}
+
+/* ------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	13. Layout Images Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template div.lyt-image{
+margin-bottom:0;
+padding:0;
+}
+
+div#str-main div#hp-template div.lyt-image p{
+margin:0 0 5px 0;
+}
+
+div#str-main div#hp-template div.lyt-image p img{
+}
+
+div#str-main div#hp-template div.lyt-image p span.caption{
+color:#888888;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template div.image-col1{
+width:635px;
+}
+
+/* ----- lyt-column-smc ---------------- */
+body.lyt-column-smc div#str-main div#hp-template div.image-col1{
+width:173px;
+}
+/* ------------------------------------- */
+
+/* ----------------------------------------------------------------
+	14. Layout Column Module
+----------------------------------------------------------------- */
+div#str-main div.lyt-column{
+width:768px;
+}
+
+div#str-main div#hp-template div.lyt-column div.segment,
+div#str-main div#hp-template div.lyt-column div.segment-s,
+div#str-main div#hp-template div.lyt-column div.segment-m,
+div#str-main div#hp-template div.lyt-column div.segment-r,
+div#str-main div#hp-template div.lyt-column div.segment-rm{
+margin-right:13px;
+float:left;
+}
+
+div#str-main div#hp-template div.column-col2-01 div.segment{
+width:311px;
+}
+
+div#str-main div#hp-template div.column-col2-02 div.segment-s{
+width:260px;
+}
+
+div#str-main div#hp-template div.column-col2-02 div.segment-m{
+width:362px;
+}
+
+div#str-main div#hp-template div.column-col2-02 div.segment-r{
+width:332px;
+}
+
+div#str-main div#hp-template div.column-col2-02 div.segment-rm{
+width:388px;
+}
+
+div#str-main div#hp-template div.column-col3 div.segment{
+width:203px;
+}
+
+div#str-main div#hp-template div.column-col4 div.segment{
+width:149px;
+}
+
+div#str-main div#hp-template div.lyt-column div.last-child{
+margin-right:0;
+}
+
+
+/* ----------------------------------------------------------------
+	15. Box Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template div.box-renew,
+div#str-main div#hp-template div.box-renew-01{
+margin-bottom:0.5em;
+position:relative;
+min-height:23px;
+}
+
+div#str-main div#hp-template div.box-renew-01{
+margin-top:-0.5em;
+}
+
+div#str-main div#hp-template div.box-renew p{
+margin:0;
+text-align:right;
+}
+
+div#str-main div#hp-template div.box-renew p.date{
+margin-right:120px;
+padding:3px 0 0 0;
+}
+
+div#str-main div#hp-template div.box-renew p.btn-renew,
+div#str-main div#hp-template div.box-renew-01 p.btn-renew{
+position:absolute;
+top:0;
+right:0;
+}
+
+div#str-main div#hp-template div.box-renew-01 p{
+margin:0;
+}
+
+div#str-main div#hp-template div.box-renew-01 p.date{
+position:absolute;
+top:2px;
+right:110px;
+}
+
+div#str-main div#hp-template div.box-renew-01 p.delay{
+padding:0 14em 0 10px;
+}
+
+div#str-main div#hp-template div.delay-container{
+margin-bottom:5px;
+padding:2px;
+position:relative;
+min-height:25px;
+background-color:#ebebeb;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template div.delay-container p{
+margin:0;
+padding-left:7px;
+}
+
+div#str-main div#hp-template div.delay-container p.delay{
+padding-top:2px;
+padding-right:70px;
+line-height:1;
+color:#666666;
+}
+
+div#str-main div#hp-template div.delay-container p.btn-renew{
+position:absolute;
+top:5px;
+right:3px;
+}
+
+div#str-main div#hp-template div.box-01{
+margin-bottom:1.5em;
+border:1px solid #c3c3c3;
+}
+
+div#str-main div#hp-template div.box-01 p,
+div#str-main div#hp-template div.box-01 ul,
+div#str-main div#hp-template div.box-01 ol,
+div#str-main div#hp-template div.box-01 dl,
+div#str-main div#hp-template div.box-01 table,
+div#str-main div#hp-template div.box-02 p,
+div#str-main div#hp-template div.box-02 ul,
+div#str-main div#hp-template div.box-02 ol,
+div#str-main div#hp-template div.box-02 dl,
+div#str-main div#hp-template div.box-02 table{
+margin-top:14px;
+margin-right:14px;
+margin-left:14px;
+}
+
+body.lyt-column-smc div#str-main div#hp-template div.box-01,
+body.lyt-column-ms-02 div#str-main div#hp-template div.box-01{
+border-width:0 1px 1px;
+}
+
+body.lyt-column-smc div#str-main div#hp-template div.box-01 p,
+body.lyt-column-smc div#str-main div#hp-template div.box-01 ul,
+body.lyt-column-smc div#str-main div#hp-template div.box-01 ol,
+body.lyt-column-smc div#str-main div#hp-template div.box-01 dl,
+body.lyt-column-smc div#str-main div#hp-template div.box-01 table,
+body.lyt-column-ms-02 div#str-main div#hp-template div.box-01 p,
+body.lyt-column-ms-02 div#str-main div#hp-template div.box-01 ul,
+body.lyt-column-ms-02 div#str-main div#hp-template div.box-01 ol,
+body.lyt-column-ms-02 div#str-main div#hp-template div.box-01 dl,
+body.lyt-column-ms-02 div#str-main div#hp-template div.box-01 table{
+margin-top:0;
+margin-right:0;
+margin-left:0;
+}
+
+div#str-main div#hp-template div.box-02{
+margin-bottom:1.25em;
+padding:1px;
+border:1px solid #b7b7b7;
+background-color:#ffffff;
+}
+
+div#str-main div#hp-template div.box-02 div.box-inner-01{
+padding:1px 0;
+background:#f9f9fc url("/web/shared/images/bg-modules/bg-box-02.gif") repeat-x 0 0;
+border:0;
+}
+
+div#str-main div#hp-template div.box-03{
+margin-bottom:0.5em;
+padding-bottom:3px;
+background:url("/web/shared/images/bg-modules/bg-box-01.gif") repeat-x 0 100%;
+}
+
+div#str-main div#hp-template div.box-03 div.box-inner-01{
+border:1px solid #c3c3c3;
+}
+
+div#str-main div#hp-template div.box-03 .hdg-l2-01,
+div#str-main div#hp-template div.box-03 .hdg-l2-02{
+margin-bottom:14px;
+border-width:0 0 1px 0;
+}
+
+
+
+/* ie6 */
+div#str-main div#hp-template div.delay-container{
+height:25px;
+}
+
+
+/* ----------------------------------------------------------------
+	16. Plugin Download Module
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	17. Form Module
+----------------------------------------------------------------- */
+/* ----- Search Stoc ------------------- */
+
+div#str-main div#hp-template div.box-sort-ranking-01{
+margin:0 0 1em;
+padding-bottom:15px;
+background:url("/web/shared/images/reuters/bg-form-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form{
+padding:15px 15px 0;
+background:url("/web/shared/images/reuters/bg-form-01-top.gif") no-repeat 0 0;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form p{
+margin:0;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form label{
+font-weight:bold;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form input{
+padding:2px;
+border:1px solid #7f9db9;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form select{
+margin-right:5px;
+font-size: 12px;
+border:1px solid #7f9db9;
+width:120px;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form select#information{
+width:170px;
+}
+
+div#str-main div#hp-template div.box-sort-ranking-01 form input#form-sort-btn{
+padding:0 0 0 15px;
+border:none;
+cursor:pointer;
+}
+
+/* ------------------------------------- */
+
+/* ----- stoc-search-container --------- */
+div#str-main div#hp-template div.stoc-search-container{
+background:url("/web/shared/images/bg-modules/bg-search-02-top.gif") no-repeat 0 0;
+}
+
+div#str-main div#hp-template div.popup-chart div.popup-inner{
+margin-bottom:1.5em;
+background:url("/web/shared/images/bg-modules/bg-search-02-top.gif") no-repeat 0 0;
+}
+
+div#str-main div#hp-template div.stoc-search-container div.stoc-search-inner, 
+div#str-main div#hp-template div.popup-chart div.stoc-search-inner{
+background:url("/web/shared/images/bg-modules/bg-search-02-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div#hp-template div.stoc-search-container h2.hdg-search{
+margin-left:10px;
+padding:15px 0 5px 35px;
+background:url("/web/shared/images/icon/icon-search-01.gif") no-repeat 0 12px;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template div.popup-chart h2.hdg-search{
+margin-left:10px;
+padding:0px 0 5px 35px;
+background:url("/web/shared/images/icon/icon-search-01.gif") no-repeat 0 0px;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template div.stoc-search-container form table, 
+div#str-main div#hp-template div.popup-chart form table.upper{
+border:none;
+background:url("/web/shared/images/bg-modules/bg-search-02-middle.gif") repeat-y 0 0;
+}
+
+div#str-main div#hp-template div.stoc-search-container form table th{
+width:15%;
+text-align:right;
+font-weight:bold;
+}
+
+div#str-main div#hp-template div.stoc-search-container form table th,
+div#str-main div#hp-template div.stoc-search-container form table td{
+padding:7px;
+border:none;
+}
+
+/*div#str-main div#hp-template div.stoc-search-container form input#stock-name{
+width:250px;
+}*/
+
+/*div#str-main div#hp-template div.stoc-search-container form ul.type-01 li{
+display:inline;
+}*/
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-market li,
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li{
+padding:0 0 5px;
+}
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-market li label,
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li label{
+padding:0 20px 0 5px;
+}
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-market li li,
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li li{
+margin-left:17px;
+padding:3px 0;
+min-height:21px;
+}
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-market li li li,
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li li li{
+float:left;
+width:200px;
+min-height:1.5em;
+}
+
+div#str-main div#hp-template div.stoc-search-container form table input{
+border:1px solid #7f9db9;
+} 
+
+div#str-main div#hp-template div.stoc-search-container form table ul.list-form-market input,
+div#str-main div#hp-template div.stoc-search-container form table ul.list-form-stock input{
+border:none;
+}
+
+div#str-main div#hp-template div.stoc-search-container form table select{
+border:1px solid #7f9db9;
+width:150px;
+}
+
+div#str-main div#hp-template div.stoc-search-container form table select option{
+padding-right:20px;
+}
+
+div#str-main div#hp-template div.stoc-search-container ul.list-search-btn{
+padding:0 0 10px 165px;
+}
+
+div#str-main div#hp-template div.stoc-search-container ul.list-search-btn li{
+height: 40px;
+padding-right:15px;
+display:inline;
+}
+/* ------------------------------------- */
+
+div#str-main div#hp-template div.popup-chart-container
+{
+    margin-top:2px;
+    margin-left: 2px;
+}
+
+div#str-main div#hp-template .title span{
+padding:3px 10px 0;
+border-left:4px solid #3f4da2;
+display:block;
+min-height:20px;
+background:#e5e5e5 url("/web/shared/images/heading/hdg-l2-03-bg.gif") repeat-x 0 0;
+zoom:1;
+}
+div#str-main div#hp-template div.header table.container {
+border: none;
+    border-collapse: collapse;
+    width: 100%;
+	border-spacing: 0px;
+}
+
+div#str-main div#hp-template div.header table.container td, 
+div#str-main div#hp-template div.header table.header td{
+padding:0px 0px;
+border-width:0 0px 0px 0;
+vertical-align:top;
+font-weight:normal;
+}
+
+div#str-main div#hp-template div.popup-chart form table {
+width: 635px;
+}
+div#str-main div#hp-template div.popup-chart form table td{
+padding:0px 3px;
+border-width:0 0px 0px 0;
+border-color:#c3c3c3;
+border-style:solid;
+vertical-align:top;
+font-weight:normal;
+}
+div#str-main div#hp-template div.popup-chart form table td#chart div.chart{
+padding:3px 3px;
+border-width:0 0px 0px 0;
+border-color:#c3c3c3;
+border-style:solid;
+vertical-align:middle;
+font-weight:normal;
+text-align:center;
+}
+div#str-main div#hp-template div.popup-chart form table td#chart div.complegend{
+padding:3px 3px;
+font-weight:none;
+vertical-align:middle;
+text-align:center;
+font-size:14px;
+}
+div#str-main div#hp-template div.popup-chart form table td#chart div.legend{
+padding:0px 3px;
+font-weight:none;
+vertical-align:middle;
+text-align: left;
+}
+div#str-main div#hp-template div.popup-chart form table select{
+font-family: MS PSVbN; 
+border: 1px solid #7f9db9;
+margin-top: 2px;
+font-size: 10px;
+}
+div#str-main div#hp-template div.popup-chart form table input{
+width: 70px;
+border:1px solid #7f9db9;
+margin-top: 2px;
+padding-left: 2px;
+}
+
+div#str-main div#hp-template div.popup-chart form h2 input {
+width: 75px;
+height: 20px;
+border: 1px solid #7f9db9;
+margin-top: 2px;
+padding-left: 2px;
+}
+
+div#str-main div#hp-template div.popup-chart form h2 select{
+border: 1px solid #7f9db9;
+margin-top: 2px;
+font-size: 14px;
+}
+
+div#str-main div#hp-template div.popup-chart form table td#button img{
+margin-top: 2px;
+vertical-align: botton;
+} 
+
+div#str-main div#hp-template div.popup-chart form table input.sma{
+width: 35px;
+border: 1px solid #7f9db9;
+margin-top: 2px;
+text-align: left;
+padding-left: 2px;
+}
+div#str-main div#hp-template div.popup-chart form table input.tpoint{
+border: 0px;
+margin-top: 2px;
+width: 25px;
+}
+
+div#str-main div#hp-template div.box-error-01{
+margin-bottom:1.25em;
+padding:7px;
+background-color:#ffe2eb;
+}
+
+div#str-main div#hp-template div.box-error-01 p{
+margin:0;
+color:#d62259;
+font-weight:bold;
+}
+
+/* ----- stoc-search-US ---------------- */
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li ul.etf-select li select#forwarding{
+margin-left:1em;
+}
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li ul.etf-select li select#target{
+margin-left:1em;
+width:350px;
+}
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li ul.etf-select li select#theme{
+margin-left:2.3em;
+width:200px;
+}
+
+div#str-main div#hp-template div.stoc-search-container form ul.list-form-stock li ul.etf-select li select#returns{
+margin-left:1em;
+width:120px;
+}
+
+/* ------------------------------------- */
+
+/* ----- stoc-search-China ------------- */
+div#str-main div#hp-template div.stoc-search-container form table.china ul.list-form-stock li select{
+margin-bottom:1px;
+}
+
+/* ------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------
+	18. Inquiry Component
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	19. Q and A Component
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	20. Topics Module
+----------------------------------------------------------------- */
+div#str-main div#hp-template table.tbl-topics-01 th,
+div#str-main div#hp-template table.tbl-topics-01 td,
+div#str-main div#hp-template table.tbl-topics-02 th,
+div#str-main div#hp-template table.tbl-topics-02 td{
+padding:6px 8px;
+border:none;
+background:url("/web/shared/images/dot/dot-01.gif") repeat-x 0 100%;
+}
+
+div#str-main div#hp-template table.tbl-topics-01 th img{
+padding-top:3px;
+}
+
+div#str-main div#hp-template table.tbl-topics-01 td a,
+div#str-main div#hp-template table.tbl-topics-02 td a{
+padding-left:10px;
+display:block;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+text-decoration:none;
+}
+
+div#str-main div#hp-template table.tbl-topics-01 td img,
+div#str-main div#hp-template table.tbl-topics-02 td img{
+vertical-align:middle;
+}
+
+/* ----------------------------------------------------------------
+	21. column-market-01
+----------------------------------------------------------------- */
+div#str-main div#hp-template div.column-market-01{
+margin-bottom:0.2em;
+}
+
+div#str-main div#hp-template div.column-market-01 div.segment{
+margin-right:10px;
+margin-bottom:10px;
+border:1px solid #c3c3c3;
+float:left;
+width:203px;
+}
+
+div#str-main div#hp-template div.column-market-01 div.last-child{
+margin-right:0;
+}
+
+div#str-main div#hp-template div.column-market-01 div.segment table.tbl-data-02{
+margin-bottom:5px;
+border-width:0 0 1px;
+}
+
+div#str-main div#hp-template div.column-market-01 div.segment table.tbl-data-02 th{
+padding:2px 3px;
+border-width:0 1px 0 0;
+}
+div#str-main div#hp-template div.column-market-01 div.segment table.tbl-data-02 td{
+padding:1px 3px;
+border:none;
+}
+
+div#str-main div#hp-template div.column-market-01 div.segment table.tbl-data-02 th a{
+font-weight:bold;
+}
+
+div#str-main div#hp-template div.column-market-01 div.segment table.tbl-data-02 th span{
+color:#666666;
+font-size:87.5%;
+}
+
+div#str-main div#hp-template div.column-market-01 div.image-col1{
+width:200px;
+}
+
+div#str-main div#hp-template div.column-market-01 div.image-col1 p{
+text-align:center;
+}
+
+/* ie7 */
+*+html div#str-main div#hp-template div.column-market-01{
+padding-bottom:10px;
+}
+
+
+/* ----------------------------------------------------------------
+	22. Form Module
+----------------------------------------------------------------- */
+
+/* ----- Search Stoc ------------------- */
+
+div#str-main div#hp-template div.box-search-stock-01{
+width:635px;
+margin-bottom:1.25em;
+padding-bottom:15px;
+background:url("/web/shared/images/bg-modules/bg-search-02-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form{
+padding:15px 12px 0;
+background:url("/web/shared/images/bg-modules/bg-search-02-top.gif") no-repeat 0 0;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form p{
+margin:0;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form label{
+padding:5px 10px 5px 30px;
+background:url("/web/shared/images/icon/icon-search-01.gif") no-repeat 0 0;
+font-weight:bold;
+font-size:112.5%;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form input{
+padding:2px;
+border:1px solid #7f9db9;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form.domestic-search input#form-search-stock-cont{
+margin-right:10px;
+width:240px;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form.us-search input#form-search-stock-cont{
+margin-right:10px;
+width:155px;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form.china-search input#form-search-stock-cont{
+margin-right:10px;
+width:240px;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 form input#form-search-stoc-btn-cont{
+padding:0;
+border:none;
+cursor:pointer;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 select{
+margin-right:5px;
+border:1px solid #7f9db9;
+width:110px;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 select#search-type{
+width:90px;
+}
+
+div#str-main div#hp-template div.box-search-stock-01 select option{
+padding-right:10px;
+}
+/* ------------------------------------- */
+
+
+/* ----------------------------------------------------------------
+	hp-column
+----------------------------------------------------------------- */
+
+div#hp-template div.hp-column{
+margin-bottom:1.5em;
+}
+
+div#hp-template div.hp-column div.segment-table{
+padding-right:25px;
+width:230px;
+float:left;
+}
+
+div#hp-template div.hp-column div.segment-image{
+width:500px;
+float:left;
+}
+
+div#str-main div#hp-template div.hp-column div.segment-image ul.hp-thumb{
+margin:0;
+padding-right:10px;
+width:50px;
+float:left;
+}
+
+div#str-main div#hp-template div.hp-column div.segment-image ul.hp-thumb li{
+margin:0 0 5px;
+padding:6px;
+border:1px solid #ddd;
+}
+
+div#str-main div#hp-template div.hp-column div.segment-image ul.hp-thumb li.selected{
+border-color:#f90;
+}
+
+div#str-main div#hp-template div.hp-column div.segment-image p.hp-image{
+width:400px;
+/*height:400px;*/
+margin:0;
+padding:10px 19px;
+float:left;
+border:1px solid #ddd;
+text-align:center;
+}
+
+
+div#hp-template div.hp-column:after,
+div#hp-template div.hp-column div.segment-image:after{
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden;
+}
+
+
+
+/* ----------------------------------------------------------------
+	23. Common Style
+----------------------------------------------------------------- */
+div#str-main div#hp-template .margin-reset-01{
+margin-bottom:0 !important;
+}
+
+div#str-main div#hp-template .margin-reset-02{
+margin-left:0 !important;
+}	
+
+div#str-main div#hp-template .padding-reset-01{
+padding-right:0 !important;
+}

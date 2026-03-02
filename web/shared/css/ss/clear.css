@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+*	01. Float Clearing
+*	02. Get hasLayout
+----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------
+	01. Float Clearing
+----------------------------------------------------------------- */
+div#str-search:after,
+div#nav-global ul:after,
+div#str-footer div#nav-summary:after,
+div#Wrapper:after{
+display:block;
+clear:both;
+height:0;
+visibility:hidden;
+content:".";
+}
+
+/* ----------------------------------------------------------------
+    02. Get hasLayout
+----------------------------------------------------------------- */
+div#str-search,
+div#nav-global ul,
+div#str-footer div#nav-summary,
+div#font-control dl,
+div#nav-local ul a,
+div#Wrapper{
+zoom:1;
+}
+

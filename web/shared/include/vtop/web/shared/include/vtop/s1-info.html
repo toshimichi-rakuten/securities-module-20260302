@@ -1,0 +1,56 @@
+
+<!-- インクルード /web/shared/include/vtop/s1-info.html -->
+
+<?php
+	/*
+	 * PCはメンバー、ビジター共有の内容を記載
+	 * スマホは必要な場合、スマホページのお知らせを記載
+	 *
+	 */
+	if($segment == 'member') {
+?>
+<!-- PCメンバー掲載のお知らせ -->
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210105-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210105-01')">楽天証券における新型コロナウイルス感染者の発生について（更新）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210409-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210409-02')">米国株式移管手数料キャッシュバックキャンペーンについて（4月19日開始予定）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/05</span><span class="s1-news__info"><a href="/web/info/info20210405-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210405-01')">米国株式が自動入金（スイープ）に対応！4月4日から</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/03/29</span><span class="s1-news__info"><a href="/web/info/info20210329-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210329-02')">セキュリティ強化のため、ログインパスワードの設定ルールを変更いたします（4/4～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/domestic/lending/rate.html" onclick="s.lidTrack('pc_top_visitor_info__rate')">貸株金利更新！年率11%の超ボーナス銘柄もあります！年率1%以上は557銘柄（4/12～）</a></span></li>
+
+<!--米雇用統計お知らせサンプル
+<li class="s1-news__item"><span class="s1-news__date">2021/03/31</span><span class="s1-news__info"><a href="https://media.rakuten-sec.net/articles/-/31586" onclick="s.lidTrack('pc_top_visitor_info__31586')" target="_blank">米雇用統計（4月2日21時半発表予定）の予想値・注目点を解説</a></span></li>
+-->
+
+<!-- //PCメンバー掲載のお知らせ -->
+
+
+<?php
+	} elseif($segment == 'visitor') {
+?>
+<!-- PCメンバー掲載のお知らせ -->
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210105-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210105-01')">楽天証券における新型コロナウイルス感染者の発生について（更新）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210409-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210409-02')">米国株式移管手数料キャッシュバックキャンペーンについて（4月19日開始予定）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/05</span><span class="s1-news__info"><a href="/web/info/info20210405-01.html" onclick="s.lidTrack('pc_top_visitor_info__info20210405-01')">米国株式が自動入金（スイープ）に対応！4月4日から</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/03/29</span><span class="s1-news__info"><a href="/web/info/info20210329-02.html" onclick="s.lidTrack('pc_top_visitor_info__info20210329-02')">セキュリティ強化のため、ログインパスワードの設定ルールを変更いたします（4/4～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/domestic/lending/rate.html" onclick="s.lidTrack('pc_top_visitor_info__rate')">貸株金利更新！年率11%の超ボーナス銘柄もあります！年率1%以上は557銘柄（4/12～）</a></span></li>
+<!-- //PCメンバー掲載のお知らせ -->
+
+
+<?php
+	} else {
+?>
+<!-- スマホ掲載のお知らせ -->
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/info/info20210105-01.html" onclick="s.lidTrack('sp_top_visitor_info__info20210105-01')">楽天証券における新型コロナウイルス感染者の発生について（更新）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/smartphone/info/info20210409-02.html" onclick="s.lidTrack('sp_top_visitor_info__info20210409-02')">米国株式移管手数料キャッシュバックキャンペーンについて（4月19日開始予定）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/05</span><span class="s1-news__info"><a href="/smartphone/info/info20210405-01.html" onclick="s.lidTrack('sp_top_visitor_info__info20210405-01')">米国株式が自動入金（スイープ）に対応！4月4日から</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/03/29</span><span class="s1-news__info"><a href="/smartphone/info/info20210329-02.html" onclick="s.lidTrack('sp_top_visitor_info__info20210329-02')">セキュリティ強化のため、ログインパスワードの設定ルールを変更いたします（4/4～）</a></span></li>
+<li class="s1-news__item"><span class="s1-news__date">2021/04/09</span><span class="s1-news__info"><a href="/web/domestic/lending/rate.html" onclick="s.lidTrack('sp_top_visitor_info__rate')">貸株金利更新！年率11%の超ボーナス銘柄もあります！年率1%以上は557銘柄（4/12～）</a></span></li>
+<!-- //スマホ掲載のお知らせ -->
+
+<!--米雇用統計お知らせサンプル
+<li class="s1-news__item"><span class="s1-news__date">2021/03/31</span><span class="s1-news__info"><a href="https://media.rakuten-sec.net/articles/-/31586" onclick="s.lidTrack('sp_top_visitor_info__31586')" target="_blank">米雇用統計（4月2日21時半発表予定）の予想値・注目点を解説</a></span></li>
+-->
+
+<?php
+	}
+?>
+<!-- /インクルード /web/shared/include/vtop/s1-info.html -->

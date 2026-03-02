@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+	01. checked-stock-list
+----------------------------------------------------------------- */
+div#str-main div.checked-stock-list{
+margin:0 0 1em;
+padding:0;
+background:url("/web/shared/images/bg-modules/bg-checked-01-bottom.gif") no-repeat 0 100%;
+}
+
+div#str-main div.checked-stock-list ul{
+margin:0;
+padding:21px 20px 12px;
+background:url("/web/shared/images/bg-modules/bg-checked-01-top.gif") no-repeat 0 0;
+}
+
+div#str-main div.checked-stock-list ul li{
+display:inline;
+line-height:1.7;
+}
+
+div#str-main div.checked-stock-list ul.type-01 li{
+display:block;
+}
+
+div#str-main div.checked-stock-list ul li a{
+padding:0 20px 0 12px;
+background:url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 4px;
+}

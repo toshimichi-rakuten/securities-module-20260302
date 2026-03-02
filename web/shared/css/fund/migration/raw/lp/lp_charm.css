@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------------
+
+	common
+	
+----------------------------------------------------------------- */
+
+body {
+text-align:center;
+}
+
+body.lyt-column-ms-01 div#str-main{
+text-align:left;
+margin:0 auto;
+padding:10px;
+float:none;
+background:#FFFFFF
+}
+
+body.lyt-column-ms-01 div#str-main p.logo img {
+padding-right:14px;
+vertical-align:middle;
+}
+
+body.lyt-column-ms-01 div#str-main dl.list-footer-lp dt{
+display:none;
+}
+
+body.lyt-column-ms-01 div#str-main dl.list-footer-lp dd p{
+margin:0;
+padding:0;
+}
+
+/* ----------------------------------------------------------------
+
+	lp_index
+	
+----------------------------------------------------------------- */
+
+
+
+
+/*---------------------------------------------------------------
+* about div#footerNav
+----------------------------------------------------------------*/
+div#grpRakutenLinkArea p.copyright {
+margin-top:0.75em;
+}
+div#grpRakutenLinkArea div#footerNav dl {
+float:left;
+padding:0;
+}
+div#grpRakutenLinkArea div#footerNav p#grpAttention {
+float:right;
+padding:0.75em;
+}
+div#grpRakutenLinkArea div#footerNav p#grpAttention * {
+vertical-align:middle;
+}
+div#footerNav dt {
+position:absolute;
+left:-9999px;
+width:100px;
+height:0pt;
+}
+div#grpRakutenLinkArea div#footerNav ul {
+margin-left:-0.35em;
+}
+div#grpRakutenLinkArea div#footerNav li {
+border-right:1px solid #ADADAD;
+display:inline;
+list-style-type:none;
+margin-left:0.35em;
+padding-right:0.5em;
+}
+div#grpRakutenLinkArea div#footerNav li.grpLast {
+border:none;
+}
+/* clearfix ----------------- */
+div#grpRakutenLinkArea div#footerNav:after{
+/*for modern browser*/
+display: block;
+clear:both;
+height: 0;
+line-height: 0;
+visibility: hidden;
+content: ".";
+font-size: 0.1em;
+}
+div#grpRakutenLinkArea div#footerNav {
+display: inline-block;
+}
+/* Hides from Mac-IE \*/
+* html div#grpRakutenLinkArea div#footerNav {
+height: 1%;
+}
+div#grpRakutenLinkArea div#footerNav {
+display: block;
+}
+/* End hide from Mac-IE */
+/*---------------------------*/
+
+
+/* LP AB Test Style 2011.09.02 */
+
+dl#android-rate,
+dl#iphone-rate,
+dl#ipad-rate {
+	float: left;
+	width: 139px;
+	margin-bottom: 0 !important;
+	text-align: center;
+}
+
+dl#android-rate {
+	width: 130px;
+	_margin-left: 5px !important;
+	_margin-rignt: 20px;
+	margin-right: 25px !important;
+}
+dl#iphone-rate {
+	width: 130px;
+	_margin-rignt: 20px;
+	margin-right: 25px !important;
+}
+
+dl#ipad-rate {
+	width: 170px;
+	_width: 160px;
+	margin-right: 0 !important;
+}
+
+dl#android-rate dt,
+dl#iphone-rate dt,
+dl#ipad-rate dt { font-weight: bold; color: #444; }
+
+dl#android-rate dd,
+dl#iphone-rate dd,
+dl#ipad-rate dd { width: 70px; }
+
+dl#android-rate dd { margin-left: 28px; /margin-left: 0; }
+dl#iphone-rate dd { margin-left: 32px; /margin-left: 0; }
+dl#ipad-rate dd { margin-left: 53px; /margin-left: 0; }
+
+span.raiting-star {
+	float: left;
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(/ITS/rakuten_g/start/images/icon_star.gif) no-repeat 0 0;
+}
+span.half {
+	background: url(/ITS/rakuten_g/start/images/icon_star_half.gif) no-repeat 0 0;
+}
+span.ghost {
+	background: none;
+}

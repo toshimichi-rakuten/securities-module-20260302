@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+div.reuters div.box-inner-02{
+	border:1px solid #C3C3C3;
+	font-family:"ＭＳ Ｐゴシック",Arial,sans-serif,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif;
+}
+
+body#top div#str-main div.reuters table {
+	font-size:68.8%;
+	line-height:1.1;
+	padding:3px 1px 3px 0;
+}
+
+body#top div#str-main div.reuters table.tbl-data-03 th, body#top div#str-main div.reuters table.tbl-data-03 td {
+	line-height:1.1;
+	padding:3px 1px 3px 0;
+}
+
+body#top div#str-main div.reuters table.tbl-data-03 th {
+	background-color:#FFFFFF;
+	border:medium none;
+	text-align:left;
+}
+
+body#top div#str-main div.reuters table.tbl-data-03 tr.odd th, body#top div#str-main  div.reuters table.tbl-data-03 tr.odd td {
+	background-color:#E4E5F2;
+}
+
+body#top div#str-main div.reuters table.tbl-data-05 {
+	margin-bottom:10px;
+	margin-right:0px;
+	margin-left:0px;
+	width:100%;
+}
+
+body#top div#str-main div.reuters table.tbl-data-05 th {
+	padding: 3px 1px 3px 0;
+	text-align:center;
+}
+
+body#top div#str-main div.reuters table.tbl-data-05 td {
+	padding: 3px 1px 3px 0;
+}
+
+body#top div#str-main div.reuters .hdg-l6-01 {
+	margin-bottom:0;
+}
+
+body#top div#str-main div.reuters div.delay-container p {
+	font-size:81.25%;
+	padding-left:10px;
+}
+
+body#top div#str-main div.reuters div.segment {
+	margin:0;
+	padding:0 2px;
+	width:181px;
+}
+
+body#top div#str-main div.reuters div.segment p.image {
+	margin-right:0;
+	margin-top:20px;
+}
+
+body#top div#str-main div.reuters ul {
+	font-size:81.25%;
+	margin-left:8px;
+	margin-right:8px;
+}
+
+body#top div#str-main div.reuters ul.nav-tab {
+	border-bottom:3px solid #DCDCF4;
+	margin:0 0 1px;
+	padding-left:4px;
+}
+
+body#top div#str-main div.reuters h3.up-01 {
+	color:#FF0101;
+	margin-bottom:3px;
+	padding-left:0;
+	text-align:center;
+}
+
+body#top div#str-main div.reuters h3.down-01 {
+	color:#4EBA00;
+	margin-bottom:3px;
+	padding-left:0;
+	text-align:center;
+}
+
+body#top div#str-main div.reuters div#mRank1 table.tbl-data-05 th.w-20, body#top div#str-main div.reuters div#mRank2 table.tbl-data-05 th.w-20 {
+	font-size:0;
+	color:#EBEBEB;
+	width:5%;
+}
+
+body#top div#str-main div.reuters div#mRank1 table.tbl-data-05 th.w-25, body#top div#str-main div.reuters div#mRank2 table.tbl-data-05 th.w-25 {
+	width:45%;
+}
+
+div.reuters a:link {
+	color:#3535B4;
+	text-decoration:underline;
+}
+
+div#str-main div.reuters table {
+	background-color:#FFFFFF;
+	border:medium none;
+	width:100%;
+}
+
+div#str-main div.reuters table tbody th {
+	vertical-align:middle;
+}
+
+body#top div#str-main div.reuters table.tbl-data-03 {
+	margin:0;
+	padding:0;
+	width: 100%
+}
+
+div#str-main div.reuters table.tbl-data-03 td {
+	background-color:#FFFFFF;
+	border:medium none;
+	text-align:right;
+}
+
+div#str-main div.reuters table.tbl-data-05 thead th {
+	color:#333333;
+	font-weight:normal;
+	text-align:center;
+	background-color:#EBEBEB;
+	text-align:center;
+}
+
+div#str-main div.reuters table.tbl-data-05 th {
+	background-color:#FFFFFF;
+	border:medium none;
+	text-align:left;
+}
+
+div#str-main div.reuters table.tbl-data-05 td {
+	background-color:#FFFFFF;
+	border:medium none;
+	text-align:right;
+}
+
+div#str-main div.reuters .hdg-l6-01 {
+	font-size:81.25%;
+	margin-bottom:5px;
+	padding-left:10px;
+}
+
+div#str-main div.reuters div.delay-container {
+	height:25px;
+	background-color:#EBEBEB;
+	font-size:87.5%;
+	margin-bottom:5px;
+	min-height:25px;
+	padding:2px;
+	position:relative;
+}
+
+div#str-main div.reuters div.delay-container p {
+	margin:0;
+	padding-left:7px;
+}
+
+div#str-main div.reuters div.delay-container p.delay {
+	color:#666666;
+	line-height:1;
+	padding-right:70px;
+	padding-top:2px;
+}
+
+div#str-main div.reuters div.delay-container p.btn-renew {
+	position:absolute;
+	right:3px;
+	top:5px;
+}
+
+div#str-main div.reuters div.segment{
+	float:left;
+	margin-right:13px;
+}
+
+
+div#str-main div.reuters ul.nav-tab li {
+	float:left;
+	margin-right:2px;
+	text-align:center;
+	font-size:75%;
+}
+
+div#str-main div.reuters ul.nav-tab li.selected a {
+	background-color:#DCDCF4;
+	color:#333333;
+	text-decoration:none;
+}
+
+div#str-main div.reuters ul.nav-tab li a {
+	background-color:#EBEBEB;
+	display:block;
+	font-weight:bold;
+	padding:3px 7px;
+}
+
+div#str-main div.reuters table th.align-L, div#str-main div.reuters table td.align-L {
+	text-align:left;
+}
+
+div#str-main div.reuters div.reuter-lyt:after, div#str-main div.reuters ul:after, div#str-main div.reuters div.segment:after{
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+	content:".";
+}
+
+
+
+body#top div#str-main div.top-start {
+margin: 10px 0;
+background: url(/web/images/index-start-bg.gif) no-repeat left bottom;
+}
+
+body#top div#str-main div.top-start ul.list-link-01:after{
+display:block;
+clear:both;
+height:0;
+line-height:1%;
+visibility:hidden;
+content:".";
+}
+body#top div#str-main div.top-start ul.list-link-01{
+margin: 7px 14px;
+display:inline-block;
+zoom:1;
+}
+body#top div#str-main div.top-start ul.list-link-01 li{
+float: left;
+width: 160px;
+}

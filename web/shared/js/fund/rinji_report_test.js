@@ -1,0 +1,4 @@
+
+var oj={
+msg  : '<table class="tbl-topics-02" border="1" cellspacing="0"><tbody><!-- date --><tr><th scope="row" class="w-15">2012/02/01</th><td class="w-20">アムンディ</td><td><a href="/web/fund/attention/pdf/20120202_fund_14.pdf" target="_blank">マーケット・マンスリー <img src="/web/shared/images/icon/icon-pdf-01.gif" alt="PDF" height="14" width="14" /></a></td></tr><tr><th scope="row" class="w-15">2012/02/01</th><td class="w-20">三井住友AM</td><td><a href="/web/fund/attention/pdf/20120201_fund_01.pdf" target="_blank">市場レポート（2012/02/01）<img src="/web/shared/images/icon/icon-pdf-01.gif" alt="PDF" height="14" width="14" /></a></td></tr><tr><th scope="row" class="w-15">2012/02/01</th><td class="w-20">T＆Dアセット</td><td><a href="/web/fund/attention/pdf/20120201_fund_01.pdf" target="_blank">月次市場レポート <img src="/web/shared/images/icon/icon-pdf-01.gif" alt="PDF" height="14" width="14" /></a></td></tr><!-- /date --></tbody></table>'
+}

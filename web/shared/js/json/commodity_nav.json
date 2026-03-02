@@ -1,0 +1,97 @@
+{
+  "header_name": "商品先物",
+  "header_url": "/web/commodity/",
+  "categories": [
+		{
+      "category": "はじめての商品先物",
+      "category_url": "/web/commodity/beginner/",
+      "category_pattern": ["/web/commodity/beginner/"
+      ],
+      "items": [
+        {
+          "item_name": "口座開設から取引開始まで",
+          "item_url": "/web/commodity/beginner/startup/"
+        }
+      ]
+    },
+    {
+      "category": "取扱銘柄",
+      "category_url": "/web/commodity/lineup/",
+      "category_pattern": [
+        "/web/commodity/lineup/"
+      ],
+      "items": [
+        {
+          "item_name": "金・金ミニ",
+          "item_url": "/web/commodity/lineup/gold/"
+        },
+				{
+          "item_name": "銀",
+          "item_url": "/web/commodity/lineup/silver/"
+        },
+				{
+          "item_name": "白金・白金ミニ",
+          "item_url": "/web/commodity/lineup/platinum/"
+        },
+				{
+          "item_name": "パラジウム",
+          "item_url": "/web/commodity/lineup/palladium/"
+        },
+				{
+          "item_name": "原油",
+          "item_url": "/web/commodity/lineup/crude_oil/"
+        },
+				{
+          "item_name": "ガソリン",
+          "item_url": "/web/commodity/lineup/gasoline/"
+        },
+				{
+          "item_name": "灯油",
+          "item_url": "/web/commodity/lineup/kerosene/"
+        },
+				{
+          "item_name": "ゴム",
+          "item_url": "/web/commodity/lineup/rubber/"
+        },
+				{
+          "item_name": "一般大豆",
+          "item_url": "/web/commodity/lineup/soybeans/"
+        },
+				{
+          "item_name": "とうもろこし",
+          "item_url": "/web/commodity/lineup/corn/"
+        },
+				{
+          "item_name": "小豆",
+          "item_url": "/web/commodity/lineup/red-beans/"
+        }
+      ]
+    },
+    {
+      "category": "取引手数料",
+      "category_url": "/web/commodity/commission/",
+      "category_pattern": ["/web/commodity/commission/"]
+    },
+    {
+      "category": "取引ルール",
+      "category_url": "/web/commodity/rule/",
+      "category_pattern": ["/web/commodity/rule/"]
+    },
+    {
+      "category": "取引チャネル",
+      "category_url": "/web/commodity/tool/",
+      "category_pattern": ["/web/commodity/tool/"
+      ],
+      "items": [
+        {
+          "item_name": "マーケットスピードCXについて",
+          "item_url": "/web/commodity/tool/mscx/"
+        },
+        {
+          "item_name": "iSPEED CXについて",
+          "item_url": "/web/commodity/tool/ispeedcx/"
+        }
+      ]
+    }
+  ]
+}

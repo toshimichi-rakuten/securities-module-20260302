@@ -1,0 +1,108 @@
+.box__clearfix {
+  zoom: 1;
+}
+.box__clearfix:before, .box__clearfix:after {
+  content: " ";
+  display: table;
+}
+.box__clearfix:after {
+  clear: both;
+}
+
+.heading__lv2--init_raising {
+  background: #D5E9F7;
+  border-left: #005991 5px solid;
+  padding: 4px 4px 4px 10px;
+  font-size: 166.667%;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.tab__button--link a,
+.tab__button--link a:active,
+.tab__button--link a:visited,
+.tab__button--link a:hover {
+  color: #333333;
+  text-decoration: none;
+  display: block;
+}
+.tab__button--link.tab__button--active a {
+  color: #fff;
+}
+
+.style-table-sec_raising th {
+  width: 100px;
+  vertical-align: middle;
+}
+.style-table-sec_raising td {
+  padding-top: 15px;
+}
+.style-table-sec_raising .style__lead--large {
+  font-size: 133.333%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.style-table-sec_raising hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  border-top: 1px dotted #ccc;
+  margin-bottom: 10px;
+}
+
+.style-table-init_raising {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+.style-table-init_raising th, .style-table-init_raising td {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-weight: normal;
+  padding: 5px;
+  vertical-align: middle;
+  font-size: 166.667%;
+}
+.style-table-init_raising__btnbox {
+  float: right;
+}
+.style-table-init_raising__btnbox img {
+  vertical-align: top;
+}
+.style-table-init_raising_rec {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+.style-table-init_raising_rec thead th {
+  background-color: #002E9B;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-weight: 400;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+.style-table-init_raising_rec th {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  background-color: #e8efff;
+  font-weight: normal;
+  padding: 5px;
+  vertical-align: middle;
+}
+.style-table-init_raising_rec td {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  vertical-align: middle;
+  padding: 5px;
+}
+.style-table-init_raising_rec td:first-child:before {
+  display: block;
+  float: left;
+  height: 3em;
+  content: "";
+}

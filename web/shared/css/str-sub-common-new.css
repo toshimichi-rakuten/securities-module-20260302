@@ -1,0 +1,849 @@
+/* ----------------------------------------------------------------
+*	00. 口座開設エリア
+*	01. 旧login
+*	02. login
+*	03. login-fx
+*   04. maintenance
+*	05. info-system
+*	06. attention
+*	07. pay
+*	08. inquiry
+*	09. advertisement-inc
+*	10. bannerList
+*	11. right_portfolio
+*	12. right_sub_account
+*	13. etcetera
+*	14. right_fund
+*	15. headline
+----------------------------------------------------------------- */
+
+div#str-sub-common li a:link,
+div#str-sub-common li a:visited {
+  text-decoration: none;
+}
+
+div#str-sub-common li a:active,
+div#str-sub-common li a:hover,
+div#str-sub-common li a:focus {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------
+	0. 口座開設エリア（クッキーによる出しわけ）
+----------------------------------------------------------------- */
+
+div#right-acc-area p.button,
+div#right-acc-area p.banner{
+  margin:0 0 10px;
+  text-align:center;
+}
+
+div#right-acc-area div.box-new-account{
+  margin:0 0 10px;
+}
+
+div#right-acc-area div.box-new-account h2{
+  margin:0;
+}
+
+div#right-acc-area div.box-new-account-inner{
+padding:5px 0 0;
+border:solid 1px #e4e4e4;
+border-top:0;
+background:#f1f1f1;
+box-shadow:inset 0 0 2px #d9d9d9;
+}
+
+div#right-acc-area div.box-new-account p.sub-hdg{
+margin:0 0 3px;
+text-align:center;
+color:#e51b1b;
+font-size:81.25%;
+font-weight:bold;
+}
+
+div#right-acc-area div.box-new-account p.txt-link{
+margin:0 10px 5px;
+text-align:center;
+font-size:81.25%;
+}
+
+div#right-acc-area div.processing{
+margin:0 0 10px;
+border:#CACDD9 solid 2px;
+background:#fcfcff;
+padding:10px 10px 5px;
+}
+
+div#right-acc-area div.processing h3{
+margin:0 0 5px;
+font-size:13px;
+font-weight:bold;
+}
+
+div#right-acc-area div.processing ul.list-link-01{
+margin-bottom: 5px;
+}
+
+div#right-acc-area div.processing ul.list-link-01 li {
+background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 3px 0.5em;
+font-size: 81.25%;
+margin-bottom: 0.1em;
+min-height: 15px;
+padding-left: 12px;
+}
+
+
+
+/* ----------------------------------------------------------------
+	1. 旧login（シンプル化前デザイン。トップページのみ。）
+----------------------------------------------------------------- */
+div#str-sub-common div.login-01 {
+  border-bottom: 1px solid #BBBBBB;
+  color: #444444;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  padding: 3px 0 0;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: 0 0;
+}
+
+div#str-sub-common div.login-01 h2 {
+  padding: 5px 10px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.login-01 form fieldset {
+  padding: 6px 5px 0;
+  min-height: 140px;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: 3px -750px;
+}
+
+div#str-sub-common div.login-01 label {
+  margin-left: 10px;
+  padding-right: 5px;
+  line-height: 1.7;
+  font-size: 81.25%;
+  font-weight: bold;
+}
+
+div#str-sub-common div.login-01 input#form-login-id,
+div#str-sub-common div.login-01 input#form-login-pass {
+  padding: 1px;
+  border: 1px solid #7f9db9;
+  width: 80px;
+}
+
+div#str-sub-common div.login-01 p.link-openkey {
+  /* sprite before
+  background:url("/web/shared/images/str-sub-common/icon-keyboard.gif") no-repeat scroll 0 0.3em transparent;*/
+  background: url("/web/shared/images/icon/icon_sprite01.png") 0 -126px no-repeat;
+  font-size: 81.25%;
+  margin: 5px 7px;
+  padding-left: 22px;
+  text-align: left;
+}
+
+div#str-sub-common div.login-01 p.link-openkey a:link,
+div#str-sub-common div.login-01 p.link-openkey a:visited {
+  text-decoration: none;
+}
+
+div#str-sub-common div.login-01 p.link-openkey a:active,
+div#str-sub-common div.login-01 p.link-openkey a:hover,
+div#str-sub-common div.login-01 p.link-openkey a:focus {
+  text-decoration: underline;
+}
+
+div#str-sub-common div.login-01 input#login-btn {
+  margin: 0 8px;
+}
+
+div#str-sub-common div.login-01 p.fx-btn {
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+div#str-sub-common div.login-01 p.cfd-btn {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+div#str-sub-common div.login-01 ul.list-link-01 {
+  margin: auto 8px 8px 10px;
+}
+
+div#str-sub-common div.login-01 ul.list-link-01 li {
+  background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat 0 5px;
+  font-size: 81.25%;
+  margin-bottom: 0.1em;
+  min-height: 15px;
+  padding-left: 10px;
+}
+
+
+/* ----------------------------------------------------------------
+	02. login（シンプル化後デザイン）下層の右ナビに適用
+----------------------------------------------------------------- */
+
+div#str-sub-common div#login-area{
+margin:0 0 10px;
+padding:0;
+border:none;
+background-image:none;
+}
+
+div#login-area ul#tab-login li{
+position:relative;
+width:80px;
+padding:6px 5px 5px;
+float:left;
+font-size:12px;
+font-weight:bold;
+text-align:center;
+border-top-left-radius:3px;
+border-top-right-radius:3px;
+cursor:pointer;
+}
+
+div#login-area #tab-login li#tab-login-account{
+border-top:3px solid #0052be;
+background:url("/web/shared/images/str-sub-common/bg-tab-login-off.gif") bottom no-repeat;
+}
+
+div#login-area #tab-login li#tab-login-account.selected{
+border-top:3px solid #0052be;
+background:url("/web/shared/images/str-sub-common/bg-tab-login-on.gif") top no-repeat;
+cursor:default;
+}
+
+div#login-area #tab-login li#tab-login-fx{
+border-top:3px solid #ba0a08;
+background:url("/web/shared/images/str-sub-common/bg-tab-fxlogin-off.gif") bottom no-repeat;
+}
+
+div#login-area #tab-login li#tab-login-fx.selected{
+border-top:3px solid #ba0a08;
+background:url("/web/shared/images/str-sub-common/bg-tab-fxlogin-on.gif") top no-repeat;
+cursor:default;
+}
+
+div#login-area div#login-container{
+border:solid 1px #bcc0ce;
+border-top:none;
+background-image:none;
+background-color:#f8f8f8;
+padding:5px 1px 2px;
+min-height:100px;
+}
+
+div#login-area div#login-container legend{
+display:block\9;
+height:0\9;
+visibility:hidden\9;
+}
+
+div#login-area #box-login,
+div#login-area #box-fxlogin{
+margin:1px 2px 6px;
+padding:9px 1px 5px;
+border:1px solid #d2d2d2;
+background:#e6ecfd;
+box-shadow:inset 0 0 1px 0 #fff,inset 0 0 1px 0 #fff;
+}
+
+div#login-area #box-fxlogin{
+padding:9px 1px 8px;
+background:#f9e9e9;
+}
+
+div#login-area #login-container label {
+  margin-left: 10px;
+  padding-right: 5px;
+  line-height: 1.7;
+  font-size: 81.25%;
+  font-weight: bold;
+}
+
+div#login-area #login-container label.lbl-login-id{
+  margin-right:0.2em;
+}
+
+div#login-area #login-container label.lbl-login-pass{
+  margin-right:0.1em;
+}
+
+div#login-area #login-container input.input-area{
+  padding: 1px;
+  border: 1px solid #7f9db9;
+  width: 80px;
+}
+
+div#login-area #login-container p.link-openkey {
+  /* sprite before
+  background:url("/web/shared/images/str-sub-common/icon-keyboard.gif") no-repeat scroll 0 0.3em transparent;*/
+  background: url("/web/shared/images/icon/icon_sprite01.png") 0 -123px no-repeat;
+  font-size: 81.25%;
+  margin: 5px 7px;
+  padding-left: 22px;
+  text-align: left;
+}
+
+div#login-area #login-container p.link-openkey a:link,
+div#login-area #login-container p.link-openkey a:visited {
+  text-decoration: none;
+}
+
+div#login-area #login-container p.link-openkey a:active,
+div#login-area #login-container p.link-openkey a:hover,
+div#login-area #login-container p.link-openkey a:focus {
+  text-decoration: underline;
+}
+
+div#str-sub-common div#login-area ul.list-link-01 {
+margin:0 8px 3px;
+}
+
+div#str-sub-common div#login-area ul.list-link-01 li {
+  background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat scroll 0 5px transparent;
+  font-size: 81.25%;
+  margin-bottom: 0.1em;
+  min-height: 15px;
+  padding-left: 10px;
+}
+
+div#login-area input.input-btn{
+margin:0 7px;
+}
+
+div#login-area p#select-page{
+margin:8px 8px 3px;
+}
+
+div#login-area p#select-page select#homeid{
+width:152px;
+border:1px solid #7F9DB9;
+}
+
+
+div#login-area ul#tab-login:after{
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden;
+}
+
+
+/* ----------------------------------------------------------------
+	03. login-fx （FXログインページへのリンクエリア）
+----------------------------------------------------------------- */
+
+div#str-sub-common div.login-nfx {
+  border: 1px solid #d7d7d7;
+  margin-bottom: 7px;
+}
+
+div#str-sub-common div.login-nfx div {
+  background: #eee;
+  border: 1px solid #FFF;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+div#str-sub-common div.login-nfx div p.btn-login {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+div#str-sub-common div.login-nfx div p.link-01 {
+  font-size: 81.25%;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+div#str-sub-common div.login-nfx div p.link-01 a {
+  background: url("/web/shared/images/arrow/arrow-02.gif") no-repeat scroll 0 5px transparent;
+  min-height: 15px;
+  padding-left: 10px;
+}
+
+/* ----------------------------------------------------------------
+	04. box-maintenance
+----------------------------------------------------------------- */
+div#str-sub-common div.box-maintenance{
+margin:0 5px 2px;
+padding:3px;
+border:2px solid #ffc000;
+background:#fff;
+font-size:75%;
+}
+
+div#str-sub-common div.box-maintenance p{
+padding:3px;
+}
+
+div#str-sub-common div.box-maintenance p.reopen{
+margin:0;
+padding:0 3px;
+text-align:center;
+font-weight:bold;
+}
+
+div#str-sub-common div.box-maintenance p.reopen span{
+display:block;
+margin:0 0 5px;
+background:#ff7920;
+color:#fff;
+font-weight:normal;
+}
+
+
+/* ----------------------------------------------------------------
+	05. info-system
+----------------------------------------------------------------- */
+div#str-sub-common div.info-system {
+  margin-bottom: 10px;
+  background-color: #e9ebff;
+}
+
+div#str-sub-common div.info-system h2 {
+  padding-bottom: 9px;
+  background: url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.info-system ul.list-link-01 {
+  margin: 0 auto 10px;
+  padding-bottom: 10px;
+  width: 164px;
+}
+
+div#str-sub-common div.info-system ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.info-system ul.list-link-01 li.outside {
+  padding-left: 15px;
+  background: url("/web/shared/images/str-sub-common/icon-outside-01.gif") no-repeat 0 5px;
+}
+
+/* ----------------------------------------------------------------
+	06. attention
+----------------------------------------------------------------- */
+div#str-sub-common div.attention {
+  margin-bottom: 10px;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: -230px 0;
+  border-bottom: 1px solid #cacdd9;
+}
+
+div#str-sub-common div.attention.no-heading {	/* 見出しなしバージョン */
+  margin-bottom:10px;
+  border-top:#CACDD9 solid 1px;
+  padding-top:10px;
+}
+
+div#str-sub-common div.attention h2 {
+  padding-bottom: 9px;
+  background: url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.attention ul {
+  margin: 0 auto 10px;
+  border-bottom: 1px solid #c4c4c4;
+  width: 164px;
+}
+
+div#str-sub-common div.attention ul.list-link-01 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+div#str-sub-common div.attention ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.attention ul.list-link-01 li a {
+  min-height: 10px;
+}
+
+/* ----------------------------------------------------------------
+	07. pay
+----------------------------------------------------------------- */
+div#str-sub-common div.pay {
+  margin-bottom: 10px;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: -230px 0;
+  border-bottom: 1px solid #cacdd9;
+}
+
+div#str-sub-common div.pay h2 {
+  padding-bottom: 9px;
+  background: url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.pay ul {
+  margin: 0 auto 10px;
+  border-bottom: 1px solid #c4c4c4;
+  width: 164px;
+}
+
+div#str-sub-common div.pay ul.list-link-01 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+div#str-sub-common div.pay ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.pay ul.list-link-01 li a {
+  min-height: 10px;
+}
+
+
+/* ----------------------------------------------------------------
+	08. inquiry
+----------------------------------------------------------------- */
+div#str-sub-common div.inquiry {
+  margin-bottom: 10px;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: -230px 0;
+  border-bottom: 1px solid #cacdd9;
+}
+
+div#str-sub-common div.inquiry h2 {
+  padding-bottom: 9px;
+  background: url("/web/shared/images/str-sub-common/hdg-bg-01.gif") repeat-x 0 0;
+}
+
+div#str-sub-common div.inquiry h3 {
+  margin: 0 10px 5px;
+  font-size: 75%;
+  font-weight: bold;
+}
+
+div#str-sub-common div.inquiry ul {
+  /*
+  margin:0 auto 10px;
+  border-bottom:1px solid #c4c4c4;
+  */
+  margin: 0 auto;
+  width: 164px;
+}
+
+div#str-sub-common div.inquiry ul.list-link-01 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+div#str-sub-common div.inquiry ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking {
+  width: 166px;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking li {
+  padding: 1px 0 5px 21px;
+  min-height: 16px;
+  font-size: 75%;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking li.ask1 {
+  background: url("/web/shared/images/str-sub-common/icon-num-01.gif") no-repeat 0px 1px;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking li.ask2 {
+  background: url("/web/shared/images/str-sub-common/icon-num-02.gif") no-repeat 0px 1px;
+}
+
+div#str-sub-common div.inquiry ul.list-ask-ranking li.ask3 {
+  background: url("/web/shared/images/str-sub-common/icon-num-03.gif") no-repeat 0px 1px;
+}
+
+
+/* ----------------------------------------------------------------
+	09. advertisement-inc
+----------------------------------------------------------------- */
+div#str-sub-common div.advertisement-inc {
+  margin-bottom: 10px;
+}
+
+div#str-sub-common div.advertisement-inc .pr-bar {
+  background: #EEEEEE;
+  color: #666666;
+  font-size: 12px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+div#str-sub-common div.advertisement-inc table {
+  margin: auto;
+}
+
+/* ----------------------------------------------------------------
+	10. bannerList
+----------------------------------------------------------------- */
+div#str-sub-common ul.list-bn-01 li {
+  margin-bottom: 7px;
+}
+
+/* ----------------------------------------------------------------
+	11. right_portfolio
+----------------------------------------------------------------- */
+div#str-sub-common div.right_portfolio {
+  font-size: 82%;
+  line-height: 1.2;
+  color: #444444;
+  margin-bottom: 5px;
+  padding: 3px 0 0;
+  border-bottom: 1px solid #bbbbbb;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: 0 -1690px;
+}
+
+/* head */
+div#str-sub-common div.right_portfolio #head {
+  padding: 5px 10px 0;
+}
+
+div#str-sub-common div.right_portfolio #head p {
+  color: #bf0000;
+  font-weight: bold;
+  text-align: left;
+}
+
+div#str-sub-common div.right_portfolio div.inner_portfolio {
+  font-size: 90%;
+  border: 1px solid #e0e0e0;
+  margin: 5px;
+  padding: 5px;
+  background: white;
+}
+
+
+/* ----------------------------------------------------------------
+	12. right_sub_account
+----------------------------------------------------------------- */
+div#str-sub-common div.right_sub_account {
+  font-size: 82%;
+  line-height: 1.2;
+  color: #444444;
+  margin-bottom: 5px;
+  padding: 3px 5px 5px;
+  border-bottom: 1px solid #bbbbbb;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: 0 -1690px;
+}
+
+div#str-sub-common div.right_sub_account .head {
+  padding: 5px;
+}
+
+div#str-sub-common div.right_sub_account .head p {
+  color: #bf0000;
+  font-weight: bold;
+  text-align: left;
+}
+
+div#str-sub-common div.right_sub_account .text {
+  font-size: 90%;
+  padding: 0 5px 5px;
+}
+
+div#str-sub-common div.right_sub_account table {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+}
+
+div#str-sub-common div.right_sub_account table tr {
+  background: #fff;
+}
+
+div#str-sub-common div.right_sub_account table tr.even {
+  background: #E9EAED;
+}
+
+div#str-sub-common div.right_sub_account table th {
+  padding: 4px 6px;
+  text-align: left;
+  font-size: 90%;
+  font-weight: normal;
+}
+
+div#str-sub-common div.right_sub_account table td {
+  padding: 4px 6px;
+  text-align: center;
+}
+
+div#str-sub-common div.right_sub_account ul.list-link-01 {
+  margin-bottom: 0;
+  padding: 0 0 5px 5px;
+  border-bottom: none;
+  font-size: 90%;
+}
+
+div#str-sub-common div.right_sub_account ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 5px;
+}
+
+div#str-sub-common div.right_sub_account ul.list-link-01 li a {
+  min-height: 10px;
+}
+
+/* ----------------------------------------------------------------
+	13. etcetera
+----------------------------------------------------------------- */
+div#str-sub-common div.etcetera {
+  background: url("/web/shared/images/str-sub-common/etcetera-bg-01.gif") no-repeat scroll 0 0 white;
+  border-bottom: 1px solid #BBBBBB;
+  color: #444444;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+div#str-sub-common div.etcetera h2 {
+  padding-bottom: 9px;
+}
+
+div#str-sub-common div.etcetera ul {
+  margin: 0 auto 10px;
+  width: 164px;
+}
+
+div#str-sub-common div.etcetera ul.list-link-01 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  border-bottom: none;
+}
+
+div#str-sub-common div.etcetera ul.list-link-01 li {
+  padding-left: 10px;
+  min-height: 15px;
+  background: url("/web/shared/images/str-sub-common/arrow-01.gif") no-repeat 1px 7px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.etcetera ul.list-link-01 li a {
+  min-height: 10px;
+}
+
+/* ----------------------------------------------------------------
+	14. right_fund
+----------------------------------------------------------------- */
+div#str-sub-common div.right_fund {
+  border-bottom: 1px solid #BBBBBB;
+  color: #444444;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  padding: 3px 0 0;
+  background: url(/web/shared/images/str-sub-common/sprite_str-sub-common.png) no-repeat top left;
+  background-position: 0 -940px;
+}
+
+div#str-sub-common div.right_fund h2 {
+  padding: 5px 6px;
+  font-size: 81.25%;
+}
+
+div#str-sub-common div.right_fund div.inner_fund {
+  font-size: 81.25%;
+  border: 1px solid #e0e0e0;
+  margin: 0 5px 5px 5px;
+  padding: 5px;
+  background: #fffee9;
+}
+
+div#str-sub-common div.right_fund div.inner_fund dl dt {
+  margin-top: 7px;
+}
+
+div#str-sub-common div.right_fund div.inner_fund dl dd {
+  min-height: 34px;
+  _height: 34px;
+  margin-top: -34px;
+  padding-left: 30px;
+}
+
+div#str-sub-common div.right_fund div.inner_fund dl dt.first-child {
+  margin-top: 0;
+}
+
+div#str-sub-common div.right_fund div.inner_fund dl dt img {
+  border: solid 1px #CCCCCE;
+}
+
+/* ----------------------------------------------------------------
+	15. headline
+----------------------------------------------------------------- */
+div#str-sub-common div.right_fund h2#latest_check_fund,
+div#str-sub-common div.pay h2#about_money_received,
+div#str-sub-common div.attention h2#attention_visitor,
+div#str-sub-common div.inquiry h2#inquiry_help,
+div#str-sub-common div.inquiry h2#inquiry_mobile_trading,
+div#str-sub-common div.info-system h2#about_system_information {
+  background: url(/web/shared/images/str-sub-common/sprite_right-col_head.png) no-repeat top left;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div#str-sub-common div.right_fund h2#latest_check_fund {
+  background-position: 0 0;
+  margin: 5px 6px;
+  padding: 0;
+  width: 164px;
+  height: 15px;
+}
+
+div#str-sub-common div.pay h2#about_money_received,
+div#str-sub-common div.attention h2#attention_visitor,
+div#str-sub-common div.inquiry h2#inquiry_help,
+div#str-sub-common div.info-system h2#about_system_information {
+  width: 180px;
+  height: 23px;
+}
+
+div#str-sub-common div.pay h2#about_money_received {
+  background-position: 0 -35px;
+}
+
+div#str-sub-common div.attention h2#attention_visitor {
+  background-position: 0 -78px;
+}
+
+div#str-sub-common div.inquiry h2#inquiry_help {
+  background-position: 0 -121px;
+}
+
+div#str-sub-common div.info-system h2#about_system_information {
+  background-position: 0 -164px;
+}
+
+div#str-sub-common div.inquiry h2#inquiry_mobile_trading {
+  background-position: 0 -207px;
+  width: 180px;
+  height: 27px;
+}
