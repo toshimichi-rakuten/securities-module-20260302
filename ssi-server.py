@@ -28,6 +28,12 @@ class SSIHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         # ファイルパスを取得
         file_path = self.translate_path(self.path)
 
+        # ディレクトリの場合、index.htmlを探す
+        if os.path.isdir(file_path):
+            index_path = os.path.join(file_path, 'index.html')
+            if os.path.exists(index_path):
+                file_path = index_path
+
         # HTMLファイルの場合、SSI処理を行う
         if file_path.endswith('.html'):
             try:
@@ -77,17 +83,25 @@ class SSIHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 
             # インクルードファイルを読み込む
             try:
-                with open(include_path, 'r', encoding='utf-8') as f:
-                    included_content = f.read()
+                # エンコーディングを複数試す
+                for encoding in ['utf-8', 'shift-jis', 'cp932', 'euc-jp']:
+                    try:
+                        with open(include_path, 'r', encoding=encoding) as f:
+                            included_content = f.read()
+                        print(f'✅ SSI読み込み成功 [{encoding}]: {virtual_path}')
+                        # インクルードファイル内のSSIも再帰的に処理
+                        return self.process_ssi(included_content, str(include_path))
+                    except (UnicodeDecodeError, LookupError):
+                        continue
 
-                # インクルードファイル内のSSIも再帰的に処理
-                return self.process_ssi(included_content, str(include_path))
+                # すべてのエンコーディングで失敗
+                raise UnicodeDecodeError('multi', b'', 0, 1, 'All encodings failed')
 
             except FileNotFoundError:
-                print(f'⚠️  インクルードファイルが見つかりません: {include_path}')
+                print(f'⚠️  インクルードファイルが見つかりません: {virtual_path} → {include_path}')
                 return f'<!-- SSI ERROR: File not found: {virtual_path} -->'
             except Exception as e:
-                print(f'⚠️  インクルードエラー: {e}')
+                print(f'⚠️  インクルードエラー ({virtual_path}): {e}')
                 return f'<!-- SSI ERROR: {str(e)} -->'
 
         # すべてのSSIディレクティブを置換
@@ -108,7 +122,8 @@ def main():
     print('スタイルガイド: http://localhost:8888/20260224_モジュール/style-guide/module/button.html\n')
     print('⏹️  停止するには Ctrl+C を押してください\n')
 
-    # サーバーを起動
+    # サーバーを起動（ポート再利用を許可）
+    socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(('', PORT), SSIHTTPRequestHandler) as httpd:
         try:
             httpd.serve_forever()
