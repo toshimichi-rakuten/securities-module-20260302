@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>ボックス</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+<div class="s1-content-area">
+  <div class="s1-content-area__container">
+
+
+
+    <div class="s1-content-area__main">
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">ボックス</h1>
+</div>
+
+<ul class="s1-list-anchor s1-list-anchor--wrap">
+  <li class="s1-list-anchor__item"><a href="#mod-pickup" class="s1-list-anchor__element">お知らせ、ピックアップ、ラベル</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-spotlight" class="s1-list-anchor__element">スポットライトモジュール</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-attention" class="s1-list-anchor__element">注釈モジュール</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-simple" class="s1-list-anchor__element">基本的なボックス</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-hdg" class="s1-list-anchor__element">見出しボックス</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-linkpanel" class="s1-list-anchor__element">リンクパネル</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-abstract" class="s1-list-anchor__element">要約ボックス</a></li>
+</ul>
+
+<section>
+      <div class="hdg">
+        <div class="hdg__bottom">
+          <p>お知らせ・ピックアップボックス</p>
+        </div>
+        <div class="hdg__desc">
+          <p>/module/_list.scss, /module/_content.scss</p>
+        </div>
+      </div>
+
+      <div class="hdg">
+        <div class="hdg__desc">
+          <p>お知らせ・ピックアップ以外での使用は禁止します。</p>
+        </div>
+      </div>
+
+<div class="module-sample">
+<div class="s1-box-list-info">
+  <h2 class="s1-box-list-info__hdg">お知らせ</h2>
+  <ul class="s1-list-info">
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--time">2016/08/04</div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--time">2016/08/04</div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+  </ul>
+</div>
+</div>
+
+      <div class="hdg" id="mod-pickup">
+        <div class="hdg__bottom">
+          <p>ピックアップ</p>
+        </div>
+      </div>
+
+      <div class="hdg">
+        <div class="hdg__desc">
+          <p>ピックアップ以外での使用は禁止します。</p>
+        </div>
+      </div>
+
+<div class="module-sample">
+<div class="s1-box-list-info">
+  <h2 class="s1-box-list-info__hdg">ピックアップ</h2>
+  <ul class="s1-list-info">
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--info">お知らせ</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--special">特集</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--campaign">キャンペーン</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+  </ul>
+</div>
+</div>
+
+      <div class="hdg">
+        <div class="hdg__bottom">
+          <p>ラベル</p>
+        </div>
+      </div>
+
+      <div class="hdg">
+        <div class="hdg__desc">
+          <p>s1-label--xxxxxには背景色しか指定していないので様々な要素に利用出来ます。</p>
+        </div>
+      </div>
+
+<div class="s1-box-list-info">
+  <ul class="s1-list-info">
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--info">お知らせ</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--special">特集</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--campaign">キャンペーン</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--service">サービス</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--report">レポート</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--seminar">セミナー</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--trade">取引</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--movie">動画</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--important">重要</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+    <li class="s1-list-info__item">
+      <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--closing">決算</span></div>
+      <div class="s1-list-info__content"><a href="#">テキストテキストテキストテキスト</a></div>
+    </li>
+  </ul>
+</div>
+
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--info&quot;&gt;お知らせ&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--special&quot;&gt;特集&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--campaign&quot;&gt;キャンペーン&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--service&quot;&gt;サービス&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--report&quot;&gt;レポート&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--seminar&quot;&gt;セミナー&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--trade&quot;&gt;取引&lt;/span&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-list-info__content s1-list-info__content--label&quot;&gt;&lt;span class=&quot;s1-label--movie&quot;&gt;動画&lt;/span&gt;&lt;/div&gt;
+</pre>
+
+      <div class="hdg">
+        <div class="hdg__desc">
+          <p>単独で利用できるようにしたものを下記に記述。背景色と組み合わせても使えるよ。</p>
+        </div>
+      </div>
+
+<div class="module-sample">
+<div class="s1-box-section">
+  <p><span class="s1-label s1-label--info">ラベル</span></p>
+  <p><span class="s1-label s1-label--special">ラベルラベル</span></p>
+  <p><span class="s1-label bg-account-open">ラベルラベルラベル</span></p>
+</div>
+</div>
+</section>
+
+<section id="mod-spotlight">
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>スポットライトモジュール</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>.s1-box-spotlightに$base-unit-doubleのベースマージンが付きます。子要素への影響はありません。</p>
+    <p>Modifier：s1-box-spotlight--ptn01, s1-box-spotlight--ptn02<br>
+      Element：&amp;__hdg…見出し</p>
+    <p>疎結合なので、他の要素をそのまま入れ込めます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-spotlight">
+  <p class="s1-box-spotlight__hdg">Spotlight Module</p>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-spotlight s1-box-spotlight--ptn01">
+  <p class="s1-box-spotlight__hdg">Spotlight Module</p>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-spotlight s1-box-spotlight--ptn02">
+  <p class="s1-box-spotlight__hdg">Spotlight Module</p>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+</section>
+
+<section id="mod-attention">
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>注釈ボックス</p>
+  </div>
+</div>
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>注釈モジュール。見出しをセンタリングしたい場合はs1-box-attention__hdg--centerで。他のボックス系モジュール同様、祖結合なので他のモジュールを入れることが出来ます。</p>
+    <p>※注釈以外での利用はしないでください。似たようなボックスはs1-box-spotlightにあります。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+  <div class="s1-box-attention">
+    <p class="s1-box-attention__hdg"><i class="s-glyph s1-box-attention__icon">&#xf119;</i>&nbsp;ご注意</p>
+    <ul class="s1-list-bubble">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ul>
+  </div>
+
+  <div class="s1-box-attention">
+    <p class="s1-box-attention__hdg s1-box-attention__hdg--center"><i class="s-glyph s1-box-attention__icon">&#xf119;</i>&nbsp;ご注意</p>
+    <ul class="s1-list-bubble">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="mod-simple">
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>基本的なボックス</p>
+  </div>
+</div>
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>シンプルなボックス。.bg-g-01-lightなどのカラーモジュールと組み合わせてカラフルなボックスを作ることができる。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+
+<div class="s1-box s1-box--r-01">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+
+<div class="s1-box s1-box--r-01 bg-r-01-light">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+  
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>ナビゲーションリストの背景と同じ仕様のボックス。リンク集などで使ってください。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-list-wrap pd-20 mb-triple">
+<p class="fw-b fs20">国内株式取引手数料</p>
+<hr class="s1-delimiter-line s1-delimiter-line--dotted s1-delimiter-line--gray s1-delimiter-line--half">
+<p class="fw-b">現物取引手数料</p>
+<ul class="s1-list-link s1-list-link--inline">
+<li class="s1-list-link__item"><a href="/web/domestic/stock/commission.html#chouwari">超割コース</a></li>
+<li class="s1-list-link__item"><a href="/web/domestic/stock/commission.html#oneday">いちにち定額コース</a></li>
+<li class="s1-list-link__item"><a href="/web/domestic/stock/commission.html#oneshot">ワンショットコース</a></li>
+</ul>
+</div>
+</div>
+
+</section>
+<section id="mod-hdg">
+      <div class="hdg">
+        <div class="hdg__bottom">
+          <p>見出しボックス</p>
+        </div>
+        <div class="hdg__desc">
+          <p>/module/_heading.scss</p>
+        </div>
+      </div>
+      
+<div class="module-sample">
+<div class="s1-box">
+  <div class="s1-box__hdg s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element">見出し2ボックス</h2>
+  </div>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box">
+  <div class="s1-box__hdg s1-hdg-lv3">
+    <h3 class="s1-hdg-lv3__element">見出し3ボックス</h3>
+  </div>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box">
+  <div class="s1-box__hdg s1-hdg-lv3">
+    <h3 class="s1-hdg-lv3__element">見出し3ボックス</h3>
+    <span class="s1-hdg-lv3__link"><a href="#">リンクリンク</a></span>
+  </div>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box">
+  <div class="s1-box__hdg s1-hdg-lv4">
+    <h4 class="s1-hdg-lv4__element">見出し4ボックス</h4>
+  </div>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box">
+  <div class="s1-box__hdg s1-hdg-lv4">
+    <h4 class="s1-hdg-lv4__element">見出し4ボックス</h4>
+    <span class="s1-hdg-lv4__link"><a href="#">リンクリンク</a></span>
+  </div>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+</section>
+
+<section id="mod-linkpanel">
+<div class="hdg" id="mod-linkpanel">
+  <div class="hdg__bottom">
+    <p>リンクパネル</p>
+  </div>
+  <div class="hdg__desc">
+    <p>/module/_content.scss</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>グリッドと合わせてリンクパネルを作ります。s1-link-panel__bodyは疎結合で様々な要素が入れられます。（フォント色は基本の#333があたります。）</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>ベース</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-3">
+    <a href="" class="s1-link-panel">
+      <p class="s1-link-panel__hdg">XXXXX</p>
+      <div class="s1-link-panel__body">
+        <p>XXXXX</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <a href="" class="s1-link-panel">
+      <p class="s1-link-panel__hdg">XXXXX</p>
+      <div class="s1-link-panel__body">
+        <p>XXXXX</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <a href="" class="s1-link-panel">
+      <p class="s1-link-panel__hdg">XXXXX</p>
+      <div class="s1-link-panel__body">
+        <p>XXXXX</p>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>いくつかのユーティリティクラスを利用した例（商品先物にて利用）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-3">
+    <a href="#uniformity" class="s1-link-panel">
+      <p class="s1-link-panel__hdg">一律コース</p>
+      <div class="s1-link-panel__body">
+        <p class="fw-b fc-r fs-16 ta-c"><span class="fs40">320</span>円（税込）</p>
+        <p class="fs-xs ta-c">※片道1枚あたり</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <a href="#saya" class="s1-link-panel">
+      <p class="s1-link-panel__hdg">サヤトレーダーコース</p>
+      <div class="s1-link-panel__body">
+        <p class="fw-b fc-r fs-16 ta-c"><span class="fs40">255</span>円（税込）</p>
+        <p class="fs-xs ta-c">※片道1枚あたり</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <a href="http://www.commodity.co.jp/service/tel_order.html" class="s1-link-panel">
+      <p class="s1-link-panel__hdg">電話による代行発注コース</p>
+      <div class="s1-link-panel__body">
+        <p class="fw-b fc-r fs-16 ta-c"><span class="fs40">320</span>円（税込）</p>
+        <p class="fs-xs ta-c">※片道1枚あたり</p>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>全体をクリックできるリンクボックス</p>
+  </div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+<div class="s1-grid">
+<div class="s1-grid__col-1-4">
+<div class="s1-link-box">
+<a href="#" class="s1-link-box__link">
+<p class="s1-link-box__hdg">リンクボックス1<span class="s1-link-arrow">&nbsp;&gt;</span></p>
+<p class="s1-link-box__txt">全体をクリックできるボックス</p>
+</a>
+</div>
+</div>
+<div class="s1-grid__col-1-4">
+<div class="s1-link-box">
+<a href="#" class="s1-link-box__link">
+<p class="s1-link-box__hdg">リンクボックス1<span class="s1-link-arrow">&nbsp;&gt;</span></p>
+<p class="s1-link-box__txt">グリットと組み合わせるとこうなるよ。</p>
+</a>
+</div>
+</div>
+<div class="s1-grid__col-1-4">
+<div class="s1-link-box">
+<a href="#" class="s1-link-box__link">
+<p class="s1-link-box__hdg">リンクボックス1<span class="s1-link-arrow">&nbsp;&gt;</span></p>
+<p class="s1-link-box__txt">単体で使うときは.s1-link-boxの中をつかってね。</p>
+</a>
+</div>
+</div>
+<div class="s1-grid__col-1-4">
+<div class="s1-link-box">
+<a href="#" class="s1-link-box__link">
+<p class="s1-link-box__hdg">リンクボックス1<span class="s1-link-arrow">&nbsp;&gt;</span></p>
+<p class="s1-link-box__txt">グリットと組み合わせるとこうなるよ。</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>全体をクリックできるリンクボックスその2。widthは外のdivのサイズに合わせます。グリットと組み合わせたりお好みで。</p>
+  </div>
+</div>
+
+<div class="box-section" style="width:180px;">
+<div class="module-sample">
+<div class="s1-link-box-02">
+<a href="#" class="s1-link-box-02__link">
+<img src="/web/domestic/images/index-bnr-active-178x60.png" alt="" class="s1-link-box-02__img">
+<p class="s1-link-box-02__txt fs12">ほげほげほげ</p>
+</a>
+</div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>アンカーリンクボックス</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-3">
+    <a href="#" class="s1-link-anchor-panel">
+      <div class="s1-link-anchor-panel__body">
+        <p class="ta-c"><span class="fc-b-01 fw-b">A</span> XXXXX</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <a href="#" class="s1-link-anchor-panel">
+      <div class="s1-link-anchor-panel__body">
+        <p class="ta-c"><span class="fc-b-01 fw-b">B</span> XXXXX</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <a href="#" class="s1-link-anchor-panel">
+      <div class="s1-link-anchor-panel__body">
+        <p class="ta-c"><span class="fc-b-01 fw-b">C</span> XXXXX</p>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>リンクボックス3</p>
+    <p>ボックス全体にリンクをつける奴。ホバーつけたり、シンプルな仕様にしました。モジュール追加予定。s1-link-box-03--hoveroffのクラスを追記すると、ホバーしなくなります。</p>
+  </div>
+</div>
+
+
+<div class="module-sample">
+<div class="s1-box s1-link-box-03 mb-normal">
+  <a href="/web/learn/seminar/cpa_seminar_03.html"></a>
+  <div class="clearfix">
+    <div class="s1-box-media s1-box-media--left">
+      <p><img src="https://www.rakuten-sec.co.jp/web/images/banners/seminar_cpa_03/160x120.png" alt="" class="s1-box-media__img" /></p>
+      <div class="s1-box s1-box--y-01 mb-0 mt-half ta-c fc-y-01 fw-b pd-5">申込受付中</div>
+    </div>
+    <div class="s1-box-section">
+    <p class="fc-b-01 fw-b fs-xl">公認会計士に学ぶ！銘柄選択に役立つ！主要6業界を徹底解説！（ネット全6回）</p>
+    <p class="mb-normal"><span class="s1-label bg-g-01 pd-5">このような方におすすめです！</span></p>
+    <ul class="s1-list-standard mb-normal">
+      <li>株式取引を始めたばかりで、銘柄選びの基礎から学びたい！</li>
+      <li>どの業界、どの銘柄がいいのかわからない</li>
+      <li>「業界研究」という言葉を聞いたことがあるけど、どうすればいいのかわからない</li>
+    </ul>
+    <p class="mb-half"><span class="s1-label bg-account-open">講師</span>　<span class="fw-b">日根野　健 氏</span></p>
+    <p class="mb-half"><span class="s1-label bg-account-open">開催日</span>　<span class="fw-b">2017年4月26日～2017年7月5日</span></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>s1-link-box-03--paddingのクラスを追加することによって、14pxのパディングを追加できます。これをいれておくとホバーがスムーズに見えます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-link-box-03 s1-link-box-03--padding">
+  <a href="#"></a>
+  <div class="clearfix">
+    <div class="s1-box-media s1-box-media--left mr-20">
+      <p><img src="/web/shared/images/dummy-image-01.gif" alt="" class="s1-box-media__img" width="160" height="120"></p>
+    </div>
+    <div class="s1-box-section">
+    <p class="fc-b-01 fw-b fs-xl">取引に役立つ数字＆情報</p>
+    <p>国内株式を取引する上で、重要な指標や情報があり、株価の将来的な値動きを予想する際などに役立ちます。ここでは主なものを取り上げ、その効果的な使い方についてご説明いたします。</p>
+    </div>
+  </div>
+</div>
+<div class="s1-link-box-03 s1-link-box-03--padding">
+  <a href="#"></a>
+  <div class="clearfix">
+    <div class="s1-box-media s1-box-media--left mr-20">
+      <p><img src="/web/shared/images/dummy-image-01.gif" alt="" class="s1-box-media__img" width="160" height="120"></p>
+    </div>
+    <div class="s1-box-section">
+    <p class="fc-b-01 fw-b fs-xl">あなたはどのタイプの投資家？！</p>
+    <p>5つの投資家タイプをもとに、株式投資に役立つサービスや情報をチェックしましょう！<br>
+      診断すると新しい発見があるかも。</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</section>
+
+
+
+<!--要約ボックス-->
+<section id="mod-abstract">
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>要約ボックス</p>
+  </div>
+  <div class="hdg__desc">
+  <p>/module/_content.scss</p>
+  </div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+
+<div class="s1-box-abstract">
+<div class="s1-box-abstract__hdg">要約すると</div>
+<ul class="s1-box-abstract__list">
+<li class="s1-box-abstract__item">楽天証券からのメールをログイン後のお客様専用画面で確認していただけます。（直近2週間）</li>
+<li class="s1-box-abstract__item">メールをあらかじめ種別ごとに分類しているので、大事なメールを見逃しません。</li>
+<li class="s1-box-abstract__item">受信期間や件名で対象となるメールを絞り込むこともできます。</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+
+<div class="s1-box-abstract-02">
+<div class="s1-box-abstract-02__hdg">ポイント</div>
+<ul class="s1-box-abstract-02__list">
+<li class="s1-box-abstract-02__item">926円で現物も信用も取引金額100万円まで1日に何回取引してもOK!</li>
+<li class="s1-box-abstract-02__item">プラス1,080円でさらに取引金額100万円アップ！</li>
+<li class="s1-box-abstract-02__item">日計り取引（デイトレード）ならさらに手数料が安く！</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</section>
+<!--/要約ボックス-->
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+    <ul class="s1-breadcrumbs">
+      <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+      <li>モジュール</li>
+    </ul>
+
+
+
+    <!-- スタイルガイド開始 -->
+
+    <div class="s1-content-area">
+      <div class="s1-content-area__container">
+
+        <div class="s1-content-area__main">
+    <div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">モジュールガイド</h1>
+</div>
+
+          <ul class="s1-list-anchor s1-list-anchor--wrap">
+            <li class="s1-list-anchor__item"><a href="#m-utility" class="s1-list-anchor__element">ユーティリティクラス一覧</a></li>
+          </ul>
+
+<div class="s1-hdg-lv2">
+  <h2 class="s1-hdg-lv2__element">本モジュールについて</h2>
+</div>
+
+          <div class="s1-box-section mb-double">
+            <p>本モジュールはBEMベースで作成されています。汎用的なブロックをメインに作られていますが、使い方をある程度限定しているモジュールもあります。</p>
+            <p>また、各ブロックを組み合わせやすいように、あえてマージン等を取っていない場合が多いので、ユーティリティークラスを利用して間隔調整を行ってください。</p>
+            <ul class="s1-list-notice">
+              <li><div>※</div><div>見出しで区切られるセクショニングに関してはhX要素で28pxのマージンが付きます。セクション間は基本.mb-double（28px）と考えてください。</div></li>
+              <li><div>※</div><div>コンバージョンモジュールの.s1-box-conversionにも上下28pxのマージンが付きます。隣接する要素にマージンの指定は不要です。</div></li>
+            </ul>
+          </div>
+
+          <p class="s1-entitle">モジュールを追加する場合</p>
+          <div class="s1-box-section mb-double">
+            <p>本モジュールはGitにて管理されています。モジュールを追加した場合は、developブランチにプッシュしてmasterブランチへのマージ権限のある人にプルリクエストを送ってください。</p>
+            <p>また、命名ルールに関してはガイドラインの命名ルールをしっかりと読んでください。</p>
+            <ul class="s1-list-link">
+              <li class="s1-list-link__item"><a href="/style-guide/guide/class.html#g-rule">ガイドライン - 命名ルール</a></li>
+            </ul>
+          </div>
+
+
+          <div class="s1-hdg-lv2">
+  <h2 class="s1-hdg-lv2__element">ユーティリティクラス一覧</h2>
+</div>
+
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">間隔調整クラス</h3>
+          </div>
+
+          <div class="s1-grid mb-double">
+            <div class="s1-grid__cell--thin-1-2">
+              <p class="s1-entitle">下マージン</p>
+              <p>下マージンに関してはキーワード指定を推奨します。</p>
+              <table class="s1-tbl-data01">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>.mb-0</th>
+                    <td>下マージンの打ち消し</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-normal</th>
+                    <td>14pxの下マージン(ベースユニット)</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-one-third</th>
+                    <td>4.2pxの下マージン(ベースユニットの1/3)</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-half</th>
+                    <td>7pxの下マージン(ベースユニットの1/2)</td>
+                  </tr>
+                  <tr>
+                    <th class="nowrap">.mb-point-five</th>
+                    <td>21pxの下マージン(ベースユニットの1.5倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-double</th>
+                    <td>28pxの下マージン(ベースユニットの2倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-triple</th>
+                    <td>42pxの下マージン(ベースユニットの3倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-10</th>
+                    <td>10pxの下マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-15</th>
+                    <td>15pxの下マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-20</th>
+                    <td>20pxの下マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-30</th>
+                    <td>30pxの下マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mb-40</th>
+                    <td>40pxの下マージン</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="s1-grid__cell--thin-1-2">
+              <p class="s1-entitle">上マージン</p>
+              <p>px指定のみ</p>
+              <table class="s1-tbl-data01 s1-tbl--width-full">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>.mt-0</th>
+                    <td>上マージンの打ち消し</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-normal</th>
+                    <td>14pxの上マージン(ベースユニット)</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-one-third</th>
+                    <td>4.2pxの上マージン(ベースユニットの1/3)</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-half</th>
+                    <td>7pxの上マージン(ベースユニットの1/2)</td>
+                  </tr>
+                  <tr>
+                    <th class="nowrap">.mt-point-five</th>
+                    <td>21pxの上マージン(ベースユニットの1.5倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-double</th>
+                    <td>28pxの上マージン(ベースユニットの2倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-triple</th>
+                    <td>42pxの上マージン(ベースユニットの3倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-3</th>
+                    <td>3pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-5</th>
+                    <td>5pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-8</th>
+                    <td>8pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-10</th>
+                    <td>10pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-15</th>
+                    <td>15pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-20</th>
+                    <td>20pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-30</th>
+                    <td>30pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-40</th>
+                    <td>40pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-50</th>
+                    <td>50pxの上マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mt-60</th>
+                    <td>60pxの上マージン</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="s1-grid">
+            <div class="s1-grid__cell--thin-1-2">
+              <p class="s1-entitle">右マージン</p>
+              <p>px指定のみ</p>
+              <table class="s1-tbl-data01 s1-tbl--width-full">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>.mr-5</th>
+                    <td>5pxの右マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mr-10</th>
+                    <td>10pxの右マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mr-15</th>
+                    <td>15pxの右マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.mr-20</th>
+                    <td>20pxの右マージン</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="s1-grid__cell--thin-1-2">
+              <p class="s1-entitle">左マージン</p>
+              <p>px指定のみ</p>
+              <table class="s1-tbl-data01 s1-tbl--width-full">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>.ml-5</th>
+                    <td>5pxの左マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.ml-10</th>
+                    <td>10pxの左マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.ml-15</th>
+                    <td>15pxの左マージン</td>
+                  </tr>
+                  <tr>
+                    <th>.ml-20</th>
+                    <td>20pxの左マージン</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="s1-grid">
+            <div class="s1-grid__cell--thin-1-2">
+              <p class="s1-entitle">全パディング</p>
+              <p>全方向px指定</p>
+              <table class="s1-tbl-data01 s1-tbl--width-full">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>.pd-5</th>
+                    <td>5pxのパディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pd-10</th>
+                    <td>10pxのパディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pd-15</th>
+                    <td>15pxのパディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pd-20</th>
+                    <td>20pxのパディング</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="s1-grid__cell--thin-1-2">
+              <p class="s1-entitle">下パディング</p>
+              <p>全方向px指定</p>
+              <table class="s1-tbl-data01 s1-tbl--width-full">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>効果</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>.pb-0</th>
+                    <td>下パディングの打ち消し</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-normal</th>
+                    <td>14pxの下パディング(ベースユニット)</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-one-third</th>
+                    <td>4.2pxの下パディング(ベースユニットの1/3)</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-half</th>
+                    <td>7pxの下パディング(ベースユニットの1/2)</td>
+                  </tr>
+                  <tr>
+                    <th class="nowrap">.pb-point-five</th>
+                    <td>21pxの下パディング(ベースユニットの1.5倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-double</th>
+                    <td>28pxの下パディング(ベースユニットの2倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-triple</th>
+                    <td>42pxの下パディング(ベースユニットの3倍)</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-10</th>
+                    <td>10pxの下パディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-15</th>
+                    <td>15pxの下パディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-20</th>
+                    <td>20pxの下パディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-30</th>
+                    <td>30pxの下パディング</td>
+                  </tr>
+                  <tr>
+                    <th>.pb-40</th>
+                    <td>40pxの下パディング</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+
+
+          <div class="s1-grid">
+            <div class="s1-grid__cell--thin-1-3">
+              <div class="s1-box-section">
+                <p class="s1-entitle">位置（横）</p>
+
+                <table class="s1-tbl-data01">
+                  <thead>
+                    <tr>
+                      <th>クラス名</th>
+                      <th>効果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.ta-r</th>
+                      <td>text-align: right</td>
+                    </tr>
+                    <tr>
+                      <th>.ta-c</th>
+                      <td>text-align: center</td>
+                    </tr>
+                    <tr>
+                      <th>.ta-l</th>
+                      <td>text-align: left</td>
+                    </tr>
+                    <tr>
+                      <th>.s-ind</th>
+                      <td>左右に10pxのマージン</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="s1-grid__cell--thin-1-3">
+              <div class="s1-box-section">
+                <p class="s1-entitle">位置（縦）</p>
+
+                <table class="s1-tbl-data01">
+                  <thead>
+                    <tr>
+                      <th>クラス名</th>
+                      <th>効果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.va-t</th>
+                      <td>vertical-align: top</td>
+                    </tr>
+                    <tr>
+                      <th>.va-m</th>
+                      <td>vertical-align: middle</td>
+                    </tr>
+                    <tr>
+                      <th>.va-b</th>
+                      <td>vertical-align: bottom</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="s1-grid__cell--thin-1-3">
+              <div class="s1-box-section">
+                <p class="s1-entitle">フロート</p>
+
+                <table class="s1-tbl-data01 s1-tbl--width-full">
+                  <thead>
+                    <tr>
+                      <th>クラス名</th>
+                      <th>効果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.fl-r</th>
+                      <td>float: right</td>
+                    </tr>
+                    <tr>
+                      <th>.fl-l</th>
+                      <td>float: left</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="s1-grid">
+            <div class="s1-grid__cell--thin-1-3">
+              <div class="s1-box-section">
+                <p class="s1-entitle">表示</p>
+
+                <table class="s1-tbl-data01 s1-tbl--width-full">
+                  <thead>
+                    <tr>
+                      <th>クラス名</th>
+                      <th>効果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.dp-b</th>
+                      <td>display:block</td>
+                    </tr>
+                    <tr>
+                      <th>.dp-ib</th>
+                      <td>display:inline-block</td>
+                    </tr>
+                    <tr>
+                      <th>.dp-n</th>
+                      <td>display:none</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="s1-grid__cell--thin-1-3">
+            </div>
+            <div class="s1-grid__cell--thin-1-3">
+            </div>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p class="s1-entitle">文字サイズ</p>
+
+            <div class="s1-box-section">
+              <p>フォントは出来る限り相対を利用するようにしてください。どうしても固定したい場合にpx指定をしてください。</p>
+            </div>
+
+            <div class="s1-grid">
+              <div class="s1-grid__cell--thin-1-2">
+                <table class="s1-tbl-data01 s1-tbl--width-full">
+                  <thead>
+                    <tr>
+                      <th>クラス名</th>
+                      <th>効果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.fs11</th>
+                      <td>font-size: 11px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs12</th>
+                      <td>font-size: 12px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs13</th>
+                      <td>font-size: 13px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs14</th>
+                      <td>font-size: 14px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs16</th>
+                      <td>font-size: 16px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs18</th>
+                      <td>font-size: 18px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs20</th>
+                      <td>font-size: 20px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs22</th>
+                      <td>font-size: 22px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs24</th>
+                      <td>font-size: 24px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs30</th>
+                      <td>font-size: 30px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs36</th>
+                      <td>font-size: 36px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs40</th>
+                      <td>font-size: 40px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs44</th>
+                      <td>font-size: 44px</td>
+                    </tr>
+                    <tr>
+                      <th>.fs48</th>
+                      <td>font-size: 48px</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="s1-grid__cell--thin-1-2">
+                <table class="s1-tbl-data01 s1-tbl--width-full">
+                  <thead>
+                    <tr>
+                      <th>クラス名</th>
+                      <th>効果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.fs-xs</th>
+                      <td>font-size: 75%</td>
+                    </tr>
+                    <tr>
+                      <th>.fs-s</th>
+                      <td>font-size: 86%</td>
+                    </tr>
+                    <tr>
+                      <th>.fs-l</th>
+                      <td>font-size: 110%</td>
+                    </tr>
+                    <tr>
+                      <th>.fs-xl</th>
+                      <td>font-size: 133%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+<div class="s1-box-section mb-double">
+<p class="s1-entitle">文字関連</p>
+
+<table class="s1-tbl-data01 s1-tbl--width-full">
+<thead>
+<tr>
+<th>クラス名</th>
+<th>効果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>.fw-b</th>
+<td class="fw-b">太字太字太字太字太字太字太字太字太字</td>
+</tr>
+<tr>
+<th>.fc-r</th>
+<td class="fc-r">赤字赤字赤字赤字赤字赤字赤字赤字赤字</td>
+</tr>
+</tbody>
+</table>
+
+<div class="s1-box-section">
+<p></p>
+</div>
+
+
+</div>
+
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">その他調整クラス</h3>
+          </div>
+<div class="s1-box-section mb-double">
+<p class="s1-entitle">clearfix</p>
+</div>
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>clearfixよく使うので作ったよ。サンプルは下。</p>
+  </div>
+</div>
+
+<div class="clearfix mb-normal bg-silver">
+  <div class="s1-box-media s1-box-media--right">
+    <p><img src="https://www.rakuten-sec.co.jp/web/shared/img/top/s1-tool-soft.png" alt="" class="s1-box-media__img" width="315"></p>
+    <p>ほげほげほげほげほげほげほげほ</p>
+  </div>
+  <div class="s1-box-section">
+    <p>ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</p>
+    <ul class="s1-list-anchor">
+      <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲み無しアンカーリンク</a></li>
+      <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲み無しアンカーリンク</a></li>
+      <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲み無しアンカーリンク</a></li>
+    </ul>
+  </div>
+</div>
+
+<pre class="prettyprint mb-double">
+&lt;div class=&quot;clearfix mb-normal bg-silver&quot;&gt;
+  &lt;div class=&quot;s1-box-media s1-box-media--right&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;https://www.rakuten-sec.co.jp/web/shared/img/top/s1-tool-soft.png&quot; alt=&quot;&quot; class=&quot;s1-box-media__img&quot; width=&quot;315&quot;&gt;&lt;/p&gt;
+    &lt;p&gt;ほげほげほげほげほげほげほげほ&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;s1-box-section&quot;&gt;
+    &lt;p&gt;ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ&lt;/p&gt;
+    &lt;ul class=&quot;s1-list-anchor&quot;&gt;
+      &lt;li class=&quot;s1-list-anchor__item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;s1-list-anchor__element&quot;&gt;囲み無しアンカーリンク&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;s1-list-anchor__item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;s1-list-anchor__element&quot;&gt;囲み無しアンカーリンク&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;s1-list-anchor__item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;s1-list-anchor__element&quot;&gt;囲み無しアンカーリンク&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+          </div>
+          
+         
+
+<div class="s1-hdg-lv3">
+<h3 class="s1-hdg-lv3__element">カラー</h3>
+</div>
+
+<table class="s1-tbl-data01 s1-tbl--width-full fs12">
+<thead>
+<tr>
+<th>カラーコード</th>
+<th>背景</th>
+<th>テキスト</th>
+<th>ボックス</th>
+<th>薄色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="bg-r-01">#EC0606</td>
+<td class="bg-r-01">.bg-r-01</td>
+<td class="fc-r-01">.fc-r-01</td>
+<td><div class="s1-box s1-box--r-01 mb-0 ta-c pd-5">.s1-box .s1-box--r-01</div></td>
+<td class="bg-r-01-light">.bg-r-01-light</td>
+</tr>
+<tr>
+<td colspan="5">主要赤字。.fc-rで同じ赤字が出せます。また、bg-r-01-lightとボックスを組み合わせて赤座布団のボックスが作れます。</td>
+</tr>
+<tr>
+<td class="bg-g-01">#009E90</td>
+<td class="bg-g-01">.bg-g-01</td>
+<td class="fc-g-01">.fc-g-01</td>
+<td><div class="s1-box s1-box--g-01 mb-0 ta-c pd-5">.s1-box .s1-box--g-01</div></td>
+<td class="bg-g-01-light">bg-g-01-light</td>
+</tr>
+<tr>
+<td colspan="5">サブ口座の緑。</td>
+</tr>
+<tr>
+<td class="bg-b-01">#006A9E</td>
+<td class="bg-b-01">.bg-b-01</td>
+<td class="fc-b-01">.fc-b-01</td>
+<td><div class="s1-box s1-box--b-01 mb-0 ta-c pd-5">.s1-box .s1-box--b-01</div></td>
+<td class="bg-b-01-light">bg-b-01-light</td>
+</tr>
+<tr>
+<td colspan="5">リンクで使っている青。</td>
+</tr>
+<tr>
+<td class="bg-y-01">#FFB238</td>
+<td class="bg-y-01">.bg-y-01</td>
+<td class="fc-y-01">.fc-y-01</td>
+<td><div class="s1-box s1-box--y-01 mb-0 ta-c pd-5">.s1-box .s1-box--y-01</div></td>
+<td class="bg-y-01-light">bg-y-01-light</td>
+</tr>
+<tr>
+<td colspan="5">汎用的な黄。</td>
+</tr>
+<tr>
+<td class="bg-w">#ffffff</td>
+<td class="bg-w">.bg-w</td>
+<td class="bg-dimgray fc-w">.fc-w</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td colspan="5">白背景、白字。</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="s1-box-section mb-double">
+<p class="s1-entitle">背景色</p>
+<p>よく使う色は下記にまとめることしますわ。テキストカラーはおいおい。</p>
+
+<div class="s1-grid">
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-gainsboro">.bg-gainsboro</p><p>code:#F7F7F7</p></div>
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-silver">.bg-silver</p><p>code:#EBEBEB</p></div>
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-gray">.bg-gray</p><p>code:#D1D1D1</p></div>
+</div>
+
+<div class="s1-grid">
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-dimgray">.bg-dimgray</p><p>code:#686868</p></div>
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-account-sub">.bg-account-sub</p><p>code:#009E90</p></div>
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-account-open">.bg-account-open</p><p>code:#BF0000</p></div>
+</div>
+
+<div class="s1-grid">
+  <div class="s1-grid__cell-1-3"><p class="ta-c pd-20 bg-securities">.bg-securities</p><p>code:#053ACE</p></div>
+  <div class="s1-grid__cell-1-3"></div>
+  <div class="s1-grid__cell-1-3"></div>
+</div>
+
+
+
+</div>
+
+<div class="s1-box-section mb-double">
+<p class="s1-entitle"><a href="/style-guide/module/previous.html">旧式cssについて</a></p>
+<p>旧式なcssのまとめ。生きてるけど、新しく代用cssを作ってあるので、基本使わないものの溜まり場。</p>
+
+</div>
+
+
+
+        </div>
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+  </body>
+  </html>

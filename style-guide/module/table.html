@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>テーブル</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+<div class="s1-content-area">
+  <div class="s1-content-area__container">
+
+    <div class="s1-content-area__main">
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">テーブル</h1>
+</div>
+
+
+
+<!-- ============ テーブル ============ -->
+      <section id="mod-table">
+        <div class="hdg">
+          <p>テーブル</p>
+          <div class="hdg__bottom">
+            <p>テーブルモジュール</p>
+          </div>
+          <div class="hdg__desc">
+            <p>/module/_table.scss</p>
+          </div>
+        </div>
+
+        <div class="hdg">
+          <div class="hdg__desc">
+            <p>talbe幅は成り行きですので、フル幅にするにはモディファイア.s1-tbl--width-fullをつけてください。<br>
+              セル幅用汎用クラスは.s1-tbl--width-10～.s1-tbl--width-60まであります。<br>
+              縦要素の指定方法は、.va-bでvertical-align:bottom、.va-mでvertical-align:middleがかかります。</p>
+          </div>
+        </div>
+
+        <div class="hdg">
+          <div class="hdg__desc">
+            <p>thead有</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full">
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>均等幅のテーブル（.s1-tbl--layout-fixed）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--layout-fixed">
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="ta-c">テキスト</th>
+      <td class="ta-c">テキストテキストテキスト</td>
+      <td class="ta-c">テキストテキストテキスト</td>
+    </tr>
+    <tr>
+      <th class="ta-c">テキスト</th>
+      <td class="ta-c">テキストテキストテキスト</td>
+      <td class="ta-c">テキストテキストテキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>ストライプテーブル（.s1-tbl--row-color）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--row-color">
+  <thead>
+    <tr>
+      <th class="s1-tbl--width-20">テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキステキストト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキステキストト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキステキストト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキストテキストテキスト</td>
+      <td>テキストテキストテキステキストト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>色つきセル</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--layout-fixed">
+  <thead>
+    <tr>
+      <th>赤</th>
+      <th>緑</th>
+      <th>黄</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="ta-c cell-r">.cell-r</td>
+      <td class="ta-c cell-g">.cell-g</td>
+      <td class="ta-c cell-y">.cell-y</td>
+    </tr>
+    <tr>
+      <td class="ta-c cell-r">.cell-r</td>
+      <td class="ta-c cell-g">.cell-g</td>
+      <td class="ta-c cell-y">.cell-y</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>疑似テーブル</p>
+    <p>アイコンとテキストを並べたい！とか、【重要】と説明文を揃えて表示させたい！とか、横並びさせたい場面で使える疑似テーブルつくりました。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-tbl-fake">
+  <div class="s1-tbl-fake__item" style="white-space: nowrap">例1</div>
+  <div class="s1-tbl-fake__item">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  </div>
+</div>
+<div class="s1-tbl-fake">
+  <div class="s1-tbl-fake__item" style="white-space: nowrap">例2</div>
+  <div class="s1-tbl-fake__item">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  </div>
+</div>
+</div>
+
+
+<div class="module-sample">
+<div class="s1-box s1-box--r-01 bg-r-01-light">
+  <div class="s1-tbl-fake">
+    <div class="s1-tbl-fake__item"><i class="s-glyph fc-r-01 fs24">&#xf119;</i></div>
+    <div class="s1-tbl-fake__item">
+      <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+      <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- ============ テーブル ============ -->
+
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

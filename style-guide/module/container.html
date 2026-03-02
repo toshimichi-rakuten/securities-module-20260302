@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+  <html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+    <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+    </head>
+    <body>
+    <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+    <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+      <ul class="s1-breadcrumbs">
+        <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+        <li><a href="/style-guide/module/">モジュール</a> > </li>
+        <li>コンテナ</li>
+      </ul>
+
+
+
+      <!-- スタイルガイド開始 -->
+
+      <div class="s1-content-area">
+        <div class="s1-content-area__container">
+
+  <div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">コンテナ</h1>
+</div>
+
+        <ul class="s1-list-anchor s1-list-anchor--wrap">
+          <li class="s1-list-anchor__item"><a href="#m-grid" class="s1-list-anchor__element">グリッド</a></li>
+          <li class="s1-list-anchor__item"><a href="#m-inq-grid" class="s1-list-anchor__element">不均等グリッド</a></li>
+
+        </ul>
+
+        <div class="hdg">
+          <p>コンテナ</p>
+          <div class="hdg__bottom">
+            <p>汎用的な1カラムおよび2カラムコンテナを生成します。(width: 950px; margin: 0 auto;)</p>
+          </div>
+          <div class="hdg__desc">
+            <p>/layout/_content-area.scss</p>
+          </div>
+        </div>
+
+        <div class="hdg">
+          <div class="hdg__bottom">
+            <p>汎用的な1カラムコンテナを生成します。</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="s1-content-area" style="background-color: #ddd;">
+      <div class="s1-content-area__container">XXXXX</div>
+    </div>
+    <div class="s1-content-area" style="background-color: #eee;">
+      <div class="s1-content-area__container">XXXXX</div>
+    </div>
+    <div class="s1-content-area" style="background-color: #ddd;margin-bottom: 1em">
+      <div class="s1-content-area__container">XXXXX</div>
+    </div>
+
+        <div class="s1-content-area">
+          <div class="s1-content-area__container">
+
+<pre class="prettyprint">
+&lt;div class=&quot;s1-content-area&quot;&gt;
+  &lt;div class=&quot;s1-content-area__container&quot;&gt;XXXXX&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>汎用的な2カラムコンテナを生成します。</p>
+      </div>
+    </div>
+
+    <div class="s1-content-area">
+      <div class="s1-content-area__container" style="margin-bottom: 1em;">
+        <div class="s1-content-area__main" style="background-color: #ddd; height: 2em;"></div>
+        <div class="s1-content-area__sub" style="background-color: #eee; height: 2em;"></div>
+      </div>
+    </div>
+<pre class="prettyprint">
+&lt;div class=&quot;s1-content-area&quot;&gt;
+  &lt;div class=&quot;s1-content-area__container&quot;&gt;
+    &lt;div class=&quot;s1-content-area__main&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;s1-content-area__sub&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+  <!-- ============ コンテナ ============ -->
+
+
+  <!-- ============ ここから2カラム ============ -->
+
+  <div class="s1-content-area__main">
+
+  <!-- ============ グリッド ============ -->
+    <div class="hdg" id="m-grid">
+      <p>グリッド</p>
+      <div class="hdg__bottom">
+        <p>grid__col-1-Xはマージン無、.grid__cell-1-Xは20pxのマージン有、.grid_cell--thin-1-Xは10pxのマージン有のボックスを生成します。<br>
+        -1-XのX部分はカラム数です。-1-2で2カラム、-1-3で3カラムで、一応6カラムまであります。</p>
+      </div>
+      <div class="hdg__desc">
+        <p>/layout/_grid.scss</p>
+      </div>
+    </div>
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>2カラムマージン無</p>
+      </div>
+    </div>
+
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__col-1-2" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__col-1-2" style="background-color: #ddd; height: 2em;"></div>
+    </div>
+
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__col-1-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-1-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>2カラムマージン20px</p>
+      </div>
+    </div>
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__cell-1-2" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__cell-1-2" style="background-color: #ddd; height: 2em;"></div>
+    </div>
+
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__cell-1-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-1-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>2カラムマージン10px</p>
+      </div>
+    </div>
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__cell--thin-1-2" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__cell--thin-1-2" style="background-color: #ddd; height: 2em;"></div>
+    </div>
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-1-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-1-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>3カラムマージン無</p>
+      </div>
+    </div>
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__col-1-3" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__col-1-3" style="background-color: #ddd; height: 2em;"></div>
+    <div class="s1-grid__col-1-3" style="background-color: #eee; height: 2em;"></div>
+    </div>
+
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__col-1-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-1-3&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-1-3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>6カラムマージン20px</p>
+      </div>
+    </div>
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__cell-1-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__cell-1-6" style="background-color: #ddd; height: 2em;"></div>
+    <div class="s1-grid__cell-1-6" style="background-color: #eee; height: 2em;"></div>
+    <div class="s1-grid__cell-1-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__cell-1-6" style="background-color: #ddd; height: 2em;"></div>
+    <div class="s1-grid__cell-1-6" style="background-color: #eee; height: 2em;"></div>
+    </div>
+
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>組み合わせ例</p>
+  </div>
+</div>
+
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell--thin-1-3">
+    <div class="s1-box-media s1-box-media--left">
+      <p><img src="https://www.rakuten-sec.co.jp/web/market/opinion/images/photo_l/photo_emori.png" alt="" class="s1-box-media__img" width="90"></p>
+    </div>
+    <div class="s1-box-section">
+      <p><a href="#">江守哲氏のレポート</a></p>
+      <p>原油や金の最新コメントを毎日お届け</p>
+    </div>
+  </div>
+  <div class="s1-grid__cell--thin-1-3">
+    <div class="s1-box-media s1-box-media--left">
+      <p><img src="https://www.rakuten-sec.co.jp/web/market/opinion/images/photo_l/photo_ikemizu.png" alt="" class="s1-box-media__img" width="90"></p>
+    </div>
+    <div class="s1-box-section">
+      <p><a href="#">池水雄一氏のレポート</a></p>
+      <p>Bruce（ブルース）レポート拾い読み</p>
+    </div>
+  </div>
+  <div class="s1-grid__cell--thin-1-3">
+    <div class="s1-box-media s1-box-media--left">
+      <p><img src="https://www.rakuten-sec.co.jp/web/market/opinion/images/photo_l/photo_yoshida.png" alt="" class="s1-box-media__img" width="90"></p>
+    </div>
+    <div class="s1-box-section">
+      <p><a href="#">吉田哲のレポート</a></p>
+      <p>コモディティ市場の旬なトピックをお届け</p>
+    </div>
+  </div>
+</div>
+
+<pre class="prettyprint mb-normal">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-1-3&quot;&gt;
+    &lt;div class=&quot;s1-box-media s1-box-media--left&quot;&gt;
+      &lt;p&gt;&lt;img src=&quot;XXXXX.png&quot; alt=&quot;&quot; class=&quot;s1-box-media__img&quot; width=&quot;90&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;s1-box-section&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;#&quot;&gt;XXXXX&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;XXXXX&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-1-3&quot;&gt;
+    &lt;div class=&quot;s1-box-media s1-box-media--left&quot;&gt;
+      &lt;p&gt;&lt;img src=&quot;XXXXX.png&quot; alt=&quot;&quot; class=&quot;s1-box-media__img&quot; width=&quot;90&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;s1-box-section&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;#&quot;&gt;XXXXX&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;XXXXX&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-1-3&quot;&gt;
+    &lt;div class=&quot;s1-box-media s1-box-media--left&quot;&gt;
+      &lt;p&gt;&lt;img src=&quot;XXXXX.png&quot; alt=&quot;&quot; class=&quot;s1-box-media__img&quot; width=&quot;90&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;s1-box-section&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;#&quot;&gt;XXXXX&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;XXXXX&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+
+    <div class="hdg" id="m-inq-grid">
+      <p>不均等グリッド</p>
+      <div class="hdg__bottom">
+        <p>不均等グリッドコンテナの生成は前の数字が足して後ろの数字になるように調整します。<br>
+        例：1-6, 2-6, 3-6</p>
+      </div>
+    </div>
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>1幅と5幅</p>
+      </div>
+    </div>
+
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__col-1-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__col-5-6" style="background-color: #ddd; height: 2em;"></div>
+    </div>
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__col-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-5-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>2幅と4幅</p>
+      </div>
+    </div>
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__col-2-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__col-4-6" style="background-color: #ddd; height: 2em;"></div>
+    </div>
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__col-2-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-4-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__bottom">
+        <p>1幅と2幅と3幅</p>
+      </div>
+    </div>
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__col-1-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__col-2-6" style="background-color: #ddd; height: 2em;"></div>
+    <div class="s1-grid__col-3-6" style="background-color: #eee; height: 2em;"></div>
+    </div>
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__col-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-2-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__col-3-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="hdg">
+      <div class="hdg__desc">
+        <p>均等グリッド同様、cellで20pxのマージン有、cell--thinで10pxのマージン有の不均等グリッドを生成します。</p>
+      </div>
+    </div>
+
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__cell-1-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__cell-2-6" style="background-color: #ddd; height: 2em;"></div>
+    <div class="s1-grid__cell-3-6" style="background-color: #eee; height: 2em;"></div>
+    </div>
+<pre class="prettyprint" style="margin-bottom: 1em;">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__cell-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-2-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell-3-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+
+    <div class="s1-grid" style="margin-bottom: 1em">
+    <div class="s1-grid__cell--thin-1-6" style="background-color: #ccc; height: 2em;"></div>
+    <div class="s1-grid__cell--thin-2-6" style="background-color: #ddd; height: 2em;"></div>
+    <div class="s1-grid__cell--thin-3-6" style="background-color: #eee; height: 2em;"></div>
+    </div>
+<pre class="prettyprint">
+&lt;div class=&quot;s1-grid&quot;&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-1-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-2-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;s1-grid__cell--thin-3-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+  <!-- ============ グリッド ============ -->
+
+
+
+
+
+
+        </div>
+
+
+        <div class="s1-content-area__sidebar" style="padding-top: 20px;">
+          <!--#include virtual="/style-guide/inc-sidenav.html"-->
+        </div>
+      </div>
+
+
+    </div>
+
+  <!-- footer-common-->
+  <!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+  <!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+    </body>
+    </html>

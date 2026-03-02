@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>見出し・テキスト・画像</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+  <div class="s1-content-area">
+    <div class="s1-content-area__container">
+      <div class="s1-content-area__main">
+
+  <div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">見出し・テキスト・画像</h1>
+</div>
+
+        <div class="box-section">
+          <p>各コンテナになるブロックは基本box-の接頭辞が付きます。また、リストとして表現されるブロックにはlist-の、テーブルとして表現されるブロックにはs1-tbl-の接頭辞が付きます。</p>
+          <p>各モジュールは可能な限り疎結合出来る単位で作成されていますが、利用方法等を限定するために、あえて疎結合出来ないように設計されているものもあります。</p>
+        </div>
+
+        <ul class="s1-list-anchor s1-list-anchor--wrap">
+          <li class="s1-list-anchor__item"><a href="#mod-hdg" class="s1-list-anchor__element">見出し</a></li>
+          <li class="s1-list-anchor__item"><a href="#mod-txt" class="s1-list-anchor__element">テキストコンテナ</a></li>
+          <li class="s1-list-anchor__item"><a href="#mod-media" class="s1-list-anchor__element">メディアコンテナ</a></li>
+          <li class="s1-list-anchor__item"><a href="#mod-hr" class="s1-list-anchor__element">区切り線</a></li>
+        </ul>
+
+
+
+
+<!-- ============ 見出し ============ -->
+<section id="mod-hdg">
+  <div class="hdg">
+    <p>見出し</p>
+    <div class="hdg__bottom">
+      <p>.s1-hdg-lv2～.s1-hdg-lv4まで下に続くボックスとのベースマージンが開くように上マージン（28px）が付いています。.s1-hdg-lv1のみ、上にボックスが配置される事が想定されないので上マージンはありません。</p>
+      <p>見出し1-2-3-4…として使う必要はありませんが、レベル感は必ずそろえてください。例えば.s1-hdg-lv1 .s1-hdg-lv3 s1-hdg-lv4のように.s1-hdg-lv2を飛ばして利用するのもOKです。但し、lv3の次をlv2として利用するのは不可です。</p>
+    </div>
+    <div class="hdg__desc">
+      <p>/module/_heading.scss</p>
+    </div>
+  </div>
+
+
+  <div class="hdg">
+    <div class="hdg__bottom">
+      <p>見出し1</p>
+    </div>
+  </div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">見出し1</h1>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">見出し1フォームあり</h1>
+  <form class="s1-hdg-lv1__form s1-search">
+  <fieldset>
+  <input type="hidden" name="stoc-type" value="0" />
+  <input class="s1-search__input input-search-stock-cont" type="text" name="name" placeholder="銘柄名／コード" />
+  <button class="s1-search__btn submit-search-stoc-btn-cont" type="submit" ><i class="s-glyph">&#xf108;</i></button>
+  </fieldset>
+  </form>
+</div>
+</div>
+
+<ul class="s1-list-notice">
+  <li><div>※</div><div>虫眼鏡マークは&amp;#xf108;</div></li>
+</ul>
+
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>見出し2</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv2">
+  <h2 class="s1-hdg-lv2__element">見出し2</h2>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv2">
+  <h2 class="s1-hdg-lv2__element">見出し2リンク有り</h2>
+  <span class="s1-hdg-lv2__link"><a href="#">リンクリンク</a></span>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv2">
+  <h2 class="s1-hdg-lv2__element s1-hdg-lv2-icon">
+    <span class="s1-hdg-lv2-icon__icon">case</span>
+    <span class="s1-hdg-lv2-icon__txt">サブ付き見出し2</span>
+  </h2>
+</div>
+</div>
+
+<p>.s1-hdg-icon-countで囲むことによって、自動で連番を付与します。.s1-hdg-icon-countで囲まなければ、数字は付与されません。</p>
+
+<div class="module-sample">
+<div class="s1-hdg-icon-count">
+  <div class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element s1-hdg-lv2-icon">
+      <span class="s1-hdg-lv2-icon__icon">case</span>
+      <span class="s1-hdg-lv2-icon__txt">サブ＆番号付き見出し2</span>
+    </h2>
+  </div>
+  <div class="s1-hdg-lv2">
+    <h2 class="s1-hdg-lv2__element s1-hdg-lv2-icon">
+      <span class="s1-hdg-lv2-icon__icon">case</span>
+      <span class="s1-hdg-lv2-icon__txt">見出し2見出し2見出し2見出し2見出し2見出し2見出し2見出し2見出し2見出し2見出し2</span>
+    </h2>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>見出し3</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">見出し3</h3>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element">見出し3リンクあり</h3>
+  <span class="s1-hdg-lv3__link"><a href="#">リンクリンク</a></span>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv3">
+  <h3 class="s1-hdg-lv3__element s1-hdg-lv3-icon">
+    <span class="s1-hdg-lv3-icon__icon">point</span>
+    <span class="s1-hdg-lv3-icon__txt">サブ付き見出し3</span>  
+  </h3>
+</div>
+</div>
+
+<p>.s1-hdg-icon-countで囲むことによって、自動で連番を付与します。.s1-hdg-icon-countで囲まなければ、数字は付与されません。</p>
+
+<div class="module-sample">
+<div class="s1-hdg-icon-count">
+  <div class="s1-hdg-lv3">
+    <h3 class="s1-hdg-lv3__element s1-hdg-lv3-icon">
+      <span class="s1-hdg-lv3-icon__icon">point</span>
+      <span class="s1-hdg-lv3-icon__txt">サブ＆番号付き見出し3</span>  
+    </h3>
+  </div>
+  <div class="s1-hdg-lv3">
+    <h3 class="s1-hdg-lv3__element s1-hdg-lv3-icon">
+      <span class="s1-hdg-lv3-icon__icon">point</span>
+      <span class="s1-hdg-lv3-icon__txt">見出し3見出し3見出し3見出し3見出し3見出し3見出し3見出し3見出し3見出し3見出し3見出し3</span>  
+    </h3>
+  </div>
+</div>
+</div>
+
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>見出し4</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv4">
+  <h4 class="s1-hdg-lv4__element">見出し4</h4>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-hdg-lv4">
+  <h4 class="s1-hdg-lv4__element">見出し4リンクあり</h4>
+  <span class="s1-hdg-lv4__link"><a href="#">リンクリンク</a></span>
+</div>
+</div>
+
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>その他タイトル</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<p class="s1-entitle">その他見出し</p>
+</div>
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>STEP的見出し</p>
+  </div>
+</div>
+
+<p>STEPの画像じゃなくて、cssバージョン。今後はこちらをメインで。CASEやPOINTでもつかえる。</p>
+<p>STEPの見出しはh3を推奨してますが、h2やh4でも動作すると思う。ただ、マージンやフォントサイズはh3にあわせてます。</p>
+<p>.s1-label-balloon-countで囲まないと連番になりません。</p>
+
+<div class="module-sample">
+<div class="s1-label-balloon-count">
+  <h3 class="s1-hdg-label">
+    <div class="s1-hdg-label__label"><div class="s1-label-balloon"><span><b>STEP</b></span></div></div>
+    <div class="s1-hdg-label__txt">ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</div>
+  </h3>
+  
+  <h3 class="s1-hdg-label">
+    <div class="s1-hdg-label__label"><div class="s1-label-balloon"><span><b>STEP</b></span></div></div>
+    <div class="s1-hdg-label__txt">ほげほげほげほげほげほげほげほげほげ</div>
+  </h3>
+</div>
+</div>
+
+
+</section>
+<!-- ============ 見出し ============ -->
+
+
+<!-- ============ コンテナ ============ -->
+<section id="mod-txt">
+
+
+<div class="hdg">
+  <p>テキストコンテナ</p>
+  <div class="hdg__bottom">
+    <p>汎用的なテキストコンテナモジュール</p>
+  </div>
+  <div class="hdg__desc">
+    <p>/module/_content.scss</p>
+  </div>
+</div>
+
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>.s1-box-sectionの子要素のp、ul、ol、dlに14pxのベースマージンが付きます。ネストされたそれぞれの要素はプレーンスタイルになります。<br>
+    疎結合なので、他の要素をそのまま入れ込めます。</p>
+    <p>※必要に応じてs1-box-sectionの最後のpに.mb0をつけてください。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-section">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>以下リストなどが入った例。ネストされているulにはマージンがつきません。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-section">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <ul class="s1-list-notice-a fs-s">
+    <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて</li>
+    <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて</li>
+  </ul>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <ul class="s1-list-standard">
+    <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+    <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+      <ul class="s1-list-standard">
+        <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+        <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>テキスト文中にリンク（ブランクのアイコンあり）を差し込む場合のサンプル。<br>行全体をリンクにする場合はリンクリストを使ってください。<br>ブランクのアイコンは自動でつきます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="box-section">
+  <p>どうも幾分はもし<a href="#" target="_blank" class="s1-txt-link-a">どうも幾分はもし個人といういるうて</a>、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  <ul class="s1-list-notice-a">
+    <li>pdfにも<a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20191004.pdf" target="_blank" class="s1-txt-link-a">自動でアイコン</a>付与するようにしました。</li>
+  </ul>
+  <ul class="s1-list-link-a">
+    <li class="s1-list-link-a__item"><a href="#" target="_blank">こういう行全体のリンクはリンクリストを使ってください。</a></li>
+  </ul>
+</div>
+</div>
+
+</section>
+
+
+<section id="mod-media">
+<div class="hdg">
+  <p>画像コンテナ</p>
+  <div class="hdg__bottom">
+    <p>汎用的な画像コンテナモジュール</p>
+  </div>
+  <div class="hdg__desc">
+    <p>/module/_content.scss</p>
+  </div>
+</div>
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>.s1-box-sectionの子要素のpに1emのmargin-bottomが付きます。ネストされた要素のpにはプレーンスタイルになります。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-media">
+  <p class="mb-normal"><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img"></p>
+  <p class="s1-box-media__hdg">メディアタイトル</p>
+  <p class="s1-box-media__caption">メディアキャプション</p>
+</div>
+</div>
+
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>.s1-box-sectionモジュールとあわせて、画像右テキスト左（回り込み無）、画像左テキスト右（回り込み無）のような事が出来ます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="clearfix mb-normal">
+  <div class="s1-box-media s1-box-media--left">
+    <p><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img"></p>
+  </div>
+  <div class="s1-box-section">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  </div>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="clearfix mb-normal">
+  <div class="s1-box-media s1-box-media--right">
+    <p><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img"></p>
+  </div>
+  <div class="s1-box-section">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>組み合わせ例</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="clearfix">
+  <div class="s1-box-media s1-box-media--right">
+    <p class="mb-normal"><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img"></p>
+    <p class="s1-box-media__caption">XXXXXXXXXXXX<br>
+    XXXXXXXXXXXXXXXXXXXXXXXX</p>
+  </div>
+  <div class="s1-box-section">
+    <p class="s1-entitle mt0">XXXXX</p>
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <ul class="s1-list-bubble mb-normal">
+      <li>XXXXX</li>
+      <li>XXXXX</li>
+    </ul>
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <ul class="s1-list-link">
+      <li class="s1-list-link__item"><a href="#">通常リンク</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+</section>
+<!-- -->
+
+<!--区切り線-->
+<section id="mod-hr">
+<div class="hdg">
+  <p>区切り線</p>
+  <div class="hdg__bottom">
+    <p>区切り線です。上下マージン28pxが自動で入ります。</p>
+  </div>
+  <div class="hdg__desc">
+  <p>/module/_content.scss</p>
+  </div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+<p>普通の区切り線</p>
+<hr class="s1-delimiter-line">
+
+<p>点線</p>
+<hr class="s1-delimiter-line s1-delimiter-line--dotted">
+
+<p>太線</p>
+<hr class="s1-delimiter-line s1-delimiter-line--bold">
+
+<p>青</p>
+<hr class="s1-delimiter-line s1-delimiter-line--blue">
+
+<p>gray</p>
+<hr class="s1-delimiter-line s1-delimiter-line--gray">
+
+<p>上下のマージン半分の14px</p>
+<hr class="s1-delimiter-line s1-delimiter-line--half">
+
+</div>
+</div>
+
+</section>
+<!--区切り線-->
+
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&P500のトレンドと投資戦略｜楽天証券</title>
+
+  <!-- 楽天証券本番CSS -->
+  <link rel="stylesheet" href="https://www.rakuten-sec.co.jp/web/shared/css/style-bottom.css">
+
+  <!-- ページ固有スクリプト -->
+  <script src="https://www.rakuten-sec.co.jp/web/shared/js/s1-common.js"></script>
+
+  <!-- パス変換スクリプト（絶対パスモードの場合のみ） -->
+  <script>
+(function() {
+  const PRODUCTION_BASE_URL = 'https://www.rakuten-sec.co.jp';
+
+  function convertPaths() {
+    // 画像パス変換
+    const images = document.querySelectorAll('img');
+    images.forEach(function(img) {
+      const src = img.getAttribute('src');
+      if (src && src.startsWith('/') && !src.startsWith('//')) {
+        img.setAttribute('src', PRODUCTION_BASE_URL + src);
+      }
+    });
+
+    // リンクパス変換
+    const anchors = document.querySelectorAll('a');
+    anchors.forEach(function(a) {
+      const href = a.getAttribute('href');
+      if (href && href.startsWith('/') && !href.startsWith('//') && href !== '#' && !href.startsWith('javascript:')) {
+        a.setAttribute('href', PRODUCTION_BASE_URL + href);
+      }
+    });
+  }
+
+  // 初回実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', convertPaths);
+  } else {
+    convertPaths();
+  }
+
+  // 動的変更を監視
+  const observer = new MutationObserver(convertPaths);
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+
+  <style>
+/* キャンバス内のブロック用の最小限のスタイル */
+.canvas-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.canvas-block.selected {
+  outline: 2px solid #bf0000;
+}
+
+.canvas-block__toolbar {
+  display: none;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  background: white;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.canvas-block:hover .canvas-block__toolbar,
+.canvas-block.selected .canvas-block__toolbar {
+  display: flex;
+  gap: 5px;
+}
+  </style>
+</head>
+<body id="top">
+  <!-- ヘッダー（SSI） -->
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+  <!-- メインコンテンツエリア -->
+  <div class="s1-content-area mb-triple">
+    <div class="s1-content-area__container">
+
+      <!-- 左側：メインコンテンツ -->
+      <div class="s1-content-area__main" role="main">
+
+        <!-- パンくず -->
+        <ul class="s1-breadcrumbs mb-normal">
+          <li><a href="/">ホーム</a>&nbsp;&gt;&nbsp;</li>
+          <li><a href="/market/">マーケット情報</a>&nbsp;&gt;&nbsp;</li>
+          <li><a href="/market/us/">米国株</a>&nbsp;&gt;&nbsp;</li>
+          <li>S&P500トレンド</li>
+        </ul>
+
+        <!-- SNS共有ボタン -->
+        <!--#include virtual="/web/shared/include/socialbookmark/s1-parts.html"-->
+
+        <!-- PCSP共通コンテンツ -->
+        <div id="pcsp-quick" class="mb-triple">
+
+          <!-- メインタイトル -->
+          <div class="s1-hdg-lv1">
+            <h1 class="s1-hdg-lv1__element">S&P500のトレンドと投資戦略</h1>
+          </div>
+
+          <!-- 最新情報 -->
+          <div class="s1-box-list-info mb-double">
+            <h2 class="s1-box-list-info__hdg">最新ニュース</h2>
+            <ul class="s1-list-info">
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/03/02</div>
+                <div class="s1-list-info__content"><a href="#">S&P500が史上最高値を更新、テクノロジー株主導で上昇</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/03/01</div>
+                <div class="s1-list-info__content"><a href="#">FRBの金融政策と今後のS&P500への影響</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/02/28</div>
+                <div class="s1-list-info__content"><a href="#">アナリストが予測する2026年のS&P500目標値</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ページ内リンク -->
+          <ul class="s1-list-anchor s1-list-anchor--wrap mb-double">
+            <li class="s1-list-anchor__item"><a href="#overview" class="s1-list-anchor__element">S&P500とは</a></li>
+            <li class="s1-list-anchor__item"><a href="#trend" class="s1-list-anchor__element">最新トレンド</a></li>
+            <li class="s1-list-anchor__item"><a href="#strategy" class="s1-list-anchor__element">投資戦略</a></li>
+            <li class="s1-list-anchor__item"><a href="#howto" class="s1-list-anchor__element">投資方法</a></li>
+          </ul>
+
+          <!-- セクション1: S&P500とは -->
+          <div class="s1-hdg-lv2" id="overview">
+            <h2 class="s1-hdg-lv2__element">S&P500とは</h2>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p>S&P500（Standard & Poor's 500 Stock Index）は、米国の主要500社の株価を基に算出される株価指数です。米国株式市場全体の動向を示す代表的な指標として、世界中の投資家が注目しています。</p>
+            <p>AppleやMicrosoft、Amazonなどの大型テクノロジー企業から、金融、ヘルスケア、エネルギーまで、幅広いセクターの企業が含まれています。</p>
+          </div>
+
+          <!-- S&P500の特徴 -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">S&P500の特徴</h3>
+          </div>
+
+          <ol class="s1-list-num-point mb-double">
+            <li class="s1-list-num-point__item">
+              <div class="s1-list-num-point__circle">point<br><span class="fs24">1</span></div>
+              <div class="s1-list-num-point__txt"><strong>幅広い分散投資</strong><br>500社への分散投資により、リスクを抑えながら米国経済全体の成長を享受できます。</div>
+            </li>
+            <li class="s1-list-num-point__item">
+              <div class="s1-list-num-point__circle">point<br><span class="fs24">2</span></div>
+              <div class="s1-list-num-point__txt"><strong>高い流動性</strong><br>世界中で取引されており、売買しやすい高い流動性が魅力です。</div>
+            </li>
+            <li class="s1-list-num-point__item">
+              <div class="s1-list-num-point__circle">point<br><span class="fs24">3</span></div>
+              <div class="s1-list-num-point__txt"><strong>長期的な成長実績</strong><br>過去数十年にわたり、長期的には右肩上がりの成長を見せています。</div>
+            </li>
+          </ol>
+
+          <!-- セクション2: 最新トレンド -->
+          <div class="s1-hdg-lv2" id="trend">
+            <h2 class="s1-hdg-lv2__element">2026年のS&P500最新トレンド</h2>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p>2026年に入り、S&P500は以下のようなトレンドが見られます。</p>
+          </div>
+
+          <!-- トレンドポイント -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">注目すべきトレンド</h3>
+          </div>
+
+          <ul class="s1-list-standard mb-double">
+            <li><strong>AI・テクノロジーセクターの継続的な成長：</strong>生成AIやクラウドコンピューティングの発展により、テクノロジー企業が市場をけん引</li>
+            <li><strong>金利政策の正常化：</strong>FRBの金融政策変更が市場に与える影響を注視する必要性</li>
+            <li><strong>地政学リスクの影響：</strong>国際情勢の変化が投資家心理に影響を及ぼす可能性</li>
+            <li><strong>ESG投資の拡大：</strong>環境・社会・ガバナンスを重視した投資の増加傾向</li>
+          </ul>
+
+          <!-- セクター別パフォーマンス -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">セクター別パフォーマンス（2026年2月時点）</h3>
+          </div>
+
+          <table class="s1-tbl-data01 s1-tbl--width-full s1-tbl--row-color mb-double">
+            <thead>
+              <tr>
+                <th>セクター</th>
+                <th>年初来騰落率</th>
+                <th>トレンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>テクノロジー</th>
+                <td class="fc-r-01">+12.5%</td>
+                <td>強気継続</td>
+              </tr>
+              <tr>
+                <th>金融</th>
+                <td class="fc-r-01">+8.3%</td>
+                <td>金利上昇で追い風</td>
+              </tr>
+              <tr>
+                <th>ヘルスケア</th>
+                <td class="fc-r-01">+6.7%</td>
+                <td>安定的な成長</td>
+              </tr>
+              <tr>
+                <th>エネルギー</th>
+                <td class="fc-r-01">+5.2%</td>
+                <td>原油価格次第</td>
+              </tr>
+              <tr>
+                <th>一般消費財</th>
+                <td class="fc-r-01">+4.8%</td>
+                <td>消費動向に注目</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="s1-list-notice mb-double">
+            <li><div>※</div><div>上記データは2026年2月末時点のものです。</div></li>
+            <li><div>※</div><div>過去の実績は将来の運用成果を保証するものではありません。</div></li>
+          </ul>
+
+          <!-- セクション3: 投資戦略 -->
+          <div class="s1-hdg-lv2" id="strategy">
+            <h2 class="s1-hdg-lv2__element">S&P500への投資戦略</h2>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p>S&P500へ投資する際は、以下の戦略を検討することが重要です。</p>
+          </div>
+
+          <!-- 投資戦略リスト -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">推奨される投資アプローチ</h3>
+          </div>
+
+          <ol class="s1-list-num-bubble-count mb-double">
+            <li><strong>長期保有戦略：</strong>短期的な変動に惑わされず、5年以上の長期保有を前提とした投資</li>
+            <li><strong>ドルコスト平均法：</strong>定期的に一定額を投資することで、平均購入単価を平準化</li>
+            <li><strong>積立投資の活用：</strong>毎月一定額を自動で積み立てることで、投資のタイミングを分散</li>
+            <li><strong>リバランスの実施：</strong>年1〜2回、ポートフォリオ全体のバランスを見直し</li>
+            <li><strong>コスト重視：</strong>信託報酬の低いインデックスファンドやETFを選択</li>
+          </ol>
+
+          <!-- リスクについて -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">投資時の注意点</h3>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <ul class="s1-list-bubble">
+              <li>為替リスク：ドル建て資産のため、円高時には為替差損が発生する可能性があります</li>
+              <li>市場リスク：株式市場全体の下落により、資産価値が減少する可能性があります</li>
+              <li>集中リスク：上位10社で指数全体の約30%を占めるため、大型株の動向に注意が必要です</li>
+            </ul>
+          </div>
+
+          <!-- セクション4: 楽天証券での投資方法 -->
+          <div class="s1-hdg-lv2" id="howto">
+            <h2 class="s1-hdg-lv2__element">楽天証券でS&P500に投資する方法</h2>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <p>楽天証券では、S&P500に連動する様々な金融商品を取り扱っています。</p>
+          </div>
+
+          <!-- 投資商品の種類 -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">主な投資商品</h3>
+          </div>
+
+          <table class="s1-tbl-data01 s1-tbl--width-full mb-double">
+            <thead>
+              <tr>
+                <th>商品タイプ</th>
+                <th>特徴</th>
+                <th>最低投資金額</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>投資信託</th>
+                <td>購入手数料無料、100円から積立可能</td>
+                <td>100円〜</td>
+              </tr>
+              <tr>
+                <th>ETF（上場投資信託）</th>
+                <td>株式と同様にリアルタイムで売買可能</td>
+                <td>数千円〜</td>
+              </tr>
+              <tr>
+                <th>米国株</th>
+                <td>個別銘柄への直接投資が可能</td>
+                <td>数万円〜</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 楽天証券のメリット -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">楽天証券で投資するメリット</h3>
+          </div>
+
+          <div class="s1-box-section mb-double">
+            <ul class="s1-list-standard">
+              <li><strong>楽天ポイントで投資可能：</strong>貯まった楽天ポイントを投資に活用できます</li>
+              <li><strong>楽天カード決済で積立：</strong>クレジットカード決済でポイントも貯まります</li>
+              <li><strong>豊富な商品ラインナップ：</strong>S&P500連動の投資信託・ETFを多数取り扱い</li>
+              <li><strong>手数料が業界最安水準：</strong>購入手数料無料のファンド多数</li>
+              <li><strong>NISA対応：</strong>非課税制度を活用した投資が可能</li>
+            </ul>
+          </div>
+
+          <!-- コンバージョン -->
+          <div class="s1-box-conversion mb-double">
+            <div class="s1-btn-account-open">
+              <a href="/account/"><i class="s-glyph">&#xf10a;</i>&nbsp;口座申込</a>
+            </div>
+          </div>
+
+          <!-- ピックアップコンテンツ -->
+          <div class="s1-box-list-info mb-double">
+            <h2 class="s1-box-list-info__hdg">ピックアップ</h2>
+            <ul class="s1-list-info">
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--info">特集</span></div>
+                <div class="s1-list-info__content"><a href="#">初心者のための米国株投資ガイド</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--important">人気</span></div>
+                <div class="s1-list-info__content"><a href="#">S&P500連動ファンド人気ランキング</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--info">解説</span></div>
+                <div class="s1-list-info__content"><a href="#">投資信託とETFの違いを徹底比較</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 関連リンク -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">関連情報</h3>
+          </div>
+
+          <div class="s1-box-section mb-normal">
+            <ul class="s1-list-link">
+              <li class="s1-list-link__item"><a href="#">米国株式市場の最新情報</a></li>
+              <li class="s1-list-link__item"><a href="#">投資信託ランキング</a></li>
+              <li class="s1-list-link__item"><a href="#">NISA・つみたてNISAについて</a></li>
+              <li class="s1-list-link__item"><a href="#">楽天ポイント投資のはじめ方</a></li>
+              <li class="s1-list-link__item"><a href="#">よくあるご質問（米国株）</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- SNS共有ボタン（2回目） -->
+        <!--#include virtual="/web/shared/include/socialbookmark/s1-parts.html"-->
+
+      </div>
+
+      <!-- 右側：サイドバー（SSI） -->
+      <div class="s1-content-area__sidebar" role="complementary">
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-side-account.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-side-login.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-common-side.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-common-info-side-contents.html"-->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- フッター（SSI） -->
+  <!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+
+  <!-- 分析タグ（SSI） -->
+  <!--#include virtual="/web/shared/include/analysis/analysis-sitecatalyst.html"-->
+  <!--#include virtual="/web/shared/include/analysis/analysis-mebius.html"-->
+</body>
+</html>

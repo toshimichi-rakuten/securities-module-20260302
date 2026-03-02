@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <link rel="stylesheet" href="/web/shared/css/pcsp-quick.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+  </head>
+  <body>
+
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>PCSP簡易モジュール</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+  <div class="s1-content-area">
+    <div class="s1-content-area__container">
+      <div class="s1-content-area__main">
+
+  <div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">PCSP簡易モジュール</h1>
+</div>
+
+<div class="box-section mb-normal">
+  <p>お知らせ、CPで使用できる簡易共通モジュールのページです。CPについてはメンバーCPも対応させます。</p>
+  <p>2021/11/8よりセミナーもこちらのモジュールで対応する予定です。</p>
+  <p>【pcsp-quick.css】を読み込ませ、div#pcsp-quickの要素にてcssが動作するように設計します。※メンバーはeditable.cssで管理。</p>
+  <p>ユーティリティクラスは元々共通で使えます。</p>
+  <p>.hidden-pc:PCで非表示、.hidden-sp:SPで非表示、のclassが使えます！</p>
+  <p>作成するパーツは以下の通り。</p>
+</div>
+
+<div class="box-section mb-normal">
+  <ul class="s1-list-standard">
+    <li>見出し</li>
+    <li>リンクアイコン付きテキスト</li>
+    <li>sub※テキスト</li>
+    <li>リスト</li>
+    <li>番号リスト</li>
+    <li>※リスト</li>
+    <li>※1リスト</li>
+    <li>アンカーリスト</li>
+    <li>ボタン</li>
+    <li>テーブル</li>
+    <li>PCSP切り替えテーブル</li>
+    <li>画像</li>
+    <li>枠ボックス</li>
+    <li>ご注意ボックス</li>
+    <li>要約ボックス</li>
+    <li>メディアボックス</li>
+    <li>ドキュメント</li>
+    <li>お知らせ固有Q＆A</li>
+    <li>CP固有リスクボックス</li>
+    <li>CP固有リスクボタン</li>
+    <li>CP固有エントリーボタン（新モジュール作成含む）</li>
+  </ul>
+</div>
+
+<div class="box-section mb-normal">
+  
+  <div class="module-pcsp-quick">
+    <ul class="q1-list-link">
+      <li><a href="/smartphone/style-guide/template/quick.html">SP簡易モジュールはこちら</a></li>
+      <li><a href="http://10.166.10.116:20140/campaign-detail2/quick.html">CP用メンバー簡易モジュールはこちら</a></li>
+    </ul>
+  </div>
+  
+</div>
+<div class="box-section mb-normal">
+  
+  <div class="module-pcsp-quick">
+    <p>CPとお知らせのテンプレート用意しました。</p>
+    <ul class="q1-list-link">
+      <li><a href="/web/campaign/YYYYMMDD-02/">PCキャンペーン</a></li>
+      <li><a href="/smartphone/campaign/YYYYMMDD-02/">SPキャンペーン</a></li>
+      <li><a href="/web/info/infoYYYYMMDD-02.html">PCお知らせ</a></li>
+      <li><a href="/smartphone/info/infoYYYYMMDD-02.html">SPお知らせ</a></li>
+    </ul>
+  </div>
+  
+</div>
+
+        <hr class="s1-delimiter-line" />
+
+<p class="fw-b">見出し2</p>
+
+<div class="module-sample module-pcsp-quick" id="test">
+<h2>見出し2</h2>
+</div>
+
+<p class="fw-b">見出し3</p>
+        
+<div class="module-sample module-pcsp-quick">
+<h3>見出し3</h3>
+</div>
+
+<p class="fw-b">見出し4</p>
+        
+<div class="module-sample module-pcsp-quick">
+<h4>見出し4</h4>
+</div>  
+        
+<p class="fw-b">テキスト</p>
+<div class="module-sample module-pcsp-quick">
+<p>ほげほげほげほげほげ<a href="#" data-sp-href="#">PCとSPで違うリンク</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげ<a href="#">両方PCのリンク</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげ<a href="#" target="_blank">別サイトへのリンク</a>ほげほげほげほげほげ</p>
+<p>ほげほげほげほげほげコメジルシ<sup>※</sup>だよ、連番コメジルシ<sup>※1</sup>だよ。</p>
+<p>ほげほげほげほげほげ<strong>赤字赤字赤字</strong>ほげほげ<b>太字太字太字</b>ほげほげほげ</p>
+</div>
+        
+
+<p class="fw-b">リスト</p>
+<div class="module-sample module-pcsp-quick">
+<ul>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト
+    <ul>
+      <li>リストリスト</li>
+      <li>リストリスト</li>
+      <li>リストリスト</li>
+    </ul>
+  </li>
+  <li>リストリスト</li>
+</ul>        
+</div>
+        
+<p class="fw-b">番号リスト</p>
+<div class="module-sample module-pcsp-quick">
+<ol>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ol>        
+</div>
+
+<p class="fw-b">※リスト</p>
+<div class="module-sample module-pcsp-quick">
+<ul class="q1-notice">
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ul>
+</div>
+        
+<p class="fw-b">※1リスト</p>
+<div class="module-sample module-pcsp-quick">
+<ul class="q1-notice-count">
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+  <li>リストリスト</li>
+</ul>      
+</div>
+
+<p class="fw-b">リンクリスト</p>
+<div class="module-sample module-pcsp-quick">
+<ul class="q1-list-link">
+  <li><a href="#">リストリスト</a></li>
+  <li><a href="#">リストリスト</a></li>
+  <li><a href="#" target="_blank">リストリスト</a></li>
+  <li><a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20190823.pdf" target="_blank">PDFアイコン自動付与</a></li>
+</ul>
+</div>
+
+<p class="fw-b">アンカーリスト</p>
+<div class="module-sample module-pcsp-quick">
+<ul class="q1-list-anchor">
+  <li><a href="#">リストリスト</a></li>
+  <li><a href="#">リストリスト</a></li>
+  <li><a href="#">リストリスト</a></li>
+</ul>
+</div>     
+        
+<p class="fw-b">ボタン</p>
+<p>ボタンは新モジュールがそのまま共通で使えます（#pcsp-quick内ではmargin-bottom自動付与。）が、SP、メンバーに対応しているのは下記のものだけです。</p>
+<p>※NISA口座開設ボタンはSPのみ色が変わります</p>
+<div class="module-sample module-pcsp-quick">
+<div class="s1-btn-general01">
+  <a href="javascript:;">基本ボタン</a>
+</div>  
+<div class="s1-btn-general01 s1-btn-general--narrow">
+  <a href="javascript:;">小ボタン</a>
+</div>
+<div class="s1-btn-general01 s1-btn-general--normal">
+  <a href="javascript:;">中ボタン</a>
+</div>
+<div class="s1-btn-general01 s1-btn-general--wide">
+  <a href="javascript:;">大ボタン</a>
+</div>
+<div class="s1-btn-account-open s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;口座申込</a>
+</div>
+<div class="s1-btn-account-sub s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;サブ口座申込</a>
+</div>
+<div class="s1-btn-account-nisa s1-btn-general--normal">
+  <a href="javascript:;"><i class="s-glyph"></i>&nbsp;NISA口座申込</a>
+</div>
+
+</div>
+        
+<p class="fw-b">テーブル</p>
+<div class="module-sample module-pcsp-quick">
+<table>
+  <thead>
+    <tr>
+      <th>テキスト</th>
+      <th>テキスト</th>
+      <th>テキスト</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+      <td>テキスト</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<p class="fw-b">テーブル（SP時スクロールあり）</p>
+<div class="module-sample module-pcsp-quick">
+<p class="scroll-txt hidden-pc">表は横にスクロールします</p>
+<div class="scroll-box-wrap">
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+          <th>テキスト</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>テキスト</th>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+        </tr>
+        <tr>
+          <th>テキスト</th>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+        </tr>
+        <tr>
+          <th>テキスト</th>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+          <td>テキスト</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+        
+        
+<p class="fw-b">PCSP切り替えテーブル</p>
+<div class="module-sample module-pcsp-quick">
+<table class="q1-tbl-switch">
+  <tbody>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+    </tr>
+    <tr>
+      <th>テキスト</th>
+      <td>テキスト</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        
+<p class="fw-b">画像</p>
+<div class="module-sample module-pcsp-quick">
+<figure>
+  <img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="">
+</figure>
+</div>
+
+<div class="module-pcsp-quick">
+  <ul class="q1-notice-count">
+    <li>figureタグ以外の画像に別窓リンク設定すると自動的に別窓アイコンがついてしまうので、aタグに.is-removedをつけてアイコンを消してください。</li>
+  </ul>
+</div>
+        
+<div class="module-sample module-pcsp-quick">
+<a href="#" target="_blank" class="is-removed"><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt=""></a>
+</div>
+        
+<p class="fw-b">枠ボックス</p>
+<div class="module-sample module-pcsp-quick">
+<div class="q1-box">
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+<div class="q1-box q1-box--r">
+  <p>赤枠なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+<div class="q1-box q1-box--r bg-r-01-light">
+  <p>赤枠赤背景なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+<div class="q1-box q1-box--y bg-y-01-light">
+  <p>黄枠黄背景なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+<div class="q1-box q1-box--gainsboro">
+  <p>灰背景なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+<div class="q1-box">
+  <h3>見出し3入るようになったよ</h3>
+  <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+  <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+</div>
+</div>  
+
+<p class="fw-b">要約ボックス</p>
+
+<div class="module-sample module-pcsp-quick">
+<div class="q1-box-abstract">
+  <div class="q1-box-abstract__hdg">要約すると</div>
+  <ul>
+    <li>926円で現物も信用も取引金額100万円まで1日に何回取引してもOK!</li>
+    <li>プラス1,080円でさらに取引金額100万円アップ！</li>
+    <li>日計り取引（デイトレード）ならさらに手数料が安く！</li>
+  </ul>
+</div>
+</div>
+        
+<div class="module-sample module-pcsp-quick">
+<div class="q1-box-abstract q1-box-abstract--high">
+  <div class="q1-box-abstract__hdg">要約すると強</div>
+  <ul>
+    <li>SPでは通常の要約ボックスとして表示されます。</li>
+    <li>SPでは通常の要約ボックスとして表示されます。</li>
+    <li>SPでは通常の要約ボックスとして表示されます。</li>
+  </ul>
+</div>
+</div>
+        
+<p class="fw-b">メディアボックス</p>
+<div class="module-sample module-pcsp-quick">
+<div class="q1-box-media-01 q1-box-media-sp">
+  <div>
+    <p>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明</p>
+    <p><a href="#" target="_blank">説明文説明文説明文説明文説明文説明文</a></p>
+  </div>
+  <div><img src="http://10.166.10.116/web/learn/seminar/template/images/img-01.png" alt=""></div>
+</div> 
+</div>
+        
+<p class="fw-b">ドキュメント</p>
+<div class="module-sample module-pcsp-quick">
+<div class="q1-document">
+<div>
+  <ul>
+    <li>「ポスト・コロナ時代を先導する米株式市場の変容をつかむ」<br>講師：田中 泰輔（楽天証券経済研究所グローバルマクロ・アドバイザー（客員）、田中泰輔リサーチ代表）</li>
+  </ul>
+</div>
+<div>
+  <div class="s1-btn-hollow01">
+    <a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20190823.pdf">資料はこちら<span class="s1-btn-hollow01__arrow">&nbsp;&gt;</span></a>
+  </div>
+</div>
+</div>
+</div>  
+
+        
+<p class="fw-b">お知らせ固有Q＆A</p>
+        
+<div class="module-sample module-pcsp-quick">
+<dl class="q1-faq s1-accordion">
+  <dt class="s1-accordion-btn"><span>Q</span>よくあるご質問１がはいりますよくあるご質問１がはいります？</dt>
+  <dd><span>A</span>よくあるご質問の回答が入りますよくあるご質問の回答が入りますよくあるご質問の回答が入ります。</dd>
+  <dt class="s1-accordion-btn"><span>Q</span>よくあるご質問２がはいります？</dt>
+  <dd><span>A</span>よくあるご質問の回答が入りますよくあるご質問の回答が入りますよくあるご質問の回答が入ります。</dd>
+</dl>
+</div> 
+
+<p class="fw-b">CP固有リスクボックス</p>
+        
+<div class="module-sample module-pcsp-quick">
+<div class="q1-cp-box">
+  <ul class="q1-notice">
+    <li>CP固有リスクボックス</li>
+    <li>汎用ボックス2（注意ボックス）に該当</li>
+    <li>CP固有リスクボックス</li>
+  </ul>
+</div>
+</div>   
+        
+        
+<p class="fw-b">CP固有リスクボタン</p>
+<p>一旦PCでは表示させないので、.hidden-pcを入れましょう。</p>
+<div class="module-sample module-pcsp-quick">
+<div class="s1-btn-hollow01 full hidden-pc">
+  <a href="/web/company/risk.html" data-sp-href="/smartphone/company/risk.html">投資にかかる手数料等およびリスク</a>
+</div>
+</div>
+        
+
+<p class="fw-b">CP固有エントリーボタン</p>
+<div class="module-sample module-pcsp-quick">
+<div class="s1-btn-cp-entry s1-btn-general--wide">
+  <a href="javascript:;">キャンペーンのエントリーはこちら</a>
+</div>
+</div>
+
+
+
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+  </html>

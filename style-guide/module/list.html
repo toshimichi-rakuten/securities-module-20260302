@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+  
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+  
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>リスト</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+<div class="s1-content-area">
+  <div class="s1-content-area__container">
+
+    <div class="s1-content-area__main">
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">リスト</h1>
+</div>
+
+      <ul class="s1-list-anchor s1-list-anchor--wrap">
+        <li class="s1-list-anchor__item"><a href="#m-list-decimal" class="s1-list-anchor__element">decimalリスト</a></li>
+        <li class="s1-list-anchor__item"><a href="#m-list-notice" class="s1-list-anchor__element">注釈リスト</a></li>
+        <li class="s1-list-anchor__item"><a href="#m-list-link" class="s1-list-anchor__element">リンクリスト</a></li>
+        <li class="s1-list-anchor__item"><a href="#m-list-anchor" class="s1-list-anchor__element">アンカーリンク</a></li>
+        <li class="s1-list-anchor__item"><a href="#m-list-define" class="s1-list-anchor__element">定義リスト</a></li>
+      </ul>
+
+<!-- ============ リスト ============ -->
+<section id="mod-list">
+<div class="hdg">
+  <p>リスト</p>
+  <div class="hdg__bottom">
+    <p>汎用リストモジュール</p>
+  </div>
+  <div class="hdg__desc">
+    <p>/module/_list.scss</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>リストモジュールはベースマージンが無いので、必要に応じて便利クラスで調整してください。</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>スタンダードリスト</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-standard mb-normal">
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+  <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+    <ul class="s1-list-standard">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-bubble">
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+  <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+    <ul class="s1-list-bubble">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="hdg" id="m-list-decimal">
+  <div class="hdg__bottom">
+    <p>decimalリスト</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ol class="s1-list-number mb-normal">
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+  <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+    <ol class="s1-list-number">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ol>
+  </li>
+</ol>
+</div>
+
+<div class="module-sample">
+<ol class="s1-list-num-bracket-count mb-normal">
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+  <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+    <ol class="s1-list-num-bracket-count">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ol>
+  </li>
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+</ol>
+</div>
+
+<p>s1-list-num-bubbleの自動カウントバージョン。こっちをメインで使ったほうが楽だよ。</p>
+<p class="mb-double">s1-num-bubbleで文中にリストと同じバブル数字を挿入できます。</p>
+
+<div class="module-sample">
+<ol class="s1-list-num-bubble-count mb-normal">
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+  <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+    <ol class="s1-list-num-bubble-count">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ol>
+  </li>
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+</ol>
+
+<p class="mb-normal"><span class="s1-num-bubble ml-0">3</span>2017年3月3日の<span class="s1-num-bubble">1</span>ニンテンドースイッチ発売以来、スイッチのハードは品不足が続いています。<span class="s1-num-bubble">2</span>「ゼルダの伝説」をはじめとしたソフトの面白さも注目されています。</p>
+</div>
+
+<div class="module-sample">
+<ol class="s1-list-num-bubble-count s1-list-num-bubble-count--r mb-normal">
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+  <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。
+    <ol class="s1-list-num-bubble-count s1-list-num-bubble-count--r">
+      <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+      <li>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</li>
+    </ol>
+  </li>
+  <li>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</li>
+</ol>
+
+<p class="mb-normal">2017年3月3日の<span class="s1-num-bubble s1-num-bubble--r">1</span>ニンテンドースイッチ発売以来、スイッチのハードは品不足が続いています。<span class="s1-num-bubble s1-num-bubble--r">2</span>「ゼルダの伝説」をはじめとしたソフトの面白さも注目されています。</p>
+</div>
+
+<div class="module-sample">
+<ol class="s1-list-num-point">
+  <li class="s1-list-num-point__item">
+    <div class="s1-list-num-point__circle">point<br><span class="fs24">1</span></div>
+    <div class="s1-list-num-point__txt">国内株取引手数料は<strong class="fc-r-01">業界最低水準<sup>※</sup></strong></div>
+  </li>
+  <li class="s1-list-num-point__item">
+    <div class="s1-list-num-point__circle">point<br><span class="fs24">2</span></div>
+    <div class="s1-list-num-point__txt">国内株取引はもちろん、投資信託や海外株式の取引手数料も<strong class="fc-r-01">1％～2％をポイントバック</strong></div>
+  </li>
+  <li class="s1-list-num-point__item">
+    <div class="s1-list-num-point__circle">point<br><span class="fs24">3</span></div>
+    <div class="s1-list-num-point__txt">大口取引条件で<strong class="fc-r-01">さらに割引</strong>。信用取引手数料は<strong class="fc-r-01">0円</strong>！</div>
+  </li>
+</ol>
+</div>
+
+<div class="hdg" id="m-list-notice">
+  <div class="hdg__bottom">
+    <p>注釈リスト</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-notice-a fs-s mb-normal">
+  <li>自動でコメがつきます。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+  <li>テキストテキスト</li>
+  <li>テキストテキスト</li>
+</ul>
+
+<ul class="s1-list-notice-a fs-s ta-r mb-normal">
+  <li>テキストテキスト</li>
+  <li>テキストテキスト</li>
+  <li>テキストテキスト</li>
+</ul>
+
+<ul class="s1-list-notice-a fs-s fc-r-01 mb-normal">
+  <li>テキストテキスト</li>
+  <li>テキストテキスト</li>
+  <li>テキストテキスト</li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-notice-a fs-s mb-normal">
+  <li>※の中にリストタグを差し込むときは、【.s1-list-notice-a__reset】をつけてインデントをそろえてください。
+  <ul class="s1-list-link s1-list-notice-a__reset">
+    <li class="s1-list-link__item"><a href="#">テキスト</a></li>
+    <li class="s1-list-link__item"><a href="#">テキスト</a></li>
+  </ul>
+  <ul class="s1-list-standard s1-list-notice-a__reset">
+    <li>テキストテキスト</li>
+    <li>テキストテキスト</li>
+  </ul>
+  </li>
+  <li>※の中の※は【.s1-list-notice-a__reset】つけなくてもいいです。
+    <ul class="s1-list-notice-a s1-list-notice-a__reset">
+      <li>テキストテキスト</li>
+      <li>テキストテキスト</li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-notice-a-count fs-s mb-normal">
+  <li>自動でコメ連番がつきます。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+  <li>連番※と同様に、中でリスト使うときは【.s1-list-notice-a-count__reset】を設定してインデントそろえてね。</li>
+  <li>テキストテキスト</li>
+</ul>
+</div>
+  
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>CPでよく使用するリスク用の注釈モジュールは下記ソースで再現できます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="bg-gainsboro pd-10">
+  <ul class="s1-list-notice-a">
+    <li>テキストテキスト</li>
+    <li>テキストテキスト</li>
+  </ul>
+</div>
+</div>
+
+
+<div class="hdg" id="m-list-link">
+  <div class="hdg__bottom">
+    <p>リンクリスト</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>targetが指定されているもの、PDFには自動でアイコンが付与されます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-link-a">
+<li class="s1-list-link-a__item"><a href="#">なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</a></li>
+<li class="s1-list-link-a__item"><a href="#" target="_blank">なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</a></li>
+<li class="s1-list-link-a__item"><a href="#" target="_blank">別窓リンク</a></li>
+<li class="s1-list-link-a__item"><a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20191004.pdf" target="_blank">pdfアイコンリンク</a></li>
+<li class="s1-list-link-a__item"><a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20191004.pdf" target="_blank">なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</a></li>
+<li class="s1-list-link-a__item"><a href="#" target="_blank">動画アイコンリンク<img src="/web/shared/img/icon/link_movie.png" alt="movie" class="s1-list-link__icon-media"></a></li>
+</ul>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>横並びバージョン追加</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-link-a s1-list-link-a--inline">
+<li class="s1-list-link-a__item"><a href="#">なおお留学が儲けては合ううのたから</a></li>
+<li class="s1-list-link-a__item"><a href="#" target="_blank">なおお留学が儲けては合ううのたから</a></li>
+<li class="s1-list-link-a__item"><a href="#" target="_blank">別窓リンク</a></li>
+<li class="s1-list-link-a__item"><a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20191004.pdf" target="_blank">pdfアイコンリンク</a></li>
+<li class="s1-list-link-a__item"><a href="https://www.rakuten-sec.co.jp/web/company/newsrelease/pdf/press20191004.pdf" target="_blank">なおお留学が儲けては合ううのたから</a></li>
+<li class="s1-list-link-a__item"><a href="#" target="_blank">動画アイコンリンク<img src="/web/shared/img/icon/link_movie.png" alt="movie" class="s1-list-link__icon-media"></a></li>
+</ul>
+</div>
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>アンカーリンク</p>
+  </div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>囲み無しアンカーリンク</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-anchor">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲み無しアンカーリンク</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲み無しアンカーリンク</a></li>
+</ul>
+<ul class="s1-list-anchor s1-list-anchor--block">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">縦囲み無しアンカーリンク</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">縦囲み無しアンカーリンク</a></li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-anchor s1-list-anchor--col-2">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みなしアンカーリンク1</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みなしアンカーリンク2囲みなしアンカーリンク2囲みなしアンカーリンク2</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みなしアンカーリンク3</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みなしアンカーリンク4</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みなしアンカーリンク5</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みなしアンカーリンク6</a></li>
+</ul>
+</div>
+
+<div class="hdg" id="m-list-anchor">
+  <div class="hdg__desc">
+    <p>囲みありアンカーリンク</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-anchor s1-list-anchor--wrap">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク</a></li>
+</ul>
+<ul class="s1-list-anchor s1-list-anchor--wrap s1-list-anchor--block">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">縦囲みありアンカーリンク</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">縦囲みありアンカーリンク</a></li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-anchor s1-list-anchor--wrap s1-list-anchor--col-2">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク1</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク2囲みありアンカーリンク2囲みありアンカーリンク2</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク3</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク4</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク5</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク6</a></li>
+</ul>
+</div>
+<div class="module-sample">
+<ul class="s1-list-anchor s1-list-anchor--wrap s1-list-anchor--col-3">
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク1</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク2囲みありアンカーリンク2囲みありアンカーリンク2</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク3</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク4</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク5</a></li>
+  <li class="s1-list-anchor__item"><a href="#" class="s1-list-anchor__element">囲みありアンカーリンク6</a></li>
+</ul>
+</div>
+
+
+</section>
+<!-- ============ リスト ============ -->
+
+
+
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>汎用インラインブロックリスト</p>
+  </div>
+</div>
+
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>バナー等を並べるのに利用します。最初のliにmr-10やmr-20などのユーティリティクラスを利用して間隔は調整します。</p>
+    <p>モディファイア.s1-list-inline-block--center でセンタリング、.s1-list-inline-block--topで上寄せにします。</p>
+    <p>モディファイア.s1-list-inline-block--margin(-half)で14px(7px)の右マージンが自動でliタグに入ります。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-inline-block mb-normal">
+  <li class="mr-10"><a href="#"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.png" alt=""></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.jpg" alt=""></a></li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-inline-block s1-list-inline-block--center s1-list-inline-block--margin mb-normal">
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-buy-01.gif"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-sell-01.gif"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-new-01.gif"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-repayment-01.gif"></a></li>
+</ul>
+<ul class="s1-list-inline-block s1-list-inline-block--center s1-list-inline-block--margin-half mb-normal">
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-buy-01.gif"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-sell-01.gif"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-new-01.gif"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/shared/images/reuters/btn-repayment-01.gif"></a></li>
+</ul>
+</div>
+
+<div class="module-sample">
+<ul class="s1-list-inline-block s1-list-inline-block--top mb-normal">
+  <li class="mr-20"><a href="#"><img src="https://www.rakuten-sec.co.jp/web/images/banners/market_opinion_beginner_benefit/248x248.png" alt="" width="124" height="124"></a></li>
+  <li class="mr-20"><a href="#"><img src="https://www.rakuten-sec.co.jp/web/images/banners/market_opinion_beginner_benefit/248x248.png" alt="" width="148" height="148"></a></li>
+  <li><a href="#"><img src="https://www.rakuten-sec.co.jp/web/images/banners/market_opinion_beginner_benefit/248x248.png" alt="" width="172" height="172"></a></li>
+</ul>
+</div>
+
+
+<div class="hdg" id="m-list-define">
+  <div class="hdg__bottom">
+    <p>定義リスト</p>
+  </div>
+</div>
+
+
+<!--<div class="hdg">
+  <div class="hdg__desc">
+    <p>バナー等を並べるのに利用します。最初のliにmr-10やmr-20などのユーティリティクラスを利用して間隔は調整します。</p>
+    <p>モディファイア.s1-list-inline-block--center でセンタリング、.s1-list-inline-block--topで上寄せにします。</p>
+  </div>
+</div>-->
+
+<div class="module-sample">
+<dl class="s1-list-define">
+  <dt>定義語定義語</dt>
+  <dd>説明テキスト説明テキスト</dd>
+  <dt>定義語定義語</dt>
+  <dd>説明テキスト説明テキスト</dd>
+  <dt>定義語定義語</dt>
+  <dd>説明テキスト説明テキスト</dd>
+</dl>
+</div>
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

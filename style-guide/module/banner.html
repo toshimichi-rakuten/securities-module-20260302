@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+  
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+  
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>バナーボックス</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+<div class="s1-content-area">
+  <div class="s1-content-area__container">
+
+    <div class="s1-content-area__main">
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">バナーボックス</h1>
+</div>
+
+<!-- ============ リスト ============ -->
+
+
+<div class="hdg">
+  <div class="hdg__bottom">
+    <p>汎用バナーボックス</p>
+  </div>
+  <div class="hdg__desc">
+    <p>/module/_contents.scss</p>
+  </div>
+</div>
+
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>バナー等を並べるのに利用します。横に2枚並べる場合、liにmr-10やmr-20などのユーティリティクラスを利用して間隔を調整します。</p>
+    <p>モディファイア.s1-box-banner__list--center でセンタリング、.s1-box-banner__list--topで上寄せにします。</p>
+  </div>
+</div>
+
+<p class="s1-entitle">テキストリンク有</p>
+
+<div class="module-sample">
+<div class="s1-box-banner mb-normal">
+  <ul class="s1-box-banner__list s1-box-banner__list--center s1-box-banner__list--top">
+    <li class="mr-10"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.png" alt=""></a><br>
+    <a href="#" onclick="s.lidTrack('XXXXX');">2016 楽天証券ETFカンファレンス</a></li>
+    <li><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.jpg" alt=""></a><br>
+    <a href="#" onclick="s.lidTrack('XXXXX');">アメリカ大統領選特集</a></li>
+  </ul>
+</div>
+</div>
+
+
+<p class="s1-entitle">テキストリンク無</p>
+
+<div class="module-sample">
+<div class="s1-box-banner mb-normal">
+  <ul class="s1-box-banner__list s1-box-banner__list--center s1-box-banner__list--top">
+    <li class="mr-10"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.png" alt=""></a></li>
+    <li><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.jpg" alt=""></a></li>
+  </ul>
+</div>
+</div>
+
+
+<p class="s1-entitle">補助文言有</p>
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>文言を添える場合、汎用テキストコンテナs1-box-sectionを利用します。幅をユーティリティクラスで調整してください。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-banner mb-normal">
+  <ul class="s1-box-banner__list s1-box-banner__list--top">
+    <li class="mr-20"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_us_presidential_election2016/360x70.png" alt=""></a></li>
+    <li>
+      <div class="s1-box-section wd-350">
+        <p class="mb-0">本イベントでは、マーケット環境やＥＴＦに精通する講師の方々をお迎えし、現在の市場環境とＥＴＦの活用方法を語っていただきます。</p>
+        <ul class="s1-list-link">
+          <li class="s1-list-link__item"><a href="">楽天証券ETFカンファレンスのご案内</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<p class="s1-entitle">4連</p>
+
+<div class="module-sample">
+<div class="s1-box-banner mb-normal">
+  <ul class="s1-box-banner__list s1-box-banner__list--center s1-box-banner__list--top">
+    <li class="mr-10"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_individual-jgb-02/175x50.png" alt=""></a></li>
+    <li class="mr-10"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_hybrid_bond/175x50.gif" alt=""></a></li>
+    <li class="mr-10"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/sp_individual-jgb-02/175x50.png" alt=""></a></li>
+    <li><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/info20150427-01/175x50.png" alt=""></a></li>
+  </ul>
+</div>
+</div>
+
+<p class="s1-entitle">テキストリンク有</p>
+
+<div class="module-sample">
+<div class="s1-box-banner">
+  <ul class="s1-box-banner__list s1-box-banner__list--center">
+    <li><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/fop_option_guide/525x90.png" alt=""></a><br>
+    <a href="#" onclick="s.lidTrack('XXXXX');">はじめてのオプション取引</a></li>
+  </ul>
+</div>
+</div>
+
+<p class="s1-entitle">縦に2枚</p>
+<div class="module-sample">
+<div class="s1-box-banner">
+    <ul class="s1-box-banner__list s1-box-banner__list--center">
+    <li class="mb-10"><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/fop_option_guide/525x90.png" alt=""></a></li>
+    <li><a href="#" onclick="s.lidTrack('XXXXX');"><img src="https://www.rakuten-sec.co.jp/web/images/banners/cp_refund_prog/525x90.png" alt=""></a></li>
+  </ul>
+</div>
+</div>
+
+
+
+
+
+
+<!-- ============ リスト ============ -->
+
+
+
+
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

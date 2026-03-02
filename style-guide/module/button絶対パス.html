@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+
+  <!-- ★★★ 自動パス変換ロジック ★★★ -->
+  <script>
+    // 本番サーバーのベースURL
+    const PRODUCTION_BASE_URL = 'https://www.rakuten-sec.co.jp';
+
+    // ページ読み込み前に実行（即座にCSSパスを変換）
+    (function() {
+      console.log('🔧 パス変換ロジック起動');
+
+      // DOMContentLoaded前でも動くように、即座に処理
+      function convertPaths() {
+        // すべてのlinkタグ(CSS)を取得
+        const links = document.querySelectorAll('link[rel="stylesheet"]');
+        links.forEach(function(link) {
+          const href = link.getAttribute('href');
+
+          // 絶対パス(/で始まる)の場合、本番URLに変換
+          if (href && href.startsWith('/') && !href.startsWith('//')) {
+            const newHref = PRODUCTION_BASE_URL + href;
+            link.setAttribute('href', newHref);
+            console.log('✅ CSS変換: ' + href + ' → ' + newHref);
+          }
+        });
+
+        // すべてのimgタグを取得
+        const images = document.querySelectorAll('img');
+        images.forEach(function(img) {
+          const src = img.getAttribute('src');
+
+          // 絶対パス(/で始まる)の場合、本番URLに変換
+          if (src && src.startsWith('/') && !src.startsWith('//')) {
+            const newSrc = PRODUCTION_BASE_URL + src;
+            img.setAttribute('src', newSrc);
+            console.log('✅ 画像変換: ' + src + ' → ' + newSrc);
+          }
+        });
+
+        console.log('🎉 パス変換完了!');
+      }
+
+      // ページ読み込み時とDOM変更時に実行
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', convertPaths);
+      } else {
+        convertPaths();
+      }
+
+      // 動的に追加される要素も監視
+      const observer = new MutationObserver(convertPaths);
+      observer.observe(document.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    })();
+  </script>
+
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+
+  <style>
+    /* デバッグ用バナー */
+    body::before {
+      content: "🚀 自動パス変換モード | 絶対パスを https://www.rakuten-sec.co.jp に自動変換中";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 8px 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      z-index: 10000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    body {
+      padding-top: 40px;
+    }
+  </style>
+
+  </head>
+  <body>
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>ボタン</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+<div class="s1-content-area">
+  <div class="s1-content-area__container">
+
+    <div class="s1-content-area__main">
+      <div class="s1-hdg-lv1">
+        <h1 class="s1-hdg-lv1__element">ボタン</h1>
+      </div>
+
+      <ul class="s1-list-anchor s1-list-anchor--wrap">
+        <li class="s1-list-anchor__item"><a href="#skip1" class="s1-list-anchor__element">ボタンモジュール1</a></li>
+        <li class="s1-list-anchor__item"><a href="#skip2" class="s1-list-anchor__element">ボタンモジュール2</a></li>
+        <li class="s1-list-anchor__item"><a href="#skip3" class="s1-list-anchor__element">コンバージョンボタングループ</a></li>
+        <li class="s1-list-anchor__item"><a href="#skip4" class="s1-list-anchor__element">フォーム</a></li>
+        <li class="s1-list-anchor__item"><a href="#skip5" class="s1-list-anchor__element">CXボタンモジュール</a></li>
+        <li class="s1-list-anchor__item"><a href="#skip6" class="s1-list-anchor__element">投信ボタンモジュール</a></li>
+      </ul>
+
+      <section class="mb-tripple">
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom" id="skip1">
+            <p>ボタンモジュール1</p>
+          </div>
+          <div class="hdg__desc">
+            <p>/module/_list.scss, /module/_button.scss</p>
+          </div>
+        </div>
+
+        <div class="hdg module-comment">
+          <div class="hdg__desc">
+            <p>サブ口座開設やコンバージョンに使われるボタンモジュール。ペンのwebフォントは&amp;#xf10a; </p>
+            <p>このモジュールは他のブロックに含めて利用する事を想定しているので、上下左右のマージンを持たず、幅は100％の中央揃えで作っています。</p>
+            <p>上下マージンに関しては<a href="/style-guide/module/">ユーティリティクラス</a>を利用、幅に関しては後述するもディファイアを利用、もしくはこのモジュールを梱包するブロックにて指定してください。</p>
+          </div>
+        </div>
+        
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>口座開設ボタン</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-account-open">
+  <a href="javascript:;"><i class="s-glyph">&#xf10a;</i>&nbsp;口座申込</a>
+</div>
+</div>
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>サブアカウントボタン</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-account-sub">
+  <a href="javascript:;"><i class="s-glyph">&#xf10a;</i>&nbsp;NISA口座申込</a>
+</div>
+</div>
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>楽天会員</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-account-rakuten">
+  <a href="javascript:;">楽天会員の方はこちら</a>
+</div>
+</div>
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>汎用ボタンその1</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-general01">
+  <a href="javascript:;">楽天FXログイン</a>
+</div>
+</div>
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>汎用ボタンその2</p>
+          </div>
+        </div>
+
+
+<div class="module-sample">
+<div class="s1-btn-general02">
+  <a href="javascript:;"><i class="s-glyph">&#xf10a;</i>&nbsp;未成年口座申込</a>
+</div>
+</div>
+        
+<!--        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>boで追加口座開設ボタン</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-account-open02">
+  <a href="javascript:;"><i class="s-glyph">&#xf10a;</i>&nbsp;口座申込</a>
+</div>
+</div>
+        
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>boで追加サブアカウントボタン</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-account-sub02">
+  <a href="javascript:;"><i class="s-glyph">&#xf10a;</i>&nbsp;FX専用口座開設</a>
+</div>
+</div>-->
+        
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>FXで追加サブアカウントボタン</p>
+          </div>
+        </div>
+        
+<div class="module-sample">
+<div class="s1-btn-account-sub03">
+  <a href="javascript:;">FX専用口座開設</a>
+</div>
+</div>
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>.s1-btn-general--narrow　幅182px、高さ50pxでフォントサイズは標準（14px）</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-general01 s1-btn-general--narrow">
+  <a href="javascript:;">楽天FXログイン</a>
+</div>
+</div>
+        
+
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>.s1-btn-general--normal　幅270px、高さ50pxでフォントサイズは標準（14px）</p>
+          </div>
+        </div>
+        
+
+<div class="module-sample">
+<div class="s1-btn-general01 s1-btn-general--normal">
+  <a href="javascript:;">楽天FXログイン</a>
+</div>
+</div>
+        
+
+
+        <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>.s1-btn-general--wide　　幅500px、高さ60pxでフォントサイズは18px</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-general01 s1-btn-general--wide">
+  <a href="javascript:;">楽天FXログイン</a>
+</div>
+</div>
+        
+         <div class="hdg module-title">
+          <div class="hdg__bottom">
+            <p>CPエントリーボタン（2019年9月以降実装予定）</p>
+          </div>
+        </div>
+
+<div class="module-sample">
+<div class="s1-btn-cp-entry s1-btn-general--wide">
+  <a href="javascript:;">キャンペーンのエントリーはこちら</a>
+</div>
+</div>  
+        
+</section>
+
+<section class="mb-tripple">
+<div class="hdg module-title" id="skip2">
+  <div class="hdg__bottom">
+    <p>ボタンモジュール2</p>
+  </div>
+
+  <div class="hdg__desc">
+    <p>/module/_list.scss, /module/_button.scss</p>
+  </div>
+</div>
+<div class="hdg module-comment">
+  <div class="hdg__desc">
+    <p>汎用的なゴーストボタンモジュール。</p>
+    <p>このモジュールは他のブロックに含めて利用する事を想定しているので、上下左右のマージンを持たず、幅は100％の中央揃えで作っています。</p>
+    <p>上下マージンに関しては<a href="/style-guide/module/">ユーティリティクラス</a>を利用、幅に関しては後述するもディファイアを利用、もしくはこのモジュールを梱包するブロックにて指定してください。</p>
+  </div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>プレーンなベーシックパターン</p>
+  </div>
+</div>
+<div class="module-sample">
+<div class="s1-btn-hollow01 mb-normal">
+  <a href="javascript:;">XXXXX</a>
+</div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>右側に矢印付与のパターン</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01">
+  <a href="javascript:;">XXXXX<span class="s1-btn-hollow01__arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>アイコンフォントを利用したパターン</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01">
+  <a href="javascript:;"><i class="s-glyph s1-btn-hollow01__glyph">&#xf117;</i>&nbsp;XXXXX</a>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01">
+  <a href="javascript:;"><i class="s-glyph s1-btn-hollow01__glyph">&#xf10b;</i>&nbsp;XXXXX</a>
+</div>
+</div>
+
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>.s1-btn-hollow--narrow　幅182px、高さ40pxでフォントサイズは標準（14px）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01 s1-btn-hollow--narrow">
+  <a href="javascript:;">XXXXX<span class="s1-btn-hollow01__arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>.s1-btn-hollow--normal　幅270px、高さ40pxでフォントサイズは標準（14px）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01 s1-btn-hollow--normal">
+  <a href="javascript:;">XXXXX<span class="s1-btn-hollow01__arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>.s1-btn-hollow--medium　幅360px、高さ40pxでフォントサイズは標準（14px）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01 s1-btn-hollow--medium">
+  <a href="javascript:;">XXXXX<span class="s1-btn-hollow01__arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>.s1-btn-hollow--wide　幅500px、高さ40pxでフォントサイズは標準（14px）</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01 s1-btn-hollow--wide">
+  <a href="javascript:;">XXXXX<span class="s1-btn-hollow01__arrow">&nbsp;&gt;</span></a>
+</div>
+</div>
+</section>
+
+
+<section class="mb-tripple" id="skip3">
+      <div class="hdg module-title">
+        <div class="hdg__bottom">
+          <p>コンバージョンボタングループ</p>
+        </div>
+        <div class="hdg__desc">
+          <p>/module/_button.scss, /module/_contents.scss</p>
+        </div>
+      </div>
+
+      <div class="hdg module-comment">
+        <div class="hdg__desc">
+          <p>コンバージョンボタンはインクルードファイルを利用してください。</p>
+        </div>
+      </div>
+      <p class="s1-entitle">ベースコンバージョンボタングループ　インクルード</p>
+<pre><code>&lt;!--#include virtual=&quot;/web/shared/include/btn-entry/s1-incontents_siryoseikyubutton.html&quot;--&gt;</code></pre>
+
+<div style="margin:28px 0;">
+<p style="text-align:center;"><a href="/web/account/"><img src="/web/shared/images/button/btn-account-entry-01.png" onMouseOver="this.src='/web/shared/images/button/btn-account-entry-01_h.png'" onMouseOut="this.src='/web/shared/images/button/btn-account-entry-01.png'" alt=""></a></p>
+</div>
+
+
+      <p class="s1-entitle">商品先物　インクルードファイル</p>
+
+      <pre><code>&lt;!--#include virtual=&quot;/web/shared/include/btn-entry/commodity.html&quot;--&gt;</code></pre>
+
+
+<div class="s1-box-conversion mb-triple">
+  <p class="s1-box-conversion__hdg"><span class="s1-box-conversion__label">無料</span>商品先物取引をはじめるには、口座開設が必要です</p>
+  <ul class="s1-box-conversion__list-btn">
+    <li class="s1-box-conversion__item-btn">
+      <div class="s1-btn-account-sub">
+        <a href="https://www.rakuten-sec.co.jp/cgi-bin/CTS/Direct_Login.cgi?homeid=USER&type=account&sub_type=&local=acc_app_top&eventType=init">国内商品先物口座開設<br>
+        <span class="fs-xs">（証券総合口座ログイン）</span></a>
+      </div>
+    </li>
+    <li class="s1-box-conversion__item-btn">
+      <div class="s1-btn-general01">
+        <a href="https://www.rakuten-sec.co.jp/MarketSpeedCX/login.html">国内商品先物専用取引ツール<br>
+        <span class="fs-xs">マーケットスピードCXへログイン</span></a>
+      </div>
+    </li>
+  </ul>
+  <ul class="s1-box-conversion__list-txt">
+    <li class="s1-box-conversion__item-txt">※証券総合取引口座をお持ちであることが必要です。</li>
+    <li class="s1-box-conversion__item-txt">※ログインには国内商品先物専用のログイン情報<br>
+      （ユーザーID・パスワード）が必要です。</li>
+  </ul>
+</div>
+
+
+
+<div class="hdg module-comment">
+  <div class="hdg__desc">
+    <p>ボタンがひとつの場合、ul.s1-box-conversion__listの代わりにdiv.s1-box-conversion__wrap-btnを利用します。下部の注釈テキストもdiv.s1-box-conversion__wrap-txtを利用します。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-box-conversion mb-normal">
+  <p class="s1-box-conversion__hdg"><span class="s1-box-conversion__label">無料</span>今すぐ口座開設</p>
+  <div class="s1-box-conversion__wrap-btn">
+    <div class="s1-btn-account-rakuten">
+      <a href="https://www.rakuten-sec.co.jp/web/account/"><i class="s-glyph">&#xf10a;</i>&nbsp;口座開設はこちら</a>
+    </div>
+  </div>
+  <div class="s1-box-conversion__wrap-txt ta-c">
+    注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈注釈
+  </div>
+</div>
+</div>
+
+<div class="hdg module-comment">
+  <div class="hdg__desc">
+    <p>.s1-box-mediaや.s1-box-sectionと組み合わせて下記のようなモジュールも作れます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="clearfix mb-normal">
+  <div class="s1-box-media s1-box-media--right">
+    <div class="s1-btn-account-rakuten s1-btn-general--normal mb-normal">
+        <a href="">Button01</a>
+    </div>
+    <div class="s1-btn-general01 s1-btn-general--normal">
+        <a href="">Button01</a>
+    </div>
+  </div>
+  <div class="s1-box-section">
+    <p>楽天会員でご登録いただいているお客様情報を元に資料請求できるので、カンタンにお手続きできます楽天会員でご登録いただいているお客様情報を元に資料請求できるので、カンタンにお手続きできます</p>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+<!--検索フォーム-->
+<section class="mb-tripple" id="skip4">
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>検索フォーム</p>
+  </div>
+  <div class="hdg__desc">
+  <p>/module/_content.scss</p>
+  </div>
+</div>
+
+<div class="hdg module-comment">
+  <div class="hdg__desc">
+    <p>見出しと組み合わせたり、単独で使ったり。虫眼鏡マークは&amp;#xf108;</p>
+  </div>
+</div>
+
+
+<div class="box-section">
+<div class="module-sample">
+
+<div class="s1-hdg-lv1">
+<h1 class="s1-hdg-lv1__element">見出し1</h1>
+<form class="s1-hdg-lv1__form s1-search">
+<fieldset>
+<input type="hidden" name="stoc-type" value="0" />
+<input class="s1-search__input input-search-stock-cont" type="text" name="name" placeholder="銘柄名／コード" />
+<button class="s1-search__btn submit-search-stoc-btn-cont" type="submit" ><i class="s-glyph">&#xf108;</i></button>
+</fieldset>
+</form>
+</div>
+</div>
+
+<div class="module-sample">
+<form class="s1-search">
+<fieldset>
+<input type="hidden" name="stoc-type" value="0" />
+<input class="s1-search__input" type="text" name="name" placeholder="銘柄名／コード" />
+<button class="s1-search__btn" type="submit" ><i class="s-glyph">&#xf108;</i></button>
+</fieldset>
+</form>
+
+</div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+
+<form class="s1-search s1-search--small">
+<fieldset>
+<input type="hidden" name="stoc-type" value="0" />
+<input class="s1-search__input" type="text" name="name" placeholder="銘柄名／コード" />
+<button class="s1-search__btn" type="submit" ><i class="s-glyph">&#xf108;</i></button>
+</fieldset>
+</form>
+
+</div>
+</div>
+
+</section>
+<!--/検索フォーム-->
+
+<!--CXボタンモジュール-->
+<section class="mb-tripple" id="skip5">
+  <div class="hdg module-title">
+    <div class="hdg__bottom">
+      <p>CXボタンモジュール</p>
+    </div>
+    <div class="hdg__desc">
+    <p>/module/_button.scss</p>
+    </div>
+  </div>
+
+  <div class="hdg module-comment">
+    <div class="hdg__desc">
+      <p>CXがデザインしたrexボタンの主要なやつ。基本的には上記のボタンモジュールを使い、共通パーツなどでこちらを使うイメージ。</p>
+    </div>
+  </div>
+  
+  <div class="hdg module-title">
+    <div class="hdg__bottom">
+      <p>CXボタンモジュール1</p>
+    </div>
+  </div>
+  
+<div class="module-sample">
+<div class="s1-btn-cxgeneral01">
+  <a href="javascript:;">FX取引口座のお申し込みはこちら</a>
+</div>
+</div>
+  
+  <div class="hdg module-title">
+    <div class="hdg__bottom">
+      <p>CXボタンモジュール2</p>
+    </div>
+  </div>
+
+<div class="module-sample">
+<div class="s1-btn-cxgeneral02">
+  <a href="javascript:;">FX取引口座のお申し込みはこちら</a>
+</div>
+</div>
+    
+    <div class="hdg module-title">
+      <div class="hdg__bottom">
+        <p>CXボタンモジュール 非活性</p>
+      </div>
+    </div>
+    
+<div class="module-sample">
+<div class="s1-btn-cxgeneral-disable">
+  <a href="javascript:;">FX取引口座のお申し込みはこちら</a>
+</div>
+</div>
+  
+  <div class="hdg module-title">
+    <div class="hdg__bottom">
+      <p>s1-btn-cxgeneral--free　横幅自動</p>
+    </div>
+  </div>
+
+<div class="module-sample">
+<div class="s1-btn-cxgeneral01 s1-btn-cxgeneral--free ta-c">
+  <a href="javascript:;">FX取引口座のお申し込みはこちら</a>
+</div>
+</div>
+
+<div class="hdg module-title">
+  <div class="hdg__bottom">
+    <p>s1-btn-cxgeneral narrow,normal,medium,wide</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-cxgeneral01 s1-btn-cxgeneral--narrow">
+  <a href="javascript:;">narrowはこちら</a>
+</div>
+<br>
+<div class="s1-btn-cxgeneral02 s1-btn-cxgeneral--normal">
+  <a href="javascript:;">normalはこちら</a>
+</div>
+<br>
+<div class="s1-btn-cxgeneral-disable s1-btn-cxgeneral--medium">
+  <a href="javascript:;">mediumはこちら</a>
+</div>
+<br>
+<div class="s1-btn-cxgeneral01 s1-btn-cxgeneral--wide">
+  <a href="javascript:;">wideはこちら</a>
+</div>
+</div>
+
+  
+  
+</section>
+<!--/CXボタンモジュール-->
+      
+      
+<!--投信ボタンモジュール-->
+<section class="mb-tripple" id="skip6">
+  <div class="hdg module-title">
+    <div class="hdg__bottom">
+      <p>投信ボタンモジュール</p>
+    </div>
+    <div class="hdg__desc">
+    <p>/module/_button.scss</p>
+    </div>
+  </div>
+
+  <div class="hdg module-comment">
+    <div class="hdg__desc">
+      <p>投信の特集等で使用。</p>
+    </div>
+  </div>
+  
+<div class="module-sample">
+<div class="mb-normal">        
+  <div class="s1-btn-buy s1-btn-buy--82">
+    <a href="javascript:;">購入</a>
+  </div>
+</div>
+        
+<div class="mb-normal">        
+  <div class="s1-btn-tsumitate s1-btn-tsumitate--82">
+    <a href="javascript:;"><span>積立設定</span> NISAつみたて投資枠</a>
+  </div>
+</div>
+
+<div class="mb-normal">        
+  <div class="s1-btn-buy">
+    <a href="javascript:;">購入</a>
+  </div>
+</div>
+
+<div class="mb-normal">        
+  <div class="s1-btn-tsumitate">
+    <a href="javascript:;"><span>積立設定</span> NISAつみたて投資枠</a>
+  </div>
+</div>
+</div>
+  
+  <div class="hdg module-comment">
+    <div class="hdg__desc">
+      <p>カラムで使用する場合はmatchHeightと併用して、高さをそろえてください。</p>
+      <p>※ 下のsampleソースコード内の【style="height: XXXXpx;"】は、jqueryで自動出力されるものなので、コピペ後削除してください</p>
+      <p>※ ボタンの左右マージンは、<a href="/style-guide/module/container.html">グリッドモジュール</a>で調整可能です</p>
+      <p>※ ボタンの文字サイズを一回り小さくする場合は、fs-s を追記で 86% 表示にできます　例：class="matchHeight fs-s"</p>
+    </div>
+  </div>
+  
+<div class="module-sample">
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-2">
+    <div class="s1-btn-buy">
+      <a href="javascript:;">購入</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-2">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;">積立設定</a>
+    </div>
+  </div>
+</div>
+
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-2">
+    <div class="s1-btn-buy">
+      <a href="javascript:;" class="matchHeight">購入</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-2">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>NISAつみたて投資枠</a>
+    </div>
+  </div>
+</div>
+
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-3">
+    <div class="s1-btn-buy">
+      <a href="javascript:;" class="matchHeight">購入</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>NISA成長投資枠</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-3">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>特定口座 / 一般口座</a>
+    </div>
+  </div>
+</div>
+
+<div class="s1-grid mb-normal">
+  <div class="s1-grid__cell-1-4">
+    <div class="s1-btn-buy">
+      <a href="javascript:;" class="matchHeight">購入</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-4">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>NISAつみたて投資枠</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-4">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>NISA成長投資枠</a>
+    </div>
+  </div>
+  <div class="s1-grid__cell-1-4">
+    <div class="s1-btn-tsumitate">
+      <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>特定口座 / 一般口座</a>
+    </div>
+  </div>
+</div>
+
+<div class="s1-box mb-normal">
+  <div class="s1-grid">
+    <div class="s1-grid__cell--thin-1-4">
+      <div class="s1-btn-buy">
+        <a href="javascript:;" class="matchHeight">購入</a>
+      </div>
+    </div>
+    <div class="s1-grid__cell--thin-1-4">
+      <div class="s1-btn-tsumitate">
+        <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>NISAつみたて投資枠</a>
+      </div>
+    </div>
+    <div class="s1-grid__cell--thin-1-4">
+      <div class="s1-btn-tsumitate">
+        <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>NISA成長投資枠</a>
+      </div>
+    </div>
+    <div class="s1-grid__cell--thin-1-4">
+      <div class="s1-btn-tsumitate">
+        <a href="javascript:;" class="matchHeight"><span class="s1-btn-tsumitate__br">積立設定</span>特定口座 / 一般口座</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+  
+  
+</section>
+<!--/投信ボタンモジュール-->
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

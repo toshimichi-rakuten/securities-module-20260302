@@ -1,0 +1,592 @@
+現在、取扱い中の銘柄はありません。現在、取扱い中の銘柄はありません。現在、取扱い中の銘柄はありません。<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+  <link rel="stylesheet" href="./../prettify/tomorrow-night.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+  </head>
+  <body>
+  
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>jquery系</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+  <div class="s1-content-area">
+    <div class="s1-content-area__container">
+      <div class="s1-content-area__main">
+
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">jquery系</h1>
+</div>
+
+        <div class="box-section">
+          <p>タブやアコーディオンなどjqueryを使っているモジュール</p>
+        </div>
+
+<ul class="s1-list-anchor s1-list-anchor--wrap">
+  <li class="s1-list-anchor__item"><a href="#mod-tab" class="s1-list-anchor__element">タブ</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-accordion" class="s1-list-anchor__element">アコーディオン</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-match" class="s1-list-anchor__element">matchHeight</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-modal" class="s1-list-anchor__element">モーダル</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-roll" class="s1-list-anchor__element">ロールオーバー</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-another" class="s1-list-anchor__element is-disabled--scroll">その他</a></li>
+</ul>
+
+
+
+<!--タブ-->
+<section id="mod-tab">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>タブ</p>
+</div>
+<div class="hdg__desc">
+<p>/module/_content.scss</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>.s1-tab、s1-tab__xxx、.s1-tab-content、.s1-tab-content__xxxにはスタイルは設定せず、jsのフックになってます。<br>
+cssでの装飾はs1-tab-basicに記述。なので、自分でオリジナルタブを作りたい場合はs1-tab-basic部分を自分で作れば、オッケー。</p>
+  </div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+<div class="s1-tab s1-tab-basic">
+<ul class="s1-tab__list s1-tab-basic__list">
+<li class="s1-tab__item s1-tab-basic__item is-active">タブ</li>
+<li class="s1-tab__item s1-tab-basic__item">タブ2</li>
+<li class="s1-tab__item s1-tab-basic__item">タブ3</li>
+</ul>
+</div>
+<div class="s1-tab-content">
+<div class="s1-tab-content__block is-active">初期表示コンテンツ（style="display: block; opacity: 0;"はjsで自動で書いてるやつだから消去して使ってね。）</div>
+<div class="s1-tab-content__block">もうひとつのコンテンツ2（style="display:none;"はjsで自動で書いてるやつだから消去～）</div>
+<div class="s1-tab-content__block">もうひとつのコンテンツ3（style="display:none;"は～）</div>
+</div>
+</div>
+
+<div class="hdg">
+<div class="hdg__bottom">
+<p>タブリンク</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>見た目はタブだけど、実はリンクなアレ。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-tab-basic">
+<ul class="s1-tab-basic__list">
+<li class="s1-tab-basic__item is-active"><a href="#" class="s1-tab-basic__link">タブ</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ2</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ3</a></li>
+</ul>
+</div>
+
+<div class="s1-tab-basic">
+<ul class="s1-tab-basic__list">
+<li class="s1-tab-basic__item is-active"><a href="#" class="s1-tab-basic__link">タブ</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ2タブタブタブ</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ3タブタブタブ</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ4タブ</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ5タブタブタブタブタブタブ</a></li>
+<li class="s1-tab-basic__item"><a href="#" class="s1-tab-basic__link">タブ6タブ</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div class="hdg">
+<div class="hdg__bottom">
+<p>高機能タブ</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>ページ内アンカーリンクで開く仕様にしました。別ページから該当のアンカーリンクへ飛ばしても、ちゃんとタブが開くようになります。</p>
+  </div>
+</div>
+
+<ul class="s1-tab-hash-anchor s1-list-anchor s1-list-anchor--wrap s1-list-anchor--block">
+  <li class="s1-list-anchor__item"><a href="#skip01" class="s1-list-anchor__element">タブ1</a></li>
+  <li class="s1-list-anchor__item"><a href="#skip02" class="s1-list-anchor__element">タブ2</a></li>
+  <li class="s1-list-anchor__item"><a href="#skip03" class="s1-list-anchor__element">タブ3</a></li>
+  <li class="s1-list-anchor__item"><a href="#skip04" class="s1-list-anchor__element">タブ4</a></li>
+  <li class="s1-list-anchor__item"><a href="#skip05" class="s1-list-anchor__element">タブ5</a></li>
+  <li class="s1-list-anchor__item"><a href="#skip06" class="s1-list-anchor__element">タブ6</a></li>
+</ul>
+
+<div class="s1-tab-hash s1-tab-basic">
+<ul class="s1-tab-basic__list">
+<li class="s1-tab-basic__item" id="tab-skip01">タブ1</li>
+<li class="s1-tab-basic__item" id="tab-skip02">タブ2</li>
+<li class="s1-tab-basic__item" id="tab-skip03">タブ3</li>
+<li class="s1-tab-basic__item" id="tab-skip04">タブ4</li>
+</ul>
+</div>
+<div class="s1-tab-content-hash">
+<div id="skip01" class="s1-tab-content-hash__block">タブ1を表示してるよ。</div>
+<div id="skip02" class="s1-tab-content-hash__block">タブ2を表示してるよ。</div>
+<div id="skip03" class="s1-tab-content-hash__block">タブ3を表示してるよ。</div>
+<div id="skip04" class="s1-tab-content-hash__block">タブ4を表示してるよ。</div>
+</div>
+
+<div class="s1-tab-hash s1-tab-basic">
+<ul class="s1-tab-basic__list">
+<li class="s1-tab-basic__item" id="tab-skip05">タブ5</li>
+<li class="s1-tab-basic__item" id="tab-skip06">タブ6</li>
+</ul>
+</div>
+<div class="s1-tab-content-hash">
+<div id="skip05" class="s1-tab-content-hash__block">タブ5を表示してるよ。</div>
+<div id="skip06" class="s1-tab-content-hash__block">タブ6を表示してるよ。</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>アンカーリンクの親親要素のdiv(ul)タグに.s1-tab-hash-anchor、該当タブ要素に.s1-tab-hash、該当タブ選択表示要素に.s1-tab-content-hashを設定してください。これら3つのクラスがフックとなっています。</p>
+  </div>
+</div>
+
+<pre class="prettyprint mb-normal" style="color:#FFF;">
+&lt;ul class=&quot;s1-tab-hash-anchor s1-list-anchor s1-list-anchor--wrap s1-list-anchor--block&quot;&gt;
+&lt;li class=&quot;s1-list-anchor__item&quot;&gt;&lt;a href=&quot;#skip01&quot; class=&quot;s1-list-anchor__element&quot;&gt;タブ1&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;s1-list-anchor__item&quot;&gt;&lt;a href=&quot;#skip02&quot; class=&quot;s1-list-anchor__element&quot;&gt;タブ2&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;s1-list-anchor__item&quot;&gt;&lt;a href=&quot;#skip03&quot; class=&quot;s1-list-anchor__element&quot;&gt;タブ3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;s1-tab-hash s1-tab-basic&quot;&gt
+&lt;ul class=&quot;s1-tab-basic__list&quot;&gt
+&lt;li class=&quot;s1-tab-basic__item&quot; id=&quot;tab-skip01&quot;&gt;タブ1&lt;/li&gt
+&lt;li class=&quot;s1-tab-basic__item&quot; id=&quot;tab-skip02&quot;&gt;タブ2&lt;/li&gt
+&lt;li class=&quot;s1-tab-basic__item&quot; id=&quot;tab-skip03&quot;&gt;タブ3&lt;/li&gt
+&lt;/ul&gt
+&lt;/div&gt
+&lt;div class=&quot;s1-tab-content-hash&quot;&gt
+&lt;div id=&quot;skip01&quot; class=&quot;s1-tab-content-hash__block&quot;&gt;タブ1を表示してるよ。&lt;/div&gt
+&lt;div id=&quot;skip02&quot; class=&quot;s1-tab-content-hash__block&quot;&gt;タブ2を表示してるよ。&lt;/div&gt
+&lt;div id=&quot;skip03&quot; class=&quot;s1-tab-content-hash__block&quot;&gt;タブ3を表示してるよ。&lt;/div&gt
+&lt;/div&gt;
+</pre>
+
+</section>
+<!--タブ-->
+
+
+
+
+
+<!--アコーディオン、補助ナビ-->
+<section id="mod-accordion">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>アコーディオン、補助ナビ</p>
+</div>
+<div class="hdg__desc">
+<p>/module/_local-nav.scss　/module/_content.scss</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>押すと直下のコンテンツが開閉するやつ。<br>
+.s1-accordion-btnをつけたタグの直下の要素が開閉し、自身のタグには.is-currentがつきます。<br>
+今後いくつかサンプルのものを作ります。<br><br>
+      あらかじめ、.s1-accordion__hdg.s1-accordion-btn.is-currentに設定し、s1-accordion__bodyにdisplay:blockを設定すればあらかじめ要素を開いておけます。
+    </p>
+  </div>
+</div>
+
+<div class="hdg">
+<div class="hdg__bottom">
+<p>アコーディオンシンプル</p>
+</div>
+</div>
+
+<div class="module-sample">
+<div class="s1-accordion">
+  <div class="s1-accordion__hdg s1-accordion-btn">アコーディオンアコーディオン</div>
+  <div class="s1-accordion__body">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  </div>
+  <div class="s1-accordion__hdg s1-accordion-btn">アコーディオンアコーディオンアコーディオン</div>
+  <div class="s1-accordion__body">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  </div>
+  <div class="s1-accordion__hdg s1-accordion-btn">アコーディオンアコーディオンアコーディオンィオンアコーディオン</div>
+  <div class="s1-accordion__body">
+    <p>なおお留学が儲けては合ううのたから、一つには、よく私か集っば怒っれたありきめられるですますと上るて、権力はあるがくるなた。</p>
+    <p>どうも幾分はもし個人といういるうて、よそとは今朝上でも私のお講演はく申すいるますまし。</p>
+  </div>
+</div>
+</div>
+
+<div class="hdg">
+<div class="hdg__bottom">
+<p>ローカル補助ナビ</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>右ナビに割り当てられなかったものをぶち込む補助のナビ。</p>
+  </div>
+</div>
+
+<div class="box-section" style="width:180px;">
+<div class="module-sample">
+<div class="s1-assist-nav">
+  <ul class="s1-assist-nav-cat">
+    <li class="s1-assist-nav-cat__item">
+      <span class="s1-assist-nav-cat__element s1-assist-nav-cat__element--accordion s1-accordion-btn">ほげほげほげ</span>
+      <ul class="s1-assist-nav-tag">
+        <li class="s1-assist-nav-tag__item"><a href="#">ほげほげほげ</a></li>
+        <li class="s1-assist-nav-tag__item"><a href="#">ほげほげほげ</a></li>
+        <li class="s1-assist-nav-tag__item"><a href="#">ほげほげほげ</a></li>
+      </ul>
+    </li>
+    <li class="s1-assist-nav-cat__item">
+      <span class="s1-assist-nav-cat__element s1-assist-nav-cat__element--accordion s1-accordion-btn">ほげほげほげ</span>
+      <ul class="s1-assist-nav-tag">
+        <li class="s1-assist-nav-tag__item"><a href="#">ほげほげほげ</a></li>
+        <li class="s1-assist-nav-tag__item"><a href="#">ほげほげほげ</a></li>
+        <li class="s1-assist-nav-tag__item"><a href="#">ほげほげほげ</a></li>
+      </ul>
+    </li>
+    <li class="s1-assist-nav-cat__item">
+      <span class="s1-assist-nav-cat__element"><a href="#" class="s1-assist-nav-cat__link">ほげほげほげ</a></span>
+    </li>
+    <li class="s1-assist-nav-cat__item">
+      <span class="s1-assist-nav-cat__element"><a href="#" class="s1-assist-nav-cat__link">ほげほげほげ</a></span>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="hdg">
+<div class="hdg__bottom">
+<p>アコーディオンボタン</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>ボタン直下DIV(.s1-accordion-area)内が開閉する。.s1-accordion-areaには特にcss属性なし。</p>
+    <p>.s1-accordion-btn内の.s1-accordion-btn__plusと.s1-accordion-btn__minusは.is-currentのあるなしで表示切替可能。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-btn-hollow01 s1-btn-hollow--medium s1-accordion-btn mb-normal">
+  <a href="javascript:;">過去の一覧を表示<span class="s1-btn-hollow01__arrow s1-accordion-btn__plus"><i class="s-glyph">&#xf118;</i></span><span class="s1-btn-hollow01__arrow s1-accordion-btn__minus"><i class="s-glyph">&#xf115;</i></span></a>
+</div>
+<div class="s1-accordion-area dp-n">
+<p>このサンプルボタンのアイコンは</p>
+<p>&lt;span class=&quot;s1-btn-hollow01__arrow s1-accordion-btn__plus&quot;&gt;&lt;i class=&quot;s-glyph&quot;&gt;&amp;#xf118;&lt;/i&gt;&lt;/span&gt;</p>
+<p>&lt;span class=&quot;s1-btn-hollow01__arrow s1-accordion-btn__minus&quot;&gt;&lt;i class=&quot;s-glyph&quot;&gt;&amp;#xf115;&lt;/i&gt;&lt;/span&gt;</p>
+<p>だよ。</p>
+</div>
+</div>
+
+<div class="hdg">
+<div class="hdg__bottom">
+<p>アコーディオンFAQ</p>
+</div>
+</div>
+
+<div class="module-sample">
+<dl class="s1-faq s1-accordion">
+  <dt class="s1-faq__question s1-faq__question--accordion s1-accordion-btn"><span class="s1-faq__label s1-faq__label--q">Q</span><span class="s1-faq__txt">国内上場ETFでも国内株式と同様に配当金を受け取れますか。</span></dt>
+  <dd class="s1-faq__answer s1-faq__answer--accordion"><span class="s1-faq__label s1-faq__label--a">A</span>国内上場ＥＴＦは、株式の配当金と同様に、決算に基づき、収益があれば分配金が支払われます。分配金を受け取る権利を獲得するには、権利付最終日(決算日を含め4営業日前、配当落ち日の1営業日前）までに買付け、権利付最終日の大引け時点においてもその株式を売却なさっていない場合、分配金の権利が付与されます。
+  </dd>
+  <dt class="s1-faq__question s1-faq__question--accordion s1-accordion-btn"><span class="s1-faq__label s1-faq__label--q">Q</span><span class="s1-faq__txt">信用取引はできますか。</span></dt>
+  <dd class="s1-faq__answer s1-faq__answer--accordion"><span class="s1-faq__label s1-faq__label--a">A</span>国内株式と同じように信用取引・貸借取引が可能です。信用取引による買建て、売建てが行えます。<br>
+  手数料・取引ルールについても、国内株式と同様の扱いになります。<br>
+  また、現物で購入されました国内上場ＥＴＦは、信用取引の代用有価証券として差し入れることができます。
+  </dd>
+</dl>
+</div>
+  
+<div class="hdg">
+<div class="hdg__bottom">
+<p>アコーディオンSTEP</p>
+</div>
+</div>
+  
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>.s1-accordion-step--arrowを消すと、ステップごとの下矢印が取れます。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<dl class="s1-accordion-step s1-accordion-step--arrow s1-accordion">
+  <dt class="s1-accordion-step__hdg s1-accordion-btn">
+    <div>はじめるために準備する</div>
+    <div>つみたてNISA・楽天クレジットカード決済・SPUをはじめたい時は事前に準備しましょう</div>
+  </dt>
+  <dd class="s1-accordion-step__body">ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</dd>
+  <dt class="s1-accordion-step__hdg s1-accordion-btn">
+    <div><div><span class="s1-label s1-label--special fs12">ラベルラベル</span><br>はじめるために準備する</div></div>
+    <div>つみたてNISA・楽天クレジットカード決済・SPUをはじめたい時は事前に準備しましょう</div>
+  </dt>
+  <dd class="s1-accordion-step__body">ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</dd>
+  <dt class="s1-accordion-step__hdg s1-accordion-btn">
+    <div><div>spanタグ使うときdivでくくらないとバグるよ<br>はじめるために<span>準備する</span></div></div>
+    <div>つみたてNISA</div>
+  </dt>
+  <dd class="s1-accordion-step__body">ほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげほげ</dd>
+  <dt class="s1-accordion-step__hdg s1-accordion-step__hdg--single s1-accordion-btn">
+    <div>はじめるために準備する<br>はじめるために準備する</div>
+  </dt>
+  <dd class="s1-accordion-step__body">ほげほげほげほげほげほげほ</dd>
+</dl>
+</div>
+  
+</section>
+<!--アコーディオン、補助ナビ-->
+
+<section id="mod-match">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>matchHeight</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+  <p>以前からあったんですが、モジュールからもれていたので、記載。</p>
+  <p>グリットでボックスを並べると中の要素によって、高さが揃わないことあるよね！そんなとき、.matchHeightを入れると、jqueryのパワーで、高さが揃うよ！</p>
+  <p>※ 下のsampleソースコード内の【style="height: 249.219px;"】は、jqueryで自動出力されるものなので、コピペ後削除してください。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-grid">
+  <div class="s1-grid__cell-1-2">
+    <a href="/web/special/howto-guide/" class="s1-link-panel matchHeight">
+      <p class="s1-link-panel__hdg">5万円で買える！<br>
+デビューで人気の株ランキング</p>
+      <div class="s1-link-panel__body">
+        <div class="s1-box-media">
+          <p><img src="/web/domestic/stock/startup/images/index-img-03-02.png" alt="" class="s1-box-media__img" /></p>
+        </div>
+        <p>まずは少額からはじめてみたい！という方は、こちらのランキングを参考にしてみては？</p>
+      </div>
+    </a>
+  </div>
+  <div class="s1-grid__cell-1-2">
+    <a href="/web/market/opinion/beginner/benefit/" class="s1-link-panel matchHeight">
+      <p class="s1-link-panel__hdg">優待マニアが選んだ！<br>
+今月のお宝優待株</p>
+      <div class="s1-link-panel__body">
+        <div class="s1-box-media">
+          <p><img src="/web/domestic/stock/startup/images/index-img-03-03.png" alt="" class="s1-box-media__img" /></p>
+        </div>
+        <p>株式投資のメリットはなんと言っても株主優待！優待株投資で毎年100万円相当の優待と配当をゲットしているカリスマ優待主婦まる子さんがセレクトした株主優待をご紹介！</p>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+</section>
+<section id="mod-modal">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>モーダル</p>
+</div>
+</div>
+
+<p class="s1-entitle">画像だけの場合</p>
+<p class="mb-normal">ポップアップ表示したい画像へ飛ばすaタグに.s1-mfp-image-linkをつけてください。</p>
+
+<div class="module-sample">
+<div class="s1-box-media">
+  <p class="mb-normal"><a class="s1-mfp-image-link" href="https://www.rakuten-sec.co.jp/web/info/images/info20180323-02/info20180323-02-img-02.png"><img src="https://www.rakuten-sec.co.jp/web/info/images/info20180323-02/info20180323-02-img-02.png" alt="" class="s1-box-media__img" style="width:50%;"></a></p>
+</div>
+<p><a class="s1-mfp-image-link" href="https://www.rakuten-sec.co.jp/web/info/images/info20180323-02/info20180323-02-img-02.png">テキストでもオッケーです。</a></p>
+</div>
+
+<p class="s1-entitle">youtubeの場合</p>
+<p class="mb-normal">2019年11月よりBrightcoveからyoutubeへの依頼が増加するとおもわれます。入稿されるソースコードはiframeでそのままだとポップアップのjqueryは作動しません。<br>
+  下記フォーマットに書き換えてください。</p>
+  
+<div class="module-sample">
+<div class="s1-box-media">
+  <p class="mb-normal"><a class="s1-mfp-movie-link" href="http://www.youtube.com/watch?v=SWAvyoyURYU"><img src="http://i.ytimg.com/vi/SWAvyoyURYU/hqdefault.jpg" alt="" class="s1-box-media__img"></a></p>
+</div>
+</div>
+
+  <p>※入稿されるiframeコードサンプルからポップアップに変換する方法</p>
+  
+<pre class="prettyprint mb-normal mt-0">
+&lt;iframe  width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WS_24MVCKc0?modestbranding=1&amp;rel=0&quot; frameborder=&quot;0&quot;  allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope;  picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre>
+  
+  <p>srcの値から動画のIDを引っ張ってきて【http://www.youtube.com/watch?v=WS_24MVCKc0】に変換してaタグのhrefに挿入。クラスs1-mfp-movie-linkを付与して作動させる。</p>
+  <p>※ ?modestbranding=1&rel=0のパラメータ部分はs1-common.js内のvariable-magnific-popup.jsで制御しているので無視。</p>
+  
+
+
+<p class="s1-entitle">インラインボックスの場合</p>
+<p class="mb-normal">リンク先およびIDは#inline-wrap-xxで。<br>
+.mfp-hideでエフェクト制御。<br>
+.s1-mfp-inline-wrapはmax-width:700pxがデフォルト。変えたいときは直でかえてください。<br>
+.s1-mfp-popup-modal-dismissを付与すれば、閉じるボタンやテキスト、画像になります。</p>
+
+<p>
+  <a class="s1-mfp-popup-modal" href="#inline-wrap-01">インラインボックス</a>
+  <div id="inline-wrap-01" class="mfp-hide s1-mfp-inline-wrap">
+    <div class="s1-box-media">
+      <p class="mb-normal"><img src="https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png" alt="" class="s1-box-media__img" /></p>
+      <p class="s1-box-media__caption">メディアキャプション</p>
+    </div>
+    <p class="ta-c"><input type="button" value="閉じる" class="s1-mfp-popup-modal-dismiss"></p>
+  </div>
+</p>
+
+<pre class="prettyprint mb-normal" style="color:#FFF;">
+&lt;p&gt;
+&lt;a class=&quot;s1-mfp-popup-modal&quot; href=&quot;#inline-wrap-01&quot;&gt;インラインボックス&lt;/a&gt;
+&lt;div id=&quot;inline-wrap-01&quot; class=&quot;mfp-hide s1-mfp-inline-wrap&quot;&gt;
+&lt;div class=&quot;s1-box-media&quot;&gt;
+&lt;p class=&quot;mb-normal&quot;&gt;&lt;img src=&quot;https://www.rakuten-sec.co.jp/web/commodity/images/img_beginner_01.png&quot; alt=&quot;&quot; class=&quot;s1-box-media__img&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;s1-box-media__caption&quot;&gt;メディアキャプション&lt;/p&gt;
+&lt;/div&gt;
+&lt;p class=&quot;ta-c&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;閉じる&quot; class=&quot;s1-mfp-popup-modal-dismiss&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</pre>
+
+
+<p class="mb-normal">ブライトコープの場合のクラスもつくりました。</p>
+<p>
+  <a class="s1-mfp-popup-modal" href="#inline-wrap-02">ブライトコープをポップアップ</a>
+  <div id="inline-wrap-02" class="mfp-hide s1-mfp-inline-wrap s1-mfp-inline-wrap--video" style="width:640px;">
+    <video data-video-id="5744965707001"
+    data-account="5068808272001"
+    data-player="ryorXS41g"
+    data-embed="default"
+    data-application-id
+    class="video-js"
+    controls
+    width="640"
+    height="360"></video>
+    <script src="//players.brightcove.net/5068808272001/ryorXS41g_default/index.min.js"></script>
+  </div>
+</p>
+
+<pre class="prettyprint mb-normal" style="color:#FFF;">
+&lt;p&gt;
+&lt;a class=&quot;s1-mfp-popup-modal&quot; href=&quot;#inline-wrap-02&quot;&gt;ブライトコープをポップアップ&lt;/a&gt;
+&lt;div id=&quot;inline-wrap-02&quot; class=&quot;mfp-hide s1-mfp-inline-wrap s1-mfp-inline-wrap--video&quot; style=&quot;width:640px;&quot;&gt;
+&lt;video data-video-id=&quot;5744965707001&quot;
+･･･略･･･
+&lt;/video&gt;
+&lt;script src=&quot;//players.brightcove.net/5068808272001/ryorXS41g_default/index.min.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+</pre>
+
+<p class="s1-entitle">Webページの場合</p>
+<p class="mb-normal">ポップアップでiframeを呼び出す。iframeのサイズはmax-width:900pxで固定なので注意。ほとんどインラインボックスで事足りると思われるけど。</p>
+
+<div class="module-sample">
+<p><a class="s1-mfp-popup-iframe" href="https://www.rakuten-sec.co.jp/">Webページ</a></p>
+</div>
+
+</section>
+
+<section id="mod-roll">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>ロールオーバー</p>
+</div>
+</div>
+<div class="hdg">
+  <div class="hdg__desc">
+  <p>画像をロールオーバーさせるjquery実装。メンバー編集可能領域で使っているものと同じルールにしました。</p>
+  <p>①画像xxx.pngのロールオーバー用の画像xxx_o.pngを用意。<br>
+    ②該当のimgタグにクラスrollを記述。</p>
+  </div>
+</div>
+
+
+<div class="s1-grid">
+<div class="s1-grid__col-1-3"><a href="https://www.rakuten-sec.co.jp/web/domestic/margin/startup/"><img src="/web/collateral/images/transfer-image003.gif" alt="" class="roll"></a></div>
+<div class="s1-grid__col-1-3 ta-c"> <a href="https://www.rakuten-sec.co.jp/web/fx/"><img src="/web/collateral/images/transfer-image004.gif" alt="" class="roll"></a></div>
+<div class="s1-grid__col-1-3 ta-r"><a href="https://www.rakuten-sec.co.jp/web/fop/account.html"><img src="/web/collateral/images/transfer-image005.gif" alt="" class="roll"></a></div>
+</div>
+
+<pre class="prettyprint mb-normal" style="color:#FFF;">
+&lt;img src=&quot;/images/xxx.png&quot; alt=&quot;hoge&quot; class=&quot;roll&quot;&gt;
+</pre>
+
+</section>
+
+<section id="mod-another">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>その他</p>
+</div>
+</div>
+<div class="hdg">
+  <div class="hdg__desc">
+  <p>ページ内アンカーリンクにクラス【.is-disabled--scroll】を付与することで、スムーススクロールをoffにすることができます。</p>
+  </div>
+</div>
+<div class="module-sample">
+<p><a class="is-disabled--scroll" href="#mod-another">.is-disabled--scrollでスムーススクロールoff</a></p>
+</div>
+
+</section>
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

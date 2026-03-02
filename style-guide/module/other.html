@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/web/shared/css/style-bottom.css">
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link rel="stylesheet" href="/web/shared/css/styleguide.css">
+
+<!-- ▼▼▼▼▼▼▼▼▼▼ モジュール用（本番では削除） ▼▼▼▼▼▼▼▼▼▼ -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css"/>
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/ITS/ishiwatari/20161215/css/style_modules.css" />
+<link rel="stylesheet" type="text/css" href="http://10.166.10.116/web/modules/css/bc.css" />
+<!-- ▲▲▲▲▲▲▲▲▲▲ モジュール用（本番では削除） ▲▲▲▲▲▲▲▲▲▲ -->
+  </head>
+  <body>
+  
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+  <ul class="s1-breadcrumbs">
+    <li><a href="/style-guide/">ビジターサイト構築ガイドライン</a> > </li>
+    <li><a href="/style-guide/module/">モジュール</a> > </li>
+    <li>その他</li>
+  </ul>
+
+
+<!-- スタイルガイド開始 -->
+
+  <div class="s1-content-area">
+    <div class="s1-content-area__container">
+      <div class="s1-content-area__main">
+
+<div class="s1-hdg-lv1">
+  <h1 class="s1-hdg-lv1__element">その他</h1>
+</div>
+
+<!--<ul class="s1-list-anchor s1-list-anchor--wrap">
+  <li class="s1-list-anchor__item"><a href="#mod-faq" class="s1-list-anchor__element">FAQ</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-step" class="s1-list-anchor__element">STEP</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-linkpanel" class="s1-list-anchor__element">リンクパネル</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-abstract" class="s1-list-anchor__element">要約ボックス</a></li>
+  <li class="s1-list-anchor__item"><a href="#mod-tel" class="s1-list-anchor__element">問い合わせボックス</a></li>
+</ul>-->
+
+
+
+<section>
+<div class="hdg" id="mod-faq">
+  <div class="hdg__bottom">
+    <p>FAQ</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<dl class="s1-faq">
+  <dt class="s1-faq__question"><span class="s1-faq__label s1-faq__label--q">Q</span><span class="s1-faq__txt">質問質問</span></dt>
+  <dd class="s1-faq__answer"><span class="s1-faq__label s1-faq__label--a">A</span><span class="s1-faq__txt">答え答え答え</span></dd>
+  <dt class="s1-faq__question"><span class="s1-faq__label s1-faq__label--q">Q</span><span class="s1-faq__txt">質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問質問</span></dt>
+  <dd class="s1-faq__answer"><span class="s1-faq__label s1-faq__label--a">A</span><span class="s1-faq__txt">答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え答え</span></dd>
+</dl>
+</div>
+
+<div class="hdg" id="mod-step">
+  <div class="hdg__bottom">
+    <p>STEP</p>
+  </div>
+  <div class="hdg__desc">
+    <p>STEPの画像じゃなくて、cssバージョン。今後はこちらをメインで。CASEやPOINTでもつかえる。</p>
+    <p>STEPの見出しはh3を推奨してますが、h2やh4でも動作すると思う。ただ、マージンやフォントサイズはh3にあわせてます。</p>
+    <p>.s1-label-balloon-countで囲まないと連番になりません。</p>
+    <p>matchHeightの使用時、【style="height: 157.766px;"】は削除して使用してください。</p>
+  </div>
+</div>
+
+<div class="module-sample">
+<div class="s1-label-balloon-count">
+  <h3 class="s1-hdg-label">
+    <div class="s1-hdg-label__label"><div class="s1-label-balloon"><span><b>STEP</b></span></div></div>
+    <div class="s1-hdg-label__txt">ラベル</div>
+  </h3>
+  <p>本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト</p>
+  <ul class="s1-list-bubble">
+    <li>XXXXX</li>
+    <li>XXXXX</li>
+  </ul>
+  
+  <div class="s1-arrow"></div>
+  
+  <h3 class="s1-hdg-label">
+    <div class="s1-hdg-label__label"><div class="s1-label-balloon"><span><b>STEP</b></span></div></div>
+    <div class="s1-hdg-label__txt">ラベル</div>
+  </h3>
+  <p>本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト本文テキストテキスト</p>
+  
+  <div class="s1-arrow"></div>
+  
+  <h3 class="s1-hdg-label">
+    <div class="s1-hdg-label__label"><div class="s1-label-balloon"><span><b>STEP</b></span></div></div>
+    <div class="s1-hdg-label__txt">ラベルのみ</div>
+  </h3>
+  
+  <div class="s1-arrow"></div>
+
+  <h3 class="s1-hdg-label">
+    <div class="s1-hdg-label__label"><div class="s1-label-balloon"><span><b>STEP</b></span></div></div>
+    <div class="s1-hdg-label__txt">ラベルのみ</div>
+  </h3>
+</div>
+</div> 
+
+
+<div class="module-sample">
+<ol class="s1-step-horizon clearfix">
+  <li class="s1-step-horizon__item">
+    <dl class="matchHeight">
+    <dt class="s1-step-horizon__label">STEP1</dt>
+    <dd class="s1-step-horizon__body">テキスト</dd>
+    <dd class="s1-step-horizon__body--image"><img src="http://10.166.10.116/web/module2016/images/img03.png" alt=""></dd>
+    </dl>
+  </li>
+  <li class="s1-step-horizon__item">
+    <dl class="matchHeight">
+    <dt class="s1-step-horizon__label">STEP2</dt>
+    <dd class="s1-step-horizon__body">テキスト</dd>
+    </dl>
+  </li>
+  <li class="s1-step-horizon__item">
+    <dl class="matchHeight">
+    <dt class="s1-step-horizon__label">STEP3</dt>
+    <dd class="s1-step-horizon__body">テキスト</dd>
+    </dl>
+  </li>
+  <li class="s1-step-horizon__item">
+    <dl class="matchHeight">
+    <dt class="s1-step-horizon__label">STEP4</dt>
+    <dd class="s1-step-horizon__body">テキスト</dd>
+    </dl>
+  </li>
+</ol>
+</div>
+  
+
+
+</section>
+
+
+
+
+
+
+
+<!--電話番号モジュール-->
+<section id="mod-tel">
+<div class="hdg">
+<div class="hdg__bottom">
+<p>電話番号モジュール</p>
+</div>
+<div class="hdg__desc">
+<p>/module/_content.scss</p>
+</div>
+</div>
+
+<div class="hdg">
+  <div class="hdg__desc">
+    <p>電話番号で使うやつ。ボックスなかったり、電話番号を改行して2つ掲載しても対応できるようにはしてあります。<br>
+あと、CSアイコンのwebフォントは&amp;#xf11f;です。 </p>
+  </div>
+</div>
+
+<div class="box-section">
+<div class="module-sample">
+
+<div class="s1-call-box">
+  <div class="s1-call-box__inner">
+    <div class="s1-call-box__hdg"><i class="s1-call-box__cs-icon s-glyph">&#xf11f;</i> 楽天証券(株) カスタマーサービスセンター</div>
+    <div class="s1-call-box__tel ta-c">
+      <div class="s1-call-box__nummber s1-call-box__nummber--free-icon">0120-41-1004（通話無料）</div>
+    </div>
+    <p class="ta-c">※携帯・PHS・050で始まるIP電話からは、0570-07-1004 / 03-6739-3333 (有料)</p>
+    <p class="ta-c">受付時間：平日<span class="fc-r-01">8:00～18:00</span>（土日祝日・年末年始を除く）</p>
+    <p class="ta-c">ヘルプ＆サポートは<a href="https://www.rakuten-sec.co.jp/web/support/">こちら</a></p>
+  </div>
+</div>
+
+<div class="s1-call-box">
+  <div class="s1-call-box__tel">
+    <div class="s1-call-box__nummber s1-call-box__nummber--free-icon">0120-41-1004（通話無料）</div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</section>
+<!--電話番号モジュール-->
+
+
+      </div>
+
+
+      <div class="s1-content-area__sidebar">
+        <!--#include virtual="/style-guide/inc-sidenav.html"-->
+      </div>
+    </div>
+
+
+  </div>
+
+<!-- footer-common-->
+<!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+<!-- /footer-common-->
+
+<!--#include virtual="/style-guide/inc-script.html"-->
+
+<script type="text/javascript" src="http://10.166.10.116/ITS/ishiwatari/report/js/moduleCreate.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+  </html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日経平均株価 重要ニュース｜楽天証券</title>
+
+  <!-- 楽天証券本番CSS -->
+  <link rel="stylesheet" href="https://www.rakuten-sec.co.jp/web/shared/css/style-bottom.css">
+
+  <!-- ページ固有スクリプト -->
+  <script src="https://www.rakuten-sec.co.jp/web/shared/js/s1-common.js"></script>
+
+  <!-- パス変換スクリプト（絶対パスモードの場合のみ） -->
+  <script>
+(function() {
+  const PRODUCTION_BASE_URL = 'https://www.rakuten-sec.co.jp';
+
+  function convertPaths() {
+    // 画像パス変換
+    const images = document.querySelectorAll('img');
+    images.forEach(function(img) {
+      const src = img.getAttribute('src');
+      if (src && src.startsWith('/') && !src.startsWith('//')) {
+        img.setAttribute('src', PRODUCTION_BASE_URL + src);
+      }
+    });
+
+    // リンクパス変換
+    const anchors = document.querySelectorAll('a');
+    anchors.forEach(function(a) {
+      const href = a.getAttribute('href');
+      if (href && href.startsWith('/') && !href.startsWith('//') && href !== '#' && !href.startsWith('javascript:')) {
+        a.setAttribute('href', PRODUCTION_BASE_URL + href);
+      }
+    });
+  }
+
+  // 初回実行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', convertPaths);
+  } else {
+    convertPaths();
+  }
+
+  // 動的変更を監視
+  const observer = new MutationObserver(convertPaths);
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+
+  <style>
+
+/* キャンバス内のブロック用の最小限のスタイル */
+.canvas-block {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.canvas-block.selected {
+  outline: 2px solid #bf0000;
+}
+
+.canvas-block__toolbar {
+  display: none;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  background: white;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.canvas-block:hover .canvas-block__toolbar,
+.canvas-block.selected .canvas-block__toolbar {
+  display: flex;
+  gap: 5px;
+}
+
+  </style>
+</head>
+<body id="top">
+  <!-- ヘッダー（SSI） -->
+  <!--#include virtual="/web/shared/include/grpheader/v1-grpheader.html"-->
+  <!--#include virtual="/web/shared/include/nav-global/other.html"-->
+
+  <!-- メインコンテンツエリア -->
+  <div class="s1-content-area mb-triple">
+    <div class="s1-content-area__container">
+
+      <!-- 左側：メインコンテンツ -->
+      <div class="s1-content-area__main" role="main">
+
+        <!-- パンくず -->
+        <ul class="s1-breadcrumbs mb-normal">
+          <li><a href="/">ホーム</a>&nbsp;&gt;&nbsp;</li>
+          <li><a href="/market/">マーケット情報</a>&nbsp;&gt;&nbsp;</li>
+          <li>日経平均株価ニュース</li>
+        </ul>
+
+        <!-- SNS共有ボタン -->
+        <!--#include virtual="/web/shared/include/socialbookmark/s1-parts.html"-->
+
+        <!-- PCSP共通コンテンツ -->
+        <div id="pcsp-quick" class="mb-triple">
+
+          <!-- 見出し1 -->
+          <div class="s1-hdg-lv1">
+            <h1 class="s1-hdg-lv1__element">日経平均株価 重要ニュース</h1>
+          </div>
+
+          <!-- お知らせボックス -->
+          <div class="s1-box-list-info mb-double">
+            <h2 class="s1-box-list-info__hdg">最新のお知らせ</h2>
+            <ul class="s1-list-info">
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/03/02</div>
+                <div class="s1-list-info__content"><a href="#">日経平均株価、38,000円台を突破！今年最高値を更新</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/03/01</div>
+                <div class="s1-list-info__content"><a href="#">東証、売買代金5兆円超え - 活発な取引継続</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/02/28</div>
+                <div class="s1-list-info__content"><a href="#">日銀金融政策決定会合の結果について</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/02/27</div>
+                <div class="s1-list-info__content"><a href="#">半導体関連株が大幅上昇、指数を押し上げる</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--time">2026/02/26</div>
+                <div class="s1-list-info__content"><a href="#">米国市場の好調を受け、日経平均も続伸</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 見出し2 -->
+          <div class="s1-hdg-lv2">
+            <h2 class="s1-hdg-lv2__element">本日の市場動向</h2>
+          </div>
+
+          <!-- 本文セクション -->
+          <div class="s1-box-section mb-double">
+            <p>2026年3月2日、日経平均株価は前日比380円高の38,250円で取引を終えました。米国市場での好調な企業決算を受けて投資家心理が改善し、幅広い銘柄に買いが入りました。</p>
+            <p>特に半導体関連株が大幅高となり、指数を押し上げる原動力となっています。また、円安基調も輸出関連企業にとって追い風となっています。</p>
+          </div>
+
+          <!-- 見出し3 -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">注目セクター</h3>
+          </div>
+
+          <!-- リストボックス -->
+          <div class="s1-box-section mb-double">
+            <ul class="s1-list-standard">
+              <li>半導体関連：前日比+4.5%と大幅上昇。世界的な需要増加が背景</li>
+              <li>自動車関連：円安効果により輸出企業の業績期待が高まる</li>
+              <li>金融セクター：金利上昇期待から銀行株に買いが集まる</li>
+              <li>テクノロジー：AI関連銘柄が引き続き投資家の注目を集める</li>
+            </ul>
+          </div>
+
+          <!-- ピックアップ情報 -->
+          <div class="s1-box-list-info mb-double">
+            <h2 class="s1-box-list-info__hdg">ピックアップ</h2>
+            <ul class="s1-list-info">
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--info">解説</span></div>
+                <div class="s1-list-info__content"><a href="#">アナリストが語る、今後の日経平均の展望</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--important">重要</span></div>
+                <div class="s1-list-info__content"><a href="#">来週の注目経済指標カレンダー</a></div>
+              </li>
+              <li class="s1-list-info__item">
+                <div class="s1-list-info__content s1-list-info__content--label"><span class="s1-label--info">レポート</span></div>
+                <div class="s1-list-info__content"><a href="#">月次市場レポート：2026年2月まとめ</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 見出し2 -->
+          <div class="s1-hdg-lv2">
+            <h2 class="s1-hdg-lv2__element">専門家の見解</h2>
+          </div>
+
+          <!-- 引用ボックス -->
+          <div class="s1-box-section mb-double">
+            <p class="s1-entitle">楽天証券 チーフストラテジスト</p>
+            <p>「現在の日経平均の上昇は、企業業績の改善と円安基調が主な要因です。ただし、38,500円付近では利益確定売りも予想されるため、短期的には調整局面も想定しておく必要があります。」</p>
+            <p class="mb-normal">中長期的には、日本企業のガバナンス改革や株主還元強化の動きが続いており、引き続き堅調な推移が期待できるでしょう。」</p>
+          </div>
+
+          <!-- 見出し3 -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">今後の注目ポイント</h3>
+          </div>
+
+          <!-- バレットリスト -->
+          <div class="s1-box-section mb-double">
+            <ul class="s1-list-bubble">
+              <li>3月の日銀金融政策決定会合での追加政策変更の有無</li>
+              <li>米国FRBの金融政策スタンスと日米金利差の動向</li>
+              <li>主要企業の決算発表内容と今期業績見通し</li>
+              <li>為替相場の変動（特に対ドル円相場）</li>
+              <li>地政学的リスクの影響</li>
+            </ul>
+          </div>
+
+          <!-- コンバージョンボタン -->
+          <div class="s1-box-conversion mb-double">
+            <div class="s1-btn-account-open">
+              <a href="/account/"><i class="s-glyph">&#xf10a;</i>&nbsp;口座申込</a>
+            </div>
+          </div>
+
+          <!-- 関連リンク -->
+          <div class="s1-hdg-lv3">
+            <h3 class="s1-hdg-lv3__element">関連情報</h3>
+          </div>
+
+          <div class="s1-box-section mb-normal">
+            <ul class="s1-list-link">
+              <li class="s1-list-link__item"><a href="/market/">マーケット情報トップ</a></li>
+              <li class="s1-list-link__item"><a href="/market/nikkei/">日経平均株価リアルタイムチャート</a></li>
+              <li class="s1-list-link__item"><a href="/market/report/">マーケットレポート一覧</a></li>
+              <li class="s1-list-link__item"><a href="/market/calendar/">経済指標カレンダー</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- SNS共有ボタン（2回目） -->
+        <!--#include virtual="/web/shared/include/socialbookmark/s1-parts.html"-->
+
+      </div>
+
+      <!-- 右側：サイドバー（SSI） -->
+      <div class="s1-content-area__sidebar" role="complementary">
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-side-account.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-side-login.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-common-side.html"-->
+        <!--#include virtual="/web/shared/include/str-sub-common/s1-common-info-side-contents.html"-->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- フッター（SSI） -->
+  <!--#include virtual="/web/shared/include/str-footer/v1-str-footer.html"-->
+
+  <!-- 分析タグ（SSI） -->
+  <!--#include virtual="/web/shared/include/analysis/analysis-sitecatalyst.html"-->
+  <!--#include virtual="/web/shared/include/analysis/analysis-mebius.html"-->
+</body>
+</html>
